@@ -1224,7 +1224,48 @@ OBF_LIBC_FUNC_DEF(write, int, (int fd, const void * buf, ssize_t n), (fd,buf,n))
 </li>
 
 <li>
-    I specified an architecture (but did not yet implement) to handle the application update mechanism which is uniquely problematic to our industry. We provide our customers with an application framework which they tailor to their own needs, and which they are responsible to deploy to their subscribers. When we need to update the core libraries or configuration files, say for an important security patch, we are not able to use Google's Play Store to push the updates to our customers' subscribers because we have no access to their app's enterprise keys, and they have no intention of ever revealing their keys to us. When we inform our customers of the necessity to apply an important security patch, they could easily take 3-6 months before applying it. Our customers are petrified that our change, because it was never vetted by their own QA department, would cause their app to crash, that would cause an avalanche of tens of thousands of subscriber complaints to their own customer service department. From our perspective it could take up to 6 months to stop hemorrhaging from a compromised key. One solution would be to place a built-in 120 day "kill switch" in our core libraries that would force our customers to always update the core system about every 90 days. Currently our EULA says 180 days, but we never enforce it. A second solution would be for our customers to trust us, and use the Google Enterprise tools to delegate authority to us to make updates. And a third solution would be a hack. We could supply a VO (Viaccess-Orca) app that was automatically installed along with the customer's app, and automatically activated every time the customer's app were activated. The VO app would be defined to automatically receive the latest updates. If the VO app were not running, then neither could the customer's app. The customer app would open up a communication channel with the VO app to see whether any updates should be applied. If an update were necessary then the communication channel would copy them to the customer app. Of the 3 possibilities, I think that the "kill switch" would be the best compromise; although having a VO app (that was always updated) running in the background may open up some interesting possibilities even if we refrained from automatically updating the files in the customer's app.
+I specified an architecture (but did not yet implement) to handle the application
+update mechanism which is uniquely problematic to our industry.
+We provided our customers with an application framework which they tailored to their own needs,
+and which they were responsible to deploy to their subscribers.
+When we needed to update the core libraries or configuration files,
+say for an important security patch, we were not able to use Google's Play Store to push the updates
+to our customers' subscribers because we have no access to their app's enterprise keys,
+and they have no intention of ever revealing their keys to us.
+When we inform our customers of the necessity to apply an important security patch,
+they could easily take 3-6 months before applying it.
+Our customers were petrified that our change,
+because it was never vetted by their own QA department,
+would cause their app to crash,
+that would cause an avalanche of tens of thousands of subscriber complaints to
+their own customer service department.
+From our perspective it could take up to 6 months to stop hemorrhaging from a compromised key.
+One solution would be to place a built-in 120 day "kill switch" in our core libraries that
+would force our customers to always update the core system about every 90 days.
+Currently our EULA says 180 days, but we never enforced it.
+A second solution would be for our customers to trust us,
+and use the Google Enterprise tools to delegate authority to us to make updates.
+And a third solution would be a hack.
+We could supply a VO (Viaccess-Orca) app that was automatically installed
+along with the customer's app, and automatically activated every time the customer's
+app was activated.
+The VO app would be defined to automatically receive the latest updates.
+If the VO app were not running, then neither could the customer's app.
+The customer app would open up a communication channel with the VO app to see
+whether any updates should be applied. If an update were necessary then the
+communication channel would copy them to the customer app.
+Of the 3 possibilities, I think that the "kill switch" would be the best compromise;
+although having a VO app (that was always updated) running in the background may open
+up some interesting possibilities even if we refrained from automatically updating the
+files in the customer's app.
+</li>
+
+<li>Whenever technically feasible,
+I preferred doing my development work on an Android VM (virtual machine).
+Also whenever technically feasible I preferred writing tiny Android command line
+applications when testing out new O/S concepts.
+The standard practice of creating a full fledged Android GUI application via the
+Gradle IDE was bloated in comparison.
 </li>
 
 </ol>
@@ -1366,9 +1407,13 @@ As of May 2017, the product is still brand new.
 </summary>
 <ol>
 
-<li>My bread and butter work was to do code security reviews. At the most basic level,
-this involved enforcing the use of textbook <a href="https://www.securecoding.cert.org/confluence/display/seccode/Top+10+Secure+Coding+Practices">safe programming practices</a> such as protecting against "stack smashing", wiping memory before freeing it, sanitizing data, etc.
-At a higher level, it involved checking how well the secrets/keys and program flow were protected against <a href="https://en.wikipedia.org/wiki/Reverse_engineering">reverse engineering</a> - both static and dynamic.
+<li>My regular background task was to do code security reviews.
+At the most basic level, this involved enforcing the use of textbook
+<a href="https://www.securecoding.cert.org/confluence/display/seccode/Top+10+Secure+Coding+Practices">safe programming practices</a>
+such as protecting against "stack smashing", wiping memory before freeing it, validating user data, etc.
+At a higher level, it involved checking how well the secrets/keys and program flow were protected
+against <a href="https://en.wikipedia.org/wiki/Reverse_engineering">reverse engineering</a>
+- both static and dynamic.
 </li>
 
 <li>We came to the conclusion that it was far too difficult for the average programmer to be concerned about both producing correct code,
@@ -1505,17 +1550,19 @@ In order to secure the STB, I selected a consumer X86 CPU that had a "trusted ex
 I gave a presentation to the "offline tool utility department" on the philosophy and benefits of developing a software toolbox with lots of small gadgets and filters, i.e. the Posix way, instead of writing huge monolithic tools.
 </li>
 
-<li>2003: I built a hybrid simulator/emulator of a commonly used legacy TV set-top-box (STB) that originally had no debug capabilities
-other than writing "printf" statements to the console.
+<li>2003: I built a hybrid simulator/emulator of a commonly used legacy TV STB (set-top-box) that
+originally had no debug capabilities other than writing "printf" statements to the console.
 I completely reverse engineered the OpenTV middleware API so the calls could execute on a PC,
-and used Remote Procedure Calls (RPC) to access the hardware specific API calls that had to run on the STB.
-This emulator allowed all of an application's code to be run on a PC from within the Microsoft VisualC debugger,
-while still displaying the true results on the TV set connected to the STB.
+and used Remote Procedure Calls (RPC) to access the hardware specific API calls that had to run on
+the STB. This emulator allowed all of an application's code to be run on a PC from within the
+Microsoft VisualC debugger, while still displaying the true results on the TV set connected to the
+STB.
 The project was a major success.
 </li>
 
 <li>1999: I was the architect of an automated test system for a satellite communication system.
- I designed a domain specific language (DSL) to describe and to simulate a satellite communication protocol which was passed to their back-end Win32 server as if it came directly from the satellite.
+ I designed a domain specific language (DSL) to describe and to simulate a satellite communication
+ protocol which was passed to their back-end Win32 server as if it came directly from the satellite.
  The system architect assumed that a tester was by definition a second class programmer, i.e. an Orwellian 1984 "beta".
  After doing an in-depth study of his architecture, I warned him of a major flaw in his design, but of course he ignored me.
  So I wrote a straightforward test that crashed his server even though it only used less than 25% of the satellite's capacity.
@@ -4791,7 +4838,7 @@ I feel that scale notation makes it much easier to describe the music theory tec
 <p>
 
 <address>
-Last update: 2017-06-06T11:51:00Z
+Last update: 2017-06-06T18:21:00Z
 
 <br><a href="http://www.w3.org/TR/WCAG20/">WCAG</a> blind accessibility conformance: This document contains text alternatives for images, and is tab navigable.
 
