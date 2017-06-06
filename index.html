@@ -1569,12 +1569,36 @@ assumes that the underlying function being estimated is a flat "S" curve typical
 formally referred to as a
 <a href="https://en.wikipedia.org/wiki/Logistic_function">logistic function</a>.
 My mentor was in fact Bar, who got me up to speed very quickly.
-After noticing bizarre results from pure MRSA samples from laboratory colonies (i.e. and not patient samples), simply by carefully reading the <a href="https://en.wikipedia.org/wiki/Thermal_cycler">thermo cycler</a> manual I noted egregious mistakes in the experimental protocols on which they spent $500K.
+After noticing bizarre results from pure MRSA samples from laboratory colonies (i.e. and not patient samples),
+simply by carefully reading the <a href="https://en.wikipedia.org/wiki/Thermal_cycler">thermo cycler</a> manual,
+I noted egregious mistakes in the experimental protocols on which they spent $500K.
+They had placed the test tubes with the negative and positive control samples,
+required for every batch, in the wrong positions in the thermo cycler!
 But having had access to the original raw data from the thermo cycler, I was able to correct these mistakes.
-Still I noted that the Bar algorithm produced results with an R^2=99% where the underlying data was a perfectly straight line, or random noise.
-This was due to a conceptual flaw in how the <a href="https://en.wikipedia.org/wiki/Levenberg%E2%80%93Marquardt_algorithm">Levenberg-Marquardt (LM)</a> transcendental function estimation algorithm is applied. The example that I am fond of using is when giving the LM algorithm a functional description of a bactrian (2 hump) camel, it will prove with an R^2=99% that a horse with 2 warts on its back is indeed a camel.
+Even after having made these corrections,
+I still noted that the Bar algorithm produced results with an R^2=99% where the underlying data was
+a nearly perfectly straight line or random noise
+- certainly nothing like the flat "S" shape that the algorithm expected.
+This was due to a conceptual flaw in how the
+<a href="https://en.wikipedia.org/wiki/Levenberg%E2%80%93Marquardt_algorithm">Levenberg-Marquardt (LM)</a>
+transcendental function estimation algorithm is applied.
+The example that I am fond of using is when giving the LM algorithm a functional
+description of a bactrian (2 hump) camel, it will prove with an R^2=99% that a horse
+with 2 warts on its back is indeed a camel.
 <p>
-During this short project I made some very important discoveries using very simple techniques that are still relevant today. I am considering submitting a patent application together with Bar. Therefore at this time I cannot yet publish the details, otherwise I would sabotage my own patent application.
+During this short period I made some very important discoveries:
+<ol>
+<li>I discovered a much more powerful and much simpler technique to normalize data,
+and to reduce noise - compared to the Bar algorithm.</li>
+<li>I discovered an alternative AI (artificial intelligence) based technique that
+very accurately determined whether a sample is positive or negative
+(according to the Petri dish results)
+when the underlying data did not exhibit the flat "S" shape expected by the Bar algorithm.</li>
+</ol>
+<p>
+I am considering submitting a patent application.
+Therefore at this time I cannot yet publish the details of the algorithm,
+otherwise I would sabotage my own patent application.
 </details>
 
 <h5 tabindex="0" id="1.1.3.2">1.1.3.2: 2002: Blind Accessibility: "See" Digital Images on a Computer Display: CTO @Virtouch Jerusalem</h5>
@@ -4767,7 +4791,7 @@ I feel that scale notation makes it much easier to describe the music theory tec
 <p>
 
 <address>
-Last update: 2017-06-06T07:31:00Z
+Last update: 2017-06-06T07:58:00Z
 
 <br><a href="http://www.w3.org/TR/WCAG20/">WCAG</a> blind accessibility conformance: This document contains text alternatives for images, and is tab navigable.
 
