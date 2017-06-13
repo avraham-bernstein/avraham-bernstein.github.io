@@ -3,8 +3,8 @@
 <head>
     <meta charset="iso-8859-1" />
     <meta http-equiv="content-type" content="text/html" />
-    <title>Avraham Bernstein: Home Page &amp; Temp CV</title>
-    <meta name="description" content="Avraham Bernstein: Home Page &amp; Temporary CV">
+    <title>Avraham Bernstein: Home Page</title>
+    <meta name="description" content="Avraham Bernstein: Home Page">
     <meta name="copyright" href="http://creativecommons.org/licenses/by-nd/4.0/" />
    	<meta name="viewport" content="width=device-width">
    	<style>
@@ -33,7 +33,7 @@ gZpxGhkCn4g7xBFiocMJRj+ckcDfF/gBCTJDUqZhh4kAAAAASUVORK5CYII="/>
 </script>
 </head>
 <body>
-<h1 tabindex="0" id="top">Avraham "Abe" Bernstein: Home Page &amp; Temporary CV v0.5</h1>
+<h1 tabindex="0" id="top">Avraham "Abe" Bernstein: Home Page v0.6</h1>
 <figure>
 <img title="Avraham Bernstein" alt="Avraham Bernstein" src="data:image/png;base64,
 iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAIAAABoJHXvAAAAAXNSR0IArs4c6QAA
@@ -3784,8 +3784,25 @@ And whoever implements the project would be able to make a thesis out of it - ce
 <p>
 <details>
 <summary>...</summary>
-I was the software architect of a system that enabled <a href="https://en.wikipedia.org/wiki/Tetraplegia">quadriplegics</a> to access computers with CRT video displays before the era of inexpensive voice recognition technology, tablets, and smartphones.
-<p>The hardware we used for this project was a standard <a href="https://en.wikipedia.org/wiki/Light_pen">light-pen</a> (an obsolete point-and-select input device that determines its position via the CRT's scan point) combined with custom telescopic optics that extended its normal maximum range to the screen from 10 mm to 800 mm, which we attached to the user's head with a headband, along with a standard accessibility <a href="https://en.wikipedia.org/wiki/Sip-and-puff">sip-and-puff</a> switch. The software had 2 modes of operation. In learning mode, a virtual keyboard covered about 80% of the screen. When the light-pen was aimed at a key then it would be illuminated. Puffing on an illuminated key caused the virtual key stroke to be entered into the operating system. In normal mode, the virtual keyboard was no longer visible. Instead a single key would pop up at the position on the underlying hidden virtual keyboard where the light pen was aimed, leaving 95% of the screen real estate available for the underlying application. This system enabled our first client, Shulamit Gabai, a former school teacher who was stricken with polio in all of her limbs, to type 30 characters per minute, and to become a book editor for a major publishing house.
+I was the software architect of a system that enabled <a href="https://en.wikipedia.org/wiki/Tetraplegia">quadriplegics</a>
+to access computers with CRT video displays <i>before the era of inexpensive voice recognition technology, tablets, and smartphones</i>.
+<p>
+The hardware we used for this project was a standard <a href="https://en.wikipedia.org/wiki/Light_pen">light-pen</a>
+(an obsolete point-and-select input device that determines its position via the CRT's scan point)
+combined with custom telescopic optics that extended its normal maximum range to the screen from 10 mm to 800 mm,
+which we attached to the user's head with a headband, along with a standard accessibility
+<a href="https://en.wikipedia.org/wiki/Sip-and-puff">sip-and-puff</a> switch.
+<p>
+The software had 2 modes of operation.
+In learning mode, a virtual keyboard covered about 80% of the screen.
+When the light-pen was aimed at a key then it would be illuminated.
+Puffing on an illuminated key caused the virtual key stroke to be entered into the operating system.
+In normal mode, the virtual keyboard was no longer visible.
+Instead a single key would pop up at the position on the underlying hidden virtual keyboard where the light pen was aimed,
+leaving 95% of the screen real estate available for the "real" application.
+<p>
+This system enabled our first client, Shulamit Gabai, a former school teacher who was stricken with polio in all of her limbs,
+to type 30 characters per minute, and to become a book editor for a major publishing house.
 </details>
 
 <h5 tabindex="0" id="1.1.3.5">1.1.3.5: 1989: "Talmudic Brainstorming": How I Turn Dreams Into Reality: Architect @DEC Herzliya Pituach &amp; @Iskar Tefen</h5>
@@ -3809,21 +3826,27 @@ I've never formally described this mental process before, but in my opinion it i
 <p>
 The first time I "discovered" this Talmudic brainstorming process was in 1988 when DEC hired me, along with my co-architect and still close friend David Goldstein, to develop a software architecture for automatically operating/orchestrating a hi-tech factory, the Iskar Matkash Cutting Tool factory in Tefen Israel.
 The software is formally referred to as a shop floor production control (SFPC) system.
-Tefen (still) makes hundreds of different cutting blades using a sintering process.
+Tefen makes thousands of different cutting blades using a <a href="https://en.wikipedia.org/wiki/Sintering">sintering</a> process.
 The raw materials go through many stages of operations.
-In many cases after undergoing intermediate processing, the half processed material could still be diverted to multiple final products - sort of like stem cells.
-The factory was full of hundreds of automated workstations and guided vehicles, and conveyor belts, that could automatically move pallets from one stand on a workstation to the next, or to temporarily place a pallet on a storage stand or a stack stand.
+In many cases after undergoing intermediate processing, the partially processed material could still be diverted to multiple final products
+- similar to stem cells.
+The factory contains hundreds of automated workstations, stands, stacks, guided vehicles, and conveyor belts.
+Pallets can be automatically move from one stand on a workstation to the next,
+or to temporarily place a pallet on a storage stand or a stack stand.
 <p>
 <i>In the beginning, we had no clue how to proceed!</i>
 I recall that we visited the factory only once at the very beginning of the project.
 At our disposal, we had an industrial engineer, Motti, who mentored us, who kept us grounded about what this factory was physically capable of doing.
 In the beginning, the industrial engineer wasn't very computer savvy, and we were not very savvy about industrial engineering, but with each others help we quickly filled in the gaps.
-Eventually after a few months of daily discussions we created an architecture that was a textbook object oriented "factory object kingdom".
-I was the author of the domain specific language (DSL) manual that described each class of object in the factory down to its minute details.
+Eventually after a few months of daily discussions we created an architecture that was a textbook object oriented taxonomy - a "factory object kingdom".
+I was the author of the domain specific language (DSL) manual that described each class of object in the factory down to its minute details,
+i.e. its attributes and methods.
 We called this language BARI (<i>Baqarat Ritzpat HaYeTzur</i>) which is the Hebrew acronym for SFPC (shop floor production control).
 The language was designed to be understood by the factory engineer, even though most operations could be done with a GUI which generated factory script.
 In order to keep the language simple for the factory engineer, the language was "descriptive" as opposed to "procedural".
-We implemented the system by mapping the language to a large relational database with 100+ tables, and many indices. This database mapping was in itself a major technical challenge in order to do it correctly and efficiently - considering that none of us came to the project with any prior relational database experience.
+We implemented the system by mapping the language to a large relational database with 100+ tables, and many indices.
+This database mapping was in itself a major technical challenge in order to do it correctly and efficiently
+- considering that none of us came to the project with any prior relational database experience.
 Afterwards we worked with a team of 4 additional programmers to implement the BARI command language in the Pascal programming language.
 Our, i.e. the architects', first choice language was C++ because of its built-in object oriented functionality.
 The language had already become industrial strength at least 5 years earlier.
@@ -4682,8 +4705,8 @@ are critical to anyone who has a key management position in any business - espec
 
 <p>
 <ul>
-<li><a href="http://purl.org/avraham.bernstein/cv">CV</a>&nbsp;[TBD: temporarily home page provides good coverage]</li>
 <li><a href="https://www.linkedin.com/in/avrahambernstein/">Linkedin: AvrahamBernstein</a></li>
+<li><a href="http://purl.org/avraham.bernstein/cv">CV</a>&nbsp;[PDF version of Linkedin profile]</li>
 <li><a href="http://purl.org/avraham.bernstein/blog">Professional Blog</a>&nbsp;[under construction]</li>
 <li><a href="https://github.com/avraham-bernstein">Github: Avraham-Bernstein</a>&nbsp;[under construction]</li>
 </ul>
@@ -4882,7 +4905,7 @@ I feel that scale notation makes it much easier to describe the music theory tec
 <p>
 
 <address>
-Last update: 2017-06-13T13:51:00Z
+Last update: 2017-06-13T18:32:00Z
 
 <br><a href="http://www.w3.org/TR/WCAG20/">WCAG</a> blind accessibility conformance: This document contains text alternatives for images, and is tab navigable.
 
