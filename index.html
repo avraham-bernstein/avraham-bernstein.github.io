@@ -50,7 +50,7 @@
     <meta name="dcterms.title" content="Avraham Bernstein: Home Page">
     <meta name="dcterms.hasVersion" content="Draft 0.7">
     <meta name="dcterms.date" content="2017-05-22">
-    <meta name="dcterms.modified" content="2017-06-21T14:38:00Z">
+    <meta name="dcterms.modified" content="2017-06-21T15:06:00Z">
     <meta name="dcterms.creator" content="Avraham Bernstein">
     <meta name="dcterms.rightsHolder" content="Avraham Bernstein, Jerusalem Israel">
     <meta name="dcterms.copyrightDate" content="2017">
@@ -997,7 +997,7 @@ Some of the more notable tools and techniques that I developed were the followin
 <ol>
 
 <li>An Android "root" detection and security module. This project required considerable research. In many cases the determination of whether or the not the O/S is rooted is not a straight-forward binary checklist. Therefore it required the use of <a href="https://en.wikipedia.org/wiki/Fuzzy_logic">fuzzy logic</a>.
-</li>
+<p></li>
 
 <li>A distributed <i>light weight</i> cryptographic library implemented solely as a C header (.h) file as opposed to being associated with a common binary object module.
 This allowed each module that used it to have its own customized version of the library implemented as <code>static</code> or <code>inline</code> C source code functions which made it impossible for an attacker to identify and to subvert a single common cryptographic module.
@@ -1006,7 +1006,7 @@ An outstanding technical hack in this module was having the C <i>preprocessor</i
 so that the in-the-clear string would not be visible post-compilation in the object code.
 
 <ol>
-<li>
+<p><li>
 Even though every module that included the library shared a common .h file, we needed some techniques to customize each module's version of it.
 At the beginning of every C/C++ module, the following code provides the infrastructure to enable every instance to have its own unique IV.
 <pre><code>
@@ -1048,7 +1048,7 @@ At the beginning of every C/C++ module, the following code provides the infrastr
 <li>
 In order to make sure the each module specific IV is not the same for every instantiation,
  a tiny <code>static void lwc_init()</code> function is used to read <code>/dev/urandom</code> in order to refresh the IV. (And note that each module encrypted the string "/dev/urandom" differently - by using a different stream cipher IV).
-</li>
+<p></li>
 
 <li>
 In order to make every instance of the same cryptographic function seem different to a <i>cursory</i> analysis of its binary,
@@ -1067,7 +1067,7 @@ static uint64_t lwc_mycrypto_func(...) {
 And of course we rely upon our obfuscating compiler to scramble each instance of the code differently.
 </li>
 </ol>
-</li>
+<p></li>
 
 <li>I specified an architecture (but did not yet implement) the creation of a usable dynamic shared object (DSO = <code>.so</code> or <code>.dll</code>) library that exports no symbols!
 <ol>
@@ -1365,7 +1365,7 @@ Of the 3 possibilities, I think that the "kill switch" would be the best comprom
 although having a VO app (that was always updated) running in the background may open
 up some interesting possibilities even if we refrained from automatically updating the
 files in the customer's app.
-</li>
+<p></li>
 
 <li>Whenever technically feasible,
 I preferred doing my development work on an Android VM (virtual machine).
@@ -1531,7 +1531,7 @@ such as protecting against "stack smashing", wiping memory before freeing it, va
 At a higher level, it involved checking how well the secrets/keys and program flow were protected
 against <a href="https://en.wikipedia.org/wiki/Reverse_engineering">reverse engineering</a>
 - both static and dynamic.
-</li>
+<p></li>
 
 <li>We came to the conclusion that it was far too difficult for the average programmer to be concerned about both producing correct code,
 and simultaneously to protect it against reverse engineering.
@@ -1558,16 +1558,16 @@ if you factor in the true costs of "rolling your own", then purchashing their pr
 </li>
 <li>
 The GCC <a href="http://gcc-melt.org/">MELT</a> extension project seems to be a technically promising alternative to LLVM, but its license is impossibly restrictive for a proprietary commercial application.
-</li>
+<p></li>
 </ul>
 
-</li>
+<p></li>
 
 <li>I gave technical and logistic support (e.g. creating false identities) to the operational security team whose job was to infiltrate
 <a href="https://en.wikipedia.org/wiki/Card_sharing">smart card sharing</a> groups which is the "Achilles' heel" of
 <a href="https://en.wikipedia.org/wiki/Conditional_access">conditional access (CA)</a> pay TV technology. The cable and satellite pay TV operators found it too difficult and too expensive to force their subscribers to upgrade their old "legacy" set-top boxes with more modern and secure ones.
 Card sharing groups would use these legacy set-top boxes to bypass the CA security mechanisms.
-</li>
+<p></li>
 
 <li>I was the technical lead and the main writer of a proposal to China CCC TV to protect their TV broadcasts of the 2008 Beijing Olympic games.
 As the host country, the IOC allowed China to have a free internal TV feed.
@@ -1591,13 +1591,13 @@ At the time NBC had merged with Microsoft, i.e. MSNBC. Microsoft found it intole
 so they agreed not to complain about the illegal licenses, and they offered to do the installations for free,
 whereas NDS had intended to charge about $0.25 per PC/TV device. We estimated that there were at least 100M devices.
 Bottom line, CCC TV rejected our proposal.
-</li>
+<p></li>
 
 <li>I wrote a business development proposal to enter into the game protection industry. The economic justification for this proposal was that premium games are relatively expensive, e.g. $75. Their production costs of the game studios are similar to movies. Their initial release generates more revenue than blockbuster movies, but their security protection schemes are typically hacked within the first month. A better protection scheme could buy the studios an extra month or two of protection which could provide them with an extra $50M in revenues.
-</li>
+<p></li>
 
 <li>I wrote a business development proposal to enter into the ink cartridge protection industry. Bubble jet printers are marketed using the wildly successful Gillette razor and blades business model that Mr. Gillette invented over 100 years ago. You sell a high quality razor holder at cost, while making long term lucrative profits from the consumables, i.e. the safety razor blades. Bubble jet printers are typically sold at cost, while the manufactures make lucrative profits on the ink cartridges. By weight, the price that many manufactures are able to sell their ink is more expensive than gold! Their problem is the competition from the much less expensive clones of their ink cartridges. Therefore a cartridge interface is required that is very difficult to clone/counterfeit. (As a result of my analysis, personally I own a black and white laser printer. They are much less expensive to operate in the long run. And it is much less expensive to go to a photo shop to print a color photo than to print one with a bubble jet color printer. This is an especially expensive problem in K-12 schools, where students have unmonitored access to printers which they use for printing photos).
-</li>
+<p></li>
 
 <li>I gave a presentation to senior management,
 in conjunction with the head of the QA department,
@@ -1607,7 +1607,7 @@ I discovered the extent of these costs by "data mining" their ClearQuest bug tra
 And I also suggested numerous relatively easy to implement <a href="#software-quality">techniques</a>
 (<i>in section 2.6.1 which you may have to scroll down into manually due to HTML limitations</i>)
 that would greatly reduce the number of bugs.
-</li>
+<p></li>
 
 <li>I became an expert in the use of Virtual Machine (VM) technology, particularly the QEMU emulator,
 to show how I could analyze and crack their state-of-the-art cryptography.
@@ -1634,41 +1634,41 @@ then by adding debug code he could detect our tampering.
 </li>
 </ul>
 
-</li>
+<p></li>
 
 <li>I used the ubiquitous VirtualBox VM manager to provide simple recipes for breaking the Microsoft PlayReady DRM licensing schemes.
-</li>
+<p></li>
 
 <li>I organized a 2 day seminar with a famous security researcher, <a href="https://en.wikipedia.org/wiki/Joanna_Rutkowska">Joanna Rutkowska</a> who specializes in the use of VMs.
-</li>
+<p></li>
 
 <li>I organized a week long seminar on reverse engineering techniques, to which I invited a famous hacker (Kaspersky, but not the head of security company with the same name) to be the lecturer. The seminar was well-attended, and extremely successful.
-</li>
+<p></li>
 
 
 <li>I wrote an article describing cryptographic side channel attacks. The example I used was how to write a safe string compare function.
-</li>
+<p></li>
 
 <li>I wrote a prototype device driver for a PC that showed how a USB smart card that permitted the playback of up to 3 movies could be remotely shared by multiple computers. (Today, in 2017, there are open source and commercial USB over TCP/IP drivers/applications).
-</li>
+<p></li>
 
 <li>I wrote a specification for a PC that could be used both as a secure CA set-top box (STB),
 and as a regular PC.
 The economic justification for this box was to keep the subscriber's eyes glued to a single box.
 For example a subscriber could view his email while watching a movie without having to change devices.
 In order to secure the STB, I selected a consumer X86 CPU that had a "trusted execution environment".
-</li>
+<p></li>
 
 
 <li>I gave a seminar on advance TCL programming.
  The company used TCL extensively for their smart card H/W verification systems.
-</li>
+<p></li>
 
 <li>
 I gave a presentation to the "offline tool utility department" on the philosophy
 and benefits of developing a software toolbox with lots of small gadgets and filters,
 i.e. the Posix way, instead of writing huge monolithic tools.
-</li>
+<p></li>
 
 <li>2003: I built a hybrid simulator/emulator of a commonly used legacy TV STB (set-top box) that
 originally had no debug capabilities other than writing "printf" statements to the console.
@@ -1678,7 +1678,7 @@ the STB. This emulator allowed all of an application's code to be run "as is" on
 Microsoft VisualC debugger, while still displaying the true results on the TV set connected to the
 STB.
 The project was a major success.
-</li>
+<p></li>
 
 <li>1999: I was the architect of an automated test system for a satellite communication system.
  I designed a domain specific language (DSL) to describe and to simulate a satellite communication
@@ -2676,7 +2676,7 @@ a 0.5 million &euro; matching grant. Unfortunately the investors had heard too
 many unfulfilled promises from Virtouch management, so they liquidated the company,
 instead of putting up their half of the grant money.
 
-<h6 tabindex="0">Lessons Learned</h6>
+<h5 tabindex="0">Lessons Learned</h5>
 <p>
 The most important lesson that I learned from this project is that it usually
 impossible to make a profit if a custom piece of accessibility hardware is necessary to implement
@@ -4038,19 +4038,28 @@ is working on <a href="https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfi
 <p>
 <details>
 <summary><span class="readmore"/></summary>
-I worked with a small secretive commercial company, with approximately 15 employees, engaged in a legitimate business, whose web site was under constant attack,
+I worked with a small secretive commercial company, with approximately 15 employees,
+engaged in a legitimate business, whose web site was under constant attack,
 and whose employees could potentially face physical harm if they were "outed".
-The majority of the employees were researchers who had little knowledge of cybersecurity.
-Even the straightforward/naive way that they accessed the Internet could leave tracks that could expose them
+The following were the results of my risk analysis:
+<ol>
+<li>The majority of the employees were researchers who had little knowledge of cybersecurity.
+<li>Even the straightforward/naive way that they accessed the Internet could leave tracks that could expose them
 provided that their adversary were a well financed technically adept opponent - perhaps with foreign government backing.
-They used a WordPress web site on a private server <i>without</i> two factor authentication protection (2FA).
-A lot of employees worked from home, or from public Internet hot spots. They all used gmail, and most <i>without</i> 2FA.
-And even those who did use 2FA, used their phone number - so if their phone were lost or compromised then the extra factor wasn't very useful.
-Their network file system was Google Drive for business. They used Windows laptops. Most had Android phones. None of their devices were configured securely.
-A single compromised device, or the theft of loss of a single device, could lead to complete penetration of their network.
-The picture could not be much more bleak. And in order to minimize organizational resistance to change,
-their road to security recovery had to be a long step-by-step process.
-</details>
+<li>They used a WordPress web site on a private server <i>without</i> two factor authentication protection (2FA).
+<li>A lot of employees worked from home, or from public Internet hot spots.
+<li>They all used gmail, and most <i>without</i> 2FA.
+<li>And even those who did use 2FA, used their phone number - so if their phone were lost or compromised then the extra factor wasn't very useful.
+<li>Their network file system was Google Drive for business.
+<li>They used Windows 7 laptops.
+<li>Most had Android phones. None of their devices were configured securely.
+<li>A single compromised device, or the theft or loss of a single device, could lead to complete penetration of their network.
+<li>The picture could not be much more bleak.
+</li>
+</ol>
+<p>
+In order to minimize organizational resistance to change,
+I designed a road to security that was a process of very small increments.</details>
 
 <h4 tabindex="0" id="2.4.9">2.4.9: 2010: Transparent Technical Negotiator of Restricted Hi-Tech Trade with China</h4>
 <p>
@@ -4953,7 +4962,7 @@ I feel that scale notation makes it much easier to describe the music theory tec
 <p>
 <address>
 Version: Draft 0.7
-<br>Last update: 2017-06-21T14:38:00Z
+<br>Last update: 2017-06-21T15:06:00Z
 <br><a href="http://www.w3.org/TR/WCAG20/">WCAG</a> blind accessibility conformance:
 This document contains text alternatives for images, and is tab navigable.
 
