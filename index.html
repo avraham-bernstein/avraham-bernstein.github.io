@@ -50,7 +50,7 @@
     <meta name="dcterms.title" content="Avraham Bernstein: Home Page">
     <meta name="dcterms.hasVersion" content="Draft 0.7">
     <meta name="dcterms.date" content="2017-05-22">
-    <meta name="dcterms.modified" content="2017-06-21T14:22:00Z">
+    <meta name="dcterms.modified" content="2017-06-21T14:38:00Z">
     <meta name="dcterms.creator" content="Avraham Bernstein">
     <meta name="dcterms.rightsHolder" content="Avraham Bernstein, Jerusalem Israel">
     <meta name="dcterms.copyrightDate" content="2017">
@@ -64,7 +64,7 @@
     <style>
         .obf { display: none; }
         .readmore { background-color: cyan; }
-        .readmore:before { content: "Read more"; }
+        .readmore:before { content: "Read more >>> "; }
     </style>
 
     <!-- favicon -->
@@ -4595,10 +4595,11 @@ But at the specification stage, using TCL is 100 times more simple as long as yo
 and that if you need a binary extension, generally all one needs to do is to supply a few extra verbs to TCL.
 </li>
 <li>
-For desktop environments the TCL GUI toolkit Tk, is brilliantly designed on account of its built-in core "pack" command which is a "responsive" geometry manager. Nice widgets can be defined with a few lines of code:
+For desktop environments the TCL GUI toolkit Tk, is brilliantly designed on account
+of its built-in core "pack" command which is a "responsive" geometry manager. Nice widgets can be defined with a few lines of code:
 <pre><code>
-span .b -text PressMe -bg red -command { puts "hello world" }; # definition of span ".b"
-pack .b; # places the span on the display
+button .b -text PressMe -bg red -command { puts "hello world" }; # definition of button ".b"
+pack .b; # places the button on the display
 </code></pre>
 No GUI toolkit is simpler. However the alternative native GUI libraries which demand hard coded geometry invariably execute considerably faster, but they are considerably more difficult to code. Python supports Tk (i.e. Tkinter), and so does the "go-tk" project. It is not difficult for a C/C++ app to embed Tcl/Tk. On the other hand, arguably it would be preferable for desktop apps to standardize on Webkit/Blink, so they can build their GUIs with the ubiquituous HTML5 and javascript/WASM infrastructure - which is the most portable solution.
 </li>
@@ -4655,7 +4656,7 @@ It is the single most cost effective debugging technique.
 <li>Every large and medium sized project should have a domain specific language (DSL) for enabling batch execution.
 </li>
 
-<li>The GUI should not directly call an app's binary API. Instead it should generate DSL script. (And for security reasons, lightly encrypted if necessary). It makes recording and testing 1000 times easier than using tools that record low level UI operations with no semantic meaning, such as physical mouse movements, and span presses, and individual keystrokes.
+<li>The GUI should not directly call an app's binary API. Instead it should generate DSL script. (And for security reasons, lightly encrypted if necessary). It makes recording and testing 1000 times easier than using tools that record low level UI operations with no semantic meaning, such as physical mouse movements, and button presses, and individual keystrokes.
 </li>
 
 <li>In test mode, the DSL should provide access to each module's unit test function.
@@ -4715,8 +4716,8 @@ summarizes the requirements of a C-level executive</a>.
 I was born in Canada in 1956. I have lived in Jerusalem Israel since 1983.
 I am an observant God-fearing<sup><a href="#fear-of-god-footnote">6</a></sup> Jew. I am married to my wife Judy since 1978.
 God blessed us with 4 beautiful children (2B+2G), plus many grandchildren - who all live in Israel.
+I take physical fitness seriously.
 Once upon a time I was a judoka, a classical guitarist, and composer<sup><a href="#music-composition-footnote">7</a></sup>.
-I still take physical fitness seriously.
 I was an IDF reserve soldier for 14 years, where I served as a combat soldier in the infantry in the Jordan Valley.
 In spite of the fact that I joined the army when I was 32 years old (Hebrew: <i>Shlav Betnik</i>),
 functionally, but unofficially, I served in the capacity of deputy company commander (Hebrew: <i>Samech Mem Pe</i>)
@@ -4743,12 +4744,14 @@ The disgruntled economists from the utility helped me from behind-the-scenes to 
 intervenor (= legal participant) at the hearings to present their marginal cost pricing proposal.
 I did not win the case, but I was the first intervenor in the history of the OEB to be awarded costs.
 I also published a detailed op-ed in "The Globe and Mail", Canada's paper of record, describing the issues at the hearings.
+<p>
 </li>
 
 <li>In 1996, at the Israel Supreme Court, I successfully challenged the IDF's <i>illegal and politically motivated</i>
 rules of engagement orders when a general publicly gave me an order that if a Palestinian "policeman" were to aim his
 rifle at me or another soldier or a civilian then no soldier was permitted to respond until <i>after</i> the bullet
 left the terrorist's rifle!
+<p>
 </li>
 
 <li>More recently since 2015, against Jerusalem social services, it seems that after a 2 year legal battle
@@ -4950,7 +4953,7 @@ I feel that scale notation makes it much easier to describe the music theory tec
 <p>
 <address>
 Version: Draft 0.7
-<br>Last update: 2017-06-21T14:22:00Z
+<br>Last update: 2017-06-21T14:38:00Z
 <br><a href="http://www.w3.org/TR/WCAG20/">WCAG</a> blind accessibility conformance:
 This document contains text alternatives for images, and is tab navigable.
 
