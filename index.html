@@ -50,7 +50,7 @@
     <meta name="dcterms.title" content="Avraham Bernstein | Home Page">
     <meta name="dcterms.hasVersion" content="Draft 0.7">
     <meta name="dcterms.date" content="2017-05-22">
-    <meta name="dcterms.modified" content="2017-06-21T15:17:00Z">
+    <meta name="dcterms.modified" content="2017-06-24T20:20:00Z">
     <meta name="dcterms.creator" content="Avraham Bernstein">
     <meta name="dcterms.rightsHolder" content="Avraham Bernstein, Jerusalem Israel">
     <meta name="dcterms.copyrightDate" content="2017">
@@ -897,7 +897,7 @@ Not available Fri. evening beginning 1 hour before sunset until Sat. night 1 hou
 <p>
 <ul>
 <li><strong>home page:</strong> <a href="http://purl.org/avraham.bernstein">http://purl.org/avraham.bernstein</a> [this file]</li>
-<li><strong>linkedin:</strong> <a href="https://www.linkedin.com/in/avrahambernstein">https://www.linkedin.com/in/avrahambernstein</a> [last update: 2017-06-20]</li>
+<li><strong>linkedin:</strong> <a href="https://www.linkedin.com/in/avrahambernstein">https://www.linkedin.com/in/avrahambernstein</a> [last update: 2017-06-23]</li>
 <li><strong>cv:</strong> <a href="http://purl.org/avraham.bernstein/cv">http://purl.org/avraham.bernstein/cv</a> [pdf version of linkedin profile]</li>
 <li><strong>github:</strong> <a href="https://github.com/avraham-bernstein">https://github.com/avraham-bernstein</a> [under construction]</li>
 <li><strong>professional blog:</strong> <a href="http://purl.org/avraham.bernstein/blog">http://purl.org/avraham.bernstein/blog</a> [under construction]</li>
@@ -4576,7 +4576,21 @@ However I found in the majority of C++ projects that I encountered,
 either C++ is used in a simplistic way with very shallow class hierarchies,
 or alternatively by an inexperienced designer/architect who has created very deep hierarchies that are extremely brittle with <a href="https://en.wikipedia.org/wiki/Coupling_(computer_programming)">tightly coupled</a> class dependencies,
 or in performance sensitive and embedded real-time projects most of the programmers do not understand the language internals sufficiently in order to realize what language features cannot be used in such an environment.
-Therefore I prefer to write C code with an object oriented flavor, i.e. using a context pointer, and to use composition instead of inheritance, and to use interfaces (i.e. jump tables) wrapped with macros instead of C++ abstract classes with virtual functions. By the way, this is the philosophy behind the relatively new Go language - which I feel is ideally suited to become the new important system programming language, and web backend server language. By the way I am in good company, with <a href="https://developers.slashdot.org/story/15/03/10/2038228/was-linus-torvalds-right-about-c-being-so-wrong">Linus Torvalds</a> and <a href="https://golang.org/doc/faq">Rob Pike and Ken Thompson</a>. Remember Google has embraced Go precisely for these reasons.
+Therefore I prefer to write C code with an object oriented flavor,
+i.e. using a context pointer, and to use composition instead of inheritance,
+and to use interfaces (i.e. jump tables) wrapped with macros instead of C++ abstract classes with virtual functions.
+By the way, this is the philosophy behind the relatively new Go language
+- which I feel is ideally suited to become the new important system programming language,
+and web backend server language.
+By the way I am in good company, with
+<a href="https://developers.slashdot.org/story/15/03/10/2038228/was-linus-torvalds-right-about-c-being-so-wrong">Linus Torvalds</a>
+and <a href="https://golang.org/doc/faq">Rob Pike and Ken Thompson</a>.
+Remember Google has embraced Go precisely for these reasons.
+<br>I am pragmatic. In spite of my reservations about the use of C++ there are certain application domains
+where it is the best tool for the job, e.g. compiler construction where AST's
+are easily represented by a deep class hierarchy. Of course it is possible to use
+C with structures of tagged unions, and switch statements according to the tag,
+but C++ is much cleaner.
 <p>
 Note about TCL: TCL's popularity is fading.
 At the high end, it has been replaced by Python, and at the low end by Lua.
@@ -4962,7 +4976,7 @@ I feel that scale notation makes it much easier to describe the music theory tec
 <p>
 <address>
 Version: Draft 0.7
-<br>Last update: 2017-06-21T15:17:00Z
+<br>Last update: 2017-06-24T20:20:00Z
 <br><a href="http://www.w3.org/TR/WCAG20/">WCAG</a> blind accessibility conformance:
 This document contains text alternatives for images, and is tab navigable.
 
