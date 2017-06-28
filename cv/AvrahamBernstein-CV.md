@@ -1,10 +1,12 @@
 # Avraham Bernstein CV
 
-<address>Last update: 2017-06-28T17:07:00Z</address>
+<address>Last update: 2017-06-28T17:24:00Z</address>
 	
 ## 1.0 Contact Information
 
 **email/skype/pgp:** [Avraham.Bernstein@gmail.com](mailto:avraham.bernstein@gmail.com)
+
+**pgp-id:** [E6647D2F](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x86EFCDAEE6647D2F)
 
 **tel:IL:mobile/whatsapp:** +972.54.641-0955
 
