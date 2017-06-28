@@ -1,6 +1,6 @@
 # Avraham Bernstein CV
 
-<address>Last update: 2017-06-28T18:35:00Z
+<address>Last update: 2017-06-28T23:00:00Z
 
 Copyright &copy; 2017 Avraham Bernstein, Jerusalem ISRAEL. All rights reserved.
 
@@ -15,11 +15,13 @@ License: Except where otherwise noted, this work is licensed under the Creative 
 
 **tel:IL:mobile/whatsapp:** +972.54.641-0955
 
+**tel:US:mobile:** +1.845.402-0023
+
 **www-linkedin:** [https://www.linkedin.com/in/avrahambernstein](https://www.linkedin.com/in/avrahambernstein)
 
-**www-home:** [http://purl.org/avraham.bernstein](http://purl.org/avraham.bernstein)
-
 **cv:** [http://purl.org/avraham.bernstein/cv](http://purl.org/avraham.bernstein/cv) \[this file]
+
+**www-home:** [http://purl.org/avraham.bernstein](http://purl.org/avraham.bernstein)
 
 ## 2.0 Overview
 
