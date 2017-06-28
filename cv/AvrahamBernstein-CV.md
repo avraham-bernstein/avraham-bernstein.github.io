@@ -1,7 +1,12 @@
 # Avraham Bernstein CV
 
-<address>Last update: 2017-06-28T17:24:00Z</address>
-	
+<address>Last update: 2017-06-28T18:15:00Z
+
+Copyright &copy; 2017 Avraham Bernstein, Jerusalem ISRAEL. All rights reserved.
+
+License: Except where otherwise noted, this work is licensed under the Creative Commons License [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
+</address>
+
 ## 1.0 Contact Information
 
 **email/skype/pgp:** [Avraham.Bernstein@gmail.com](mailto:avraham.bernstein@gmail.com)
@@ -188,7 +193,7 @@ Major programs were written in APL.
 
 ### 1980-82: Economist & Programmer: Simulation of Electric Utility Power Systems, @JWAA, Washington DC
 
-I did simulations of electric power generation and transmission systems where the results were presented at Public Utility Commission rate hearings. 
+I did simulations of electric power generation and transmission systems where the results were presented at Public Utility Commission rate hearings.
 Relied both on my programming and economic expertise.
 
 ### 1977-78: Economist & Intervenor at ECAP'77 Ontario Hydro Costing and Pricing Hearings, @Ontario Energy Board, Toronto Canada
