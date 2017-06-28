@@ -1,6 +1,6 @@
 # Avraham Bernstein CV
 
-<address>Last update: 2017-06-28T18:15:00Z
+<address>Last update: 2017-06-28T18:35:00Z
 
 Copyright &copy; 2017 Avraham Bernstein, Jerusalem ISRAEL. All rights reserved.
 
