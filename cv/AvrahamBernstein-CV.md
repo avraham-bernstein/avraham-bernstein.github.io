@@ -1,6 +1,6 @@
 # Avraham Bernstein CV
 
-<address>Last update: 2017-06-28T17:05:00</address>
+<address>Last update: 2017-06-28T17:07:00Z</address>
 	
 ## 1.0 Contact Information
 
