@@ -1,6 +1,6 @@
 # Avraham Bernstein CV
 
-<address>Last update: 2017-06-28</address>
+<address>Last update: 2017-06-28T17:05:00</address>
 	
 ## 1.0 Contact Information
 
@@ -11,6 +11,8 @@
 **www-linkedin:** [https://www.linkedin.com/in/avrahambernstein](https://www.linkedin.com/in/avrahambernstein)
 
 **www-home:** [http://purl.org/avraham.bernstein](http://purl.org/avraham.bernstein)
+
+**cv:** [http://purl.org/avraham.bernstein/cv](http://purl.org/avraham.bernstein/cv) \[this file]
 
 ## 2.0 Overview
 
