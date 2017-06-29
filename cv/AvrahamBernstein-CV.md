@@ -1,27 +1,29 @@
 # Avraham Bernstein CV
 
-<address>Last update: 2017-06-28T23:00:00Z
+<address>Last update: 2017-06-29T11:57:00Z
 
 Copyright &copy; 2017 Avraham Bernstein, Jerusalem ISRAEL. All rights reserved.
 
 License: Except where otherwise noted, this work is licensed under the Creative Commons License [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 </address>
 
-## 1.0 Contact Information
+## 1.0 Contact Information & Links
 
 **email/skype/pgp:** [Avraham.Bernstein@gmail.com](mailto:avraham.bernstein@gmail.com)
 
 **pgp-id:** [E6647D2F](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x86EFCDAEE6647D2F)
 
+**location:** Jerusalem ISRAEL, **tz:** UTC +2:00/+3:00 \[winter/summer]
+ 
 **tel:IL:mobile/whatsapp:** +972.54.641-0955
 
 **tel:US:mobile:** +1.845.402-0023
 
+**www-home:** [http://purl.org/avraham.bernstein](http://purl.org/avraham.bernstein)
+
 **www-linkedin:** [https://www.linkedin.com/in/avrahambernstein](https://www.linkedin.com/in/avrahambernstein)
 
 **cv:** [http://purl.org/avraham.bernstein/cv](http://purl.org/avraham.bernstein/cv) \[this file]
-
-**www-home:** [http://purl.org/avraham.bernstein](http://purl.org/avraham.bernstein)
 
 ## 2.0 Overview
 
