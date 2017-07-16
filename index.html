@@ -50,7 +50,7 @@
     <meta name="dcterms.title" content="Avraham Bernstein | Home Page">
     <meta name="dcterms.hasVersion" content="Draft 0.7">
     <meta name="dcterms.date" content="2017-05-22">
-    <meta name="dcterms.modified" content="2017-06-29T12:22:00Z">
+    <meta name="dcterms.modified" content="2017-07-16T08:15:00Z">
     <meta name="dcterms.creator" content="Avraham Bernstein">
     <meta name="dcterms.rightsHolder" content="Avraham Bernstein, Jerusalem Israel">
     <meta name="dcterms.copyrightDate" content="2017">
@@ -95,7 +95,7 @@ gZpxGhkCn4g7xBFiocMJRj+ckcDfF/gBCTJDUqZhh4kAAAAASUVORK5CYII="/>
 <h1 tabindex="0" id="top">Avraham "Abe" Bernstein | Home Page</h1>
 <address>
 Version: Draft 0.7
-<br>Last update: 2017-06-29T12:22:00Z
+<br>Last update: 2017-07-16T08:15:00Z
 </address>
 <p>
 <figure>
@@ -4441,7 +4441,7 @@ TEST ENV: Ubuntu 16.04, gcc/clang
 <details>
 <summary><span class="readmore"/></summary>
 <address>
-Github repo: <a href="https://github.com/avraham-bernstein/ooc">mini-boost.h</a>
+Github repo: <a href="https://github.com/avraham-bernstein/mini-boost.h">mini-boost.h</a>
 <br>Status: Soon. (Already implemented. Just organizing the code for xfer to Github).
 </address>
 <ol>
@@ -4480,7 +4480,7 @@ Github repo: <a href="https://github.com/avraham-bernstein/ooc">ooc</a>
 <br>Status: Soon. (Already implemented. Just organizing the code for xfer to Github).
 </address>
 <p>
-OOC efficiently handles composite classes, and a limited type of inheritance via interfaces (similar to Go).
+OOC efficiently handles composite classes and interfaces (similar to Go).
 <p>
 And OOC solves the C namespace problem. All class methods, except for "new", are implemented as function pointers,
 where the actual function is implemented as a "static". Therefore each class can have their own private
@@ -4574,27 +4574,71 @@ I would like to learn a new language called <a href="https://nim-lang.org/">Nim<
 generated automatically via the <a href="https://github.com/kripken/emscripten/wiki/WebAssembly">Emscripten C/C++ "transpiler"</a> - and not to be produced manually. Therefore we could apply state-of-the-art C/C++ obfuscation techniques in order to protect keys, and in general to protect the intellectual property of the app developer. Since WASM runs at least an order of magnitude faster than Javascript, the extra overhead associated with the obfuscation will usually not be significant. Here is a document on the <a href="https://github.com/WebAssembly/design/blob/master/Rationale.md">design rationale of WASM</a>.
 <p>
 Note about C++:
-Theoretically I agree that it is a superb language, but it has too steep of a learning curve.
-True many projects could benefit from an object oriented architecture.
-However I found in the majority of C++ projects that I encountered,
-either C++ is used in a simplistic way with very shallow class hierarchies,
-or alternatively by an inexperienced designer/architect who has created very deep hierarchies that are extremely brittle with <a href="https://en.wikipedia.org/wiki/Coupling_(computer_programming)">tightly coupled</a> class dependencies,
-or in performance sensitive and embedded real-time projects most of the programmers do not understand the language internals sufficiently in order to realize what language features cannot be used in such an environment.
-Therefore I prefer to write C code with an object oriented flavor,
-i.e. using a context pointer, and to use composition instead of inheritance,
-and to use interfaces (i.e. jump tables) wrapped with macros instead of C++ abstract classes with virtual functions.
+It is not politically correct to say this, but C++ is too dangerous to use for the average project.
+<i>Even though during the the architecture phase of a project,
+it is critically important to identify common classes and objects, interfaces, and frameworks,
+I find that C++ object oriented implementations are highly error prone, and are sinkholes for R&D manpower resources.</i>
+Inexperienced architects and programmers create class hierarchies that are extremely brittle with
+<a href="https://en.wikipedia.org/wiki/Coupling_(computer_programming)">tightly coupled</a> class dependencies.
+In performance sensitive and embedded real-time projects most programmers do not understand the C++ language internals
+sufficiently in order to realize which language features cannot be used in such an environment.
+Therefore I prefer to write C code with an object oriented "flavor".
+In my professional opinion, it is much safer to develop using the simpler,
+but tried and true, <a href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)">encapsulation</a>,
+<a href="https://en.wikipedia.org/wiki/Object_composition">composition</a>,
+and <a href="https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)">interface</a> programming techniques.
 By the way, this is the philosophy behind the relatively new Go language
 - which I feel is ideally suited to become the new important system programming language,
 and web backend server language.
-By the way I am in good company, with
+And I am in good company, with
 <a href="https://developers.slashdot.org/story/15/03/10/2038228/was-linus-torvalds-right-about-c-being-so-wrong">Linus Torvalds</a>
 and <a href="https://golang.org/doc/faq">Rob Pike and Ken Thompson</a>.
-Remember Google has embraced Go precisely for these reasons.
-<br>I am pragmatic. In spite of my reservations about the use of C++ there are certain application domains
-where it is the best tool for the job, e.g. compiler construction where AST's
-are easily represented by a deep class hierarchy. Of course it is possible to use
-C with structures of tagged unions, and switch statements according to the tag,
-but C++ is much cleaner.
+Remember, Google has embraced Go precisely for the above reasons.
+<p>
+I am pragmatic. In spite of my reservations about the use of C++ there are certain application domains
+where it is the best tool for the job, e.g. compiler construction
+where <a href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">ASTs</a> are easily represented by a deep class hierarchy.
+<p>
+The most useful syntax feature in C++ that is missing from <a href="https://en.wikipedia.org/wiki/C11_(C_standard_revision)">C11</a> is namespaces.
+Therefore in C, it is very important to adhere to a rigorous naming convention. I suggest the following:
+<ol>
+<li><b>Global Scope:</b> &lt;UpperCamelCaseModuleName&gt;_[&lt;UpperCamelCaseSubmoduleName&gt;_ ...]&lt;LexicalType&gt;_&lt;lowerCamelCase&gt;[_&lt;suffix&gt;]
+</li>
+<li><b>File Scope:</b> &lt;LexicalType&gt;_&lt;lowerCamelCase&gt;
+</li>
+<li><b>Function|Struct|Union Scope:</b> &lt;lowerCamelCase&gt;[_&lt;suffix&gt;]
+</li>
+<li>Lexical Types:
+<ul>
+<li><b>C</b> = class
+<li><b>F</b> = function
+<li><b>S</b> = structure
+<li><b>T</b> = typedef
+<li><b>U</b> = union
+<li><b>V</b> = variable
+</li>
+</ul>
+<li>Suffixes:
+<ul>
+<li><b>arg</b> = function argument
+<li><b>arr</b> = array
+<li><b>ctx</b> = context
+<li><b>fnc</b> = function pointer
+<li><b>obj</b> = object
+<li><b>ptr</b> = pointer
+<li><b>t</b> = typedef | struct | union [function scope]
+<li><b>str</b> = zero terminated string
+</ul>
+<li>Examples:
+<ul>
+<li><b>global typedef:</b> <br>typedef struct CryptoLite_Prng_Xorshift1024StarPlus_<b>S</b>_ctx { int p; uint64_t s[16]; } CryptoLite_Prng_Xorshift1024StarPlus_<b>T</b>_ctx;
+<li><b>global function:</b> <br>extern uint64_t CryptoLite_Prng_Xorshift1024StarPlus_<b>F</b>_next(CryptoLite_Prng_Xorshift1024StarPlus_<b>T</b>_ctx * ctx_ptr);
+<li><b>static|file-scope function:</b> <br>static uint64_t <b>F</b>_rotl64(uint64_t x, int k);
+</li>
+</ul>
+</li>
+</ol>
+
 <p>
 Note about TCL: TCL's popularity is fading.
 At the high end, it has been replaced by Python, and at the low end by Lua.
