@@ -1,0 +1,650 @@
+{% set APPENDIX = false %}
+
+# {{TITLE}}
+
+_Version: {{VS}}_
+{{BR}}_Last update: {{DATETIME}}_
+{{BR}}_{{COPYRIGHT}}_
+{{BR}}_{{LICENSE}}_
+
+{% if HEADHUNTER is not defined %}
+
+{% if WRITER == 'html5' %}
+<figure>
+<img title="{{NAME}}" alt="{{NAME}}" src="{{HOME}}/image">
+<figcaption>Secure photo[^secure-photo] of the author, {{NAME}} c. 2010.</figcaption>
+</figure>
+{% else %}
+![Secure photo[^secure-photo] of the author, {{NAME}} c. 2010.]({{HOME}}/image)
+{% endif %}
+
+[^secure-photo]: This secure photo was built using an [oilify](http://docs.gimp.org/en/plug-in-oilify.html) filter and a visible email address [watermark](https://en.wikipedia.org/wiki/Digital_watermarking). It uses [digital camouflage](https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup) that will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate/label it with any other name besides mine. Similarly if a site would maliciously display my photo without my permission in order to imply my association or agreement with them, then it is trivial for anyone who may be suspicious of their claim to ask me for verification by sending me an email.
+
+
+### 0.1 Contact Info & Links
+
+__email/skype/pgp:__ [{{EMAIL}}](mailto:{{EMAIL}})
+{{BR}}__pgp-id:__ [E6647D2F](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x86EFCDAEE6647D2F)
+{{BR}}__location:__ {{CITY}} {{COUNTRY}}, __tz:__ UTC +2:00/+3:00 \[winter/summer]
+{{BR}}__tel-IL-mobile/whatsapp:__ {{TEL_IL|html_encode}} __\[preferred]__
+{{BR}}__tel-US-mobile:__ {{'+1.845.402-0023'|html_encode}}
+{{BR}}__www-home:__ [{{HOME}}]({{HOME}})
+{{BR}}__www-linkedin:__ [{{LINKEDIN}}]({{LINKEDIN}})
+{{BR}}__cv-full-html:__ [{{HOME}}/cv.html]({{HOME}}/cv.html) __\[preferred]__
+{{BR}}__cv-abbrev-html:__ [{{HOME}}/cv-abbrev.html]({{HOME}}/cv-abbrev.html)
+{{BR}}__cv-full-docx:__ [{{HOME}}/cv.docx]({{HOME}}/cv.docx)
+{{BR}}__cv-abbrev-docx:__ [{{HOME}}/cv-abbrev.docx]({{HOME}}/cv-abbrev.docx)
+
+
+{% if WRITER == 'html5' %}
+### 0.2 Table Of Contents
+
+{{TOC}}
+{% endif %}
+
+{% endif %}{# !HEADHUNTER #}
+
+
+## 1.0 Summary
+
+I am a computer scientist and technologist. I work at the CTO level.
+I am innovative and creative. I have a strong background in economics. I communicate well both orally and in writing.
+
+I am a master S/W engineer and architect of industrial strength systems. 
+I am "hands-on". Typically due to the complex and novel nature of the problems that I solve, first I need to build [proofs of concept (POC)](https://en.wikipedia.org/wiki/Proof_of_concept) before completing architectural and design specifications.
+After 35 years I still feel it is the most creative profession that I could have chosen. 
+
+For the past 13 years, I worked primarily in the field of cybersecurity with a specialty in [S/W obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)), i.e. anti-reverse engineering techniques.{% if APPENDIX %} See [Appendix A](#appendix-a-software-obfuscation).{% endif %}
+
+I have also worked in a broad range of other application domains where I have quickly come up to speed, and functioned at an expert level.
+These domains include [bioinformatics](#consultant-bioinformatics-pcr-algorithms), [cryptography](#patents-under-development), [transportation](#vp-rd-urban-traffic-vehicle-route-guidance), [blind vision](#cto-blind-accessibility-hw-sw-to-enable-viewing-of-digital-images-maps), [accessibility](#sw-architect-implementation-quadriplegic-pc-accessibility), [VLSI CPU design](#ceo-cto-sw-architect-implementation-of-sw-toolchain-for-dspg-pine-cpu), and [factory automation](#sw-architect-implementation-shop-floor-production-control-sfpc-system-bari-ii). 
+For example just a few years ago, after only a few months in the new (for me) field of bioinformatics, I developed a new [PCR Ct](http://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/qpcr-education/pcr-understanding-ct-application-note.html) calculation algorithm which overcomes the problem of [PCR inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors). I am in the process of patenting this algorithm.
+I was fortunate that my mentor was the one who developed the original algorithm - which is the one most cited in this field in Google Scholar. 
+
+Invariably I am able to apply knowledge and [meta-knowledge](https://en.wikipedia.org/wiki/Metaknowledge) that I have acquired from other fields, and apply it to the new one.
+A common technique that I use is to create a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) {% if APPENDIX %}(see [Appendix B](#appendix-b-domain-specific-languages)){% endif %} that allows me to write a formal specification of a problem. 
+With a little ingenuity the DSL can be used to create a working command line application, and it usually forms the basis of an automated testing framework. I successfully used a DSL to describe a [shop floor production control system](#sw-architect-implementation-shop-floor-production-control-sfpc-system-bari-ii), along with a compiler that executed/implemented the shop floor. And I used a DSL to describe a [CPU architecture](#ceo-cto-sw-architect-implementation-of-sw-toolchain-for-dspg-pine-cpu), along with a compiler that automatically generated a simulator/debugger, assembler, and C compiler. 
+A common programming technique that I use is [metaprogramming](https://en.wikipedia.org/wiki/Metaprogramming) 
+with templates {%if APPENDIX %}(see [Appendix C](#appendix-c-meta-programming-with-jinja2-templates-macros)){% endif %}
+that allows me to automatically generate code by creating intelligent macros regardless of the underlying target programming language.
+
+I am an [expert generalist](http://99u.com/articles/7269/picasso-kepler-and-the-benefits-of-being-an-expert-generalist), and an [autodidact polymath](http://autodidactpolymath.com/autodidact-polymath-definition/), i.e. a self-learner in new fields who achieves expertise quickly. I know how to find and utilize mentors who are experts in the new field. I am also a good mentor myself. I slavishly attend to my [continuing education](#continuing-education).
+
+These are the reasons why I bring critically important value added to the projects on which I work.
+
+## 2.0 Work Experience
+
+
+### 2017 - present: Consultant: Cybersecurity
+
+_@Self-Employed, Jerusalem:_
+
+#. Developing my own [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) [compiler](https://en.wikipedia.org/wiki/Compiler) for C/C++ and for [Web Assembly (WASM)](http://webassembly.org/). Still in stealth mode.
+#. Collaborating with the compiler company Semantic Designs [Legacy Software Migration](http://www.semdesigns.com/Products/Services/LegacyMigration.html) tools for projects in Israel. 
+#. I am a mentor for the Jerusalem [Mass Challenge](http://israel.masschallenge.org/) start-up hub.
+
+
+### 2011-17: Security Manager & Architect: OTT Internet Pay TV System: Secure Player
+
+_@Viaccess-Orca, Ra'anana - a subsidiary of Orange FR, and @Discretix/SansaSecurity, Netanya - now merged into ARM:_
+
+#. I was head of security for their [Over-The-Top (OTT)](https://en.wikipedia.org/wiki/Over-the-top_content) Internet pay TV product for 6 years. I joined the project shortly after its inception. When I left there were 40M subscribers, and there were no successful hacks in the field.
+{% if FULL %}
+	* The company fired me because they were in financial shock due to the sharp drop in their primary source of revenue from [smart card](https://en.wikipedia.org/wiki/Smart_card) sales for their [Conditional Access (CA)](https://en.wikipedia.org/wiki/Conditional_access) product which are being annihilated by the pure OTT operators such as Netflix and Amazon Prime.
+{% endif %}
+
+#. I was responsible for end-to-end security policy and architecture, and inclusion and implementation of security related programming utilities.
+{% if FULL %}
+	* We used the [Jira](https://www.atlassian.com/software/jira/agile) system for agile project management.
+{% endif %}
+
+#. The supported client devices were Android and IOS phones and tablets. The subscriber ID was based upon the built-in Android device ID, and the built-in IOS device-application ID, respectively.
+
+#. We supplied a reference application to our customers who were our [CA](https://en.wikipedia.org/wiki/Conditional_access) broadcaster/operator customers who needed to provide an [OTT](https://en.wikipedia.org/wiki/Over-the-top_content) option to their subscribers. They customized our reference application to their needs. We did not have a direct relationship with the subscribers. Our operators typically took a very long time to do their integration and QA before they would release/push their application to their subscribers. The fundamental technical flaw with this business model was that when we found a serious bug or a security problem in the core modules, the operators would typically delay for 6-12 months before pushing the update to their subscribers. Eventually I architected a solution that provided good enough security {%if FULL %}(see [below](#new-config) below){% endif %}, while still satisfying the QA needs of our customers.
+
+#. The original [DRM](https://en.wikipedia.org/wiki/Digital_rights_management) was [PlayReady](https://en.wikipedia.org/wiki/PlayReady). Later we supported Google [Widevine](http://www.widevine.com/), and the [Viaccess-Orca](http://www.viaccess-orca.com/content-protection.html) proprietary DRM.
+
+#. For security reasons, all client S/W was implemented in native machine code, i.e. in C/C++, except for the UI which was implemented in Java and Objective-C, for Android and IOS respectively.
+
+#. Some S/W security tools we purchased, namely the [InterTrust/WhiteCryption](https://www.intertrust.com/products/application-security/) [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compiler and white-box encryption tools.
+{% if FULL %}
+	* _Prima facie_ these tools seemed very expensive. The combined package costs $100+K, plus the standard 15% annual maintenance fee. However having been involved in the development of similar tools at Cisco-NDS (see below), they are very complex and can easily consume 5-10 man-years of development. Therefore buying them off-the-shelf made economic sense. When we first purchased the obfuscating compiler, the product was new, and had bugs. On account of my background having built a similar tool myself, I worked closely with the vendor's architect to help debug their product, and suggested and specified feature improvements.
+
+	* The primary technique used in state-of-the-art _binary_ obfuscation is to randomly change program flow by using opaque conditions and jumps that fool the compiler that seem to grossly change the flow, even though the final result of program execution is the same. Note that it is the job of our application build process to compile and link in a way that minimizes the use of global symbols.
+
+	* White-box encryption relies upon wrapped keys and mathematical transformations that make it very difficult to recognize that a well known cryptographic algorithm is being executed, e.g. AES or SHA-1.
+{% endif %}
+
+#. Many S/W security tools I architected and implemented in-house{% if FULL %}:{% else %}, including an Android root detection algorithm.{% endif %}
+{% if FULL %}
+
+	a. Designed a sophisticated Android root detection mechanism.
+	
+		* Obvious signs of a rooted Android device can be determined easily from the the device's [build properties](https://developer.android.com/studio/build/index.html). But other rooting techniques are not as clear, so I developed a [fuzzy logic](https://en.wikipedia.org/wiki/Fuzzy_logic) scoring algorithm. Based upon subscriber feedback, my rate of [false positives](https://en.wikipedia.org/wiki/False_positives_and_false_negatives) was extremely low.
+		* Unfortunately near the end of my tenure, the big studios, e.g. Disney and Sony, relented on their former requirement to refuse to play on rooted devices due to significant loss of royalties from inexpensive off-the-shelf rooted devices from the Far East that represented over 25% of subscriber devices. Therefore the root detection mechanism had to become much more sophisticated. Either I had to detect the existence of a hacker configured device, or alternatively I had to recognize dynamic behavior that an actual attack was underway, e.g. memory tampering, the device was streaming, a debugger process was running, or the device was attached to the Android `adb` utility. However all Android developers and field engineers must use `adb`. Therefore I created a temporary (i.e. maximum 72 hour) device ID specific `adb` exception mechanism in the cloud for authorized devices. Since the vast majority of attackers use `adb` in order to launch, or at least to prepare, an attack, this anti-`adb` mechanism is one of the most important security features.
+		* A major security hole has been created by the new Chrome O/S feature that uses a [Virtual Machine (VM)](https://en.wikipedia.org/wiki/Virtual_machine) to execute Android 7.0+ apps. We can continue to detect and to block other VM environments, but from a marketing perspective once the popularity of Chrome O/S reaches a significant threshold, it may no longer be possible to block it.
+		* Because the root detection mechanism has been diluted, it became necessary to add security functionality to the server side. For example it is easy to detect that a subscriber who is in the 95th percentile of monthly content viewing hours, or one who views content simultaneously from multiple IP addresses, or whose IP address is volatile from geographically disparate regions. And I worked with our data scientists to collect and log internal data from the client that could predict abusive usage patterns. With 40M subscribers, this give us a huge amount of "big data" to mine.
+
+	b. Specified for WhiteCryption an encrypted [UPX](https://upx.github.io/)-like [DSO](https://en.wikipedia.org/wiki/Library_(computing)) (dynamic shared object library = `.so` file) loader that required run-time authorization in order to load and decrypt - without the knowledge or support from the original supplier of the DSO.
+
+		* Normally [UPX](https://upx.github.io/) automatically decrypts/unpacks a [DSO](https://en.wikipedia.org/wiki/Library_(computing)) upon load, without any special run-time authorization. This new mechanism prevents an attacker from doing a "reconnaissance" load.	
+
+	c. Invented a [DSO](https://en.wikipedia.org/wiki/Library_(computing)) library mechanism for Android/Linux which officially exports no symbols!
+
+		* Implemented using the gcc/clang compiler [constructor attribute](https://stackoverflow.com/questions/2053029/how-exactly-does-attribute-constructor-work), along with multi-threading.
+		* Eventually could be applied to communication with vendor [DSO](https://en.wikipedia.org/wiki/Library_(computing)) libraries without their support or knowledge, by binary editing of the the ELF file similar to the UPX mechanism (immediately above).
+
+	d. Architected, but did not implement, a [DSO](https://en.wikipedia.org/wiki/Library_(computing)) library randomizer using [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) editing utilities. This would allow a different version of the package to be downloaded into a client device, say according to the 4-bit hash of the device ID.		
+
+	e. Designed a dynamic mechanism for testing code integrity and read-only data integrity.
+
+	f. Designed a light weight _distributed_ encryption library for situations where performance consideration precluded use of AES. In order to preclude a single point of attack, the library was small enough to allow every module that needed it to have its own private and customized copy.  This library was implemented as an `.h` file collection of `static` and `inline` functions and variables. Every instance had its own unique static and dynamic [initialization vector (IV)](https://en.wikipedia.org/wiki/Initialization_vector), and every instance had its own unique masks for the cryptographic constants that it used. (This uniqueness was ensured by using precompiled preprocessor random number tables that were designed to be different according to the preprocessor module ID selector of including C/C++ module). Otherwise if the constants were not masked, then simply looking up the constants on the Internet would easily reveal the algorithms. The masking technique had to be extremely efficient, but it also had to outsmart the optimizing compiler's [constant folding](https://en.wikipedia.org/wiki/Constant_folding) feature.
+
+	g. Architected a secure and efficient data collection and anomaly logging utility, where the data was sent to the web servers for off-line analysis.
+
+	h. Designed a mechanism for light weight randomized encryption of function arguments to foil stack probing so that no two sets of encrypted function parameters were ever the same even when the in-the-clear parameters were in fact identical. Implementation was via a light weight [homomorphic encryption](https://en.wikipedia.org/wiki/Homomorphic_encryption) algorithm that I invented.
+
+	i. Designed a light weight randomized obfuscation of all [libc](https://en.wikipedia.org/wiki/C_standard_library) calls - in order to blind dynamic reverse engineering tools which use the libc calls as an anchor.
+
+	j. Architected, but did not implement, a replacement of the built-in [libc](https://en.wikipedia.org/wiki/C_standard_library) calls with an obfuscated version of [musl](https://www.musl-libc.org/).
+
+	k. Architected, but did not implement, an efficient secure logging/debug utility. We did not want to allow our foreign commercial agents to have access to the in-the-clear log messages. And without dynamic configuration/filtering of the log messages, the massive debug communication traffic would cause playback [jitter](https://en.wikipedia.org/wiki/Jitter). 
+
+	l. <a id="new-config"/>Architected, but did not implement, a secure static and dynamic configuration mechanism including a cryptographic key ladder mechanism. Only the operator specific master key had to be "baked", by using obfuscation, into the release of the operator specific [DSO](https://en.wikipedia.org/wiki/Library_(computing)).
+
+		* This configuration file was a replacement for the original awkward mechanism that baked all keys into the operator specific DSO. Since the operators resisted frequent updates of their DSOs, we were not able to make agile and frequent key changes on the servers.
+		* This mechanism would also allow us to make agile changes to the Android security database, e.g. to the list of packages commonly found on hacker devices, and to the list of device drivers used for O/S builds designed to run on virtual machines.
+		* Generally our customers, i.e. the operators, were far less resistant to pushing relatively frequent database changes to their subscribers - as opposed to code updates. But it required that we modify our application architecture to make it data driven wherever possible.
+<p>		
+{% endif %}
+
+#. In a nutshell, my primary job was to protect the content, content decryption keys, and subscriber keys, on the client devices. I made it nearly impossible for an attacker to engage in _static_ [reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering), and made it extremely difficult to use the state-of-the-art _dynamic_ reverse engineering tools such as the [IDA Hex-Rays](https://www.hex-rays.com/) decompiler/debugger.
+{% if FULL %}
+	* Due to the challenging and novel nature of the features that I architected, I usually built a working proof-of-concept (POC) before handing the final specification to the programmers. Typically my implementation was language was C, as opposed to C++, because the project was comprised of both C and C++ modules, so using a C interface was the lowest common denominator.
+
+	* Due to the large number of preprocessing and postprocessing utilities in our build process, I had to do my own [devops](https://en.wikipedia.org/wiki/DevOps) "plumbing" changes in order to do end-to-end testing of my POCs.
+{% endif %}
+
+#. Unfortunately the bottom line with respect to security is that no matter how well protected the client S/W is, you have to expect that it will eventually be hacked. Without pushing a new randomly obfuscated version, say every 60-90 days, no protection scheme will work.
+
+
+### 2016-16: Consultant: Cybersecurity Protection of a Small Business With Extremely High Security Concerns
+
+{% if FULL %}
+*@Anonymous:*
+
+#. The client works on an extremely politically sensitive topic. 
+#. Their WordPress web site was being regularly attacked. 
+#. Their researchers need to remain anonymous - for their own personal safety. 
+#. Their file sharing system is based upon Google Drive. 
+#. Their PCs and smartphones are not hardened. 
+#. No one used multi-factor authentication. 
+#. The only PC operating system with which they are familiar is Windows. 
+#. First I did a risk analysis, and then started them on a series of incremental steps to improve their security situation.
+{% endif %}
+
+
+### 2010-12: Part-time CTO: US Agricultural Trading Company with Nigeria
+
+{% if FULL %}
+*@Anonymous:*
+
+My job was to find hi-tech agricultural products that the company needed to purchase, or that I felt would be worthwhile for them to purchase. I would go to the annual Israel Agritech exhibition, considered to the be the best in the world, to hunt for products and ideas. For example:
+
+#. Portable field hospitals and inexpensive quick-to-assemble modular housing units for flood victims.
+#. Inexpensive moisture proof storage bags that can store 500-1000 kg of grain in humid environments with almost no spoilage, whereas previously nearly 75% of the crops placed in field storage facilities were destroyed from moisture induced rot.
+#. Mold resistant produce containers (up to 20 kg) for storage in humid refrigeration facilities in order to extend shelf life.
+#. Bacteria resistant milk cartons for non-refrigerated storage.
+#. Kits to convert SUVs and light trucks to become off-road bush vehicles.
+#. Expert on industrial scale cassava processing which was formerly the major food staple in Nigeria before they joined OPEC, and may soon again become their major staple when the oil stops flowing because the government will no longer have the financial resources to subsidize imported wheat.
+#. Cement research expert to consult for the largest cement factory in Africa.
+#. Establish a private local area GSM cell phone tower with a 10 km radius range in order to support a cassava plantation/factory to be built in a remote jungle location where cassava naturally grows. The factory was well outside the geographic regions supported by the local mobile telephone companies. The efficiency of the plantation would be greatly increased provided that all the workers had mobile phones even if the communications were restricted to the 300 sq. km. region surrounding the factory.
+#. Bid, in conjunction with the Israel Electric Corporation (IEC), on refurbishing/upgrading an abandoned 200 MW natural gas electrical generation station near the cassava plantation.
+
+{% endif %}
+
+
+### 2010-11: VP R&D: Urban Traffic Vehicle Route Guidance
+
+_@TeleQuest, Jerusalem:_
+
+#. I designed algorithms and a computational infrastructure similar to what [Waze](https://www.waze.com/) does today. 
+#. I implemented these algorithms on Tokyo traffic simulations which is the most traffic congested city in the Western world, and who happen to have a superb traffic data collection system. 
+#. I built [AWS](https://aws.amazon.com/) cloud infrastructure to run real-time traffic simulations.
+#. The simulation S/W was written in Java. Due to the huge size of the simulations, I needed to optimize the Java code - in particular to control garbage collection. 
+#. The  results of the Tokyo simulations were that with a threshold of just 20% guided vehicles on the roads, we could achieve up to a 50% performance decrease in travel times for guided vehicles, with a side effect of 40% decrease for non-guided vehicles. These results were the exact opposite of the competition which generated their own secondary traffic jams once the guided vehicle threshold reached 20% due to their simplistic opportunistic algorithms. I managed a group of 6 people including programmers and mathematicians.
+
+
+### 2010-10: Consultant: Transparent Technical Negotiator of Restricted Hi-Tech Trade with China
+
+{% if FULL %}
+*@Anonymous:*
+
+#. The Chinese wanted to buy a restricted gyroscope for their super high speed trains from Honeywell that is normally used for ICBMs. I proposed to Honeywell that they insert the gyroscope into the center of a tamper proof lead block that weighed say 50-100 kg. For example if the soft membrane surrounding the gyroscope were penetrated with a blade or drill or laser then it would release acid or a binary explosive. Honeywell would be responsible for developing the tamper proof mechanism. They did not have to reveal to the Chinese how they built the mechanism. All they had to do was to give the Chinese a fixed price quote for the custom work. Clearly such a device could not be used on a missile where every extra gram of weight counts, but where the extra weight was of no consequence to the train. Honeywell agreed.              
+#. The Chinese wanted to buy the restricted Green Hills real-time operating system. The US government restricts the export of Green Hills source code, but not products that contain Green Hills' binaries. So I asked Green Hills if I could have the board support package (BSP) developed in Israel which requires access to Green Hills source code, but ship the resulting binaries to China. Green Hills agreed.
+#. The Chinese wanted to buy a drone system from a subsidiary of Israel Aircraft Industries (IAI) which was designed for commercial/industrial use. The system had cruise missile like navigation capabilities with the ability to do terrain contour matching. Since the device inherently required GPS navigational capability, I suggested to IAI that they modify their software so that it would not work within 500 km of the Israeli border, along with a back-door jamming channel - due to the fact that it is not uncommon for the Chinese to resell this type of equipment to the Iranians who regularly announce their religious obligation to wipe Israel off the face of the earth.
+#. An Israeli company which develops expensive VLSI design software, e.g. $50-100K per workstation, was afraid that their Chinese agent would cheat them of their royalties. The initial deal was to sell an older version of the software for a one-time flat fee of 20 licenses, in order that the Chinese dealer would be allowed to sell an unlimited number of the older licenses. But I specified how they should re-architect the next version of their software to be converted to Software As A Service (SaaS) on cloud servers. Each licensed subscriber has a workspace on the cloud where the heavy lifting and "secret sauce" are executed, while the client workstations only act as the UI. It provides excellent security against license theft. This is the new economic and technical model that Microsoft Offices 365 uses for the majority of their subscribers which has become one of their most profitable products.
+
+{% endif %}
+
+
+### 2009-09: Consultant: Bioinformatics PCR Algorithms
+
+_@Syntezza, Jerusalem:_
+
+#. Within 3 months of joining the company and quickly learning the basics of bioinformatics, I discovered a new algorithm using Artificial Intelligence (AI) techniques for handling [PCR inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) - which I am in the process of [patenting](#patents-under-development). 
+#. When I started the project, the client's [MRSA](https://en.wikipedia.org/wiki/Methicillin-resistant_Staphylococcus_aureus) (= a lethal staphylococcus bacteria) detection kit had only a 50% detection rate due to inhibition problems. This result was grossly unacceptable for any medical test. The investors had lost confidence, and were about to pull out.
+#. I improved the test's accuracy to 95%, which was 10% better than their competitors from the pharmaceutical giants. I saved the client from liquidation. 
+#. I stood on the shoulders of the person who developed the original [PCR Ct](http://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/qpcr-education/pcr-understanding-ct-application-note.html) function analytical detection algorithm, [Dr. Tzachi Bar](https://scholar.google.co.il/citations?user=XokRoVQAAAAJ&hl=en), who was my mentor, and who got me up to speed so quickly.
+
+
+### 2004-09: Security Research & Business Development
+
+_@Cisco-NDS, Jerusalem: NDS primary business was providing [Conditional Access (CA)](https://en.wikipedia.org/wiki/Conditional_access) pay TV security systems to satellite TV broadcasters:_
+
+#. I worked on a wide variety of security related projects. My background task was to do code security reviews. Typically secure coding is achieved by [adhering to best programming practices](https://www.youtube.com/watch?v=eL5o4PFuxTY). 
+#. I was a member of the architecture team for their in-house [LLVM](https://llvm.org/) [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compiler. 
+#. I developed techniques using Virtual Machine (VM) technology to crack [Digital Rights Management (DRM)](https://en.wikipedia.org/wiki/Digital_rights_management) schemes, and to subvert the random number generators which are the core initialization process for all cryptographic algorithms.
+#. I worked with the operational security team to track hackers, and to provide stealth techniques for our researchers. 
+#. I arranged for world class security researchers to give seminars, (1) a week long reverse engineering seminar, and (2) a 2 day seminar how to hack with virtual machines.
+#. I wrote the technical bid for securing the 2008 Olympics Beijing Olympics TV broadcasts. 
+#. I researched business cases for providing security services to the computer gaming industry, and for printer ink cartridges. For example sales revenue from premier games can gross $60M in their first 2 weeks, by which time they are typically hacked. Improving security so that the hack can be delayed for another 2 weeks, can increase revenue by 50%. 
+#. I advised senior management on the technical and business merits of potential acquisitions.
+#. I did a very interesting and important non-security related project for senior management, by [data mining](https://en.wikipedia.org/wiki/Data_mining) the company's bug database, that showed that 25% of S/W development manpower was wasted on fixing bugs. And I showed them simple techniques that could reduce this number by 80% {% if APPENDIX %}(see [Appendix D](#appendix-d-top-programming-techniques-for-slashing-bugs)){% endif %}.
+#. I designed a hybrid simulator/emulator debugger for legacy [Set-Top Boxes (STB)](https://en.wikipedia.org/wiki/Set-top_box) that originally could be debugged only with `printf` statements to log files. My new debugger allowed source code on the PC to be debugged using the [MS Visual Studio IDE](https://en.wikipedia.org/wiki/Microsoft_Visual_Studio) debugger while still viewing the results on the STB. Implementation was accomplished by reverse engineering the STB middleware API. 80% of the middleware ran natively on the PC, while the STB low level H/W specific portions were implemented via an agent on the STB that was accessed via API calls that were implemented as [Remote Procedure Calls (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call).
+#. I wrote an automated testing system for a satellite content delivery system for huge content, e.g. delivering ultra high definition movies to cinemas, and print newspapers for remote publishing. I created a [Domain Specific Language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) in order to execute the satellite operations. After studying the Win32 source code of the satellite ground control station, I detected a major conceptual flaw which the architect refused to believe (because testers are not supposed to understand Win32 internals!). So I wrote a progressive test that brought the satellite to its knees at only 25% of its rated capacity. Afterwards the development team used my tool to develop their own unit test scripts, and to execute a system sanity test before checking-in any changes to the source control system.
+
+
+### 2002-03: CTO: Blind Accessibility H/W & S/W To Enable Viewing of Digital Images & Maps
+
+_Virtouch, Jerusalem:_ 
+
+#. My task was to change the company's focus from providing tools for teaching blind children Braille skills to instead provide tools for blind adults to use at work. 
+	* The fact of the matter is that government social services agencies around the world are much more concerned about funding tools that allow the blind to integrate into the work force, and thus become economically self sufficient, versus funding educational tools for blind children.  
+#. Previously the company had developed a [tactile mouse](http://www.avrahambernstein.com/resources/vtplayer.png) that was far too expensive for our target audience (~$350). 
+#. I abandoned the mouse because (a) it was too expensive, and (b) the blind find it very difficult to use mice because mouse movement must be coordinated with the cursor on the screen which they cannot see. 
+#. I developed new algorithms that allowed the blind to read [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) maps using SVG and XML combined with audio cues (by using pitch and volume), and by using an off-the-shelf graphics tablets and stylus (that were much less expensive than our tactile mouse). 
+#. The blind prefer graphic tablets because they inherently have accurate spatial knowledge of their position on the tablet because they can feel it. 
+#. The S/W needs to make a rectilinear mapping of the tablet into a desktop window. 
+#. The same techniques could be used for displaying mathematical functions and geometry. 
+#. I _almost_ saved the company from liquidation. My research was awarded a European FP6 grant of $0.5M Euro that required _matching funds_. But the investors refused to put up the matching funds due to the company's long history of financial failure in the children's market.
+#. The most important business lesson that I learned was that building special purpose H/W for the disabled is a recipe for bankruptcy; but if you can repurpose off-the-shelf H/W, typically designed for gamers, then you can financially succeed in the accessibility/disability market.
+#. The most important personal lesson that I learned was how satisfying it was working with the blind volunteers, and supplying them with a tool that allowed them to "see".
+
+
+### 1999-02: Manager Cable Modem & Router Network Utilities S/W Development Group
+
+_@Vyyo, Jerusalem:_
+{% if FULL %}
+
+#. I managed a team of 3-6 programmers.
+#. I designed a NMS and MIB for cable modems and routers, and I designed the associated embedded SNMP agents.
+#. I designed a hybrid IP connection for cable modems where there was no physical cable upstream channel. Instead the upstream channel used a telephone modem (ATA), while the downstream channel used the cable modem. Head end network equipment for both interfaces was supplied by the cable operator. My solution was to dynamically modify the arp table of the edge router. For typical surfing, the effective downstream rate was as fast as a pure cable solution. The company applied for a patent.
+#. I greatly improved the efficiency of the laboratory modem speed stress testing by a factor of 10-100 by using a "steepest descent" search algorithm instead of a binary search algorithm. Reduced testing time per modem from hours to minutes.
+#. I designed a virtual testing lab with 64K modems and 512K PCs via multiplexing the physical connections. The test lab had only 256 physical cable modems, 4 physical PCs with 8 network connections each, 1 cable router, and 2 24-port layer-2 programmable switches. By dynamically editing the PC MAC addresses, and by dynamically editing the MAC filters on the network switches, I was able to stress test the router into believing that it faced 64K modems, and the modems into believing that each one was shared by 16 PCs.
+
+{% else %}
+{{BR}}I managed a team of 3-6 programmers.
+{% endif %}
+
+
+### 2001-01: Consultant: Network Management System (NMS) for FSO Devices
+
+{% if FULL %}
+_@MRV / Jolt, Jerusalem._
+
+#. The [free space optics (FSO)](https://en.wikipedia.org/wiki/Free-space_optical_communication) repeaters enable fiber optic cables to be extended by kilometers through the
+air.
+#. The devices were made of digital H/W with no need for a CPU.
+#. In order to provide network management capability, I selected an inexpensive micro controller that could
+interface with the FSO H/W, had an Ethernet port, and a built-in Java interpreter.
+#. I designed the MIB, and an embedded program that could interface with the H/W.
+#. I designed a simple HTTP server that acted as an SNMP proxy agent.
+{% endif %}
+
+
+### 2000-01: Contract Programmer: Win32 Asynchronous Network Driver Software For A VisualBasic Project
+
+{% if FULL %}
+_@Inex-Zamir, Jerusalem._
+{% endif %}
+
+
+### 1998-99: Contract Programmer: GCC Compiler Port for a 128-Core Stack Machine
+
+{% if FULL %}
+_@Fourfold, Jerusalem:_
+
+#. This was a very challenging [gcc](https://gcc.gnu.org/) port because the architecture had no registers,
+or alternatively an infinite number of registers,
+while RAM access was highly unusual in order to accommodate the 128 cores. 
+#. I needed to add pragmas for co-processing.
+#. The machine instruction set was [FORTH](https://en.wikipedia.org/wiki/Forth_(programming_language))-like,
+so it presented some unusual optimization challenges, 
+because it was so unlike the standard [CISC](https://en.wikipedia.org/wiki/Complex_instruction_set_computer) and [RISC](https://en.wikipedia.org/wiki/Reduced_instruction_set_computer) instruction sets.
+#. The resulting C compiler worked and produced efficient code.
+#. I noted early in the project that the method for emitting target object code was well suited to an object
+oriented design, even though at the time the gcc compiler collection only interfaced with C code. 
+In order to lower the "impedance" of using C++, I created a static "wrapper" for the C++ classes
+that was acceptable to a C project.
+#. The final source code was extremely repetitive. 
+Therefore I developed a preprocessor in [TCL](https://en.wikipedia.org/wiki/Tcl) in order to automatically generate much of the code.
+
+{% endif %}
+
+
+### 1997-98: Contractor: S/W Architect & Implementation of Conoscopic Interferometer Workstation
+
+{% if FULL %}
+_@Newport-Optimet, Jerusalem:_
+
+#. The company product was a measurement workstation based upon their [conoscopic](http://www.optimet.com/faq.php) probe.
+#. The object to be measured was placed on a platter that could be moved in the XY axes.
+#. The probe was static, and measured Z - actually an array of Z points.
+#. The workstation also included a video camera.
+#. Generally the probe could scan at its maximum speed, although some types of materials, especially reflective, required lower speed.
+#. My task was to design the S/W architecture for a Windows NT PC to implement an _automated_ workstation that could be used in a factory environment.
+#. I created a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) implemented in [TCL](https://en.wikipedia.org/wiki/Tcl) for controlling and configuring the workstation.
+#. The most interesting and challenging aspect of the project was to give "life", i.e. semantic meaning, to the millions of raw XYZ data points that were measured.
+#. I used [OpenGL](https://en.wikipedia.org/wiki/OpenGL) for rendering graphics. I created a toolkit and domain specific language for the 3D visualizations - unfortunately just _before_ the initial release of [VTK](http://www.vtk.org/).
+#. My reference development object was a tooth (aka "Timmy the Tooth") which I painted as if it were a topographic map.
+#. An important visualization technique for mass produced widgets on the factory floor, was to compare them against a reference widget.
+
+{% endif %}
+
+
+### 1995-96: CEO & CTO: S/W Architect & Implementation of US DOD Mil-Spec Automated Testing System: Night Hawk Fire Control System
+
+{% if FULL %}
+
+_@Pitkha Outsourcing, Jerusalem, for @Elbit-Elop, Rechovot:_
+
+#. The company product was the weapon fire control system for the Night Hawk laser guided missiles.
+#. My task was to create an architecture and implementation of the automated test procedures dictated by the US DOD. The test specification documentation was over 1 meter high.
+#. Additionally there would be many _ad hoc_ tests that would be required during the development process.
+#. The test equipment included external voltage regulators, external heating and cooling equipment, vibrators, etc.
+#. The workstation controlling the tests was a Windows NT PC.
+#. Instead of creating a monolithic test program in C/C++, I created a BASIC-like [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) with special drivers for controlling the various pieces of H/W.
+#. I made this critical architectural decision because the test specification manual was being regularly revised, plus I needed the flexibility to allow the system engineers to write their own scripts without delving into the underlying C code. And I wanted to avoid having the client call me every time he needed to implement a minor/trivial change that he could easily learn to do himself.
+#. The major tests were presented via a UI which in fact emitted DSL script.
+#. The system worked as planned.
+#. Unsupervised tests ran successfully for up to 72 hours (over holidays).
+#. Post mortem: The first version of [TCL](https://en.wikipedia.org/wiki/Tcl) was released just around the time of this project, i.e. _pre-Internet_. 
+Once I learned about TCL, I immediately realized it would have been the ideal platform for creating the test environment.
+Instead of me having to create my own BASIC-like language with control structures and variable handling, 
+I could have relied upon TCL, and simply added custom primitives for the various pieces of H/W.
+
+{% endif %}
+
+
+### 1991-94: CEO & CTO: S/W Architect & Implementation of S/W Toolchain For DSPG PINE CPU
+
+_@Pitkha outsourcing, Jerusalem, for @DSPG, Givat Shmuel:_
+
+#. I was the S/W architect of a clock accurate DSP CPU simulator along with a complete software development toolchain, i.e. a debugger, C compiler, assembler and linker. Note that the system was developed just _before_ the GNU Compiler Collection framework reached maturity, i.e. v2.95.
+#. This system enabled working applications to be developed before the chip became physically available. It reduced application time-to-market by 6-12 months. 
+#. The technological breakthrough was my design of a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) implemented in [lex/yacc](https://en.wikipedia.org/wiki/Yacc) that described the CPU architecture.
+#. The associated DSL compiler automatically generated the source code for the complete toolchain that enabled it be automatically rebuilt within an hour in the face of almost daily changes to the VLSI architecture - especially the pipeline.
+
+
+### 1989-91: S/W Architect & Implementation: Shop Floor Production Control (SFPC) System: BARI II
+
+_@Digital Equipment Corporation (DEC), Herzliya, for @Iscar, Tefen:_
+
+#. Iskar Matkash in Tefen IL is a fully automated factory that produces thousands of different cutting blades
+using a sintering process. The raw materials go through many stages of operations. In many cases after
+undergoing intermediate processing, the partially processed material can still be diverted to multiple final
+products - similar to stem cells. The factory contains hundreds of automated workstations, stands, stacks,
+guided vehicles, and conveyor belts. Pallets can be automatically move from one stand on a workstation to
+the next, or to temporarily place a pallet on a storage stand or a stack stand.
+#. My task was to create a computer program that automatically operated/orchestrated the factory.
+#. When my co-architect and I started this project, we had zero background in industrial engineering. 
+We were supplied with a mentor who brought us up to speed.
+#. Eventually after months of discussions we created an architecture that was a textbook object oriented
+taxonomy - a "factory object kingdom". The top level object was a "production instruction".
+#. We defined the attributes and methods associated with each object.
+#. We created a descriptive, i.e. _non-procedural_, [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) that was designed to be user-friendly for the factory engineer.
+#. I wrote the language manual.
+#. We used the language to configure the factory. We created a UI wrapper for the language which emitted CLI script.
+#. We mapped the language to a relational database.
+#. We created an implementation architecture in Pascal. Given the inherent object oriented (OO) nature of the architecture, 
+C++ would have been an ideal implementation language choice - but the project management refused.
+#. After 18 calendar months, and 4 man-years later, the factory ran perfectly!
+
+
+### 1988-88: S/W Architect & Implementation: Quadriplegic PC Accessibility
+
+_@Cubital, Herzliya - a charity project funded by the company and the CEO [Itzhak Pomerantz](https://il.linkedin.com/in/itzhak-pomerantz-91500b3):_ 
+
+#. First of all, it important to note that this project took place in 1988 when speech-to-text technology was still in its infancy, and exhorbitantly priced. 
+#. The H/W used for this project was the following: 
+	a. A [light pen](https://en.wikipedia.org/wiki/Light_pen), i.e. an obsolete pre-mouse point and click device that synchronizes with the trace signal of the CRT video display, outfitted with special light weight military optics that increased its effective range from 5 mm from the screen to 800 mm.
+	b. A standard accessibility [sip-and-puff](https://en.wikipedia.org/wiki/Sip-and-puff) switch. 
+#. The light pen was mounted on the user's head by using a sturdy woman's plastic hair head band, while the sip-and-puff straw replaced the button on the light pen. 
+#. The S/W that I developed overlaid a virtual keyboard on top of the screen. 
+#. In novice mode aiming the pen at a key caused it to illuminate, while clicking on it entered it into the system as a virtual key stroke. 
+#. The problem with novice mode was that the virtual keyboard obstructed more than half the screen. 
+#. In expert mode, the virtual keyboard was hidden, but when the pen was aimed at an individual key, it would pop-up and become illuminated. 
+#. This system was used to enable Shulamit Gabbai, a former school teacher who became quadriplegic by contacting polio (due to a terrible malfunction in the *Or Akiva* drinking water supply which became mixed with sewage), to become a book editor for *Maariv*. She was able to type 30 characters per minute.
+
+
+### 1987-88: Senior Programmer & VAX/VMS Sysadmin: 3D Printer: Solider
+
+{% if FULL %}
+_@Cubital, Herzliya:_ 
+{% if FULL -%}{{BR}}{%- endif %}Solider was one of the first 3D printers. It was the size of a shipping container, but it embodied the same principles used in modern 3D desktop printers. Since a 3D printer prints one layer at a time conceptually similar to the way a regular printer prints one page at a time, I designed a VAX/VMS print driver for the 3D printer.
+{% endif %}
+
+
+### 1986-86: Programmer: Automated Leather Sewing Workstation
+
+{% if FULL %}
+_@Orisol, Lod:_ 
+{% if FULL -%}{{BR}}{%- endif %}This is the first time I developed a [Domain Specific Language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) in order to implement the sewing machine control program. Note that leather is a natural product. Therefore no two pieces of leather are identical, so an automated sewing program must be intelligent. The workstation included a video camera in order to enable real-time feedback. The sewing machine had a maximum speed of over one thousands stitches per minute with a very high torque, so it had to slow down carefully in order not to damage the engine. I added annotations (e.g. speed limits,  and minimum and maximum margin widths) to the [AutoCad](https://en.wikipedia.org/wiki/AutoCAD) description of the pattern. I compiled the pattern and annotations into a [soft real time](https://stackoverflow.com/questions/17308956/differences-between-hard-real-time-soft-real-time-and-firm-real-time) control program.
+{% endif %}
+
+
+### 1984-85: Programmer & VAX/VMS Sysadmin: Hebrew/English Word Processor: Glyph
+
+{%if FULL %}
+_@John Bryce, Jerusalem._
+{% endif %}
+
+ 
+### 1983-84: Programmer: Real-Time
+
+_@Elta/IAI via DSI, Ashdod:_ 
+{% if FULL -%}{{BR}}{%- endif %}This was my first job upon making [Aliya](https://en.wikipedia.org/wiki/Aliyah) to Israel. Before receiving my security clearance, I worked on the development of a data collection system. I wrote a [RTOS](https://en.wikipedia.org/wiki/Real-time_operating_system) kernel for the 8080 CPU because at the time no off-the-shelf alternative was available. My mentor was Menachem Malkosh. It was a formative learning experience. After receiving my clearance, I worked on the radar system for the [Lavi fighter plane](https://en.wikipedia.org/wiki/IAI_Lavi).
+
+
+### 1981-83: Programmer & IBM CP/CMS Sysadmin
+
+{% if FULL %}
+_@Mitre Corp, McLean VA:_ 
+{{BR}}Most of my programming was in [APL](https://en.wikipedia.org/wiki/APL_(programming_language)). The APL [functional programming](https://en.wikipedia.org/wiki/Functional_programming) mathematical vector language is still a relevant paradigm to the present day.
+{% endif %}
+
+
+### 1979-80: Programmer/Economist
+
+{% if FULL %}
+_@JWWA.com, an economic consulting firm in Washington DC:_
+{{BR}}I configured and interpreted Fortran computer simulations of electric power generating systems for the purpose of costing and pricing models that were used at [Public Utilities Commission (PUC)](https://en.wikipedia.org/wiki/Public_utilities_commission) rate hearings.
+{% endif %}
+
+
+### 1977-78: Intervenor/Economist
+
+_@Ontario Energy Board (OEB), Toronto:_
+
+#. I was an [intervenor](https://en.wikipedia.org/wiki/Intervention_(law)) at the ECAP'77 costing and pricing hearings. 
+#. Like all citizens, I had legal standing because I paid an electric bill. 
+#. I took over the [marginal cost pricing](https://en.wikipedia.org/wiki/Marginal_cost) (= peak load or time-of-day pricing) proposal of the Ontario Hydro (i.e. at that time the name of Ontario's electric generation and transmission utility) economists who were forced to drop their case due to extreme political pressure from the metallurgy processing industry who at the time relied upon electric blast furnaces.
+#. I actively participated in the hearing sessions for about 9 months. I filed submissions, gave expert testimony, and cross-examined opposing witnesses. 
+#. I argued my position very well. At 22 years old, I was the first public interest intervenor in the history of the OEB to be awarded costs. 
+#. I published an op-ed in [The Globe and Mail](https://www.theglobeandmail.com/), i.e. at the time Canada's newspaper of record, explaining the economic and political issues surrounding the case.
+
+ 
+## 4.0 Education
+
+
+### 4.1 Formal Education	
+
+
+#### 1979: York University, Canada: MA Economics & Applied Mathematics
+
+I passed my final examinations in economic theory before I even started the program, so in order to achieve my required course credits the faculty agreed to allow me to be a special student at the Univ. of Toronto graduate faculty of engineering, where I took the majority of my courses. My major project was a computer simulation in Fortran how to cost efficiently operate a hydro-electric dam. I was mentored by an economist from Ontario Hydro (i.e. at that time the name of Ontario's electric generation and transmission utility).
+
+
+#### 1977: University of Toronto - Rotman School of Management (MBA Program): No Degree
+
+I "dropped out" of school in the middle of the year after taking an advanced micro-economic theory course which analyzed the Ontario Hydro [marginal cost pricing](https://en.wikipedia.org/wiki/Marginal_cost) submission to the Ontario Energy Board (OEB), in order to take advantage of the unusual opportunity to present Ontario Hydro's case for them, which they were forced to drop for political reasons ([see above](#intervenoreconomist)). The following year I was able to apply my course credits to an MA Economics program at York Univ ([see above](#york-university-canada-ma-economics-applied-mathematics)).
+
+
+#### 1976: University of Toronto: BA Economics & Applied Mathematics
+
+The most memorable and still useful courses I took were in statistics, experimental design, game theory, advanced calculus, and microeconomics.
+
+In 1971 at the age of 15, for a highschool computer science course, I wrote a computer program to play a perfect game of 3D 4x4x4 [tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe) in Fortran on an [IBM 1130](https://en.wikipedia.org/wiki/IBM_1130). The computer had 16 KB RAM, and was the size of a refrigerator. It was arguably my most formative learning experience from which I received the computer programming "bug" which I carry with me to the present day. 
+
+
+### 4.2 Continuing Education
+
+#. Today the field of computer science is changing so rapidly, that without ongoing self-study, one's formal education becomes obsolete within 5 years.
+#. From 1991-96, while I was CEO & CTO of Pitkha Outsourcing, I used to spend one afternoon per week reading at the Hebrew University Jerusalem (HUJI) computer science library. 
+#. Afterwards with the advent of the Internet, more up-to-date computer science topics were available on the Internet, so going to the library was no longer the most efficient way to keep updated.
+#. Since 2005, I have maintained a subscription to the [O'Reilly Safari](https://www.safaribooksonline.com/) on-line tech library.
+#. My daily dose of tech news comes from [Slashdot](https://www.safaribooksonline.com/).
+#. I regularly watch [TedX](https://www.ted.com/about/programs-initiatives/tedx-program) and [Talks At Google](https://talksat.withgoogle.com/) video seminars.
+#. The most fascinating feature of TedX talks is to watch how world class experts in a wide range of fields are able to distill what is so special about their area of expertise to intelligent laymen in only 18 minutes.
+#. Whenever I speak, I try to emulate the TedX format.
+#. I regularly read the tech sections of the Israeli business newspapers [Globes](https://www.globes.co.il/en/) and [The Times of Israel](http://www.timesofisrael.com/start-up-israel/).
+#. I have ecclectic interests.
+#. I regularly research new topics in depth.
+#. My browser bookmarks are my most important professional store of my knowledge. I use Firefox because it has the best built-in bookmarking feature, because it uses tags/labels. I have a well honed tag taxonomy.
+#. Therefore I really am an [expert generalist](http://99u.com/articles/7269/picasso-kepler-and-the-benefits-of-being-an-expert-generalist), and an [autodidact polymath](http://autodidactpolymath.com/autodidact-polymath-definition/), i.e. a self-learner in new fields who achieves expertise quickly.
+
+
+## 5.0 Spoken Languages
+
+1. English (5/5)
+2. Hebrew (4/5)
+3. French (2/5)
+
+## 6.0 Computer Languages, SDKs, and Operating Systems
+
+Language knowledge in order of expertise, based upon my current frequency of usage:
+
+1. C, TCL, bash + posix text utilities, e.g. awk, sed, etc.
+2. C++, python, make, html5, css, markdown, pandoc, jinja2
+3. flex, bison, llvm, javascript, java, yaml, json, go
+4. forth, lisp, prolog, apl, fortran, opengl, svg, xml schema, relax ng, xslt, perl, C#
+
+<em>Note that I write compilers and [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), so learning a new language takes me only a few days.</em>
+
+O/S knowledge in order of expertise, based upon my current frequency of usage:
+
+1. Linux
+2. Android
+3. IOS
+4. Win32
+
+
+{% if FULL %}
+
+### 6.1 Programming Languages Musings
+
+It may not be politically correct to say this,
+but C++ is too [dangerous](https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53) to use for the average project.
+_Even though during the the architecture phase of a project,
+it is critically important to identify common classes and objects, interfaces, and frameworks,
+I find that C++ object oriented implementations are highly error prone, and are sinkholes for R&D manpower resources._
+Inexperienced architects and programmers create class hierarchies that are extremely brittle.
+In performance sensitive and embedded real-time projects most programmers do not understand the C++ language internals
+sufficiently in order to realize which language features cannot be used in such an environment.
+Therefore I prefer to write C code with an object oriented "flavor".
+In my professional opinion, it is much safer to develop using the simpler,
+but tried and true, [encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)),
+[composition](https://en.wikipedia.org/wiki/Object_composition), and [interface](https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)) programming techniques combined with C's built-in, but underused, generic programming syntax - see [C11 generics](http://www.robertgamble.net/2012/01/c11-generic-selections.html) and the gcc/clang [\__typeof__ and \__auto_type](https://gcc.gnu.org/onlinedocs/gcc/Typeof.html) operators.
+My reservations about C++ are shared by such well known people as
+[Linus Torvalds](https://developers.slashdot.org/story/15/03/10/2038228/was-linus-torvalds-right-about-c-being-so-wrong), 
+and [Rob Pike and Ken Thompson](https://golang.org/doc/faq). 
+Admittedly C has many dangers too, but I feel much less than C++, perhaps because I have 30 years experience programming with it.
+The biggest problem that inexperienced C programmers face is memory leaks;
+however using [Valgrind](http://valgrind.org/) combined with well designed unit testing and [fuzzing](https://en.wikipedia.org/wiki/Fuzzing) can catch almost all memory problems.
+
+In spite of my reservations about C++, I am pragmatic. 
+There are some application domains where it is clearly the best choice of implementation language. 
+For example in the case of compiler design, C++ is the best way to implement [ASTs](https://en.wikipedia.org/wiki/Abstract_syntax_tree).
+
+Google created their new [Go language](https://golang.org) precisely for the above reasons.
+It is their "go-to" language for new projects. 
+For the vast majority of their applications, they would never even consider C/C++, 
+because the average programmer does not have the high level of expertise required to produce large apps built with C/C++ that are bug-free.
+First they were a Java shop which they dropped due to its never-ending security bugs, and due to the fact that they could not control the language due to a never-ending intellectual property battle with Oracle who "owns" Java.
+Then they switched to free open source Python, including hiring [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum), Python's "benevolent dictator for life". 
+But they became dissatisfied with Python due to its lack of type safety, problematic package management, and its poor performance.
+Go is a vastly improved and safer version of C, along with an extremely well designed package manager. 
+Go's performance is 2-4 times slower than C.
+It is in the same performance category as Java and C#, while Go is about 2-4 times faster than Python.
+Typically Go's performance problems arise due to its automatic garbage collector (GC) - which is a key feature expected in most modern languages. 
+But in most cases an experienced C/C++ programmer who inherently understands how to efficiently control memory allocations 
+can [tune Go's GC](https://blog.cloudflare.com/recycling-memory-buffers-in-go/).
+Go's performance is good enough for the most demanding web server and back-end applications,
+although in general the GC precludes it from being used for soft real-time applications.
+Go is good for client applications too. There is excellent support for many UIs.
+It does not yet have full mobile support, but it is on their road map.
+Precisely because Go is the Google's own internal application language, the language will continue to improve.
+Up until now Go has made a few architectural decisions with which I disagree,
+namely lack of generics, asserts, and a preprocessor. 
+On the other hand, many other languages have similar problems or worse.
+I can easily correct these deficiencies by using my own macro/template preprocessor - where my tool of choice is [Jinja2](http://jinja.pocoo.org/).
+But I am aware that many programmers cannot tolerate preprocessing their source code, unless the preprocessor is connected "at the hip" to the compiler.
+
+For new projects that need to "press the pedal to the metal", the new safe and efficient system programming languages [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) and [Nim](https://en.wikipedia.org/wiki/Nim_(programming_language)) should be considered. 
+My personal preference is for Nim especially on account of its superb built-in [metaprogamming](https://en.wikipedia.org/wiki/Metaprogramming) capability.
+But Nim is currently supported by only a small team mostly of volunteers, while Rust has much more market traction because it is backed by the Mozilla organization. 
+
+Again pragmatism prevails, in spite of my theoretical language preference for Go over Python, or dabbling with Nim and Rust, because there are many application domains where Python has superb 3rd party libraries that would reduce the development time of a proof of concept by a factor of 10 (e.g. [NumPy](https://en.wikipedia.org/wiki/NumPy), [SciPy](https://www.scipy.org/), [Matplotlib](http://matplotlib.org/), [TensorFlow](https://www.tensorflow.org/), [data visualization](http://opensourceforu.com/2017/03/python-libraries-data-visualisation/), etc.), so choosing to use Python is very often a "no brainer" decision.
+
+Finally, I find for creating specifications for novel and complex ideas, I like to start by brainstorming with [mind maps](https://lifehacker.com/five-best-mind-mapping-tools-476534555) and then move to [TCL](https://wiki.tcl.tk/15542) for creating a formal specification which typically morphs into a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language){% if APPENDIX %} (see [Appendix B](#appendix-b-domain-specific-languages)){% endif %}.
+
+{% endif %} 
+
+
+## 7.0 Patents Under Development
+
+1. [Bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics): (a) An extremely accurate and simple noise reduction and normalization algorithm to improve the accuracy of the standard [PCR Ct](http://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/qpcr-education/pcr-understanding-ct-application-note.html) calculation, and (b) a new non-function analytical PCR Ct calculation algorithm in the face of [inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) when the standard algorithm fails because the high level of noise makes it impossible to make an analytic estimation of the underlying flat "S" curve, and instead uses [Artificial Intelligence (AI)](https://en.wikipedia.org/wiki/Artificial_intelligence) techniques.
+2. [Cryptography](https://en.wikipedia.org/wiki/Cryptography): A set of non-linear cryptographic primitives using [Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight)-like [data dependent permutations](https://link.springer.com/article/10.1007%2Fs00145-001-0012-9?LI=true) which overcomes the well known limitation of using Hamming weights because they have a [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution).
+
+
+## 8.0 Personal
+
+I was born in Canada in 1956. I have lived in Jerusalem Israel since 1983. I am married with 4 children, 2B + 2G, plus many grandchildren. I take physical fitness seriously. Once upon a time I was a judoka, and a classical guitarist. I was an IDF reserve soldier for 15 years, where I served as a combat soldier in the infantry in the Jordan Valley. In spite of the fact that I joined the army when I was 32 years old (Hebrew: _Shlav Betnik_), functionally, but unofficially, I served in the capacity of deputy company commander (Hebrew: _Samech Mem Pe_) which provided me with the opportunity to achieve rich personal growth, and enabled me to learn important managerial and leadership skills.
+
+
+{% if APPENDIX %}
+
+## Appendix A: Software Obfuscation
+
+TBD
+
+
+## Appendix B: Domain Specific Languages
+
+TBD
+
+
+## Appendix C: Meta-Programming with Jinja2 Templates & Macros
+
+TBD
+
+
+## Appendix D: Top Programming Techniques For Slashing Bugs
+
+TBD
+
+{% endif %}
+
+{# HTML5 Footnotes #}
+
