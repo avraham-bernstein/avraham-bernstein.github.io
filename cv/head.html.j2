@@ -1,0 +1,81 @@
+<!-- pandoc head:end -->
+
+<!-- google meta tags -->
+
+<link rel="author" href="{{G_PLUS}}">
+<meta name="description" content="{{DESCRIP}}"> <!-- google uses just first 55 chars -->
+<meta name="keywords" content="{{KEYS}}">
+
+<!-- schema.org microdata -->
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "givenName": "{{NAME1}}",
+    "familyName": "{{NAME3}}",
+    "additionalName": "{{NAME2}}",
+    "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "{{COUNTRY_CODE}}",
+        "addressLocality": "{{CITY}}",
+        "postalCode": "{{POSTAL_ZIP}}",
+        "streetAddress": "{{POSTAL_ADDR}}"
+    },
+    "birthDate": "{{BDAY_PUBLIC}}",
+    "email": "{{EMAIL_SPOKEN}}",
+    "identifier": "{{UUID}}",
+    "image": "{{HOME}}/image",
+    "isicV4": "{{ISICV4}}",
+    "nationality": "{{COUNTRY_CODE}}",
+    "telephone": "{{TEL_IL_SHORT}}",
+    "url": "{{HOME}}/cv.html"
+}
+</script>
+
+<!-- dcterms meta tags -->
+
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+<meta name="dcterms.language" content="{{LANG}}">
+<meta name="dcterms.format" content="text/html">
+<meta name="dcterms.hasFormat" content="pandoc">
+<meta name="dcterms.identifier" content="{{HOME}}">
+<meta name="dcterms.title" content='{{TITLE}}'>
+<meta name="dcterms.hasVersion" content="{{VS}}">
+<meta name="dcterms.date" content="{{VS_ORIG_DATE}}">
+<meta name="dcterms.modified" content="{{DATETIME}}">
+<meta name="dcterms.creator" content="{{NAME}}">
+<meta name="dcterms.rightsHolder" content="{{NAME}}, {{CITY}} {{COUNTRY}}">
+<meta name="dcterms.copyrightDate" content="{{YEAR}}">
+<meta name="dcterms.rights" content="All rights reserved">
+<meta name="dcterms.accessRights" content="{{LICENSE_URL}}">
+<meta name="dcterms.audience" content="unrestricted">
+<meta name="dcterms.description" content="{{DESCRIP}}">
+<meta name="dcterms.subject" content="{{KEYS}}">
+
+<!-- favicon -->
+
+<link  rel="icon" type="image/png" href="data:imag/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QAAAAAAAD5
+Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gUNDykqSsuRUgAAABl0
+RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAFESURBVEjH7ZW9SgNB
+FIW/tXDNjxA7iy1tgmJpa2FhaxEQBCuFRfAJfALfQGwEa7ETbaxESRHB3t7GoEYN
+gn8ci9wNS5zsToqASO4w7My5Zzgz98ywASCGGGMMOf6rwDjQBB6AMGO1evoLcANs
+AUF/mlhD3bbuyCc9q+12eY6FFynipYdAMi8jdgy77ydQNUIdcWXjWU8BECXDnjvz
+3x7E9j0A9nqwvCgD2zY+d3kwgXhEtBGTiBDRRDwhCp4evCH2ERXXCVaBKeAYeAXe
+gUOgYjmfKABLwIrrBHXbxWIKm0F8Wy7PgxAxhzgxPE6bPJ9z7WScPJNBTBt+my6R
+j5HxgM84SkpUQrQQX4jIsaPIci1EcYASXScl2jTgNONRnRlnw/MlfyCWE4GGgbUM
+gZpxGhkCn4g7xBFiocMJRj+ckcDfF/gBCTJDUqZhh4kAAAAASUVORK5CYII="/>
+
+<!-- google analytics -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{{G_ANALYTICS}}', 'auto');
+  ga('send', 'pageview');
+</script>
+

@@ -1,0 +1,64 @@
+{% set VS = '2.0.0' %}
+{% set VS_ORIG_DATE = '2017-07-23' %}
+{% set LANG = 'en-US' %}
+
+{% set NAME1 = 'Avraham' %}
+{% set NAME2 = 'Abe' %}
+{% set NAME3 = 'Bernstein' %}
+{% set NAME = NAME1 + ' ' + NAME3 %}
+{% set BDAY_PUBLIC = '1956-01-01' %}
+{% set COUNTRY = 'ISRAEL' %}
+{% set COUNTRY_CODE = 'IL' %}
+{% set CITY = 'Jerusalem' %}
+{% set POSTAL_ADDR = "Mishol Ha'Uzrad 7/2" %}
+{% set POSTAL_ZIP = '9727433' %}
+{% set TEL_IL_SHORT = '054.641-0955' %}
+{% set TEL_IL = '+972.' + TEL_IL_SHORT[1:] %} 
+{# 
+	The International Standard of Industrial Classification of All Economic Activities (ISIC).
+	https://unstats.un.org/unsd/cr/registry/isic-4.asp
+	6201 = Computer programming activities
+	6202 = Computer consultancy and computer facilities management activities
+	6209 = Other information technology and computer service activities
+#}
+{% set ISICV4 = '6209' %}
+
+{% set EMAIL = NAME1 + '.' + NAME3 + '@gmail.com' %}
+{% set EMAIL_SPOKEN = NAME1 + ' DOT ' + NAME3 + ' AT gmail DOT com' %}
+{% set G_ANALYTICS = 'UA-17365003-2' %}
+{% set G_PLUS = 'https://plus.google.com/110575620993497854880' %}
+{% set HOME = 'http://purl.org/' + NAME1 + '.' + NAME3 %}
+{% set LINKEDIN = 'https://www.linkedin.com/in/' + NAME1 + NAME3 %}
+{% set UUID = '74a0cbbb-215f-5024-ba0c-46fefe664e07' %} {# $ uuid -v5 ns:URL ... #}
+
+{% set YEAR = DATE[0:4] %}
+{% set COPYRIGHT = 'Copyright &copy; ' + YEAR + ' ' + NAME + ', ' + CITY + ' ' + COUNTRY + '. All rights reserved.' %}
+{% set LICENSE_URL = 'https://creativecommons.org/licenses/by-nd/4.0/' %}
+{% set LICENSE = 'License: Except where otherwise noted, this work is licensed under the Creative Commons License [CC BY-ND 4.0](' + LICENSE_URL + ')' %}
+
+{% set DESCRIP = NAME + ', CV, cybersecurity' %}
+{% set KEYS = DESCRIP + ', cyber security, obfuscation, anti-reverse engineering, pay TV, CTO, creativity, master S/W engineer, S/W architect, S/W quality, domain specific language, accessibility, blind, ' + CITY + ', ' + COUNTRY %}
+
+{% if HEADHUNTER is defined %}
+	{% set FULL = false %}
+	{% set VS = VS + '-' + HEADHUNTER %}
+	{% set TITLE = HEADHUNTER + '(' + NAME2 + ') | Abbreviated CV' %}	
+	{% set COPYRIGHT = 'Copyright &copy; ' + YEAR + ' ' + NAME2 + ', ' + CITY + ' ' + COUNTRY + '. All rights reserved.' %}
+{% elif ABBREV is defined %}
+	{% set FULL = false %}
+	{% set VS = VS + '-abbrev' %}
+	{% set TITLE = NAME1 + ' "' + NAME2 + '" ' + NAME3 + ' | Abbreviated Professional CV' %}
+{% else %}
+	{% set FULL = true %}
+	{% set TITLE = NAME1 + ' "' + NAME2 + '" ' + NAME3 + ' | Professional CV' %}
+{% endif %}
+{% set ABBREV = not FULL %}
+
+{% if WRITER == 'html5' %}
+	{% set BR = '<br>' %}
+{% else %}
+	{% set BR = NL %}
+{% endif %}
+
+{% set TOC = '%%TOC%%' %}
+
