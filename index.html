@@ -50,7 +50,7 @@
     <meta name="dcterms.title" content="Avraham Bernstein | Home Page">
     <meta name="dcterms.hasVersion" content="Draft 0.7">
     <meta name="dcterms.date" content="2017-05-22">
-    <meta name="dcterms.modified" content="2017-07-16T08:15:00Z">
+    <meta name="dcterms.modified" content="2017-07-24T19:49:00Z">
     <meta name="dcterms.creator" content="Avraham Bernstein">
     <meta name="dcterms.rightsHolder" content="Avraham Bernstein, Jerusalem Israel">
     <meta name="dcterms.copyrightDate" content="2017">
@@ -95,7 +95,7 @@ gZpxGhkCn4g7xBFiocMJRj+ckcDfF/gBCTJDUqZhh4kAAAAASUVORK5CYII="/>
 <h1 tabindex="0" id="top">Avraham "Abe" Bernstein | Home Page</h1>
 <address>
 Version: Draft 0.7
-<br>Last update: 2017-07-16T08:15:00Z
+<br>Last update: 2017-07-24T19:49:00Z
 </address>
 <p>
 <figure>
@@ -900,9 +900,12 @@ Not available Fri. evening beginning 1 hour before sunset until Sat. night 1 hou
 <h3 tabindex="0" id="1.1">1.1 Links</h3>
 <p>
 <ul>
-<li><strong>home page:</strong> <a href="http://purl.org/avraham.bernstein">http://purl.org/avraham.bernstein</a> [this file]</li>
+<li><strong>www-home:</strong> <a href="http://purl.org/avraham.bernstein">http://purl.org/avraham.bernstein</a> [this file]</li>
 <li><strong>linkedin:</strong> <a href="https://www.linkedin.com/in/avrahambernstein">https://www.linkedin.com/in/avrahambernstein</a></li>
-<li><strong>cv:</strong> <a href="http://purl.org/avraham.bernstein/cv">http://purl.org/avraham.bernstein/cv</a></li>
+<li><strong>cv-full-html:</strong> <a href="http://purl.org/avraham.bernstein/cv.html">http://purl.org/avraham.bernstein/cv.html</a> <strong>[PREFERRED]</strong></li>
+<li><strong>cv-abbrev-html:</strong> <a href="http://purl.org/avraham.bernstein/cv-abbrev.html">http://purl.org/avraham.bernstein/cv-abbrev.html</a></li>
+<li><strong>cv-full-docx:</strong> <a href="http://purl.org/avraham.bernstein/cv.docx">http://purl.org/avraham.bernstein/cv.docx</a></li>
+<li><strong>cv-abbrev-docx:</strong> <a href="http://purl.org/avraham.bernstein/cv-abbrev.docx">http://purl.org/avraham.bernstein/cv-abbrev.docx</a></li>
 <li><strong>github:</strong> <a href="https://github.com/avraham-bernstein">https://github.com/avraham-bernstein</a> [under construction]</li>
 <li><strong>professional blog:</strong> <a href="http://purl.org/avraham.bernstein/blog">http://purl.org/avraham.bernstein/blog</a> [under construction]</li>
 <li><strong>personal blog on google+:</strong> <a href="https://plus.google.com/110575620993497854880">https://plus.google.com/110575620993497854880</a>&nbsp;<sup><a href="#anti-harvesting-footnote">2</a></sup> [out of date]</li>
@@ -1094,14 +1097,14 @@ a determined attacker could use their unprotected code as a vector for attacking
 <li>We needed to protect our own DSO, <code>drm.so</code>, by hiding all of its exported symbols, and we needed to obfuscate how the vendor's DSO, <code>codec.so</code>, called our API.
 </li>
 
-<li>My solution was to provide the vendor with a tiny generic "shunt", i.e. a tiny C module with source code, that he agreed to incorporate into his own DSO, <code>codec.so</code>, the same library that he distributed to all of his clients, regardless of whether or not they knew how to take advantage of the shunt.
+<li>My solution was to provide the vendor with a tiny generic "shim", i.e. a tiny C module with source code, that he agreed to incorporate into his own DSO, <code>codec.so</code>, the same library that he distributed to all of his clients, regardless of whether or not they knew how to take advantage of the shim.
 </li>
 
-<li>The shunt function that immediately follows is deceptively simple. It provided me with enough of a beachhead into the vendor's code, that I could supply our DSO with no global symbols, and I could obfuscate his calls to our secret APIs.
+<li>The shim function that immediately follows is deceptively simple. It provided me with enough of a beachhead into the vendor's code, that I could supply our DSO with no global symbols, and I could obfuscate his calls to our secret APIs.
 <pre><code>
 /*
-FILE: shunt.c
-DESCRIP: Shunt interface to a DSO that exports no symbols
+FILE: shim.c
+DESCRIP: Shim interface to a DSO that exports no symbols
 DATE: 2017-05-16T17:07:00Z
 AUTHOR: Avraham DOT Bernstein AT gmail
 COPYRIGHT (c) 2017 Avraham Bernstein, Jerusalem ISRAEL. All rights reserved.
@@ -1110,16 +1113,16 @@ LICENSE: Apache License, Version 2.0: https://opensource.org/licenses/Apache-2.0
 #include &le;stdlib.h&gt;
 #include &le;dlfcn.h&gt;
 
-// gShunt is a global var that can be used by anyone who uses the shunt.
+// gShim is a global var that can be used by anyone who uses the shim.
 
 // In our particular case we will use it receive the address of an obfuscated
 // and randomized jump table that drm-api.h will wrap with macros to make them
 // appear like regular function calls
 
-void * gShunt;
+void * gShim;
 
 __attribute__((constructor)) // stealth load before dlopen completes!
-static void shunt() // note func is static so it will not be an exported symbol
+static void shim() // note func is static so it will not be an exported symbol
 {
   // The only way to communicate with this func is via the env var CODEC_VENDOR_NAME_SHUNT_LIB.
 
@@ -1141,9 +1144,9 @@ static void shunt() // note func is static so it will not be an exported symbol
 
       if (initFunc) {
 
-        gShunt = (*initFunc)(); // invoke lib's init func
+        gShim = (*initFunc)(); // invoke lib's init func
 
-        // Anyone who uses the shunt can have init() pass any value they please.
+        // Anyone who uses the shim can have init() pass any value they please.
 
         // In our particular case init() will communicate with drm.so via an
         // asynchronous encrypted back channel that it prepared just before it
@@ -4885,8 +4888,7 @@ are critical to anyone who has a key management position in any business - espec
 <ol>
 
 <li id="secure-photo-footnote">
-This secure photo was built using an <a href="http://docs.gimp.org/en/plug-in-oilify.html">oilify</a> filter and a visible email address <a href="https://en.wikipedia.org/wiki/Digital_watermarking">watermark</a>. In spite of the fact that my 3 year old grandson has no problem identifying me from this photo, it provides very high security, due to (1) the <a href="https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup">digital camouflage</a> that makes it extremely difficult to algorithmically match this photo against a clear photo, and (2) the <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">two factor authentication</a> protection that prevents an impostor from claiming this photo as his own
-<i>providing he were challenged</i> by an email to the address specified by the watermark.
+This secure photo was built using an <a href="http://docs.gimp.org/en/plug-in-oilify.html">oilify</a> filter and a visible email address <a href="https://en.wikipedia.org/wiki/Digital_watermarking">watermark</a>. It uses <a href="https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup">digital camouflage</a> that will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be compared with CCTV surveillance photos will not work. (2) The photo has built-in <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">two factor authentication (2FA)</a>. The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate/label it with any other name besides mine. Similarly if a site would maliciously display my photo without my permission in order to imply my association or agreement with them, then it is trivial for anyone who may be suspicious of their claim to "challenge" the site by asking me for a verification email.
 </li>
 
 <li id="anti-harvesting-footnote">
