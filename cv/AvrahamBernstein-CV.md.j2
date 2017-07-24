@@ -18,18 +18,18 @@ _Version: {{VS}}_
 ![Secure photo[^secure-photo] of the author, {{NAME}} c. 2010.]({{HOME}}/image)
 {% endif %}
 
-[^secure-photo]: This secure photo was built using an [oilify](http://docs.gimp.org/en/plug-in-oilify.html) filter and a visible email address [watermark](https://en.wikipedia.org/wiki/Digital_watermarking). It uses [digital camouflage](https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup) that will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate/label it with any other name besides mine. Similarly if a site would maliciously display my photo without my permission in order to imply my association or agreement with them, then it is trivial for anyone who may be suspicious of their claim to ask me for verification by sending me an email.
+[^secure-photo]: This secure photo was built using an [oilify](http://docs.gimp.org/en/plug-in-oilify.html) filter and a visible email address [watermark](https://en.wikipedia.org/wiki/Digital_watermarking). It uses [digital camouflage](https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup) that will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate/label it with any other name besides mine. Similarly if a site would maliciously display my photo without my permission in order to imply my association or agreement with them, then it is trivial for anyone who may be suspicious of their claim to "challenge" the site by asking me for a verification email.
 
 
 ### 0.1 Contact Info & Links
 
 __email/skype/pgp:__ [{{EMAIL}}](mailto:{{EMAIL}})
 {{BR}}__pgp-id:__ [E6647D2F](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x86EFCDAEE6647D2F)
-{{BR}}__location:__ {{CITY}} {{COUNTRY}}, __tz:__ UTC +2:00/+3:00 \[winter/summer]
+{{BR}}__geo-location:__ {{CITY}} {{COUNTRY}}, __tz:__ UTC +2:00/+3:00 \[winter/summer]
 {{BR}}__tel-IL-mobile/whatsapp:__ {{TEL_IL|html_encode}} __\[preferred]__
 {{BR}}__tel-US-mobile:__ {{'+1.845.402-0023'|html_encode}}
 {{BR}}__www-home:__ [{{HOME}}]({{HOME}})
-{{BR}}__www-linkedin:__ [{{LINKEDIN}}]({{LINKEDIN}})
+{{BR}}__linkedin:__ [{{LINKEDIN}}]({{LINKEDIN}})
 {{BR}}__cv-full-html:__ [{{HOME}}/cv.html]({{HOME}}/cv.html) __\[preferred]__
 {{BR}}__cv-abbrev-html:__ [{{HOME}}/cv-abbrev.html]({{HOME}}/cv-abbrev.html)
 {{BR}}__cv-full-docx:__ [{{HOME}}/cv.docx]({{HOME}}/cv.docx)
@@ -199,7 +199,7 @@ My job was to find hi-tech agricultural products that the company needed to purc
 #. Expert on industrial scale cassava processing which was formerly the major food staple in Nigeria before they joined OPEC, and may soon again become their major staple when the oil stops flowing because the government will no longer have the financial resources to subsidize imported wheat.
 #. Cement research expert to consult for the largest cement factory in Africa.
 #. Establish a private local area GSM cell phone tower with a 10 km radius range in order to support a cassava plantation/factory to be built in a remote jungle location where cassava naturally grows. The factory was well outside the geographic regions supported by the local mobile telephone companies. The efficiency of the plantation would be greatly increased provided that all the workers had mobile phones even if the communications were restricted to the 300 sq. km. region surrounding the factory.
-#. Bid, in conjunction with the Israel Electric Corporation (IEC), on refurbishing/upgrading an abandoned 200 MW natural gas electrical generation station near the cassava plantation.
+#. Prepared a bid for refurbishing an abandoned Nigerian government 200 MW natural gas electrical generation station near the cassava plantation. Negotiated with the Israel Electric Corporation (IEC) to submit a joint bid, but eventually they backed out.
 
 {% endif %}
 
@@ -391,12 +391,13 @@ _@Pitkha outsourcing, Jerusalem, for @DSPG, Givat Shmuel:_
 
 _@Digital Equipment Corporation (DEC), Herzliya, for @Iscar, Tefen:_
 
-#. Iskar Matkash in Tefen IL is a fully automated factory that produces thousands of different cutting blades
-using a sintering process. The raw materials go through many stages of operations. In many cases after
-undergoing intermediate processing, the partially processed material can still be diverted to multiple final
-products - similar to stem cells. The factory contains hundreds of automated workstations, stands, stacks,
-guided vehicles, and conveyor belts. Pallets can be automatically move from one stand on a workstation to
-the next, or to temporarily place a pallet on a storage stand or a stack stand.
+#. Iskar Matkash in Tefen IL is a fully automated factory that produces thousands of different cutting blades using a sintering process. 
+The raw materials go through many stages of operations. 
+In many cases after undergoing intermediate processing,
+the partially processed material can still be diverted to multiple final products - similar to stem cells.
+The factory contains hundreds of automated workstations, stands, stacks, guided vehicles, and conveyor belts. 
+The product or intermediate product is placed on pallets.
+The pallets are moved move from one stand on a workstation to a stand on another workstation, or temporarily to a storage stand or stack.
 #. My task was to create a computer program that automatically operated/orchestrated the factory.
 #. When my co-architect and I started this project, we had zero background in industrial engineering. 
 We were supplied with a mentor who brought us up to speed.
@@ -407,16 +408,16 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 #. I wrote the language manual.
 #. We used the language to configure the factory. We created a UI wrapper for the language which emitted CLI script.
 #. We mapped the language to a relational database.
-#. We created an implementation architecture in Pascal. Given the inherent object oriented (OO) nature of the architecture, 
+#. We created the implementation architecture in Pascal. Given the inherent object oriented (OO) nature of the architecture, 
 C++ would have been an ideal implementation language choice - but the project management refused.
-#. After 18 calendar months, and 4 man-years later, the factory ran perfectly!
+#. After 18 calendar months, and 6 man-years later, the factory ran perfectly!
 
 
 ### 1988-88: S/W Architect & Implementation: Quadriplegic PC Accessibility
 
 _@Cubital, Herzliya - a charity project funded by the company and the CEO [Itzhak Pomerantz](https://il.linkedin.com/in/itzhak-pomerantz-91500b3):_ 
 
-#. First of all, it important to note that this project took place in 1988 when speech-to-text technology was still in its infancy, and exhorbitantly priced. 
+#. First of all, it important to note that this project took place in 1988 when speech-to-text technology was still in its infancy, and exhorbitantly expensive. 
 #. The H/W used for this project was the following: 
 	a. A [light pen](https://en.wikipedia.org/wiki/Light_pen), i.e. an obsolete pre-mouse point and click device that synchronizes with the trace signal of the CRT video display, outfitted with special light weight military optics that increased its effective range from 5 mm from the screen to 800 mm.
 	b. A standard accessibility [sip-and-puff](https://en.wikipedia.org/wiki/Sip-and-puff) switch. 
