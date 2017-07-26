@@ -237,18 +237,20 @@ _@Syntezza, Jerusalem:_
 #. I improved the test's accuracy to 95%, which was 10% better than their competitors from the pharmaceutical giants. I saved the client from liquidation. 
 #. I stood on the shoulders of the person who developed the original [PCR Ct](http://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/qpcr-education/pcr-understanding-ct-application-note.html) function analytical detection algorithm, [Dr. Tzachi Bar](https://scholar.google.co.il/citations?user=XokRoVQAAAAJ&hl=en), who was my mentor, and who got me up to speed so quickly.
 
+{% if FULL %}
 Methodology:
  
 #. I had access to a database of about 800 MRSA patient nasal sample PCR test results, along with about 20 samples from pure laboratory MRSA colonies that contained a known quantity of the bacteria. All the patient samples had also been analyzed via the "gold standard" Petri dish test. The Petri dish results were required to calibrate the PCR algorithm/results, and would be the basis of government health services (e.g. FDA) subsequent approval of the kit. As is typical in random patient samples, less than 10% were MRSA positive.
 #. First of all, I noted an outrageous data anomaly, namely that the original kit failed to detect as positive many of the samples from the laboratory colonies. After investigating further, and reading the [PCR thermocycler](https://en.wikipedia.org/wiki/Thermal_cycler) manual, I realized that the position of the negative and positive control sample test tubes had been systematically placed in the wrong test tube slot positions - according to the original incorrect experimental protocol. Note that as is typical in these kinds of tests, every batch must contain both a positive and negative control. (For this particular device, there can be a maximum of 36 test tubes in a batch). The PCR algorithm uses these controls for callibrating itself. Given that we were fortunate to the have raw results from the thermocycler, I was able to reconstruct the results by using the correct positive and negative controls.
 #. Even though as a result of recalibration, the results significantly improved, still they were poor. Further investigation showed that only the samples whose graphs resembled the flat "S" shaped curve expected for the standard mathematical analysis of biological assays, had results that were consistent with the Petri dish results. 
 #. There were were still 2 remaining data anomalies:
-	a. More than 50% of the graphs of the patient samples did not have a flat "S" shape, and were in fact very "noisy" - due to PCR inhibition.
+	a. More than 50% of the graphs of the patient samples did not have a flat "S" shape, and were in fact very "noisy" - due to PCR inhibition due to the use of the preliminary chemistry.
 	b. The graphs of the high concentration laboratory colony samples were straight lines.
 #. I used patented techniques (which I cannot yet describe) to overcome the above 2 problems.
 #. I split the samples into 2 random groups of equal size. I made sure that the 2 groups contained the same number of positive, negative, and laboratory colony samples.
 #. One group was used for training, while the second group was used to test the predictive capability of the model.
 #. As I stated above, the predicative accuracy of the new algorithm was over 95%.
+{% endif %}
 
 
 ### 2004-09: Security Research & Business Development

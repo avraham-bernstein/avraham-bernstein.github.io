@@ -55,7 +55,7 @@
   <meta name="dcterms.title" content='Avraham "Abe" Bernstein | Abbreviated Professional CV'>
   <meta name="dcterms.hasVersion" content="2.0.0-abbrev">
   <meta name="dcterms.date" content="2017-07-23">
-  <meta name="dcterms.modified" content="2017-07-26T15:27:59Z">
+  <meta name="dcterms.modified" content="2017-07-26T15:36:09Z">
   <meta name="dcterms.creator" content="Avraham Bernstein">
   <meta name="dcterms.rightsHolder" content="Avraham Bernstein, Jerusalem ISRAEL">
   <meta name="dcterms.copyrightDate" content="2017">
@@ -94,7 +94,7 @@
 <body>
 <section id="avraham-abe-bernstein-abbreviated-professional-cv" class="level1">
 <h1 tabindex="0">Avraham <q>Abe</q> Bernstein | Abbreviated Professional CV</h1>
-<p><em>Version: 2.0.0-abbrev</em> <br><em>Last update: 2017-07-26T15:27:59Z</em> <br><em>Copyright © 2017 Avraham Bernstein, Jerusalem ISRAEL. All rights reserved.</em> <br><em>License: Except where otherwise noted, this work is licensed under the Creative Commons License <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a></em></p>
+<p><em>Version: 2.0.0-abbrev</em> <br><em>Last update: 2017-07-26T15:36:09Z</em> <br><em>Copyright © 2017 Avraham Bernstein, Jerusalem ISRAEL. All rights reserved.</em> <br><em>License: Except where otherwise noted, this work is licensed under the Creative Commons License <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a></em></p>
 <figure>
 <img title="Avraham Bernstein" alt="Avraham Bernstein" src="http://purl.org/Avraham.Bernstein/image">
 <figcaption>
@@ -221,21 +221,6 @@ Secure photo<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> of t
 <li tabindex="0">When I started the project, the client’s PCR kit had only a 50% detection rate due to inhibition problems. This result was grossly unacceptable for any medical test. The investors had lost confidence, and were about to pull out.</li>
 <li tabindex="0">I improved the test’s accuracy to 95%, which was 10% better than their competitors from the pharmaceutical giants. I saved the client from liquidation.</li>
 <li tabindex="0">I stood on the shoulders of the person who developed the original <a href="http://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/qpcr-education/pcr-understanding-ct-application-note.html">PCR Ct</a> function analytical detection algorithm, <a href="https://scholar.google.co.il/citations?user=XokRoVQAAAAJ&amp;hl=en">Dr. Tzachi Bar</a>, who was my mentor, and who got me up to speed so quickly.</li>
-</ol>
-<p>Methodology:</p>
-<ol>
-<li tabindex="0">I had access to a database of about 800 MRSA patient nasal sample PCR test results, along with about 20 samples from pure laboratory MRSA colonies that contained a known quantity of the bacteria. All the patient samples had also been analyzed via the <q>gold standard</q> Petri dish test. The Petri dish results were required to calibrate the PCR algorithm/results, and would be the basis of government health services (e.g. FDA) subsequent approval of the kit. As is typical in random patient samples, less than 10% were MRSA positive.</li>
-<li tabindex="0">First of all, I noted an outrageous data anomaly, namely that the original kit failed to detect as positive many of the samples from the laboratory colonies. After investigating further, and reading the <a href="https://en.wikipedia.org/wiki/Thermal_cycler">PCR thermocycler</a> manual, I realized that the position of the negative and positive control sample test tubes had been systematically placed in the wrong test tube slot positions - according to the original incorrect experimental protocol. Note that as is typical in these kinds of tests, every batch must contain both a positive and negative control. (For this particular device, there can be a maximum of 36 test tubes in a batch). The PCR algorithm uses these controls for callibrating itself. Given that we were fortunate to the have raw results from the thermocycler, I was able to reconstruct the results by using the correct positive and negative controls.</li>
-<li tabindex="0">Even though as a result of recalibration, the results significantly improved, still they were poor. Further investigation showed that only the samples whose graphs resembled the flat <q>S</q> shaped curve expected for the standard mathematical analysis of biological assays, had results that were consistent with the Petri dish results.</li>
-<li tabindex="0">There were were still 2 remaining data anomalies:
-<ol type="a">
-<li tabindex="0">More than 50% of the graphs of the patient samples did not have a flat <q>S</q> shape, and were in fact very <q>noisy</q> - due to PCR inhibition.</li>
-<li tabindex="0">The graphs of the high concentration laboratory colony samples were straight lines.</li>
-</ol></li>
-<li tabindex="0">I used patented techniques (which I cannot yet describe) to overcome the above 2 problems.</li>
-<li tabindex="0">I split the samples into 2 random groups of equal size. I made sure that the 2 groups contained the same number of positive, negative, and laboratory colony samples.</li>
-<li tabindex="0">One group was used for training, while the second group was used to test the predictive capability of the model.</li>
-<li tabindex="0">As I stated above, the predicative accuracy of the new algorithm was over 95%.</li>
 </ol>
 </section>
 <section id="security-research-business-development" class="level3">
