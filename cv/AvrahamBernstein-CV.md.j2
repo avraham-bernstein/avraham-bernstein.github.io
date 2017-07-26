@@ -3,7 +3,7 @@
 # {{TITLE}}
 
 _Version: {{VS}}_
-{{BR}}_Last update: {{DATETIME}}_
+{{BR}}_Last update: {{TS}}_
 {{BR}}_{{COPYRIGHT}}_
 {{BR}}_{{LICENSE}}_
 
@@ -18,7 +18,7 @@ _Version: {{VS}}_
 ![Secure photo[^secure-photo] of the author, {{NAME}} c. 2010.]({{HOME}}/image)
 {% endif %}
 
-[^secure-photo]: This secure photo was built using an [oilify](http://docs.gimp.org/en/plug-in-oilify.html) filter and a visible email address [watermark](https://en.wikipedia.org/wiki/Digital_watermarking). It uses [digital camouflage](https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup) that will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate/label it with any other name besides mine. Similarly if a site would maliciously display my photo without my permission in order to imply my association or agreement with them, then it is trivial for anyone who may be suspicious of their claim to "challenge" the site by asking me for a verification email.
+[^secure-photo]: This secure photo was built using an [oilify](http://docs.gimp.org/en/plug-in-oilify.html) filter and a visible email address [watermark](https://en.wikipedia.org/wiki/Digital_watermarking). It uses [digital camouflage](https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup) that will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate/label it with any other name besides mine. Similarly if a site were to maliciously display my photo without my permission in order to imply my association or agreement with them, then it is trivial for anyone who may be suspicious of their claim to "challenge" the site by asking me for a verification email.
 
 
 ### 0.1 Contact Info & Links
@@ -36,9 +36,9 @@ __email/skype/pgp:__ [{{EMAIL}}](mailto:{{EMAIL}})
 {{BR}}__cv-abbrev-docx:__ [{{HOME}}/cv-abbrev.docx]({{HOME}}/cv-abbrev.docx)
 
 
-{% if WRITER == 'html5' %}
 ### 0.2 Table Of Contents
 
+{% if WRITER == 'html5' %}
 {{TOC}}
 {% endif %}
 
@@ -70,7 +70,6 @@ that allows me to automatically generate code by creating intelligent macros reg
 
 I am an [expert generalist](http://99u.com/articles/7269/picasso-kepler-and-the-benefits-of-being-an-expert-generalist), and an [autodidact polymath](http://autodidactpolymath.com/autodidact-polymath-definition/), i.e. a self-learner in new fields who achieves expertise quickly. I know how to find and utilize mentors who are experts in the new field. I am also a good mentor myself. I slavishly attend to my [continuing education](#continuing-education).
 
-These are the reasons why I bring critically important value added to the projects on which I work.
 
 ## 2.0 Work Experience
 
@@ -232,10 +231,24 @@ _@TeleQuest, Jerusalem:_
 
 _@Syntezza, Jerusalem:_
 
-#. Within 3 months of joining the company and quickly learning the basics of bioinformatics, I discovered a new algorithm using Artificial Intelligence (AI) techniques for handling [PCR inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) - which I am in the process of [patenting](#patents-under-development). 
-#. When I started the project, the client's [MRSA](https://en.wikipedia.org/wiki/Methicillin-resistant_Staphylococcus_aureus) (= a lethal staphylococcus bacteria) detection kit had only a 50% detection rate due to inhibition problems. This result was grossly unacceptable for any medical test. The investors had lost confidence, and were about to pull out.
+#. Within 3 months of joining the company and quickly learning the basics of bioinformatics, I discovered a new algorithm using Artificial Intelligence (AI) and Data Science techniques for handling [PCR inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) - which I am in the process of [patenting](#patents-under-development). 
+#. The client's product was a [MRSA](https://en.wikipedia.org/wiki/Methicillin-resistant_Staphylococcus_aureus) (= a lethal staphylococcus bacteria that is antibiotic resistant and thrives in hospitals) [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) (= DNA amplification/duplication technology) detection kit. Typically the kit would be used in hospitals to determine whether a newly admitted patient was a MRSA carrier. A PCR test can return results within 2 hours, whereas the "gold standard" [Petri dish](https://en.wikipedia.org/wiki/Petri_dish) test, which was developed over 100 years ago, takes at least 36 hours. Given that MRSA is infectious, and potentially fatal, it is important for hospitals to be aware ASAP which patients are carriers.
+#. When I started the project, the client's PCR kit had only a 50% detection rate due to inhibition problems. This result was grossly unacceptable for any medical test. The investors had lost confidence, and were about to pull out.
 #. I improved the test's accuracy to 95%, which was 10% better than their competitors from the pharmaceutical giants. I saved the client from liquidation. 
 #. I stood on the shoulders of the person who developed the original [PCR Ct](http://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/qpcr-education/pcr-understanding-ct-application-note.html) function analytical detection algorithm, [Dr. Tzachi Bar](https://scholar.google.co.il/citations?user=XokRoVQAAAAJ&hl=en), who was my mentor, and who got me up to speed so quickly.
+
+Methodology:
+ 
+#. I had access to a database of about 800 MRSA patient nasal sample PCR test results, along with about 20 samples from pure laboratory MRSA colonies that contained a known quantity of the bacteria. All the patient samples had also been analyzed via the "gold standard" Petri dish test. The Petri dish results were required to calibrate the PCR algorithm/results, and would be the basis of government health services (e.g. FDA) subsequent approval of the kit. As is typical in random patient samples, less than 10% were MRSA positive.
+#. First of all, I noted an outrageous data anomaly, namely that the original kit failed to detect as positive many of the samples from the laboratory colonies. After investigating further, and reading the [PCR thermocycler](https://en.wikipedia.org/wiki/Thermal_cycler) manual, I realized that the position of the negative and positive control sample test tubes had been systematically placed in the wrong test tube slot positions - according to the original incorrect experimental protocol. Note that as is typical in these kinds of tests, every batch must contain both a positive and negative control. (For this particular device, there can be a maximum of 36 test tubes in a batch). The PCR algorithm uses these controls for callibrating itself. Given that we were fortunate to the have raw results from the thermocycler, I was able to reconstruct the results by using the correct positive and negative controls.
+#. Even though as a result of recalibration, the results significantly improved, still they were poor. Further investigation showed that only the samples whose graphs resembled the flat "S" shaped curve expected for the standard mathematical analysis of biological assays, had results that were consistent with the Petri dish results. 
+#. There were were still 2 remaining data anomalies:
+	a. More than 50% of the graphs of the patient samples did not have a flat "S" shape, and were in fact very "noisy" - due to PCR inhibition.
+	b. The graphs of the high concentration laboratory colony samples were straight lines.
+#. I used patented techniques (which I cannot yet describe) to overcome the above 2 problems.
+#. I split the samples into 2 random groups of equal size. I made sure that the 2 groups contained the same number of positive, negative, and laboratory colony samples.
+#. One group was used for training, while the second group was used to test the predictive capability of the model.
+#. As I stated above, the predicative accuracy of the new algorithm was over 95%.
 
 
 ### 2004-09: Security Research & Business Development
