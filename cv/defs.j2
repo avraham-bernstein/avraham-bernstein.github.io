@@ -48,9 +48,11 @@
 	{% set FULL = false %}
 	{% set VS = VS + '-abbrev' %}
 	{% set TITLE = NAME1 + ' "' + NAME2 + '" ' + NAME3 + ' | Abbreviated Professional CV' %}
+	{% set URL = HOME + '/cv-abbrev.html' %}
 {% else %}
 	{% set FULL = true %}
 	{% set TITLE = NAME1 + ' "' + NAME2 + '" ' + NAME3 + ' | Professional CV' %}
+	{% set URL = HOME + '/cv.html' %}
 {% endif %}
 {% set ABBREV = not FULL %}
 
