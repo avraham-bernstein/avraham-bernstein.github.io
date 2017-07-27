@@ -36,7 +36,7 @@ __email/skype/pgp:__ [{{EMAIL}}](mailto:{{EMAIL}})
 {{BR}}__cv-abbrev-docx:__ [{{HOME}}/cv-abbrev.docx]({{HOME}}/cv-abbrev.docx)
 
 
-### 0.2 Table Of Contents
+### 0.2 Table of Contents
 
 {% if WRITER == 'html5' %}
 {{TOC}}
@@ -99,7 +99,7 @@ _@Viaccess-Orca, Ra'anana - a subsidiary of Orange FR, and @Discretix/SansaSecur
 
 #. The supported client devices were Android and IOS phones and tablets. The subscriber ID was based upon the built-in Android device ID, and the built-in IOS device-application ID, respectively.
 
-#. We supplied a reference application to our customers who were our [CA](https://en.wikipedia.org/wiki/Conditional_access) broadcaster/operator customers who needed to provide an [OTT](https://en.wikipedia.org/wiki/Over-the-top_content) option to their subscribers. They customized our reference application to their needs. We did not have a direct relationship with the subscribers. Our operators typically took a very long time to do their integration and QA before they would release/push their application to their subscribers. The fundamental technical flaw with this business model was that when we found a serious bug or a security problem in the core modules, the operators would typically delay for 6-12 months before pushing the update to their subscribers. Eventually I architected a solution that provided good enough security {%if FULL %}(see [below](#new-config) below){% endif %}, while still satisfying the QA needs of our customers.
+#. We supplied a reference application to our customers who were our [CA](https://en.wikipedia.org/wiki/Conditional_access) broadcaster/operator customers who needed to provide an [OTT](https://en.wikipedia.org/wiki/Over-the-top_content) option to their subscribers. They customized our reference application to their needs. We did not have a direct relationship with the subscribers. Our operators typically took a very long time to do their integration and QA before they would release/push their application to their subscribers. The fundamental technical flaw with this business model was that when we found a serious bug or a security problem in the core modules, the operators would typically delay for 6-12 months before pushing the update to their subscribers. Eventually I architected a solution that provided good enough security {%if FULL %}(see [below](#new-config)){% endif %}, while still satisfying the QA needs of our customers.
 
 #. The original [DRM](https://en.wikipedia.org/wiki/Digital_rights_management) was [PlayReady](https://en.wikipedia.org/wiki/PlayReady). Later we supported Google [Widevine](http://www.widevine.com/), and the [Viaccess-Orca](http://www.viaccess-orca.com/content-protection.html) proprietary DRM.
 
@@ -149,7 +149,7 @@ _@Viaccess-Orca, Ra'anana - a subsidiary of Orange FR, and @Discretix/SansaSecur
 
 	k. Architected, but did not implement, an efficient secure logging/debug utility. We did not want to allow our foreign commercial agents to have access to the in-the-clear log messages. And without dynamic configuration/filtering of the log messages, the massive debug communication traffic would cause playback [jitter](https://en.wikipedia.org/wiki/Jitter). 
 
-	l. <a id="new-config"/>Architected, but did not implement, a secure static and dynamic configuration mechanism including a cryptographic key ladder mechanism. Only the operator specific master key had to be "baked", by using obfuscation, into the release of the operator specific [DSO](https://en.wikipedia.org/wiki/Library_(computing)).
+	l. <a id="new-config"/>Architected, but did not implement, a secure static and dynamic configuration mechanism including a cryptographic key ladder mechanism. Now only the single operator specific master key had to be "baked in", by using obfuscation, into the release of the operator specific [DSO](https://en.wikipedia.org/wiki/Library_(computing)).
 
 		* This configuration file was a replacement for the original awkward mechanism that baked all keys into the operator specific DSO. Since the operators resisted frequent updates of their DSOs, we were not able to make agile and frequent key changes on the servers.
 		* This mechanism would also allow us to make agile changes to the Android security database, e.g. to the list of packages commonly found on hacker devices, and to the list of device drivers used for O/S builds designed to run on virtual machines.
@@ -188,7 +188,7 @@ _@Viaccess-Orca, Ra'anana - a subsidiary of Orange FR, and @Discretix/SansaSecur
 {% if FULL %}
 *@Anonymous:*
 
-My job was to find hi-tech agricultural products that the company needed to purchase, or that I felt would be worthwhile for them to purchase. I would go to the annual Israel Agritech exhibition, considered to the be the best in the world, to hunt for products and ideas. For example:
+My job was to find hi-tech agricultural products that the company needed to purchase, or that I felt would be worthwhile for them to purchase. I would go to the annual [Israel Agritech](http://agritechisrael.org/) exhibition, considered to the be the best in the world, to hunt for products and ideas. For example:
 
 #. Portable field hospitals and inexpensive quick-to-assemble modular housing units for flood victims.
 #. Inexpensive moisture proof storage bags that can store 500-1000 kg of grain in humid environments with almost no spoilage, whereas previously nearly 75% of the crops placed in field storage facilities were destroyed from moisture induced rot.
@@ -198,7 +198,7 @@ My job was to find hi-tech agricultural products that the company needed to purc
 #. Expert on industrial scale cassava processing which was formerly the major food staple in Nigeria before they joined OPEC, and may soon again become their major staple when the oil stops flowing because the government will no longer have the financial resources to subsidize imported wheat.
 #. Cement research expert to consult for the largest cement factory in Africa.
 #. Establish a private local area GSM cell phone tower with a 10 km radius range in order to support a cassava plantation/factory to be built in a remote jungle location where cassava naturally grows. The factory was well outside the geographic regions supported by the local mobile telephone companies. The efficiency of the plantation would be greatly increased provided that all the workers had mobile phones even if the communications were restricted to the 300 sq. km. region surrounding the factory.
-#. Prepared a bid for refurbishing an abandoned Nigerian government 200 MW natural gas electrical generation station near the cassava plantation. Negotiated with the Israel Electric Corporation (IEC) to submit a joint bid, but eventually they backed out.
+#. Prepared a bid for refurbishing an abandoned Nigerian government 200 MW natural gas electrical generation station near the cassava plantation. Negotiated with the Israel Electric Corporation (IEC) to submit a joint bid, but eventually they backed out and joined another bidder.
 
 {% endif %}
 
@@ -238,18 +238,17 @@ _@Syntezza, Jerusalem:_
 #. I stood on the shoulders of the person who developed the original [PCR Ct](http://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/qpcr-education/pcr-understanding-ct-application-note.html) function analytical detection algorithm, [Dr. Tzachi Bar](https://scholar.google.co.il/citations?user=XokRoVQAAAAJ&hl=en), who was my mentor, and who got me up to speed so quickly.
 
 {% if FULL %}
-Methodology:
+#### Methodology
  
 #. I had access to a database of about 800 MRSA patient nasal sample PCR test results, along with about 20 samples from pure laboratory MRSA colonies that contained a known quantity of the bacteria. All the patient samples had also been analyzed via the "gold standard" Petri dish test. The Petri dish results were required to calibrate the PCR algorithm/results, and would be the basis of government health services (e.g. FDA) subsequent approval of the kit. As is typical in random patient samples, less than 10% were MRSA positive.
 #. First of all, I noted an outrageous data anomaly, namely that the original kit failed to detect as positive many of the samples from the laboratory colonies. After investigating further, and reading the [PCR thermocycler](https://en.wikipedia.org/wiki/Thermal_cycler) manual, I realized that the position of the negative and positive control sample test tubes had been systematically placed in the wrong test tube slot positions - according to the original incorrect experimental protocol. Note that as is typical in these kinds of tests, every batch must contain both a positive and negative control. (For this particular device, there can be a maximum of 36 test tubes in a batch). The PCR algorithm uses these controls for callibrating itself. Given that we were fortunate to the have raw results from the thermocycler, I was able to reconstruct the results by using the correct positive and negative controls.
-#. Even though as a result of recalibration, the results significantly improved, still they were poor. Further investigation showed that only the samples whose graphs resembled the flat "S" shaped curve expected for the standard mathematical analysis of biological assays, had results that were consistent with the Petri dish results. 
-#. There were were still 2 remaining data anomalies:
-	a. More than 50% of the graphs of the patient samples did not have a flat "S" shape, and were in fact very "noisy" - due to PCR inhibition resulting from the use of preliminary chemistry in sample preparation.
-	b. The graphs of the high concentration laboratory colony samples were straight lines.
-#. I used patented techniques (which I cannot yet describe) to overcome the above 2 problems.
+#. Even though as a result of recalibration, the results significantly improved, still they were poor. Further investigation showed that only the samples whose graphs resembled the [logistic function](https://en.wikipedia.org/wiki/Logistic_function) (= a flat "S" shaped curve) expected for the standard mathematical analysis of [biological assays](https://en.wikipedia.org/wiki/Bioassay), had results that were consistent with the Petri dish results. 
+#. More than 50% of the graphs of the patient samples did not exhibit the flat "S" shape curve due to PCR inhibition resulting from the use of ineffective preliminary chemistry during sample preparation, and therefore could not be analyzed by the industry standard mathematical techniques used to estimate the Ct.
+#. I used patented techniques (which I cannot yet describe) _that did not calculate the Ct_ to overcome the above 2 problems.
 #. I split the samples into 2 random groups of equal size. I made sure that the 2 groups contained the same number of positive, negative, and laboratory colony samples.
 #. One group was used for training, while the second group was used to test the predictive capability of the model.
 #. As I stated above, the predicative accuracy of the new algorithm was over 95%.
+
 {% endif %}
 
 
@@ -270,7 +269,7 @@ _@Cisco-NDS, Jerusalem: NDS primary business was providing [Conditional Access (
 #. I wrote an automated testing system for a satellite content delivery system for huge content, e.g. delivering ultra high definition movies to cinemas, and print newspapers for remote publishing. I created a [Domain Specific Language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) in order to execute the satellite operations. After studying the Win32 source code of the satellite ground control station, I detected a major conceptual flaw which the architect refused to believe (because testers are not supposed to understand Win32 internals!). So I wrote a progressive test that brought the satellite to its knees at only 25% of its rated capacity. Afterwards the development team used my tool to develop their own unit test scripts, and to execute a system sanity test before checking-in any changes to the source control system.
 
 
-### 2002-03: CTO: Blind Accessibility H/W & S/W To Enable Viewing of Digital Images & Maps
+### 2002-03: CTO: Blind Accessibility H/W & S/W to Enable Viewing of Digital Images & Maps
 
 _Virtouch, Jerusalem:_ 
 
@@ -317,7 +316,7 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 {% endif %}
 
 
-### 2000-01: Contract Programmer: Win32 Asynchronous Network Driver Software For A VisualBasic Project
+### 2000-01: Contract Programmer: Win32 Asynchronous Network Driver DLL for a VisualBasic Project
 
 {% if FULL %}
 _@Inex-Zamir, Jerusalem._
@@ -531,8 +530,7 @@ In 1971 at the age of 15, for a highschool computer science course, I wrote a co
 #. Since 2005, I have maintained a subscription to the [O'Reilly Safari](https://www.safaribooksonline.com/) on-line tech library.
 #. My daily dose of tech news comes from [Slashdot](https://www.safaribooksonline.com/).
 #. I regularly watch [TedX](https://www.ted.com/about/programs-initiatives/tedx-program) and [Talks At Google](https://talksat.withgoogle.com/) video seminars.
-#. The most fascinating feature of TedX talks is to watch how world class experts in a wide range of fields are able to distill what is so special about their area of expertise to intelligent laymen in only 18 minutes.
-#. Whenever I speak, I try to emulate the TedX format.
+#. The most fascinating feature of TedX talks is to watch and learn how world class experts in a wide range of fields are able to distill what their special area of expertise to intelligent laymen in only 18 minutes. Whenever I speak, I attempt to emulate the best TedX speakers.
 #. I regularly read the tech sections of the Israeli business newspapers [Globes](https://www.globes.co.il/en/) and [The Times of Israel](http://www.timesofisrael.com/start-up-israel/).
 #. I have ecclectic interests.
 #. I regularly research new topics in depth.
@@ -620,7 +618,7 @@ For new projects that need to "press the pedal to the metal", the new safe and e
 My personal preference is for Nim especially on account of its superb built-in [metaprogamming](https://en.wikipedia.org/wiki/Metaprogramming) capability.
 But Nim is currently supported by only a small team mostly of volunteers, while Rust has much more market traction because it is backed by the Mozilla organization. 
 
-Again pragmatism prevails, in spite of my theoretical language preference for Go over Python, or dabbling with Nim and Rust, because there are many application domains where Python has superb 3rd party libraries that would reduce the development time of a proof of concept by a factor of 10 (e.g. [NumPy](https://en.wikipedia.org/wiki/NumPy), [SciPy](https://www.scipy.org/), [Matplotlib](http://matplotlib.org/), [TensorFlow](https://www.tensorflow.org/), [data visualization](http://opensourceforu.com/2017/03/python-libraries-data-visualisation/), etc.), so choosing to use Python is very often a "no brainer" decision.
+Again pragmatism prevails, in spite of my theoretical language preference for Go over Python, or dabbling with Nim and Rust, because there are many application domains where Python has superb 3rd party libraries that would reduce the development time of a proof of concept by at least a factor of 3 (e.g. [NumPy](https://en.wikipedia.org/wiki/NumPy), [SciPy](https://www.scipy.org/), [Matplotlib](http://matplotlib.org/), [TensorFlow](https://www.tensorflow.org/), [data visualization](http://opensourceforu.com/2017/03/python-libraries-data-visualisation/), etc.), so choosing to use Python is very often the most productive decision by far.
 
 Finally, I find for creating specifications for novel and complex ideas, I like to start by brainstorming with [mind maps](https://lifehacker.com/five-best-mind-mapping-tools-476534555) and then move to [TCL](https://wiki.tcl.tk/15542) for creating a formal specification which typically morphs into a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language){% if APPENDIX %} (see [Appendix B](#appendix-b-domain-specific-languages)){% endif %}.
 
@@ -629,7 +627,7 @@ Finally, I find for creating specifications for novel and complex ideas, I like 
 
 ## 7.0 Patents Under Development
 
-1. [Bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics): (a) An extremely accurate and simple noise reduction and normalization algorithm to improve the accuracy of the standard [PCR Ct](http://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/qpcr-education/pcr-understanding-ct-application-note.html) calculation, and (b) a new non-function analytical PCR Ct calculation algorithm in the face of [inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) when the standard algorithm fails because the high level of noise makes it impossible to make an analytic estimation of the underlying flat "S" curve, and instead uses [Artificial Intelligence (AI)](https://en.wikipedia.org/wiki/Artificial_intelligence) techniques.
+1. [Bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics): (a) An extremely accurate and simple noise reduction and normalization algorithm to improve the accuracy of the standard [PCR Ct](http://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/qpcr-education/pcr-understanding-ct-application-note.html) calculation, and (b) an [Artificial Intelligence (AI)](https://en.wikipedia.org/wiki/Artificial_intelligence) methodology for measuring the quantity of DNA in a bioassay where [inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) makes it impossible to estimate the Ct because no underlying [logistic function](https://en.wikipedia.org/wiki/Logistic_function) (= a flat "S" shaped curve) exists.
 2. [Cryptography](https://en.wikipedia.org/wiki/Cryptography): A set of non-linear cryptographic primitives using [Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight)-like [data dependent permutations](https://link.springer.com/article/10.1007%2Fs00145-001-0012-9?LI=true) which overcomes the well known limitation of using Hamming weights because they have a [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution).
 
 
