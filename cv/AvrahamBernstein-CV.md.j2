@@ -50,7 +50,7 @@ __email/skype/pgp:__ [{{EMAIL}}](mailto:{{EMAIL}})
 
 I am an experienced computer scientist and S/W architect. I have devised innovative solutions to many S/W problems for a wide range of fields, including [cybersecurity](#viaccess), [cryptography](#patents), [bioinformatics](#syntezza), computer languages, [factory automation](#sfpc), [telecommunications](#vyyo), [blind vision](#virtouch), [accessibility](#light-pen), [transportation route guidance](#telequest), and [test automation](#elop). I have worked at executive level for a number of organizations, large and small, and helped them realize improvements in their product performance, often putting them in the front rank in their field. I have acquired expert knowledge in a number of fields, often liasing with noted experts, and have been able to quickly apply this knowledge to improve the competitive position of the companies and their products. I have a keen interest in computer languages, both practical and theoretical. I have created a number of [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) that were instrumental in greatly simplifying a number of seemingly intractable problems.
 
-For the past 13 years, I worked primarily in the field of cybersecurity with a specialty in [S/W obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)), i.e. anti-reverse engineering techniques. Most recently I was head of security for an Internet pay TV product where the client devices were Android and IOS. During my 6 year tenure we had 40M subscribers, and no hacks in the field.
+For the past 13 years, I worked primarily in the field of cybersecurity with a specialty in [S/W obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)), i.e. anti-reverse engineering techniques. Most recently I was head of security for an Internet pay TV product where the client devices were Android and IOS. The security critical portion of the application was implemented in native code, i.e. C/C++, and not in Java or Objective-C that were used strictly for the UI. We obfuscated the native code. During my 6 year tenure we had 40M subscribers, and no hacks in the field.
 
 I am still very much a "hands-on" S/W engineer too. Typically I work on novel and complex problems, where I must first create a working proof-of-concept before I can produce a specification that is firmly grounded in reality.
 
@@ -83,25 +83,45 @@ _@Self-Employed, Jerusalem:_
 
 _@Viaccess-Orca, Ra'anana - a subsidiary of Orange FR, and @Discretix/SansaSecurity, Netanya - now merged into ARM:_
 
-#. I was head of security for their [Over-The-Top (OTT)](https://en.wikipedia.org/wiki/Over-the-top_content) Internet pay TV product for 6 years. I joined the project shortly after its inception. When I left there were 40M subscribers, with no successful subscriber hacks/penetrations.
+#. I was head of security for their [Over-The-Top (OTT)](https://en.wikipedia.org/wiki/Over-the-top_content) Internet pay TV product for 6 years. I joined the project shortly after its inception. When I left there were 40M subscribers, with no successful subscriber hacks/penetrations in the field.
+
 {% if FULL %}
 	* The company fired me because they were in financial shock due to the sharp drop in their primary source of revenue from [smart card](https://en.wikipedia.org/wiki/Smart_card) sales for their [Conditional Access (CA)](https://en.wikipedia.org/wiki/Conditional_access) product which are being annihilated by the pure OTT operators such as Netflix and Amazon Prime.
 {% endif %}
 
 #. I was responsible for end-to-end security policy and architecture, and inclusion and implementation of security related programming utilities.
+
 {% if FULL %}
 	* We used the [Jira](https://www.atlassian.com/software/jira/agile) system for agile project management.
 {% endif %}
 
-#. The supported client devices were Android and IOS phones and tablets. The subscriber ID was based upon the built-in Android device ID, and the built-in IOS device-application ID, respectively.
-
-#. We supplied a reference application to our customers who were our [CA](https://en.wikipedia.org/wiki/Conditional_access) broadcaster/operator customers who needed to provide an [OTT](https://en.wikipedia.org/wiki/Over-the-top_content) option to their subscribers. They customized our reference application to their needs. We did not have a direct relationship with the subscribers. Our operators typically took a very long time to do their integration and QA before they would release/push their application to their subscribers. The fundamental technical flaw with this business model was that when we found a serious bug or a security problem in the core modules, the operators would typically delay for 6-12 months before pushing the update to their subscribers. Eventually I architected a solution that provided good enough security {%if FULL and WRITER=='html5' %}(see [below](#new-config)){% endif %}, while still satisfying the QA needs of our customers.
+#. The supported client devices were Android and IOS phones and tablets. 
 
 #. The original [DRM](https://en.wikipedia.org/wiki/Digital_rights_management) was [PlayReady](https://en.wikipedia.org/wiki/PlayReady). Later we supported Google [Widevine](http://www.widevine.com/), and the [Viaccess-Orca](http://www.viaccess-orca.com/content-protection.html) proprietary DRM.
 
-#. For security reasons, all client S/W was implemented in native machine code, i.e. in C/C++, except for the UI which was implemented in Java and Objective-C, for Android and IOS respectively.
+#. In a nutshell, my primary job was to protect the content, content decryption keys, and subscriber keys, on the client devices. The security critical modules were written in native code, i.e. C/C++, and _not_ Java or Objective-C which were used solely for the UI. Obfuscation was designed to protect the native code from reverse engineering. I made it nearly impossible for an attacker to engage in _static_ [reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering), and made it extremely difficult to use the state-of-the-art _dynamic_ reverse engineering tools such as the [IDA Hex-Rays](https://www.hex-rays.com/) decompiler/debugger. 
+
+{% if FULL %}
+	* Due to the challenging and novel nature of the features that I architected, I usually built a working proof-of-concept (POC) before handing the final specification to the programmers. Typically my implementation was language was C, as opposed to C++, because the project was comprised of both C and C++ modules, so using a C interface was the lowest common denominator.
+
+	* Due to the large number of preprocessing and postprocessing utilities in our build process, I had to do my own [devops](https://en.wikipedia.org/wiki/DevOps) "plumbing" changes in order to do end-to-end testing of my POCs.
+{% endif %}
+
+
+#. The subscriber ID was based upon the built-in Android device ID, and the built-in IOS device-application ID, respectively.
+
+{% if FULL %}
+	* Both operating systems now forbid _user_, i.e. _non-kernel_, applications from accessing any H/W ID registers, e.g. MAC address or CPU ID.
+	* And for reasons of user friendliness, the application must not demand that the subscriber enter any credentials when he wants to view content.
+	* Only once, when the subscriber initially registers his device, is he required to enter a registration token that is associated with his name and credit card.
+{% endif %}
+
+
+#. We supplied a reference application to our customers who were our [CA](https://en.wikipedia.org/wiki/Conditional_access) broadcaster/operator customers who needed to provide an [OTT](https://en.wikipedia.org/wiki/Over-the-top_content) option to their subscribers. They customized our reference application to their needs. We did not have a direct relationship with the subscribers. Our operators typically took a very long time to do their integration and QA before they would release/push their application to their subscribers. The fundamental technical flaw with this business model was that when we found a serious bug or a security problem in a core module, the operators would typically delay for 6-12 months before pushing the update to their subscribers. We had no timely way to update a key that had been compromised! Eventually I architected a solution that provided good enough security {%if FULL and WRITER=='html5' %}(see [below](#new-config)){% endif %}, while still satisfying the QA needs of our customers.
+
 
 #. Some S/W security tools we purchased, namely the [InterTrust/WhiteCryption](https://www.intertrust.com/products/application-security/) [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compiler and white-box encryption tools.
+
 {% if FULL %}
 	* _Prima facie_ these tools seemed very expensive. The combined package costs $100+K, plus the standard 15% annual maintenance fee. However having been involved in the development of similar tools at Cisco-NDS (see below), they are very complex and can easily consume 5-10 man-years of development. Therefore buying them off-the-shelf made economic sense. When we first purchased the obfuscating compiler, the product was new, and had bugs. On account of my background having built a similar tool myself, I worked closely with the vendor's architect to help debug their product, and suggested and specified feature improvements.
 
@@ -109,6 +129,7 @@ _@Viaccess-Orca, Ra'anana - a subsidiary of Orange FR, and @Discretix/SansaSecur
 
 	* White-box encryption relies upon wrapped keys and mathematical transformations that make it very difficult to recognize that a well known cryptographic algorithm is being executed, e.g. AES or SHA-1.
 {% endif %}
+
 
 #. Many S/W security tools I architected and implemented in-house{% if FULL %}:{% else %}, including an Android root detection algorithm.{% endif %}
 {% if FULL %}
@@ -151,13 +172,6 @@ _@Viaccess-Orca, Ra'anana - a subsidiary of Orange FR, and @Discretix/SansaSecur
 		* This mechanism would also allow us to make agile changes to the Android security database, e.g. to the list of packages commonly found on hacker devices, and to the list of device drivers used for O/S builds designed to run on virtual machines.
 		* Generally our customers, i.e. the operators, were far less resistant to pushing relatively frequent database changes to their subscribers - as opposed to code updates. But it required that we modify our application architecture to make it data driven wherever possible.
 <p>		
-{% endif %}
-
-#. In a nutshell, my primary job was to protect the content, content decryption keys, and subscriber keys, on the client devices. I made it nearly impossible for an attacker to engage in _static_ [reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering), and made it extremely difficult to use the state-of-the-art _dynamic_ reverse engineering tools such as the [IDA Hex-Rays](https://www.hex-rays.com/) decompiler/debugger.
-{% if FULL %}
-	* Due to the challenging and novel nature of the features that I architected, I usually built a working proof-of-concept (POC) before handing the final specification to the programmers. Typically my implementation was language was C, as opposed to C++, because the project was comprised of both C and C++ modules, so using a C interface was the lowest common denominator.
-
-	* Due to the large number of preprocessing and postprocessing utilities in our build process, I had to do my own [devops](https://en.wikipedia.org/wiki/DevOps) "plumbing" changes in order to do end-to-end testing of my POCs.
 {% endif %}
 
 #. Unfortunately the bottom line with respect to security is that no matter how well protected the client S/W is, you have to expect that it will eventually be hacked. Without pushing a new randomly obfuscated version, say every 60-90 days, no protection scheme will work.
