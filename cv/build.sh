@@ -99,9 +99,10 @@ pandoc.sh $WRITER --standalone -M lang=$LANG -M pagetitle=$TITLE tmp/$WRITER.md 
 
 cp -fp ${ROOT}.md xfer/$OUT.md.j2
 cp -fp ${ROOT}.html xfer/$OUT.html
-cp -fp ${ROOT}-Abbrev.html xfer/${OUT}-Abbrev.html
-cp -fp ${ROOT}.docx xfer/$OUT.docx
-cp -fp ${ROOT}-Abbrev.docx xfer/${OUT}-Abbrev.docx
+cp -f ${ROOT}-Abbrev.html xfer/${OUT}-Abbrev.html
+cp -f ${ROOT}.docx xfer/$OUT.docx
+cp -f ${ROOT}-Abbrev.docx xfer/${OUT}-Abbrev.docx
+touch --reference=xfer/$OUT.html xfer/${OUT}-Abbrev.html xfer/${OUT}*.docx
 
 cp -fp build.sh xfer/build.sh
 cp -fp defs.j2 xfer/defs.j2
