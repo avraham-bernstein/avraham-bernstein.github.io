@@ -20,9 +20,11 @@ TS=$(echo '{{DATETIME}}' | j2-cli.py)
 
 WRITER=html5
 
-# need to include head.html at the end of the HTML head section
-j2-cli.py -DWRITER=$WRITER -DTS=$TS defs.j2 head.html.j2 | trim-top.awk > tmp/head.html
-j2-cli.py -DWRITER=$WRITER -DTS=$TS defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+# Do not enable J2 line statements or line comments due to conflict with pandoc ATX (#) headers.
+# Change J2 comments to '{@ ... @}' due to conflict with pandoc '{#internal-link}' notation.
+j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS defs.j2 head.html.j2 | trim-top.awk > tmp/head.html
+j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+# Need to add head.html inside template
 pandoc.sh $WRITER --standalone --toc --toc-depth=4 -M lang=$LANG -M pagetitle=$TITLE -H tmp/head.html tmp/$WRITER.md > tmp/1.html
 
 # move TOC to the location of marker '%%TOC%%'
@@ -55,8 +57,8 @@ if [[ "$MODE" == "fast" ]]; then exit $?; fi
 
 
 # need to include head.html at the end of the HTML head section
-j2-cli.py -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 head.html.j2 | trim-top.awk > tmp/head.html
-j2-cli.py -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 head.html.j2 | trim-top.awk > tmp/head.html
+j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --standalone --toc --toc-depth=4 -M lang=$LANG -M pagetitle=$TITLE -H tmp/head.html tmp/$WRITER.md > tmp/1.html
 
 # move TOC to the location of marker '%%TOC%%'
@@ -90,10 +92,10 @@ WRITER=docx
 # TBD: docx supports TOC, but I don't know how to implement it from inside a pandoc template
 # TBD: see options --reference-docx & --reference-odt
 
-j2-cli.py -DWRITER=$WRITER -DTS=$TS defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --standalone -M lang=$LANG -M pagetitle=$TITLE tmp/$WRITER.md > $ROOT.$WRITER
 
-j2-cli.py -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --standalone -M lang=$LANG -M pagetitle=$TITLE tmp/$WRITER.md > ${ROOT}-Abbrev.$WRITER
 
 

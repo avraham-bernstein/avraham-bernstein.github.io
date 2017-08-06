@@ -1,3 +1,4 @@
+{@ NOTE MODIFIED J2 COMMENT DELIMS @}
 {% set VS = '2.0.0' %}
 {% set VS_ORIG_DATE = '2017-07-23' %}
 {% set LANG = 'en-US' %}
@@ -14,13 +15,13 @@
 {% set POSTAL_ZIP = '9727433' %}
 {% set TEL_IL_SHORT = '054.641-0955' %}
 {% set TEL_IL = '+972.' + TEL_IL_SHORT[1:] %} 
-{# 
+{@
 	The International Standard of Industrial Classification of All Economic Activities (ISIC).
 	https://unstats.un.org/unsd/cr/registry/isic-4.asp
 	6201 = Computer programming activities
 	6202 = Computer consultancy and computer facilities management activities
 	6209 = Other information technology and computer service activities
-#}
+@}
 {% set ISICV4 = '6209' %}
 
 {% set EMAIL = NAME1 + '.' + NAME3 + '@gmail.com' %}
@@ -29,7 +30,7 @@
 {% set G_PLUS = 'https://plus.google.com/110575620993497854880' %}
 {% set HOME = 'http://purl.org/' + NAME1 + '.' + NAME3 %}
 {% set LINKEDIN = 'https://www.linkedin.com/in/' + NAME1 + NAME3 %}
-{% set UUID = '74a0cbbb-215f-5024-ba0c-46fefe664e07' %} {# $ uuid -v5 ns:URL ... #}
+{% set UUID = '74a0cbbb-215f-5024-ba0c-46fefe664e07' %} {@ $ uuid -v5 ns:URL ... @}
 
 {% set YEAR = TS[0:4] %}
 {% set COPYRIGHT = 'Copyright &copy; ' + YEAR + ' ' + NAME + ', ' + CITY + ' ' + COUNTRY + '. All rights reserved.' %}
