@@ -97,16 +97,16 @@ j2-cli.py -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 $ROOT.md | trim-t
 pandoc.sh $WRITER --standalone -M lang=$LANG -M pagetitle=$TITLE tmp/$WRITER.md > ${ROOT}-Abbrev.$WRITER
 
 
-cp -f ${ROOT}.md xfer/$OUT.md.j2
-cp -f ${ROOT}.html xfer/$OUT.html
-cp -f ${ROOT}-Abbrev.html xfer/${OUT}-Abbrev.html
-cp -f ${ROOT}.docx xfer/$OUT.docx
-cp -f ${ROOT}-Abbrev.docx xfer/${OUT}-Abbrev.docx
+cp -fp ${ROOT}.md xfer/$OUT.md.j2
+cp -fp ${ROOT}.html xfer/$OUT.html
+cp -fp ${ROOT}-Abbrev.html xfer/${OUT}-Abbrev.html
+cp -fp ${ROOT}.docx xfer/$OUT.docx
+cp -fp ${ROOT}-Abbrev.docx xfer/${OUT}-Abbrev.docx
 
-cp -f build.sh xfer/build.sh
-cp -f defs.j2 xfer/defs.j2
-cp -f head.html.j2 xfer/head.html.j2
-cp -f template.html5 xfer/template.html5
+cp -fp build.sh xfer/build.sh
+cp -fp defs.j2 xfer/defs.j2
+cp -fp head.html.j2 xfer/head.html.j2
+cp -fp template.html5 xfer/template.html5
 
 
 # if [[ "$MODE" == "hh" ]]; then
