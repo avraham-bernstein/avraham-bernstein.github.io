@@ -1100,6 +1100,9 @@ a determined attacker could use their unprotected code as a vector for attacking
 <li>My solution was to provide the vendor with a tiny generic "shim", i.e. a tiny C module with source code, that he agreed to incorporate into his own DSO, <code>codec.so</code>, the same library that he distributed to all of his clients, regardless of whether or not they knew how to take advantage of the shim.
 </li>
 
+<li><i>Eventually</i> we could do a binary edit of <code>codec.so</code>, and add the shim function without the vendor's knowledge or support as long as the vendor doesn't sign his code. Tools that edit ELF files include <a href="http://www.eresi-project.org/">ESRI</a> and <a href="http://docs.pwntools.com/en/stable/index.html">pwntools</a>.
+</li>
+
 <li>The shim function that immediately follows is deceptively simple. It provided me with enough of a beachhead into the vendor's code, that I could supply our DSO with no global symbols, and I could obfuscate his calls to our secret APIs.
 <pre><code>
 /*
@@ -1124,16 +1127,16 @@ void * gShim;
 __attribute__((constructor)) // stealth load before dlopen completes!
 static void shim() // note func is static so it will not be an exported symbol
 {
-  // The only way to communicate with this func is via the env var CODEC_VENDOR_NAME_SHUNT_LIB.
+  // The only way to communicate with this func is via the env var CODEC_VENDOR_NAME_SHIM_LIB.
 
   // BTW if the codec vendor's name is ALPHA, then the name of this variable
-  // should really be ALPHA_SHUNT_LIB.
+  // should really be ALPHA_SHIM_LIB.
 
   // If no value is assigned to this env var, or it is not the name of a
   // dynamic library, or it has no "init" func, then this function will do
   // nothing and return immediately.
 
-  char * lib = getenv("CODEC_VENDOR_NAME_SHUNT_LIB"); // TODO: obfuscate this string
+  const char * lib = getenv("CODEC_VENDOR_NAME_SHIM_LIB"); // TODO: obfuscate this string
   if (lib && *lib) { // verify that env var exists and has a value
 
     void * h = dlopen(lib,RTLD_NOW); // attempt to load DSO lib
@@ -1146,7 +1149,7 @@ static void shim() // note func is static so it will not be an exported symbol
 
         gShim = (*initFunc)(); // invoke lib's init func
 
-        // Anyone who uses the shim can have init() pass any value they please.
+        // Anyone who uses the shim can have init() return any value they please.
 
         // In our particular case init() will communicate with drm.so via an
         // asynchronous encrypted back channel that it prepared just before it
