@@ -55,7 +55,7 @@
   <meta name="dcterms.title" content='Avraham "Abe" Bernstein | Abbreviated Professional CV'>
   <meta name="dcterms.hasVersion" content="2.0.0-abbrev">
   <meta name="dcterms.date" content="2017-07-23">
-  <meta name="dcterms.modified" content="2017-08-06T19:43:49Z">
+  <meta name="dcterms.modified" content="2017-08-07T06:10:38Z">
   <meta name="dcterms.creator" content="Avraham Bernstein">
   <meta name="dcterms.rightsHolder" content="Avraham Bernstein, Jerusalem ISRAEL">
   <meta name="dcterms.copyrightDate" content="2017">
@@ -94,7 +94,7 @@
 <body>
 <section id="avraham-abe-bernstein-abbreviated-professional-cv" class="level1">
 <h1 tabindex="0">Avraham <q>Abe</q> Bernstein | Abbreviated Professional CV</h1>
-<p><em>Version: 2.0.0-abbrev</em> <br><em>Last update: 2017-08-06T19:43:49Z</em> <br><em>Copyright © 2017 Avraham Bernstein, Jerusalem ISRAEL. All rights reserved.</em> <br><em>License: Except where otherwise noted, this work is licensed under the Creative Commons License <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a></em></p>
+<p><em>Version: 2.0.0-abbrev</em> <br><em>Last update: 2017-08-07T06:10:38Z</em> <br><em>Copyright © 2017 Avraham Bernstein, Jerusalem ISRAEL. All rights reserved.</em> <br><em>License: Except where otherwise noted, this work is licensed under the Creative Commons License <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a></em></p>
 <figure>
 <img title="Avraham Bernstein" alt="Avraham Bernstein" src="http://purl.org/Avraham.Bernstein/image">
 <figcaption>
@@ -187,11 +187,10 @@ Secure photo<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> of t
 <li tabindex="0"><p>The supported client devices were Android and IOS phones and tablets.</p></li>
 <li tabindex="0"><p>The original <a href="https://en.wikipedia.org/wiki/Digital_rights_management">DRM</a> was <a href="https://en.wikipedia.org/wiki/PlayReady">PlayReady</a>. Later we supported Google <a href="http://www.widevine.com/">Widevine</a>, and the <a href="http://www.viaccess-orca.com/content-protection.html">Viaccess-Orca</a> proprietary DRM.</p></li>
 <li tabindex="0"><p>In a nutshell, my primary job was to protect the content, content decryption keys, and subscriber keys, on the client devices. The security critical modules were written in native code, i.e. C/C++, and <em>not</em> Java or Objective-C which were used solely for the UI. Obfuscation was designed to protect the native code from reverse engineering. I made it nearly impossible for an attacker to engage in <em>static</em> <a href="https://en.wikipedia.org/wiki/Reverse_engineering">reverse engineering</a>, and made it extremely difficult to use the state-of-the-art <em>dynamic</em> reverse engineering tools such as the <a href="https://www.hex-rays.com/">IDA Hex-Rays</a> decompiler/debugger.</p></li>
-<li tabindex="0"><p>The subscriber ID was based upon the built-in Android device ID, and the built-in IOS device-application ID, respectively.</p></li>
 <li tabindex="0"><p>We supplied a reference application to our customers who were our <a href="https://en.wikipedia.org/wiki/Conditional_access">CA</a> broadcaster/operator customers who needed to provide an <a href="https://en.wikipedia.org/wiki/Over-the-top_content">OTT</a> option to their subscribers. They customized our reference application to their needs. We did not have a direct relationship with the subscribers. Our operators typically took a very long time to do their integration and QA before they would release/push their application to their subscribers. The fundamental technical flaw with this business model was that when we found a serious bug or a security problem in a core module, the operators would typically delay for 6-12 months before pushing the update to their subscribers. We had no timely way to update a key that had been compromised! Eventually I architected a solution that provided good enough security , while still satisfying the QA needs of our customers.</p></li>
 <li tabindex="0"><p>Some S/W security tools we purchased, namely the <a href="https://www.intertrust.com/products/application-security/">InterTrust/WhiteCryption</a> <a href="https://en.wikipedia.org/wiki/Obfuscation_(software)">obfuscating</a> compiler and white-box encryption tools.</p></li>
-<li tabindex="0">Many S/W security tools I architected and implemented in-house, including an Android root detection algorithm.</li>
-<li tabindex="0"><p>Unfortunately the bottom line with respect to security is that no matter how well protected the client S/W is, you have to expect that it will eventually be hacked. Without pushing a new randomly obfuscated version, say every 60-90 days, no protection scheme will work.</p></li>
+<li tabindex="0"><p>Many S/W security tools I architected and implemented in-house, including an Android root detection algorithm.</p></li>
+<li tabindex="0"><p>Unfortunately the bottom line with respect to security is that no matter how well protected the client S/W is, you have to expect that it will eventually be hacked. Without pushing a new randomly obfuscated version, say every 60-90 days, no protection scheme will remain secure.</p></li>
 </ol>
 </section>
 <section id="consultant-cybersecurity-protection-of-a-small-business-with-extremely-high-security-concerns" class="level3">

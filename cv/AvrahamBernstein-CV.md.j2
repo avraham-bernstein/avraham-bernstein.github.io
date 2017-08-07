@@ -103,17 +103,18 @@ _@Viaccess-Orca, Ra'anana - a subsidiary of Orange FR, and @Discretix/SansaSecur
 
 {% if FULL %}
 	* Due to the challenging and novel nature of the features that I architected, I usually built a working proof-of-concept (POC) before handing the final specification to the programmers. Typically my implementation was language was C, as opposed to C++, because the project was comprised of both C and C++ modules, so using a C interface was the lowest common denominator.
-
 	* Due to the large number of preprocessing and postprocessing utilities in our build process, I had to do my own [devops](https://en.wikipedia.org/wiki/DevOps) "plumbing" changes in order to do end-to-end testing of my POCs.
 {% endif %}
 
 
-#. The subscriber ID was based upon the built-in Android device ID, and the built-in IOS device-application ID, respectively.
-
 {% if FULL %}
-	* Both operating systems now forbid _user_, i.e. _non-kernel_, applications from accessing any H/W ID registers, e.g. MAC address or CPU ID.
-	* And for reasons of user friendliness, the application must not demand that the subscriber enter any credentials when he wants to view content.
-	* Only once, when the subscriber initially registers his device, is he required to enter a registration token that is associated with his name and credit card.
+#. The app's H/W anchor/token is the built-in 64-bit [Android device ID](https://developer.android.com/reference/android/provider/Settings.Secure.html), or the built-in 128-bit IOS application-device ID (i.e. [IDFV](https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor)). The O/S guarantees this ID to be unique[^unique-os-id] and persistent, but it will change when the device invokes a factory reset.
+
+	* For reasons of owner privacy, both operating systems now forbid _user_, i.e. _non-kernel_, applications from accessing any H/W ID registers, e.g. WiFi MAC address or CPU ID. However it is possible to retrieve MAC data from a phone device, i.e. the [IMEI](https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity), but since a large proportion of the subscribers use tablets, we ignored the IMEI.
+	* And for reasons of user friendliness, the app must not demand that the subscriber enter any credentials when he wants to view content. Therefore the subscriber ID must be _persistent_.
+	* Only once, when the subscriber initially installs the app and registers his device with the app's registration server, is he required to enter a relatively short time limited registration token that is associated with his email address and credit card. 
+	* Internally the registration server responds to the registration request with a unique 128-bit device specific subscriber ID that remains persistent for the life of the app.
+	* All subsequent communication with the app servers use an encrypted concatenation of the subscriber ID, device ID, time stamp, and random number.
 {% endif %}
 
 
@@ -124,16 +125,14 @@ _@Viaccess-Orca, Ra'anana - a subsidiary of Orange FR, and @Discretix/SansaSecur
 
 {% if FULL %}
 	* _Prima facie_ these tools seemed very expensive. The combined package costs $100+K, plus the standard 15% annual maintenance fee. However having been involved in the development of similar tools at Cisco-NDS (see below), they are very complex and can easily consume 5-10 man-years of development. Therefore buying them off-the-shelf made economic sense. When we first purchased the obfuscating compiler, the product was new, and had bugs. On account of my background having built a similar tool myself, I worked closely with the vendor's architect to help debug their product, and suggested and specified feature improvements.
-
 	* The primary technique used in state-of-the-art _binary_ obfuscation is to randomly change program flow by using opaque conditions and jumps that fool the compiler that seem to grossly change the flow, even though the final result of program execution is the same. Note that it is the job of our application build process to compile and link in a way that minimizes the use of global symbols.
-
 	* White-box encryption relies upon wrapped keys and mathematical transformations that make it very difficult to recognize that a well known cryptographic algorithm is being executed, e.g. AES or SHA-1.
 {% endif %}
 
 
 #. Many S/W security tools I architected and implemented in-house{% if FULL %}:{% else %}, including an Android root detection algorithm.{% endif %}
-{% if FULL %}
 
+{% if FULL %}
 	a. Designed a sophisticated Android root detection mechanism.
 	
 		* Obvious signs of a rooted Android device can be determined easily from the the device's [build properties](https://developer.android.com/studio/build/index.html). But other rooting techniques are not as clear, so I developed a [fuzzy logic](https://en.wikipedia.org/wiki/Fuzzy_logic) scoring algorithm. Based upon subscriber feedback, my rate of [false positives](https://en.wikipedia.org/wiki/False_positives_and_false_negatives) was extremely low.
@@ -174,8 +173,9 @@ _@Viaccess-Orca, Ra'anana - a subsidiary of Orange FR, and @Discretix/SansaSecur
 <p>		
 {% endif %}
 
-#. Unfortunately the bottom line with respect to security is that no matter how well protected the client S/W is, you have to expect that it will eventually be hacked. Without pushing a new randomly obfuscated version, say every 60-90 days, no protection scheme will work.
+#. Unfortunately the bottom line with respect to security is that no matter how well protected the client S/W is, you have to expect that it will eventually be hacked. Without pushing a new randomly obfuscated version, say every 60-90 days, no protection scheme will remain secure.
 
+[^unique-os-id]: Obviously the unique device ID supplied by the O/S can be counterfeited by a rooted/jail-broken device. Therefore "off-device" security methods on the servers are necessary to track counterfeit IDs. For example by detecting an unusually high number of playback hours, or detecting simultaneous playback from multiple IP addresses or from widely separated geographic regions.
 
 ### 2016-16: Consultant: Cybersecurity Protection of a Small Business With Extremely High Security Concerns
 

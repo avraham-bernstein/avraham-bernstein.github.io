@@ -55,7 +55,7 @@
   <meta name="dcterms.title" content='Avraham "Abe" Bernstein | Professional CV'>
   <meta name="dcterms.hasVersion" content="2.0.0">
   <meta name="dcterms.date" content="2017-07-23">
-  <meta name="dcterms.modified" content="2017-08-06T19:43:49Z">
+  <meta name="dcterms.modified" content="2017-08-07T06:10:38Z">
   <meta name="dcterms.creator" content="Avraham Bernstein">
   <meta name="dcterms.rightsHolder" content="Avraham Bernstein, Jerusalem ISRAEL">
   <meta name="dcterms.copyrightDate" content="2017">
@@ -94,7 +94,7 @@
 <body>
 <section id="avraham-abe-bernstein-professional-cv" class="level1">
 <h1 tabindex="0">Avraham <q>Abe</q> Bernstein | Professional CV</h1>
-<p><em>Version: 2.0.0</em> <br><em>Last update: 2017-08-06T19:43:49Z</em> <br><em>Copyright © 2017 Avraham Bernstein, Jerusalem ISRAEL. All rights reserved.</em> <br><em>License: Except where otherwise noted, this work is licensed under the Creative Commons License <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a></em></p>
+<p><em>Version: 2.0.0</em> <br><em>Last update: 2017-08-07T06:10:38Z</em> <br><em>Copyright © 2017 Avraham Bernstein, Jerusalem ISRAEL. All rights reserved.</em> <br><em>License: Except where otherwise noted, this work is licensed under the Creative Commons License <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a></em></p>
 <figure>
 <img title="Avraham Bernstein" alt="Avraham Bernstein" src="http://purl.org/Avraham.Bernstein/image">
 <figcaption>
@@ -198,21 +198,23 @@ Secure photo<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> of t
 <li tabindex="0"><p>The original <a href="https://en.wikipedia.org/wiki/Digital_rights_management">DRM</a> was <a href="https://en.wikipedia.org/wiki/PlayReady">PlayReady</a>. Later we supported Google <a href="http://www.widevine.com/">Widevine</a>, and the <a href="http://www.viaccess-orca.com/content-protection.html">Viaccess-Orca</a> proprietary DRM.</p></li>
 <li tabindex="0"><p>In a nutshell, my primary job was to protect the content, content decryption keys, and subscriber keys, on the client devices. The security critical modules were written in native code, i.e. C/C++, and <em>not</em> Java or Objective-C which were used solely for the UI. Obfuscation was designed to protect the native code from reverse engineering. I made it nearly impossible for an attacker to engage in <em>static</em> <a href="https://en.wikipedia.org/wiki/Reverse_engineering">reverse engineering</a>, and made it extremely difficult to use the state-of-the-art <em>dynamic</em> reverse engineering tools such as the <a href="https://www.hex-rays.com/">IDA Hex-Rays</a> decompiler/debugger.</p>
 <ul>
-<li tabindex="0"><p>Due to the challenging and novel nature of the features that I architected, I usually built a working proof-of-concept (POC) before handing the final specification to the programmers. Typically my implementation was language was C, as opposed to C++, because the project was comprised of both C and C++ modules, so using a C interface was the lowest common denominator.</p></li>
-<li tabindex="0"><p>Due to the large number of preprocessing and postprocessing utilities in our build process, I had to do my own <a href="https://en.wikipedia.org/wiki/DevOps">devops</a> <q>plumbing</q> changes in order to do end-to-end testing of my POCs.</p></li>
+<li tabindex="0">Due to the challenging and novel nature of the features that I architected, I usually built a working proof-of-concept (POC) before handing the final specification to the programmers. Typically my implementation was language was C, as opposed to C++, because the project was comprised of both C and C++ modules, so using a C interface was the lowest common denominator.</li>
+<li tabindex="0">Due to the large number of preprocessing and postprocessing utilities in our build process, I had to do my own <a href="https://en.wikipedia.org/wiki/DevOps">devops</a> <q>plumbing</q> changes in order to do end-to-end testing of my POCs.</li>
 </ul></li>
-<li tabindex="0"><p>The subscriber ID was based upon the built-in Android device ID, and the built-in IOS device-application ID, respectively.</p>
+<li tabindex="0"><p>The app’s H/W anchor/token is the built-in 64-bit <a href="https://developer.android.com/reference/android/provider/Settings.Secure.html">Android device ID</a>, or the built-in 128-bit IOS application-device ID (i.e. <a href="https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor">IDFV</a>). The O/S guarantees this ID to be unique<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> and persistent, but it will change when the device invokes a factory reset.</p>
 <ul>
-<li tabindex="0">Both operating systems now forbid <em>user</em>, i.e. <em>non-kernel</em>, applications from accessing any H/W ID registers, e.g. MAC address or CPU ID.</li>
-<li tabindex="0">And for reasons of user friendliness, the application must not demand that the subscriber enter any credentials when he wants to view content.</li>
-<li tabindex="0">Only once, when the subscriber initially registers his device, is he required to enter a registration token that is associated with his name and credit card.</li>
+<li tabindex="0">For reasons of owner privacy, both operating systems now forbid <em>user</em>, i.e. <em>non-kernel</em>, applications from accessing any H/W ID registers, e.g. WiFi MAC address or CPU ID. However it is possible to retrieve MAC data from a phone device, i.e. the <a href="https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity">IMEI</a>, but since a large proportion of the subscribers use tablets, we ignored the IMEI.</li>
+<li tabindex="0">And for reasons of user friendliness, the app must not demand that the subscriber enter any credentials when he wants to view content. Therefore the subscriber ID must be <em>persistent</em>.</li>
+<li tabindex="0">Only once, when the subscriber initially installs the app and registers his device with the app’s registration server, is he required to enter a relatively short time limited registration token that is associated with his email address and credit card.</li>
+<li tabindex="0">Internally the registration server responds to the registration request with a unique 128-bit device specific subscriber ID that remains persistent for the life of the app.</li>
+<li tabindex="0">All subsequent communication with the app servers use an encrypted concatenation of the subscriber ID, device ID, time stamp, and random number.</li>
 </ul></li>
 <li tabindex="0"><p>We supplied a reference application to our customers who were our <a href="https://en.wikipedia.org/wiki/Conditional_access">CA</a> broadcaster/operator customers who needed to provide an <a href="https://en.wikipedia.org/wiki/Over-the-top_content">OTT</a> option to their subscribers. They customized our reference application to their needs. We did not have a direct relationship with the subscribers. Our operators typically took a very long time to do their integration and QA before they would release/push their application to their subscribers. The fundamental technical flaw with this business model was that when we found a serious bug or a security problem in a core module, the operators would typically delay for 6-12 months before pushing the update to their subscribers. We had no timely way to update a key that had been compromised! Eventually I architected a solution that provided good enough security (see <a href="#new-config">below</a>), while still satisfying the QA needs of our customers.</p></li>
 <li tabindex="0"><p>Some S/W security tools we purchased, namely the <a href="https://www.intertrust.com/products/application-security/">InterTrust/WhiteCryption</a> <a href="https://en.wikipedia.org/wiki/Obfuscation_(software)">obfuscating</a> compiler and white-box encryption tools.</p>
 <ul>
-<li tabindex="0"><p><em>Prima facie</em> these tools seemed very expensive. The combined package costs $100+K, plus the standard 15% annual maintenance fee. However having been involved in the development of similar tools at Cisco-NDS (see below), they are very complex and can easily consume 5-10 man-years of development. Therefore buying them off-the-shelf made economic sense. When we first purchased the obfuscating compiler, the product was new, and had bugs. On account of my background having built a similar tool myself, I worked closely with the vendor’s architect to help debug their product, and suggested and specified feature improvements.</p></li>
-<li tabindex="0"><p>The primary technique used in state-of-the-art <em>binary</em> obfuscation is to randomly change program flow by using opaque conditions and jumps that fool the compiler that seem to grossly change the flow, even though the final result of program execution is the same. Note that it is the job of our application build process to compile and link in a way that minimizes the use of global symbols.</p></li>
-<li tabindex="0"><p>White-box encryption relies upon wrapped keys and mathematical transformations that make it very difficult to recognize that a well known cryptographic algorithm is being executed, e.g. AES or SHA-1.</p></li>
+<li tabindex="0"><em>Prima facie</em> these tools seemed very expensive. The combined package costs $100+K, plus the standard 15% annual maintenance fee. However having been involved in the development of similar tools at Cisco-NDS (see below), they are very complex and can easily consume 5-10 man-years of development. Therefore buying them off-the-shelf made economic sense. When we first purchased the obfuscating compiler, the product was new, and had bugs. On account of my background having built a similar tool myself, I worked closely with the vendor’s architect to help debug their product, and suggested and specified feature improvements.</li>
+<li tabindex="0">The primary technique used in state-of-the-art <em>binary</em> obfuscation is to randomly change program flow by using opaque conditions and jumps that fool the compiler that seem to grossly change the flow, even though the final result of program execution is the same. Note that it is the job of our application build process to compile and link in a way that minimizes the use of global symbols.</li>
+<li tabindex="0">White-box encryption relies upon wrapped keys and mathematical transformations that make it very difficult to recognize that a well known cryptographic algorithm is being executed, e.g. AES or SHA-1.</li>
 </ul></li>
 <li tabindex="0">Many S/W security tools I architected and implemented in-house:
 <ol type="a">
@@ -248,7 +250,7 @@ Secure photo<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> of t
 <p></li>
 </ul></li>
 </ol></li>
-<li tabindex="0"><p>Unfortunately the bottom line with respect to security is that no matter how well protected the client S/W is, you have to expect that it will eventually be hacked. Without pushing a new randomly obfuscated version, say every 60-90 days, no protection scheme will work.</p></li>
+<li tabindex="0"><p>Unfortunately the bottom line with respect to security is that no matter how well protected the client S/W is, you have to expect that it will eventually be hacked. Without pushing a new randomly obfuscated version, say every 60-90 days, no protection scheme will remain secure.</p></li>
 </ol>
 </section>
 <section id="consultant-cybersecurity-protection-of-a-small-business-with-extremely-high-security-concerns" class="level3">
@@ -605,6 +607,7 @@ Secure photo<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> of t
 <hr />
 <ol>
 <li id="fn1"><p>This secure photo was built using an <a href="http://docs.gimp.org/en/plug-in-oilify.html">oilify</a> filter and a visible email address <a href="https://en.wikipedia.org/wiki/Digital_watermarking">watermark</a>. It uses <a href="https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup">digital camouflage</a> that will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be compared with CCTV surveillance photos will not work. (2) The photo has built-in <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">two factor authentication (2FA)</a>. The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate/label it with any other name besides mine. Similarly if a site were to maliciously display my photo without my permission in order to imply my association or agreement with them, then it is trivial for anyone who may be suspicious of their claim to <q>challenge</q> the site by asking me for a verification email.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Obviously the unique device ID supplied by the O/S can be counterfeited by a rooted/jail-broken device. Therefore <q>off-device</q> security methods on the servers are necessary to track counterfeit IDs. For example by detecting an unusually high number of playback hours, or detecting simultaneous playback from multiple IP addresses or from widely separated geographic regions.<a href="#fnref2">↩</a></p></li>
 </ol>
 </section>
 </body>
