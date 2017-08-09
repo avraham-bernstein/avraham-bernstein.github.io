@@ -1,5 +1,6 @@
-{@ NOTE MODIFIED J2 COMMENT DELIMS @}
-{% set VS = '2.0.0' %}
+{@ !!! MODIFIED J2 COMMENT DELIMS !!! @}
+
+{% set VS = '2.0.1' %}
 {% set VS_ORIG_DATE = '2017-07-23' %}
 {% set LANG = 'en-US' %}
 
@@ -7,14 +8,27 @@
 {% set NAME2 = 'Abe' %}
 {% set NAME3 = 'Bernstein' %}
 {% set NAME = NAME1 + ' ' + NAME3 %}
-{% set BDAY_PUBLIC = '1956-01-01' %}
+{% set BDAY_PUBLIC = '1956-01-01' %} {@ do NOT reveal true date @}
 {% set COUNTRY = 'ISRAEL' %}
 {% set COUNTRY_CODE = 'IL' %}
 {% set CITY = 'Jerusalem' %}
 {% set POSTAL_ADDR = "Mishol Ha'Uzrad 7/2" %}
 {% set POSTAL_ZIP = '9727433' %}
-{% set TEL_IL_SHORT = '054.641-0955' %}
-{% set TEL_IL = '+972.' + TEL_IL_SHORT[1:] %} 
+{% set GEO_LOCATION_COORDS_URL = 'https://www.google.com/maps/place/31.808472,35.200944' %} {@ 31 deg 48'30.5" N, 35 deg 12'03.4" E @}
+
+{@ tel numbers on github anti-harvesting "speed bumps" @}
+{% set TEL_US = '+' + '1' + '.' + '845' + '.' + '402' + '-' + '0023' %}
+{% set TEL_IL_SHORT = '054' + '.' + '641' + '-' + '0955' %} 
+{% set TEL_IL = '+972.' + TEL_IL_SHORT[1:] %}
+
+{% if WRITER == 'html5' %} 
+{% set TEL_IL_OBF = TEL_IL|html_obfs %}
+{% set TEL_US_OBF = TEL_US|html_obfs %}
+{% else %}
+{% set TEL_IL_OBF = TEL_IL|html_encode %}
+{% set TEL_US_OBF = TEL_US|html_encode %}
+{% endif %}
+
 {@
 	The International Standard of Industrial Classification of All Economic Activities (ISIC).
 	https://unstats.un.org/unsd/cr/registry/isic-4.asp
@@ -25,7 +39,7 @@
 {% set ISICV4 = '6209' %}
 
 {% set EMAIL = NAME1 + '.' + NAME3 + '@gmail.com' %}
-{% set EMAIL_SPOKEN = NAME1 + ' DOT ' + NAME3 + ' AT gmail DOT com' %}
+{% set EMAIL_SPOKEN = NAME1 + ' DOT ' + NAME3 + ' AT gmail' %}
 {% set G_ANALYTICS = 'UA-17365003-2' %}
 {% set G_PLUS = 'https://plus.google.com/110575620993497854880' %}
 {% set HOME = 'http://purl.org/' + NAME1 + '.' + NAME3 %}
