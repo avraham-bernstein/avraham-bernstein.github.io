@@ -16,12 +16,12 @@
 {% set POSTAL_ZIP = '9727433' %}
 {% set GEO_LOCATION_COORDS_URL = 'https://www.google.com/maps/place/31.808472,35.200944' %} {@ 31 deg 48'30.5" N, 35 deg 12'03.4" E @}
 
-{@ tel numbers on github anti-harvesting "speed bumps" @}
+{@ tel numbers on github: anti-harvesting "speed bumps" @}
 {% set TEL_US = '+' + '1' + '.' + '845' + '.' + '402' + '-' + '0023' %}
-{% set TEL_IL_SHORT = '054' + '.' + '641' + '-' + '0955' %} 
+{% set TEL_IL_SHORT = '054' + '.' + '641' + '-' + '0955' %}
 {% set TEL_IL = '+972.' + TEL_IL_SHORT[1:] %}
 
-{% if WRITER == 'html5' %} 
+{% if WRITER == 'html5' %}
 {% set TEL_IL_OBF = TEL_IL|html_obfs %}
 {% set TEL_US_OBF = TEL_US|html_obfs %}
 {% else %}
@@ -57,7 +57,7 @@
 {% if HEADHUNTER is defined %}
 	{% set FULL = false %}
 	{% set VS = VS + '-' + HEADHUNTER %}
-	{% set TITLE = HEADHUNTER + '(' + NAME2 + ') | Abbreviated CV' %}	
+	{% set TITLE = HEADHUNTER + '(' + NAME2 + ') | Abbreviated CV' %}
 	{% set COPYRIGHT = 'Copyright &copy; ' + YEAR + ' ' + NAME2 + ', ' + CITY + ' ' + COUNTRY + '. All rights reserved.' %}
 {% elif ABBREV is defined %}
 	{% set FULL = false %}

@@ -1,4 +1,5 @@
-{@ NOTE MODIFIED J2 COMMENT DELIMS @}
+{@ !!! MODIFIED J2 COMMENT DELIMS !!! @}
+
 {% set APPENDIX = false %}
 
 # {{TITLE}}
@@ -24,11 +25,11 @@ _Version: {{VS}}_
 
 ### 0.1 Contact Info & Links
 
-__email/skype/pgp:__ [{{EMAIL}}](mailto:{{EMAIL}}) {@ protected by pandoc @}[^anti-harvesting-protected]
+__email/skype/pgp:__ [{{EMAIL}}](mailto:{{EMAIL}}) {@ protected by pandoc @}[^anti-harvesting-protection]
 {{BR}}__pgp-id:__ [E6647D2F](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x86EFCDAEE6647D2F)
 {{BR}}__geolocation:__ [{{CITY}} {{COUNTRY}}]({{GEO_LOCATION_COORDS_URL}}), __tz:__ UTC +2:00/+3:00 \[winter/summer]
-{{BR}}__tel-IL-mobile/whatsapp:__ {{TEL_IL_OBF}}{% if WRITER == 'html5' %} {@ protected by j2 script @}[^anti-harvesting-protected]{% endif %} __\[preferred]__
-{{BR}}__tel-US-mobile:__ {{TEL_US_OBF}}{% if WRITER == 'html5' %} {@ protected by j2 script @}[^anti-harvesting-protected]{% else %}{{BR}}{% endif %}
+{{BR}}__tel-IL-mobile/whatsapp:__ {{TEL_IL_OBF}}{% if WRITER == 'html5' %} {@ protected by j2 script @}[^anti-harvesting-protection]{% endif %} __\[preferred]__
+{{BR}}__tel-US-mobile:__ {{TEL_US_OBF}}{% if WRITER == 'html5' %} {@ protected by j2 script @}[^anti-harvesting-protection]{% else %}{{BR}}{% endif %}
 {{BR}}__www-home:__ [{{HOME}}]({{HOME}})
 {{BR}}__linkedin:__ [{{LINKEDIN}}]({{LINKEDIN}})
 {{BR}}__cv-full-html:__ [{{HOME}}/cv.html]({{HOME}}/cv.html) __\[preferred]__
@@ -36,7 +37,7 @@ __email/skype/pgp:__ [{{EMAIL}}](mailto:{{EMAIL}}) {@ protected by pandoc @}[^an
 {{BR}}__cv-full-docx:__ [{{HOME}}/cv.docx]({{HOME}}/cv.docx)
 {{BR}}__cv-abbrev-docx:__ [{{HOME}}/cv-abbrev.docx]({{HOME}}/cv-abbrev.docx)
 
-[^anti-harvesting-protected]: Privacy protected against Internet harvesting{% if WRITER == 'html5' %} in CSS without the use of Javascript. See HTML source{% endif %}.
+[^anti-harvesting-protection]: [Anti-harvesting](https://en.wikipedia.org/wiki/Email_address_harvesting) privacy protection{% if WRITER == 'html5' %} via CSS without the use of Javascript. See HTML source{% endif %}.
 
 
 ### 0.2 Table of Contents

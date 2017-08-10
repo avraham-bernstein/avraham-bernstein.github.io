@@ -1,7 +1,7 @@
 #!/bin/bash -eux
-# FILE: cv2.sh
-# USAGE: cv2.sh
-# DESCRIP: build cv2.html & cv2.odt using pandoc and jinja2
+# FILE: build.sh
+# USAGE: build.sh [fast]
+# DESCRIP: build cv html & docx files using pandoc and jinja2
 
 
 if [[ -z "$*" ]]; then
@@ -22,12 +22,15 @@ WRITER=html5
 
 # Do not enable J2 line statements or line comments due to conflict with pandoc ATX (#) headers.
 # Change J2 comments to '{@ ... @}' due to conflict with pandoc '{#internal-link}' notation.
+
 j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS defs.j2 head.html.j2 | trim-top.awk > tmp/head.html
 j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+
 # Need to add head.html inside template
 pandoc.sh $WRITER --standalone --toc --toc-depth=4 -M lang=$LANG -M pagetitle=$TITLE -H tmp/head.html tmp/$WRITER.md > tmp/1.html
 
 # move TOC to the location of marker '%%TOC%%'
+
 awk '
 
 BEGIN							{ toc = ""; state = 0 }
@@ -37,20 +40,21 @@ state == 0						{ print; next }
 
 state == 1						{
 									if($0 !~ /%%TOC%%/) {print; next}
-									
+
 									# fool sed accessibility script below, because every every list item in TOC already contains an anchor
 									gsub("<li>","<li >",toc)
-									print toc 
-									
+									print toc
+
 									state = 2
 									next
 								}
-									
+
 state == 2						{ print; next }
 
 ' tmp/1.html > tmp/2.html
 
 # to improve accessibility: h1,h2,h3,h4,h5,h6,li { tabindex: "0"; }
+
 sed -r -e 's/(<)(h[1-6]|li)(>)/\1\2 tabindex="0"\3/g' tmp/2.html > $ROOT.html
 
 if [[ "$MODE" == "fast" ]]; then exit $?; fi
@@ -71,15 +75,15 @@ state == 0						{ print; next }
 
 state == 1						{
 									if($0 !~ /%%TOC%%/) {print; next}
-									
+
 									# fool sed accessibility script below, because every every list item in TOC already contains an anchor
 									gsub("<li>","<li >",toc)
-									print toc 
-									
+									print toc
+
 									state = 2
 									next
 								}
-									
+
 state == 2						{ print; next }
 
 ' tmp/1.html > tmp/2.html
@@ -101,6 +105,7 @@ pandoc.sh $WRITER --standalone -M lang=$LANG -M pagetitle=$TITLE tmp/$WRITER.md 
 
 cp -fp ${ROOT}.md xfer/$OUT.md.j2
 cp -fp ${ROOT}.html xfer/$OUT.html
+cp -fp ${ROOT}.html ../AvrahamBernsteinCV.html; # to support old bit.ly link
 cp -f ${ROOT}-Abbrev.html xfer/${OUT}-Abbrev.html
 cp -f ${ROOT}.docx xfer/$OUT.docx
 cp -f ${ROOT}-Abbrev.docx xfer/${OUT}-Abbrev.docx
