@@ -284,7 +284,7 @@ _@Cisco-NDS, Jerusalem: NDS primary business was providing [Conditional Access (
 
 ### 2002-03: CTO: Blind Accessibility H/W & S/W to Enable Viewing of Digital Images & Maps {#virtouch}
 
-_Virtouch, Jerusalem:_
+_@Virtouch, Jerusalem:_
 
 #. My task was to change the company's focus from providing tools for teaching blind children Braille skills to instead provide tools for blind adults to use at work.
 	* The fact of the matter is that government social services agencies around the world are much more concerned about funding tools that allow the blind to integrate into the work force, and thus become economically self sufficient, versus funding educational tools for blind children.
@@ -627,6 +627,7 @@ Up until now Go has made a few architectural decisions with which I disagree,
 namely lack of generics, asserts, and a preprocessor.
 On the other hand, many other languages have similar problems or worse.
 I can easily correct these deficiencies by using my own macro/template preprocessor - where my tool of choice is [Jinja2](http://jinja.pocoo.org/).
+(I used Jinja2 extensively for the construction of this document - see [colophon](#colophon)).
 But I am aware that many programmers cannot tolerate preprocessing their source code, unless the preprocessor is connected "at the hip" to the compiler.
 
 For new projects that need to "press the pedal to the metal", the new safe and efficient system programming languages [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) and [Nim](https://en.wikipedia.org/wiki/Nim_(programming_language)) should be considered.
@@ -674,5 +675,19 @@ TBD
 
 {% endif %}
 
-{@ HTML5 Footnotes @}
 
+## Colophon
+
+#. __Generator:__ This document was generated using the [Pandoc](http://www.pandoc.org)
+extended [Markdown](https://en.wikipedia.org/wiki/Markdown) engine,
+along with the [Jinja2](http://jinja.pocoo.org/) macro/template preprocessor.
+See the source code at my [github site](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
+{% if WRITER == 'html5' %}
+#. __[WCAG](https://www.w3.org/TR/WCAG20/) blind accessibility conformance:__ It contains text alternatives for images, and is tab navigable - for links, sections and subsections, and list items.
+{% endif %}
+#. __Safety &amp; non-annoyment pledge:__ This document is free of scripts, frames, ads, and animations.
+
+
+{% if WRITER == 'html5' %}
+## Footnotes
+{% endif %}

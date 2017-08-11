@@ -1,6 +1,6 @@
 #!/bin/bash -eux
 # FILE: build.sh
-# USAGE: build.sh [fast]
+# USAGE: build.sh [fast|hh]
 # DESCRIP: build cv html & docx files using pandoc and jinja2
 
 
@@ -27,7 +27,15 @@ j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER
 j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 
 # Need to add head.html inside template
+
 pandoc.sh $WRITER --standalone --toc --toc-depth=4 -M lang=$LANG -M pagetitle=$TITLE -H tmp/head.html tmp/$WRITER.md > tmp/1.html
+
+# remove footnotes horizontal line
+
+awk '
+/^<section class="footnotes">$/,/^<hr \/>$/ { print "<section class=\"footnotes\">"; next }
+{ print }
+' tmp/1.html > tmp/2.html
 
 # move TOC to the location of marker '%%TOC%%'
 
@@ -51,21 +59,29 @@ state == 1						{
 
 state == 2						{ print; next }
 
-' tmp/1.html > tmp/2.html
+' tmp/2.html > tmp/3.html
 
 # to improve accessibility: h1,h2,h3,h4,h5,h6,li { tabindex: "0"; }
 
-sed -r -e 's/(<)(h[1-6]|li)(>)/\1\2 tabindex="0"\3/g' tmp/2.html > $ROOT.html
+sed -r -e 's/(<)(h[1-6]|li)(>)/\1\2 tabindex="0"\3/g' tmp/3.html > $ROOT.html
 
 if [[ "$MODE" == "fast" ]]; then exit $?; fi
 
-
 # need to include head.html at the end of the HTML head section
+
 j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 head.html.j2 | trim-top.awk > tmp/head.html
 j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --standalone --toc --toc-depth=4 -M lang=$LANG -M pagetitle=$TITLE -H tmp/head.html tmp/$WRITER.md > tmp/1.html
 
+# remove footnotes horizontal line
+
+awk '
+/^<section class="footnotes">$/,/^<hr \/>$/ { print "<section class=\"footnotes\">"; next }
+{ print }
+' tmp/1.html > tmp/2.html
+
 # move TOC to the location of marker '%%TOC%%'
+
 awk '
 
 BEGIN							{ toc = ""; state = 0 }
@@ -86,10 +102,11 @@ state == 1						{
 
 state == 2						{ print; next }
 
-' tmp/1.html > tmp/2.html
+' tmp/2.html > tmp/3.html
 
 # to improve accessibility: h1,h2,h3,h4,h5,h6,li { tabindex: "0"; }
-sed -r -e 's/(<)(h[1-6]|li)(>)/\1\2 tabindex="0"\3/g' tmp/2.html > ${ROOT}-Abbrev.html
+
+sed -r -e 's/(<)(h[1-6]|li)(>)/\1\2 tabindex="0"\3/g' tmp/3.html > ${ROOT}-Abbrev.html
 
 
 WRITER=docx
