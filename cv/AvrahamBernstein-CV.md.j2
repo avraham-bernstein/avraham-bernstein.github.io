@@ -25,7 +25,8 @@ _Version: {{VS}}_
 
 ### 0.1 Contact Info & Links
 
-__email/skype/pgp:__ [{{EMAIL}}](mailto:{{EMAIL}}) {@ protected by pandoc @}[^anti-harvesting-protection]
+{@ pandoc bug: thinks 'email/skype:' is a link @}
+__email/skype__**:** [{{EMAIL}}](mailto:{{EMAIL}}) {@ protected by pandoc @}[^anti-harvesting-protection]
 {{BR}}__pgp-id:__ [E6647D2F](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x86EFCDAEE6647D2F)
 {{BR}}__geolocation:__ [{{CITY}} {{COUNTRY}}]({{GEO_LOCATION_COORDS_URL}}), __tz:__ UTC +2:00/+3:00 \[winter/summer]
 {{BR}}__tel-IL-mobile/whatsapp:__ {{TEL_IL_OBF}}{% if WRITER == 'html5' %} {@ protected by j2 script @}[^anti-harvesting-protection]{% endif %} __\[preferred]__
@@ -55,9 +56,9 @@ I am an experienced computer scientist and S/W architect. I have devised innovat
 
 For the past 13 years, I worked primarily in the field of cybersecurity with a specialty in [S/W obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)), i.e. anti-reverse engineering techniques. Most recently I was head of security for an Internet pay TV product where the client devices were Android and IOS. The security critical portion of the application was implemented in native code, i.e. C/C++, and not in Java or Objective-C that were used solely for the UI. We obfuscated the native code. During my 6 year tenure we had 40M subscribers, and no hacks in the field.
 
-I am still very much a "hands-on" S/W engineer too. Typically I work on novel and complex problems, where I must first create a working proof-of-concept before I can produce a specification that is firmly grounded in reality.
-
-I am a consummate tool maker, where my tools are algorithms. I have a strong background in business and economics. I communicate well both orally and in writing. I am a native English speaker.
+I am still very much a "hands-on" S/W engineer too.
+Typically I work on novel and complex problems, where I must first create a working proof-of-concept before I can produce a specification that is firmly grounded in reality.
+I am a consummate tool maker, where my tools are algorithms, filters, and domain specific languages.
 
 Usually I am able to apply knowledge and [meta-knowledge](https://en.wikipedia.org/wiki/Metaknowledge) that I have acquired from other fields, and apply it to the new one - what educational psychologists refer to as [transfer of learning](https://en.wikipedia.org/wiki/Transfer_of_learning).
 A common technique that I use is to create a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) {% if APPENDIX %}(see [Appendix B](#appendix-dsl)){% endif %} that allows me to write a formal specification of a problem.
@@ -66,9 +67,16 @@ A common programming technique that I use is [metaprogramming](https://en.wikipe
 with templates {%if APPENDIX %}(see [Appendix C](#appendix-jinja2)){% endif %}
 that allows me to automatically generate code by creating intelligent macros regardless of the underlying target programming language.
 
-I am an [expert generalist](http://99u.com/articles/7269/picasso-kepler-and-the-benefits-of-being-an-expert-generalist), and an [autodidact polymath](http://autodidactpolymath.com/autodidact-polymath-definition/), i.e. a self-learner in new fields who achieves expertise quickly - often with the help of a good mentor. Also I am a good mentor myself. __I slavishly attend to my own [continuing education](#continuing-ed).__
+I am an [expert generalist](http://99u.com/articles/7269/picasso-kepler-and-the-benefits-of-being-an-expert-generalist), and an [autodidact polymath](http://autodidactpolymath.com/autodidact-polymath-definition/), i.e. a self-learner in new fields who achieves expertise quickly - often with the help of a good mentor.
+Also I am a good mentor myself.
+__I slavishly attend to my own [continuing education](#continuing-ed).__
+I have a strong background in business and economics.
+I communicate well both orally and in writing.
+I am a native English speaker.
 
+{% if FULL %}
 My CV is long because (1) I have 35 years of experience, (2) I have shown how I am able to apply my expertise to many different application domains, and (3) I mention details of projects that I did over 30 years ago which are still highly relevant today. Even though technology is progressing exponentially, some of these older projects were conceptual building blocks that are still a critically important component of my professional [gestalt](https://www.merriam-webster.com/dictionary/gestalt). For example, the first serious S/W algorithm that I developed was at the age of 15 in a high school computer science course when I designed a perfect game of [3D 4x4x4 tic-tac-toe](#univ-toronto) in Fortran on the defunct [IBM 1130](https://en.wikipedia.org/wiki/IBM_1130) with 16KB RAM. And in 1983 I wrote a [RTOS (real-time operating system) kernel](#elta) for the defunct 8080 CPU using an ICE (in circuit emulator). These were profoundly formative learning experiences in spite of the fact that the H/W platforms are ancient by today's standards. Consequently I have a deep understanding of operating systems and real-time programming. Even though for the rest of my career I have _not_ been subsequently involved in [hard real-time](http://whatis.techtarget.com/definition/hard-real-time-system-immediate-real-time-system) programming, I have a deep understanding of the concept, and regularly apply the principles to the _soft_ real-time applications in which I have been regularly engaged during the rest of my career. I understand what it means to develop S/W for environments that have limited H/W resources. Core S/W knowledge is not a function of the latest CPU design or of the programming language _du jour_. Similarly I mention my [military leadership](#personal) experience that I acquired in my young adulthood which was a core personality growth experience that permeated the rest of my life which is completely unrelated to the fact that current military H/W is more advanced than when I served in the army.
+{% endif %}
 
 ## 2.0 Work Experience
 
@@ -186,11 +194,12 @@ _@Viaccess-Orca, Ra'anana - a subsidiary of Orange FR, and @Discretix/SansaSecur
 *@Anonymous:*
 
 #. The client works on an extremely politically sensitive topic.
+#. Hacking attempts are being made by both well funded NGOs and state sponsored actors.
 #. Their WordPress web site was being regularly attacked.
-#. Their researchers need to remain anonymous - for their own personal safety.
+#. Their researchers need to remain anonymous - for their own personal/physical safety.
 #. Their file sharing system is based upon Google Drive.
 #. Their PCs and smartphones are not hardened.
-#. No one used multi-factor authentication.
+#. No one uses multi-factor authentication.
 #. The only PC operating system with which they are familiar is Windows.
 #. First I did a risk analysis, and then started them on a series of incremental steps to improve their security situation.
 {% endif %}
@@ -288,12 +297,28 @@ _@Virtouch, Jerusalem:_
 
 #. My task was to change the company's focus from providing tools for teaching blind children Braille skills to instead provide tools for blind adults to use at work.
 	* The fact of the matter is that government social services agencies around the world are much more concerned about funding tools that allow the blind to integrate into the work force, and thus become economically self sufficient, versus funding educational tools for blind children.
-#. Previously the company had developed a [tactile mouse](http://www.avrahambernstein.com/resources/vtplayer.png) that was far too expensive for our target audience (~$350).
-#. I abandoned the mouse because (a) it was too expensive, and (b) the blind find it very difficult to use mice because mouse movement must be coordinated with the cursor on the screen which they cannot see.
-#. I developed new algorithms that allowed the blind to read [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) maps using SVG and XML combined with audio cues (by using pitch and volume), and by using an off-the-shelf graphics tablets and stylus (that were much less expensive than our tactile mouse).
-#. The blind prefer graphic tablets because they inherently have accurate spatial knowledge of their position on the tablet because they can feel it.
-#. The S/W needs to make a rectilinear mapping of the tablet into a desktop window.
-#. The same techniques could be used for displaying mathematical functions and geometry.
+#. Previously the company had developed a [tactile mouse](http://www.avrahambernstein.com/resources/vtplayer.png) that was far too expensive for our target audience (~$350). Also the blind find it very difficult to use mice because mouse movement must be coordinated with the cursor on the screen which they cannot see.
+#. I developed new algorithms that allowed the blind to read [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) maps using SVG and XML combined with audio cues (by using pitch and volume), and by using an off-the-shelf graphics tablets and stylus (that were much less expensive than the tactile mouse).
+	* The blind prefer graphic tablets because they inherently have accurate spatial knowledge of their position on the tablet because they can feel it.
+	* Additionally using two different instruments, say a piano and flute each with a 6 octave range with 7 or 12 notes per octave (i.e for a major scale or chromatic scale respectively), can provide an easily discernable sonic spatial grid.
+	* Color information, after being converted to an 8-bit gray scale, can be conveyed via volume.
+	* The S/W needs to make a rectilinear mapping of the tablet into the whole screen, or into an O/S window.
+	* The S/W needs the ability to do seamless zooming.
+#. Modern GIS based maps are made of many overlapping layers, similar to the overlay techniques used in anatomy textbooks. Some of the layers commonly found in maps are the following:
+	* roads
+	* public transit
+	* sites of interest
+	* district/political boundaries
+	* cities and their relative sizes
+	* topography
+	* geographic features such as bodies of water versus land, desert, marsh,  
+	* vegetation
+	* precipitation
+#. Printed maps are able to display many layers simultaneously by intelligent uses of colors, textures, and fonts.
+#. It is possible to provide a blind friendly way to present the same information by providing user selectable filters that greatly reduce clutter by selecting which layers to display, and by reducing granularity of the layers (e.g. instead of displaying different elevations using 50 meter contour isolines, it is just as easy to for the user to select 500 meter isolines). The isolines can be discerned sonically. And information associated with regions can be presented by hovering over a region, or by mouse clicking, or by key presses. And the presentation is enhanced by seamless zooming.
+#. Well designed consistent mapping schemas, such as those created by the [USGS](https://www.usgs.gov/products/maps/topo-maps), can usually be automatically parsed.
+#. The same techniques could be used for displaying interactive maps of mathematical functions and geometry, or to manually [mark up](https://en.wikipedia.org/wiki/Markup_language) (i.e. annotate) other images.
+#. In order to quickly create lots of content, a public domain repository should be established, and the mark up scheme should be open sourced.
 #. I _almost_ saved the company from liquidation. My research was awarded a European FP6 grant of $0.5M Euro that required _matching funds_. But the investors refused to put up the matching funds due to the company's long history of financial failure in the children's market.
 #. The most important business lesson that I learned was that building special purpose H/W for the disabled is a recipe for bankruptcy; but if you can repurpose off-the-shelf H/W, typically designed for gamers, then you can financially succeed in the accessibility/disability market.
 #. The most important personal lesson that I learned was how satisfying it was working with the blind volunteers, and supplying them with a tool that allowed them to "see".
@@ -679,7 +704,7 @@ TBD
 ## Colophon
 
 #. __Generator:__ This document was generated using the [Pandoc](http://www.pandoc.org)
-extended [Markdown](https://en.wikipedia.org/wiki/Markdown) engine,
+universal document converter extended [Markdown](https://en.wikipedia.org/wiki/Markdown) engine,
 along with the [Jinja2](http://jinja.pocoo.org/) macro/template preprocessor.
 See the source code at my [github site](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
 {% if WRITER == 'html5' %}

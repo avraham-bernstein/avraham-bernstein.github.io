@@ -1,8 +1,10 @@
 {@ !!! MODIFIED J2 COMMENT DELIMS !!! @}
 
-{% set VS = '2.0.2' %}
+{% set VS = '2.1.0' %}
 {% set VS_ORIG_DATE = '2017-07-23' %}
 {% set LANG = 'en-US' %}
+{% if not TS is defined %}{% set TS = DATETIME %}{% endif %}
+{% set YEAR = TS[0:4] %}
 
 {% set NAME1 = 'Avraham' %}
 {% set NAME2 = 'Abe' %}
@@ -46,7 +48,6 @@
 {% set LINKEDIN = 'https://www.linkedin.com/in/' + NAME1 + NAME3 %}
 {% set UUID = '74a0cbbb-215f-5024-ba0c-46fefe664e07' %} {@ $ uuid -v5 ns:URL ... @}
 
-{% set YEAR = TS[0:4] %}
 {% set COPYRIGHT = 'Copyright &copy; ' + YEAR + ' ' + NAME + ', ' + CITY + ' ' + COUNTRY + '. All rights reserved.' %}
 {% set LICENSE_URL = 'https://creativecommons.org/licenses/by-nd/4.0/' %}
 {% set LICENSE = 'License: Except where otherwise noted, this work is licensed under the Creative Commons License [CC BY-ND 4.0](' + LICENSE_URL + ')' %}
@@ -58,15 +59,18 @@
 	{% set FULL = false %}
 	{% set VS = VS + '-' + HEADHUNTER %}
 	{% set TITLE = HEADHUNTER + '(' + NAME2 + ') | Abbreviated CV' %}
+	{% set PAGE_TITLE =  HEADHUNTER + '(' + NAME2 + '):CV' %}
 	{% set COPYRIGHT = 'Copyright &copy; ' + YEAR + ' ' + NAME2 + ', ' + CITY + ' ' + COUNTRY + '. All rights reserved.' %}
 {% elif ABBREV is defined %}
 	{% set FULL = false %}
 	{% set VS = VS + '-abbrev' %}
 	{% set TITLE = NAME1 + ' "' + NAME2 + '" ' + NAME3 + ' | Abbreviated Professional CV' %}
+	{% set PAGE_TITLE = NAME1 + NAME3 + ':CV' %}
 	{% set URL = HOME + '/cv-abbrev.html' %}
 {% else %}
 	{% set FULL = true %}
 	{% set TITLE = NAME1 + ' "' + NAME2 + '" ' + NAME3 + ' | Professional CV' %}
+	{% set PAGE_TITLE = NAME1 + NAME3 + ':CV' %}
 	{% set URL = HOME + '/cv.html' %}
 {% endif %}
 {% set ABBREV = not FULL %}
@@ -78,4 +82,3 @@
 {% endif %}
 
 {% set TOC = '%%TOC%%' %}
-
