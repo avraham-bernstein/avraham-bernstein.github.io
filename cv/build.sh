@@ -6,7 +6,7 @@
 
 # Do not enable J2 line statements or line comments due to conflict with pandoc ATX (#) headers.
 # Change J2 comments to '{@ ... @}' due to conflict with pandoc '{#internal-link}' notation.
-# j2-cli.py currently is based upon python2 which has poor unicode support which cannot properly process the pandoc template
+# The current j2-cli.py implementation is based upon python2 which has poor unicode support which cannot properly process the pandoc html5 template.
 
 if [[ -z "$*" ]]; then
 	MODE=""
@@ -76,9 +76,9 @@ state == 2						{ print; next }
 
 ' tmp/3.html > tmp/4.html
 
-# to improve accessibility: h1,h2,h3,h4,h5,h6,li { tabindex: "0"; }
+# to improve accessibility: h1,h2,h3,h4,h5,h6,li,p { tabindex: "0"; }
 
-sed -r -e 's/(<)(h[1-6]|li)(>)/\1\2 tabindex="0"\3/g' tmp/4.html > $ROOT.html
+sed -r -e 's/(<)(h[1-6]|li|p)(>)/\1\2 tabindex="0"\3/g' -e 's/<li id/<li tabindex="0" id/g' tmp/4.html > $ROOT.html
 
 if [[ "$MODE" == "fast" ]]; then exit $?; fi
 
@@ -134,9 +134,9 @@ state == 2						{ print; next }
 
 ' tmp/3.html > tmp/4.html
 
-# to improve accessibility: h1,h2,h3,h4,h5,h6,li { tabindex: "0"; }
+# to improve accessibility: h1,h2,h3,h4,h5,h6,li,p { tabindex: "0"; }
 
-sed -r -e 's/(<)(h[1-6]|li)(>)/\1\2 tabindex="0"\3/g' tmp/4.html > ${ROOT}-Abbrev.html
+sed -r -e 's/(<)(h[1-6]|li|p)(>)/\1\2 tabindex="0"\3/g' -e 's/<li id/<li tabindex="0" id/g' tmp/4.html > ${ROOT}-Abbrev.html
 
 
 WRITER=docx
@@ -168,7 +168,7 @@ pandoc.sh $WRITER --standalone tmp/metadata.yaml tmp/$WRITER.md > ${ROOT}-Abbrev
 
 cp -fp ${ROOT}.md xfer/$OUT.md.j2
 cp -fp ${ROOT}.html xfer/$OUT.html
-cp -fp ${ROOT}.html ../AvrahamBernsteinCV.html; # to support old bit.ly link
+cp -fp ${ROOT}.html ../AvrahamBernsteinCV.html; # to support an old link: bit.ly/avrhm-cv
 cp -f ${ROOT}-Abbrev.html xfer/${OUT}-Abbrev.html
 cp -f ${ROOT}.docx xfer/$OUT.docx
 cp -f ${ROOT}-Abbrev.docx xfer/${OUT}-Abbrev.docx
@@ -178,8 +178,3 @@ cp -fp build.sh xfer/build.sh
 cp -fp defs.j2 xfer/defs.j2
 cp -fp head.html.j2 xfer/head.html.j2
 cp -fp template.html5 xfer/template.html5
-
-
-# if [[ "$MODE" == "hh" ]]; then
-# HEADHUNTER
-# fi

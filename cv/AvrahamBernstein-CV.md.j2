@@ -298,9 +298,9 @@ _@Virtouch, Jerusalem:_
 #. My task was to change the company's focus from providing tools for teaching blind children Braille skills to instead provide tools for blind adults to use at work.
 	* The fact of the matter is that government social services agencies around the world are much more concerned about funding tools that allow the blind to integrate into the work force, and thus become economically self sufficient, versus funding educational tools for blind children.
 #. Previously the company had developed a [tactile mouse](http://www.avrahambernstein.com/resources/vtplayer.png) that was far too expensive for our target audience (~$350). Also the blind find it very difficult to use mice because mouse movement must be coordinated with the cursor on the screen which they cannot see.
-#. I developed new algorithms that allowed the blind to read [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) maps using SVG and XML combined with audio cues (by using pitch and volume), and by using an off-the-shelf graphics tablets and stylus (that were much less expensive than the tactile mouse).
+#. I developed new algorithms that allowed the blind to read [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) maps using SVG and XML combined with audio cues by using dual-pitch and volume, and by using a _relatively inexpensive off-the-shelf_ graphics tablet and stylus or a touch tablet PC.
 	* The blind prefer graphic tablets because they inherently have accurate spatial knowledge of their position on the tablet because they can feel it.
-	* Additionally using two different instruments, say a piano and flute each with a 6 octave range with 7 or 12 notes per octave (i.e for a major scale or chromatic scale respectively), can provide an easily discernable sonic spatial grid.
+	* _Using two different instruments, say a piano and flute each with a 6 octave range with 7 or 12 notes per octave (i.e for a major scale or chromatic scale respectively), can provide an easily discerned sonic spatial grid with high granularity_.
 	* Color information, after being converted to an 8-bit gray scale, can be conveyed via volume.
 	* The S/W needs to make a rectilinear mapping of the tablet into the whole screen, or into an O/S window.
 	* The S/W needs the ability to do seamless zooming.
@@ -314,13 +314,13 @@ _@Virtouch, Jerusalem:_
 	* geographic features such as bodies of water versus land, desert, marsh,  
 	* vegetation
 	* precipitation
-#. Printed maps are able to display many layers simultaneously by intelligent uses of colors, textures, and fonts.
-#. It is possible to provide a blind friendly way to present the same information by providing user selectable filters that greatly reduce clutter by selecting which layers to display, and by reducing granularity of the layers (e.g. instead of displaying different elevations using 50 meter contour isolines, it is just as easy to for the user to select 500 meter isolines). The isolines can be discerned sonically. And information associated with regions can be presented by hovering over a region, or by mouse clicking, or by key presses. And the presentation is enhanced by seamless zooming.
+#. Printed maps are able to display many layers simultaneously by intelligent use of colors, textures, and fonts.
+#. _It is possible to provide a blind friendly way to present the same information with user selectable filters that greatly reduce clutter by selecting which layers to display, and by reducing granularity of the layers, e.g. instead of displaying topographic elevations using isoline contours with 50 meter increments, it is just as easy to for the user to select 500 meter increments. The isolines can be discerned sonically. And information associated with regions can be presented by hovering over a region, or by mouse clicking, or by key presses. And the presentation is enhanced by seamless zooming_.
 #. Well designed consistent mapping schemas, such as those created by the [USGS](https://www.usgs.gov/products/maps/topo-maps), can usually be automatically parsed.
-#. The same techniques could be used for displaying interactive maps of mathematical functions and geometry, or to manually [mark up](https://en.wikipedia.org/wiki/Markup_language) (i.e. annotate) other images.
-#. In order to quickly create lots of content, a public domain repository should be established, and the mark up scheme should be open sourced.
+#. The same techniques can be used for displaying interactive maps of mathematical functions and geometry, or to manually [mark up](https://en.wikipedia.org/wiki/Markup_language) (i.e. annotate) other images.
+#. In order to quickly create lots of content, a crowd sourced public domain repository should be established, and the mark up scheme should be open sourced.
 #. I _almost_ saved the company from liquidation. My research was awarded a European FP6 grant of $0.5M Euro that required _matching funds_. But the investors refused to put up the matching funds due to the company's long history of financial failure in the children's market.
-#. The most important business lesson that I learned was that building special purpose H/W for the disabled is a recipe for bankruptcy; but if you can repurpose off-the-shelf H/W, typically designed for gamers, then you can financially succeed in the accessibility/disability market.
+#. The most important business lesson that I learned was that building special purpose H/W for the disabled is a recipe for bankruptcy; but if you can re-purpose off-the-shelf H/W, typically designed for gamers, then you can financially succeed in the accessibility/disability market.
 #. The most important personal lesson that I learned was how satisfying it was working with the blind volunteers, and supplying them with a tool that allowed them to "see".
 
 
@@ -708,7 +708,7 @@ universal document converter extended [Markdown](https://en.wikipedia.org/wiki/M
 along with the [Jinja2](http://jinja.pocoo.org/) macro/template preprocessor.
 See the source code at my [github site](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
 {% if WRITER == 'html5' %}
-#. __[WCAG](https://www.w3.org/TR/WCAG20/) blind accessibility conformance:__ It contains text alternatives for images, and is tab navigable - for links, sections and subsections, and list items.
+#. __[WCAG](https://www.w3.org/TR/WCAG20/) blind accessibility conformance:__ It contains text alternatives for images, and is tab navigable - for sections, subsections, paragraphs, list items, and links.
 {% endif %}
 #. __Safety &amp; non-annoyment pledge:__ This document is free of scripts, frames, ads, and animations.
 
