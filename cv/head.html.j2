@@ -4,7 +4,7 @@
 
 <!-- google meta tags -->
 
-<link rel="author" href="{{G_PLUS}}">
+<link rel="author" href="{{G_PLUS_URL}}">
 <meta name="description" content="{{DESCRIP}}"> <!-- google uses just first 55 chars -->
 <meta name="keywords" content="{{KEYS}}">
 
@@ -26,12 +26,12 @@
     },
     "birthDate": "{{BDAY_PUBLIC}}",
     "email": "{{EMAIL_SPOKEN}}",
-    "identifier": "{{UUID}}",
     "image": "{{HOME}}/image",
     "isicV4": "{{ISICV4}}",
     "nationality": "{{COUNTRY_CODE}}",
-    "telephone": "{{TEL_IL_SHORT}}",
-    "url": "{{HOME}}"
+    "telephone": "{{ TEL_IL_SHORT_SQUEEZED }}",
+    "url": "{{HOME}}",
+    "identifier": "{{HOME_UUID}}"
 }
 </script>
 
@@ -76,7 +76,6 @@ gZpxGhkCn4g7xBFiocMJRj+ckcDfF/gBCTJDUqZhh4kAAAAASUVORK5CYII="/>
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', '{{G_ANALYTICS}}', 'auto');
+  ga('create', '{{G_ANALYTICS_ID}}', 'auto');
   ga('send', 'pageview');
 </script>

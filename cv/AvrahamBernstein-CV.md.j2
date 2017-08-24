@@ -13,11 +13,11 @@ _Version: {{VS}}_
 
 {% if WRITER == 'html5' %}
 <figure>
-<img title="{{NAME}}" alt="{{NAME}}" src="{{HOME}}/image">
+<img title="{{NAME}}" alt="{{NAME}}" src="{{IMAGE_URL}}">
 <figcaption>Secure[^secure-photo] photo of the author, {{NAME}} c. 2010.</figcaption>
 </figure>
 {% else %}
-![Secure[^secure-photo] photo of the author, {{NAME}} c. 2010.]({{HOME}}/image)
+![Secure[^secure-photo] photo of the author, {{NAME}} c. 2010.]({{IMAGE_URL}})
 {% endif %}
 
 [^secure-photo]: This secure photo was built using an [oilify](http://docs.gimp.org/en/plug-in-oilify.html) filter and a visible email address [watermark](https://en.wikipedia.org/wiki/Digital_watermarking). It uses [digital camouflage](https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup) that will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate/label it with any other name besides mine. Similarly if a site were to maliciously display my photo without my permission in order to imply my association or agreement with them, then it is trivial for anyone who may be suspicious of their claim to "challenge" the site by asking me for a verification email.
@@ -27,8 +27,7 @@ _Version: {{VS}}_
 
 {@ pandoc bug: thinks 'email/skype:' is a link @}
 __email/skype__**:** [{{EMAIL}}](mailto:{{EMAIL}}) {@ protected by pandoc @}[^anti-harvesting-protection]
-{{BR}}__pgp-id:__ [E6647D2F](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x86EFCDAEE6647D2F)
-{{BR}}__geolocation:__ [{{CITY}} {{COUNTRY}}]({{GEO_LOCATION_COORDS_URL}}), __tz:__ UTC +2:00/+3:00 \[winter/summer]
+{{BR}}__geolocation:__ [{{CITY}} {{COUNTRY}}]({{GEO_URL}}), __tz:__ UTC +02:00/+03:00 \[winter/summer]
 {{BR}}__tel-IL-mobile/whatsapp:__ {{TEL_IL_OBF}}{% if WRITER == 'html5' %} {@ protected by j2 script @}[^anti-harvesting-protection]{% endif %} __\[preferred]__
 {{BR}}__tel-US-mobile:__ {{TEL_US_OBF}}{% if WRITER == 'html5' %} {@ protected by j2 script @}[^anti-harvesting-protection]{% else %}{{BR}}{% endif %}
 {{BR}}__www-home:__ [{{HOME}}]({{HOME}})
@@ -36,7 +35,9 @@ __email/skype__**:** [{{EMAIL}}](mailto:{{EMAIL}}) {@ protected by pandoc @}[^an
 {{BR}}__cv-abbrev-html:__ [{{HOME}}/cv-abbrev.html]({{HOME}}/cv-abbrev.html)
 {{BR}}__cv-full-docx:__ [{{HOME}}/cv.docx]({{HOME}}/cv.docx)
 {{BR}}__cv-abbrev-docx:__ [{{HOME}}/cv-abbrev.docx]({{HOME}}/cv-abbrev.docx)
-{{BR}}__linkedin:__ [{{LINKEDIN}}]({{LINKEDIN}})
+{{BR}}__linkedin:__ [{{LINKEDIN_URL}}]({{LINKEDIN_URL}})
+{{BR}}__[pgp-id](https://en.wikipedia.org/wiki/Pretty_Good_Privacy):__ [{{PGP_ID}}]({{PGP_LOOKUP_URL}}), __pgp-asc:__ [{{PGP_ASC_URL}}]({{PGP_ASC_URL}})
+{{BR}}__[vcard](https://en.wikipedia.org/wiki/VCard):__ [vcard4.vcf]({{VCARD4_URL}}), [vcard3.vcf]({{VCARD3_URL}})
 
 [^anti-harvesting-protection]: [Anti-harvesting](https://en.wikipedia.org/wiki/Email_address_harvesting) privacy protection{% if WRITER == 'html5' %} via CSS without the use of Javascript. See HTML source{% endif %}.
 
@@ -69,8 +70,8 @@ that allows me to automatically generate code by creating intelligent macros reg
 
 I am an [expert generalist](http://99u.com/articles/7269/picasso-kepler-and-the-benefits-of-being-an-expert-generalist), and an [autodidact polymath](http://autodidactpolymath.com/autodidact-polymath-definition/), i.e. a self-learner in new fields who achieves expertise quickly - often with the help of a good mentor.
 Also I am a good mentor myself.
-__I slavishly attend to my own [continuing education](#continuing-ed).__
-I have a strong background in business and economics.
+__I slavishly attend to my own [continuing education](#continuing-education).__
+I have a formal [background in business and economics](#formal-education).
 I communicate well both orally and in writing.
 I am a native English speaker.
 
@@ -278,7 +279,7 @@ _@Syntezza, Jerusalem:_
 
 _@Cisco-NDS, Jerusalem: NDS primary business was providing [Conditional Access (CA)](https://en.wikipedia.org/wiki/Conditional_access) pay TV security systems to satellite TV broadcasters:_
 
-#. I worked on a wide variety of security related projects. My background task was to do code security reviews. Typically secure coding is achieved by [adhering to best programming practices](https://www.youtube.com/watch?v=eL5o4PFuxTY).
+#. I worked on a wide variety of security related projects. My background task was to do [code security reviews](https://www.securecoding.cert.org/confluence/display/seccode/Top+10+Secure+Coding+Practices). Typically secure coding is achieved by [adhering to best programming practices](https://www.youtube.com/watch?v=eL5o4PFuxTY).
 #. I was a member of the architecture team for their in-house [LLVM](https://llvm.org/) [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compiler.
 #. I developed techniques using Virtual Machine (VM) technology to crack [Digital Rights Management (DRM)](https://en.wikipedia.org/wiki/Digital_rights_management) schemes, and to subvert the random number generators which are the core initialization process for all cryptographic algorithms.
 #. I worked with the operational security team to track hackers, and to provide stealth techniques for our researchers.
@@ -286,7 +287,7 @@ _@Cisco-NDS, Jerusalem: NDS primary business was providing [Conditional Access (
 #. I wrote the technical bid for securing the 2008 Olympics Beijing Olympics TV broadcasts.
 #. I researched business cases for providing security services to the computer gaming industry, and for printer ink cartridges. For example sales revenue from premier games can gross $60M in their first 2 weeks, by which time they are typically hacked. Improving security so that the hack can be delayed for another 2 weeks, can increase revenue by 50%.
 #. I advised senior management on the technical and business merits of potential acquisitions.
-#. I did a very interesting and important non-security related project for senior management, by [data mining](https://en.wikipedia.org/wiki/Data_mining) the company's bug database, that showed that 25% of S/W development manpower was wasted on fixing bugs. And I showed them simple techniques that could reduce this number by 80% {% if APPENDIX %}(see [Appendix D](#appendix-slashing-bugs)){% endif %}.
+#. I did a very interesting and important non-security related project for senior management, by [data mining](https://en.wikipedia.org/wiki/Data_mining) the company's bug database, that showed that 25% of S/W development manpower was wasted on fixing bugs. And I showed them [simple techniques (see section 2.6.1)](http://purl.org/Avraham.Bernstein#2.6) that could reduce this number by 80% {% if APPENDIX %}(see [Appendix D](#appendix-slashing-bugs)){% endif %}.
 #. I designed a hybrid simulator/emulator debugger for legacy [Set-Top Boxes (STB)](https://en.wikipedia.org/wiki/Set-top_box) that originally could be debugged only with `printf` statements to log files. My new debugger allowed source code on the PC to be debugged using the [MS Visual Studio IDE](https://en.wikipedia.org/wiki/Microsoft_Visual_Studio) debugger while still viewing the results on the STB. Implementation was accomplished by reverse engineering the STB middleware API. 80% of the middleware ran natively on the PC, while the STB low level H/W specific portions were implemented via an agent on the STB that was accessed via API calls that were implemented as [Remote Procedure Calls (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call).
 #. I wrote an automated testing system for a satellite content delivery system for huge content, e.g. delivering ultra high definition movies to cinemas, and print newspapers for remote publishing. I created a [Domain Specific Language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) in order to execute the satellite operations. After studying the Win32 source code of the satellite ground control station, I detected a major conceptual flaw which the architect refused to believe (because testers are not supposed to understand Win32 internals!). So I wrote a progressive test that brought the satellite to its knees at only 25% of its rated capacity. Afterwards the development team used my tool to develop their own unit test scripts, and to execute a system sanity test before checking-in any changes to the source control system.
 
@@ -560,7 +561,7 @@ The most memorable and still useful courses I took were in statistics, experimen
 In 1971 at the age of 15, for a highschool computer science course, I wrote a computer program to play a perfect game of 3D 4x4x4 [tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe) in Fortran on an [IBM 1130](https://en.wikipedia.org/wiki/IBM_1130). The computer had 16 KB RAM, and was the size of a refrigerator. It was arguably my most formative learning experience from which I received the computer programming "bug" which I carry with me to the present day.
 
 
-### 4.2 Continuing Education {#continuing-ed}
+### 4.2 Continuing Education
 
 #. Today the field of computer science is changing so rapidly, that without ongoing self-study, one's formal education becomes obsolete within 5 years.
 #. From 1991-96, while I was CEO & CTO of Pitkha Outsourcing, I used to spend one afternoon per week reading at the Hebrew University Jerusalem (HUJI) computer science library.

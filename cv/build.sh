@@ -16,9 +16,18 @@ fi
 
 ROOT=cv
 OUT=AvrahamBernstein-CV
-
+HOME_URL=http://purl.org/Avraham.Bernstein
 TS=$(date --utc +%Y-%m-%dT%H:%M:%SZ)
+HOME_UUID=$(uuid -v5 ns:URL $HOME_URL)
+VCARD3_UUID=$(uuid -v5 ns:URL $HOME_URL/vcard3)
+VCARD4_UUID=$(uuid -v5 ns:URL $HOME_URL/vcard4)
 
+for v in 3 4
+do
+	f=vcard${v}.vcf.j2
+	g=tmp/vcard${v}.vcf
+	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DTS=$TS -DVCARD3_UUID=$VCARD3_UUID -DVCARD4_UUID=$VCARD4_UUID defs.j2 $f | trim-top.awk > $g
+done
 
 WRITER=html5
 
@@ -27,7 +36,7 @@ do
 	g=tmp/$f
 	if [[ ! -f $f ]]; then f=$f.j2; fi
 	if [[ ! -f $f ]]; then continue; fi
-	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS defs.j2 $f | trim-top.awk > $g
+	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DHOME_UUID=$HOME_UUID defs.j2 $f | trim-top.awk > $g
 done
 
 j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
@@ -88,7 +97,7 @@ do
 	g=tmp/$f
 	if [[ ! -f $f ]]; then f=$f.j2; fi
 	if [[ ! -f $f ]]; then continue; fi
-	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 $f | trim-top.awk > $g
+	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DHOME_UUID=$HOME_UUID -DABBREV=eval:True defs.j2 $f | trim-top.awk > $g
 done
 
 j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
@@ -166,13 +175,16 @@ j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER
 pandoc.sh $WRITER --standalone tmp/metadata.yaml tmp/$WRITER.md > ${ROOT}-Abbrev.$WRITER
 
 
-cp -fp ${ROOT}.md xfer/$OUT.md.j2
-cp -fp ${ROOT}.html xfer/$OUT.html
-cp -fp ${ROOT}.html ../AvrahamBernsteinCV.html; # to support an old link: bit.ly/avrhm-cv
-cp -f ${ROOT}-Abbrev.html xfer/${OUT}-Abbrev.html
-cp -f ${ROOT}.docx xfer/$OUT.docx
-cp -f ${ROOT}-Abbrev.docx xfer/${OUT}-Abbrev.docx
-touch --reference=xfer/$OUT.html xfer/${OUT}-Abbrev.html xfer/${OUT}*.docx
+cp -fp $ROOT.md xfer/$OUT.md.j2
+cp -fp $ROOT.html xfer/$OUT.html
+cp -fp $ROOT.html ../AvrahamBernsteinCV.html; # to support an old link: bit.ly/avrhm-cv
+cp -fp ${ROOT}-Abbrev.html xfer/${OUT}-Abbrev.html
+cp -fp $ROOT.docx xfer/$OUT.docx
+cp -fp ${ROOT}-Abbrev.docx xfer/${OUT}-Abbrev.docx
+touch --reference=$ROOT.html xfer/${OUT}*.html xfer/${OUT}*.docx tmp/*.vcf
+cp -fp *.vcf.j2 xfer
+cp -fp tmp/vcard3.vcf ../AvrahamBernstein-Vcard3.vcf
+cp -fp tmp/vcard4.vcf ../AvrahamBernstein-Vcard4.vcf
 
 cp -fp build.sh xfer/build.sh
 cp -fp defs.j2 xfer/defs.j2
