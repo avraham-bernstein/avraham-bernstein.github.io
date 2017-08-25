@@ -1,6 +1,0 @@
-Schema.org Notes
-
-* identifier: $uuid -v5 ns:URL http://purl.org/avraham.bernstein ==> 74a0cbbb-215f-5024-ba0c-46fefe664e07
-* isicV4: 62 ==> Computer programming, consultancy and related activities [see https://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=27]
-https://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=27
-
