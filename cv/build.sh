@@ -17,16 +17,22 @@ fi
 ROOT=cv
 OUT=AvrahamBernstein-CV
 HOME_URL=http://purl.org/Avraham.Bernstein
+
 TS=$(date --utc +%Y-%m-%dT%H:%M:%SZ)
 HOME_UUID=$(uuid -v5 ns:URL $HOME_URL)
 VCARD3_UUID=$(uuid -v5 ns:URL $HOME_URL/vcard3)
 VCARD4_UUID=$(uuid -v5 ns:URL $HOME_URL/vcard4)
 
+echo "{% set TS = '$TS' %}" > tmp/ts.j2
+echo "{% set HOME_UUID = '$HOME_UUID' %}" >> tmp/ts.j2
+echo "{% set VCARD3_UUID = '$VCARD3_UUID' %}" >> tmp/ts.j2
+echo "{% set VCARD4_UUID = '$VCARD4_UUID' %}" >> tmp/ts.j2
+
 for v in 3 4
 do
 	f=vcard${v}.vcf.j2
 	g=tmp/vcard${v}.vcf
-	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DTS=$TS -DVCARD3_UUID=$VCARD3_UUID -DVCARD4_UUID=$VCARD4_UUID defs.j2 $f | trim-top.awk > $g
+	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
 done
 
 WRITER=html5
@@ -36,10 +42,10 @@ do
 	g=tmp/$f
 	if [[ ! -f $f ]]; then f=$f.j2; fi
 	if [[ ! -f $f ]]; then continue; fi
-	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DHOME_UUID=$HOME_UUID defs.j2 $f | trim-top.awk > $g
+	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
 done
 
-j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --standalone --toc -H tmp/head.html tmp/metadata.yaml tmp/$WRITER.md > tmp/1.html
 
 # remove footnotes: hr + fn[34]
@@ -97,10 +103,10 @@ do
 	g=tmp/$f
 	if [[ ! -f $f ]]; then f=$f.j2; fi
 	if [[ ! -f $f ]]; then continue; fi
-	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DHOME_UUID=$HOME_UUID -DABBREV=eval:True defs.j2 $f | trim-top.awk > $g
+	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
 done
 
-j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --standalone --toc -H tmp/head.html tmp/metadata.yaml tmp/$WRITER.md > tmp/1.html
 
 # remove footnotes: hr + fn[34]
@@ -157,10 +163,10 @@ do
 	g=tmp/$f
 	if [[ ! -f $f ]]; then f=$f.j2; fi
 	if [[ ! -f $f ]]; then continue; fi
-	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS defs.j2 $f | trim-top.awk > $g
+	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
 done
 
-j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --standalone tmp/metadata.yaml tmp/$WRITER.md > $ROOT.$WRITER
 
 for f in metadata.yaml
@@ -168,10 +174,10 @@ do
 	g=tmp/$f
 	if [[ ! -f $f ]]; then f=$f.j2; fi
 	if [[ ! -f $f ]]; then continue; fi
-	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 $f | trim-top.awk > $g
+	j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
 done
 
-j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DTS=$TS -DABBREV=eval:True defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+j2-cli.py -Ecomment_start_string='{@' -Ecomment_end_string='@}' -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --standalone tmp/metadata.yaml tmp/$WRITER.md > ${ROOT}-Abbrev.$WRITER
 
 
@@ -183,8 +189,8 @@ cp -fp $ROOT.docx xfer/$OUT.docx
 cp -fp ${ROOT}-Abbrev.docx xfer/${OUT}-Abbrev.docx
 touch --reference=$ROOT.html xfer/${OUT}*.html xfer/${OUT}*.docx tmp/*.vcf
 cp -fp *.vcf.j2 xfer
-cp -fp tmp/vcard3.vcf ../AvrahamBernstein-Vcard3.vcf
-cp -fp tmp/vcard4.vcf ../AvrahamBernstein-Vcard4.vcf
+cp -fp tmp/vcard3.vcf ../AvrahamBernstein-3.0.vcf
+cp -fp tmp/vcard4.vcf ../AvrahamBernstein-4.0.vcf
 
 cp -fp build.sh xfer/build.sh
 cp -fp defs.j2 xfer/defs.j2
