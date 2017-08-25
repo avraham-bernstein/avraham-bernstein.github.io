@@ -2,7 +2,7 @@ BEGIN:VCARD
 VERSION:3.0
 SOURCE:http://purl.org/Avraham.Bernstein/vcard3
 UID:baf4d3ea-7e75-51fd-b545-34f33b81ecff
-REV:2017-08-24T07:50:30Z
+REV:2017-08-25T08:56:23Z
 FN:Avraham Bernstein
 N:Bernstein;Avraham;;Mr.;
 NICKNAME:Abe
@@ -12,8 +12,8 @@ PHOTO;TYPE=PNG;VALUE=URI:http://purl.org/Avraham.Bernstein/image
 ORG;TYPE=WORK:Avraham Bernstein Cybersecurity Consulting
 TITLE;TYPE=WORK:Self-Employed
 EXPERTISE;LEVEL=EXPERT:cybersecurity, domain specific languages
-ADR;TYPE=HOME:;;Mish'ol HaUzrad 7/2;Jerusalem;;9727433;ISRAEL
-LABEL;TYPE=HOME:Mish'ol HaUzrad 7/2\nJerusalem 9727433 ISRAEL
+ADR;TYPE=HOME:;Mish'ol HaUzrad 7/2;Ramot Bet;Jerusalem;;9727433;ISRAEL
+LABEL;TYPE=HOME:Mish'ol HaUzrad 7/2\nRamot Bet\nJerusalem 9727433 ISRAEL
 GEO:31.808472,35.200944
 TZ:+0200
 EMAIL:Avraham.Bernstein@gmail.com
