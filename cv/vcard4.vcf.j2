@@ -1,0 +1,35 @@
+{@ !!! MODIFIED J2 COMMENT DELIMS !!! @}
+
+BEGIN:VCARD
+VERSION:4.0
+SOURCE:{{VCARD4_URL}}
+UID:{{VCARD4_UUID}}
+REV:{{TS_SQUEEZED}}
+KIND:individual
+FN:{{NAME1}} {{NAME3}}
+N:{{NAME3}};{{NAME1}};;Mr.;
+NICKNAME:{{NAME2}}
+GENDER:M
+BDAY:{{ BDAY_PUBLIC | replace('-','') }}
+LANG;PREF=1:en
+LANG;PREF=2:he
+LANG;PREF=3:fr
+PHOTO;MEDIATYPE=image/png:{{IMAGE_URL}}
+ORG;TYPE=work:{{NAME1}} {{NAME3}} Cybersecurity Consulting
+TITLE:Self-Employed
+EXPERTISE;LEVEL=expert:cybersecurity, domain specific languages
+ADR;TYPE=home:;{{POSTAL_ADDR}};{{CITY_DISTRICT}};{{CITY}};;{{POSTAL_ZIP}};{{COUNTRY|upper}}
+LABEL;TYPE=home:{{POSTAL_ADDR}}\n{{CITY_DISTRICT}}\n{{CITY}} {{POSTAL_ZIP}} {{COUNTRY|upper}}
+GEO;TYPE=home:geo:{{GEO_COORDS}}
+TZ:{{TZ_REGION}}
+EMAIL:{{EMAIL}}
+IMPP;PREF=1:whatsapp:{{WHATSAPP_ID}}
+IMPP:PREF=2:gtalk:{{EMAIL}}
+IMPP;PREF=3:skype:{{SKYPE_ID}}
+TEL;PREF=1;VALUE=uri;TYPE=cell,voice,text:tel:{{TEL_IL}}
+TEL;PREF=2;VALUE=uri;TYPE=cell,voice,text:tel:{{TEL_US}}
+URL;TYPE=home:{{HOME}}
+URL;PREF=1;TYPE=work:{{HOME}}/cv.html
+URL;PREF=2;TYPE=work:{{LINKEDIN_URL}}
+KEY;MEDIATYPE=application/pgp-keys:{{PGP_ASC_URL}}
+END:VCARD
