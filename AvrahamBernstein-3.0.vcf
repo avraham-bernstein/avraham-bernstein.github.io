@@ -2,13 +2,14 @@ BEGIN:VCARD
 VERSION:3.0
 SOURCE:http://purl.org/Avraham.Bernstein/vcard3
 UID:baf4d3ea-7e75-51fd-b545-34f33b81ecff
-REV:2017-08-25T08:56:23Z
+REV:2017-08-25T15:26:27Z
 FN:Avraham Bernstein
 N:Bernstein;Avraham;;Mr.;
 NICKNAME:Abe
 X-GENDER:Male
 BDAY:1956-01-01
 PHOTO;TYPE=PNG;VALUE=URI:http://purl.org/Avraham.Bernstein/image
+X-SPOUSE:Judy Bernstein +972.50.751-5111
 ORG;TYPE=WORK:Avraham Bernstein Cybersecurity Consulting
 TITLE;TYPE=WORK:Self-Employed
 EXPERTISE;LEVEL=EXPERT:cybersecurity, domain specific languages
@@ -17,9 +18,10 @@ LABEL;TYPE=HOME:Mish'ol HaUzrad 7/2\nRamot Bet\nJerusalem 9727433 ISRAEL
 GEO:31.808472,35.200944
 TZ:+0200
 EMAIL:Avraham.Bernstein@gmail.com
-X-GTALK:Avraham.Bernstein@gmail.com
+X-GTALK:AvrahamBernstein
 X-SKYPE:Avraham.Bernstein@gmail.com
 X-WHATSAPP:+972546410955
 TEL;TYPE=CELL,PREF:+972.54.641-0955
 TEL;TYPE=CELL:+1.845.402-0023
 END:VCARD
+

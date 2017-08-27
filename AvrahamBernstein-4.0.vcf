@@ -2,7 +2,7 @@ BEGIN:VCARD
 VERSION:4.0
 SOURCE:http://purl.org/Avraham.Bernstein/vcard4
 UID:7e341102-0e27-58c3-a4c6-0c5c564e81d7
-REV:20170825T085623Z
+REV:20170825T152627Z
 KIND:individual
 FN:Avraham Bernstein
 N:Bernstein;Avraham;;Mr.;
@@ -13,6 +13,8 @@ LANG;PREF=1:en
 LANG;PREF=2:he
 LANG;PREF=3:fr
 PHOTO;MEDIATYPE=image/png:http://purl.org/Avraham.Bernstein/image
+RELATED;TYPE=spouse;VALUE=text:Judy Bernstein +972.50.751-5111
+RELATED;TYPE=child;VALUE=text:Yirmi Bernstein +972.53.720-1096
 ORG;TYPE=work:Avraham Bernstein Cybersecurity Consulting
 TITLE:Self-Employed
 EXPERTISE;LEVEL=expert:cybersecurity, domain specific languages
@@ -22,7 +24,7 @@ GEO;TYPE=home:geo:31.808472,35.200944
 TZ:Asia/Jerusalem
 EMAIL:Avraham.Bernstein@gmail.com
 IMPP;PREF=1:whatsapp:+972546410955
-IMPP:PREF=2:gtalk:Avraham.Bernstein@gmail.com
+IMPP:PREF=2:gtalk:AvrahamBernstein
 IMPP;PREF=3:skype:Avraham.Bernstein@gmail.com
 TEL;PREF=1;VALUE=uri;TYPE=cell,voice,text:tel:+972.54.641-0955
 TEL;PREF=2;VALUE=uri;TYPE=cell,voice,text:tel:+1.845.402-0023
@@ -31,3 +33,4 @@ URL;PREF=1;TYPE=work:http://purl.org/Avraham.Bernstein/cv.html
 URL;PREF=2;TYPE=work:https://www.linkedin.com/in/AvrahamBernstein
 KEY;MEDIATYPE=application/pgp-keys:http://purl.org/Avraham.Bernstein/asc
 END:VCARD
+
