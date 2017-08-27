@@ -11,7 +11,11 @@
 {% set NAME2 = 'Abe' %}
 {% set NAME3 = 'Bernstein' %}
 {% set NAME = NAME1 + ' ' + NAME3 %}
+{% set GENDER = 'Male' %}
 {% set BDAY_PUBLIC = '1956-01-01' %}
+
+{% set RELATION_SPOUSE = 'Judy Bernstein +972.50.751-5111' %}
+{% set RELATION_CHILD = 'Yirmi Bernstein +972.53.720-1096' %}
 
 {% set CITY = 'Jerusalem' %}
 {% set CITY_DISTRICT = 'Ramot Bet' %}
@@ -52,11 +56,13 @@
 
 {@ email addr on github: anti-harvesting "speed bumps" @}
 {% set HOME = 'http://purl.org/' + NAME1 + '.' + NAME3 %}
+{% set CV_URL = HOME + '/cv.html' %}
 {% set IMAGE_URL = HOME + '/image' %}
 {% set VCARD3_URL = HOME + '/vcard3' %}
 {% set VCARD4_URL = HOME + '/vcard4' %}
 {% set EMAIL = NAME1 + '.' + NAME3 + '@gmail.com' %} {@ pandoc: obfuscated @}
 {% set EMAIL_SPOKEN = NAME1 + ' DOT ' + NAME3 + ' AT gmail DOT com' %} {@ schema.org: in-the-clear @}
+{% set GTALK_ID = NAME1 + NAME3 %}
 {% set SKYPE_ID = EMAIL %}
 {% set WHATSAPP_ID = TEL_IL_SQUEEZED %}
 {% set G_ANALYTICS_ID = 'UA-17365003-2' %}
