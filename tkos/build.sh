@@ -144,4 +144,5 @@ cp -fp *.vcf.j2 xfer
 cp -fp build.sh xfer/build.sh
 cp -fp defs.j2 xfer/defs.j2
 cp -fp head.html.j2 xfer/head.html.j2
+cp -fp metadata.yaml.j2 xfer/metadata.yaml.j2
 cp -fp template.html5 xfer/template.html5

@@ -109,7 +109,7 @@ The app's CLI should include end user definable control structures (i.e. conditi
 Embedded language frameworks such as [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)) and [FICL](http://ficl.sourceforge.net/) (i.e. an embeddable FORTH) provide this infrastructure for free.
 In fact these relatively small frameworks, i.e. with a memory footprint of 50-100 KB, usually grossly simplify the CLI design.
 Now an argument to a CLI method can take a numeric expression without the necessity of the programmer to understand anything at all about the complexity of writing a numeric expression parser.
-The framework allows an end user to create their own macros and to write loops.
+The framework allows an end user to create his own macros, test conditions, and write loops.
 An app with a CLI can be "glued" together with many other unrelated apps, just like the hundreds of Posix text utilities, and used in many unexpected but very useful ways - as opposed to a GUI-only interface which greatly limits how an app can interface with other apps.
 
 #### 1.2.2 DSL: How To
@@ -641,14 +641,19 @@ I was born in Canada in 1956. I have lived in Jerusalem Israel since 1983. I am 
 
 ## Colophon
 
-* __Generator:__ This document was generated using the [Pandoc](http://www.pandoc.org)
+* __Generator:__
+This document was generated using the [Pandoc](http://www.pandoc.org)
 universal document converter extended [Markdown](https://en.wikipedia.org/wiki/Markdown) engine,
 along with the [Jinja2](http://jinja.pocoo.org/) macro/template preprocessor.
-See the source code at my [github site](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
+See the source code at my [github site](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/tkos).
+
 {% if WRITER == 'html5' %}
-* __[WCAG](https://www.w3.org/TR/WCAG20/) blind accessibility conformance:__ It contains text alternatives for images, and is tab navigable - for sections, subsections, paragraphs, list items, and links.
+* __[WCAG](https://www.w3.org/TR/WCAG20/) blind accessibility conformance:__
+It contains text alternatives for images, and is tab navigable - for sections, subsections, paragraphs, list items, and links.
 {% endif %}
-* __Safety &amp; non-annoyment pledge:__ This document is free of scripts, frames, ads, and animations.
+
+* __Safety & non-annoyment pledge:__
+This document is free of scripts, frames, ads, and animations.
 
 
 {% if WRITER == 'html5' and FULL %}
