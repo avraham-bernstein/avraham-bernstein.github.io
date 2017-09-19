@@ -120,36 +120,42 @@ For example, consider a long repetitive declarative configuration file, that cou
 
 Or consider the C language built-in [cpp macro preprocessor](https://en.wikipedia.org/wiki/C_preprocessor) which is very simplistic. It has no template support. There is no _pre-compilation_ support for arithmetic or string operations, array index selection, execution of O/S shell commands, and there is no straightforward way to implement loops, while complex macros with many levels of calls can often be incorrectly considered to be recursive which abort without even an error message. Once upon a time the [m4 macro processor](https://en.wikipedia.org/wiki/M4_(computer_language)) would be the tool of choice to implement complex macros. It has an arcane syntax, but it is admittedly Turing complete. Today very sophisticated Jinja2 macros and templates can be wrapped to look like cpp macros. This wrapping is important because most modern C/C++ IDEs have language sensitive editors that will choke when encountering invalid C/C++ syntax. Therefore the [Makefile](https://en.wikipedia.org/wiki/Makefile) implementation strategy is to first execute cpp (i.e. `gcc -E`), followed by Jinja2, followed by gcc.
 
-The following is an example of a Jinja2 macro `J2_ABC` that executes a python function that can be declared in a C/C++ file, and will keep the language sensitive IDE happy. Note that because some IDEs interpret cpp macros during an editing session, there must be 2 modes of operation, (1) build mode that will emit Jinja2/Python code, and (2) IDE mode that will emit default syntactically valid C/C++ code.
+The following is an example of a Jinja2 macro `J2_ABC` that executes a python function that can be declared in a C/C++ file, and will keep the language sensitive IDE happy. Because some IDEs with smart language sensitive editors interpret cpp macros during an editing session, there must be 2 modes of operation, (1) build mode that will emit Jinja2/Python code, and (2) IDE mode that will emit default syntactically valid C/C++ code.
 
-~~~
-#define J2_MODE_IDE                            0
-#define J2_MODE_BUILD                          1
-
-#define J2_BRACE_OPEN                          {
-#define J2_BRACE_CLOSE                         }
-#define J2_CNTRL_DELIM_OPEN                    J2_BRACE_OPEN%
-#define J2_CNTRL_DELIM_CLOSE                   %J2_BRACE_CLOSE
-#define J2_EXPR_DELIM_OPEN                     J2_BRACE_OPEN^	// j2 default double brace delims will conflict with C/C++
-#define J2_EXPR_DELIM_CLOSE                    ^J2_BRACE_CLOSE
-
-#define J2_IDENT(...)                          __VA_ARGS__
-
-#if J2_MODE == J2_MODE_BUILD
-#define J2_CNTRL(...)                          J2_CNTRL_DELIM_OPEN __VA_ARGS__ J2_CNTRL_DELIM_CLOSE
-#define J2_EXPR_2(ide_dflt_in_parens,...)      J2_EXPR_DELIM_OPEN __VA_ARGS__ J2_EXPR_DELIM_CLOSE
-#else // J2_MODE_IDE
-#define J2_CNTRL(...)
-#define J2_EXPR_2(ide_dflt_in_parens,...)      J2_IDENT ide_dflt_in_parens
+~~~ { #jinja2-cpp .c }
+#define J2_MODE_IDE                0
+#define J2_MODE_BUILD              1
+#ifndef J2_MODE
+#define J2_MODE                    J2_MODE_IDE // dflt allows seamless editing with a smart language sensitive editor
 #endif
 
-#define J2_EXPR_EMPTY(...)                     J2_EXPR_2((),   __VA_ARGS__)
-#define J2_EXPR_ZERO(...)                      J2_EXPR_2((0),  __VA_ARGS__)
-#define J2_EXPR_ONE(...)                       J2_EXPR_2((1),  __VA_ARGS__)
-#define J2_EXPR_CHR(...)                       J2_EXPR_2((''), __VA_ARGS__)
-#define J2_EXPR_STR(...)                       J2_EXPR_2((""), __VA_ARGS__)
+#if J2_MODE == J2_MODE_BUILD
 
-#define J2_ABC(...)                            J2_EXPR_ZERO(py_abc(__VA_ARGS__))
+// Should not specify j2 delims directly, otherwise will cause documentation j2 preprocessing errors.
+// Cannot use j2 default expression delim of double braces, otherwise will conflict with C/C++ syntax.
+
+#define J2_COM_DELIM               #   // comment statement delimiter
+#define J2_CNTRL_DELIM             %   // control statement delimiter
+#define J2_EXPR_DELIM              ^   // embedded expression delimiter
+#define J2_CNTRL(...)              {J2_CNTRL_DELIM __VA_ARGS__ J2_CNTRL_DELIM}
+#define J2_COM(...)                {J2_COM_DELIM __VA_ARGS__ J2_COM_DELIM}
+#define J2_EXPR_2(ide_dflt_in_parens,...)  {J2_EXPR_DELIM __VA_ARGS__ J2_EXPR_DELIM}
+
+#else // J2_MODE_IDE
+
+#define J2_IDENT(...)              __VA_ARGS__
+#define J2_CNTRL(...)
+#define J2_COM(...)
+#define J2_EXPR_2(ide_dflt_in_parens,...)  J2_IDENT ide_dflt_in_parens
+#endif
+
+#define J2_EXPR_EMPTY(...)         J2_EXPR_2((),   __VA_ARGS__)
+#define J2_EXPR_ZERO(...)          J2_EXPR_2((0),  __VA_ARGS__)
+#define J2_EXPR_ONE(...)           J2_EXPR_2((1),  __VA_ARGS__)
+#define J2_EXPR_CHR(...)           J2_EXPR_2((''), __VA_ARGS__)
+#define J2_EXPR_STR(...)           J2_EXPR_2((""), __VA_ARGS__)
+
+#define J2_ABC(...)                J2_EXPR_ZERO(py_abc(__VA_ARGS__))
 ~~~
 
 

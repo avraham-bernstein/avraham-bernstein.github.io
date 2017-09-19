@@ -1,4 +1,4 @@
-{% set VS = '0.3' %}
+{% set VS = '0.3.1' %}
 {% set VS_ORIG_DATE = '2017-09-18' %}
 {% set LANG = 'en-US' %}
 {% if not TS is defined %}{% set TS = DATETIME %}{% endif %}
@@ -105,7 +105,7 @@
 {% if WRITER == 'html5' %}
 	{% set BR = '<br>' %}
 {% else %}
-	{% set BR = NL+NL %}
+	{% set BR = NL %}
 {% endif %}
 
 {% set TOC = '%%TOC%%' %}
