@@ -50,10 +50,8 @@ __email/skype__**:** [{{EMAIL}}](mailto:{{EMAIL}})
 {{BR}}__www-home:__ [{{HOME}}]({{HOME}})
 {{BR}}__linkedin:__ [{{LINKEDIN_URL}}]({{LINKEDIN_URL}})
 {%- endif %}
-{{BR}}__cv-full-html:__ [{{TKOS}}/cv.html]({{TKOS}}/cv.html){% if WRITER == 'html5' and FULL %} __[this file]__{% endif %}
-{{BR}}__cv-abbrev-html:__ [{{TKOS}}/cv-abbrev.html]({{TKOS}}/cv-abbrev.html){% if WRITER == 'html5' and ABBREV %} __[this file]__{% endif %}
-{{BR}}__cv-full-docx:__ [{{TKOS}}/cv.docx]({{TKOS}}/cv.docx){% if WRITER == 'docx' and FULL %} __[this file]__{% endif %}
-{{BR}}__cv-abbrev-docx:__ [{{TKOS}}/cv-abbrev.html]({{TKOS}}/cv-abbrev.docx){% if WRITER == 'docx' and ABBREV %}  __[this file]__{% endif %}
+{{BR}}__cv-full:__ [HTML]({{TKOS}}/cv.html), [DOCX]({{TKOS}}/cv.docx), [PDF]({{TKOS}}/cv.pdf){% if FULL %} __[this file]__{% endif %}
+{{BR}}__cv-abbrev:__ [HTML]({{TKOS}}/cv-abbrev.html), [DOCX]({{TKOS}}/cv-abbrev.docx), [PDF]({{TKOS}}/cv-abbrev.pdf){% if ABBREV %} __[this file]__{% endif %}
 
 
 {% if FULL %}
