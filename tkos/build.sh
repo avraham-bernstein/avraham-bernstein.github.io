@@ -24,21 +24,24 @@ ROOT=cv
 OUT=AvrahamBernstein-CV
 HOME_URL=http://purl.org/Avraham.Bernstein
 
+J2_COMMON='-DAGENT=tkos'
+J2_COMMON+=' -Eline_statement_prefix=%% -Eline_comment_prefix=%#'
+
 TS=$(date --utc +%Y-%m-%dT%H:%M:%SZ)
 HOME_UUID=$(uuid -v5 ns:URL $HOME_URL)
 VCARD3_UUID=$(uuid -v5 ns:URL $HOME_URL/vcard3)
 VCARD4_UUID=$(uuid -v5 ns:URL $HOME_URL/vcard4)
 
-echo "{% set TS = '$TS' %}" > tmp/ts.j2
-echo "{% set HOME_UUID = '$HOME_UUID' %}" >> tmp/ts.j2
-echo "{% set VCARD3_UUID = '$VCARD3_UUID' %}" >> tmp/ts.j2
-echo "{% set VCARD4_UUID = '$VCARD4_UUID' %}" >> tmp/ts.j2
+echo "%% set TS = '$TS'" > tmp/ts.j2
+echo "%% set HOME_UUID = '$HOME_UUID'" >> tmp/ts.j2
+echo "%% set VCARD3_UUID = '$VCARD3_UUID'" >> tmp/ts.j2
+echo "%% set VCARD4_UUID = '$VCARD4_UUID'" >> tmp/ts.j2
 
 for v in 3 4
 do
 	f=vcard${v}.vcf.j2
 	g=tmp/vcard${v}.vcf
-	j2-cli.py tmp/ts.j2 defs.j2 $f | sed -re '/^\s*$/d' | awk '{print} END {print ""}' > $g
+	j2-cli.py $J2_COMMON tmp/ts.j2 defs.j2 $f | sed -re '/^\s*$/d' | awk '{print} END {print ""}' > $g
 done
 
 
@@ -49,10 +52,10 @@ do
 	g=tmp/$f
 	if [[ ! -f $f ]]; then f=$f.j2; fi
 	if [[ ! -f $f ]]; then continue; fi
-	j2-cli.py -DWRITER=$WRITER tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
+	j2-cli.py $J2_COMMON -DWRITER=$WRITER tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
 done
 
-j2-cli.py -DWRITER=$WRITER tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+j2-cli.py $J2_COMMON -DWRITER=$WRITER tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --toc --toc-depth=4 --standalone -H tmp/head.html tmp/metadata.yaml tmp/$WRITER.md > tmp/1.html
 
 # move TOC to the location of marker '%%TOC%%'
@@ -89,10 +92,10 @@ do
 	g=tmp/$f
 	if [[ ! -f $f ]]; then f=$f.j2; fi
 	if [[ ! -f $f ]]; then continue; fi
-	j2-cli.py -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
+	j2-cli.py $J2_COMMON -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
 done
 
-j2-cli.py -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+j2-cli.py $J2_COMMON -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --standalone -H tmp/head.html tmp/metadata.yaml tmp/$WRITER.md > tmp/1.html
 
 # to improve accessibility: h1,h2,h3,h4,h5,h6,li,p { tabindex: "0"; }
@@ -112,10 +115,10 @@ do
 	g=tmp/$f
 	if [[ ! -f $f ]]; then f=$f.j2; fi
 	if [[ ! -f $f ]]; then continue; fi
-	j2-cli.py -DWRITER=$WRITER tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
+	j2-cli.py $J2_COMMON -DWRITER=$WRITER tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
 done
 
-j2-cli.py -DWRITER=$WRITER tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+j2-cli.py $J2_COMMON -DWRITER=$WRITER tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --standalone tmp/metadata.yaml tmp/$WRITER.md > $ROOT.$WRITER
 
 for f in metadata.yaml
@@ -123,10 +126,10 @@ do
 	g=tmp/$f
 	if [[ ! -f $f ]]; then f=$f.j2; fi
 	if [[ ! -f $f ]]; then continue; fi
-	j2-cli.py -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
+	j2-cli.py $J2_COMMON -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $f | trim-top.awk > $g
 done
 
-j2-cli.py -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
+j2-cli.py $J2_COMMON -DWRITER=$WRITER -DABBREV=eval:True tmp/ts.j2 defs.j2 $ROOT.md | trim-top.awk > tmp/$WRITER.md
 pandoc.sh $WRITER --standalone tmp/metadata.yaml tmp/$WRITER.md > ${ROOT}-Abbrev.$WRITER
 
 
