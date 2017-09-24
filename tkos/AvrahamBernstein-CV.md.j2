@@ -19,15 +19,9 @@ so make sure the document is written in ISO-8859-1.
 # {{TITLE}} { #top }
 
 %% if AGENT_NAME is defined
-%% if WRITER == 'html5'
-<span style="font-size:larger;background-color:#FFFF00;">
+{% if WRITER == 'html5' %}<span style="font-size:larger;background-color:#FFFF00;">{% endif %}__Represented by [{{AGENT_NAME}}]({{AGENT_URL}})__{% if WRITER == 'html5' %}</span>{% endif %}
 %% endif
-__Represented by [{{AGENT_NAME}}]({{AGENT_URL}})__
-
-%% if WRITER == 'html5'
-</span>
-%% endif
-%% endif
+{{NL}}
 
 _Version: {{VS}}_
 {{BR}}_Last update: {{TS}}_
@@ -55,10 +49,8 @@ __email/skype\:__ [{{EMAIL}}](mailto:{{EMAIL}})
 {{BR}}__geolocation:__ [{{CITY}} {{COUNTRY}}]({{GEO_URL}}), __tz:__ UTC +02:00/+03:00 \[winter/summer]
 {{BR}}__tel-IL-mobile/whatsapp:__ {{TEL_IL_OBF}}
 {{BR}}__tel-US-mobile:__ {{TEL_US_OBF}}
-%% if FULL
 {{BR}}__www-home:__ [{{HOME}}]({{HOME}})
 {{BR}}__linkedin:__ [{{LINKEDIN_URL}}]({{LINKEDIN_URL}})
-%% endif
 {{BR}}__cv-full:__ [HTML]({{CV_HOME}}cv.html), [DOCX]({{CV_HOME}}cv.docx), [PDF]({{CV_HOME}}cv.pdf)
 %% if FULL
 __[this file]__
@@ -97,15 +89,15 @@ I have worked for a number of organizations, large and small, and helped them re
 
 In order to understand how I design S/W, see the following appendices:
 
-* [Programming Language Preferences and Musings](#appendix-programming-languages)
-* [Domain Specific Languages](#appendix-dsl)
-* [How To Write Correct, Maintainable, Secure, and Easy-to-Test Code](#appendix-programming-testable)
+* [Programming Language Preferences and Musings]({{CV_FULL}}#appendix-programming-languages)
+* [Domain Specific Languages]({{CV_FULL}}#appendix-dsl)
+* [How To Write Correct, Maintainable, Secure, and Easy-to-Test Code]({{CV_FULL}}#appendix-programming-testable)
 
 
 ## 2.0 Work Experience
 
 %% macro DETAILS(id)
-{% if ABBREV %} See [details]({{CV_HOME}}/cv.html#{{id}}).{% endif %}
+{% if ABBREV %} See [details]({{CV_FULL}}#{{id}}).{% endif %}
 %% endmacro
 
 %% macro JOB(id,title,company,details_flag=true)
@@ -158,28 +150,37 @@ _\@{{company}}:_{% if details_flag %}{{DETAILS(id)}}{% endif %}
 {{KEYS}} cybersecurity, privacy, anonymity, WordPress, static web site, Cloudflare, Windows, Android, Google Docs, Google Drive
 
 %% if FULL
-The client publishes a web site that "outs" (i.e. exposes) terrorists. Their WordPress web site was regularly attacked. And for personal safety reasons, their management and researchers needed to remain anonymous. Their enemies were well funded NGOs and government sponsored organizations. Their original web site developers were not cybersecurity aware, and their researchers who often worked remotely (i.e. outside of the office) were typical computer users who were naive about cybersecurity and how to protect their anonymity. After doing an initial risk assessment, my task was to implement graduated policies that improved their security without causing an upheaval to the way they worked.
+#. The client publishes a web site that "outs" (i.e. exposes) terrorists.
+#. Their WordPress web site was regularly attacked. And for reasons of personal physical safety, their management and researchers needed to remain anonymous.
+#. Their enemies were well funded NGOs and government sponsored organizations.
+#. Their original web site developers were not cybersecurity aware, and their researchers who often worked remotely (i.e. outside of the office) were typical computer users who were naive about cybersecurity and how to protect their anonymity.
+#. After doing an initial risk assessment, my task was to implement graduated policies that improved their security without causing an upheaval to the way they worked.
 %% endif
 
 
 {{ JOB(
 	'telequest',
 	'2010-11: S/W Architect & Developer: Transportation: Urban Traffic Vehicle Route Guidance Algorithms',
-	'TeleQuest, Jerusalem'
+	'TeleQuest (defunct), Jerusalem'
 )}}
 {{KEYS}} urban vehicle route guidance, architect, algorithms, Java, AWS
 
 %% if FULL
-I designed and implemented algorithms along with a computational infrastructure for urban traffic vehicle route guidance similar to what [Waze](https://www.waze.com/) does today. I coded in Java. I implemented the simulation infrastructure on the cloud on [AWS](https://aws.amazon.com/). The simulations showed that only 15% of the vehicles on the road needed to be guided in order to get a very accurate representation of global traffic flows. Also the simulations showed that opportunistic guidance algorithms created secondary traffic jams after 20% of the vehicles were guided. Therefore an optimal algorithm had to anticipate traffic flows according to time of day (along with other factors), and to allocate vehicles with similar sources and destinations to different routes in order to avoid secondary traffic jams. The Java implementation challenge was cost efficiency because the simulations used huge amounts of RAM and ran continuously for days on expensive servers. I could not rely on the efficacy of the built-in memory garbage collector (GC), so I had to explicitly coerce memory allocations and frees.
+#. I designed and implemented algorithms along with a computational infrastructure for urban traffic vehicle route guidance similar to what [Waze](https://www.waze.com/) does today.
+#. I coded in Java. I implemented the simulation infrastructure on the cloud on [AWS](https://aws.amazon.com/).
+#. The simulations showed that with a guided vehicle penetration rate of just 15%, a very accurate representation of traffic flow could be achieved.
+#. Also the simulations showed that opportunistic guidance algorithms created secondary traffic jams after the penetration rate exceeded 20%. And when the penetration rate exceeded 40%, opportunistic algorithms generated more traffic congestion than using no guidance at all.
+#. Therefore an optimal algorithm had to anticipate traffic flows according to time of day (along with other factors), and to allocate vehicles with similar sources and destinations to different routes in order to avoid secondary traffic jams.
+#. The Java implementation challenge was cost efficiency because the simulations used huge amounts of RAM and ran continuously for days on expensive servers. I could not rely on the efficacy of the built-in memory garbage collector (GC), so I had to explicitly coerce memory allocations and frees.
 %% endif
 
 
 {{ JOB(
 	'syntezza',
 	'2009-09: S/W Architect & Developer: Bioinformatics: PCR Algorithm',
-	'Syntezza, Jerusalem'
+	'Syntezza Molecular Detection (defunct), Jerusalem'
 ) }}
-{{KEYS}} bioinformatics, PCR, architect, algorithms, mathematical programming, {{HI_C}}, Python
+{{KEYS}} bioinformatics, PCR, algorithms, architect, mathematical programming, {{HI_C}}, Python
 
 %% if FULL
 #. The client's product was a [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) (= DNA amplification technology) kit for detecting  [MRSA](https://en.wikipedia.org/wiki/Methicillin-resistant_Staphylococcus_aureus) (= an often lethal staphylococcus bacteria that is antibiotic resistant and thrives in hospitals) .
@@ -211,7 +212,7 @@ I designed and implemented algorithms along with a computational infrastructure 
 {{ JOB(
 	'virtouch',
 	'2002-03: S/W Architect & Developer: Accessibility: Enabled Blind to "See" Maps',
-	'Virtouch, Jerusalem'
+	'Virtouch (defunct), Jerusalem'
 ) }}
 {{KEYS}} accessibility, blind, architect, algorithms, GIS, MapML, HTML, SVG, javascript, XSLT, XML Schema, XSLT, {{HI_C}}, TCL
 
@@ -238,7 +239,7 @@ along with TCL preprocessing.
 {{ JOB(
 	'vyyo',
 	'1999-2002: S/W Architect & Developer: Network: Utilities for a "Wireless" Cable Modem and Router System',
-	'Vyyo, Jerusalem'
+	'Vyyo (defunct), Jerusalem'
 ) }}
 {{KEYS}} network, architect, algorithms, SNMP, SNMP-agent, NMS, automated testing, {{HI_C}}, TCL, embedded
 
@@ -256,7 +257,7 @@ along with TCL preprocessing.
 {{ JOB(
 	'jolt',
 	'2001-01: S/W Architect & Developer: Network: Network Management System (NMS) for a FSO Device',
-	'MRV-Jolt, Jerusalem'
+	'MRV-Jolt (defunct), Jerusalem'
 ) }}
 {{KEYS}} network, architect, SNMP, SNMP-agent, NMS, Java, {{HI_C}}, TCL
 
@@ -274,7 +275,7 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 {{ JOB(
 	'foxcom',
 	'2001-01: Consultant: Network Management System (NMS) for a Cable Modem & Gateway System',
-	'Foxcom - One Path Networks, Jerusalem'
+	'One Path Networks - Foxcom, Jerusalem'
 ) }}
 {{KEYS}} SNMP, NMS
 
@@ -301,7 +302,7 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 {{ JOB(
 	'fourfold',
 	'1998-99: S/W Architect & Developer: Compiler: GCC Compiler Port for a 128-Core Stack Machine',
-	'Fourfold, Jerusalem'
+	'Fourfold Technologies (defunct), Jerusalem'
 ) }}
 {{KEYS}} C compiler, gcc, architect, algorithms, DSL, FORTH, {{HI_CPP}}, TCL, LISP
 
@@ -345,7 +346,7 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 {{ JOB(
 	'ultramind',
 	'1996-96: Consulting S/W Engineer: Win32 Improve Performance of a Soft Real-Time Biofeedback Application',
-	'UltraMind, Jerusalem'
+	'MindLife-UltraMind, Jerusalem'
 ) }}
 {{KEYS}} Win32, soft real-time, {{HI_C}}
 
@@ -363,7 +364,7 @@ The application has a strong beat option in case you lose synchronization, and i
 {{ JOB(
 	'cefar',
 	'1996-96: Consulting S/W Engineer: Win32 Device Driver for a Frame Grabber',
-	'Cefar, Jerusalem',
+	'Visionix-Cefar, Jerusalem',
 	false
 ) }}
 {{KEYS}} Win32, soft real-time
@@ -419,7 +420,7 @@ The application has a strong beat option in case you lose synchronization, and i
 {{JOB(
 	'iscar',
 	'1989-91: S/W Architect & Developer: Factory Automation: Shop Floor Production Control (SFPC) System: BARI II',
-	'Digital Equipment Corporation (DEC), Herzliya, for \@Iscar, Tefen'
+	'Digital Equipment Corporation (DEC) (defunct), Herzliya, for \@Iscar, Tefen'
 ) }}
 {{KEYS}} factory automation SFPC, architect, algorithms, DSL, Pascal, SQL, VAX/VMS
 
@@ -449,7 +450,7 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 {{ JOB(
 'light-pen',
 '1988-88: S/W Architect & Developer: Accessibility: Quadriplegic PC Accessibility',
-'Cubital, Herzliya - a charity project funded by the company and their CEO [Itzhak Pomerantz](https://il.linkedin.com/in/itzhak-pomerantz-91500b3) in cooperation with the Beit Levinson Rehabilitation Hospital, and the IDF Rehabilitation Unit'
+'Cubital (defunct), Herzliya - a charity project funded by the company and their CEO [Itzhak Pomerantz](https://il.linkedin.com/in/itzhak-pomerantz-91500b3) in cooperation with the Beit Levinson Rehabilitation Hospital, and the IDF Rehabilitation Unit'
 ) }}
 {{KEYS}} accessibility, Prolog, PC-DOS
 
@@ -470,7 +471,7 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 {{ JOB(
 	'cubital',
 	'1987-88: S/W Developer & VAX/VMS Sysadmin: 3D Printer: Solider',
-	'Cubital, Herzliya'
+	'Cubital (defunct), Herzliya'
 ) }}
 {{KEYS}} 3D printing, {{HI_C}}, sysadmin, VAX/VMS
 
@@ -483,7 +484,7 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 {{ JOB(
 	'elde',
 	'1986-87: S/W Developer: Soft Real-Time RS232 Z80 Communication Driver: Data Collection & Access Control Terminal',
-	'Elde, Jerusalem',
+	'Elde (defunct), Jerusalem',
 	false
 ) }}
 {{KEYS}} data collection terminal, {{HI_C}}, RS232, Z80, embedded, real-time
@@ -517,7 +518,7 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 {{ JOB(
 	'elta',
 	'1983-84: S/W Developer: Real-Time: Data Collection Terminal & Lavi Fighter Plane Radar',
-	'DSI, Givatayim for \@Elta/IAI, Ashdod'
+	'DSI (defunct), Givatayim for \@Elta/IAI, Ashdod'
 ) }}
 {{KEYS}} data collection terminal, PL/M, 8080, RTOS, fighter plane radar, Jovial, embedded, real-time
 
@@ -571,6 +572,7 @@ I configured computer simulations of electric power generating systems for the p
 %% endif
 {{NL}}
 
+
 ## 3.0 Education
 
 ### 3.1 Formal Education
@@ -603,18 +605,19 @@ The most memorable and still useful courses I took were in statistics, experimen
 
 ### 3.2 Continuing Education
 
-#. Today the field of computer science is changing so rapidly, that without ongoing self-study, one's formal education becomes obsolete within 5 years.
-#. From 1991-96, pre-Internet, I used to spend one afternoon per week reading at the Hebrew University Jerusalem (HUJI) computer science library.
+{% if FULL %}#. {% endif %}Today the field of computer science is changing so rapidly that without an intensive ongoing effort of continuing education, one's formal education has a half-life of less than 5 years.
+{% if ABBREV %}Here are the details of my [continuing education]({{CV_FULL}}#continuing-education).{% endif %}
+{% if FULL %}#. From 1991-96, pre-Internet, I used to spend one afternoon per week reading at the Hebrew University Jerusalem (HUJI) computer science library.
 #. Afterwards with the advent of the Internet, more up-to-date computer science topics were available on the Internet, so going to the library was no longer the most efficient way to keep updated.
 #. Since 2005, I have maintained a subscription to the [O'Reilly Safari](https://www.safaribooksonline.com/) on-line tech library.
 #. My daily dose of tech news comes from [Slashdot](https://www.safaribooksonline.com/).
 #. I regularly watch [TedX](https://www.ted.com/about/programs-initiatives/tedx-program) and [Talks At Google](https://talksat.withgoogle.com/) video seminars.
 #. The most fascinating feature of TedX talks is to watch and learn how world class experts in a wide range of fields are able to distill their special area of knowledge to intelligent laymen in just 18 minutes. Whenever I make a presentation, I attempt to emulate the best TedX speakers. Also I attempt to write presentations which emulate this TedX [Art of Innovation Top 10 Format](https://www.youtube.com/watch?v=Mtjatz9r-Vc).
 #. I regularly read the tech sections of the Israeli business newspapers [Globes](https://www.globes.co.il/en/) and [The Times of Israel](http://www.timesofisrael.com/start-up-israel/).
-#. I have eclectic interests.
-#. I regularly research new topics in depth.
+#. I have eclectic interests. I regularly research new topics in depth.
 #. My browser bookmarks are my most important professional store of my knowledge. I use Firefox because it has the best built-in bookmarking feature, because it uses tags/labels. I have a well honed tag taxonomy.
 #. I am an [expert generalist](http://99u.com/articles/7269/picasso-kepler-and-the-benefits-of-being-an-expert-generalist), and an [autodidact polymath](http://autodidactpolymath.com/autodidact-polymath-definition/), i.e. a self-learner in new fields who achieves expertise quickly.
+{% endif %}
 
 
 ## 4.0 Spoken Languages
@@ -655,6 +658,8 @@ O/S knowledge in order of expertise, based upon my current frequency of usage:
 
 I was born in Canada in 1956. I have lived in Jerusalem Israel since 1983. I am married with 4 children, 2B + 2G, plus many grandchildren. I take physical fitness seriously. Once upon a time I was a judoka, and a classical guitarist. I was an IDF reserve soldier for 15 years, where I served as a combat soldier in the infantry in the Jordan Valley. In spite of the fact that I joined the army when I was 32 years old (Hebrew: _Shlav Betnik_), functionally, but unofficially, I served in the capacity of deputy company commander (Hebrew: _Samech Mem Pe_) which provided me with the opportunity to achieve rich personal growth, and enabled me to learn important managerial and leadership skills.
 
+
+%% if FULL
 
 ## Appendix A: Programming Language Preferences and Musings { #appendix-programming-languages }
 
@@ -712,9 +717,10 @@ Or consider the C language built-in [cpp macro preprocessor](https://en.wikipedi
 
 The following is an example of a Jinja2 macro `J2_ABC` that executes a python function that can be declared in a C/C++ file, and will keep the language sensitive IDE happy. Because some IDEs with smart language sensitive editors interpret cpp macros during an editing session, there must be 2 modes of operation, (1) build mode that will emit Jinja2/Python code, and (2) IDE mode that will emit default syntactically valid C/C++ code.
 
-~~~ { #jinja2-cpp .c }
-// 1. Must not use j2 default expression delimiter, i.e. double braces, otherwise will conflict with C/C++ syntax.
-// 2. Should not specify j2 delimiters *directly*, otherwise will cause documentation j2 preprocessing errors.
+~~~ { #jinja2-cpp .c .numberLines }
+// 1. Cpp definitions should not specify j2 delimiters *directly*, otherwise will cause j2 preprocessing errors.
+// See lines 20-26.
+// 2. Must not use j2 default expression delimiter, i.e. double braces, otherwise will conflict with C/C++ syntax.
 // 3. Should not use j2 line mode *mixed* with C/C++, even with modified delimiters say '%%' and '%''#'
 // for control and comment statements respectively, because a language sensitive IDE will choke on the code.
 // 4. However it can be an effective technique to include j2 source files that contain control statements
@@ -747,7 +753,7 @@ The following is an example of a Jinja2 macro `J2_ABC` that executes a python fu
 #define J2_COM(...)
 #define J2_EXPR_2(ide_dflt_in_parens,...)  J2_IDENT ide_dflt_in_parens
 
-#endif
+#endif // J2_MODE
 
 #define J2_EXPR_EMPTY(...)         J2_EXPR_2((),   __VA_ARGS__)
 #define J2_EXPR_ZERO(...)          J2_EXPR_2((0),  __VA_ARGS__)
@@ -791,15 +797,14 @@ And where the implementation will be embedded inside another application then Lu
 #. A necessary condition for secure code is that the code first must be correct. See the Google Tech-Talk [The Lazy Programmer's Guide To Computer Security](https://www.youtube.com/watch?v=eL5o4PFuxTY).
 #. And after all of the above techniques have been incorporated into the implementation, still the most efficient way to flush out 50% of the bugs is an informal code review with a colleague where the programmer must explain every line of his code. Typically during his explanation, the programmer has many "aha" moments when recognizing many of his own bugs.
 
+%% endif
+
 
 ## Colophon
 
 * __Generator:__ This document was generated using the [Pandoc](http://www.pandoc.org) universal document converter extended [Markdown](https://en.wikipedia.org/wiki/Markdown) engine, along with the [Jinja2](http://jinja.pocoo.org/) macro/template preprocessor. See the source code at my [github site](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master).
 
-* __Safety & non-annoyment pledge:__ This document is free of scripts, frames, advertisements, and animations.
-%% if WRITER == 'html5'
-<!-- This pledge was originally coined by David Pogue -->
-%% endif
+* __Safety & non-annoyment pledge:__ This document is free of scripts, frames, advertisements, and animations.{% if WRITER == 'html5' %}<!-- This pledge was originally coined by David Pogue -->{% endif %}
 
 %% if WRITER == 'html5'
 * __[WCAG](https://www.w3.org/TR/WCAG20/) blind accessibility conformance:__ This document contains text alternatives for images, and is tab navigable - for sections, subsections, paragraphs, list items, and links.
