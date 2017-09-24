@@ -170,7 +170,7 @@ The client publishes a web site that "outs" (i.e. exposes) terrorists. Their Wor
 {{KEYS}} urban vehicle route guidance, architect, algorithms, Java, AWS
 
 %% if FULL
-I designed and implemented algorithms along with a computational infrastructure for urban traffic vehicle route guidance similar to what [Waze](https://www.waze.com/) does today. I implemented in Java. I implemented the simulation infrastructure on the cloud on [AWS](https://aws.amazon.com/). The Java implementation challenge was cost efficiency because the simulations used huge amounts of RAM and ran continuously for days on expensive servers. I could not rely on the efficacy of the built-in memory garbage collector (GC), so I had to explicitly coerce memory allocations and frees.
+I designed and implemented algorithms along with a computational infrastructure for urban traffic vehicle route guidance similar to what [Waze](https://www.waze.com/) does today. I coded in Java. I implemented the simulation infrastructure on the cloud on [AWS](https://aws.amazon.com/). The simulations showed that only 15% of the vehicles on the road needed to be guided in order to get a very accurate representation of global traffic flows. Also the simulations showed that opportunistic guidance algorithms created secondary traffic jams after 20% of the vehicles were guided. Therefore an optimal algorithm had to anticipate traffic flows according to time of day (along with other factors), and to allocate vehicles with similar sources and destinations to different routes in order to avoid secondary traffic jams. The Java implementation challenge was cost efficiency because the simulations used huge amounts of RAM and ran continuously for days on expensive servers. I could not rely on the efficacy of the built-in memory garbage collector (GC), so I had to explicitly coerce memory allocations and frees.
 %% endif
 
 
@@ -339,16 +339,25 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 	'M.E.R., Jerusalem',
 	false
 ) }}
-{{KEYS}} lecturer, Win32
+{{KEYS}} lecturer, Win32, {{HI('C')}}
 
 
 {{ JOB(
 	'ultramind',
 	'1996-96: Consulting S/W Engineer: Win32 Improve Performance of a Soft Real-Time Biofeedback Application',
-	'UltraMind, Jerusalem',
-	false
+	'UltraMind, Jerusalem'
 ) }}
-{{KEYS}} Win32, soft real-time
+{{KEYS}} Win32, soft real-time, {{HI('C')}}
+
+%% if FULL
+Besides greatly improving the performance of customer's relaxation/meditation S/W application, I also developed my own meditation technique that uses simple S/W or even no S/W at all, and can easily be taught to most people within 5 minutes. Already in the 1960's [brainwave entrainment](https://en.wikipedia.org/wiki/Brainwave_entrainment) experiments showed that the brainwaves of cats, for examples, could be controlled by a strobe light source as long as the strobe frequency was within the normal frequency range of the cat's brain. Now human meditation takes place when the brain is exhibiting [theta waves](https://en.wikipedia.org/wiki/Brain_activity_and_meditation) which are in the range of 4-8 Hz. Note that this frequency range is the equivalent of a metronome operating at frequency of 240-480 beats per minute (bpm). Normally mechanical metronomes don't operate at speeds higher than 180 bpm, but today (i.e. 2017) there are many free digital metronome applications (on smartphones, tablets, and desktop PCs) that operate at much higher speeds, where 240-360 bpm is the "sweet spot" for meditation. My favorite application is [GNU GTick](http://www.antcom.de/gtick/). I use the following 3 settings:
+
+* 240 bpm (= 4 Hz), 4/4 time
+* 300 bpm (= 5 Hz), 5/4 time
+* 360 bpm (= 6 Hz), 6/4 time
+
+The application has a strong beat option in case you lose synchronization, and it also has the option of a visual mode that synchronizes with the audio. By keeping time with the metronome app, your brainwave frequency synchronizes to the metronome frequency, which by definition puts you into a meditative state. And after a little bit of practice, many people can simply watch a clock with a second hand that makes a single discrete jump every second, and silently count to 4, 5, or 6 per jump, which is equivalent to frequencies of 4, 5, and 6 Hz respectively.
+%% endif
 
 
 {{ JOB(
@@ -562,9 +571,9 @@ I configured computer simulations of electric power generating systems for the p
 %% endif
 {{NL}}
 
-## 4.0 Education
+## 3.0 Education
 
-### 4.1 Formal Education
+### 3.1 Formal Education
 
 #### 1979: York University, Canada: MA Economics & Applied Mathematics { #york-univ }
 
@@ -592,7 +601,7 @@ The most memorable and still useful courses I took were in statistics, experimen
 {% endif %}
 
 
-### 4.2 Continuing Education
+### 3.2 Continuing Education
 
 #. Today the field of computer science is changing so rapidly, that without ongoing self-study, one's formal education becomes obsolete within 5 years.
 #. From 1991-96, pre-Internet, I used to spend one afternoon per week reading at the Hebrew University Jerusalem (HUJI) computer science library.
@@ -608,14 +617,14 @@ The most memorable and still useful courses I took were in statistics, experimen
 #. I am an [expert generalist](http://99u.com/articles/7269/picasso-kepler-and-the-benefits-of-being-an-expert-generalist), and an [autodidact polymath](http://autodidactpolymath.com/autodidact-polymath-definition/), i.e. a self-learner in new fields who achieves expertise quickly.
 
 
-## 5.0 Spoken Languages
+## 4.0 Spoken Languages
 
 #. English (5/5)
 #. Hebrew (4/5)
 #. French (2/5)
 
 
-## 6.0 Computer Languages, SDKs, and Operating Systems { #computer-languages }
+## 5.0 Computer Languages, SDKs, and Operating Systems { #computer-languages }
 
 Language knowledge in order of expertise, based upon my current frequency of usage:
 
@@ -635,14 +644,14 @@ O/S knowledge in order of expertise, based upon my current frequency of usage:
 #. IOS
 
 
-## 7.0 Patents Under Development { #patents }
+## 6.0 Patents Under Development { #patents }
 
 * [Bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics): (a) An extremely accurate and simple noise reduction and normalization algorithm to improve the accuracy of the standard [PCR Ct](http://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/qpcr-education/pcr-understanding-ct-application-note.html) calculation, and (b) an [Artificial Intelligence (AI)](https://en.wikipedia.org/wiki/Artificial_intelligence) methodology for measuring the quantity of DNA in a bioassay where [inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) makes it impossible to estimate the Ct because no underlying [logistic function](https://en.wikipedia.org/wiki/Logistic_function) (= a flat "S" shaped curve) exists.
 
 * [Cryptography](https://en.wikipedia.org/wiki/Cryptography): A set of non-linear cryptographic primitives using [Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight)-like [data dependent permutations](https://link.springer.com/article/10.1007%2Fs00145-001-0012-9?LI=true) which overcomes the well known limitation of using Hamming weights because they have a [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution).
 
 
-## 8.0 Personal
+## 7.0 Personal
 
 I was born in Canada in 1956. I have lived in Jerusalem Israel since 1983. I am married with 4 children, 2B + 2G, plus many grandchildren. I take physical fitness seriously. Once upon a time I was a judoka, and a classical guitarist. I was an IDF reserve soldier for 15 years, where I served as a combat soldier in the infantry in the Jordan Valley. In spite of the fact that I joined the army when I was 32 years old (Hebrew: _Shlav Betnik_), functionally, but unofficially, I served in the capacity of deputy company commander (Hebrew: _Samech Mem Pe_) which provided me with the opportunity to achieve rich personal growth, and enabled me to learn important managerial and leadership skills.
 
