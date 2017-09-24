@@ -1,5 +1,5 @@
 %% set LANG = 'en-US'
-%% set VS = '0.5'
+%% set VS = '0.5.1'
 %% set VS_ORIG_DATE = '2017-09-18'
 
 %% if not TS is defined
@@ -159,11 +159,19 @@
 %% endif
 
 %% macro HI(text)
-%% if WRITER == 'html5'
+{% if WRITER == 'html5' -%}
 <span class="hi">
-%% endif
+{% endif %}
 __{{text}}__
-%% if WRITER == 'html5'
+{% if WRITER == 'html5' %}
 </span>
-%% endif
+{%- endif %}
 %% endmacro
+
+%% if AGENT is defined and AGENT == 'tkos'
+%% set HI_C = HI('C')
+%% set HI_CPP = HI('C/C++')
+%% else
+%% set HI_C = 'C'
+%% set HI_CPP = 'C/C++'
+%% endif
