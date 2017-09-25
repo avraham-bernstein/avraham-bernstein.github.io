@@ -1,24 +1,23 @@
-{# !!! SYNTAX GOTCHYAS !!!
-1. We are using default delimiter sequences for begin and end tags,
-i.e. {-{ ... }-}, {-% ... %-}, and {-# ... #-}.
-for variable expressions, control statements, and comment statements respectively.
-2. Note that in this multi-line comment section we add a '-' between the delimiters,
-otherwise J2 cannot process this comment correctly.
-3. But we are using *non-standard* '%-%' and '%-#' for the line statement prefix and line comment prefix respectively,
-in order not to conflict with pandoc ATX headers '#' and automatically numbered lists '#.'.
-4. Note that *sometimes* we find that the line statements eat all blank lines following it,
-so sometimes it is necessary to terminate a sequence of line statements with an innocuous {{NL}}.
-5. Internal pandoc link anchors, i.e. '{ #myanchor }' must have a space between the left brace and the hash,
-otherwise they will conflict with J2 comments.
-6. Use of the '@' character that immediately precedes a new word triggers a pandoc citation.
+{# !!! JINJA2 SYNTAX GOTCHYAS !!!
+1. We are using the *non-standard* prefixes '%%' and '%#' for line statements
+and line comments respectively, in order not to conflict with pandoc ATX
+headers '#' and automatically numbered lists '#.'.
+2. Otherwise we are still using the default delimiter sequences for begin and end tags,
+i.e. {'{' ... '}'}, {'%' ... '%'}, and {'#' ... '#'}, for variable expressions,
+control statements, and comment statements respectively.
+3. *Sometimes* we find that the line statements eat all blank lines following it,
+in which case it is necessary to terminate a sequence of line statements with an innocuous {{NL}}.
+4. Internal pandoc link anchors, i.e. '{ #myanchor }' must have a space between
+the left brace and the hash, otherwise they will conflict with J2 comments.
+5. Use of the '@' character that immediately precedes a new word triggers a pandoc citation.
 I don't know how to turn off the facility. So escape them as follows with a backslash, i.e. '\@'.
-7. The current Python2 version of J2 does not support UTF-8 or Unicode,
+6. The current Python2 version of J2 does not support UTF-8 or Unicode,
 so make sure the document is written in ISO-8859-1.
 #}
 
 # {{TITLE}} { #top }
 
-%% if AGENT_NAME is defined
+%% if AGENT_NAME != ''
 {% if WRITER == 'html5' %}<span style="font-size:larger;background-color:#FFFF00;">{% endif %}__Represented by [{{AGENT_NAME}}]({{AGENT_URL}})__{% if WRITER == 'html5' %}</span>{% endif %}
 %% endif
 {{NL}}
@@ -28,23 +27,27 @@ _Version: {{VS}}_
 {{BR}}_{{COPYRIGHT}}_
 {{BR}}_{{LICENSE}}_
 
-{% if FULL %}
-{% if WRITER == 'html5' %}
+%% if FULL
+
+%% if WRITER == 'html5'
 <figure>
 <img title="{{NAME}}" alt="{{NAME}}" src="{{IMAGE_URL}}">
 <figcaption>Secure[^secure-photo] photo of the author, {{NAME}} c. 2010.</figcaption>
 </figure>
-{% else %}
+%% else
 ![Secure[^secure-photo] photo of the author, {{NAME}} c. 2010.]({{IMAGE_URL}})
-{% endif %}
+%% endif
+{{NL}}
 
 [^secure-photo]: This secure photo was built using an [oilify](http://docs.gimp.org/en/plug-in-oilify.html) filter and a visible email address [watermark](https://en.wikipedia.org/wiki/Digital_watermarking). It uses [digital camouflage](https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup) that will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate/label it with any other name besides mine. Similarly if a site were to maliciously display my photo without my permission in order to imply my association or agreement with them, then it is trivial for anyone who may be suspicious of their claim to "challenge" the site by asking me for a verification email.
-{% endif %}
+
+%% endif
+{{NL}}
 
 
 ### 0.1 Contact Info & Links { #contact-info }
 
-%# pandoc bug: thinks 'email/skype:' is a link
+%# pandoc bug: thinks 'email/skype:' is a URL
 __email/skype\:__ [{{EMAIL}}](mailto:{{EMAIL}})
 {{BR}}__geolocation:__ [{{CITY}} {{COUNTRY}}]({{GEO_URL}}), __tz:__ UTC +02:00/+03:00 \[winter/summer]
 {{BR}}__tel-IL-mobile/whatsapp:__ {{TEL_IL_OBF}}
@@ -53,11 +56,11 @@ __email/skype\:__ [{{EMAIL}}](mailto:{{EMAIL}})
 {{BR}}__linkedin:__ [{{LINKEDIN_URL}}]({{LINKEDIN_URL}})
 {{BR}}__cv-full:__ [HTML]({{CV_HOME}}cv.html), [DOCX]({{CV_HOME}}cv.docx), [PDF]({{CV_HOME}}cv.pdf)
 %% if FULL
-__[this file]__
+__\[this file]__
 %% endif
 {{BR}}__cv-abbrev:__ [HTML]({{CV_HOME}}cv-abbrev.html), [DOCX]({{CV_HOME}}cv-abbrev.docx), [PDF]({{CV_HOME}}cv-abbrev.pdf)
 %% if ABBREV
-__[this file]__
+__\[this file]__
 %% endif
 {{NL}}
 
@@ -89,9 +92,9 @@ I have worked for a number of organizations, large and small, and helped them re
 
 In order to understand how I design S/W, see the following appendices:
 
-* [Programming Language Preferences and Musings]({{CV_FULL}}#appendix-programming-languages)
-* [Domain Specific Languages]({{CV_FULL}}#appendix-dsl)
-* [How To Write Correct, Maintainable, Secure, and Easy-to-Test Code]({{CV_FULL}}#appendix-programming-testable)
+* [Programming Language Preferences and Musings]({% if ABBREV %}{{CV_FULL}}{% endif %}#appendix-programming-languages)
+* [Domain Specific Languages]({% if ABBREV %}{{CV_FULL}}{% endif %}#appendix-dsl)
+* [How To Write Correct, Maintainable, Secure, and Easy-to-Test Code]({% if ABBREV %}{{CV_FULL}}{% endif %}#appendix-programming-testable)
 
 
 ## 2.0 Work Experience
@@ -123,22 +126,36 @@ _\@{{company}}:_{% if details_flag %}{{DETAILS(id)}}{% endif %}
 
 {{ JOB(
 	'viaccess',
-	'2011-17: S/W Architect & Developer: Cybersecurity: OTT Internet Pay TV System',
-	'Viaccess-Orca, Ra\'anana - a subsidiary of Orange FR, and \@Discretix/SansaSecurity, Netanya - now merged into ARM',
+	'2011-17: Security Policy Mngr & Architect: Cybersecurity: OTT Internet Pay TV System',
+	'Viaccess-Orca, Ra\'anana - a subsidiary of \@Orange France, and \@Discretix/SansaSecurity, Netanya recently acquired by \@ARM',
 	false
 ) }}
 {{KEYS}} cybersecurity, DRM, architect, algorithms, anti-reverse engineering, obfuscation, LLVM compiler, cryptography, {{HI_CPP}}, TCL, Python, bash, Android root detection, Linux, ELF edit, IOS
 
-#. I architected and implemented anti-reverse engineering and [obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) programming frameworks and libraries in C/C++ for their [DRM](https://en.wikipedia.org/wiki/Digital_rights_management) protected movie player application that ran on Android and IOS devices.
+#. The product was an [Over-The-Top (OTT)](https://en.wikipedia.org/wiki/Over-the-top_content) Internet pay TV system. We provided the S/W infrastructure to our customers, the legacy (i.e. satellite and cable) pay TV operators, so they could also provide an OTT service to their subscribers in order that they could try to compete with  [Netflix](https://www.netflix.com/il-en/). The system was designed for small screen Android and IOS devices, i.e. up to 10 inches. We used [DRM](https://en.wikipedia.org/wiki/Digital_rights_management) to encrypt the content.
+%% if FULL
+Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/PlayReady), and later on their own proprietary in-house DRM, and finally also Google's [Widevine](https://www.widevine.com/wv_drm.html).
+%% endif
+#. I was responsible for security policy and architecture. I worked closely with the product management and the S/W development team leader in order to determine security requirements, their costs and benefits, and was the architect of their implementation. In many cases the security features were very complex, so I first needed to create a working proof-of-concept, before finalizing their specifications.
+#. Originally the exclusive focus of security was protecting the devices from leaking content and keys, i.e. from being reverse engineered. We relied heavily on the premise that we refused to play on "rooted" Android devices or "jail-broken" IOS devices.
+#. But as time went by, rooted Android devices became inexpensive and ubiquitous in the consumer market. Therefore due to declining royalties, the major studios (e.g. Disney, Sony, Warner Bros., etc.) were economically forced to allow playback on rooted devices. Therefore additional security had to implemented on the back-end web servers, e.g. to check whether or not a subscriber downloaded an unusually high number of hours of content, or whether the subscriber had simultaneous downloads from different IP addresses. I designed a secure data logging system in order to better understand how subscribers were using the system, and in order to detect piracy. Given that we had tens of millions of subscribers, the economic challenge was to minimize communication costs of the logs.
+#. I specified the anti-reverse engineering and [obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) programming frameworks and libraries in C/C++.
+#. My typical development methodology was to first build a prototype for desktop Linux, secondly as a standalone [CLI](https://en.wikipedia.org/wiki/Command-line_interface) application on the target device, and finally to hand over a working prototype to the development team. Whenever possible I preferred to test on virtual machines.
 #. The challenges of implementing obfuscation are that (1) the other programmers should not be concerned about it because their focus must be on writing correct code, and (2) the resulting increase in size and reduction in run-time speed must not noticeably reduce the usability/functionality of the application. In general the aim of obfuscation is to provide "good enough security" that will deter 95% of potential attackers, and when combined with regular application updates will force an attacker to begin his next reverse engineering attempt from scratch.
+#. All secure code modules on the device were implemented as native libraries written in C/C++. Usually offline utilites were implemented in Python.
+%% if ABBREV
+#. See [more details]({{CV_FULL}}#viaccess).
+%% else
 #. I developed a post processor to obfuscate the resulting binary object ELF files.
-#. I developed a light weight obfuscated cryptographic library implemented as a H file using `inline` functions so that every module that included it had its own private copy of the library with a module specific randomized implementation which prevented an attack against a single core cryptographic module that could potentially subvert the whole application.
+#. I developed a light weight obfuscated cryptographic library implemented as a H file using `inline` functions so that every module that included it had its own private copy of the library with a module specific randomized implementation which prevented an attack against a single core cryptographic module that could potentially subvert the whole application. During movie playback which relied upon AES decryption, for performance reasons we could not afford to also use AES encryption so we used light weight techniques instead, e.g. [Xorshift PRNG](https://en.wikipedia.org/wiki/Xorshift) [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher).
 #. I developed an Android root detection mechanism using fuzzy logic techniques.
 #. I developed a background watchdog security thread to dynamically ensure that the binary code had not been tampered with.
-#. All secure code modules were implemented as native libraries written in C/C++.
-#. Offline utilities and build scripts were written in bash, Python, and TCL.
-#. My typical development methodology was to first build a prototype for desktop Linux, secondly as a standalone [CLI](https://en.wikipedia.org/wiki/Command-line_interface) application on the target device, and finally to incorporate the source code into the full application on the target device. Whenever possible I preferred to test on virtual machines.
-#. I was responsible for the purchase decisions and usage policy of 3rd party obfuscation and cryptographic utilities and libraries.
+#. I developed vector operations for the C preprocessor that allowed a stream cipher to be applied to a constant string _pre-compile_ time that was used to shroud function name strings that were dynamically loaded using `dlsym()`.
+#. I developed a light weight method to efficiently shroud all system calls so that their address is calculated just-in-time before the call is made. It foils the professional reverse engineering debuggers [Hex-Rays](https://www.hex-rays.com/) and [OllyDbg](https://en.wikipedia.org/wiki/OllyDbg) which normally can automatically identify and place anchors on the system calls.
+#. I created a prototype of a [dynamic shared library (DSO)](https://en.wikipedia.org/wiki/Library_(computing)) that formally exported no symbols. In fact it used an asynchronous back channel that allowed the DSO to communicate with its caller by using a function declared with the [gcc constructor attribute](https://stackoverflow.com/questions/2053029/how-exactly-does-attribute-constructor-work) that executes before `dlopen()` returns.
+#. I was responsible for the purchase decisions and usage policy of 3rd party obfuscation and cryptographic utilities and libraries. The two main 3rd party utilities that we used were the InterTrust WhiteCryption [SCP](https://www.intertrust.com/products/application-shielding/code-protection/) obfuscating C/C++ compiler and their [SKB](https://www.intertrust.com/products/application-shielding/secure-key-box/) "whitebox" cryptographic library. I worked with the WhiteCryption team to specify new features for their tools. For example, even though their [UPX-like](https://en.wikipedia.org/wiki/UPX) tool statically encrypts and packs a DSO, it automatically decrypts it when it is loaded - allowing anyone to load it including an attacker who wants to do reconnaissance, so we added a password protection mechanism using a global operating system object, i.e. an environment variable or a file.
+#. One of the most difficult architectural problems was that it was very difficult to patch/update the application in a timely manner once a subscriber had already downloaded it. The final application was created by our customers, i.e. the satellite/cable operators. We supplied them with core libraries only. Therefore we did not have access to the enterprise keys from the Google Play Store or Apple App Store that were required to automatically push an update, e.g. to modify a configuration file with a new password due to a security breach on a server. The original security architect naively assumed that we would achieve higher security by building a customer specific version of our core module where we "baked" (i.e. embedded) in the customer's keys instead of using a separate customer specific configuration file to be dynamically loaded upon each invocation of the application. The customers were justifiably "paranoid" about demanding a very high level of quality assurance before making a release, because a single major bug could swamp them with tens of thousands of support calls where the cost of handling a single call could be greater than the monthly subscription fee. Typically their release cycle was every 6-12 months. Therefore the customers would never dare allow us to automatically push code to their subscribers that they did not yet vet. Eventually I architected a technical solution that allowed us to automatically push configuration files to the subscribers where we would give the customers 7 days prior notice. The solution also required that the servers support two sets of passwords and/or subscriber credentials during a key transition period.
+%% endif
 #. {{HI_BEGIN}}At the end of my 6 year tenure there were 40M subscribers, and no security breaches.{{HI_END}}
 
 
@@ -157,10 +174,14 @@ _\@{{company}}:_{% if details_flag %}{{DETAILS(id)}}{% endif %}
 #. After doing an initial risk assessment, my task was to implement graduated policies that improved their security without causing an upheaval to the way they worked.
 %% endif
 
-
+%% if not DD
+	%% set title = '2010-11: VP R&D: Transportation: Urban Traffic Vehicle Route Guidance Algorithms'
+%% else
+	%% set title = '2010-11: S/W Architect & Developer: Transportation: Urban Traffic Vehicle Route Guidance Algorithms'
+%% endif
 {{ JOB(
 	'telequest',
-	'2010-11: S/W Architect & Developer: Transportation: Urban Traffic Vehicle Route Guidance Algorithms',
+	title,
 	'TeleQuest (defunct), Jerusalem'
 )}}
 {{KEYS}} urban vehicle route guidance, architect, algorithms, Java, AWS
@@ -209,15 +230,20 @@ _\@{{company}}:_{% if details_flag %}{{DETAILS(id)}}{% endif %}
 %% endif
 
 
+%% if not DD
+	%% set title = '2002-03: CTO & S/W Architect: Accessibility: Enabled Blind to "See" Maps'
+%% else
+	%% set title = '2002-03: S/W Architect & Developer: Accessibility: Enabled Blind to "See" Maps'
+%% endif
 {{ JOB(
 	'virtouch',
-	'2002-03: S/W Architect & Developer: Accessibility: Enabled Blind to "See" Maps',
+	title,
 	'Virtouch (defunct), Jerusalem'
 ) }}
 {{KEYS}} accessibility, blind, architect, algorithms, GIS, MapML, HTML, SVG, javascript, XSLT, XML Schema, XSLT, {{HI_C}}, TCL
 
 %% if FULL
-#. I was the inventor, architect, and main developer of a system that allowed the blind to to "see" geographic maps and digital images that were prepared using industry standard [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) map descriptions such as [MapML](https://maps4html.github.io/MapML/spec/).
+#. I was the inventor and architect of a system that allowed the blind to to "see" geographic maps and digital images that were prepared using industry standard [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) map descriptions such as [MapML](https://maps4html.github.io/MapML/spec/).
 #. Maps were displayed on a standard HTML browser using HTML, SVG, javascript, XSLT, combined with audio feedback.
 #. A touch tablet and stylus were used instead of a mouse because the blind can use a touch tablet much more effectively to navigate the screen compared to a mouse. The blind have their own sense of hand-eye coordination, and intuitively understand the stylus position on the tablet.
 #. The core design principles were the following:
@@ -236,9 +262,14 @@ along with TCL preprocessing.
 %% endif
 
 
+%% if not DD
+	%% set title = '1999-2002: Mngr & S/W Architect: Network: Utilities for a "Wireless" Cable Modem and Router System'
+%% else
+	%% set title = '1999-2002: S/W Architect & Developer: Network: Utilities for a "Wireless" Cable Modem and Router System'
+%% endif
 {{ JOB(
 	'vyyo',
-	'1999-2002: S/W Architect & Developer: Network: Utilities for a "Wireless" Cable Modem and Router System',
+	title,
 	'Vyyo (defunct), Jerusalem'
 ) }}
 {{KEYS}} network, architect, algorithms, SNMP, SNMP-agent, NMS, automated testing, {{HI_C}}, TCL, embedded
@@ -248,9 +279,9 @@ along with TCL preprocessing.
 #. I was the architect and designer of a hybrid IP connection for cable modems where there was no physical cable upstream channel. Instead the upstream channel used a telephone modem (ATA), while the downstream channel used the cable modem. Head end network equipment for both interfaces was supplied by the cable operator. My solution was to dynamically modify the [arp table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) of the [edge router](http://searchnetworking.techtarget.com/definition/edge-router). For typical surfing, the effective downstream rate was as fast as a pure cable solution. The server implementation was in TCL, and the embedded cable modem implementation was in C. The company applied for a provisional patent.
 #. I greatly improved the efficiency of the laboratory modem speed stress testing by a factor of 10-100 by using a [steepest descent](https://en.wikipedia.org/wiki/Gradient_descent) search algorithm instead of a binary search algorithm. Reduced testing time per modem from hours to minutes.
 #. I designed a virtual testing lab with 64K modems and 512K PCs via multiplexing the physical connections. The test lab had only 256 physical cable modems, 4 physical PCs with 8 network connections each, 1 cable router, and 2 24-port layer-2 programmable switches. By dynamically editing the PC MAC addresses, and by dynamically editing the MAC filters on the network switches, I was able to fool the router into believing that it faced 64K modems, and to fool the modems into believing that each one was shared by 16 PCs. The Linux workstation implementation was in TCL and C.
-#. I implemented a very efficient [hash table](https://en.wikipedia.org/wiki/Hash_table) algorithm in C for the router's [arp table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) cache, based upon an algorithm I had invented 10 years earlier. The special features of the hash table algorithm were no use of dynamic memory allocations for embedded safety, a unique 2^N table size algorithm that required no use of division or modulo operations for efficiency, and a LIFO queue in order to gracefully handle table overflow.
-#. I developed a flash memory file system for the modem and router in C.
-#. I developed a [TLV](https://en.wikipedia.org/wiki/Type-length-value) configuration file utility both offline for the PC workstation, and embedded on the modem and router in C and TCL.
+#. I designed a very efficient [hash table](https://en.wikipedia.org/wiki/Hash_table) algorithm in C for the router's [arp table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) cache, based upon an algorithm I had invented 10 years earlier. The special features of the hash table algorithm were no use of dynamic memory allocations for embedded safety, a unique 2^N table size algorithm that required no use of division or modulo operations for efficiency, and a LIFO queue in order to gracefully handle table overflow.
+#. I designed a flash memory file system for the modem and router in C.
+#. I designed a [TLV](https://en.wikipedia.org/wiki/Type-length-value) configuration file utility both offline for the PC workstation, and embedded on the modem and router in C and TCL.
 %% endif
 
 
@@ -304,7 +335,7 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 	'1998-99: S/W Architect & Developer: Compiler: GCC Compiler Port for a 128-Core Stack Machine',
 	'Fourfold Technologies (defunct), Jerusalem'
 ) }}
-{{KEYS}} C compiler, gcc, architect, algorithms, DSL, FORTH, {{HI_CPP}}, TCL, LISP
+{{KEYS}} gcc C compiler, architect, algorithms, DSL, {{HI_CPP}}, FORTH, LISP, TCL
 
 %% if FULL
 #. This was a very challenging [gcc](https://gcc.gnu.org/) port because the architecture had no registers, or alternatively an infinite number of registers, while RAM access was highly unusual in order to accommodate the 128 cores.
@@ -357,7 +388,7 @@ Besides greatly improving the performance of customer's relaxation/meditation S/
 * 300 bpm (= 5 Hz), 5/4 time
 * 360 bpm (= 6 Hz), 6/4 time
 
-The application has a strong beat option in case you lose synchronization, and it also has the option of a visual mode that synchronizes with the audio. By keeping time with the metronome app, your brainwave frequency synchronizes to the metronome frequency, which by definition puts you into a meditative state. And after a little bit of practice, many people can simply watch a clock with a second hand that makes a single discrete jump every second, and silently count to 4, 5, or 6 per jump, which is equivalent to frequencies of 4, 5, and 6 Hz respectively.
+The application has a strong first beat option in case you lose synchronization, and it also has the option of a visual mode that synchronizes with the audio. By keeping time with the metronome app, your brainwave frequency synchronizes to the metronome frequency, which by definition puts you into a meditative state. And after a little bit of practice, many people can simply watch a clock with a second hand that makes a single discrete jump every second, and silently count to 4, 5, or 6 per jump, which is equivalent to frequencies of 4, 5, and 6 Hz respectively.
 %% endif
 
 
@@ -370,12 +401,17 @@ The application has a strong beat option in case you lose synchronization, and i
 {{KEYS}} Win32, soft real-time
 
 
+%% if not DD
+	%% set title = '1995-96: CTO & S/W Architect: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System'
+%% else
+	%% set title = '1995-96: S/W Architect & Developer: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System'
+%% endif
 {{ JOB(
 	'elop',
-	'1995-96: S/W Architect & Developer: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System',
-	'Elbit-Elop, Rechovot'
+	title,
+	'Pitkha Outsourcing (defunct), Jerusalem for \@Elbit-Elop, Rechovot'
 ) }}
-{{KEYS}} automated testing, mil-spec, architect, DSL, {{HI_CPP}}, BASIC compiler, lex/yacc, Win32, soft real-time
+{{KEYS}} automated testing, mil-spec, architect, DSL, {{HI_CPP}}, lex/yacc BASIC compiler, Win32, soft real-time
 
 %% if FULL
 #. The client's project was the fire control system for the Night Hawk laser guided missiles.
@@ -401,10 +437,15 @@ The application has a strong beat option in case you lose synchronization, and i
 {{KEYS}} lecturer, database, SQL
 
 
+%% if not DD
+	%% set title = '1991-94: CTO & S/W Architect: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU'
+%% else
+	%% set title = '1991-94: S/W Architect & Developer: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU'
+%% endif
 {{ JOB(
 	'dspg',
-	'1991-94: S/W Architect & Developer: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU',
-	'DSP Group, Givat Shmuel'
+	title,
+	'Pitkha Outsourcing (defunct), Jerusalem for \@DSP Group, Givat Shmuel'
 ) }}
 {{KEYS}} VLSI simulator, S/W Development Toochain, architect, algorithms, DSL, {{HI_CPP}}, lex/yacc, assembly, Win32
 
@@ -420,7 +461,7 @@ The application has a strong beat option in case you lose synchronization, and i
 {{JOB(
 	'iscar',
 	'1989-91: S/W Architect & Developer: Factory Automation: Shop Floor Production Control (SFPC) System: BARI II',
-	'Digital Equipment Corporation (DEC) (defunct), Herzliya, for \@Iscar, Tefen'
+	'Digital Equipment Corporation (DEC) (defunct), Herzliya for \@Iscar, Tefen'
 ) }}
 {{KEYS}} factory automation SFPC, architect, algorithms, DSL, Pascal, SQL, VAX/VMS
 
@@ -605,9 +646,9 @@ The most memorable and still useful courses I took were in statistics, experimen
 
 ### 3.2 Continuing Education
 
-{% if FULL %}#. {% endif %}Today the field of computer science is changing so rapidly that without an intensive ongoing effort of continuing education, one's formal education has a half-life of less than 5 years.
-{% if ABBREV %}Here are the details of my [continuing education]({{CV_FULL}}#continuing-education).{% endif %}
-{% if FULL %}#. From 1991-96, pre-Internet, I used to spend one afternoon per week reading at the Hebrew University Jerusalem (HUJI) computer science library.
+{% if FULL %}#. {% endif %}Today the field of computer science is changing so rapidly that one's formal education has a half-life of less than 5 years. Therefore in order to maintain my state-of-the-art professional edge, I am involved in an intensive effort of continuing education.{{DETAILS('continuing-education')}}
+%% if FULL
+#. From 1991-96, pre-Internet, I used to spend one afternoon per week reading at the Hebrew University Jerusalem (HUJI) computer science library.
 #. Afterwards with the advent of the Internet, more up-to-date computer science topics were available on the Internet, so going to the library was no longer the most efficient way to keep updated.
 #. Since 2005, I have maintained a subscription to the [O'Reilly Safari](https://www.safaribooksonline.com/) on-line tech library.
 #. My daily dose of tech news comes from [Slashdot](https://www.safaribooksonline.com/).
@@ -617,7 +658,8 @@ The most memorable and still useful courses I took were in statistics, experimen
 #. I have eclectic interests. I regularly research new topics in depth.
 #. My browser bookmarks are my most important professional store of my knowledge. I use Firefox because it has the best built-in bookmarking feature, because it uses tags/labels. I have a well honed tag taxonomy.
 #. I am an [expert generalist](http://99u.com/articles/7269/picasso-kepler-and-the-benefits-of-being-an-expert-generalist), and an [autodidact polymath](http://autodidactpolymath.com/autodidact-polymath-definition/), i.e. a self-learner in new fields who achieves expertise quickly.
-{% endif %}
+%% endif
+{{NL}}
 
 
 ## 4.0 Spoken Languages
@@ -718,21 +760,36 @@ Or consider the C language built-in [cpp macro preprocessor](https://en.wikipedi
 The following is an example of a Jinja2 macro `J2_ABC` that executes a python function that can be declared in a C/C++ file, and will keep the language sensitive IDE happy. Because some IDEs with smart language sensitive editors interpret cpp macros during an editing session, there must be 2 modes of operation, (1) build mode that will emit Jinja2/Python code, and (2) IDE mode that will emit default syntactically valid C/C++ code.
 
 ~~~ { #jinja2-cpp .c .numberLines }
-// 1. Cpp definitions should not specify j2 delimiters *directly*, otherwise will cause j2 preprocessing errors.
-// See lines 20-26.
-// 2. Must not use j2 default expression delimiter, i.e. double braces, otherwise will conflict with C/C++ syntax.
-// 3. Should not use j2 line mode *mixed* with C/C++, even with modified delimiters say '%%' and '%''#'
-// for control and comment statements respectively, because a language sensitive IDE will choke on the code.
-// 4. However it can be an effective technique to include j2 source files that contain control statements
-// that are protected with an *external* cpp guard:
-//     #if J2_MODE == J2_MODE_BUILD
-//     #include "my-macros.j2"
-//     #endif
+/* !!! JINJA2 SYNTAX GOTCHYAS !!!
+================================================================================
+1. J2 statements and expressions should be wrapped in cpp macros,
+    otherwise language sensitive editors found in many of the IDEs will choke on
+    the source code. Therefore the cpp preprocessor must be run *before* the J2
+    preprocessor.
+2. However it can be an effective technique to include pure J2 source files by
+    protecting them with an *external* cpp guard:
+		#if J2_MODE == J2_MODE_BUILD
+		#include "my-macros.j2"
+		#endif2.
+3. The J2 delimiters that we chose to use are the following:
+	{'%' ... '%'}: control statement
+	{'#' ... '#'}: comment statement
+	{'^' ... '^'}: embedded expression
+	'%%':          line control statement
+	'%''#':        line comment statement
+4. Cpp definitions must specify J2 delimiters *indirectly*,
+    otherwise will cause J2 preprocessing errors. See lines 35-41.
+5. Must *not* use the default J2 line comment '#' which conflicts with cpp.
+6. Must *not* use J2 default expression delimiter, i.e. double braces,
+    otherwise will conflict with C/C++ syntax.
+================================================================================		
+*/
 
 #define J2_MODE_IDE                0
 #define J2_MODE_BUILD              1
 #ifndef J2_MODE
-#define J2_MODE                    J2_MODE_IDE // dflt allows seamless editing with a smart language sensitive editor
+// default allows seamless editing even with a smart language sensitive editor
+#define J2_MODE                    J2_MODE_IDE
 #endif
 
 #if J2_MODE == J2_MODE_BUILD
@@ -804,14 +861,14 @@ And where the implementation will be embedded inside another application then Lu
 
 * __Generator:__ This document was generated using the [Pandoc](http://www.pandoc.org) universal document converter extended [Markdown](https://en.wikipedia.org/wiki/Markdown) engine, along with the [Jinja2](http://jinja.pocoo.org/) macro/template preprocessor. See the source code at my [github site](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master).
 
-* __Safety & non-annoyment pledge:__ This document is free of scripts, frames, advertisements, and animations.{% if WRITER == 'html5' %}<!-- This pledge was originally coined by David Pogue -->{% endif %}
-
 %% if WRITER == 'html5'
 * __[WCAG](https://www.w3.org/TR/WCAG20/) blind accessibility conformance:__ This document contains text alternatives for images, and is tab navigable - for sections, subsections, paragraphs, list items, and links.
+
+* __Safety & non-annoyment pledge:__ This document is free of scripts, frames, advertisements, and animations.{% if WRITER == 'html5' %}<!-- This pledge was originally coined by David Pogue -->{% endif %}
 %% endif
+{{NL}}
 
 
 %% if WRITER == 'html5' and FULL
-{{NL}}
 ## Footnotes
 %% endif

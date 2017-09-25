@@ -1,5 +1,22 @@
+{# !!! JINJA2 SYNTAX GOTCHYAS !!!
+1. We are using the *non-standard* prefixes '%%' and '%#' for line statements
+and line comments respectively, in order not to conflict with pandoc ATX
+headers '#' and automatically numbered lists '#.'.
+2. Otherwise we are still using the default delimiter sequences for begin and end tags,
+i.e. {'{' ... '}'}, {'%' ... '%'}, and {'#' ... '#'}, for variable expressions,
+control statements, and comment statements respectively.
+3. *Sometimes* we find that the line statements eat all blank lines following it,
+in which case it is necessary to terminate a sequence of line statements with an innocuous {{NL}}.
+4. Internal pandoc link anchors, i.e. '{ #myanchor }' must have a space between
+the left brace and the hash, otherwise they will conflict with J2 comments.
+5. Use of the '@' character that immediately precedes a word triggers a pandoc citation.
+I don't know how to turn off the facility. So escape them as follows with a backslash, i.e. '\@'.
+6. The current Python2 version of J2 does not support UTF-8 or Unicode,
+so make sure the document is written in ISO-8859-1.
+#}
+
 %% set LANG = 'en-US'
-%% set VS = '0.5.2'
+%% set VS = '0.5.3'
 %% set VS_ORIG_DATE = '2017-09-18'
 
 %% if not TS is defined
@@ -12,12 +29,18 @@
 	%% set WRITER = 'html5'
 %% endif
 
+%# DD = DUMBED DOWN
+%% if not DD is defined
+	%% set DD = false
+%% endif
+
 %% if AGENT is defined
 	%% if AGENT == 'ardix'
 		%% set AGENT_NAME = 'ARDIX'
 		%% set AGENT_URL = 'http://www.ardix.co.il/en/'
 	%% elif AGENT == 'arm'
-		%# intentionally no definitions
+		%% set AGENT_NAME = ''
+		%% set AGENT_URL = ''
 	%% elif AGENT == 'hammelburger'
 		%% set AGENT_NAME = 'Hammelburger Head Hunting'
 		%% set AGENT_URL = 'http://hammelburger.com/'
@@ -27,8 +50,13 @@
 	%% elif AGENT == 'tkos'
 		%% set AGENT_NAME = 'Tk Open Systems Ltd.'
 		%% set AGENT_URL = 'http://www.tkos.co.il/en/corporate/homepage.html'
+		%% set DD = true
 	%% endif
 	%% set VS = VS + '-' + AGENT
+%% else
+	%% set AGENT = ''
+	%% set AGENT_NAME = ''
+	%% set AGENT_URL = ''
 %% endif
 
 %% set NAME1 = 'Avraham'
@@ -48,7 +76,7 @@
 %% set CONTINENT = 'Asia'
 %% set TZ_REGION = CONTINENT + '/' + CITY
 
-%# standard time
+%# IL standard time
 %% set TZ_OFFSET = '+0200'
 
 %# identical spelling to google maps
@@ -91,19 +119,22 @@
 
 %% set HOME = 'http://purl.org/' + NAME1 + '.' + NAME3
 %% set CV_HOME = HOME + '/'
-%% if AGENT is defined
+%% if AGENT != ''
 	%% set CV_HOME = CV_HOME + AGENT + '/'
 %% endif
 %% set CV_FULL = CV_HOME + 'cv.html'
+
 %% set IMAGE_URL = HOME + '/image'
 %% set VCARD3_URL = HOME + '/vcard3'
 %% set VCARD4_URL = HOME + '/vcard4'
+
 %# emails are pandoc obfuscated
 %% set EMAIL = NAME1 + '.' + NAME3 + '@gmail.com'
-%% if AGENT is defined
+%% if AGENT != ''
 	%% set EMAIL = NAME1 + '.' + NAME3 + '+' + AGENT + '@gmail.com'
 %% endif
 %% set EMAIL_SPOKEN = NAME1 + ' DOT ' + NAME3 + ' AT gmail DOT com'
+
 %% set GTALK_ID = NAME1 + NAME3
 %% set SKYPE_ID = EMAIL
 %% set WHATSAPP_ID = TEL_IL_SQUEEZED
@@ -140,16 +171,16 @@
 %% set LICENSE_URL = 'https://creativecommons.org/licenses/by-nd/4.0/'
 %% set LICENSE = 'License: Except where otherwise noted, this work is licensed under the Creative Commons License [CC BY-ND 4.0](' + LICENSE_URL + ').'
 %% if FULL
-%% set LICENSE = LICENSE + ' Computer software source code is licensed under the [Apache License v2.0](https://opensource.org/licenses/Apache-2.0).'
+	%% set LICENSE = LICENSE + ' Computer software source code is licensed under the [Apache License v2.0](https://opensource.org/licenses/Apache-2.0).'
 %% endif
+
+%% set TOC = '%%TOC%%'
 
 %% if WRITER == 'html5'
 	%% set BR = '<br>'
 %% else
 	%% set BR = NL
 %% endif
-
-%% set TOC = '%%TOC%%'
 
 %% if WRITER == 'html5'
 	%% set HI_BEGIN = '<span class="hi">'
@@ -163,10 +194,10 @@
 {% if WRITER == 'html5' %}<span class="hi">{% endif %}__{{text}}__{% if WRITER == 'html5' %}</span>{% endif %}
 %% endmacro
 
-%% if AGENT is defined and AGENT == 'tkos'
-%% set HI_C = HI('C')
-%% set HI_CPP = HI('C/C++')
+%% if AGENT == 'tkos'
+	%% set HI_C = HI('C')
+	%% set HI_CPP = HI('C/C++')
 %% else
-%% set HI_C = 'C'
-%% set HI_CPP = 'C/C++'
+	%% set HI_C = 'C'
+	%% set HI_CPP = 'C/C++'
 %% endif
