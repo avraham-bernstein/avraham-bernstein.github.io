@@ -22,17 +22,13 @@ so make sure the document is written in ISO-8859-1.
 %% endif
 {{NL}}
 
-%% if AGENT != 'wizedom'
+%% if FULL or AGENT != 'wizedom'
 _Version: {{VS}}_
 {{BR}}_Last update: {{TS}}_
 {{BR}}_{{COPYRIGHT}}_
 {{BR}}_{{LICENSE}}_
 %% else
 _Last update: {{TS[0:10]}}_
-%% if FULL
-{{BR}}_{{COPYRIGHT}}_
-{{BR}}_{{LICENSE}}_
-%% endif
 %% endif
 {{NL}}
 
@@ -84,23 +80,23 @@ __\[this file]__
 
 ## 1.0 Summary
 
-I am an experienced computer scientist and S/W architect. I have devised innovative solutions to many S/W problems for a wide range of fields, including
+I am an experienced computer scientist and S/W architect. I have devised innovative solutions to many S/W problems for a wide range of fields, including:
 
 * [cybersecurity]({% if ABBREV %}{{CV_FULL}}{% endif %}#viaccess)
 * [cryptography]({% if ABBREV %}{{CV_FULL}}{% endif %}#viaccess)
 * [bioinformatics]({% if ABBREV %}{{CV_FULL}}{% endif %}#syntezza)
+* [transportation vehicle route guidance]({% if ABBREV %}{{CV_FULL}}{% endif %}#telequest)
 * [factory automation]({% if ABBREV %}{{CV_FULL}}{% endif %}#iscar)
-* [telecommunications]({% if ABBREV %}{{CV_FULL}}{% endif %}#vyyo)
+* [automated testing]({% if ABBREV %}{{CV_FULL}}{% endif %}#elop)
 * [blind vision]({% if ABBREV %}{{CV_FULL}}{% endif %}#virtouch)
 * [accessibility]({% if ABBREV %}{{CV_FULL}}{% endif %}#light-pen)
-* [transportation vehicle route guidance]({% if ABBREV %}{{CV_FULL}}{% endif %}#telequest)
-* [automated testing]({% if ABBREV %}{{CV_FULL}}{% endif %}#elop)
+* [telecommunications]({% if ABBREV %}{{CV_FULL}}{% endif %}#vyyo)
 * {% if AGENT == 'arm' %}{{HI_BEGIN}}{% endif %}[VLSI CPU design]({% if ABBREV %}{{CV_FULL}}{% endif %}#dspg){% if AGENT == 'arm' %}{{HI_END}}{% endif %}
 
 
 I have worked for a number of organizations, large and small, and helped them realize improvements in their product performance, often putting them in the front rank in their field. I have acquired expert knowledge in a number of fields, often liaising with noted experts, and have been able to quickly apply this knowledge to improve the competitive position of the companies and their products. I have a keen interest in computer languages, both practical and theoretical. I have created a number of [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) that were instrumental in greatly simplifying seemingly intractable problems.
 
-In order to understand how I design S/W, see the following appendices{% if ABBREV %} in the full version of my CV{% endif %}:
+In order to understand my S/W design principles, see the following appendices{% if ABBREV %} (in the full version of my CV){% endif %}:
 
 * [Programming Language Preferences and Musings]({% if ABBREV %}{{CV_FULL}}{% endif %}#appendix-programming-languages)
 * [Domain Specific Languages]({% if ABBREV %}{{CV_FULL}}{% endif %}#appendix-dsl)
@@ -134,9 +130,14 @@ _\@{{company}}:_{% if details_flag %}{{DETAILS(id)}}{% endif %}
 #. I am a security mentor for the Jerusalem [Mass Challenge](http://israel.masschallenge.org/) start-up hub.
 
 
+%% if FULL
+	%% set title = '2011-17: Security Policy Mngr & Architect: Cybersecurity: OTT Internet Pay TV System'
+%% else
+	%% set title = '2011-17: [Viaccess-Orca](https://www.viaccess-orca.com/): Security Policy Mngr & Architect: Cybersecurity: OTT Internet Pay TV System'
+%% endif
 {{ JOB(
 	'viaccess',
-	'2011-17: Security Policy Mngr & Architect: Cybersecurity: OTT Internet Pay TV System',
+	title,
 	'Viaccess-Orca, Ra\'anana - a subsidiary of \@Orange France, and \@Discretix/SansaSecurity, Netanya recently acquired by \@ARM',
 	false
 ) }}
@@ -184,6 +185,7 @@ Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/Pla
 #. After doing an initial risk assessment, my task was to implement graduated policies that improved their security without causing an upheaval to the way they worked.
 %% endif
 
+
 %% if not DD
 	%% set title = '2010-11: VP R&D: Transportation: Urban Traffic Vehicle Route Guidance Algorithms'
 %% else
@@ -222,9 +224,14 @@ Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/Pla
 %% endif
 
 
+%% if FULL
+	%% set title = '2004-09: Cybersecurity Researcher for a CA Satellite Pay TV System'
+%% else
+	%% set title = '2004-09: [NDS](https://www.cisco.com/c/en/us/about/corporate-strategy-office/acquisitions/nds.html): Cybersecurity Researcher for a CA Satellite Pay TV System'
+%% endif
 {{ JOB(
 	'nds',
-	'2004-09: Cybersecurity Researcher for a CA Satellite Pay TV System',
+	title,
 	'Cisco-NDS, Jerusalem'
 ) }}
 {{KEYS}} cybersecurity, DRM, algorithms, cryptography, anti-reverse engineering, obfuscation, LLVM compiler, VM, QEMU, RPC, automated testing, S/W quality, {{HI_CPP}}, TCL, Python, Linux, bash, Win32
@@ -275,10 +282,10 @@ along with TCL preprocessing.
 %% endif
 
 
-%% if not DD
-	%% set title = '1999-2002: Mngr & S/W Architect: Network: Embedded & Offline Utilities for a "Wireless" Cable Modem and Router System'
+%% if FULL
+	%% set title = '1999-2002: S/W Mngr & Architect: Network: Embedded & Offline Utilities for a "Wireless" Cable Modem and Router System'
 %% else
-	%% set title = '1999-2002: S/W Architect & Developer: Network: Embedded & Offline Utilities for a "Wireless" Cable Modem and Router System'
+	%% set title = '1999-2002: [Vyyo](https://www.wirelessdesignonline.com/doc/phasecom-changes-name-to-vyyo-0001): S/W Mngr & Architect: Network: Embedded & Offline Utilities for a "Wireless" Cable Modem and Router System'
 %% endif
 {{ JOB(
 	'vyyo',
@@ -298,12 +305,15 @@ along with TCL preprocessing.
 %% endif
 
 
+%% if FULL or AGENT != 'wizedom'
 {{ JOB(
 	'jolt',
 	'2001-01: S/W Architect & Developer: Network: Network Management System (NMS) for a FSO Device',
 	'MRV-Jolt (defunct), Jerusalem'
 ) }}
 {{KEYS}} network, architect, SNMP, SNMP-agent, NMS, Java, {{HI_C}}, TCL
+%% endif
+{{NL}}
 
 %% if FULL
 #. The client's product was a [free space optics (FSO)](https://en.wikipedia.org/wiki/Free-space_optical_communication) repeater that enabled fiber optic cables to be extended through the air via lasers for distances of up to 5 km.
@@ -316,24 +326,30 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 %% endif
 
 
+%% if FULL or AGENT != 'wizedom'
 {{ JOB(
 	'foxcom',
 	'2001-01: Consultant: Network Management System (NMS) for a Cable Modem & Gateway System',
 	'One Path Networks - Foxcom, Jerusalem'
 ) }}
 {{KEYS}} SNMP, NMS
+%% endif
+{{NL}}
 
 %% if FULL
 {{HI_BEGIN}}I performed a one week requirements study in order to select the most appropriate NMS infrastructure for their needs. I saved them over $200K compared to their original selection.{{HI_END}}
 %% endif
 
 
+%% if FULL or AGENT != 'wizedom'
 {{ JOB(
 	'zamir',
 	'2000-01: S/W Developer: Communications: Win32 Asynchronous TCP/IP DLL for a Visual Basic Project',
 	'Inex-Zamir, Jerusalem'
 ) }}
 {{KEYS}} TCP/IP communications, {{HI_C}}, Visual Basic, Win32, soft real-time
+%% endif
+{{NL}}
 
 %% if FULL
 #. The client's product was a vehicle license plate reader for their own camera controlled parking systems, and as an OEM component that they sold to operators of camera controlled toll roads.
@@ -387,12 +403,15 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 {{KEYS}} lecturer, Win32, {{HI_C}}
 
 
+%% if FULL or AGENT != 'wizedom'
 {{ JOB(
 	'ultramind',
 	'1996-96: Consulting S/W Engineer: Win32 Improve Performance of a Soft Real-Time Biofeedback Application',
 	'MindLife-UltraMind, Jerusalem'
 ) }}
 {{KEYS}} Win32, soft real-time, {{HI_C}}
+%% endif
+{{NL}}
 
 %% if FULL
 Besides greatly improving the performance of customer's relaxation/meditation S/W application, I also developed my own meditation technique that uses simple S/W or even no S/W at all, and can easily be taught to most people within 5 minutes. Already in the 1960's [brainwave entrainment](https://en.wikipedia.org/wiki/Brainwave_entrainment) experiments showed that the brainwaves of cats, for examples, could be controlled by a strobe light source as long as the strobe frequency was within the normal frequency range of the cat's brain. Now human meditation takes place when the brain is exhibiting [theta waves](https://en.wikipedia.org/wiki/Brain_activity_and_meditation) which are in the range of 4-8 Hz. Note that this frequency range is the equivalent of a metronome operating at frequency of 240-480 beats per minute (bpm). Normally mechanical metronomes don't operate at speeds higher than 180 bpm, but currently (2017) there are many free digital metronome applications (on smartphones, tablets, and desktop PCs) that operate at much higher speeds, where 240-360 bpm is the "sweet spot" for meditation. My favorite application is [GNU GTick](http://www.antcom.de/gtick/). I use the following 3 settings:
@@ -405,6 +424,7 @@ The application has a strong first beat option in case you lose synchronization,
 %% endif
 
 
+%% if FULL or AGENT != 'wizedom'
 {{ JOB(
 	'cefar',
 	'1996-96: Consulting S/W Engineer: Win32 Device Driver for a Frame Grabber',
@@ -412,10 +432,16 @@ The application has a strong first beat option in case you lose synchronization,
 	false
 ) }}
 {{KEYS}} Win32, soft real-time
+%% endif
+{{NL}}
 
 
 %% if not DD
-	%% set title = '1995-96: CTO & S/W Architect: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System'
+	%% if FULL
+		%% set title = '1995-96: CTO & Architect: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System'
+	%% else
+		%% set title = '1995-96: [Elop](http://elbitsystems.com/about-us-quality-assurance-elbit-systems-electro-optics-elop/): CTO & Architect: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System'
+	%% endif
 %% else
 	%% set title = '1995-96: S/W Architect & Developer: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System'
 %% endif
@@ -451,7 +477,11 @@ The application has a strong first beat option in case you lose synchronization,
 
 
 %% if not DD
-	%% set title = '1991-94: CTO & S/W Architect: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU'
+	%% if FULL
+		%% set title = '1991-94: CTO & S/W Architect: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU'
+	%% else
+		%% set title = '1991-94: [DSPG](https://www.dspg.com/): CTO & S/W Architect: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU'
+	%% endif
 %% else
 	%% set title = '1991-94: S/W Architect & Developer: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU'
 %% endif
@@ -471,9 +501,14 @@ The application has a strong first beat option in case you lose synchronization,
 %% endif
 
 
+%% if FULL
+	%% set title = '1989-91: S/W Architect & Developer: Factory Automation: Shop Floor Production Control (SFPC) System: BARI II'
+%% else
+	%% set title = '1989-91: [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation): S/W Architect & Developer: Factory Automation: Shop Floor Production Control (SFPC) System: BARI II'
+%% endif
 {{JOB(
 	'iscar',
-	'1989-91: S/W Architect & Developer: Factory Automation: Shop Floor Production Control (SFPC) System: BARI II',
+	title,
 	'Digital Equipment Corporation (DEC) (defunct), Herzliya for \@Iscar, Tefen'
 ) }}
 {{KEYS}} factory automation SFPC, architect, algorithms, DSL, Pascal, SQL, VAX/VMS
@@ -569,9 +604,14 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 {{KEYS}} word processor, {{HI_C}}, sysadmin, VAX/VMS
 
 
+%% if FULL
+	%% set title = '1983-84: S/W Developer: Real-Time: Data Collection Terminal & Radar for Lavi Fighter Plane'
+%% else
+	%% set title = '1983-84: [Elta/IAI](http://www.iai.co.il/17887-en/Groups_ELTA.aspx): S/W Developer: Real-Time: Data Collection Terminal & Radar for Lavi Fighter Plane'
+%% endif
 {{ JOB(
 	'elta',
-	'1983-84: S/W Developer: Real-Time: Data Collection Terminal & Lavi Fighter Plane Radar',
+	title,
 	'DSI (defunct), Givatayim for \@Elta/IAI, Ashdod'
 ) }}
 {{KEYS}} data collection terminal, PL/M, 8080, RTOS, fighter plane radar, Jovial, embedded, real-time
@@ -587,7 +627,7 @@ My mentor was Menachem Malkosh. It was a formative learning experience.
 
 {{ JOB(
 	'mitre',
-	'1981-83: S/W Developer & IBM CP/CMS Assistant Sysadmin',
+	'1981-83: [Mitre Corp](https://www.mitre.org/): S/W Developer & IBM CP/CMS Assistant Sysadmin',
 	'Mitre Corp, McLean VA'
 ) }}
 {{KEYS}} APL, PL/1, sysadmin, IBM CP/CMS
