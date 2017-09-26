@@ -16,7 +16,7 @@ so make sure the document is written in ISO-8859-1.
 #}
 
 %% set LANG = 'en-US'
-%% set VS = '0.5.3'
+%% set VS = '0.5.6'
 %% set VS_ORIG_DATE = '2017-09-18'
 
 %% if not TS is defined
@@ -36,7 +36,7 @@ so make sure the document is written in ISO-8859-1.
 
 %% if AGENT is defined
 	%% if AGENT == 'ardix'
-		%% set AGENT_NAME = 'ARDIX'
+		%% set AGENT_NAME = 'ARDIX "Solving the unsolvable"'
 		%% set AGENT_URL = 'http://www.ardix.co.il/en/'
 	%% elif AGENT == 'arm'
 		%% set AGENT_NAME = ''
@@ -51,6 +51,9 @@ so make sure the document is written in ISO-8859-1.
 		%% set AGENT_NAME = 'Tk Open Systems Ltd.'
 		%% set AGENT_URL = 'http://www.tkos.co.il/en/corporate/homepage.html'
 		%% set DD = true
+	%% elif AGENT == 'wizedom'
+		%% set AGENT_NAME = 'Wizedom Corporate & Technical Recruiting'
+		%% set AGENT_URL = 'http://www.wizedom.com'
 	%% endif
 	%% set VS = VS + '-' + AGENT
 %% else
@@ -129,10 +132,11 @@ so make sure the document is written in ISO-8859-1.
 %% set VCARD4_URL = HOME + '/vcard4'
 
 %# emails are pandoc obfuscated
-%% set EMAIL = NAME1 + '.' + NAME3 + '@gmail.com'
+%% set EMAIL = NAME1 + '.' + NAME3 + '+cv'
 %% if AGENT != ''
-	%% set EMAIL = NAME1 + '.' + NAME3 + '+' + AGENT + '@gmail.com'
+	%% set EMAIL = EMAIL + '+' + AGENT
 %% endif
+%% set EMAIL = EMAIL + '@gmail.com'
 %% set EMAIL_SPOKEN = NAME1 + ' DOT ' + NAME3 + ' AT gmail DOT com'
 
 %% set GTALK_ID = NAME1 + NAME3
