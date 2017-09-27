@@ -130,18 +130,13 @@ _\@{{company}}:_{% if details_flag %}{{DETAILS(id)}}{% endif %}
 #. I am a security mentor for the Jerusalem [Mass Challenge](http://israel.masschallenge.org/) start-up hub.
 
 
-%% if FULL
-	%% set title = '2011-17: Security Policy Mngr & Architect: Cybersecurity: OTT Internet Pay TV System'
-%% else
-	%% set title = '2011-17: [Viaccess-Orca](https://www.viaccess-orca.com/): Security Policy Mngr & Architect: Cybersecurity: OTT Internet Pay TV System'
-%% endif
 {{ JOB(
 	'viaccess',
-	title,
+	'2011-17: [Viaccess-Orca](https://www.viaccess-orca.com/): Security Policy Mngr & Architect: Cybersecurity: OTT Internet Pay TV System',
 	'Viaccess-Orca, Ra\'anana - a subsidiary of \@Orange France, and \@Discretix/SansaSecurity, Netanya recently acquired by \@ARM',
 	false
 ) }}
-{{KEYS}} cybersecurity, DRM, architect, algorithms, anti-reverse engineering, obfuscation, LLVM compiler, cryptography, {{HI_CPP}}, TCL, Python, bash, Android root detection, Linux, ELF edit, IOS
+{{KEYS}} cybersecurity, DRM, architect, algorithms, anti-reverse engineering, obfuscation, LLVM compiler, cryptography, data science, fuzzy logic, {{HI_CPP}}, TCL, Python, bash, Android root detection, Linux, ELF edit, IOS
 
 #. The product was an [Over-The-Top (OTT)](https://en.wikipedia.org/wiki/Over-the-top_content) Internet pay TV system. We provided the S/W infrastructure to our customers, the legacy (i.e. satellite and cable) pay TV operators, so they could also provide an OTT service to their subscribers in order that they could try to compete with  [Netflix](https://www.netflix.com/il-en/). The system was designed for small screen Android and IOS devices, i.e. up to 10 inches. We used [DRM](https://en.wikipedia.org/wiki/Digital_rights_management) to encrypt the content.
 %% if FULL
@@ -158,8 +153,8 @@ Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/Pla
 #. See [more details]({{CV_FULL}}#viaccess).
 %% else
 #. I developed a post processor to obfuscate the resulting binary object ELF files.
-#. I developed a light weight obfuscated cryptographic library implemented as a H file using `inline` functions so that every module that included it had its own private copy of the library with a module specific randomized implementation which prevented an attack against a single core cryptographic module that could potentially subvert the whole application. During movie playback which relied upon AES decryption, for performance reasons we could not afford to also use AES encryption so we used light weight techniques instead, e.g. [Xorshift PRNG](https://en.wikipedia.org/wiki/Xorshift) [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher).
-#. I developed an Android root detection mechanism using fuzzy logic techniques.
+#. I developed a lightweight obfuscated cryptographic library implemented as a H file using `inline` functions so that every module that included it had its own private copy of the library with a module specific randomized implementation which prevented an attack against a single core cryptographic module that could potentially subvert the whole application. Due to performance reasons, there were many cases where we could not afford to use AES, especially during performance critical movie playback which itself relied upon AES decryption, therefore we used lightweight algorithms instead, e.g. [Xorshift PRNG](https://en.wikipedia.org/wiki/Xorshift) [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher).
+#. I developed an Android root detection mechanism using [fuzzy logic](https://en.wikipedia.org/wiki/Fuzzy_logic) techniques.
 #. I developed a background watchdog security thread to dynamically ensure that the binary code had not been tampered with.
 #. I developed vector operations for the C preprocessor that allowed a stream cipher to be applied to a constant string _pre-compile_ time that was used to shroud function name strings that were dynamically loaded using `dlsym()`.
 #. I developed a light weight method to efficiently shroud all system calls so that their address is calculated just-in-time before the call is made. It foils the professional reverse engineering debuggers [Hex-Rays](https://www.hex-rays.com/) and [OllyDbg](https://en.wikipedia.org/wiki/OllyDbg) which normally can automatically identify and place anchors on the system calls.
@@ -198,8 +193,8 @@ Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/Pla
 )}}
 {{KEYS}} urban vehicle route guidance, architect, algorithms, Java, AWS
 
+{% if FULL %}#. {% endif %}I designed and implemented algorithms along with a computational infrastructure for urban traffic vehicle route guidance similar to what [Waze](https://www.waze.com/) does today.
 %% if FULL
-#. I designed and implemented algorithms along with a computational infrastructure for urban traffic vehicle route guidance similar to what [Waze](https://www.waze.com/) does today.
 #. I coded in Java. I implemented the simulation infrastructure on the cloud on [AWS](https://aws.amazon.com/).
 #. The simulations showed that with a guided vehicle penetration rate of just 15%, a very accurate representation of traffic flow could be achieved.
 #. Also the simulations showed that opportunistic guidance algorithms created secondary traffic jams after the penetration rate exceeded 20%. And when the penetration rate exceeded 40%, opportunistic algorithms generated more traffic congestion than using no guidance at all.
@@ -213,41 +208,36 @@ Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/Pla
 	'2009-09: S/W Architect & Developer: Bioinformatics: Invented Algorithm To Overcome PCR Inhibiition',
 	'Syntezza Molecular Detection (defunct), Jerusalem'
 ) }}
-{{KEYS}} bioinformatics, PCR, algorithms, architect, mathematical programming, {{HI_C}}, Python
+{{KEYS}} bioinformatics, PCR, algorithms, architect, mathematical programming, data science, AI, {{HI_C}}, Python
 
 %% if FULL
 #. The client's product was a [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) (= DNA amplification technology) kit for detecting  [MRSA](https://en.wikipedia.org/wiki/Methicillin-resistant_Staphylococcus_aureus) (= an often lethal staphylococcus bacteria that is antibiotic resistant and thrives in hospitals) .
-#. Within 3 months of joining the company and quickly learning the basics of bioinformatics via mentoring from a world renowned expert, [Dr. Tzachi Bar](https://scholar.google.co.il/citations?user=XokRoVQAAAAJ&hl=en), I discovered a new algorithm for overcoming [PCR inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) using Artificial Intelligence (AI) and Data Science techniques where too much sample "noise" prevents the result of the biological assay from being estimated by the classic sigmoidal shaped [logistic  function](https://en.wikipedia.org/wiki/Logistic_function).
+#. Within 3 months of joining the company and quickly learning the basics of bioinformatics via mentoring from a world renowned expert, [Dr. Tzachi Bar](https://scholar.google.co.il/citations?user=XokRoVQAAAAJ&hl=en), I discovered a new algorithm for overcoming [PCR inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) using Artificial Intelligence (AI) and data science techniques where too much sample "noise" prevents the result of the biological assay from being estimated by the classic sigmoidal shaped [logistic  function](https://en.wikipedia.org/wiki/Logistic_function).
 #. I implemented the final algorithm in C, while I built the prototype in Python using the [Numpy](http://www.numpy.org/), [Scipy](https://www.scipy.org/), and [Matplotlib](http://matplotlib.org/) packages.
 #. {{HI_BEGIN}}When I started the project, the client's kit had only a 50% detection rate due to inhibition problems associated with their _preliminary_ chemistry that could not separate the DNA from the mucus in the nasal samples. This result was grossly unacceptable for any medical test. The investors had lost confidence, and were about to pull out. I improved the test's accuracy to 95%, which was 10% better than their competitors from the pharmaceutical giants. I saved the client from liquidation.{{HI_END}}
 #. I am in the process of [patenting](#patents) my algorithm.
 %% endif
 
 
-%% if FULL
-	%% set title = '2004-09: Cybersecurity Researcher for a CA Satellite Pay TV System'
-%% else
-	%% set title = '2004-09: [NDS](https://www.cisco.com/c/en/us/about/corporate-strategy-office/acquisitions/nds.html): Cybersecurity Researcher for a CA Satellite Pay TV System'
-%% endif
 {{ JOB(
 	'nds',
-	title,
+	'2004-09: [NDS](https://www.cisco.com/c/en/us/about/corporate-strategy-office/acquisitions/nds.html): Cybersecurity Researcher for a CA Satellite Pay TV System',
 	'Cisco-NDS, Jerusalem'
 ) }}
 {{KEYS}} cybersecurity, DRM, algorithms, cryptography, anti-reverse engineering, obfuscation, LLVM compiler, VM, QEMU, RPC, automated testing, S/W quality, {{HI_CPP}}, TCL, Python, Linux, bash, Win32
 
-%% if FULL
 #. I worked on a wide variety of security related projects. My background task was to do C/C++ [code security reviews](https://www.securecoding.cert.org/confluence/display/seccode/Top+10+Secure+Coding+Practices). Typically secure coding is achieved by [adhering to best programming practices](https://www.youtube.com/watch?v=eL5o4PFuxTY).
 #. I was a member of the architecture team for their in-house [LLVM](https://llvm.org/) [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) C/C++ compiler.
 #. I developed techniques using Virtual Machine (VM) technology to crack [Digital Rights Management (DRM)](https://en.wikipedia.org/wiki/Digital_rights_management) schemes.
-#. I subverted the random number generators which are the core initialization process for all cryptographic algorithms. I implemented this technique by hacking the open source [QEMU](https://www.qemu.org/) VM emulator written in C.
+#. I developed a technique to subvert a commonly used class of random number generators (RNG) that are seeded with the [X86 CPU clock counter (RDTSC)](http://x86.renejeschke.de/html/file_module_x86_id_278.html) [^rdtsc]. Many cryptographic algorithms rely upon the RNG for their initialization. I implemented this technique by hacking the open source [QEMU](https://www.qemu.org/) VM emulator written in C. This attack enabled subscriber credential sharing.
 #. I wrote the technical specification for CCTV (Chinese government TV) to secure the TV feed of the 2008 Beijing Olympic broadcasts against international piracy. We almost won the contract, until Microsoft offered to do it for free.
-#. I arranged for well known security experts to give lectures and seminars at the company. The most successful and well attended course was a one week seminar on reverse engineering X86/AMD64 assembly code using [OllyDbg](https://en.wikipedia.org/wiki/OllyDbg). The course was given by [Kris Kaspersky](https://www.linkedin.com/in/nezumi) who currently (2017) works at Check Point. Afterwards many of us in the security group spent a number of months challenging each other with anti-reverse engineering riddles. The strongest techniques that I developed were (1) jumping into operands of long instructions that were designed to be short opcodes, (2) dynamic creation of opcodes in the heap, and (3) creation of obfuscated FORTH-like virtual machines.
-#. I gave the following three well received lectures: (1) how to write code that mitigates [side-channel attacks](https://en.wikipedia.org/wiki/Side-channel_attack), (2) advanced TCL for the smartcard testing group, and (3) developing a suite of small Posix style utilities that are LEGO-like and easy to interface in unexpected/serendipitous ways versus building large monolithic utilities that are accessible via their GUI only.
+#. I arranged for well known security experts to give lectures and seminars at the company. The most successful and well attended course was a one week seminar on reverse engineering X86 assembly code using [OllyDbg](https://en.wikipedia.org/wiki/OllyDbg). The course was given by [Kris Kaspersky](https://www.linkedin.com/in/nezumi) who today ({{YEAR}}) works at Check Point. Afterwards many of us in the security group spent a number of months challenging each other with anti-reverse engineering riddles. The strongest techniques that I developed were (1) jumping into operands of long instructions that were designed to be short opcodes, (2) dynamic creation of opcodes in the heap, and (3) creation of obfuscated FORTH-like virtual machines.
+#. I gave the following 3 well received lectures: (1) how to write code that mitigates [side-channel attacks](https://en.wikipedia.org/wiki/Side-channel_attack), (2) advanced TCL for the smartcard testing group, and (3) developing a suite of small Posix style utilities that are LEGO-like and easy to interface in unexpected/serendipitous ways versus building large monolithic utilities that are accessible via their GUI only.
 #. I architected and implemented a hybrid simulator/emulator debugger written in C for legacy [Set-Top Boxes (STB)](https://en.wikipedia.org/wiki/Set-top_box) that originally could be debugged only with `printf` statements to log files. My new debugger allowed source code on the PC to be debugged using the [MS Visual Studio IDE](https://en.wikipedia.org/wiki/Microsoft_Visual_Studio) debugger while still viewing the results on the STB. Implementation was accomplished by reverse engineering of the STB middleware API. 80% of the middleware ran natively on the PC, while the STB low level H/W specific portions were implemented via an agent on the STB that was accessed via API calls that were implemented as [Remote Procedure Calls (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call).
 #. I wrote an automated testing system in TCL and C/C++ for a satellite content delivery system for huge content, e.g. delivering ultra high definition movies to cinemas, and print newspapers for remote publishing. I created a [Domain Specific Language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) in order to execute the satellite operations. After studying the Win32 C/C++ source code of the satellite ground control station, I detected a major conceptual flaw which the architect refused to believe (because testers are not supposed to understand Win32 internals!). So I wrote a progressive test that brought the satellite to its knees at only 25% of its rated capacity. Afterwards the development team used my tool to develop their own unit test scripts, and to execute a system sanity test before checking-in any changes to the source control system.
 #. I did a study for senior management by data mining the company's bug database, which showed them that 25% of S/W development manpower was wasted on fixing bugs. And I presented them with simple techniques that could reduce this number by 80%.
-%% endif
+
+[^rdtsc]: Today ({{YEAR}}), it is preferable to use Intel's built-in H/W RNG instruction [RDRAND](https://en.wikipedia.org/wiki/RdRand).
 
 
 %% if not DD
@@ -281,34 +271,27 @@ along with TCL preprocessing.
 #. {{HI_BEGIN}}I _almost_ saved the company from liquidation. My research was awarded a European FP6 grant of $0.5M Euro that required _matching funds_. But the investors refused to put up the matching funds due to the company's long history of financial failure in the children's Braille education market using their expensive tactile mouse.{{HI_END}}
 %% endif
 
-
-%% if FULL
-	%% set title = '1999-2002: S/W Mngr & Architect: Network: Embedded & Offline Utilities for a "Wireless" Cable Modem and Router System'
-%% else
-	%% set title = '1999-2002: [Vyyo](https://www.wirelessdesignonline.com/doc/phasecom-changes-name-to-vyyo-0001): S/W Mngr & Architect: Network: Embedded & Offline Utilities for a "Wireless" Cable Modem and Router System'
-%% endif
 {{ JOB(
 	'vyyo',
-	title,
-	'Vyyo (defunct), Jerusalem'
+	'1999-2002: [Vyyo](https://www.wirelessdesignonline.com/doc/phasecom-changes-name-to-vyyo-0001): S/W Mngr & Architect: Network: Embedded & Offline Utilities for a "Wireless" Cable Modem and Router System',
+	'Vyyo (defunct), Jerusalem',
+	false
 ) }}
 {{KEYS}} network, architect, algorithms, SNMP, SNMP-agent, NMS, automated testing, {{HI_C}}, TCL, embedded
 
-%% if FULL
-#. I was the architect and designer of the [SNMP](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol) network management system (NMS), [MIB](https://en.wikipedia.org/wiki/Management_information_base), and embedded SNMP agent. The workstation NMS was implemented in TCL, and the embedded SNMP agents on the cable modem and router were implemented in C.
-#. I was the architect and designer of a hybrid IP connection for cable modems where there was no physical cable upstream channel. Instead the upstream channel used a telephone modem (ATA), while the downstream channel used the cable modem. Head end network equipment for both interfaces was supplied by the cable operator. My solution was to dynamically modify the [arp table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) of the [edge router](http://searchnetworking.techtarget.com/definition/edge-router). For typical surfing, the effective downstream rate was as fast as a pure cable solution. The server implementation was in TCL, and the embedded cable modem implementation was in C. The company applied for a provisional patent.
+#. I was the architect of the [SNMP](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol) network management system (NMS), [MIB](https://en.wikipedia.org/wiki/Management_information_base), and embedded SNMP agent{% if FULL %}. The workstation NMS was implemented in TCL, and the embedded SNMP agents on the cable modem and router were implemented in C{% endif %}.
+#. I was the architect of a hybrid IP connection for cable modems where there was no physical cable upstream channel. Instead the upstream channel used a telephone modem (ATA), while the downstream channel used the cable modem{% if FULL %}. Head end network equipment for both interfaces was supplied by the cable operator. My solution was to dynamically modify the [arp table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) of the [edge router](http://searchnetworking.techtarget.com/definition/edge-router){% endif %}. For typical surfing, the effective downstream rate was as fast as a pure cable solution{% if FULL %}. The server implementation was in TCL, and the embedded cable modem implementation was in C{% endif %}. The company applied for a provisional patent.
 #. I greatly improved the efficiency of the laboratory modem speed stress testing by a factor of 10-100 by using a [steepest descent](https://en.wikipedia.org/wiki/Gradient_descent) search algorithm instead of a binary search algorithm. Reduced testing time per modem from hours to minutes.
-#. I designed a virtual testing lab with 64K modems and 512K PCs via multiplexing the physical connections. The test lab had only 256 physical cable modems, 4 physical PCs with 8 network connections each, 1 cable router, and 2 24-port layer-2 programmable switches. By dynamically editing the PC MAC addresses, and by dynamically editing the MAC filters on the network switches, I was able to fool the router into believing that it faced 64K modems, and to fool the modems into believing that each one was shared by 16 PCs. The Linux workstation implementation was in TCL and C.
+#. I designed a _virtual_ testing lab with 64K modems and 512K PCs by multiplexing the _physical_ connections. The test lab had only 256 _physical_ cable modems, {% if ABBREV %}and {% endif %}4 _physical_ PCs with 8 network connections each{% if FULL %}, 1 cable router, and 2 24-port layer-2 programmable switches. By dynamically editing the PC MAC addresses, and by dynamically editing the MAC filters on the network switches, I was able to fool the router into believing that it faced 64K modems, and to fool the modems into believing that each one was shared by 16 PCs. The Linux workstation implementation was in TCL and C{% endif %}.
 #. I designed a very efficient [hash table](https://en.wikipedia.org/wiki/Hash_table) algorithm in C for the router's [arp table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) cache, based upon an algorithm I had invented 10 years earlier. The special features of the hash table algorithm were no use of dynamic memory allocations for embedded safety, a unique 2^N table size algorithm that required no use of division or modulo operations for efficiency, and a [LIFO](https://techterms.com/definition/lifo) queue in order to gracefully handle table overflow.
-#. I designed a flash memory file system for the modem and router in C.
-#. I designed a [TLV](https://en.wikipedia.org/wiki/Type-length-value) configuration file utility both offline for the PC workstation, and embedded on the modem and router in C and TCL.
-%% endif
+#. I designed a flash memory file system for the modem and router{% if FULL %} in C{% endif %}.
+#. I designed a [TLV](https://en.wikipedia.org/wiki/Type-length-value) configuration file utility both offline for the PC workstation, and embedded on the modem and router{% if FULL %} in C and TCL{% endif %}.
 
 
 %% if FULL or AGENT != 'wizedom'
 {{ JOB(
 	'jolt',
-	'2001-01: S/W Architect & Developer: Network: Network Management System (NMS) for a FSO Device',
+	'2001-01: Consulting S/W Architect & Developer: Network Management System (NMS) for a FSO Device',
 	'MRV-Jolt (defunct), Jerusalem'
 ) }}
 {{KEYS}} network, architect, SNMP, SNMP-agent, NMS, Java, {{HI_C}}, TCL
@@ -337,7 +320,7 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 {{NL}}
 
 %% if FULL
-{{HI_BEGIN}}I performed a one week requirements study in order to select the most appropriate NMS infrastructure for their needs. I saved them over $200K compared to their original selection.{{HI_END}}
+{{HI_BEGIN}}I performed a one week requirements study in order to select the most appropriate NMS infrastructure. I saved them over $200K compared to their original selection.{{HI_END}}
 %% endif
 
 
@@ -414,7 +397,7 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 {{NL}}
 
 %% if FULL
-Besides greatly improving the performance of customer's relaxation/meditation S/W application, I also developed my own meditation technique that uses simple S/W or even no S/W at all, and can easily be taught to most people within 5 minutes. Already in the 1960's [brainwave entrainment](https://en.wikipedia.org/wiki/Brainwave_entrainment) experiments showed that the brainwaves of cats, for examples, could be controlled by a strobe light source as long as the strobe frequency was within the normal frequency range of the cat's brain. Now human meditation takes place when the brain is exhibiting [theta waves](https://en.wikipedia.org/wiki/Brain_activity_and_meditation) which are in the range of 4-8 Hz. Note that this frequency range is the equivalent of a metronome operating at frequency of 240-480 beats per minute (bpm). Normally mechanical metronomes don't operate at speeds higher than 180 bpm, but currently (2017) there are many free digital metronome applications (on smartphones, tablets, and desktop PCs) that operate at much higher speeds, where 240-360 bpm is the "sweet spot" for meditation. My favorite application is [GNU GTick](http://www.antcom.de/gtick/). I use the following 3 settings:
+Besides greatly improving the performance of customer's relaxation/meditation S/W application, I also developed my own meditation technique that uses simple S/W or even no S/W at all, and can easily be taught to most people within 5 minutes. Already in the 1960's [brainwave entrainment](https://en.wikipedia.org/wiki/Brainwave_entrainment) experiments showed that the brainwaves of cats, for examples, could be controlled by a strobe light source as long as the strobe frequency was within the normal frequency range of the cat's brain. Now human meditation takes place when the brain is exhibiting [theta waves](https://en.wikipedia.org/wiki/Brain_activity_and_meditation) which are in the range of 4-8 Hz. Note that this frequency range is the equivalent of a metronome operating at frequency of 240-480 beats per minute (bpm). Normally mechanical metronomes don't operate at speeds higher than 180 bpm, but today ({{YEAR}}) there are many free digital metronome applications (on smartphones, tablets, and desktop PCs) that operate at much higher speeds, where 240-360 bpm is the "sweet spot" for meditation. My favorite application is [GNU GTick](http://www.antcom.de/gtick/). I use the following 3 settings:
 
 * 240 bpm (= 4 Hz), 4/4 time
 * 300 bpm (= 5 Hz), 5/4 time
@@ -437,13 +420,9 @@ The application has a strong first beat option in case you lose synchronization,
 
 
 %% if not DD
-	%% if FULL
-		%% set title = '1995-96: CTO & Architect: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System'
-	%% else
-		%% set title = '1995-96: [Elop](http://elbitsystems.com/about-us-quality-assurance-elbit-systems-electro-optics-elop/): CTO & Architect: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System'
-	%% endif
+	%% set title = '1995-96: [Elop](http://elbitsystems.com/about-us-quality-assurance-elbit-systems-electro-optics-elop/): CTO & Architect: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System'
 %% else
-	%% set title = '1995-96: S/W Architect & Developer: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System'
+	%% set title = '1995-96: [Elop](http://elbitsystems.com/about-us-quality-assurance-elbit-systems-electro-optics-elop/): S/W Architect & Developer: US DOD Mil-Spec Automated Testing: Night Hawk Fire Control System'
 %% endif
 {{ JOB(
 	'elop',
@@ -477,13 +456,9 @@ The application has a strong first beat option in case you lose synchronization,
 
 
 %% if not DD
-	%% if FULL
-		%% set title = '1991-94: CTO & S/W Architect: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU'
-	%% else
-		%% set title = '1991-94: [DSPG](https://www.dspg.com/): CTO & S/W Architect: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU'
-	%% endif
+	%% set title = '1991-94: [DSPG](https://www.dspg.com/): CTO & S/W Architect: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU'
 %% else
-	%% set title = '1991-94: S/W Architect & Developer: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU'
+	%% set title = '1991-94: [DSPG](https://www.dspg.com/): S/W Architect & Developer: VLSI: Simulator & S/W Toolchain For DSPG PINE CPU'
 %% endif
 {{ JOB(
 	'dspg',
@@ -501,14 +476,9 @@ The application has a strong first beat option in case you lose synchronization,
 %% endif
 
 
-%% if FULL
-	%% set title = '1989-91: S/W Architect & Developer: Factory Automation: Shop Floor Production Control (SFPC) System: BARI II'
-%% else
-	%% set title = '1989-91: [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation): S/W Architect & Developer: Factory Automation: Shop Floor Production Control (SFPC) System: BARI II'
-%% endif
 {{JOB(
 	'iscar',
-	title,
+	'1989-91: [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation): S/W Architect & Developer: Factory Automation: Shop Floor Production Control (SFPC) System: BARI II',
 	'Digital Equipment Corporation (DEC) (defunct), Herzliya for \@Iscar, Tefen'
 ) }}
 {{KEYS}} factory automation SFPC, architect, algorithms, DSL, Pascal, SQL, VAX/VMS
@@ -604,14 +574,9 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 {{KEYS}} word processor, {{HI_C}}, sysadmin, VAX/VMS
 
 
-%% if FULL
-	%% set title = '1983-84: S/W Developer: Real-Time: Data Collection Terminal & Radar for Lavi Fighter Plane'
-%% else
-	%% set title = '1983-84: [Elta/IAI](http://www.iai.co.il/17887-en/Groups_ELTA.aspx): S/W Developer: Real-Time: Data Collection Terminal & Radar for Lavi Fighter Plane'
-%% endif
 {{ JOB(
 	'elta',
-	title,
+	'1983-84: [Elta/IAI](http://www.iai.co.il/17887-en/Groups_ELTA.aspx): S/W Developer: Real-Time: Data Collection Terminal & Radar for Lavi Fighter Plane',
 	'DSI (defunct), Givatayim for \@Elta/IAI, Ashdod'
 ) }}
 {{KEYS}} data collection terminal, PL/M, 8080, RTOS, fighter plane radar, Jovial, embedded, real-time
@@ -926,6 +891,6 @@ And where the implementation will be embedded inside another application then Lu
 {{NL}}
 
 
-%% if WRITER == 'html5' and FULL
+%% if WRITER == 'html5'
 ## Footnotes
 %% endif
