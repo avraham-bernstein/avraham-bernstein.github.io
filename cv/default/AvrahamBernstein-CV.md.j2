@@ -11,13 +11,15 @@ in which case it is necessary to terminate a sequence of line statements with an
 the left brace and the hash, otherwise they will conflict with J2 comments.
 5. Use of the '@' character that immediately precedes a new word triggers a pandoc citation.
 I don't know how to disable this facility, so escape them by using a backslash, i.e. '\@'.
-6. The current Python2 version of J2 does not support UTF-8 or Unicode,
+6. The current Python2 version of j2-cli.py does not support UTF-8 or Unicode,
 so make sure the document is written in ISO-8859-1.
 #}
 
+%# includes 'defs.j2' from the j2-cli.py command line
+
 # {{TITLE}} { #top }
 
-%% if AGENT_NAME != ''
+%% if AGENT_URL != ''
 {% if WRITER == 'html5' %}<span style="font-size:larger;background-color:#FFFF00;">{% endif %}__Represented by [{{AGENT_NAME}}]({{AGENT_URL}})__{% if WRITER == 'html5' %}</span>{% endif %}
 %% endif
 {{NL}}
@@ -103,6 +105,26 @@ In order to understand my S/W design principles, see the following appendices{% 
 * [How To Write Correct, Maintainable, Secure, and Easy-to-Test Code]({% if ABBREV %}{{CV_FULL}}{% endif %}#appendix-programming-testable)
 
 
+%% if AGENT == 'it'
+### 1.1 IT, Cobol, Adabas, Natural, C#, IBM Mainframes, and ETL Programming Credentials
+
+#. {{HI_BEGIN}}This section is admittedly unusual, and may be too difficult for non-technical people to comprehend. So please bear with me. In spite of my best efforts to make it understandable, if you still find it difficult to understand how using my skills would immediately benefit your organization, then please pass my CV on to someone more technical or more senior in your organization who can.{{HI_END}}
+#. {{HI_BEGIN}}As you can see in my CV, I have no substantive credentials doing IT work, or working with Cobol, Adabas, Natural, C#, or IBM mainframes.{{HI_END}}
+#. {{HI_BEGIN}}However it should be clear that I am an accomplished computers scientist. I am a [polyglot](http://www.dictionary.com/browse/polyglot). I am an expert in many computer languages, and I comfortably work with many more. I write compilers and [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) so learning a new language, and being able to work with it at a professional level, usually takes me about a week.{{HI_END}}
+#. {{HI_BEGIN}}I am an expert in applying templates and macros to any programming language. These macros and templates allow the underlying language to incorporate the latest programming concepts and features while still emitting valid (and human understandable) source code in the original language.{{HI_END}}
+#. Similarly I am very familiar with a number of operating systems.
+#. I was the architect of a major soft real-time project in SQL, and I taught a university level course in databases.
+#. Regarding ETL, my compiler background allows me to write conversion filters "in my sleep".
+#. I am a cybersecurity expert, and therefore have a much better eye for detecting and resolving security issues.
+#. I have a strong theoretical background that allows me to engage in conversion projects of legacy S/W and H/W to modern systems. Everyone in the IT business is aware that the major force driving conversions is that the number of programmers who can maintain legacy systems using the original S/W and H/W is dwindling as they reach retirement age, while few quality graduates are willing to consider entering this field because they don't want their CV to show that their only experience is using archaic tools and systems.
+#. I have a strong background in automated testing which I have done for telecommunication and military systems.
+#. I am also an economist where the application domain of many IT systems is in fact financial. It helps a great deal to have a strong understanding of the underlying application domain.
+#. {{HI_BEGIN}}For the rest of my career, I have decided that I would prefer to work and lecture in Jerusalem, and no longer wish to make the daily commute to Tel Aviv.{{HI_END}}
+#. {{HI_BEGIN}}Because Jerusalem has a lot more IT jobs than hi-tech, it makes sense for me to "convert" to the IT field, where I can make just as strong a contribution as I did in hi-tech.{{HI_END}}
+#. {{HI_BEGIN}}Bottom line, when hiring someone for a project that has a duration of more than a few months, the most critical requirements are his level of understanding of core programming and architectural concepts, and _not_ whether he needs an extra week or two to come up to speed in order to become familiar with the specific S/W toolchain. For example, note my recent smashing success in the field of [bioinformatics]({{CV_FULL}}#syntezza), where even though I had absolutely zero background in the fields of bioinformatics, biology, biochemistry, and genetics, still within 3 months I invented a solution for the client that saved them from bankruptcy.{{HI_END}}
+%% endif
+{{NL}}
+
 ## 2.0 Work Experience
 
 %% macro DETAILS(id)
@@ -169,7 +191,7 @@ Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/Pla
 
 {{ JOB(
 	'cybersec-anonymous',
-	'2016-16: Cybersecurity Consultant: Protection of a Small Business with Extremely High Security Concerns',
+	'2016-16: Part-time: Cybersecurity Consultant: Protection of a Small Business with Extremely High Security Concerns',
 	'Anonymous, Jerusalem'
 ) }}
 {{KEYS}} cybersecurity, privacy, anonymity, WordPress, static web site, Cloudflare, Windows, Android, Google Docs, Google Drive
@@ -180,6 +202,25 @@ Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/Pla
 #. Their enemies were well funded NGOs and government sponsored organizations.
 #. Their original web site developers were not cybersecurity aware, and their researchers who often worked remotely (i.e. outside of the office) were typical computer users who were naive about cybersecurity and how to protect their anonymity.
 #. After doing an initial risk assessment, my task was to implement graduated policies that improved their security without causing an upheaval to the way they worked.
+%% endif
+
+
+%% if not DD
+	%% set title = '2015-15: Part-time: Startup: CTO & S/W Architect: Biomed: Gait Monitoring App'
+%% else
+	%% set title = '2015-15: Part-time: Startup: S/W Architect: Biomed: Gait Monitoring App'
+%% endif
+{{ JOB(
+	'gait-monitoring',
+	title,
+	'Self-Startup (defunct), Jerusalem'
+)}}
+{{KEYS}} {% if not DD %}CTO, {% endif %}biomed, architect, android
+
+%% if FULL
+#. The simple form of the product was to provide a home diagnostic smartphone app to monitor gait (i.e. walking form). Gait problems often indicate underlying neurological problems, and are a precursor to falls which in the elderly can have serious and even fatal consequences. Gait can be monitored using the accelerometer and gravitation sensor built-in to most smartphones.
+#. The complex form was to detect when the peroneal nerve around the knee "misfires" causing "foot drop". For many people this problem can be corrected by _external non-invasive_ low voltage electrical stimulation to the skin directly above the nerve. _FDA approved_ devices that use this technique cost thousands of dollars. But combined with a smartphone's built-in accelerometer and gravitation sensor which would detect an impending fall, the extra H/W required to apply the external voltage costs less than $10. We could use H/W similar to that used in adult sexual toys used to provide external low voltage electrical stimulation to the genitals - which BTW do _not_ require FDA approval. Our problem was that the cost of FDA approval for this _external non-invasive_ peroneal nerve stimulation device could cost more than $250K, where the high cost is associated with medically supervised clinical trials. (The FDA is in the _process_ of "fast tracking" many smartphone health apps, but as of 2017 no [small inventors](http://fortune.com/2017/09/26/fda-digital-health-apple-fitbit/) have yet to become eligible). We debated whether to market the system out of China (e.g. using Alibaba) to avoid FDA problems.
+#. I spawned the idea after noticing a colleague at the gym who wore one of these expensive devices because he had degenerative peroneal nerve disease. We collaborated with an orthotics specialist who sells these devices and a MD neurologist who does geriatric research.
 %% endif
 
 
@@ -202,6 +243,47 @@ Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/Pla
 #. Also the simulations showed that opportunistic guidance algorithms created secondary traffic jams after the penetration rate exceeded 20%. And when the penetration rate exceeded 40%, opportunistic algorithms generated more traffic congestion than using no guidance at all.
 #. Therefore an optimal algorithm had to anticipate traffic flows according to time of day (along with other factors), and to allocate vehicles with similar sources and destinations to different routes in order to avoid secondary traffic jams.
 #. The Java implementation challenge was cost efficiency because the simulations used huge amounts of RAM and ran continuously for days on expensive servers. I could not rely on the efficacy of the built-in memory garbage collector (GC), so I had to explicitly coerce memory allocations and frees.
+%% endif
+
+
+%% if not DD
+{{ JOB(
+	'agritech',
+	'2009-12: Part-time: CTO: US Agricultural Trading Company with Nigeria',
+	'Anonymous (defunct), US'
+)}}
+{{KEYS}} CTO, agritech, electric utility, telephony, economics, business development, negotiator
+
+%% if FULL
+My job was to find hi-tech agricultural products that the company needed to purchase, or that I felt would be worthwhile for them to purchase. I would go to the annual [Israel Agritech](http://agritechisrael.org/) exhibition, considered to the be the best in the world, to hunt for products and ideas. For example:
+
+#. Portable field hospitals and inexpensive quick-to-assemble modular housing units for flood victims.
+#. Inexpensive moisture proof storage bags that can store 500-1000 kg of grain in humid environments with almost no spoilage, whereas previously nearly 75% of the crops placed in field storage facilities were destroyed from moisture induced rot.
+#. Mold resistant produce containers (up to 20 kg) for storage in humid refrigeration facilities in order to extend shelf life.
+#. Bacteria resistant milk cartons for non-refrigerated storage.
+#. Kits to convert SUVs and light trucks to become off-road bush vehicles.
+#. Expert on industrial scale cassava processing which was formerly the major food staple in Nigeria before they joined OPEC, and may soon again become their major staple when the oil stops flowing because the government will no longer have the financial resources to subsidize imported wheat.
+#. Cement research expert to consult for the largest cement factory in Africa.
+#. Establish a private local area GSM cell phone tower with a 10 km radius range in order to support a cassava plantation/factory to be built in a remote jungle location where cassava naturally grows. The factory was well outside the geographic regions supported by the local mobile telephone companies. The efficiency of the plantation would be greatly increased provided that all the workers had mobile phones even if the communications were restricted to the 300 sq. km. region surrounding the factory.
+#. Prepared a bid for refurbishing an abandoned Nigerian government 200 MW natural gas electrical generation station near the cassava plantation. Negotiated with the Israel Electric Corporation (IEC) to submit a joint bid, but eventually they backed out and joined another bidder.
+%% endif
+%% endif
+
+
+%% if not DD
+{{ JOB(
+	'china',
+	'2009-09: Part-time: Consultant: "Transparent" Technical Negotiator of Restricted Hi-Tech Trade with C',
+	'Anonymous (defunct), US'
+)}}
+{{KEYS}} hi-tech, business development, negotiator
+
+%% if FULL
+#. The Chinese wanted to buy a restricted gyroscope for their super high speed trains from Honeywell that is normally used for ICBMs. I proposed to Honeywell that they insert the gyroscope into the center of a tamper proof lead block that weighed say 50-100 kg. For example if the soft membrane surrounding the gyroscope were penetrated with a blade or drill or laser then it would release acid or a binary explosive. Honeywell would be responsible for developing the tamper proof mechanism. They did not have to reveal to the Chinese how they built the mechanism. All they had to do was to give the Chinese a fixed price quote for the custom work. Clearly such a device could not be used on a missile where every extra gram of weight counts, but where the extra weight was of no consequence to the train. Honeywell agreed.
+#. The Chinese wanted to buy the restricted Green Hills real-time operating system. The US government restricts the export of Green Hills _source code_, but _not_ products that contain Green Hills' _binaries_. So I asked Green Hills if I could have the board support package (BSP) developed in Israel which requires access to Green Hills source code, but ship the resulting binaries to China. Green Hills agreed.
+#. The Chinese wanted to buy a drone system from a subsidiary of Israel Aircraft Industries (IAI) which was designed for commercial/industrial use. The system had cruise missile like navigation capabilities with the ability to do terrain contour matching. Since the device inherently required GPS navigational capability, I suggested to IAI that they modify their software so that it would not work within 500 km of the Israeli border, along with a back-door jamming channel - due to the fact that it is not uncommon for the Chinese to resell this type of equipment to the Iranians who regularly announce their religious obligation to wipe Israel off the face of the earth.
+#. An Israeli company which develops expensive VLSI design software, e.g. $50-100K per workstation, was afraid that their Chinese agent would cheat them of their royalties. The initial deal was to sell an older version of the software for a one-time flat fee of 20 licenses, in order that the Chinese dealer would be allowed to sell an unlimited number of the older licenses. But I specified how they should re-architect the next version of their software to be converted to Software As A Service (SaaS) on cloud servers. Each licensed subscriber has a workspace on the cloud where the heavy lifting and "secret sauce" are executed, while the client workstations only act as the UI. It provides excellent security against license theft. For example this is the new economic and technical model that Microsoft Offices 365 uses for the majority of their subscribers which has become one of their most profitable products.
+%% endif
 %% endif
 
 
@@ -262,7 +344,7 @@ Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/Pla
 	title,
 	'[Virtouch](https://www.israel21c.org/graphic-breakthrough-for-the-blind-developed-in-israel/) (defunct), Jerusalem'
 ) }}
-{{KEYS}} accessibility, blind, architect, algorithms, GIS, MapML, HTML, SVG, javascript, XSLT, XML Schema, XSLT, {{HI_C}}, TCLNDS
+{{KEYS}} {% if not DD %}CTO, {% endif %}accessibility, blind, architect, algorithms, GIS, MapML, HTML, SVG, javascript, XSLT, XML Schema, XSLT, {{HI_C}}, TCLNDS
 
 %% if FULL
 #. I was the inventor and architect of a system that allowed the blind to to "see" geographic maps and digital images that were prepared using industry standard [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) map descriptions such as [MapML](https://maps4html.github.io/MapML/spec/).
@@ -311,7 +393,7 @@ along with TCL preprocessing.
 %% if FULL
 {{ JOB(
 	'jolt',
-	'2001-01: Consulting S/W Architect & Developer: Network Management System (NMS) for a FSO Device',
+	'2001-01: Part-time: Consulting S/W Architect & Developer: Network Management System (NMS) for a FSO Device',
 	'MRV-Jolt (defunct), Jerusalem'
 ) }}
 {{KEYS}} network, architect, SNMP, SNMP-agent, NMS, Java, {{HI_C}}, TCL
@@ -332,7 +414,7 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 %% if FULL
 {{ JOB(
 	'foxcom',
-	'2001-01: Consultant: Network Management System (NMS) for a Cable Modem & Gateway System',
+	'2001-01: Part-time: Consultant: Network Management System (NMS) for a Cable Modem & Gateway System',
 	'One Path Networks - Foxcom, Jerusalem'
 ) }}
 {{KEYS}} SNMP, NMS
@@ -347,7 +429,7 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 %% if FULL
 {{ JOB(
 	'zamir',
-	'2000-01: S/W Developer: Communications: Win32 Asynchronous TCP/IP DLL for a Visual Basic Project',
+	'2000-01: Part-time: S/W Developer: Communications: Win32 Asynchronous TCP/IP DLL for a Visual Basic Project',
 	'[Inex-Zamir](http://inextechnologies.com/), Jerusalem'
 ) }}
 {{KEYS}} TCP/IP communications, {{HI_C}}, Visual Basic, Win32, soft real-time
@@ -409,15 +491,15 @@ interface with the FSO H/W, had an Ethernet port, and a built-in Java interprete
 %% if FULL
 {{ JOB(
 	'ultramind',
-	'1996-96: Consulting S/W Engineer: Win32 Improve Performance of a Soft Real-Time Biofeedback Application',
-	'MindLife-UltraMind, Jerusalem'
+	'1996-96: Part-time: Consulting S/W Engineer: Win32 Improve Performance of a Soft Real-Time Biofeedback Application',
+	'[MindLife-UltraMind](http://hms.mindlife.co.il/), Jerusalem'
 ) }}
 {{KEYS}} Win32, soft real-time, {{HI_C}}
 %% endif
 {{NL}}
 
 %% if FULL
-Besides greatly improving the performance of customer's relaxation/meditation S/W application, I also developed my own meditation technique that uses simple S/W or even no S/W at all, and can easily be taught to most people within 5 minutes. Already in the 1960's [brainwave entrainment](https://en.wikipedia.org/wiki/Brainwave_entrainment) experiments showed that the brainwaves of cats, for examples, could be controlled by a strobe light source as long as the strobe frequency was within the normal frequency range of the cat's brain. Now human meditation takes place when the brain is exhibiting [theta waves](https://en.wikipedia.org/wiki/Brain_activity_and_meditation) which are in the range of 4-8 Hz. Note that this frequency range is the equivalent of a metronome operating at frequency of 240-480 beats per minute (bpm). Normally mechanical metronomes don't operate at speeds higher than 180 bpm, but today ({{YEAR}}) there are many free digital metronome applications (on smartphones, tablets, and desktop PCs) that operate at much higher speeds, where 240-360 bpm is the "sweet spot" for meditation. My favorite application is [GNU GTick](http://www.antcom.de/gtick/). I use the following 3 settings:
+I greatly improving the performance and responsiveness of the customer's relaxation/meditation S/W application by tweaking how their application used the Win32 SDK. But more important, I developed my own meditation technique that uses simple S/W or even no S/W at all, and can easily be taught to most people within 5 minutes. Already in the 1960's [brainwave entrainment](https://en.wikipedia.org/wiki/Brainwave_entrainment) experiments showed that the brainwaves of cats, for examples, could be controlled by a strobe light source as long as the strobe frequency was within the normal frequency range of the cat's brain. Now human meditation takes place when the brain is exhibiting [theta waves](https://en.wikipedia.org/wiki/Brain_activity_and_meditation) which are in the range of 4-8 Hz. Note that this frequency range is the equivalent of a metronome operating at frequency of 240-480 beats per minute (bpm). Normally mechanical metronomes don't operate at speeds higher than 180 bpm, but today ({{YEAR}}) there are many free digital metronome applications (on smartphones, tablets, and desktop PCs) that operate at much higher speeds, where 240-360 bpm is the "sweet spot" for meditation. My favorite application is [GNU GTick](http://www.antcom.de/gtick/). I use the following 3 settings:
 
 * 240 bpm (= 4 Hz), 4/4 time
 * 300 bpm (= 5 Hz), 5/4 time
@@ -430,7 +512,7 @@ The application has a strong first beat option in case you lose synchronization,
 %% if FULL
 {{ JOB(
 	'cefar',
-	'1996-96: Consulting S/W Engineer: Win32 Device Driver for a Frame Grabber',
+	'1996-96: Part-time: Consulting S/W Engineer: Win32 Device Driver for a Frame Grabber',
 	'Visionix-Cefar, Jerusalem',
 	false
 ) }}
@@ -449,7 +531,7 @@ The application has a strong first beat option in case you lose synchronization,
 	title,
 	'Pitkha Outsourcing (defunct), Jerusalem for \@[Elbit-Elop](http://elbitsystems.com/about-us-quality-assurance-elbit-systems-electro-optics-elop/), Rechovot'
 ) }}
-{{KEYS}} automated testing, mil-spec, architect, DSL, {{HI_CPP}}, lex/yacc BASIC compiler, Win32, soft real-time
+{{KEYS}} {% if not DD %}CTO, {% endif %}automated testing, mil-spec, architect, DSL, {{HI_CPP}}, lex/yacc BASIC compiler, Win32, soft real-time
 
 %% if FULL
 #. The client's project was the fire control system for the Night Hawk laser guided missiles.
@@ -485,7 +567,7 @@ The application has a strong first beat option in case you lose synchronization,
 	title,
 	'Pitkha Outsourcing (defunct), Jerusalem for \@[DSP Group](https://www.dspg.com/), Givat Shmuel'
 ) }}
-{{KEYS}} VLSI simulator, S/W Development Toochain, architect, algorithms, DSL, {{HI_CPP}}, lex/yacc, assembly, Win32
+{{KEYS}} {% if not DD %}CTO, {% endif %}VLSI simulator, S/W Development Toochain, architect, algorithms, DSL, {{HI_CPP}}, lex/yacc, assembly, Win32
 
 %% if FULL
 #. I was the S/W architect of a __clock accurate__ DSP CPU simulator along with a complete software development toolchain, i.e. a debugger, C compiler, assembler and linker. Note that the system was developed just _before_ the GNU Compiler Collection framework reached maturity, i.e. v2.95.
@@ -528,7 +610,7 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 
 {{ JOB(
 	'light-pen',
-	'1988-88: S/W Architect & Developer: Accessibility: Quadriplegic PC Accessibility',
+	'1988-88: Part-time: S/W Architect & Developer: Accessibility: Quadriplegic PC Accessibility',
 	'Cubital (defunct), Herzliya - a charity project funded by the company and their CEO [Itzhak Pomerantz](https://il.linkedin.com/in/itzhak-pomerantz-91500b3) in cooperation with the [Lowenstein Rehabilitation Hospital](http://en.israel-clinics.guru/clinics/lowenstein_hospital_rehabilitation_center), and the IDF Rehabilitation Unit'
 ) }}
 {{KEYS}} accessibility, Prolog, PC-DOS
@@ -901,7 +983,7 @@ And where the implementation will be embedded inside another application then Lu
 
 ## Colophon
 
-* __Generator:__ This document was generated using the [Pandoc](http://www.pandoc.org) universal document converter extended [Markdown](https://en.wikipedia.org/wiki/Markdown) engine, along with the [Jinja2](http://jinja.pocoo.org/) macro/template preprocessor. See the source code at my [github site](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master).
+* __Generator:__ This document was generated using the [Pandoc](http://www.pandoc.org) universal document converter extended [Markdown](https://en.wikipedia.org/wiki/Markdown) engine, along with the [Jinja2](http://jinja.pocoo.org/) macro/template preprocessor. See the source code at my [github site]({{GITHUB_CV_DIR_URL}}).
 
 %% if WRITER == 'html5'
 * __[WCAG](https://www.w3.org/TR/WCAG20/) blind accessibility conformance:__ This document contains text alternatives for images, and is tab navigable - for sections, subsections, paragraphs, list items, and links.
