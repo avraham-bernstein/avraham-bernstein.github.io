@@ -16,7 +16,7 @@ so make sure the document is written in ISO-8859-1.
 #}
 
 %% set LANG = 'en-US'
-%% set VS = '3.0'
+%% set VS = '3.1'
 %% set VS_ORIG_DATE = '2017-07-23'
 
 %% if not TS is defined
@@ -38,6 +38,9 @@ so make sure the document is written in ISO-8859-1.
 	%% set AGENT_NAME = 'ARDIX "Solving the unsolvable"'
 	%% set AGENT_URL = 'http://www.ardix.co.il/en/'
 %% elif AGENT == 'arm'
+	%% set AGENT_NAME = ''
+	%% set AGENT_URL = ''
+%% elif AGENT == 'it'
 	%% set AGENT_NAME = ''
 	%% set AGENT_URL = ''
 %% elif AGENT == 'default'
@@ -151,6 +154,8 @@ so make sure the document is written in ISO-8859-1.
 %% set G_PLUS_URL = 'https://plus.google.com/' + G_PLUS_ID
 %% set LINKEDIN_ID = NAME1 + NAME3
 %% set LINKEDIN_URL = 'https://www.linkedin.com/in/' + LINKEDIN_ID
+%% set GITHUB_URL = 'http://purl.org/' + NAME1 + '.' + NAME3 + '/github'
+%% set GITHUB_CV_DIR_URL = GITHUB_URL + '/' + NAME1|lower + '-' + NAME3|lower + '.github.io/tree/master/cv'
 %% set PGP_FPR = 'F5D4 76DA 7B0B B46F 02DB  ED3E 86EF CDAE E664 7D2F' | replace(' ','')
 %% set PGP_ID = PGP_FPR[32:]
 %% set PGP_LOOKUP_URL = 'https://pgp.mit.edu/pks/lookup?op=vindex&search=0x' + PGP_FPR[24:]
