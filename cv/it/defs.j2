@@ -1,0 +1,216 @@
+{# !!! JINJA2 SYNTAX GOTCHYAS !!!
+1. We are using the *non-standard* prefixes '%%' and '%#' for line statements
+and line comments respectively, in order not to conflict with pandoc ATX
+headers '#' and automatically numbered lists '#.'.
+2. Otherwise we are still using the default delimiter sequences for begin and end tags,
+i.e. {'{' ... '}'}, {'%' ... '%'}, and {'#' ... '#'}, for variable expressions,
+control statements, and comment statements respectively.
+3. *Sometimes* we find that the line statements eat all blank lines following it,
+in which case it is necessary to terminate a sequence of line statements with an innocuous {{NL}}.
+4. Internal pandoc link anchors, i.e. '{ #myanchor }' must have a space between
+the left brace and the hash, otherwise they will conflict with J2 comments.
+5. Use of the '@' character that immediately precedes a word triggers a pandoc citation.
+I don't know how to turn off the facility. So escape them as follows with a backslash, i.e. '\@'.
+6. The current Python2 version of J2 does not support UTF-8 or Unicode,
+so make sure the document is written in ISO-8859-1.
+#}
+
+%% set LANG = 'en-US'
+%% set VS = '3.1'
+%% set VS_ORIG_DATE = '2017-07-23'
+
+%% if not TS is defined
+	%% set TS = DATETIME
+%% endif
+%% set YEAR = TS[0:4]
+%% set TS_SQUEEZED = TS | replace('-','') | replace(':','')
+
+%% if not WRITER is defined
+	%% set WRITER = 'html5'
+%% endif
+
+%# DD = DUMBED DOWN
+%% if not DD is defined
+	%% set DD = false
+%% endif
+
+%% if AGENT == 'ardix'
+	%% set AGENT_NAME = 'ARDIX "Solving the unsolvable"'
+	%% set AGENT_URL = 'http://www.ardix.co.il/en/'
+%% elif AGENT == 'arm'
+	%% set AGENT_NAME = ''
+	%% set AGENT_URL = ''
+%% elif AGENT == 'it'
+	%% set AGENT_NAME = ''
+	%% set AGENT_URL = ''
+%% elif AGENT == 'default'
+	%% set AGENT_NAME = ''
+	%% set AGENT_URL = ''
+%% elif AGENT == 'hammelburger'
+	%% set AGENT_NAME = 'Hammelburger Head Hunting'
+	%% set AGENT_URL = 'http://hammelburger.com/'
+%% elif AGENT == 'hitechrecruitment'
+	%% set AGENT_NAME = 'Hi Tech Recruitment'
+	%% set AGENT_URL = 'http://www.hitechrecruitment.com/'
+%% elif AGENT == 'tkos'
+	%% set AGENT_NAME = 'Tk Open Systems Ltd.'
+	%% set AGENT_URL = 'http://www.tkos.co.il/en/corporate/homepage.html'
+	%% set DD = true
+%% elif AGENT == 'wizedom'
+	%% set AGENT_NAME = 'Wizedom Corporate & Technical Recruiting'
+	%% set AGENT_URL = 'http://www.wizedom.com'
+%% else
+	%% set AGENT = 'unknown'
+	%% set AGENT_NAME = 'unknown'
+	%% set AGENT_URL = 'unknown'
+%% endif
+%% if AGENT != 'default'
+	%% set VS = VS + '-' + AGENT
+%% endif
+
+%% set NAME1 = 'Avraham'
+%% set NAME2 = 'Abe'
+%% set NAME3 = 'Bernstein'
+%% set NAME = NAME1 + ' ' + NAME3
+%% set GENDER = 'Male'
+%% set BDAY_PUBLIC = '1956-01-01'
+
+%% set RELATION_SPOUSE = 'Judy Bernstein +972.50.751-5111'
+%% set RELATION_CHILD = 'Yirmi Bernstein +972.53.720-1096'
+
+%% set CITY = 'Jerusalem'
+%% set CITY_DISTRICT = 'Ramot Bet'
+%% set COUNTRY = 'Israel'
+%% set COUNTRY_CODE = 'IL'
+%% set CONTINENT = 'Asia'
+%% set TZ_REGION = CONTINENT + '/' + CITY
+
+%# IL standard time
+%% set TZ_OFFSET = '+0200'
+
+%# identical spelling to google maps
+%% set POSTAL_ADDR = "Mish'ol HaUzrad 7/2"
+%% set POSTAL_ZIP = '9727433'
+
+%# 31 deg 48'30.5" N, 35 deg 12'03.4" E
+%% set GEO_COORDS = '31.808472,35.200944'
+%% set GEO_URL = 'https://www.google.com/maps/place/' + GEO_COORDS
+
+%# tel numbers on github: anti-harvesting "speed bumps"
+%% set TEL_IL_SHORT = '054' + '.' + '641' + '-' + '0955'
+
+%# schema: in-the-clear
+%% set TEL_IL_SHORT_SQUEEZED = TEL_IL_SHORT | replace('.','') | replace('-','')
+
+%# remove leading zero
+%% set TEL_IL = '+972.' + TEL_IL_SHORT[1:]
+%% set TEL_IL_SQUEEZED = TEL_IL | replace('.','') | replace('-','')
+%% set TEL_US = '+' + '1' + '.' + '845' + '.' + '402' + '-' + '0023'
+
+%% if WRITER == 'html5'
+	%% set TEL_IL_OBF = TEL_IL|html_obfs
+	%% set TEL_US_OBF = TEL_US|html_obfs
+%% else
+	%% set TEL_IL_OBF = TEL_IL|html_encode
+	%% set TEL_US_OBF = TEL_US|html_encode
+%% endif
+
+{#
+	The International Standard of Industrial Classification of All Economic Activities (ISIC).
+	https://unstats.un.org/unsd/cr/registry/isic-4.asp
+	6201 = Computer programming activities
+	6202 = Computer consultancy and computer facilities management activities
+	6209 = Other information technology and computer service activities
+#}
+%% set ISICV4 = '6209'
+
+%# email addr on github: anti-harvesting "speed bumps"
+
+%% set HOME = 'http://purl.org/' + NAME1 + '.' + NAME3
+%% set CV_HOME = HOME + '/cv/'
+%% if AGENT != 'default'
+	%% set CV_HOME = CV_HOME + AGENT + '/'
+%% endif
+%% set CV_FULL = CV_HOME + 'full.html'
+
+%% set IMAGE_URL = HOME + '/image'
+%% set VCARD3_URL = HOME + '/vcard3'
+%% set VCARD4_URL = HOME + '/vcard4'
+
+%# emails are pandoc obfuscated
+%% set EMAIL = NAME1 + '.' + NAME3 + '+cv'
+%% if AGENT != 'default'
+	%% set EMAIL = EMAIL + '+' + AGENT
+%% endif
+%% set EMAIL = EMAIL + '@gmail.com'
+%% set EMAIL_SPOKEN = NAME1 + ' DOT ' + NAME3 + ' AT gmail DOT com'
+
+%% set GTALK_ID = NAME1 + NAME3
+%% set SKYPE_ID = EMAIL
+%% set WHATSAPP_ID = TEL_IL_SQUEEZED
+%% set G_ANALYTICS_ID = 'UA-17365003-2'
+%# schema: in-the-clear so don't use email addr version
+%% set G_PLUS_ID = '110575620993497854880'
+%% set G_PLUS_URL = 'https://plus.google.com/' + G_PLUS_ID
+%% set LINKEDIN_ID = NAME1 + NAME3
+%% set LINKEDIN_URL = 'https://www.linkedin.com/in/' + LINKEDIN_ID
+%% set GITHUB_URL = 'http://purl.org/' + NAME1 + '.' + NAME3 + '/github'
+%% set GITHUB_CV_DIR_URL = GITHUB_URL + '/' + NAME1|lower + '-' + NAME3|lower + '.github.io/tree/master/cv'
+%% set PGP_FPR = 'F5D4 76DA 7B0B B46F 02DB  ED3E 86EF CDAE E664 7D2F' | replace(' ','')
+%% set PGP_ID = PGP_FPR[32:]
+%% set PGP_LOOKUP_URL = 'https://pgp.mit.edu/pks/lookup?op=vindex&search=0x' + PGP_FPR[24:]
+%% set PGP_ASC_URL = HOME + '/asc'
+
+%% set DESCRIP = NAME + ', CV, cybersecurity'
+%% set KEYS = DESCRIP + ', cyber security, obfuscation, anti-reverse engineering, pay TV, CTO, creativity, master S/W engineer, S/W architect, S/W quality, domain specific language, accessibility, blind, ' + CITY + ', ' + COUNTRY
+
+%% if not ABBREV is defined
+	%% set ABBREV = false
+	%% set FULL = true
+	%% set VS = VS + '-full'
+	%% set CV_URL = CV_HOME + 'cv-full.html'
+	%% set TITLE = NAME1 + ' "' + NAME2 + '" ' + NAME3 + ' | Master S/W Engineer | CV-Full'
+	%% set PAGE_TITLE = NAME1 + NAME3 + ':CV'
+%% else
+	%% set ABBREV = true
+	%% set FULL = false
+	%% set VS = VS + '-abbrev'
+	%% set CV_URL = CV_HOME + 'cv-abbrev.html'
+	%% set TITLE = NAME1 + ' "' + NAME2 + '" ' + NAME3 + ' | Master S/W Engineer | CV-Abbrev'
+	%% set PAGE_TITLE = NAME1 + NAME3 + ':CV'
+%% endif
+
+%% set COPYRIGHT = 'Copyright &copy; ' + YEAR + ' ' + NAME + ', ' + CITY + ' ' + COUNTRY + '. All rights reserved.'
+%% set LICENSE_URL = 'https://creativecommons.org/licenses/by-nd/4.0/'
+%% set LICENSE = 'License: Except where otherwise noted, this work is licensed under the Creative Commons License [CC BY-ND 4.0](' + LICENSE_URL + ').'
+%% if FULL
+	%% set LICENSE = LICENSE + ' Computer software source code is licensed under the [Apache License v2.0](https://opensource.org/licenses/Apache-2.0).'
+%% endif
+
+%% set TOC = '%%TOC%%'
+
+%% if WRITER == 'html5'
+	%% set BR = '<br>'
+%% else
+	%% set BR = NL
+%% endif
+
+%% if WRITER == 'html5'
+	%% set HI_BEGIN = '<span class="hi">'
+	%% set HI_END = '</span>'
+%% else
+	%% set HI_BEGIN = '__'
+	%% set HI_END = '__'
+%% endif
+
+%% macro HI(text)
+{% if WRITER == 'html5' %}<span class="hi">{% endif %}__{{text}}__{% if WRITER == 'html5' %}</span>{% endif %}
+%% endmacro
+
+%% if AGENT == 'tkos'
+	%% set HI_C = HI('C')
+	%% set HI_CPP = HI('C/C++')
+%% else
+	%% set HI_C = 'C'
+	%% set HI_CPP = 'C/C++'
+%% endif
