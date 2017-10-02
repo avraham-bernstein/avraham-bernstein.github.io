@@ -15,7 +15,8 @@ I don't know how to disable this facility, so escape them by using a backslash, 
 so make sure the document is written in ISO-8859-1.
 #}
 
-%# includes 'defs.j2' from the j2-cli.py command line
+%# includes 'defs.j2 + metadata.yaml.j2 + head.html.j2' from the j2-cli.py command line
+%# pandoc html5 writer uses local template file 'template.html5'
 
 # {{TITLE}} { #top }
 
@@ -58,13 +59,13 @@ __email:__ [{{EMAIL}}](mailto:{{EMAIL}}) [^obf-email]
 {{BR}}__geolocation:__ [{{CITY}} {{COUNTRY}}]({{GEO_URL}}), __tz:__ UTC +02:00/+03:00 \[winter/summer]
 {{BR}}__tel-IL-mobile/whatsapp:__ {{TEL_IL_OBF}}
 {{BR}}__tel-US-mobile:__ {{TEL_US_OBF}}
-{{BR}}__www-home:__ [{{HOME}}]({{HOME}})
+{{BR}}__www-home:__ [{{HOME_URL}}]({{HOME_URL}})
 {{BR}}__linkedin:__ [{{LINKEDIN_URL}}]({{LINKEDIN_URL}})
-{{BR}}__cv-abbrev:__ [HTML]({{CV_HOME}}abbrev.html), [DOCX]({{CV_HOME}}abbrev.docx), [PDF]({{CV_HOME}}abbrev.pdf)
+{{BR}}__cv-abbrev:__ [HTML]({{CV_ABBREV_HTML_URL}}), [DOCX]({{CV_ABBREV_DOCX_URL}}), [PDF]({{CV_ABBREV_PDF_URL}})
 %% if ABBREV
 __\[this file]__
 %% endif
-{{BR}}__cv-full:__ [HTML]({{CV_HOME}}full.html), [DOCX]({{CV_HOME}}full.docx), [PDF]({{CV_HOME}}full.pdf)
+{{BR}}__cv-full:__ [HTML]({{CV_FULL_HTML_URL}}), [DOCX]({{CV_FULL_DOCX_URL}}), [PDF]({{CV_FULL_PDF_URL}})
 %% if FULL
 __\[this file]__
 %% endif
@@ -84,29 +85,29 @@ __\[this file]__
 
 I am an experienced computer scientist and S/W architect. I have devised innovative solutions to many S/W problems for a wide range of fields, including:
 
-* [cybersecurity]({% if ABBREV %}{{CV_FULL}}{% endif %}#viaccess)
-* [cryptography]({% if ABBREV %}{{CV_FULL}}{% endif %}#viaccess)
-* [bioinformatics]({% if ABBREV %}{{CV_FULL}}{% endif %}#syntezza)
-* [transportation vehicle route guidance]({% if ABBREV %}{{CV_FULL}}{% endif %}#telequest)
-* [factory automation]({% if ABBREV %}{{CV_FULL}}{% endif %}#iscar)
-* [automated testing]({% if ABBREV %}{{CV_FULL}}{% endif %}#elop)
-* [blind vision]({% if ABBREV %}{{CV_FULL}}{% endif %}#virtouch)
-* [accessibility]({% if ABBREV %}{{CV_FULL}}{% endif %}#light-pen)
-* [telecommunications]({% if ABBREV %}{{CV_FULL}}{% endif %}#vyyo)
-* {% if AGENT == 'arm' %}{{HI_BEGIN}}{% endif %}[VLSI CPU design]({% if ABBREV %}{{CV_FULL}}{% endif %}#dspg){% if AGENT == 'arm' %}{{HI_END}}{% endif %}
+* [cybersecurity]({{FULL_LINK('viaccess')}})
+* [cryptography]({{FULL_LINK('viaccess')}})
+* [bioinformatics]({{FULL_LINK('syntezza')}})
+* [transportation vehicle route guidance]({{FULL_LINK('telequest')}})
+* [factory automation]({{FULL_LINK('iscar')}})
+* [automated testing]({{FULL_LINK('elop')}})
+* [blind vision]({{FULL_LINK('virtouch')}})
+* [accessibility]({{FULL_LINK('light-pen')}})
+* [telecommunications]({{FULL_LINK('vyyo')}})
+* {% if AGENT == 'arm' %}{{HI_BEGIN}}{% endif %}[VLSI CPU design]({{FULL_LINK('dspg')}}){% if AGENT == 'arm' %}{{HI_END}}{% endif %}
 
 
 I have worked for a number of organizations, large and small, and helped them realize improvements in their product performance, often putting them in the front rank in their field. I have acquired expert knowledge in a number of fields, often liaising with noted experts, and have been able to quickly apply this knowledge to improve the competitive position of the companies and their products. I have a keen interest in computer languages, both practical and theoretical. I have created a number of [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) that were instrumental in greatly simplifying seemingly intractable problems.
 
 In order to understand my S/W design principles, see the following appendices{% if ABBREV %} (in the full version of my CV){% endif %}:
 
-* [Programming Language Preferences and Musings]({% if ABBREV %}{{CV_FULL}}{% endif %}#appendix-programming-languages)
-* [Domain Specific Languages]({% if ABBREV %}{{CV_FULL}}{% endif %}#appendix-dsl)
-* [How To Write Correct, Maintainable, Secure, and Easy-to-Test Code]({% if ABBREV %}{{CV_FULL}}{% endif %}#appendix-programming-testable)
+* [Programming Language Preferences and Musings]({{FULL_LINK('appendix-programming-languages')}})
+* [Domain Specific Languages]({{FULL_LINK('appendix-dsl')}})
+* [How To Write Correct, Maintainable, Secure, and Easy-to-Test Code]({{FULL_LINK('appendix-programming-testable')}})
 
 
 %% if AGENT == 'it'
-### 1.1 IT, Cobol, Adabas, Natural, C#, IBM Mainframes, and ETL Programming Credentials
+### 1.1 IT, Cobol, Adabas, Natural, C#, IBM Mainframes, and ETL Programming Credentials { #it }
 
 #. {{HI_BEGIN}}This section is admittedly unusual, and may be too difficult for non-technical people to comprehend. So please bear with me. In spite of my best efforts to make it understandable, if you still find it difficult to understand how using my skills would immediately benefit your organization, then please pass my CV on to someone more technical or more senior in your organization who can.{{HI_END}}
 #. {{HI_BEGIN}}As you can see in my CV, I have no substantive credentials doing IT work, or working with Cobol, Adabas, Natural, C#, or IBM mainframes.{{HI_END}}
@@ -121,23 +122,11 @@ In order to understand my S/W design principles, see the following appendices{% 
 #. I am also an economist where the application domain of many IT systems is in fact financial. It helps a great deal to have a strong understanding of the underlying application domain.
 #. {{HI_BEGIN}}For the rest of my career, I have decided that I would prefer to work and lecture in Jerusalem, and no longer wish to make the daily commute to Tel Aviv.{{HI_END}}
 #. {{HI_BEGIN}}Because Jerusalem has a lot more IT jobs than hi-tech, it makes sense for me to "convert" to the IT field, where I can make just as strong a contribution as I did in hi-tech.{{HI_END}}
-#. {{HI_BEGIN}}Bottom line, when hiring someone for a project that has a duration of more than a few months, the most critical requirements are his level of understanding of core programming and architectural concepts, and _not_ whether he needs an extra week or two to come up to speed in order to become familiar with the specific S/W toolchain. For example, note my recent smashing success in the field of [bioinformatics]({% if ABBREV %}{{CV_FULL}}{% endif %}#syntezza), where even though I had absolutely zero background in the fields of bioinformatics, biology, biochemistry, and genetics, still within 3 months I invented a solution for the client that saved them from bankruptcy.{{HI_END}}
+#. {{HI_BEGIN}}Bottom line, when hiring someone for a project that has a duration of more than a few months, the most critical requirements are his level of understanding of core programming and architectural concepts, and _not_ whether he needs an extra week or two to come up to speed in order to become familiar with the specific S/W toolchain. For example, note my recent smashing success in the field of [bioinformatics]({{FULL_LINK('syntezza')}}), where even though I had absolutely zero background in the fields of bioinformatics, biology, biochemistry, and genetics, still within 3 months I invented a solution for the client that saved them from bankruptcy.{{HI_END}}
 %% endif
 {{NL}}
 
 ## 2.0 Work Experience
-
-%% macro DETAILS(id)
-{% if ABBREV %} See [details]({{CV_FULL}}#{{id}}).{% endif %}
-%% endmacro
-
-%% macro JOB(id,title,company,details_flag=true)
-{{NL}}###{% if ABBREV %}#{% endif %} {{title}} { #{{id}} }
-
-_\@{{company}}{% if FULL %}_{% elif details_flag %}:_ {{DETAILS(id)}}{% else %}_{% endif %}
-%% endmacro
-
-%% set KEYS = BR + 'Keys:'
 
 
 {{ JOB(
@@ -178,7 +167,7 @@ Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/Pla
 #. I developed vector operations for the C preprocessor that allowed a stream cipher to be applied to a constant string _pre-compile_ time that was used to shroud function name strings that were dynamically loaded using `dlsym()`.
 #. I was responsible for the purchase decisions and usage policy of 3rd party obfuscation and cryptographic utilities and libraries. The two main 3rd party utilities that we used were the InterTrust WhiteCryption [SCP](https://www.intertrust.com/products/application-shielding/code-protection/) obfuscating C/C++ compiler and their [SKB](https://www.intertrust.com/products/application-shielding/secure-key-box/) "whitebox" cryptographic library{% if FULL %}. I worked with the WhiteCryption team to specify new features for their tools. For example, even though their [UPX-like](https://en.wikipedia.org/wiki/UPX) tool statically encrypts and packs a DSO, it automatically decrypts it when it is loaded - allowing anyone to load it including an attacker who wants to do reconnaissance, so we added a password protection mechanism using a global operating system object, i.e. an environment variable or a file{% endif %}.
 %% if ABBREV
-#. See [more details]({{CV_FULL}}#viaccess).
+#. See [more details]({{CV_FULL_HTML_URL}}#viaccess).
 %% else
 #. I developed a post-processor to obfuscate binary object ELF files.
 #. I developed a background watchdog security thread to dynamically ensure that the binary code had not been tampered with.
@@ -740,7 +729,7 @@ I configured computer simulations of electric power generating systems for the p
 
 #### 1979: York University, Canada: MA Economics & Applied Mathematics { #york-univ }
 
-{{DETAILS('york-univ')}}
+{{SEE_DETAILS('york-univ')}}
 %% if FULL
 I passed my final examinations in economic theory before I even started the program, so in order to achieve my required course credits the faculty agreed to allow me to be a special student at the Univ. of Toronto graduate faculty of engineering, where I took the majority of my courses. My major project was a computer simulation in __Fortran__ how to cost efficiently operate a hydro-electric dam. I was mentored by an economist from Ontario Hydro (i.e. at that time the name of Ontario's electric generation and transmission utility).
 %% endif
@@ -749,7 +738,7 @@ I passed my final examinations in economic theory before I even started the prog
 
 #### 1977: University of Toronto - Rotman School of Management (MBA Program): No Degree { #univ-toronto-mba }
 
-{{DETAILS('univ-toronto-mba')}}
+{{SEE_DETAILS('univ-toronto-mba')}}
 %% if FULL
 I "dropped out" of school in the middle of the year after taking an advanced micro-economic theory course which analyzed the Ontario Hydro [marginal cost pricing](https://en.wikipedia.org/wiki/Marginal_cost) submission to the [Ontario Energy Board (OEB)](#oeb) above, in order to take advantage of the unusual opportunity to present Ontario Hydro's case for them, which they were forced to drop for political reasons. The following year I was able to apply my course credits to an MA Economics program at [York University](#york-univ) above.
 %% endif
@@ -758,7 +747,7 @@ I "dropped out" of school in the middle of the year after taking an advanced mic
 
 #### 1976: University of Toronto: BA Economics & Applied Mathematics { #univ-toronto-ba }
 
-{{DETAILS('univ-toronto-ba')}}
+{{SEE_DETAILS('univ-toronto-ba')}}
 %% if FULL
 The most memorable and still useful courses I took were in statistics, experimental design, game theory, advanced calculus, and microeconomics.
 
@@ -769,7 +758,7 @@ The most memorable and still useful courses I took were in statistics, experimen
 
 ### 3.2 Continuing Education
 
-{% if FULL %}#. {% endif %}Today the field of computer science is changing so rapidly that one's formal education has a half-life of less than 5 years. Therefore in order to maintain my state-of-the-art professional edge, I am involved in an intensive effort of continuing education.{{DETAILS('continuing-education')}}
+{% if FULL %}#. {% endif %}Today the field of computer science is changing so rapidly that one's formal education has a half-life of less than 5 years. Therefore in order to maintain my state-of-the-art professional edge, I am involved in an intensive effort of continuing education.{{SEE_DETAILS('continuing-education')}}
 %% if FULL
 #. From 1991-96, pre-Internet, I used to spend one afternoon per week reading at the Hebrew University Jerusalem (HUJI) computer science library.
 #. Afterwards with the advent of the Internet, more up-to-date computer science topics were available on the Internet, so going to the library was no longer the most efficient way to keep updated.
