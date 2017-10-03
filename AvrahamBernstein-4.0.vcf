@@ -2,7 +2,7 @@ BEGIN:VCARD
 VERSION:4.0
 SOURCE:http://purl.org/Avraham.Bernstein/vcard4
 UID:7e341102-0e27-58c3-a4c6-0c5c564e81d7
-REV:20170825T152627Z
+REV:20171003T131048Z
 KIND:individual
 FN:Avraham Bernstein
 N:Bernstein;Avraham;;Mr.;
@@ -29,8 +29,7 @@ IMPP;PREF=3:skype:Avraham.Bernstein@gmail.com
 TEL;PREF=1;VALUE=uri;TYPE=cell,voice,text:tel:+972.54.641-0955
 TEL;PREF=2;VALUE=uri;TYPE=cell,voice,text:tel:+1.845.402-0023
 URL;TYPE=home:http://purl.org/Avraham.Bernstein
-URL;PREF=1;TYPE=work:http://purl.org/Avraham.Bernstein/cv.html
+URL;PREF=1;TYPE=work:http://purl.org/Avraham.Bernstein/cv/abbrev.html
 URL;PREF=2;TYPE=work:https://www.linkedin.com/in/AvrahamBernstein
 KEY;MEDIATYPE=application/pgp-keys:http://purl.org/Avraham.Bernstein/asc
 END:VCARD
-
