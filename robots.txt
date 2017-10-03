@@ -1,8 +1,9 @@
 User-agent: *
-Disallow: /cv/ardix
-Disallow: /cv/arm
-Disallow: /cv/hammelburg
-Disallow: /cv/it
-Disallow: /cv/tkos
-Disallow: /cv/wizedom
-
+Disallow: /cv/ardix/
+Disallow: /cv/arm/
+Disallow: /cv/hammelburg/
+Disallow: /cv/it/
+Disallow: /cv/tkos/
+Disallow: /cv/wizedom/
+Disallow: /AvrahamBernstein-3.0.vcf
+Disallow: /AvrahamBernstein-4.0.vcf
