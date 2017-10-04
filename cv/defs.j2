@@ -16,7 +16,7 @@ so make sure the document is written in ISO-8859-1.
 #}
 
 %% set LANG = 'en-US'
-%% set VS = '3.3.1'
+%% set VS = '3.4'
 %% set VS_ORIG_DATE = '2017-07-23'
 
 %% if not TS is defined
@@ -144,12 +144,13 @@ so make sure the document is written in ISO-8859-1.
 %% set VCARD4_URL = HOME_URL + '/vcard4'
 
 %# emails are pandoc obfuscated
-%% set EMAIL = NAME1 + '.' + NAME3 + '+cv'
-%% if AGENT != 'default'
-	%% set EMAIL = EMAIL + '+' + AGENT
-%% endif
-%% set EMAIL = EMAIL + '@gmail.com'
+%% set EMAIL = NAME1 + '.' + NAME3 + '@gmail.com'
 %% set EMAIL_SPOKEN = NAME1 + ' DOT ' + NAME3 + ' AT gmail DOT com'
+%% set EMAIL_CV = NAME1 + '.' + NAME3 + '+cv'
+%% if AGENT != 'default'
+	%% set EMAIL_CV = EMAIL_CV + '+' + AGENT
+%% endif
+%% set EMAIL_CV = EMAIL_CV + '@gmail.com'
 
 %% set GTALK_ID = NAME1 + NAME3
 %% set SKYPE_ID = EMAIL
@@ -169,19 +170,21 @@ so make sure the document is written in ISO-8859-1.
 %% set DESCRIP = NAME + ', CV, cybersecurity'
 %% set KEYWORDS = DESCRIP + ', cyber security, obfuscation, anti-reverse engineering, pay TV, CTO, creativity, master S/W engineer, S/W architect, S/W quality, domain specific language, accessibility, blind, ' + CITY + ', ' + COUNTRY
 
+%% set PAGE_TITLE = NAME1 + NAME3 + ':CV:'
 %% set TITLE = NAME1 + ' "' + NAME2 + '" ' + NAME3 + ' | Master S/W Engineer | CV-'
-%% set PAGE_TITLE = NAME1 + NAME3 + ':CV'
 %% if not ABBREV is defined
 	%% set ABBREV = false
 	%% set FULL = true
 	%% set VS = VS + '-full'
 	%% set TITLE = TITLE + 'Full'
+	%% set PAGE_TITLE = PAGE_TITLE + 'Full'
 	%% set CV_URL = CV_FULL_HTML_URL
 %% else
 	%% set ABBREV = true
 	%% set FULL = false
 	%% set VS = VS + '-abbrev'
 	%% set TITLE = TITLE + 'Abbrev'
+	%% set PAGE_TITLE = PAGE_TITLE + 'Abbrev'
 	%% set CV_URL = CV_ABBREV_HTML_URL
 %% endif
 
@@ -224,7 +227,7 @@ so make sure the document is written in ISO-8859-1.
 	%% set HI_CPP = 'C/C++'
 %% endif
 
-%% macro FULL_LINK(id)
+%% macro CV_FULL_LINK(id)
 {% if ABBREV %}{{CV_FULL_HTML_URL}}{% endif %}#{{id}}
 %% endmacro
 

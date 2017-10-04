@@ -1,0 +1,13 @@
+vs: 3.4, 2017-10-04
+
+1. robots.txt: comment
+2. defs.j2: create separate vars for EMAIL and EMAIL_CV in order to correct bug in VCF files
+3. defs.j2: renamed FULL_LINK macro to CV_FULL_LINK
+4. defs.j2: PAGE_TITLE adds suffix Abbrev | Full
+5. cv.md: use EMAIL_CV instead of EMAIL, and CV_FULL_LINK instead of FULL_LINK
+6. cv.md: musings appendix A: about C11 and C99
+7. cv.md: testing appendix C: replace efficient with effective
+8. cv.md: testing appendix C: add password hash security tip
+9. cv.md: viaccess: changed both full and abbrev description
+10. cv.md: nds: added more meat to abbrev description
+11. cv.md: contact info: HTML (easiest to read), and changed "this file" to "this version"
