@@ -25,3 +25,7 @@ vs: 4.0, 2017-10-09
 8. defs.j2: removed 'arm' and 'it' agents
 9. defs.j2: new macros HTML_DETAILS_BEGIN/MID/END specific to ABBREV and WRITER == 'html5'
 10. defs.j2: removed -Abbrev from title
+
+vs: 4.0.1, 2017-10-09
+
+1. cv.md: minor grammar mistakes in appendices A & B.
