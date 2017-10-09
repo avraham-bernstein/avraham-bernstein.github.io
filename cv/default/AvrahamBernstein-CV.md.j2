@@ -65,11 +65,11 @@ __email:__ [{{EMAIL_CV}}](mailto:{{EMAIL_CV}})
 {{BR}}__tel-US-mobile:__ {{TEL_US_OBF}}
 {{BR}}__www-home:__ [{{HOME_URL}}]({{HOME_URL}})
 {{BR}}__linkedin:__ [{{LINKEDIN_URL}}]({{LINKEDIN_URL}})
-{{BR}}__cv-abbrev:__ [HTML (easiest to read)]({{CV_ABBREV_HTML_URL}}), [DOCX]({{CV_ABBREV_DOCX_URL}}), [PDF]({{CV_ABBREV_PDF_URL}})
+{{BR}}__cv-abbrev:__ [HTML (easiest to read)]({{CV_ABBREV_HTML_URL}}), [PDF]({{CV_ABBREV_PDF_URL}}), [DOCX]({{CV_ABBREV_DOCX_URL}})
 %% if ABBREV
 __\[this version]__
 %% endif
-{{BR}}__cv-full:__ [HTML (easiest to read)]({{CV_FULL_HTML_URL}}), [DOCX]({{CV_FULL_DOCX_URL}}), [PDF]({{CV_FULL_PDF_URL}})
+{{BR}}__cv-full:__ [HTML (easiest to read)]({{CV_FULL_HTML_URL}}), [PDF]({{CV_FULL_PDF_URL}}), [DOCX]({{CV_FULL_DOCX_URL}})
 %% if FULL
 __\[this version]__
 %% endif
@@ -87,22 +87,27 @@ __\[this version]__
 %% endif
 {{NL}}
 
-
 ## 1.0 Summary
 
 I am an experienced "hands-on" computer scientist and S/W architect. I devised innovative algorithms and solutions for many S/W problems in a wide range of fields, including:
 
-* [cybersecurity]({{CV_FULL_LINK('viaccess')}})
-* [cryptography]({{CV_FULL_LINK('viaccess')}})
-* [bioinformatics]({{CV_FULL_LINK('syntezza')}})
-* [transportation vehicle route guidance]({{CV_FULL_LINK('telequest')}})
-* [factory automation]({{CV_FULL_LINK('iscar')}})
-* [automated testing]({{CV_FULL_LINK('elop')}})
-* [blind vision]({{CV_FULL_LINK('virtouch')}})
-* [accessibility]({{CV_FULL_LINK('light-pen')}})
-* [telecommunications]({{CV_FULL_LINK('vyyo')}})
-* {% if AGENT == 'arm' %}{{HI_BEGIN}}{% endif %}[VLSI CPU design]({{CV_FULL_LINK('dspg')}}){% if AGENT == 'arm' %}{{HI_END}}{% endif %}
-
+* __cybersecurity & cryptography:__ [Viaccess-Orca](#viaccess), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Anonymous]({{CV_FULL_LINK('cybersec-anonymous')}})
+* __data science, big data, & database:__ [Viaccess-Orca](#viaccess), [DEC & Iscar](#iscar), [Michlala College](#michlala)
+* __bioinformatics:__ [Syntezza](#syntezza)
+* __transportation vehicle route guidance:__ [Telequest](#telequest)
+* __blind vision:__ [Virtouch](#virtouch)
+* __accessibility & biofeedback:__ [Scitex-Cubital](#light-pen), [Self-Startup]({{CV_FULL_LINK('gait-monitoring')}}), [Mindlife-Ultramind]({{CV_FULL_LINK('ultramind')}})
+* __telecommunications:__ [Vyyo](#vyyo), [MRV-Jolt]({{CV_FULL_LINK('jolt')}}), [One Path Networks - Foxcom](#foxcom)
+* __VLSI CPU design:__ [DSPG](#dspg)
+* __factory automation:__ [DEC & Iscar](#iscar), [Newport-Optimet]({{CV_FULL_LINK('optimet')}}), [Orisol]({{CV_FULL_LINK('orisol')}})
+* __3D printing__: [Scitex-Cubital]({{CV_FULL_LINK('cubital')}})
+* __radar:__ [IAI-Elta & DSI](#elta)
+* __automated testing:__ [Elbit-Elop]({{CV_FULL_LINK('elop')}}), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Vyyo](#vyyo), [DSPG](#dspg)
+* __sysadmin:__ [Scitex-Cubital](#cubital), [John Bryce]({{CV_FULL_LINK('john-bryce')}}), [Mitre Corp](#mitre)
+%% if not DD
+* __CTO and VP R&D:__ [Telequest](#telequest), [Nigeria]({{CV_FULL_LINK('agritech')}}), [China]({{CV_FULL_LINK('china')}}), [Virtouch](#virtouch), [Pitkha & Elbit-Elop]({{CV_FULL_LINK('elop')}}), [Pitkha & DSPG](#dspg)
+%% endif
+{{NL}}
 
 I have worked for a number of organizations, large and small, and helped them realize improvements in their product performance, often putting them in the front rank in their field. I have acquired expert knowledge in a number of fields, often liaising with noted experts, and have been able to quickly apply this knowledge to improve the competitive position of the companies and their products. I have a keen interest in computer languages and compilers. I have created a number of [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) that were instrumental in greatly simplifying seemingly intractable problems.
 
@@ -112,26 +117,8 @@ In order to understand my S/W design principles, see the following appendices{% 
 * [Domain Specific Languages]({{CV_FULL_LINK('appendix-dsl')}})
 * [How To Write Correct, Maintainable, Secure, and Easy-to-Test Code]({{CV_FULL_LINK('appendix-programming-testable')}})
 
+{{HI_BEGIN}}When hiring a senior engineer for a S/W project that has a duration of more than a few months, the most critical requirements are his level of understanding of core programming and architectural concepts, his creativity and innovation track record, and _not_ whether he needs an extra week or two to come up to speed in order to become familiar with the specific programming language and toolchain. For example, note my recent smashing success in the field of [bioinformatics](#syntezza), where even though I had absolutely zero background in the fields of bioinformatics, biology, biochemistry, and genetics, still within 3 months (admittedly with the help of an excellent mentor) I invented a solution for the client that saved them from bankruptcy.{{HI_END}}
 
-%% if AGENT == 'it'
-### 1.1 IT, Cobol, Adabas, Natural, C#, IBM Mainframes, and ETL Programming Credentials { #it }
-
-#. {{HI_BEGIN}}This section is admittedly unusual, and may be too difficult for non-technical people to comprehend. So please bear with me. In spite of my best efforts to make it understandable, if you still find it difficult to understand how using my skills would immediately benefit your organization, then please pass my CV on to someone more technical or more senior in your organization who can.{{HI_END}}
-#. {{HI_BEGIN}}As you can see in my CV, I have no substantive credentials doing IT work, or working with Cobol, Adabas, Natural, C#, or IBM mainframes.{{HI_END}}
-#. {{HI_BEGIN}}However it should be clear that I am an accomplished computers scientist. I am a [polyglot](http://www.dictionary.com/browse/polyglot). I am an expert in many computer languages, and I comfortably work with many more. I write compilers and [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) so learning a new language, and being able to work with it at a professional level, usually takes me about a week.{{HI_END}}
-#. I am an expert in applying templates and macros to any programming language. These macros and templates allow the underlying language to incorporate the latest programming concepts and features while still emitting valid (and human understandable) source code in the original language.
-#. Similarly I am very familiar with a number of operating systems.
-#. I was the architect of a major soft real-time project in SQL, and I taught a university level course in databases.
-#. Regarding ETL, my compiler background allows me to write conversion filters "in my sleep".
-#. I am a cybersecurity expert, and therefore have a much better eye for detecting and resolving security issues.
-#. I have a strong theoretical background that allows me to engage in conversion projects of legacy S/W and H/W to modern systems. Everyone in the IT business is aware that the major force driving conversions is that the number of programmers who can maintain legacy systems using the original S/W and H/W is dwindling as they reach retirement age, while few quality graduates are willing to consider entering this field because they don't want their CV to show that their only experience is using archaic tools and systems.
-#. I have a strong background in automated testing which I have done for telecommunication and military systems.
-#. I am also an economist where the application domain of many IT systems is in fact financial. It helps a great deal to have a strong understanding of the underlying application domain.
-#. {{HI_BEGIN}}For the rest of my career, I have decided that I would prefer to work and lecture in Jerusalem, and no longer wish to make the daily commute to Tel Aviv.{{HI_END}}
-#. {{HI_BEGIN}}Because Jerusalem has a lot more IT jobs than hi-tech, it makes sense for me to "convert" to the IT field, where I can make just as strong a contribution as I did in hi-tech.{{HI_END}}
-#. {{HI_BEGIN}}Bottom line, when hiring someone for a project that has a duration of more than a few months, the most critical requirements are his level of understanding of core programming and architectural concepts, and _not_ whether he needs an extra week or two to come up to speed in order to become familiar with the specific S/W toolchain. For example, note my recent smashing success in the field of [bioinformatics]({{CV_FULL_LINK('syntezza')}}), where even though I had absolutely zero background in the fields of bioinformatics, biology, biochemistry, and genetics, still within 3 months I invented a solution for the client that saved them from bankruptcy.{{HI_END}}
-%% endif
-{{NL}}
 
 ## 2.0 Work Experience
 
@@ -153,13 +140,19 @@ In order to understand my S/W design principles, see the following appendices{% 
 	'2011-17: Viaccess-Orca: Security Policy Mngr & Architect: Cybersecurity: OTT Internet Pay TV System',
 	'[Viaccess-Orca](https://www.viaccess-orca.com/), Ra\'anana - a subsidiary of \@Orange France, and \@Discretix/[Sansa Security](https://www.geektime.com/2015/07/30/arm-acquires-israeli-sansa-security-to-protect-iot-and-cellular-devices/), Netanya recently acquired by \@ARM'
 ) }}
-{{KEYS}} cybersecurity, DRM, architect, algorithms, anti-reverse engineering, obfuscation, hacking, LLVM compiler, cryptography, data science, fuzzy logic, {{HI_CPP}}, Python, TCL, bash, Java, Android root detection, IOS, Linux, ELF binary editor
+{{KEYS}} cybersecurity, DRM, architect, algorithms, anti-reverse engineering, obfuscation, hacking, LLVM compiler, cryptography, data science, big data, fuzzy logic, {{HI_CPP}}, Python, TCL, bash, Java, Android root detection, IOS, Linux, ELF binary editor
 
-#. The product was an [Over-The-Top (OTT)](https://en.wikipedia.org/wiki/Over-the-top_content) Internet pay TV system. We provided the S/W infrastructure to our customers, the satellite and cable pay TV operators, so they could also provide an OTT service to their subscribers in order that they could try to compete with  [Netflix](https://www.netflix.com/il-en/). The system was designed for small screen Android and IOS devices, i.e. up to 10 inches. We used [DRM](https://en.wikipedia.org/wiki/Digital_rights_management) to encrypt the content.
+{{HTML_DETAILS_BEGIN}}
+The product was an [Over-The-Top (OTT)](https://en.wikipedia.org/wiki/Over-the-top_content) Internet pay TV system. We provided the S/W infrastructure to our customers, the satellite and cable pay TV operators, so they could also provide an OTT service to their subscribers in order that they could try to compete with  [Netflix](https://www.netflix.com/il-en/). The system was designed for small screen Android and IOS devices, i.e. up to 10 inches. We used [DRM](https://en.wikipedia.org/wiki/Digital_rights_management) to encrypt the content.
 %% if FULL
 Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/PlayReady), and later on their own proprietary in-house DRM, and finally also Google's [Widevine](https://www.widevine.com/wv_drm.html).
 %% endif
-#. I was responsible for security policy and security architecture. I worked closely with the product management and the S/W development team leader in order to specify security requirements along with analyzing their costs and benefits. Either I was the architect of the implementation, or I purchased a third party tool.
+{{NL}}
+I was responsible for security policy and security architecture. I worked closely with the product management and the S/W development team leader in order to specify security requirements along with analyzing their costs and benefits. I was the architect of feature implementation in which case I typically wrote a working proof-of-concept on account of its complexity.
+And I was responsible for evaluation, purchase, and configuration of third party tools.
+
+{{HI_BEGIN}}At the end of my 6 year tenure there were 40M subscribers, and no security breaches.{{HI_END}}
+{{HTML_DETAILS_MID}}
 %% if ABBREV
 #. Our workhorse third party tools were the [InterTrust WhiteCryption](https://www.intertrust.com/products/application-shielding/) [SCP](https://www.intertrust.com/products/application-shielding/code-protection/) [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) C/C++ compiler and their [SKB](https://www.intertrust.com/products/application-shielding/secure-key-box/) [white box cryptographic](http://www.whiteboxcrypto.com/) library. I worked very closely with the vendor's development team because at the time (2014) of our original purchase their SCP obfuscating compiler was new and still had "teething pains". They were aware that I had built a similar in-house product for [NDS]({{CV_FULL_LINK('nds')}}), so they were happy to cooperate. Given that it takes 5-10 man-years to create a polished product, and Viaccess-Orca needed the product immediately, and anyway did not have the manpower to build it in-house, therefore the purchase decision was a "no brainer".
 %% endif
@@ -172,20 +165,18 @@ Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/Pla
 #. The challenges of implementing obfuscation are that (1) the other programmers should not be concerned about it because their focus must be on writing correct code, and (2) the resulting increase in size and reduction in run-time speed must not noticeably reduce the usability/functionality of the application. In general the aim of obfuscation is to provide "good enough security" that will deter 95% of potential attackers, and when combined with regular application updates will force an attacker to begin his next reverse engineering attempt from scratch.
 #. I developed a lightweight obfuscated cryptographic library implemented as a H file using `inline` functions so that every module that included it had its own private copy of the library with a module specific randomized implementation which prevented an attack against a single core cryptographic module that could potentially subvert the whole application. Due to performance reasons, there were many cases where we could not afford to use AES, especially during the performance critical movie playback which itself relied upon AES decryption, therefore in these cases we used lightweight algorithms instead, e.g. [Xorshift PRNG](https://en.wikipedia.org/wiki/Xorshift) [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher).
 #. I developed a light weight dynamically randomized method to efficiently shroud all system calls so that their address is calculated just-in-time in registers before the call is made. The technique fooled the professional reverse engineering debuggers [Hex-Rays](https://www.hex-rays.com/) and [OllyDbg](https://en.wikipedia.org/wiki/OllyDbg) which normally can automatically identify and place anchors on the system calls.
-#. One of my more important and challenging hacks was to generate a [dynamic share object library (DSO)](https://en.wikipedia.org/wiki/Library_(computing)) (i.e. an `.so` file) that formally exports no symbols - _prima facie_ an [oxymoron](https://www.merriam-webster.com/dictionary/oxymoron). In fact I used an asynchronous back channel that allowed the DSO to communicate with its caller by using a function declared with the [gcc constructor attribute](https://stackoverflow.com/questions/2053029/how-exactly-does-attribute-constructor-work) that executes before `dlopen()` returns. Typically this technique could be applied to _binary_ DSOs from our third party vendors _without their knowledge_, by doing binary object file "surgery" (i.e. editing), which would allow us to export our symbol free DSOs to them. We were faced with the challenge of securing a critical third party library, i.e. the video [codec](https://en.wikipedia.org/wiki/Codec), which did not incorporate any obfuscation and where the vendor would not allow us to see or to suggest any modifications to their proprietary source code. They produced a single "one size fits all" library for all of their clients. Without securing this library, it was an ideal attack vector.
+#. One of my more important and challenging hacks was to generate a [dynamic share object library (DSO)](https://en.wikipedia.org/wiki/Library_(computing)) (i.e. an `.so` file) that formally exports no symbols - _prima facie_ an [oxymoron](https://www.merriam-webster.com/dictionary/oxymoron). In fact I used an asynchronous back channel that allowed the DSO to communicate with its caller by using a function declared with the [gcc constructor attribute](https://stackoverflow.com/questions/2053029/how-exactly-does-attribute-constructor-work) that executes before `dlopen()` returns. We were faced with the challenge of securing a critical third party library, i.e. the video [codec](https://en.wikipedia.org/wiki/Codec), which did not incorporate any obfuscation and where the vendor would not allow us to see or to suggest any modifications to their proprietary source code. They produced a single "one size fits all" library for all of their clients. Without securing this library, it was an ideal attack vector.
 #. I was responsible for the purchase decisions and usage policy of third party tools. Our workhorse third party tools were the [InterTrust WhiteCryption](https://www.intertrust.com/products/application-shielding/) [SCP](https://www.intertrust.com/products/application-shielding/code-protection/) obfuscating C/C++ compiler and their [SKB](https://www.intertrust.com/products/application-shielding/secure-key-box/) [white box cryptographic](http://www.whiteboxcrypto.com/) library. I worked very closely with the vendor's development team because at the time (2014) of our original purchase their SCP obfuscating compiler was new and still had "teething pains". They were aware that I had built a similar in-house product for [NDS]({{CV_FULL_LINK('nds')}}), so they were happy to cooperate. Given that it takes 5-10 man-years to create a polished product, and Viaccess-Orca needed the product immediately, and anyway did not have the manpower to build it in-house, therefore the purchase decision was a "no brainer".
 For example, one of the features that I architected for them was to improve the security of their [UPX-like](https://en.wikipedia.org/wiki/UPX) tool that encrypts and packs a DSO that makes it extremely difficult to do a _static_ reverse engineering analysis of the DSO _file_, however it automatically decrypts the DSO when loading it into process memory, thus allowing anyone to load it including an attacker who wants to do reconnaissance. So we added a password protection mechanism on load using a global operating system object, i.e. an environment variable or a file, where the object name and password value were declared in the developer's configuration file.
-#. I developed vector operations for the C preprocessor that allowed a stream cipher to be applied to a constant string _pre-compile_ time that was used to shroud function name strings that were dynamically loaded using `dlsym()`.
 #. I developed a post-processor to obfuscate binary object ELF files.
 #. I developed a background watchdog security thread to dynamically ensure that the binary code had not been tampered with.
-#. I developed vector operations for the C preprocessor that allowed a stream cipher to be applied to a constant string _pre-compile_ time that was used to shroud function name strings that were dynamically loaded using `dlsym()`.
+#. I developed vector operations for the C preprocessor `cpp` that allowed a stream cipher to be applied to a constant string _pre-compile_ time that was used to shroud function name strings that were dynamically loaded using `dlsym()`.
 #. I developed a technique for Android that would cause the application to abort if the Android debugger process `adb` were active. The vast majority of attacks are launched via an `adb` connection. On the other hand, it is not possible for most Android development environments to build a version of an app without an `adb` connection, and it is not possible for developers or field support technicians to debug a "release" version without an `adb` connection. Therefore my solution was to create a mechanism for time limited passwords linked to the device ID. Otherwise without these credentials, the app would abort when it detected an `adb` connection.
 #. One of the most difficult architectural problems was to patch/update the application in a timely manner once a subscriber had already downloaded it. The final application was created by our customers, i.e. the satellite/cable operators. We supplied them with core libraries only. Therefore we did not have access to the enterprise keys from the Google Play Store or Apple App Store that were required to automatically push an update, e.g. to modify a configuration file with a new password due to a security breach on a server. The original security architect naively assumed that we would achieve higher security by building a customer specific version of our core module where we "baked" (i.e. embedded) in the customer's keys instead of using a separate customer specific configuration file to be dynamically loaded upon each invocation of the application. The customers were justifiably "paranoid" about demanding a very high level of quality assurance before making a release, because a single major bug could swamp them with tens of thousands of support calls where the cost of handling a single call could be greater than the monthly subscription fee. Typically their release cycle was every 6-12 months. Therefore the customers would never dare allow us to automatically push code to their subscribers that they did not yet vet. Eventually I architected a technical solution that allowed us to automatically push configuration files to the subscribers where we would givJOBe the customers 7 days prior notice. The solution also required that the servers support two sets of passwords and/or subscriber credentials during a key transition period.
 %% endif
 #. I developed an Android root detection mechanism using [fuzzy logic](https://en.wikipedia.org/wiki/Fuzzy_logic) techniques. Once the feature was fine tuned, we had zero [false positives](https://en.wikipedia.org/wiki/False_positives_and_false_negatives), and no known false negatives. Note that the cost of false positives to the operator's customer support mechanism can be exorbitant. The cost of handling a single call can sometimes be higher than the monthly subscription fee. And flooding the operator's customer support with thousands of complaints about false accusations of rooted devices could ruin our relationship with our customer, i.e. the operator. Therefore the algorithm had to err on the side of allowing false negatives, i.e. allowing playback on some rooted devices.
 #. Originally the exclusive focus of security was protecting the devices from leaking content and keys, i.e. from being reverse engineered. We relied heavily on the premise that we refused to play on "rooted" Android devices or "jail-broken" IOS devices. But when inexpensive rooted Android devices became ubiquitous in the consumer market, the content providers (i.e. the major studios such as Disney, Sony, Warner Bros., etc.) noted a significant drop in their royalty revenues, so they forced us allow playback on rooted devices too. Therefore additional security had to be implemented on the back-end web servers, e.g. to check whether or not a subscriber downloaded an unusually high number of hours of content, or whether the subscriber had simultaneous downloads from different IP addresses. I designed a secure and efficient data logging system. We logged data in order to better understand how subscribers were using the system, and in order to detect piracy. With tens of millions of subscribers, we collected a huge amount of data. I worked with data scientists to design "big data" collection and analysis techniques. And there was the economic challenge to minimize the communication costs of the data collection program.
-#. {{HI_BEGIN}}At the end of my 6 year tenure there were 40M subscribers, and no security breaches.{{HI_END}}
-
+{{HTML_DETAILS_END}}
 
 {{ JOB(
 	'cybersec-anonymous',
@@ -299,7 +290,7 @@ I would go to the annual [Israel Agritech](http://agritechisrael.org/) exhibitio
 #. Within 3 months of joining the company and quickly learning the fundamentals of [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics) via mentoring from a world renowned expert, [Dr. Tzachi Bar](https://scholar.google.co.il/citations?user=XokRoVQAAAAJ&hl=en), I discovered a new algorithm for overcoming [PCR inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) using Artificial Intelligence (AI) and data science techniques where too much sample "noise" prevents the result of the biological assay from being estimated by the classic sigmoidal shaped [logistic  function](https://en.wikipedia.org/wiki/Logistic_function).
 #. I implemented the final algorithm in C, while I built the prototype in Python using the [Numpy](http://www.numpy.org/), [Scipy](https://www.scipy.org/), and [Matplotlib](http://matplotlib.org/) packages.
 %% endif
-#. {{HI_BEGIN}}When I started the project, the client's {% if ABBREV %}[PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) [MRSA](https://en.wikipedia.org/wiki/Methicillin-resistant_Staphylococcus_aureus) detection {% endif %}kit had only a 50% detection rate due to inhibition problems associated with their _preliminary_ chemistry that could not separate the DNA from the mucus in patient nasal samples. This result was grossly unacceptable for any medical test. The investors had lost confidence, and were about to pull out. {% if ABBREV %}Within 3 months, in spite of my complete lack of background in bioinformatics and biology and genetics, {% endif %}I improved the test's accuracy to 95%, which was 10% better than their competitors from the pharmaceutical giants. I saved the client from liquidation.{{HI_END}}
+#. {{HI_BEGIN}}When I started the project, the client's {% if ABBREV %}[PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) [MRSA](https://en.wikipedia.org/wiki/Methicillin-resistant_Staphylococcus_aureus) detection {% endif %}kit had only a 50% detection rate due to inhibition problems associated with their _preliminary_ chemistry that could not separate the DNA from the "noise" resulting from the mucus in the patient nasal samples. This result was grossly unacceptable for any medical test. The investors had lost confidence, and were about to pull out. {% if ABBREV %}Within 3 months, in spite of my complete lack of background in bioinformatics and biology and genetics, {% endif %}I improved the test's accuracy to 95%, which was 10% better than their competitors from the pharmaceutical giants. I saved the client from liquidation.{{HI_END}}
 #. I am in the process of [patenting](#patents) my algorithm.
 
 %% if AGENT != 'wizedom'
@@ -544,8 +535,8 @@ The application has a strong first beat option in case you lose synchronization,
 
 {{ JOB(
 	'michlala',
-	'1995-95: Lecturer: Introductory University Computer Science Course on Database Theory',
-	'Michlala College Bayit Vegan, Jerusalem',
+	'1995-95: Michlala College: Lecturer: Introductory University Computer Science Course on Database Theory',
+	'[Michlala College](http://www.michlala.edu/) Bayit Vegan, Jerusalem',
 	false
 ) }}
 {{KEYS}} lecturer, database, SQL
@@ -573,19 +564,23 @@ The application has a strong first beat option in case you lose synchronization,
 
 {{JOB(
 	'iscar',
-	'1989-91: DEC: S/W Architect & Developer: Factory Automation: Shop Floor Production Control (SFPC) System: BARI II',
+	'1989-91: DEC & Iscar: S/W Architect & Developer: Factory Automation: Shop Floor Production Control (SFPC) System: BARI II',
 	'[Digital Equipment Corporation (DEC)](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation) (defunct), Herzliya for \@[Iscar](http://www.iscar.com/newarticles.aspx/countryid/1/newarticleid/225), Tefen'
 ) }}
 {{KEYS}} factory automation SFPC, architect, algorithms, DSL, Pascal, SQL, VAX/VMS
 
-#. Iscar Matkash in Tefen IL is a fully automated factory that produces thousands of different cutting blades using a [sintering](https://en.wikipedia.org/wiki/Sintering) process.
+{{HTML_DETAILS_BEGIN}}
+Iscar Matkash in Tefen IL is a fully automated factory that produces thousands of different cutting blades using a [sintering](https://en.wikipedia.org/wiki/Sintering) process.
 The raw materials go through many stages of operations.
 In many cases after undergoing intermediate processing,
 the partially processed material can still be diverted to multiple final products - similar to stem cells.
 The factory contains hundreds of automated workstations, stands, stacks, guided vehicles, and conveyor belts.
 The product or intermediate product is placed on pallets.
 The pallets are moved from one stand on a workstation to a stand on another workstation, or temporarily to a storage stand or stack.
-#. {{HI_BEGIN}}My task was to create a computer program that automatically operated/orchestrated the factory.{{HI_END}}
+
+{{HI_BEGIN}}My task was to create a computer program that automatically operated/orchestrated the factory.
+After 18 calendar months, and 6 man-years later, the factory ran perfectly!{{HI_END}}
+{{HTML_DETAILS_MID}}
 #. When my co-architect and I started this project, we had zero background in industrial engineering.
 We were supplied with a mentor who brought us up to speed.
 #. Eventually after months of discussions we created an architecture that was a textbook object oriented
@@ -600,13 +595,12 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 %% if FULL
 #. We coded the system in Pascal. Given the inherent object oriented (OO) nature of the architecture, C++ would have been the ideal implementation language, but the project manager refused because he was not familiar with any OO languages.
 %% endif
-#. {{HI_BEGIN}}After 18 calendar months, and 6 man-years later, the factory ran perfectly!{{HI_END}}
-
+{{HTML_DETAILS_END}}
 
 {{ JOB(
 	'light-pen',
 	'1988-88: Part-time: S/W Architect & Developer: Accessibility: Quadriplegic PC Accessibility',
-	'Cubital (defunct), Herzliya - a charity project funded by the company and their CEO [Itzhak Pomerantz](https://il.linkedin.com/in/itzhak-pomerantz-91500b3) in cooperation with the [Lowenstein Rehabilitation Hospital](http://en.israel-clinics.guru/clinics/lowenstein_hospital_rehabilitation_center), and the IDF Rehabilitation Unit'
+	'Scitex-Cubital (defunct), Herzliya - a charity project funded by the company and their CEO [Itzhak Pomerantz](https://il.linkedin.com/in/itzhak-pomerantz-91500b3) in cooperation with the [Lowenstein Rehabilitation Hospital](http://en.israel-clinics.guru/clinics/lowenstein_hospital_rehabilitation_center), and the IDF Rehabilitation Unit'
 ) }}
 {{KEYS}} accessibility, Prolog, PC-DOS
 
@@ -615,19 +609,19 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 #. The H/W used for this project was the following:
 	a. A [light pen](https://en.wikipedia.org/wiki/Light_pen), i.e. an obsolete pre-mouse point and click device that synchronizes with the trace signal of the CRT video display, outfitted with special light weight military optics that increased its effective range from 5 mm from the screen to 800 mm.
 	b. A standard accessibility [sip-and-puff](https://en.wikipedia.org/wiki/Sip-and-puff) switch that looks like a drinking straw.
-#. The light pen was mounted on the user's head by using a sturdy woman's plastic hair head band, while the sip-and-puff straw replaced the button on the light pen.
+#. The light pen was mounted on the user's head by using a woman's plastic hair head band, while the sip-and-puff straw replaced the button on the light pen.
 #. The S/W that I developed overlaid a virtual keyboard on top of the screen.
 #. In novice mode aiming the pen at a key caused it to illuminate, while clicking on it entered it into the system as a virtual key stroke.
 #. The problem with novice mode was that the virtual keyboard obstructed more than half the screen.
 #. In expert mode, the virtual keyboard was hidden, but when the pen was aimed at an individual key, it would pop-up and become illuminated.
 %% endif
-#. {{HI_BEGIN}}This system was used to enable Shulamit Gabbai, a former school teacher who became quadriplegic by contacting polio (due to a terrible malfunction in the *Or Akiva* drinking water supply which became mixed with sewage), to become a book editor for *Maariv*. She was able to type 30 characters per minute on her PC{% if ABBREV %} by using a [sip-and-puff](https://en.wikipedia.org/wiki/Sip-and-puff) switch along with telescopically enhanced [light pen](https://en.wikipedia.org/wiki/Light_pen) attached to her head with a head band{% endif %}.{{HI_END}}
+#. {{HI_BEGIN}}This system was used to enable Shulamit Gabbai, a former school teacher who became quadriplegic by contacting polio (due to a terrible malfunction in the *Or Akiva* drinking water supply which became mixed with sewage), to become a book editor for *Maariv*. She was able to type 30 characters per minute on her PC{% if ABBREV %} by using a [sip-and-puff](https://en.wikipedia.org/wiki/Sip-and-puff) switch along with telescopically enhanced [light pen](https://en.wikipedia.org/wiki/Light_pen) attached to her head with a woman's plastic hair head band{% endif %}.{{HI_END}}
 
 
 {{ JOB(
 	'cubital',
-	'1987-88: S/W Developer & VAX/VMS Sysadmin: 3D Printer: Solider',
-	'[Cubital](https://en.wikipedia.org/wiki/Solid_ground_curing) (defunct), Herzliya'
+	'1987-88: Scitex-Cubital: S/W Developer & VAX/VMS Sysadmin: 3D Printer: Solider',
+	'[Scitex-Cubital](https://en.wikipedia.org/wiki/Solid_ground_curing) (defunct), Herzliya'
 ) }}
 {{KEYS}} 3D printing, {{HI_C}}, sysadmin, VAX/VMS
 
@@ -648,7 +642,7 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 
 {{ JOB(
 	'orisol',
-	'1985-86: S/W Developer: Factory Automation: Leather Sewing Workstation',
+	'1985-86: Orisol: S/W Developer: Factory Automation: Leather Sewing Workstation',
 	'Orisol, Lod'
 ) }}
 {{KEYS}} sewing workstation, DSL, algorithms, AutoCad, {{HI_C}}, awk, PC-DOS
@@ -665,7 +659,7 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 %% if FULL
 {{ JOB(
 	'john-bryce',
-	'1984-85: S/W Developer & VAX/VMS Sysadmin: Hebrew/English Word Processor: Glyph',
+	'1984-85: John Bryce: S/W Developer & VAX/VMS Sysadmin: Hebrew/English Word Processor: Glyph',
 	'John Bryce, Jerusalem',
 	false
 ) }}
@@ -675,8 +669,8 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 
 {{ JOB(
 	'elta',
-	'1983-84: Elta/IAI: S/W Developer: Real-Time: Data Collection Terminal & Radar for Lavi Fighter Plane',
-	'DSI (defunct), Givatayim for \@[Elta/IAI](http://www.iai.co.il/17887-en/Groups_ELTA.aspx), Ashdod'
+	'1983-84: IAI-Elta: S/W Developer: Real-Time: Data Collection Terminal & Radar for Lavi Fighter Plane',
+	'DSI (defunct), Givatayim for \@[IAI-Elta](http://www.iai.co.il/17887-en/Groups_ELTA.aspx), Ashdod'
 ) }}
 {{KEYS}} data collection terminal, PL/M, 8080, RTOS, fighter plane radar, Jovial, embedded, real-time
 
@@ -786,12 +780,12 @@ The most memorable and still useful courses I took were in statistics, experimen
 
 ## 5.0 Computer Languages, SDKs, and Operating Systems { #computer-languages }
 
-Language knowledge in order of expertise, based upon my current frequency of usage:
+Language knowledge in order of expertise, _based upon my current frequency of usage_:
 
 #. C, TCL, bash + posix text utilities, e.g. awk, sed, etc.
 #. C++, python, make, html5, css, markdown, pandoc, jinja2
-#. flex, bison, llvm, javascript, java, yaml, json, go
-#. forth, lisp, prolog, apl, fortran, opengl, svg, xml schema, relax ng, xslt, perl, C#
+#. java, ant, cmake, javascript, yaml, json, flex, bison, llvm
+#. go, forth, lisp, prolog, apl, fortran, opengl, svg, xml schema, relax ng, xslt, perl, C#
 
 
 _Note that I write compilers and [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), so learning a new language takes me only a few days._
@@ -891,12 +885,12 @@ The following is an example of a Jinja2 macro `J2_ABC` that executes a python fu
 		#if J2_MODE == J2_MODE_BUILD
 		#include "my-macros.j2"
 		#endif2.
-3. The J2 delimiters that we chose to use are the following:
+3. The J2 delimiters we chose to use are the following (without the quotes):
 	{'%' ... '%'}: control statement
 	{'#' ... '#'}: comment statement
 	{'^' ... '^'}: embedded expression
-	'%%':          line control statement
-	'%''#':        line comment statement
+	%'%':          line control statement
+	%'#':          line comment statement
 4. Cpp definitions must specify J2 delimiters *indirectly*,
     otherwise will cause J2 preprocessing errors. See lines 35-41.
 5. Must *not* use the default J2 line comment '#' which conflicts with cpp.
@@ -944,7 +938,7 @@ The following is an example of a Jinja2 macro `J2_ABC` that executes a python fu
 
 #### B.2.2: DSL Full-fledged
 
-When writing a full-fledged DSL, unless run-time efficiency or a binary target is critically important, I tend to shy away from using formal compiler frameworks such as [flex/bison](https://en.wikipedia.org/wiki/GNU_bison), [ANTLR](http://www.antlr.org/), [LLVM](https://llvm.org/), etc., because they are complex and have a relatively steep learning curve.
+When writing a full-fledged DSL, unless run-time efficiency or a binary target is critically important, I tend to shy away from using formal compiler frameworks such as [flex/bison](https://en.wikipedia.org/wiki/GNU_bison), [ANTLR](http://www.antlr.org/), [LLVM](https://llvm.org/), etc., because they are complex and have a steep learning curve.
 
 In my experience most DSLs require a limited number of domain specific verbs and data structures. The rest of the language such as control structures (e.g. conditions and loops), and procedure, variable, and data structure definitions, which are by far the most difficult and time consuming to develop, can piggyback upon the built-in features of extensible languages such as [TCL](https://en.wikipedia.org/wiki/Tcl), [Python](https://en.wikipedia.org/wiki/Python_(programming_language)), [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)), [FORTH](https://en.wikipedia.org/wiki/Forth_(programming_language)), etc.
 
@@ -972,7 +966,8 @@ And where the implementation will be embedded inside another application then Lu
 #. Never release code when the build process generates compiler warnings.
 	* I have worked on too many projects where the build process generates hundreds of thousands of compiler warnings. In such a situation it is nearly impossible to determine which warnings are serious, so in fact all warnings are ignored.
 #. A necessary condition for secure code is that the code first must be correct. See the Google Tech-Talk [The Lazy Programmer's Guide To Computer Security](https://www.youtube.com/watch?v=eL5o4PFuxTY).
-#. Security tips: Never embed _in-the-clear_ passwords inside the binaries or inside configuration files. Instead use their [hash](https://en.wikipedia.org/wiki/Hash_function) values. Depending upon the class of application, it may not be necessary to use state-of-the-art cryptographic hash functions. And usually when comparing strings or binary arrays that contain security data, don't compare them one byte at a time, and then abort after the first mismatch, otherwise you will create a vector for a timing based [side channel attack](https://en.wikipedia.org/wiki/Side-channel_attack).
+#. Debug and trace: For security reasons, normally debug information should be output in debug releases only. Very often in real-time and soft real-time applications, outputting all debug information from all modules will sabotage the application because too much CPU or I/O bandwidth is being consumed by the debug output. Therefore a mechanism must be designed that dynamically filters which debug information should be output.
+#. Strings: UI strings should use string tables in order to allow for easy internationalization/localization, e.g. [GNU gettext](https://en.wikipedia.org/wiki/Gettext). Password strings should never be stored in-the-clear. Preferably store their [hash](https://en.wikipedia.org/wiki/Hash_function) value, or otherwise encrypt them. Non-debug log messages should be encrypted, perhaps using light weight encryption.
 #. And after all of the above techniques have been incorporated into the implementation, still the most effective way to flush out 50% of the bugs is an informal code review with a colleague where the programmer must explain every line of his code. Typically during his explanation, the programmer has many "aha" moments when recognizing many of his own bugs.
 
 %% endif
