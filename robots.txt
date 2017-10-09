@@ -4,8 +4,6 @@ Disallow: /cv/ardix/
 Disallow: /cv/hammelburg/
 Disallow: /cv/tkos/
 Disallow: /cv/wizedom/
-# get google to forget about the old CV file name
-Disallow: /AvrahamBernsteinCV.html
 # for privacy reasons do not allow google to see these files
 Disallow: /AvrahamBernstein-3.0.vcf
 Disallow: /AvrahamBernstein-4.0.vcf
