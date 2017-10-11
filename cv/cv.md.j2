@@ -18,7 +18,9 @@ so make sure the document is written in ISO-8859-1.
 %# includes 'defs.j2 + metadata.yaml.j2 + head.html.j2' from the j2-cli.py command line
 %# pandoc html5 writer uses local template file 'template.html5'
 
-# {{TITLE}} { #top }
+# {{TITLE}} { #title }
+
+### {{SUBTITLE}} { #subtitle }
 
 %% if AGENT_URL != ''
 {% if WRITER == 'html5' %}<span style="font-size:larger;background-color:#FFFF00;">{% endif %}__Represented by [{{AGENT_NAME}}]({{AGENT_URL}})__{% if WRITER == 'html5' %}</span>{% endif %}
@@ -89,21 +91,23 @@ __\[this version]__
 
 ## 1.0 Summary
 
-I am an experienced "hands-on" computer scientist and S/W architect. I devised innovative algorithms and solutions for many S/W problems in a wide range of fields, including:
+I am an expert in S/W engineering, cybersecurity, algorithms, and [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language).
+I am an experienced "hands-on" computer scientist and S/W architect for industrial strength apps.
+I devised innovative algorithms and solutions for many S/W problems in a wide range of fields, including:
 
 * __cybersecurity & cryptography:__ [Viaccess-Orca](#viaccess), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Anonymous]({{CV_FULL_LINK('cybersec-anonymous')}})
 * __data science, big data, & database:__ [Viaccess-Orca](#viaccess), [DEC & Iscar](#iscar), [Michlala College](#michlala)
 * __bioinformatics:__ [Syntezza](#syntezza)
 * __transportation vehicle route guidance:__ [Telequest](#telequest)
 * __blind vision:__ [Virtouch](#virtouch)
-* __accessibility & biofeedback:__ [Scitex-Cubital](#light-pen), [Self-Startup]({{CV_FULL_LINK('gait-monitoring')}}), [Mindlife-Ultramind]({{CV_FULL_LINK('ultramind')}})
+* __accessibility & biofeedback:__ [Cubital](#light-pen), [Self-Startup]({{CV_FULL_LINK('gait-monitoring')}}), [Mindlife-Ultramind]({{CV_FULL_LINK('ultramind')}})
 * __telecommunications:__ [Vyyo](#vyyo), [MRV-Jolt]({{CV_FULL_LINK('jolt')}}), [One Path Networks - Foxcom](#foxcom)
 * __VLSI CPU design:__ [DSPG](#dspg), [Fourfold]({{CV_FULL_LINK('fourfold')}})
 * __factory automation:__ [DEC & Iscar](#iscar), [Newport-Optimet]({{CV_FULL_LINK('optimet')}}), [Orisol]({{CV_FULL_LINK('orisol')}})
-* __3D printing__: [Scitex-Cubital]({{CV_FULL_LINK('cubital')}})
+* __3D printing__: [Cubital]({{CV_FULL_LINK('cubital')}})
 * __radar:__ [IAI-Elta & DSI](#elta)
 * __automated testing:__ [Elbit-Elop]({{CV_FULL_LINK('elop')}}), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Vyyo](#vyyo), [DSPG](#dspg)
-* __sysadmin:__ [Scitex-Cubital](#cubital), [John Bryce]({{CV_FULL_LINK('john-bryce')}}), [Mitre Corp](#mitre)
+* __sysadmin:__ [Cubital](#cubital), [John Bryce]({{CV_FULL_LINK('john-bryce')}}), [Mitre Corp](#mitre)
 %% if not DD
 * __CTO, VP R&D, & biz development:__ [Telequest](#telequest), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Nigeria]({{CV_FULL_LINK('agritech')}}), [China]({{CV_FULL_LINK('china')}}), [Virtouch](#virtouch), [Pitkha & Elbit-Elop]({{CV_FULL_LINK('elop')}}), [Pitkha & DSPG](#dspg)
 %% endif
@@ -140,7 +144,7 @@ In order to understand my S/W design principles, see the following appendices{% 
 	'2011-17: Viaccess-Orca: Security Policy Mngr & Architect: Cybersecurity: OTT Internet Pay TV System',
 	'[Viaccess-Orca](https://www.viaccess-orca.com/), Ra\'anana - a subsidiary of \@Orange France, and \@Discretix/[Sansa Security](https://www.geektime.com/2015/07/30/arm-acquires-israeli-sansa-security-to-protect-iot-and-cellular-devices/), Netanya recently acquired by \@ARM'
 ) }}
-{{KEYS}} cybersecurity, DRM, architect, algorithms, anti-reverse engineering, obfuscation, hacking, LLVM compiler, cryptography, data science, big data, fuzzy logic, {{HI_CPP}}, Python, TCL, bash, Java, Android root detection, IOS, Linux, ELF binary editor
+{{KEYS}} cybersecurity, DRM, architect, algorithms, anti-reverse engineering, obfuscation, Hex-Rays, OllyDbg, hacking, LLVM compiler, cryptography, data science, big data, fuzzy logic, {{HI_CPP}}, Python, TCL, bash, Java, Android root detection, IOS, Linux, ELF binary editor
 
 {{HTML_DETAILS_BEGIN}}
 The product was an [Over-The-Top (OTT)](https://en.wikipedia.org/wiki/Over-the-top_content) Internet pay TV system. We provided the S/W infrastructure to our customers, the satellite and cable pay TV operators, so they could also provide an OTT service to their subscribers in order that they could try to compete with  [Netflix](https://www.netflix.com/il-en/). The system was designed for small screen Android and IOS devices, i.e. up to 10 inches. We used [DRM](https://en.wikipedia.org/wiki/Digital_rights_management) to encrypt the content.
@@ -148,7 +152,7 @@ The product was an [Over-The-Top (OTT)](https://en.wikipedia.org/wiki/Over-the-t
 Originally the DRM was Microsoft's [PlayReady](https://en.wikipedia.org/wiki/PlayReady), and later on their own proprietary in-house DRM, and finally also Google's [Widevine](https://www.widevine.com/wv_drm.html).
 %% endif
 {{NL}}
-I was responsible for security policy and security architecture. I worked closely with the product management and the S/W development team leader in order to specify security requirements along with analyzing their costs and benefits. I was the architect of feature implementation in which case I typically wrote a working proof-of-concept on account of its complexity.
+I was responsible for security policy and security architecture. I worked closely with the product management and the S/W development team leader in order to specify security requirements along with analyzing their costs and benefits. When I specified the architecture of a feature, typically I wrote a working proof-of-concept on account of its complexity.
 And I was responsible for evaluation, purchase, and configuration of third party tools.
 
 {{HI_BEGIN}}At the end of my 6 year tenure there were 40M subscribers, and no security breaches.{{HI_END}}
@@ -156,7 +160,7 @@ And I was responsible for evaluation, purchase, and configuration of third party
 %% if ABBREV
 #. Our workhorse third party tools were the [InterTrust WhiteCryption](https://www.intertrust.com/products/application-shielding/) [SCP](https://www.intertrust.com/products/application-shielding/code-protection/) [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) C/C++ compiler and their [SKB](https://www.intertrust.com/products/application-shielding/secure-key-box/) [white box cryptographic](http://www.whiteboxcrypto.com/) library. I worked very closely with the vendor's development team because at the time (2014) of our original purchase their SCP obfuscating compiler was new and still had "teething pains". They were aware that I had built a similar in-house product for [NDS]({{CV_FULL_LINK('nds')}}), so they were happy to cooperate. Given that it takes 5-10 man-years to create a polished product, and Viaccess-Orca needed the product immediately, and anyway did not have the manpower to build it in-house, therefore the purchase decision was a "no brainer".
 %% endif
-#. _In many cases the security features that I designed were very complex because their goal was to generate obfuscated binary code, so first I needed to code a working proof-of-concept before finalizing their specifications_.
+#. _In many cases the security features that I designed were very complex because their goal was to generate obfuscated binary code in order to prevent reverse engineering, so first I needed to code a working proof-of-concept before finalizing their specifications_.
 #. I designed the anti-reverse engineering and [obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) programming frameworks and libraries in C/C++. All secure code modules on the device were implemented as native libraries written in C/C++. Typically offline utilites were implemented in Python.
 %% if ABBREV
 #. One of my more important and challenging hacks was to generate a [dynamic share object library (DSO)](https://en.wikipedia.org/wiki/Library_(computing)) (i.e. an `.so` file) that formally exports no symbols - _prima facie_ an [oxymoron](https://www.merriam-webster.com/dictionary/oxymoron). In fact I used an asynchronous back channel that allowed the DSO to communicate with its caller by using a function declared with the [gcc constructor attribute](https://stackoverflow.com/questions/2053029/how-exactly-does-attribute-constructor-work) that executes before `dlopen()` returns.
@@ -312,7 +316,7 @@ For example, I worked on the development of [obfuscation](https://en.wikipedia.o
 %% endif
 My background task was to do C/C++ [code security reviews](https://www.securecoding.cert.org/confluence/display/seccode/Top+10+Secure+Coding+Practices). Typically secure coding is achieved by [adhering to best programming practices](https://www.youtube.com/watch?v=eL5o4PFuxTY).
 %% if FULL
-#. I was a member of the architecture team for their in-house [LLVM](https://llvm.org/) [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) C/C++ compiler.
+#. I was a member of the architecture team for their in-house "chameleon" [LLVM](https://llvm.org/) [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) C/C++ compiler.
 #. I developed techniques using Virtual Machine (VM) technology to crack [Digital Rights Management (DRM)](https://en.wikipedia.org/wiki/Digital_rights_management) schemes.
 #. I developed a technique to subvert a commonly used class of [random number generators (RNG)](https://en.wikipedia.org/wiki/Random_number_generation) that are seeded with the [X86 CPU clock cycle counter (RDTSC)](http://x86.renejeschke.de/html/file_module_x86_id_278.html) [^rdtsc]. Many cryptographic algorithms rely upon an RNG for their initialization "handshake". I implemented this technique by hacking the open source [QEMU](https://www.qemu.org/) VM emulator written in C. This attack enabled subscriber credential sharing.
 #. I wrote the technical specification for CCTV (Chinese government TV) to secure the TV feed of the 2008 Beijing Olympic broadcasts against international piracy. We almost won the contract, until Microsoft offered to do it for free.
@@ -600,7 +604,7 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 {{ JOB(
 	'light-pen',
 	'1988-88: Part-time: S/W Architect & Developer: Accessibility: Quadriplegic PC Accessibility',
-	'Scitex-Cubital (defunct), Herzliya - a charity project funded by the company and their CEO [Itzhak Pomerantz](https://il.linkedin.com/in/itzhak-pomerantz-91500b3) in cooperation with the [Lowenstein Rehabilitation Hospital](http://en.israel-clinics.guru/clinics/lowenstein_hospital_rehabilitation_center), and the IDF Rehabilitation Unit'
+	'Cubital (defunct), Herzliya - a charity project funded by the company and their CEO [Itzhak Pomerantz](https://il.linkedin.com/in/itzhak-pomerantz-91500b3) in cooperation with the [Lowenstein Rehabilitation Hospital](http://en.israel-clinics.guru/clinics/lowenstein_hospital_rehabilitation_center), and the IDF Rehabilitation Unit'
 ) }}
 {{KEYS}} accessibility, Prolog, PC-DOS
 
@@ -620,8 +624,8 @@ taxonomy - a "factory object kingdom". The top level object was a "production in
 
 {{ JOB(
 	'cubital',
-	'1987-88: Scitex-Cubital: S/W Developer & VAX/VMS Sysadmin: 3D Printer: Solider',
-	'[Scitex-Cubital](https://en.wikipedia.org/wiki/Solid_ground_curing) (defunct), Herzliya'
+	'1987-88: Cubital: S/W Developer & VAX/VMS Sysadmin: 3D Printer: Solider',
+	'[Cubital](https://en.wikipedia.org/wiki/Solid_ground_curing) (defunct), Herzliya'
 ) }}
 {{KEYS}} 3D printing, {{HI_C}}, sysadmin, VAX/VMS
 
