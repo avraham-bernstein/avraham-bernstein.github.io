@@ -43,14 +43,14 @@ _Version: {{VS}}_
 %% if WRITER == 'html5'
 <figure>
 <img title="{{NAME}}" alt="{{NAME}}" src="{{IMAGE_URL}}">
-<figcaption>Secure[^secure-photo] photo of the author, {{NAME}} c. 2010.</figcaption>
+<figcaption>Secure[^secure-photo] photo of the author, {{NAME}}, from 2017.</figcaption>
 </figure>
 %% else
-![Secure[^secure-photo] photo of the author, {{NAME}} c. 2010.]({{IMAGE_URL}})
+![Secure[^secure-photo] photo of the author, {{NAME}}, from 2017.]({{IMAGE_URL}})
 %% endif
 {{NL}}
 
-[^secure-photo]: This secure photo was built using an [oilify](http://docs.gimp.org/en/plug-in-oilify.html) filter and a visible email address [watermark](https://en.wikipedia.org/wiki/Digital_watermarking). It uses [digital camouflage](https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup) that will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate/label it with any other name besides mine. Similarly if a site were to maliciously display my photo without my permission in order to imply my association or agreement with them, then it is trivial for anyone who may be suspicious of their claim to "challenge" the site by asking me for a verification email.
+[^secure-photo]: This secure photo was built using blurring filters along with a visible email address [watermark](https://en.wikipedia.org/wiki/Digital_watermarking). It uses [digital camouflage](https://io9.gizmodo.com/5510040/designer-reverse-engineers-face-detection-tech-to-develop-camouflage-makeup) that will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate/label it with any other name besides mine. Similarly if a site were to maliciously display my photo without my permission in order to imply my association or agreement with them, then it is trivial for anyone who may be suspicious of their claim to "challenge" the site by asking me for a verification email.
 
 %% endif
 {{NL}}
@@ -71,7 +71,7 @@ __email:__ [{{EMAIL_CV}}](mailto:{{EMAIL_CV}})
 %% if ABBREV
 __\[this version]__
 %% endif
-{{BR}}__cv-full:__ [HTML (easiest to read)]({{CV_FULL_HTML_URL}}), [PDF]({{CV_FULL_PDF_URL}}), [DOCX]({{CV_FULL_DOCX_URL}})
+{{BR}}__cv-full:__ [HTML]({{CV_FULL_HTML_URL}}), [PDF]({{CV_FULL_PDF_URL}}), [DOCX]({{CV_FULL_DOCX_URL}})
 %% if FULL
 __\[this version]__
 %% endif
@@ -95,21 +95,21 @@ I am an expert in S/W engineering, cybersecurity, algorithms, and [domain specif
 I am an experienced "hands-on" computer scientist and S/W architect for industrial strength apps.
 I devised innovative algorithms and solutions for many S/W problems in a wide range of fields, including:
 
-* __cybersecurity & cryptography:__ [Viaccess-Orca](#viaccess), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Anonymous]({{CV_FULL_LINK('cybersec-anonymous')}})
-* __data science, big data, & database:__ [Viaccess-Orca](#viaccess), [DEC & Iscar](#iscar), [Michlala College](#michlala)
-* __bioinformatics:__ [Syntezza](#syntezza)
-* __transportation vehicle route guidance:__ [Telequest](#telequest)
-* __blind vision:__ [Virtouch](#virtouch)
-* __accessibility & biofeedback:__ [Cubital](#light-pen), [Self-Startup]({{CV_FULL_LINK('gait-monitoring')}}), [Mindlife-Ultramind]({{CV_FULL_LINK('ultramind')}})
-* __telecommunications:__ [Vyyo](#vyyo), [MRV-Jolt]({{CV_FULL_LINK('jolt')}}), [One Path Networks - Foxcom](#foxcom)
-* __VLSI CPU design:__ [DSPG](#dspg), [Fourfold]({{CV_FULL_LINK('fourfold')}})
-* __factory automation:__ [DEC & Iscar](#iscar), [Newport-Optimet]({{CV_FULL_LINK('optimet')}}), [Orisol]({{CV_FULL_LINK('orisol')}})
+* __cybersecurity & cryptography:__ [Viaccess-Orca]({{CV_LOCAL_LINK('viaccess')}}), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Anonymous]({{CV_FULL_LINK('cybersec-anonymous')}})
+* __data science, big data, & database:__ [Viaccess-Orca]({{CV_LOCAL_LINK('viaccess')}}), [DEC & Iscar]({{CV_LOCAL_LINK('iscar')}}), [Michlala College]({{CV_LOCAL_LINK('michlala')}})
+* __bioinformatics:__ [Syntezza]({{CV_LOCAL_LINK('syntezza')}})
+* __transportation vehicle route guidance:__ [Telequest]({{CV_LOCAL_LINK('telequest')}})
+* __blind vision:__ [Virtouch]({{CV_LOCAL_LINK('virtouch')}})
+* __accessibility & biofeedback:__ [Cubital]({{CV_LOCAL_LINK('light-pen')}}), [Self-Startup]({{CV_FULL_LINK('gait-monitoring')}}), [Mindlife-Ultramind]({{CV_FULL_LINK('ultramind')}})
+* __telecommunications:__ [Vyyo]({{CV_LOCAL_LINK('vyyo')}}), [MRV-Jolt]({{CV_FULL_LINK('jolt')}}), [One Path Networks - Foxcom]({{CV_LOCAL_LINK('foxcom')}})
+* __VLSI CPU design:__ [DSPG]({{CV_LOCAL_LINK('dspg')}}), [Fourfold]({{CV_FULL_LINK('fourfold')}})
+* __factory automation:__ [DEC & Iscar]({{CV_LOCAL_LINK('iscar')}}), [Newport-Optimet]({{CV_FULL_LINK('optimet')}}), [Orisol]({{CV_FULL_LINK('orisol')}})
 * __3D printing__: [Cubital]({{CV_FULL_LINK('cubital')}})
-* __radar:__ [IAI-Elta & DSI](#elta)
-* __automated testing:__ [Elbit-Elop]({{CV_FULL_LINK('elop')}}), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Vyyo](#vyyo), [DSPG](#dspg)
-* __sysadmin:__ [Cubital](#cubital), [John Bryce]({{CV_FULL_LINK('john-bryce')}}), [Mitre Corp](#mitre)
+* __radar:__ [IAI-Elta & DSI]({{CV_LOCAL_LINK('elta')}})
+* __automated testing:__ [Elbit-Elop]({{CV_FULL_LINK('elop')}}), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Vyyo]({{CV_LOCAL_LINK('vyyo')}}), [DSPG]({{CV_LOCAL_LINK('dspg')}})
+* __sysadmin:__ [Cubital]({{CV_LOCAL_LINK('cubital')}}), [John Bryce]({{CV_FULL_LINK('john-bryce')}}), [Mitre Corp]({{CV_LOCAL_LINK('mitre')}})
 %% if not DD
-* __CTO, VP R&D, & biz development:__ [Telequest](#telequest), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Nigeria]({{CV_FULL_LINK('agritech')}}), [China]({{CV_FULL_LINK('china')}}), [Virtouch](#virtouch), [Pitkha & Elbit-Elop]({{CV_FULL_LINK('elop')}}), [Pitkha & DSPG](#dspg)
+* __CTO, VP R&D, & biz development:__ [Telequest]({{CV_LOCAL_LINK('telequest')}}), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Nigeria]({{CV_FULL_LINK('agritech')}}), [China]({{CV_FULL_LINK('china')}}), [Virtouch]({{CV_LOCAL_LINK('virtouch')}}), [Pitkha & Elbit-Elop]({{CV_FULL_LINK('elop')}}), [Pitkha & DSPG]({{CV_LOCAL_LINK('dspg')}})
 %% endif
 {{NL}}
 
@@ -121,7 +121,12 @@ In order to understand my S/W design principles, see the following appendices{% 
 * [Domain Specific Languages]({{CV_FULL_LINK('appendix-dsl')}})
 * [How To Write Correct, Maintainable, Secure, and Easy-to-Test Code]({{CV_FULL_LINK('appendix-programming-testable')}})
 
-{{HI_BEGIN}}When hiring a senior engineer for a S/W project that has a duration of more than a few months, the most critical requirements are his level of understanding of core programming and architectural concepts, his creativity and innovation track record, and _not_ whether he needs an extra week or two to come up to speed in order to become familiar with the specific programming language and toolchain. For example, note my recent smashing success in the field of [bioinformatics](#syntezza), where even though I had absolutely zero background in the fields of bioinformatics, biology, biochemistry, and genetics, still within 3 months (admittedly with the help of an excellent mentor) I invented a solution for the client that saved them from bankruptcy.{{HI_END}}
+{{HI_BEGIN}}When hiring a senior engineer for a S/W project that has a duration of more than a few months, the most critical requirements are his level of understanding of core programming and architectural concepts, his creativity and innovation track record, and _not_ whether he needs an extra week or two to come up to speed in order to become familiar with the specific programming language and toolchain. For example, note my recent smashing success in the field of [bioinformatics]({{CV_LOCAL_LINK('syntezza')}}), where even though I had absolutely zero background in the fields of bioinformatics, biology, biochemistry, and genetics, still within 3 months (admittedly with the help of an excellent mentor) I invented a solution for the client that saved them from bankruptcy.{{HI_END}}
+
+
+%% if ABBREV and AGENT == 'tiny'
+For complete details, see the [full version]({{CV_FULL_HTML_URL}}) of my CV.
+%% else
 
 
 ## 2.0 Work Experience
@@ -359,7 +364,7 @@ My background task was to do C/C++ [code security reviews](https://www.securecod
 	* Take advantage of SVG's seamless zooming capability.
 #. Maps and images were prepared offline using [XML Schema](https://en.wikipedia.org/wiki/XML_Schema_(W3C)) along with TCL preprocessing.
 %% endif
-#. {{HI_BEGIN}}I _almost_ saved the company from liquidation. My research was awarded a European FP6 grant of $0.5M Euro that required _matching funds_. But the investors refused to put up the matching funds due to the company's long history of financial failure in the children's Braille education market using their expensive tactile mouse.{{HI_END}}
+#. {{HI_BEGIN}}I _almost_ saved the company from liquidation. My research was awarded a European FP6 grant of 0.5M Euro that required _matching funds_. But the investors refused to put up the matching funds due to the company's long history of financial failure in the children's Braille education market using their expensive tactile mouse.{{HI_END}}
 %% if FULL
 #. Postmortem: Note that this application required no custom H/W unlike their expensive (~$300) [VTPlayer tactile mouse]({{HOME_URL}}/resources/vtplayer.png). I came to the conclusion that designing custom H/W devices for the accessibility market is typically a recipe for financial bankruptcy. However I found that many off-the-shelf inexpensive consumer devices, especially gamer devices, can be successfully retargeted as accessibility devices. I also found that this type of work is intellectually challenging, and is much more spiritually satisfying than any other type of work in which I engage.
 %% endif
@@ -559,11 +564,11 @@ The application has a strong first beat option in case you lose synchronization,
 ) }}
 {{KEYS}} {% if not DD %}CTO, {% endif %}VLSI simulator, S/W Development Toochain, architect, algorithms, DSL, {{HI_CPP}}, lex/yacc, assembly, Win32
 
-#. I was the S/W architect of a __clock accurate__ DSP CPU simulator along with a complete software development toolchain, i.e. a debugger, C compiler, assembler and linker. Note that the system was developed just _before_ the GNU Compiler Collection framework had reached maturity, i.e. v2.95.
+#. I was the S/W architect of a __clock accurate__ DSP CPU simulator along with a complete software development toolchain, i.e. a debugger, C compiler, assembler, disassembler, and linker. Note that the system was developed just _before_ the GNU Compiler Collection framework had reached maturity, i.e. v2.95.
 #. {{HI_BEGIN}}This system enabled working applications to be developed before the chip became physically available. It reduced application time-to-market by 6-12 months.{{HI_END}}
 #. The technological breakthrough was my design of a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) that described the CPU architecture __including the pipeline__. Implementation was in [lex/yacc](https://en.wikipedia.org/wiki/Yacc) and C++.
 #. The associated DSL compiler automatically generated the source code for the complete toolchain that enabled it be automatically rebuilt within an hour in the face of almost daily changes to the VLSI architecture - especially the pipeline.
-#. {{HI_BEGIN}}And after every change to the architecture, we ran the complete suite of VLSI verification regression tests 100-1000 times faster than the VHDL simulator.{{HI_END}}
+#. {{HI_BEGIN}}And after every change to the architecture, we ran the complete suite of VLSI verification regression tests 1000 times faster than the VHDL simulator.{{HI_END}}
 
 
 {{JOB(
@@ -821,7 +826,7 @@ I was born in Canada in 1956. I have lived in Jerusalem Israel since 1983. I am 
 Because I have a strong background in compilers, I am knowledgeable in many computer languages, and I can learn a new language at an expert level very quickly.
 
 My "go to" language for low level programming is C while still taking advantage of modern programming paradigms (i.e. [encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)), [composition](https://en.wikipedia.org/wiki/Object_composition), and [interface](https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)) as opposed to [inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming))).
-In particular I prefer the newer [C11](https://en.wikipedia.org/wiki/C11_(C_standard_revision)) over C99. C11 contains a number of minor but important enhancements that keep the language progressing in step with other modern languages, such as generics, anonymous structures and unions, variable alignment attributes, safe string functions, static assertions, better unicode support, thread storage support, atomics, etc. C11 remains 100% [Application Binary Interface (ABI)](https://en.wikipedia.org/wiki/Application_binary_interface) compatible with C99. (Admittedly programmer acceptance of C11, has been much slower than C++11 or C++14, because the Microsoft [MSVC](https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B) toolchain considers C to be a dead language, and therefore refuses to upgrade C99). In fact one of the most important advantages of using C is that the _de facto_ standard for dynamically extending a program with a _binary_ module is via a [dynamic shared object library (DSO)](https://en.wikipedia.org/wiki/Library_(computing)) (e.g an `.so` or `.dll` file) based upon the C ABI.
+In particular I prefer the newer [C11](https://en.wikipedia.org/wiki/C11_(C_standard_revision)) over C99. C11 contains a number of minor but important enhancements that keep the language progressing in step with other modern languages, such as generics, anonymous structures and unions, variable alignment attributes, safe string functions, static assertions, better unicode support, thread storage support, atomics, etc. C11 remains 100% [Application Binary Interface (ABI)](https://en.wikipedia.org/wiki/Application_binary_interface) compatible with C99. (Admittedly programmer adoption of C11 has been much slower than C++11 or C++14, because the Microsoft [MSVC](https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B) toolchain considers C to be a dead language, and therefore refuses to upgrade C99). In fact one of the most important advantages of using C is that the _de facto_ standard for dynamically extending a program with a _binary_ module is via a [dynamic shared object library (DSO)](https://en.wikipedia.org/wiki/Library_(computing)) (e.g an `.so` or `.dll` file) based upon the C ABI.
 
 Where projects demand it, I can write C++ well too, but I am much more aware than the average programmer of its potential pitfalls, for example:
 
@@ -986,7 +991,7 @@ And where the implementation will be embedded inside another application then Lu
 %% if WRITER == 'html5'
 * __[WCAG](https://www.w3.org/TR/WCAG20/) blind accessibility conformance:__ This document contains text alternatives for images, and is tab navigable - for sections, subsections, paragraphs, list items, and links.
 
-* __Safety & non-annoyment pledge:__ This document is free of scripts, frames, advertisements, and animations.{% if WRITER == 'html5' %}<!-- This pledge was originally coined by David Pogue -->{% endif %}
+* __Safety & non-annoyment pledge:__ This document is free of scripts (except for the [Google Analytics](https://en.wikipedia.org/wiki/Google_Analytics) tracker), frames, advertisements, and animations. (This pledge was originally coined by [David Pogue](https://davidpogue.com/)).{% if WRITER == 'html5' %}{% endif %}
 %% endif
 %% endif
 {{NL}}
@@ -995,3 +1000,4 @@ And where the implementation will be embedded inside another application then Lu
 %% if FULL and WRITER == 'html5'
 ## Footnotes
 %% endif
+{% endif %}{# not (ABBREV and AGENT == 'tiny') #}

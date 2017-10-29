@@ -16,7 +16,7 @@ so make sure the document is written in ISO-8859-1.
 #}
 
 %% set LANG = 'en-US'
-%% set VS = '4.0.4'
+%% set VS = '4.1'
 %% set VS_ORIG_DATE = '2017-07-23'
 
 %% if not TS is defined
@@ -40,12 +40,12 @@ so make sure the document is written in ISO-8859-1.
 %% elif AGENT == 'default'
 	%% set AGENT_NAME = ''
 	%% set AGENT_URL = ''
-%% elif AGENT == 'hammelburger'
-	%% set AGENT_NAME = 'Hammelburger Head Hunting'
-	%% set AGENT_URL = 'http://hammelburger.com/'
-%% elif AGENT == 'hitechrecruitment'
+%% elif AGENT == 'hitech'
 	%% set AGENT_NAME = 'Hi Tech Recruitment'
 	%% set AGENT_URL = 'http://www.hitechrecruitment.com/'
+%% elif AGENT == 'tiny'
+		%% set AGENT_NAME = ''
+		%% set AGENT_URL = ''
 %% elif AGENT == 'tkos'
 	%% set AGENT_NAME = 'Tk Open Systems Ltd.'
 	%% set AGENT_URL = 'http://www.tkos.co.il/en/corporate/homepage.html'
@@ -221,9 +221,33 @@ so make sure the document is written in ISO-8859-1.
 	%% set HI_CPP = 'C/C++'
 %% endif
 
+%% if FULL
+
 %% macro CV_FULL_LINK(id)
-{% if ABBREV %}{{CV_FULL_HTML_URL}}{% endif %}#{{id}}
+#{{id}}
 %% endmacro
+
+%% macro CV_LOCAL_LINK(id)
+#{{id}}
+%% endmacro
+
+%% else
+
+%% macro CV_FULL_LINK(id)
+{{CV_FULL_HTML_URL}}#{{id}}
+%% endmacro
+
+%% if AGENT != 'tiny'
+%% macro CV_LOCAL_LINK(id)
+#{{id}}
+%% endmacro
+%% else
+%% macro CV_LOCAL_LINK(id)
+{{CV_FULL_HTML_URL}}#{{id}}
+%% endmacro
+%% endif
+
+%% endif
 
 %% macro SEE_DETAILS(id)
 {% if ABBREV %} See [details]({{CV_FULL_HTML_URL}}#{{id}}).{% endif %}

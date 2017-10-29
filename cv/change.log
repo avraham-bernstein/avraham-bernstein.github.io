@@ -43,3 +43,14 @@ vs: 4.0.4, 2017-10-11
 1. cv.md & defs.j2: title, subtitle, and summary: incorporated linkedin headline
 2. cv.md: got rid of Scitex reference from Cubital
 3. cv.md: viaccess: minor editing changes
+
+vs: 4.1, 2017-10-16
+
+1. cv.md: Appendix A: changed 'acceptability' to 'adoption'
+2. cv.md: Colophon: added google analytics script exception,
+and explicitly credited 'David Pogue' in the non-annoyment pledge
+3. cv.md: made a single page 'tiny' abbreviated version
+4. defs.j2: changed 'hammelburger' to 'tiny',
+changed macros CV_FULL_LINK and added CV_LOCAL_LINK with 'tiny' specific variants
+5. cv.md: virtouch: removed $ from Euro
+6. cv.md: prolog: updated my photo and related footnote
