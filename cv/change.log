@@ -61,3 +61,9 @@ vs: 4.1.1, 2017-11-09
 2. cv.md: summary: added durations to the major jobs
 3. cv.md: appendix-programming-testable: peer code review
 4. cv.md: colophon: updated WCAG declaration and non-annoyment pledge
+
+vs: 4.1.2, 2017-11-09
+
+1. cv.md: contact: SMS capable
+2. cv.md: summary: CPU & compiler design
+3. cv.md: self-employed: added automated porting of legacy COBOL IT systems
