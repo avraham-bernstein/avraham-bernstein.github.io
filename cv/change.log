@@ -54,3 +54,10 @@ and explicitly credited 'David Pogue' in the non-annoyment pledge
 changed macros CV_FULL_LINK and added CV_LOCAL_LINK with 'tiny' specific variants
 5. cv.md: virtouch: removed $ from Euro
 6. cv.md: prolog: updated my photo and related footnote
+
+vs: 4.1.1, 2017-11-09
+
+1. cv.md: contact: changed US GV tel number from mobile to work
+2. cv.md: summary: added durations to the major jobs
+3. cv.md: appendix-programming-testable: peer code review
+4. cv.md: colophon: updated WCAG declaration and non-annoyment pledge
