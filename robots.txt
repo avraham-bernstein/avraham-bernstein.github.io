@@ -1,9 +1,9 @@
 User-agent: *
-# the only CVs that we want google to see are in the /cv/default dir
+# the only CV that we want google to see is in the top directory
 Disallow: /cv/ardix/
+Disallow: /cv/default/
 Disallow: /cv/tkos/
 Disallow: /cv/wizedom/
-Disallow: /AvrahamBernsteinCV.html
 # for reasons of privacy we do not want google to see these files
 Disallow: /AvrahamBernstein-3.0.vcf
 Disallow: /AvrahamBernstein-4.0.vcf
