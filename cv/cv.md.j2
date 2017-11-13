@@ -62,8 +62,8 @@ __email:__ [{{EMAIL_CV}}](mailto:{{EMAIL_CV}})
 %% if FULL
 [^obf-email]
 %% endif
-{{BR}}__geolocation:__ [{{CITY}} {{COUNTRY}}]({{GEO_URL}}), __tz:__ UTC +02:00/+03:00 \[winter/summer]
-{{BR}}__tel-IL-mobile & whatsapp: {{TEL_IL_OBF}} \[PREFERRED]__
+{{BR}}__geolocation:__ [{{CITY}} {{COUNTRY|upper}}]({{GEO_URL}}), __tz:__ UTC +02:00/+03:00 \[winter/summer]
+{{BR}}__tel-IL-mobile & whatsapp : {{TEL_IL_OBF}} \[PREFERRED]__
 {{BR}}__tel-US-work:__ {{TEL_US_OBF}} \[SMS capable]
 {{BR}}__www-home:__ [{{HOME_URL}}]({{HOME_URL}})
 {{BR}}__linkedin:__ [{{LINKEDIN_URL}}]({{LINKEDIN_URL}})
@@ -95,21 +95,21 @@ I am an expert in S/W engineering, cybersecurity, algorithms, and [domain specif
 I am an experienced "hands-on" computer scientist and S/W architect for industrial strength apps.
 I devised innovative algorithms and solutions for many S/W problems in a wide range of fields, including:
 
-* __cybersecurity & cryptography:__ [Viaccess-Orca]({{CV_LOCAL_LINK('viaccess')}}) (2017:6y), [Cisco-NDS]({{CV_FULL_LINK('nds')}}) (2009:6y), [Anonymous]({{CV_FULL_LINK('cybersec-anonymous')}})
-* __data science, big data, & database:__ [Viaccess-Orca]({{CV_LOCAL_LINK('viaccess')}}), [DEC & Iscar]({{CV_LOCAL_LINK('iscar')}}), [Michlala College]({{CV_LOCAL_LINK('michlala')}})
+* __cybersecurity, cryptography, obfuscation:__ [Viaccess-Orca]({{CV_LOCAL_LINK('viaccess')}}) (2017:6y), [Cisco-NDS]({{CV_FULL_LINK('nds')}}) (2009:6y), [Anonymous]({{CV_FULL_LINK('cybersec-anonymous')}})
+* __data science, big data, database:__ [Viaccess-Orca]({{CV_LOCAL_LINK('viaccess')}}), [DEC & Iscar]({{CV_LOCAL_LINK('iscar')}}), [Michlala College]({{CV_LOCAL_LINK('michlala')}})
 * __bioinformatics:__ [Syntezza]({{CV_LOCAL_LINK('syntezza')}}) (2009:3m)
 * __transportation vehicle route guidance:__ [Telequest]({{CV_LOCAL_LINK('telequest')}}) (2010:12m)
 * __blind vision:__ [Virtouch]({{CV_LOCAL_LINK('virtouch')}}) (2003:15m)
-* __accessibility & biofeedback:__ [Cubital]({{CV_LOCAL_LINK('light-pen')}}), [Self-Startup]({{CV_FULL_LINK('gait-monitoring')}}), [Mindlife-Ultramind]({{CV_FULL_LINK('ultramind')}})
+* __accessibility, biofeedback:__ [Cubital]({{CV_LOCAL_LINK('light-pen')}}), [Self-Startup]({{CV_FULL_LINK('gait-monitoring')}}), [Mindlife-Ultramind]({{CV_FULL_LINK('ultramind')}})
 * __telecommunications:__ [Vyyo]({{CV_LOCAL_LINK('vyyo')}}) (2002:3.5y), [MRV-Jolt]({{CV_FULL_LINK('jolt')}}), [One Path Networks - Foxcom]({{CV_LOCAL_LINK('foxcom')}})
-* __VLSI CPU & compiler design:__ [DSPG]({{CV_LOCAL_LINK('dspg')}}) (1994:3y), [Fourfold]({{CV_FULL_LINK('fourfold')}}) (1999:12m)
+* __VLSI CPU, compiler design:__ [DSPG]({{CV_LOCAL_LINK('dspg')}}) (1994:3y), [Fourfold]({{CV_FULL_LINK('fourfold')}}) (1999:12m)
 * __factory automation:__ [DEC & Iscar]({{CV_LOCAL_LINK('iscar')}}) (1991:2.5y), [Newport-Optimet]({{CV_FULL_LINK('optimet')}}) (1998:18m), [Orisol]({{CV_FULL_LINK('orisol')}}) (1986:12m)
 * __3D printing__: [Cubital]({{CV_FULL_LINK('cubital')}}) (1988:18m)
 * __radar:__ [IAI-Elta & DSI]({{CV_LOCAL_LINK('elta')}}) (1984:18m)
 * __automated testing:__ [Elbit-Elop]({{CV_FULL_LINK('elop')}}) (1996:18m), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Vyyo]({{CV_LOCAL_LINK('vyyo')}}), [DSPG]({{CV_LOCAL_LINK('dspg')}})
 * __sysadmin:__ [Cubital]({{CV_LOCAL_LINK('cubital')}}), [John Bryce]({{CV_FULL_LINK('john-bryce')}}) (1985:15m), [Mitre Corp]({{CV_LOCAL_LINK('mitre')}}) (1983:2y)
 %% if not DD
-* __CTO, VP R&D, & biz development:__ [Telequest]({{CV_LOCAL_LINK('telequest')}}), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Nigeria]({{CV_FULL_LINK('agritech')}}), [China]({{CV_FULL_LINK('china')}}), [Virtouch]({{CV_LOCAL_LINK('virtouch')}}), [Pitkha & Elbit-Elop]({{CV_FULL_LINK('elop')}}), [Pitkha & DSPG]({{CV_LOCAL_LINK('dspg')}})
+* __CTO, VP R&D, biz development:__ [Telequest]({{CV_LOCAL_LINK('telequest')}}), [Cisco-NDS]({{CV_FULL_LINK('nds')}}), [Nigeria]({{CV_FULL_LINK('agritech')}}), [China]({{CV_FULL_LINK('china')}}), [Virtouch]({{CV_LOCAL_LINK('virtouch')}}), [Pitkha & Elbit-Elop]({{CV_FULL_LINK('elop')}}), [Pitkha & DSPG]({{CV_LOCAL_LINK('dspg')}})
 %% endif
 {{NL}}
 
@@ -862,13 +862,10 @@ And it is straightforward to write an automated testing suite for the app.
 When specifying an architecture for a large system, it is preferable to create a DSL that describes all aspects of how the system is supposed to behave.
 This DSL formalizes the architecture, and provides the groundwork for automated testing.
 
-The app's CLI should include end user definable control structures (i.e. condition and loop handling), along with the ability to define procedures, variables, and data structures.
-Embedded language frameworks such as [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)) and [FICL](http://ficl.sourceforge.net/) (i.e. an embeddable FORTH) provide this infrastructure for free.
-In fact these relatively small frameworks, i.e. with a memory footprint of 50-100 KB, usually grossly simplify the CLI design.
-Now an argument to a CLI method can take a numeric expression without the necessity of the programmer to understand anything at all about the complexity of writing a numeric expression parser.
-The framework allows an end user to create his own macros, test conditions, and write loops.
+The app's CLI should include end user definable control structures (i.e. condition and loop handling), procedures, variables, data structures, dictionaries, numeric expression parsing, string expression parsing, and etc.
+Embedded language frameworks such as the [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) [Jim TCL](http://jim.tcl.tk/index.html/doc/www/www/index.html), [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)), [eLua](http://wiki.eluaproject.net/), and [FICL](http://ficl.sourceforge.net/) (i.e. an embeddable FORTH) provide this infrastructure for free.
+In fact these relatively small frameworks, i.e. with a memory footprint of ~100 KB, grossly simplify CLI design.
 An app with a CLI can be "glued" together with many other unrelated apps, just like the hundreds of Posix text utilities, and used in many unexpected but very useful ways - as opposed to a GUI-only interface which greatly limits how an app can interface with other apps.
-
 
 ### B.2: DSL How To
 
