@@ -1748,7 +1748,7 @@ hybrid protocols, operations research, algorithms, QA, [DSL], communications lab
     #. The DSL contained drivers to communicate with the fire control system, along with all of the test equipment.
     #. According to the client's hard requirement, the test PCs would be running [MS-DOS].
     #. The project was very successful.
-    #. By the end of the project, Windows NT was being introduced into the market that would run [TCL] which would have obviated the necessity of building a custom [DSL]. It would have been a better solution, but it arrived too late for this project. For the next 20 years, my first choice for architecting a [DSL] was to "piggy back" on [TCL] instead of building a custom compiler.
+    #. By the end of the project, [Windows NT] was being introduced into the market that would run [TCL] which would have obviated the necessity of building a custom [DSL]. It would have been a better solution, but it arrived too late for this project. For the next 20 years, my first choice for architecting a [DSL] was to "piggy back" on [TCL] instead of building a custom compiler.
 </details>
 </div>
 
