@@ -879,7 +879,7 @@ The following are many of the application domains in which I have worked:
 <details markdown="1">
 <summary>
 \(a) I worked on greatly increasing the efficiency of vehicle software updates. My IP (Intellectual Property) enabled my employer to set up a business unit in this field.
-<br>\(b) I invented algorithms and received patents in the fields of [delta compression] and assembly "hot patching".
+<br>\(b) I invented and patented algorithms in the fields of [delta compression] and assembly "hot patching".
 <br>\(c) I developed _legal and safe_ workarounds to the fundamental [Misra C] restrictions on the use of dynamic memory allocations and variable length structures. These restrictions forced most software architects and programmers into  abandoning many of the software advances made in the past 20 years.
 </summary>
     #. Most vehicles have 50-100 ECUs (i.e. small microprocessors) inside them. The ECUs are used to to control the engine, brakes, climate control, etc. These ECUs are connected to the main computer in the vehicle often via a very slow legacy [CAN bus] with an effective payload bandwidth of 128-512 kilo _bits_ per second. It can literally take 2 or more hours to update all of the software on these ECUs even though the updates are [zip compressed][zip compression]. Typically during the update process, the vehicle is immobilized.
