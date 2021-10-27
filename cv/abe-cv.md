@@ -7,7 +7,7 @@ subtitle: __Expert in Software Algorithm Design, Domain Specific Languages, & An
 
 author: Avraham Bernstein
 
-date: 2021-10-26
+date: 2021-10-27
 
 lang: en
 
@@ -909,11 +909,13 @@ The following are many of the application domains in which I have worked:
 <div>
 <details markdown="1">
 <summary>
-\(a) cybersecurity
+\(a) cybersecurity research
 <br>\(b) anti-[reverse engineering], aka [obfuscation]
 <br>\(c) "lightweight" cryptography, where I am continuing to do my own independent research until today for the purpose of possibly building my own [obfuscating compiler]
 </summary>
     #. I developed anti-[reverse engineering] techniques in order to protect the proprietary multimedia content streamed into user playback devices, e.g. PCs, smartphones, set top boxes. A [DRM] (Digital Rights Management) scheme was used to protect multimedia content. The [DRM] protected content contains many keys, which if discovered would allow the content to be pirated, or worse even the content servers to be pirated.
+    #. Soon after Intel and AMD incorporated [hardware virtualization] support into their [X86-64] instruction set, desktop virtualization applications (e.g. [VMware Workstation], [VirtualBox], and [libVirt]) became popular. I discovered a trivial "roll back" hack how to use them to foil [DRM] schemes that were date and playback count restricted. And I discovered how to hack the [X86-64]&nbsp;[RDTSC] instruction that _the host machine [hypervisor] passes to the virtual machine_, where the [RDTSC] instruction returns the 64-bit cumulative number of instruction clock cycles since boot. Many [PRNGs][PRNG] used this instruction as their _exclusive_ source of "entropy", aka randomness. Therefore [DRM] client software could be hacked across many pirate clients so that they all responded with the _identical_ pseudo-random "nonce" (i.e. a number used only once), thus allowing the same session key to be shared by the pirate clients, thus allowing all the pirate clients to share a single subscriber's credentials for viewing the same movie streamed from the server. Even though the more modern (since 2014) [RDRAND] instruction provides much better entropy, it can still be similarly hacked in the [hypervisor]. Since the hack is done inside the host [hypervisor], the [DRM] application running in the virtual machine has no evidence that it has been tampered.
+        * Prohibiting playback inside virtual machines is a waste of time. Use of virtual machines on PCs is ubiquitous. They are also becoming more popular on smartphones. Therefore a possible defense mechanism would be for the server to flag the anomaly that multiple connection requests by a single subscriber for the same content are eminating from multiple geographically diverse IP addresses on the same day.
     #. I was an expert user of C/C++ [obfuscating compilers][obfuscating compiler], especially the [Intertrust Whitecryption] tool suite. I acted as their beta tester. I had a close professional relationship with their lead developer because I had already been involved in the specification of similar product based upon identical [LLVM] infrastructure.
         * Based upon the concepts found in [Collberg's][obfuscation] book [Surreptitious Software], I used the [Jinja2] macro preprocessor and template engine to inject small obfuscations into the source code not handled by the Intertrust compiler. See the trivial example immediately below to generate a fast out-of-order loop where the body of the loop is not contingent upon the order of loop traversal (as long as all indices are eventually covered).
         ``` {.c .numberLines}
@@ -1114,7 +1116,7 @@ The following are many of the application domains in which I have worked:
         // max n < 2^13 dwords (= 2^15 bytes)
 
         ```
-        c. I invented high quality, tiny footprint, and extremely fast PRNGs ([Pseudorandom Number Generator]). I validated the PRNGs with the "gold standard" [PractRand] utility. Use of PRNGs is an important [obfuscation] tactic. Each module or DSO was assigned its own tiny PRNG, implemented as a C [inline function], with its own unique random IV. This avoids having a single global PRNG function that is much more easily attacked.
+        c. I invented high quality, tiny footprint, and extremely fast [PRNGs] (Pseudorandom Number Generators). I validated the [PRNGs][PRNG] with the "gold standard" [PractRand] utility. Use of [PRNGs][PRNG] is an important [obfuscation] tactic. Each module or DSO was assigned its own tiny [PRNG], implemented as a C [inline function], with its own unique random IV (Initialization Vector). This avoids having a single global [PRNG] function that is much more easily attacked.
         d. I tweaked the lightweight [XXTEA] cipher in order to greatly improve its cryptographic strength.
         e. I invented an obfuscated [FORTH]-like compiler that could dynamically load obfuscated applications into pay-TV set top boxes.
         f. __My most significant crytographic algorithm invention is a UHW (_Uniformly_ distributed Hamming Weight)__ implemented with DFTs ([Digital Fourier Transformations][digital fourier transformation]). A standard HW (Hamming Weight) is the sum of the "1" bits in a binary number. Therefore the range of a HW value is from zero to the number of bits in the number, e.g. typically 32 or 64 depending upon the [CPU] architecture. The range of a UHW is the same. Standard HWs are non-linear functions, _but they are not cryptographically useful/interesting on account of their underlying [binomial distribution]._ Rotating or permuting the bits in a number according to its HW does not change the HW, therefore the operation is invertible. But a UHW is also non-linear. It is also invariant with respect to bit rotation and permutation, and therefore is invertible _as long as the rotation/permutation uses groups the size of 1/4 of the bits in the underlying value, e.g. 32-bit and 64-bit values._ Cryptographic operations based upon UHWs are much stronger than the DDRs ([Data Dependent Rotations]) permutations made famous by Rivest in his [RC5] cipher. For example in [RC5] the low 5 bits of the preceding 32-bit value is used to rotate the subsequent 32-bit value. But by using UHWs, the UHW of the preceding 64-bit value could be used to rotate the subsequent 64-bit value. The UHW has many properties similar to standard HWs. I will publish a paper on the algorithm in the near future, including an empirical proof that the distribution is uniform (but with some minor perturbations). Here is the source code of the core algorithm:
@@ -1193,6 +1195,7 @@ The following are many of the application domains in which I have worked:
         * When we were forced to abandon root detection on the device, I designed a better protection scheme, this time on the server side, in order to detect _anomalous_ behavior. For example, was a subscriber viewing 100+ hours a week (out of 168 hours) of movies? or was his account being activated from many widely separate geographic locations often around the same time of day?
     #. @[NDS]: I was involved in joining hacker smartcard sharing groups that could share credentials in real time on legacy set top boxes. It was possible to detect which cards were being shared, and to disable them live. Similarly I joined hacking groups that would live stream sports broacasts to geoblocked locations, i.e. with 100 km of the stadium. In 2006, the Chinese were notorious for rebroadcasting FIFA Mondial football games around the world, thus reducing the license fees of those companies who owned the broadcast rights. Ironically I was placed in charge of technically protecting the 2008 Beijing Olympic game broadcast from being broadcast outside of China at the behest of the Chinese government TV company CCTV because not preventing these pirate broadcasts would endanger their host country right to broadcast the games internally for free.
         * The Chinese correctly assumed that the pirated feeds would start off from local Chinese viewers looking to make a handsome profit by illegally exporting their local feed, just like they rebroadcast the football games 2 years earlier. CCTV did not want Microsoft to have anything to do with the protection scheme, because at the time nearly every single private PC was using a pirated [Windows XP] license, and because CCTV itself was using tens of thousands unlicensed Microsoft servers to broadcast the feed throughout their country. I came up with a very good technical solution. My solution would require that every single PC in China that received the local broadcast would have to install an [NDS] application. The price would be $0.25 per PC which would have amounted to over $100M in profits. I told the Chinese there were a few geographical regions in China that I could not protect. Because part of my protection scheme relied upon speed of light timing precision of "pings", I could not protect the hinterlands that used satellite transmissions, or in the populous Shenzhen region that borders Hong Kong. And I even told them that some of my findings were based upon my analysis of the Great Firewall Of China (GFOC) which at that time the government refused to admit even existed. The Chinese appreciated my brutally honest proposal. NDS was on the threshold of winning the contract. But Microsoft came back with a last minute counter offer - for absolutely free! Microsoft knew very well why they had been excluded from the bidding. They promised not to sue the Chinese government over the illegal licenses. And since at that time Microsoft was a partner with MS-NBC that owned the Olympic broadcast rights, they also promised not to sue even if the feed were illegally broadcast from China. Therefore [NDS] lost the contract.
+    #. @[NDS]: I was the architect and implementor of a hybrid simulator-emulator for _legacy_ TV STBs (Set Top Boxes) in order to enable high level debugging of applications implemented for them. Because the still-popular legacy STB had minimal RAM, no high level debugger could be attached to it. Therefore it was being primitively debugged using `printf()` instructions output to a a very slow RS-232 serial port, i.e. 19.2K bits per second. My solution was to simulate the vast majority of the the "middleware" C language API on a PC. However the hardware specific API functions, e.g. that wrote to the TV display, were redirected to the physical STB from the PC via an [RPC] (Remote Procedure Call) mechanism. The final result of the project was that the state of the art [Microsoft Visual Studio debugger] could now be used to efficiently debug STB applications - in fact more comfortably than the middleware debugger available on the bigger and more modern STBs because their CPUs were much less powerful than what is available on PCs.
 </details>
 </div>
 
@@ -1200,10 +1203,10 @@ The following are many of the application domains in which I have worked:
 <div>
 <details markdown="1">
 <summary>
-\(a) patching x86_64 assembly code
+\(a) patching [x86-64] assembly code
 <br>\(b) [WASM] (Web Assembly)
 </summary>
-    #. While searching for particular attributes in disassembled X86_64 binary object code (without access to the original high level language source code or symbol table), I automatically patched the assembly code using [trampolines][trampoline] placed inside "hidden" memory holes inside [ELF] files in order to avoid defining the trampolines in dynamic process memory that would make the DSO (Linux Dynamic Shared Object, aka `.so`) files effectively unshareable, because each process copy of a DSO would have process specific jump addresses to their own trampoline instances.
+    #. While searching for particular attributes in disassembled [X86-64] binary object code (without access to the original high level language source code or symbol table), I automatically patched the assembly code using [trampolines][trampoline] placed inside "hidden" memory holes inside [ELF] files in order to avoid defining the trampolines in dynamic process memory that would make the DSO (Linux Dynamic Shared Object, aka `.so`) files effectively unshareable, because each process copy of a DSO would have process specific jump addresses to their own trampoline instances.
         * In order to restrict my attribute searches to inside the body of a function, I invented accurate heuristics that could detect function definitions/boundaries even without the help of a symbol table, and even where indirect function calls were commonly used. This is known to be an extremely difficult problem in the software industry.
     #. I engaged in [WASM] (Web Assembly) experiments to speed up javascript apps.
 </details>
@@ -1972,11 +1975,15 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 
 [gnu toolchain]: https://en.wikipedia.org/wiki/GNU_toolchain
 
+[hardware virtualization]: https://www.cse.msu.edu/~cse820/lectures/hardwareVirtualization.pdf
+
 [hash table]: https://en.wikipedia.org/wiki/Hash_table
 
 [homomorphic encryption]: https://en.wikipedia.org/wiki/Homomorphic_encryption
 
 [hydroelectricity]: https://en.wikipedia.org/wiki/Hydroelectricity
+
+[hypervisor]: https://en.wikipedia.org/wiki/Hypervisor
 
 [ibm 1130]: https://en.wikipedia.org/wiki/IBM_1130
 
@@ -2004,6 +2011,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 
 [lex and yacc]: http://dinosaur.compilertools.net/
 
+[libvirt]: https://en.wikipedia.org/wiki/Libvirt
+
 [light pen]: https://en.wikipedia.org/wiki/Light_pen
 
 [gcc linker script]: https://ftp.gnu.org/old-gnu/Manuals/ld-2.9.1/html_chapter/ld_toc.html#TOC6
@@ -2011,6 +2020,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 [llvm]: https://llvm.org/
 
 [logistic function]: https://en.wikipedia.org/wiki/Logistic_function
+
+[microsoft visual studio debugger]: https://en.wikipedia.org/wiki/Microsoft_Visual_Studio#Debugger
 
 [misra c]: https://en.wikipedia.org/wiki/MISRA_C
 
@@ -2046,7 +2057,7 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 
 [practrand]: http://pracrand.sourceforge.net/
 
-[pseudorandom number generator]: https://en.wikipedia.org/wiki/Pseudorandom_number_generator
+[PRNG]: https://en.wikipedia.org/wiki/Pseudorandom_number_generator
 
 [pyexpander]: https://pyexpander.sourceforge.io/
 
@@ -2058,11 +2069,17 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 
 [rc5]: https://en.wikipedia.org/wiki/RC5
 
+[rdrand]: https://www.felixcloutier.com/x86/rdrand
+
+[rdtsc]: https://www.felixcloutier.com/x86/rdtsc
+
 [refactor]: https://en.wikipedia.org/wiki/Code_refactoring
 
 [relational database]: https://en.wikipedia.org/wiki/Relational_database
 
 [reverse engineering]: https://en.wikipedia.org/wiki/Reverse_engineering
+
+[rpc]: https://en.wikipedia.org/wiki/Remote_procedure_call
 
 [sed]: https://en.wikipedia.org/wiki/Sed
 
@@ -2104,9 +2121,13 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 
 [Viaccess-Orca/Orange]: https://www.viaccess-orca.com/
 
+[virtualbox]: https://en.wikipedia.org/wiki/VirtualBox
+
 [virtouch (defunct)]: https://www.israel21c.org/graphic-breakthrough-for-the-blind-developed-in-israel/
 
 [vlsi]: https://en.wikipedia.org/wiki/Very_Large_Scale_Integration
+
+[vmware workstation]: https://en.wikipedia.org/wiki/VMware_Workstation
 
 [wasm]: https://webassembly.org/
 
@@ -2117,6 +2138,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 [windows nt]: https://en.wikipedia.org/wiki/Windows_NT
 
 [windows xp]: https://en.wikipedia.org/wiki/Windows_XP
+
+[x86-64]: https://en.wikipedia.org/wiki/X86-64
 
 [xml]: https://en.wikipedia.org/wiki/XML
 
