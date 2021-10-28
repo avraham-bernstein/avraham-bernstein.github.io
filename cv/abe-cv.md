@@ -7,7 +7,7 @@ subtitle: __Expert in Software Algorithm Design, Domain Specific Languages, & An
 
 author: Avraham Bernstein
 
-date: 2021-10-27
+date: 2021-10-28
 
 lang: en
 
@@ -857,7 +857,7 @@ oVxYrLSGYYlT+n+pmoXvDqBHDwAAAABJRU5ErkJggg==
 
 ---
 
-My profession is a computer scientist and inventor. I have a long and successful track record inventing and implementing [algorithms][algorithm] in a wide range of application domains such as automotive, pay TV, [VLSI]&nbsp;[CPU] design, shop floor production control, [bioinformatics], accessibility, and telecommunications. I am hired to solve challenging and interesting problems that have greatly benefited my employers and clients. A common technique that I use is developing [DSLs][DSL] (Domain-Specific Language) and their associated [compilers][compiler]. And I have unique expertise in the field of cybersecurity related to anti-[reverse engineering], aka [obfuscation].
+My profession is a computer scientist and inventor. I have a long and successful track record inventing and implementing [algorithms][algorithm] in a wide range of application domains such as automotive, pay TV, [VLSI]&nbsp;[CPU] design, shop floor production control, [bioinformatics], accessibility, and telecommunications. I am hired to solve challenging and interesting problems that have greatly benefited my employers and clients. A common technique that I use is developing [DSLs][DSL] (Domain-Specific Language) and their associated [compilers][compiler]. And I have unique expertise in the subspeciality of cybersecurity related to anti-[reverse engineering], aka [obfuscation].
 
 I invent software [algorithms][algorithm]. Typically for all my inventions I must implement a working POC (Proof Of Concept), and often I also implement a MVP (Minimum Viable Product). I am a "hands-on" technology expert who comfortably "swims" from the highest conceptual level down to the lowest level of "bits and bytes".
 
@@ -890,7 +890,7 @@ The following are many of the application domains in which I have worked:
     #. I also experimented with Google's FOSS [Courgette]&nbsp;[delta compression] algorithm. Unlike [bsdiff] compression which is instruction set "agnostic", [Courgette] is based upon (a) having access to assembly source code with full symbol information, and (b) the target device must have an assembler and linker. [Courgette] usually generates updates that are much more compact than pure [bsdiff]. Google claims up to 7 times smaller. Google successfully uses [Courgette] to push updates for their [Chromium] and Android projects where there is sufficient room on the target to host a (mini) assembler and linker.
         * _Prima facie_ having an assembler and linker on a target ECU device would be impossible due to the severe RAM and FLASH size constraints. However I invented a way to implement a table driven [Courgette]-like algorithm on a small ECU without the need for an assembler or linker, as long as a symbol table was available.
     #. I invented and patented an algorithm for assembly "hot patching" [ELF] binary files (i.e. without source code, but with the help of a symbol table). The algorithm was easily ported to a number of different [CPU] architectures.
-        * Most of the implementation effort involved patching [ELF] files, parsing linker map files, and generating [gcc linker scripts][gcc linker script].
+        * Most of the implementation effort involved patching [ELF] files, parsing linker map files, and generating (esoteric) [gcc linker scripts][gcc linker script].
     #. I also invented, but did not patent, an algorithm for C "hot patching".
         a. In order to greatly speed up the development process. instead of building a full-fledged C [compiler], even with the help of a [drop-in grammar](https://github.com/antlr/grammars-v4), I experimented with the [SrcML] package that converts C source code into [XML], combined with the Python [Beautiful Soup] package which manipulates [XML]. In my professional opinion [Beautiful Soup] is much more powerful and elegant than the more commonly used [XQuery] package. I was very pleased with the results of this compiler design technique. I would highly recommend this technique to my professional colleagues involved in [refactoring][refactor] projects.
         b. In order to build a single common [jump table] for both static and global functions, I generated unique global "alias" [gcc function attribute] for all static functions.
@@ -936,7 +936,7 @@ The following are many of the application domains in which I have worked:
             a[i] = b[i] + c[i];
         }
         ```
-    #. I invented a technique for generating a _usable_ Linux DSO (Dynamic Shared Object, aka `.so`) file that _formally exports no symbols_ which makes it quite challenging to statically reverse engineer. In fact the the symbol table was a lightweight encrypted [jump table]. Each entry was encrypted using the lightweight encryption [wrapper](#wrapper) algorithm described immediately below. The table was exported using a hidden asynchronous pipe. The `.h` file associated with the table, contained macros that looked just like regular C function declarations but were in fact implemented as [jump table] invocations. When a DSO is defined with a function with the "constructor" [gcc function attribute], the constructor function is automatically invoked before the DSO finishes loading via the system [dlopen()] call.
+    #. I invented a technique for generating a _usable_ Linux [DSO] (Dynamic Shared Object, aka `.so`) file that _formally exports no symbols_ which makes it quite challenging to statically reverse engineer. In fact the the symbol table was a lightweight encrypted [jump table]. Each entry was encrypted using the lightweight encryption [wrapper](#wrapper) algorithm described immediately below. The table was exported using a hidden asynchronous pipe. The `.h` file associated with the table, contained macros that looked just like regular C function declarations but were in fact implemented as [jump table] invocations. When a [DSO] is defined with a function with the "constructor" [gcc function attribute], the constructor function is automatically invoked before the DSO finishes loading via the system [dlopen()] call.
         * I used a similar technique to lightweight cryptographically wrap all system calls. The technique was able to stop static reverse engineering, and it was even able to "blind" the state of the art [IDA Hexrays] reverse engineering debugger.
     #. I invented many "lightweight" cryptographic algorithms to improve [obfuscation]. The algorithms are also very useful for [IOT] devices. Here are some of the algorithms:
         a. <a name="wrapper" />I invented a lightweight cryptographic wrapper function that can quickly and efficiently convert a 32-bit "x32" into a pseudo-random 64-bit "y64", or convert a 64-bit "x64" into a pseudo-random "y128". The functions are small enough and fast enough that they can be implemented as [inline functions][inline function]. They are especially useful to confuse an attacker who is observing the calling stack. Functions that are regularly called with the same real parameters, will always have different obfuscated parameters - even when the key remains constant, as long as the "rnd" argument is updated on each call. Note that with minor restrictions this scheme can be used to implement [homomorphic encryption].
@@ -1116,7 +1116,7 @@ The following are many of the application domains in which I have worked:
         // max n < 2^13 dwords (= 2^15 bytes)
 
         ```
-        c. I invented high quality, tiny footprint, and extremely fast [PRNGs] (Pseudorandom Number Generators). I validated the [PRNGs][PRNG] with the "gold standard" [PractRand] utility. Use of [PRNGs][PRNG] is an important [obfuscation] tactic. Each module or DSO was assigned its own tiny [PRNG], implemented as a C [inline function], with its own unique random IV (Initialization Vector). This avoids having a single global [PRNG] function that is much more easily attacked.
+        c. I invented high quality, tiny footprint, and extremely fast [PRNGs] (Pseudorandom Number Generators). I validated the [PRNGs][PRNG] with the "gold standard" [PractRand] utility. Use of [PRNGs][PRNG] is an important [obfuscation] tactic. Each module  was assigned its own tiny [PRNG], implemented as a C [inline function], with its own unique random IV (Initialization Vector). This avoids having a single global [PRNG] function that is much more easily attacked.
         d. I tweaked the lightweight [XXTEA] cipher in order to greatly improve its cryptographic strength.
         e. I invented an obfuscated [FORTH]-like compiler that could dynamically load obfuscated applications into pay-TV set top boxes.
         f. __My most significant crytographic algorithm invention is a UHW (_Uniformly_ distributed Hamming Weight)__ implemented with DFTs ([Digital Fourier Transformations][digital fourier transformation]). A standard HW (Hamming Weight) is the sum of the "1" bits in a binary number. Therefore the range of a HW value is from zero to the number of bits in the number, e.g. typically 32 or 64 depending upon the [CPU] architecture. The range of a UHW is the same. Standard HWs are non-linear functions, _but they are not cryptographically useful/interesting on account of their underlying [binomial distribution]._ Rotating or permuting the bits in a number according to its HW does not change the HW, therefore the operation is invertible. But a UHW is also non-linear. It is also invariant with respect to bit rotation and permutation, and therefore is invertible _as long as the rotation/permutation uses groups the size of 1/4 of the bits in the underlying value, e.g. 32-bit and 64-bit values._ Cryptographic operations based upon UHWs are much stronger than the DDRs ([Data Dependent Rotations]) permutations made famous by Rivest in his [RC5] cipher. For example in [RC5] the low 5 bits of the preceding 32-bit value is used to rotate the subsequent 32-bit value. But by using UHWs, the UHW of the preceding 64-bit value could be used to rotate the subsequent 64-bit value. The UHW has many properties similar to standard HWs. I will publish a paper on the algorithm in the near future, including an empirical proof that the distribution is uniform (but with some minor perturbations). Here is the source code of the core algorithm:
@@ -1206,8 +1206,9 @@ The following are many of the application domains in which I have worked:
 \(a) patching [x86-64] assembly code
 <br>\(b) [WASM] (Web Assembly)
 </summary>
-    #. While searching for particular attributes in disassembled [X86-64] binary object code (without access to the original high level language source code or symbol table), I automatically patched the assembly code using [trampolines][trampoline] placed inside "hidden" memory holes inside [ELF] files in order to avoid defining the trampolines in dynamic process memory that would make the DSO (Linux Dynamic Shared Object, aka `.so`) files effectively unshareable, because each process copy of a DSO would have process specific jump addresses to their own trampoline instances.
+    #. While searching for particular attributes in disassembled [X86-64] binary object code (without access to the original high level language source code or symbol table), I automatically patched the assembly code using [trampolines][trampoline] placed inside "hidden" memory holes inside [ELF] files in order to avoid defining the trampolines in dynamic process memory that would make the [DSO] (Linux Dynamic Shared Object, aka `.so`) files effectively unshareable, because each process copy of a [DSO] would have process specific jump addresses to their own trampoline instances.
         * In order to restrict my attribute searches to inside the body of a function, I invented accurate heuristics that could detect function definitions/boundaries even without the help of a symbol table, and even where indirect function calls were commonly used. This is known to be an extremely difficult problem in the software industry.
+        * I implemented the project in Python, with the help of the excellent FOSS [LIEF]&nbsp;[ELF] parsing package, and the [Pydis]&nbsp;[X86-64] disassembly package. [Pydis] is a python port of the outstanding C [Zydis]&nbsp;[X86-64] disassembler. (Note that [no X86-64 disassembler is 100% accurate], but [Zydis] is the "best of breed"). Even though [Pydis] is not well documented, it follows 90+% the [Zydis] C API. The Python reflective function `dir()` helped me to get around the rough edges.
     #. I engaged in [WASM] (Web Assembly) experiments to speed up javascript apps.
 </details>
 </div>
@@ -1846,12 +1847,12 @@ senior software engineer
 
 | Expertise | Language                                                 |
 |:----------|:---------------------------------------------------------|
-| 5/5       | C99, C11, bash, awk, markdown, pandoc, Linux User Mode API & CLI
-| 4/5       | sed, Python, pyexpander, TCL, Zim wiki, MkDocs static site generator
-| 3/5       | C++, Javascript, HTML5, XML, Yaml, JSON, ELF, Lief, Zydis, SrcML, Beautiful Soup, Reveal.js, Jinaj2, git, Jira, Visual Studio, Windows User Mode API
-| 2/5       | SVG, Golang, LLVM, Antlr, bison, flex, Assembler, Forth, Prolog, Lisp, Fortran, C#, Java, J (APL), Numpy, OpenGL, vim
+| 5/5       | C99, C11, [gcc], clang, bash, awk, markdown, pandoc, Linux User Mode API & CLI
+| 4/5       | make, [sed], Python, [pyexpander], [TCL], [tinyc], Zim wiki, MkDocs static web site generator
+| 3/5       | C++, HTML5, Javascript, [XML], JSON, Yaml, [ELF], [Lief], [Zydis], [Pydis], [SrcML], [Beautiful Soup], [Jinja2], Reveal.js, git, Jira, Excel, Visual Studio, [libvirt], [VirtualBox], Windows User Mode API
+| 2/5       | CMake, [SVG], Golang, [LLVM], Antlr, bison, flex, Assembler, [Forth], Prolog, Lisp, Fortran, C#, Java, J (i.e. neo-APL), Numpy, OpenGL, [SNMP], TCP/IP, UDP, vim
 
-__The expertise ranking is based upon how frequently I use these languages, and also based upon my personal preferences. But since I write compilers, I am usually able to become proficient in any computer language that my job requires within 2 weeks.__
+__My expertise level ranking is based upon how frequently I use these languages, and also based upon my personal preferences. But since I write [compilers][compiler], I am usually able to become proficient in any computer language that my job requires within 1-2 weeks.__
 
 ### Language Research Interests
 
@@ -1941,6 +1942,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 
 [dsl]: https://en.wikipedia.org/wiki/Domain-specific_language
 
+[dso]: https://www.webopedia.com/definitions/dynamic-shared-object/
+
 [dsp]: https://en.wikipedia.org/wiki/Digital_signal_processor
 
 [dspg]: https://www.dspg.com/
@@ -2013,6 +2016,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 
 [libvirt]: https://en.wikipedia.org/wiki/Libvirt
 
+[lief]: https://github.com/lief-project/LIEF
+
 [light pen]: https://en.wikipedia.org/wiki/Light_pen
 
 [gcc linker script]: https://ftp.gnu.org/old-gnu/Manuals/ld-2.9.1/html_chapter/ld_toc.html#TOC6
@@ -2034,6 +2039,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 [nds]: https://en.wikipedia.org/wiki/Synamedia
 
 [nim]: https://nim-lang.org/
+
+[no X86-64 disassembler is 100% accurate]: https://security.di.unimi.it/homes/gianz/pubs/issta10-nversion.pdf
 
 [o'reilly safari]: https://www.oreilly.com/library/view/learning-java-4th/9781449372477/pr02s07.html
 
@@ -2058,6 +2065,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 [practrand]: http://pracrand.sourceforge.net/
 
 [PRNG]: https://en.wikipedia.org/wiki/Pseudorandom_number_generator
+
+[pydis]: https://github.com/novogen/pydis
 
 [pyexpander]: https://pyexpander.sourceforge.io/
 
@@ -2107,6 +2116,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 
 [tcl]: https://en.wikipedia.org/wiki/Tcl
 
+[tinyc]: https://en.wikipedia.org/wiki/Tiny_C_Compiler
+
 [trampoline]: http://timetobleed.com/hot-patching-inlined-functions-with-x86_64-asm-metaprogramming/
 
 [two factor authentication]:
@@ -2150,3 +2161,5 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 [xz embedded]: https://tukaani.org/xz/embedded.html
 
 [zip compression]: https://openzipfile.net/compression-algorithms.html
+
+[zydis]: https://github.com/zyantific/zydis
