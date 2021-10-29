@@ -7,7 +7,7 @@ subtitle: __Expert in Software Algorithm Design, Domain Specific Languages, & An
 
 author: Avraham Bernstein
 
-date: 2021-10-28
+date: 2021-10-29
 
 lang: en
 
@@ -859,16 +859,15 @@ oVxYrLSGYYlT+n+pmoXvDqBHDwAAAABJRU5ErkJggg==
 
 My profession is a computer scientist and inventor. I have a long and successful track record inventing and implementing [algorithms][algorithm] in a wide range of application domains such as automotive, pay TV, [VLSI]&nbsp;[CPU] design, shop floor production control, [bioinformatics], accessibility, and telecommunications. I am hired to solve challenging and interesting problems that have greatly benefited my employers and clients. A common technique that I use is developing [DSLs][DSL] (Domain-Specific Language) and their associated [compilers][compiler]. And I have unique expertise in the subspeciality of cybersecurity related to anti-[reverse engineering], aka [obfuscation].
 
-I invent software [algorithms][algorithm]. Typically for all my inventions I must implement a working POC (Proof Of Concept), and often I also implement a MVP (Minimum Viable Product). I am a "hands-on" technology expert who comfortably "swims" from the highest conceptual level down to the lowest level of "bits and bytes".
+I invent software [algorithms][algorithm]. Recently I was granted patents in the field of software updates for the automotive industry. Typically for all my inventions I must implement a working POC (Proof Of Concept), and often I also implement a MVP (Minimum Viable Product). I am a "hands-on" technology expert who comfortably "swims" from the highest conceptual level down to the lowest level of "bits and bytes".
 
 For many projects I invent a [DSL] (Domain-Specific Language), that [compiles][compiler] into working software. Where feasible I design the [DSLs][DSL] to be [declarative] - as opposed to procedural. [DSLs][DSL] greatly simplify the problem space especially for domain experts who are not software professionals. And [DSLs][DSL] greatly help to rigorously specify testable software architectures and specifications.
 
 I am an [expert generalist] and an [autodidact polymath] [^autodidact-polymath]. My "secret weapon" is a subscription to the [O'Reilly Safari] technical library. I am able to _synthesize_ my knowledge. I am often able to apply the skills and knowledge that I acquired in one domain, and successfully apply them to another. To get to this level of expertise so quickly, I have often relied upon domain experts who mentored me. In return, I have mentored many others.
 
+_My ideal career position is to be either a principal engineer or an [algorithm] designer reporting to either the CTO or the VP R&D._ For a large firm, I aim to be a senior person on the technical ladder as opposed to the management ladder. I prefer working alone, or otherwise managing a small team, where I shine as a mentor. Formerly I had senior management positions, but I prefer to return to the individual contributor path. See this article about the benefits to a firm by having managers who have returned to become [individual contributors][individual contributor]. (And my formal background in economics and business is an important added value which allows me to engage in [economic thinking]). Just like [Picasso] never stopped loving and creatively painting throughout his whole life, I love and thrive on the intellectual challenge of inventing software algorithms - which obviously requires that I be a "master software engineer". _Even though I am now in my 60's, you can see from my recent patents that I am still at the "top of my game". I have come to the conclusion that I want to continue working only on what I like to do. I am certain that there are hi-tech firms that can use me to their advantage._
+
 I attended university in Toronto Canada where I received a Master's degree in economics and applied mathematics. My thesis was the economically efficient design of a [hydroelectric dam][hydroelectricity] using computer simulation of water flow. At the age of 14, my first major programming project was to program a _perfect_ game of 3D X's and O's (aka [Qubic]) played on a stack of four transparent 4x4 boards. I wrote the program in Fortran on a [mini-computer][ibm 1130] that had just 64 __KB__ RAM including the space required for the O/S.
-
-Like everyone else in the software development business, I started off as a junior programmer. Later I progressed to manage teams and small departments, and finally to the level of CTO for 3 different small firms - where I was a partner in one of them. _But first and foremost I am a master software engineer._ Like Picasso loved to paint his whole life, I still love designing and inventing software algorithms. _As you can see from my recent experience described immediately below, even though I am in my 60's, I am still at the top of my game. Note my recent patents._ I decided that I prefer working on very challenging and interesting problems alone, or at most managing a very small team, where I shine as a mentor. I do not want to take a standard (Hebrew: _Stam_) senior software developer position, working on sundry bug fixes and minor feature additions. Ideally, for a small firm I should be working on special projects (possibly as a contractor), and for a large firm I should report to the CTO.
-
 
 The following are many of the application domains in which I have worked:
 
@@ -1950,6 +1949,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 
 [dyslexia]: https://en.wikipedia.org/wiki/Dyslexia
 
+[economic thinking]: https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/
+
 [elf]: https://en.wikipedia.org/wiki/Executable_and_Linkable_Format
 
 [elop/elbit]: https://elbitsystems.com/about-us-quality-assurance-elbit-systems-electro-optics-elop/
@@ -1991,6 +1992,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 [ibm 1130]: https://en.wikipedia.org/wiki/IBM_1130
 
 [IDA Hexrays]: https://hex-rays.com/IDA-pro/
+
+[individual contributor]: https://swaroopch.com/back-to-ic
 
 [inline function]: https://en.wikipedia.org/wiki/Inline_function
 
@@ -2059,6 +2062,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 [PCR]: https://en.wikipedia.org/wiki/Polymerase_chain_reactio
 
 [PCR inhibition]: https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitor
+
+[picasso]: https://en.wikipedia.org/wiki/Pablo_Picasso
 
 [pipeline]: https://en.wikipedia.org/wiki/Pipeline_(computing)
 
