@@ -23,6 +23,14 @@ header-includes: |
     gUOgYjmfKABLwIrrBHXbxWIKm0F8Wy7PgxAxhzgxPE6bPJ9z7WScPJNBTBt+my6R
     j5HxgM84SkpUQrQQX4jIsaPIci1EcYASXScl2jTgNONRnRlnw/MlfyCWE4GGgbUM
     gZpxGhkCn4g7xBFiocMJRj+ckcDfF/gBCTJDUqZhh4kAAAAASUVORK5CYII="/>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-17365003-3', 'auto');
+      ga('send', 'pageview');
+    </script>
 ---
 
 ---
@@ -859,7 +867,7 @@ oVxYrLSGYYlT+n+pmoXvDqBHDwAAAABJRU5ErkJggg==
 
 My profession is a computer scientist and inventor. I have a long and successful track record inventing and implementing [algorithms][algorithm] in a wide range of application domains such as automotive, pay TV, [VLSI]&nbsp;[CPU] design, shop floor production control, [bioinformatics], accessibility, and telecommunications. I am hired to solve challenging and interesting problems that have greatly benefited my employers and clients. A common technique that I use is developing [DSLs][DSL] (Domain-Specific Language) and their associated [compilers][compiler]. And I have unique expertise in the subspeciality of cybersecurity related to anti-[reverse engineering], aka [obfuscation].
 
-I invent software [algorithms][algorithm]. Recently I was granted patents in the field of software updates for the automotive industry. Typically for all my inventions I must implement a working POC (Proof Of Concept), and often I also implement a MVP (Minimum Viable Product). I am a "hands-on" technology expert who comfortably "swims" from the highest conceptual level down to the lowest level of "bits and bytes".
+I invent software [algorithms][algorithm]. Recently I was granted patents in the field of fast embedded software updates for the automotive industry. Typically for all my inventions I must implement a working POC (Proof Of Concept), and often I also implement a MVP (Minimum Viable Product). I am a "hands-on" technology expert who comfortably "swims" from the highest conceptual level down to the lowest level of "bits and bytes".
 
 For many projects I invent a [DSL] (Domain-Specific Language), that [compiles][compiler] into working software. Where feasible I design the [DSLs][DSL] to be [declarative] - as opposed to procedural. [DSLs][DSL] greatly simplify the problem space especially for domain experts who are not software professionals. And [DSLs][DSL] greatly help to rigorously specify testable software architectures and specifications.
 
@@ -1846,7 +1854,7 @@ senior software engineer
 
 | Expertise | Language                                                 |
 |:----------|:---------------------------------------------------------|
-| 5/5       | C99, C11, [gcc], clang, bash, awk, markdown, pandoc, Linux User Mode API & CLI
+| 5/5       | C99, C11, [gcc], clang, bash, awk, [markdown], [pandoc], Linux User Mode API & CLI
 | 4/5       | make, [sed], Python, [pyexpander], [TCL], [tinyc], Zim wiki, MkDocs static web site generator
 | 3/5       | C++, HTML5, Javascript, [XML], JSON, Yaml, [ELF], [Lief], [Zydis], [Pydis], [SrcML], [Beautiful Soup], [Jinja2], Reveal.js, git, Jira, Excel, Visual Studio, [libvirt], [VirtualBox], Windows User Mode API
 | 2/5       | CMake, [SVG], Golang, [LLVM], Antlr, bison, flex, Assembler, [Forth], Prolog, Lisp, Fortran, C#, Java, J (i.e. neo-APL), Numpy, OpenGL, [SNMP], TCP/IP, UDP, vim
@@ -1858,6 +1866,16 @@ __My expertise level ranking is based upon how frequently I use these languages,
 #. [Nim] and [Python 3.10 structural pattern matching](https://www.python.org/dev/peps/pep-0635/) are interesting due to the way they elegantly handle ASTs ([Abstract Syntax Tree]) which are useful for writing compilers, refactoring, and obfuscation patterns.
 
 #. A deeper understanding of [WASM] (Web Assembly) is interesting (1) in order to bring C binary performance into Web browser Javascript applications, and (2) as a virtual machine that can allow compiled C/Golang/Nim/Rust functions to be dynamically loaded into binary applications instead of [FORTH] whose stack programming paradigm is uncomfortable/unfamiliar for many programmers.
+
+## Colophon
+
+I wrote this document in [pandoc]&nbsp;[markdown] which generates HTML. HTML is the most expressive way to format [markdown] documents. I did not (yet) even use a custom template. All things being equal, I prefer generating a standalone document that does not need to externally link to any image files. Since I use only a few images, I "inline" them by using the HTML attribute `src="data:image..."`. You can see the [markdown] source code [here](https://github.com/avraham-bernstein/avraham-bernstein.github.io/blob/master/cv/abe-cv.md).
+
+_What is unique about this document, is how I "tightly coupled" the full HTML version with the abbreviated DOCX version, aka Microsoft Word format, because most HR (Human Resource) departments, at least in Israel, will accept CVs only in DOCX format. Tightly coupling the two versions enables the reader of the abbreviated DOCX version to seamlessly access details found only in the full HTML version._
+
+CVs must be relatively short in order that initially the "gatekeeper" HR clerk, and subsequently a technical manager, can scan it in less than a minute in order to quickly make a go/no-go decision. Therefore given my long career, with many important details, there is simply no room to specify other than cursory details. On the other hand, in my professional opinion when HR passes my CV to a technical manager who will potentially hire me, when he notices an item that interests him, he would most definitely be interested in having the ability to "drill down" for more details. Quite often I have been on the other side of the table where I have received such CVs. However in order to get these details from me, company policy demands that the technical manager first formally arrange an interview, even a telephonic interview, via the HR department. It is not worth the technical manager's time to hassle with the HR department in order to be officially allowed to ask me just a quick question or two.
+
+I provide a "user friendly" solution to this dilemna, namely that enables the reader of the abbreviated DOCX version to seamlessly access more details from the full HTML version immediately when he needs them. I store the HTML version on my personal web site. The HTML version superficially looks like the DOCX version, but the HTML version liberally uses the `<details>` tag in order to allow the reader to easily "drill down" for more details. I add a named [HTML bookmark], aka anchor, to each section that uses a `<details>` tag. Now in the DOCX version, instead I add a final list item "More details ..." which links to the associated HTML bookmark, e.g. <http://www.AvrahamBernstein.com/cv/AvrahamBernstein-CV-Full.html#automotive>.
 
 ## Footnotes {.unnumbered}
 
@@ -1985,6 +2003,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 
 [homomorphic encryption]: https://en.wikipedia.org/wiki/Homomorphic_encryption
 
+[html bookmark]: https://www.tutorialspoint.com/How-to-create-a-bookmark-link-in-HTML
+
 [hydroelectricity]: https://en.wikipedia.org/wiki/Hydroelectricity
 
 [hypervisor]: https://en.wikipedia.org/wiki/Hypervisor
@@ -2029,6 +2049,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 
 [logistic function]: https://en.wikipedia.org/wiki/Logistic_function
 
+[markdown]: https://daringfireball.net/projects/markdown/
+
 [microsoft visual studio debugger]: https://en.wikipedia.org/wiki/Microsoft_Visual_Studio#Debugger
 
 [misra c]: https://en.wikipedia.org/wiki/MISRA_C
@@ -2056,6 +2078,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 [opengl]: https://en.wikipedia.org/wiki/OpenGL
 
 [optimet/ophir]: https://www.optimet.com/about_ophir_optronics.php
+
+[pandoc]: https://www.pandoc.org
 
 [pascal]: https://en.wikipedia.org/wiki/Pascal_%28programming_language%29
 
