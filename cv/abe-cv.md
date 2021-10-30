@@ -7,11 +7,12 @@ subtitle: __Expert in Software Algorithm Design, Domain Specific Languages, & An
 
 author: Avraham Bernstein
 
-date: 2021-10-29
+date: 2021-10-30
 
 lang: en
 
 header-includes: |
+    <!-- AB Favicon -->
     <link  rel="icon" type="image/png" href="data:image/png;base64,
     iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QAAAAAAAD5
     Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gUNDykqSsuRUgAAABl0
@@ -23,7 +24,8 @@ header-includes: |
     gUOgYjmfKABLwIrrBHXbxWIKm0F8Wy7PgxAxhzgxPE6bPJ9z7WScPJNBTBt+my6R
     j5HxgM84SkpUQrQQX4jIsaPIci1EcYASXScl2jTgNONRnRlnw/MlfyCWE4GGgbUM
     gZpxGhkCn4g7xBFiocMJRj+ckcDfF/gBCTJDUqZhh4kAAAAASUVORK5CYII="/>
-    <script>
+    <!-- Google Analytics Script: userid=AB tag=3 for CV -->
+    <script type="application/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -873,7 +875,7 @@ For many projects I invent a [DSL] (Domain-Specific Language), that [compiles][c
 
 I am an [expert generalist] and an [autodidact polymath] [^autodidact-polymath]. My "secret weapon" is a subscription to the [O'Reilly Safari] technical library. I am able to _synthesize_ my knowledge. I am often able to apply the skills and knowledge that I acquired in one domain, and successfully apply them to another. To get to this level of expertise so quickly, I have often relied upon domain experts who mentored me. In return, I have mentored many others.
 
-_My ideal career position is to be either a principal engineer or an [algorithm] designer reporting to either the CTO or the VP R&D._ For a large firm, I aim to be a senior person on the technical ladder as opposed to the management ladder. I prefer working alone, or otherwise managing a small team, where I shine as a mentor. Formerly I had senior management positions, but I prefer to return to the individual contributor path. See this article about the benefits to a firm by having managers who have returned to become [individual contributors][individual contributor]. (And my formal background in economics and business is an important added value which allows me to engage in [economic thinking]). Just like [Picasso] never stopped loving and creatively painting throughout his whole life, I love and thrive on the intellectual challenge of inventing software algorithms - which obviously requires that I be a "master software engineer". _Even though I am now in my 60's, you can see from my recent patents that I am still at the "top of my game". I have come to the conclusion that I want to continue working only on what I like to do best. I am certain that there are hi-tech firms that can use me to their advantage._
+_My ideal career position is to be either a principal engineer or an [algorithm] designer reporting to either the CTO or the VP R&D._ For a large firm, I aim to be a senior person on the technical ladder as opposed to the management ladder. I prefer working independently, or otherwise managing a small team, where I shine as a mentor. Formerly I had senior management positions, but I prefer to return to the individual contributor path. See this article about the benefits to a firm by having managers who have returned to become [individual contributors][individual contributor]. (And my formal background in economics and business is an important added value which allows me to engage in [economic thinking]). Just like [Picasso] never stopped loving and creatively painting throughout his whole life, I love and thrive on the intellectual challenge of inventing software algorithms - which obviously requires that I be a "master software engineer". _Even though I am now in my 60's, you can see from my recent patents that I am still at the "top of my game". I have come to the conclusion that I want to continue working only on what I enjoy doing best._
 
 I attended university in Toronto Canada where I received a Master's degree in economics and applied mathematics. My thesis was the economically efficient design of a [hydroelectric dam][hydroelectricity] using computer simulation of water flow. At the age of 14, my first major programming project was to program a _perfect_ game of 3D X's and O's (aka [Qubic]) played on a stack of four transparent 4x4 boards. I wrote the program in Fortran on a [mini-computer][ibm 1130] that had just 64 __KB__ RAM including the space required for the O/S.
 
