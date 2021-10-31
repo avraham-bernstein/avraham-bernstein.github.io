@@ -1,4 +1,4 @@
-[//0]: # ( vim: fenc=latin1 ff=unix ft=markdown: )
+[//0]: # ( vim: fenc=utf-8 ff=unix ft=markdown : )
 [//1]: # ( FILE: abe-cv.md; pandoc markdown )
 
 ---
@@ -7,9 +7,9 @@ subtitle: __Expert in Software Algorithm Design, Domain Specific Languages, & An
 
 author: Avraham Bernstein
 
-date: 2021-10-30
+date: 2021-10-31
 
-lang: en
+lang: en-us
 
 header-includes: |
     <!-- AB Favicon -->
@@ -40,7 +40,7 @@ header-includes: |
 <address markdown="1">
 email: Avraham DOT Bernstein AT gmail DOT com
 <br>tel/whatsapp: +972-54-6410955
-<br>geolocation: Jerusalem 9727433 Israel
+<br>home postal address: Jerusalem [9727433][il post reverse zip lookup] Israel
 <br>
 <br>cv-full-html-link: [Most recent version of full CV in HTML](http://www.AvrahamBernstein.com/cv/AvrahamBernstein-CV-Full.html)
 <br>cv-abbrev-docx-link: [Most recent version of abbreviated CV in DOCX](http://www.AvrahamBernstein.com/cv/AvrahamBernstein-CV-Abbrev.docx)
@@ -1858,7 +1858,7 @@ senior software engineer
 |:----------|:---------------------------------------------------------|
 | 5/5       | C99, C11, [gcc], clang, bash, awk, [markdown], [pandoc], Linux User Mode API & CLI
 | 4/5       | make, [sed], Python, [pyexpander], [TCL], [tinyc], Zim wiki, MkDocs static web site generator
-| 3/5       | C++, HTML5, Javascript, [XML], JSON, Yaml, [ELF], [Lief], [Zydis], [Pydis], [SrcML], [Beautiful Soup], [Jinja2], Reveal.js, git, Jira, Excel, Visual Studio, [libvirt], [VirtualBox], Windows User Mode API
+| 3/5       | C++, HTML5, Javascript, [WASM], [XML], JSON, Yaml, [ELF], [Lief], [Zydis], [Pydis], [SrcML], [Beautiful Soup], [Jinja2], Reveal.js, git, Jira, Excel, Visual Studio, [libvirt], [VirtualBox], Windows User Mode API
 | 2/5       | CMake, [SVG], Golang, [LLVM], Antlr, bison, flex, Assembler, [Forth], Prolog, Lisp, Fortran, C#, Java, J (i.e. neo-APL), Numpy, OpenGL, [SNMP], TCP/IP, UDP, vim
 
 __My expertise level ranking is based upon how frequently I use these languages, and also based upon my personal preferences. But since I write [compilers][compiler], I am usually able to become proficient in any computer language that my job requires within 1-2 weeks.__
@@ -2014,6 +2014,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 [ibm 1130]: https://en.wikipedia.org/wiki/IBM_1130
 
 [IDA Hexrays]: https://hex-rays.com/IDA-pro/
+
+[il post reverse zip lookup]: https://israelpost.co.il/%d7%a9%d7%99%d7%a8%d7%95%d7%aa%d7%99%d7%9d/%d7%90%d7%99%d7%aa%d7%95%d7%a8-%d7%9b%d7%aa%d7%95%d7%91%d7%aa-%d7%a2%d7%9c-%d7%a4%d7%99-%d7%9e%d7%99%d7%a7%d7%95%d7%93/
 
 [individual contributor]: https://swaroopch.com/back-to-ic
 
