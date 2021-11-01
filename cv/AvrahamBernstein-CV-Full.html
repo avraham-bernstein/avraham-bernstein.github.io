@@ -7,7 +7,7 @@ subtitle: __Expert in Software Algorithm Design, Domain Specific Languages, & An
 
 author: Avraham Bernstein
 
-date: 2021-10-31
+date: 2021-11-01
 
 lang: en
 
