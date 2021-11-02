@@ -1,5 +1,6 @@
-[//0]: # ( vim: fenc=utf-8 ff=unix ft=markdown : )
+[//0]: # ( vim: fenc=utf-8 ff=unix ft=markdown: )
 [//1]: # ( FILE: abe-cv.md; pandoc markdown )
+[//2]: # ( BUILD: pandoc.sh m h abe-cv.md > abe-cv.html )
 
 ---
 title: 'Avraham "Abe" Bernstein | CV'
@@ -7,7 +8,7 @@ subtitle: __Expert in Software Algorithm Design, Domain Specific Languages, & An
 
 author: Avraham Bernstein
 
-date: 2021-11-01
+date: 2021-11-02
 
 lang: en
 
@@ -1858,9 +1859,9 @@ senior software engineer
 | Expertise | Language                                                 |
 |:----------|:---------------------------------------------------------|
 | 5/5       | C99, C11, [gcc], clang, bash, awk, [markdown], [pandoc], Linux User Mode API & CLI
-| 4/5       | make, [sed], Python, [pyexpander], [TCL], [tinyc], Zim wiki, MkDocs static web site generator
+| 4/5       | make, [sed], Python, [pyexpander], [TCL], [tinyc], Zim personal wiki, MkDocs static web site generator
 | 3/5       | C++, HTML5, Javascript, [WASM], [XML], JSON, Yaml, [ELF], [Lief], [Zydis], [Pydis], [SrcML], [Beautiful Soup], [Jinja2], Reveal.js, git, Jira, Excel, Visual Studio, [libvirt], [VirtualBox], Windows User Mode API
-| 2/5       | CMake, [SVG], Golang, [LLVM], Antlr, bison, flex, Assembler, [Forth], Prolog, Lisp, Fortran, C#, Java, J (i.e. neo-APL), Numpy, OpenGL, [SNMP], TCP/IP, UDP, vim
+| 2/5       | CMake, [SVG], Golang, [LLVM], Antlr, bison, flex, Assembler, [Forth], Prolog, Lisp, Fortran, C#, Java, J (i.e. neo-APL), Lua, Sql, Numpy, OpenGL, [SNMP], TCP/IP, UDP, vim
 
 __My expertise level ranking is based upon how frequently I use these languages, and also based upon my personal preferences. But since I write [compilers][compiler], I am usually able to become proficient in any computer language that my job requires within 1-2 weeks.__
 
