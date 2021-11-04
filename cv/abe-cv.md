@@ -970,7 +970,8 @@ The following are many of the application domains in which I have worked:
         uint64_t ayb_wrap32(
             uint64_t key, uint32_t x, uint32_t rnd
         ) {
-          const uint64_t z = (uint64_t)(x ^ rnd) | (uint64_t)rnd << 32;
+          const uint64_t z = (uint64_t)(x ^ rnd) |
+                                (uint64_t)rnd << 32;
           const uint64_t y = z ^ key;
           return y;
         }

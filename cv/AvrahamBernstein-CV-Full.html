@@ -1165,22 +1165,23 @@ Secure<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1<
 <span id="cb2-16"><a href="#cb2-16"></a><span class="dt">uint64_t</span> ayb_wrap32<span class="op">(</span></span>
 <span id="cb2-17"><a href="#cb2-17"></a>    <span class="dt">uint64_t</span> key<span class="op">,</span> <span class="dt">uint32_t</span> x<span class="op">,</span> <span class="dt">uint32_t</span> rnd</span>
 <span id="cb2-18"><a href="#cb2-18"></a><span class="op">)</span> <span class="op">{</span></span>
-<span id="cb2-19"><a href="#cb2-19"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> z <span class="op">=</span> <span class="op">(</span><span class="dt">uint64_t</span><span class="op">)(</span>x <span class="op">^</span> rnd<span class="op">)</span> <span class="op">|</span> <span class="op">(</span><span class="dt">uint64_t</span><span class="op">)</span>rnd <span class="op">&lt;&lt;</span> <span class="dv">32</span><span class="op">;</span></span>
-<span id="cb2-20"><a href="#cb2-20"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> y <span class="op">=</span> z <span class="op">^</span> key<span class="op">;</span></span>
-<span id="cb2-21"><a href="#cb2-21"></a>  <span class="cf">return</span> y<span class="op">;</span></span>
-<span id="cb2-22"><a href="#cb2-22"></a><span class="op">}</span></span>
-<span id="cb2-23"><a href="#cb2-23"></a></span>
-<span id="cb2-24"><a href="#cb2-24"></a>GCC_ATTRIB<span class="op">(</span><span class="dt">const</span><span class="op">)</span> CC_INLINE</span>
-<span id="cb2-25"><a href="#cb2-25"></a><span class="dt">uint32_t</span> ayb_unwrap32<span class="op">(</span><span class="dt">uint64_t</span> key<span class="op">,</span> <span class="dt">uint64_t</span> y<span class="op">)</span></span>
-<span id="cb2-26"><a href="#cb2-26"></a><span class="op">{</span></span>
-<span id="cb2-27"><a href="#cb2-27"></a>  <span class="co">// very important to note that unwrap can be</span></span>
-<span id="cb2-28"><a href="#cb2-28"></a>  <span class="co">// accomplished without any knowledge of rnd</span></span>
-<span id="cb2-29"><a href="#cb2-29"></a></span>
-<span id="cb2-30"><a href="#cb2-30"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> z <span class="op">=</span> key <span class="op">^</span> y<span class="op">;</span></span>
-<span id="cb2-31"><a href="#cb2-31"></a>  <span class="dt">const</span> <span class="dt">uint32_t</span> rnd <span class="op">=</span> z <span class="op">&gt;&gt;</span> <span class="dv">32</span><span class="op">;</span></span>
-<span id="cb2-32"><a href="#cb2-32"></a>  <span class="dt">const</span> <span class="dt">uint32_t</span> x <span class="op">=</span> rnd <span class="op">^</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)</span>z<span class="op">;</span></span>
-<span id="cb2-33"><a href="#cb2-33"></a>  <span class="cf">return</span> x<span class="op">;</span></span>
-<span id="cb2-34"><a href="#cb2-34"></a><span class="op">}</span></span></code></pre></div>
+<span id="cb2-19"><a href="#cb2-19"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> z <span class="op">=</span> <span class="op">(</span><span class="dt">uint64_t</span><span class="op">)(</span>x <span class="op">^</span> rnd<span class="op">)</span> <span class="op">|</span></span>
+<span id="cb2-20"><a href="#cb2-20"></a>                        <span class="op">(</span><span class="dt">uint64_t</span><span class="op">)</span>rnd <span class="op">&lt;&lt;</span> <span class="dv">32</span><span class="op">;</span></span>
+<span id="cb2-21"><a href="#cb2-21"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> y <span class="op">=</span> z <span class="op">^</span> key<span class="op">;</span></span>
+<span id="cb2-22"><a href="#cb2-22"></a>  <span class="cf">return</span> y<span class="op">;</span></span>
+<span id="cb2-23"><a href="#cb2-23"></a><span class="op">}</span></span>
+<span id="cb2-24"><a href="#cb2-24"></a></span>
+<span id="cb2-25"><a href="#cb2-25"></a>GCC_ATTRIB<span class="op">(</span><span class="dt">const</span><span class="op">)</span> CC_INLINE</span>
+<span id="cb2-26"><a href="#cb2-26"></a><span class="dt">uint32_t</span> ayb_unwrap32<span class="op">(</span><span class="dt">uint64_t</span> key<span class="op">,</span> <span class="dt">uint64_t</span> y<span class="op">)</span></span>
+<span id="cb2-27"><a href="#cb2-27"></a><span class="op">{</span></span>
+<span id="cb2-28"><a href="#cb2-28"></a>  <span class="co">// very important to note that unwrap can be</span></span>
+<span id="cb2-29"><a href="#cb2-29"></a>  <span class="co">// accomplished without any knowledge of rnd</span></span>
+<span id="cb2-30"><a href="#cb2-30"></a></span>
+<span id="cb2-31"><a href="#cb2-31"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> z <span class="op">=</span> key <span class="op">^</span> y<span class="op">;</span></span>
+<span id="cb2-32"><a href="#cb2-32"></a>  <span class="dt">const</span> <span class="dt">uint32_t</span> rnd <span class="op">=</span> z <span class="op">&gt;&gt;</span> <span class="dv">32</span><span class="op">;</span></span>
+<span id="cb2-33"><a href="#cb2-33"></a>  <span class="dt">const</span> <span class="dt">uint32_t</span> x <span class="op">=</span> rnd <span class="op">^</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)</span>z<span class="op">;</span></span>
+<span id="cb2-34"><a href="#cb2-34"></a>  <span class="cf">return</span> x<span class="op">;</span></span>
+<span id="cb2-35"><a href="#cb2-35"></a><span class="op">}</span></span></code></pre></div>
 <ol start="2" type="a">
 <li>I tweaked the extremely fast, but cryptographically <em>extremely weak</em>, <a href="https://en.wikipedia.org/wiki/Adler-32">Adler-32</a> checksum algorithm in order to make it faster and cryptographically stronger than <a href="https://en.wikipedia.org/wiki/Cyclic_redundancy_check">CRCs</a>.</li>
 </ol>
