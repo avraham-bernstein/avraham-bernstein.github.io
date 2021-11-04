@@ -8,7 +8,7 @@ subtitle: __Expert in Software Algorithm Design, Domain Specific Languages, & An
 
 author: Avraham Bernstein
 
-date: 2021-11-02
+date: 2021-11-04
 
 lang: en
 
@@ -967,8 +967,9 @@ The following are many of the application domains in which I have worked:
         #endif
 
         GCC_ATTRIB(const) CC_INLINE
-        uint64_t ayb_wrap32(uint64_t key, uint32_t x, uint32_t rnd)
-        {
+        uint64_t ayb_wrap32(
+            uint64_t key, uint32_t x, uint32_t rnd
+        ) {
           const uint64_t z = (uint64_t)(x ^ rnd) | (uint64_t)rnd << 32;
           const uint64_t y = z ^ key;
           return y;
@@ -977,8 +978,9 @@ The following are many of the application domains in which I have worked:
         GCC_ATTRIB(const) CC_INLINE
         uint32_t ayb_unwrap32(uint64_t key, uint64_t y)
         {
-          // very important to note that unwrap can be accomplished
-          // without any knowledge of rnd
+          // very important to note that unwrap can be
+          // accomplished without any knowledge of rnd
+
           const uint64_t z = key ^ y;
           const uint32_t rnd = z >> 32;
           const uint32_t x = rnd ^ (uint32_t)z;
@@ -1003,28 +1005,32 @@ The following are many of the application domains in which I have worked:
         #endif
 
         GCC_ATTRIB(pure,nonnull)
-        uint32_t adler32_core(const uint8_t *restrict data, int32_t n)
-        {
-            // 1. The *core concept* of Adler-32 (derived from Fletcher)
-            // is that the checksum is the weighted sum of all the bytes
-            // in the data stream, where the weight is the byte's position
-            // in the stream, i.e.
+        uint32_t adler32_core(
+            const uint8_t *restrict data, int32_t n
+        ) {
+            // 1. The *core concept* of Adler-32 (derived from
+            // Fletcher) is that the checksum is the weighted
+            // sum of all the bytes in the data stream, where
+            // the weight is the byte's position in the stream,
+            // i.e.
             //   sum = 1*data[0] + 2*data[1] + 3*data[2] + ... + n*data[n-1]
             //
-            // 2. Even though Alder-32 is *extremely fast* to compute,
-            // and is much stronger than the older LRC algorithm (i.e.
-            // simply xoring all the bytes in the stream) which among
-            // other deficiencies was not byte order dependent, Adler-32
-            // is extremely *cryptographically weak* because for small n,
-            // the sum will be much less than 2^32, therefore it will not
-            // "spread" itself over the full bit range of sum.
+            // 2. Even though Alder-32 is *extremely fast* to
+            // compute, and is much stronger than the older LRC
+            // algorithm (i.e. which simply xors all the bytes
+            // in the stream) which among other deficiencies is
+            // not byte order dependent, Adler-32 is extremely
+            // *cryptographically weak* because for small n, the
+            // sum will be much less than 2^32, therefore it
+            // will not "spread" itself over the full bit range
+            // of sum.
             //
-            // 3. Adler-32 is easy to "game", i.e. to generate "collisions".
-            // For example when i < j < k
+            // 3. Adler-32 is easy to "game", i.e. to generate
+            // "collisions". For example when i < j < k
             //      sum = ... + data[i-1]*i + ... + data[j-1]*j + ...
             // or   sum = ... + data[i-1]*i + ... + data[j-1]*j + ... + data[k-1]*k + ...
-            // It is not difficult to modify the data in order to generate
-            // the same sum, namely
+            // It is not difficult to game/modify the data in
+            // order to generate the same sum, namely
             //      sum = ... + data_prime[i-1]*i + data_prime[j-1]*j + ...
             //      etc.
 
@@ -1040,18 +1046,24 @@ The following are many of the application domains in which I have worked:
         GCC_ATTRIB(pure,nonnull)
         uint32_t ayb_checksum32_interim(
             const uint8_t *restrict data, int32_t n, int32_t k
-        )
-        {
-            // Based upon the assumption that the expected value of each
-            // each byte in the data stream is 128, 'k' should be designed
-            // so that expected return value should be 2^32 - 1
-            // in order to provide the best possible "spread".
+        ) {
+            // Based upon the assumption that the expected
+            // value of each each byte in the data stream is
+            // 128, 'k' should be designed so that the expected
+            // return value should be `2^32 - 1` in order to
+            // provide the best possible "spread".
+            // Therefore in many cases, especially with
+            // relatively short messages, changing the length
+            // of the input data, by even a single byte, has
+            // a major effect on the checksum.
+            // Compare this to the original Adler/Fletcher
+            // algorithm, where adding a zero byte to the end
+            // of the message would not change the checksum.
 
-            uint32_t sum = 0;
             uint32_t lrc = 0;
+            uint32_t sum = 0;
 
             for (int32_t i = 0; i < n; ++i) {
-                // lrc makes it much more difficult to game, but not impossible
                 lrc ^= (uint32_t)data[i];
                 sum += lrc * (i+1);
             }
@@ -1085,45 +1097,67 @@ The following are many of the application domains in which I have worked:
         }
 
         GCC_ATTRIB(pure,nonnull)
-        uint32_t ayb_checksum32(const uint8_t *restrict data, int32_t n)
-        {
-            const uint32_t k = ayb_checksum32_calc_mult(n); // has asserts
+        uint32_t ayb_checksum32(
+            const uint8_t *restrict data, int32_t n
+        ) {
+            // calc_mult() contains asserts so it should be the
+            // first statement in this function
+            const uint32_t k = ayb_checksum32_calc_mult(n);
 
+            // under real conditions, secret should be non-zero
+            const uint8_t SHARED_AYB_CHECKSUM32_SECRET8 = 0;
+
+            uint32_t lrc = SHARED_AYB_CHECKSUM32_SECRET8;
             uint32_t sum = 0;
-            uint32_t lrc = 0;
 
             for (int32_t i = 0; i < n; ++i) {
+                // Use of lrc makes the checksum much more
+                // difficult to "game" compared to the original
+                // Adler/Fletcher algorithm.
+                // Also with the simple addition of initializing
+                // the lrc with a secret byte compounds the
+                // difficulty of gaming by a factor of 256.
+
                 lrc ^= (uint32_t)data[i];
                 sum += lrc * (i+1);
             }
 
-            return sum*k;
+            return sum * k;
         }
 
         extern GCC_ATTRIB(const) // should be inlined
         uint32_t ayb_unwrap32(uint64_t key, uint64_t y);
 
         GCC_ATTRIB(pure,nonnull)
-        uint32_t ayb_checksum_secure_32(const uint8_t *restrict data, int32_t n, uint64_t wrapped_secret_rnd)
-        {
-            // As I stated above, it is difficult, but not impossible, to "game"
-            // ayb_checksum32(). But by xoring the result with a 32-bit secret
-            // random value, makes it cryptographically extremely difficult to
-            // "game", especially within a short timeout period, say 30 minutes,
-            // then it becomes effectively impossible to "game".
+        uint32_t ayb_checksum_secure_32(
+            const uint8_t *restrict data, int32_t n,
+            uint64_t wrapped_secret_rnd
+        ) {
+            // As we stated above, it is difficult, but not
+            // impossible, to "game" the checksum. But by
+            // xoring the result with a 32-bit shared secret
+            // random value, now makes it *cryptographically*
+            // difficult to game, especially within the confines
+            // of a relatively short timeout period, say 60 min.
 
-            const uint64_t MASTER_SHARED_KEY = 0;
-            // under real conditions, key should be non-zero
+            // under real conditions, secret should be non-zero
+            const uint64_t SHARED_SECRET_MASTER_KEY64 = 0;
 
-            return ayb_unwap32(MASTER_SHARED_KEY,wrapped_secret_rnd) ^ ayb_checksum32(data,n);
+            return ayb_unwrap32(SHARED_SECRET_MASTER_KEY64,
+                    wrapped_secret_rnd)
+                ^ ayb_checksum32(data,n);
         }
 
         GCC_ATTRIB(pure,nonnull)
-        uint64_t ayb_checksum64(const uint8_t *restrict data, int32_t n);
+        uint64_t ayb_checksum64(
+            const uint8_t *restrict data, int32_t n
+        );
         // max n < 2^29 bytes
 
         GCC_ATTRIB(pure,nonnull)
-        uint64_t ayb_checksuml64(const uint32_t *restrict data, int32_t n);
+        uint64_t ayb_checksuml64(
+            const uint32_t *restrict data, int32_t n
+        );
         // max n < 2^13 dwords (= 2^15 bytes)
 
         ```
@@ -1860,7 +1894,7 @@ senior software engineer
 |:----------|:---------------------------------------------------------|
 | 5/5       | C99, C11, [gcc], clang, bash, awk, [markdown], [pandoc], Linux User Mode API & CLI
 | 4/5       | make, [sed], Python, [pyexpander], [TCL], [tinyc], Zim personal wiki, MkDocs static web site generator
-| 3/5       | C++, HTML5, Javascript, [WASM], [XML], JSON, Yaml, [ELF], [Lief], [Zydis], [Pydis], [SrcML], [Beautiful Soup], [Jinja2], Reveal.js, git, Jira, Excel, Visual Studio, [libvirt], [VirtualBox], Windows User Mode API
+| 3/5       | C++, HTML5, Javascript, [WASM], [XML], JSON, Yaml, [ELF], [Lief], [Zydis], [Pydis], [SrcML], [Beautiful Soup], [Jinja2], Reveal.js, git, Jira, Excel, Visual Studio, [libvirt], [VirtualBox], Android NDK, Windows User Mode API
 | 2/5       | CMake, [SVG], Golang, [LLVM], Antlr, bison, flex, Assembler, [Forth], Prolog, Lisp, Fortran, C#, Java, J (i.e. neo-APL), Lua, Sql, Numpy, OpenGL, [SNMP], TCP/IP, UDP, vim
 
 __My expertise level ranking is based upon how frequently I use these languages, and also based upon my personal preferences. But since I write [compilers][compiler], I am usually able to become proficient in any computer language that my job requires within 1-2 weeks.__

@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Avraham Bernstein" />
-  <meta name="dcterms.date" content="2021-11-02" />
+  <meta name="dcterms.date" content="2021-11-04" />
   <title>Avraham “Abe” Bernstein | CV</title>
   <style>
     html {
@@ -237,7 +237,7 @@
 <h1 class="title">Avraham <q>Abe</q> Bernstein | CV</h1>
 <p class="subtitle"><strong>Expert in Software Algorithm Design, Domain Specific Languages, &amp; Anti-Reverse Engineering (aka Obfuscation)</strong></p>
 <p class="author">Avraham Bernstein</p>
-<p class="date">2021-11-02</p>
+<p class="date">2021-11-04</p>
 </header>
 <hr />
 <address>
@@ -1162,23 +1162,25 @@ Secure<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1<
 <span id="cb2-13"><a href="#cb2-13"></a><span class="pp">#endif</span></span>
 <span id="cb2-14"><a href="#cb2-14"></a></span>
 <span id="cb2-15"><a href="#cb2-15"></a>GCC_ATTRIB<span class="op">(</span><span class="dt">const</span><span class="op">)</span> CC_INLINE</span>
-<span id="cb2-16"><a href="#cb2-16"></a><span class="dt">uint64_t</span> ayb_wrap32<span class="op">(</span><span class="dt">uint64_t</span> key<span class="op">,</span> <span class="dt">uint32_t</span> x<span class="op">,</span> <span class="dt">uint32_t</span> rnd<span class="op">)</span></span>
-<span id="cb2-17"><a href="#cb2-17"></a><span class="op">{</span></span>
-<span id="cb2-18"><a href="#cb2-18"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> z <span class="op">=</span> <span class="op">(</span><span class="dt">uint64_t</span><span class="op">)(</span>x <span class="op">^</span> rnd<span class="op">)</span> <span class="op">|</span> <span class="op">(</span><span class="dt">uint64_t</span><span class="op">)</span>rnd <span class="op">&lt;&lt;</span> <span class="dv">32</span><span class="op">;</span></span>
-<span id="cb2-19"><a href="#cb2-19"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> y <span class="op">=</span> z <span class="op">^</span> key<span class="op">;</span></span>
-<span id="cb2-20"><a href="#cb2-20"></a>  <span class="cf">return</span> y<span class="op">;</span></span>
-<span id="cb2-21"><a href="#cb2-21"></a><span class="op">}</span></span>
-<span id="cb2-22"><a href="#cb2-22"></a></span>
-<span id="cb2-23"><a href="#cb2-23"></a>GCC_ATTRIB<span class="op">(</span><span class="dt">const</span><span class="op">)</span> CC_INLINE</span>
-<span id="cb2-24"><a href="#cb2-24"></a><span class="dt">uint32_t</span> ayb_unwrap32<span class="op">(</span><span class="dt">uint64_t</span> key<span class="op">,</span> <span class="dt">uint64_t</span> y<span class="op">)</span></span>
-<span id="cb2-25"><a href="#cb2-25"></a><span class="op">{</span></span>
-<span id="cb2-26"><a href="#cb2-26"></a>  <span class="co">// very important to note that unwrap can be accomplished</span></span>
-<span id="cb2-27"><a href="#cb2-27"></a>  <span class="co">// without any knowledge of rnd</span></span>
-<span id="cb2-28"><a href="#cb2-28"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> z <span class="op">=</span> key <span class="op">^</span> y<span class="op">;</span></span>
-<span id="cb2-29"><a href="#cb2-29"></a>  <span class="dt">const</span> <span class="dt">uint32_t</span> rnd <span class="op">=</span> z <span class="op">&gt;&gt;</span> <span class="dv">32</span><span class="op">;</span></span>
-<span id="cb2-30"><a href="#cb2-30"></a>  <span class="dt">const</span> <span class="dt">uint32_t</span> x <span class="op">=</span> rnd <span class="op">^</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)</span>z<span class="op">;</span></span>
-<span id="cb2-31"><a href="#cb2-31"></a>  <span class="cf">return</span> x<span class="op">;</span></span>
-<span id="cb2-32"><a href="#cb2-32"></a><span class="op">}</span></span></code></pre></div>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="dt">uint64_t</span> ayb_wrap32<span class="op">(</span></span>
+<span id="cb2-17"><a href="#cb2-17"></a>    <span class="dt">uint64_t</span> key<span class="op">,</span> <span class="dt">uint32_t</span> x<span class="op">,</span> <span class="dt">uint32_t</span> rnd</span>
+<span id="cb2-18"><a href="#cb2-18"></a><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb2-19"><a href="#cb2-19"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> z <span class="op">=</span> <span class="op">(</span><span class="dt">uint64_t</span><span class="op">)(</span>x <span class="op">^</span> rnd<span class="op">)</span> <span class="op">|</span> <span class="op">(</span><span class="dt">uint64_t</span><span class="op">)</span>rnd <span class="op">&lt;&lt;</span> <span class="dv">32</span><span class="op">;</span></span>
+<span id="cb2-20"><a href="#cb2-20"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> y <span class="op">=</span> z <span class="op">^</span> key<span class="op">;</span></span>
+<span id="cb2-21"><a href="#cb2-21"></a>  <span class="cf">return</span> y<span class="op">;</span></span>
+<span id="cb2-22"><a href="#cb2-22"></a><span class="op">}</span></span>
+<span id="cb2-23"><a href="#cb2-23"></a></span>
+<span id="cb2-24"><a href="#cb2-24"></a>GCC_ATTRIB<span class="op">(</span><span class="dt">const</span><span class="op">)</span> CC_INLINE</span>
+<span id="cb2-25"><a href="#cb2-25"></a><span class="dt">uint32_t</span> ayb_unwrap32<span class="op">(</span><span class="dt">uint64_t</span> key<span class="op">,</span> <span class="dt">uint64_t</span> y<span class="op">)</span></span>
+<span id="cb2-26"><a href="#cb2-26"></a><span class="op">{</span></span>
+<span id="cb2-27"><a href="#cb2-27"></a>  <span class="co">// very important to note that unwrap can be</span></span>
+<span id="cb2-28"><a href="#cb2-28"></a>  <span class="co">// accomplished without any knowledge of rnd</span></span>
+<span id="cb2-29"><a href="#cb2-29"></a></span>
+<span id="cb2-30"><a href="#cb2-30"></a>  <span class="dt">const</span> <span class="dt">uint64_t</span> z <span class="op">=</span> key <span class="op">^</span> y<span class="op">;</span></span>
+<span id="cb2-31"><a href="#cb2-31"></a>  <span class="dt">const</span> <span class="dt">uint32_t</span> rnd <span class="op">=</span> z <span class="op">&gt;&gt;</span> <span class="dv">32</span><span class="op">;</span></span>
+<span id="cb2-32"><a href="#cb2-32"></a>  <span class="dt">const</span> <span class="dt">uint32_t</span> x <span class="op">=</span> rnd <span class="op">^</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)</span>z<span class="op">;</span></span>
+<span id="cb2-33"><a href="#cb2-33"></a>  <span class="cf">return</span> x<span class="op">;</span></span>
+<span id="cb2-34"><a href="#cb2-34"></a><span class="op">}</span></span></code></pre></div>
 <ol start="2" type="a">
 <li>I tweaked the extremely fast, but cryptographically <em>extremely weak</em>, <a href="https://en.wikipedia.org/wiki/Adler-32">Adler-32</a> checksum algorithm in order to make it faster and cryptographically stronger than <a href="https://en.wikipedia.org/wiki/Cyclic_redundancy_check">CRCs</a>.</li>
 </ol>
@@ -1198,128 +1200,160 @@ Secure<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1<
 <span id="cb3-14"><a href="#cb3-14"></a><span class="pp">#endif</span></span>
 <span id="cb3-15"><a href="#cb3-15"></a></span>
 <span id="cb3-16"><a href="#cb3-16"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
-<span id="cb3-17"><a href="#cb3-17"></a><span class="dt">uint32_t</span> adler32_core<span class="op">(</span><span class="dt">const</span> <span class="dt">uint8_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n<span class="op">)</span></span>
-<span id="cb3-18"><a href="#cb3-18"></a><span class="op">{</span></span>
-<span id="cb3-19"><a href="#cb3-19"></a>    <span class="co">// 1. The *core concept* of Adler-32 (derived from Fletcher)</span></span>
-<span id="cb3-20"><a href="#cb3-20"></a>    <span class="co">// is that the checksum is the weighted sum of all the bytes</span></span>
-<span id="cb3-21"><a href="#cb3-21"></a>    <span class="co">// in the data stream, where the weight is the byte&#39;s position</span></span>
-<span id="cb3-22"><a href="#cb3-22"></a>    <span class="co">// in the stream, i.e.</span></span>
-<span id="cb3-23"><a href="#cb3-23"></a>    <span class="co">//   sum = 1*data[0] + 2*data[1] + 3*data[2] + ... + n*data[n-1]</span></span>
-<span id="cb3-24"><a href="#cb3-24"></a>    <span class="co">//</span></span>
-<span id="cb3-25"><a href="#cb3-25"></a>    <span class="co">// 2. Even though Alder-32 is *extremely fast* to compute,</span></span>
-<span id="cb3-26"><a href="#cb3-26"></a>    <span class="co">// and is much stronger than the older LRC algorithm (i.e.</span></span>
-<span id="cb3-27"><a href="#cb3-27"></a>    <span class="co">// simply xoring all the bytes in the stream) which among</span></span>
-<span id="cb3-28"><a href="#cb3-28"></a>    <span class="co">// other deficiencies was not byte order dependent, Adler-32</span></span>
-<span id="cb3-29"><a href="#cb3-29"></a>    <span class="co">// is extremely *cryptographically weak* because for small n,</span></span>
-<span id="cb3-30"><a href="#cb3-30"></a>    <span class="co">// the sum will be much less than 2^32, therefore it will not</span></span>
-<span id="cb3-31"><a href="#cb3-31"></a>    <span class="co">// &quot;spread&quot; itself over the full bit range of sum.</span></span>
-<span id="cb3-32"><a href="#cb3-32"></a>    <span class="co">//</span></span>
-<span id="cb3-33"><a href="#cb3-33"></a>    <span class="co">// 3. Adler-32 is easy to &quot;game&quot;, i.e. to generate &quot;collisions&quot;.</span></span>
-<span id="cb3-34"><a href="#cb3-34"></a>    <span class="co">// For example when i &lt; j &lt; k</span></span>
-<span id="cb3-35"><a href="#cb3-35"></a>    <span class="co">//      sum = ... + data[i-1]*i + ... + data[j-1]*j + ...</span></span>
-<span id="cb3-36"><a href="#cb3-36"></a>    <span class="co">// or   sum = ... + data[i-1]*i + ... + data[j-1]*j + ... + data[k-1]*k + ...</span></span>
-<span id="cb3-37"><a href="#cb3-37"></a>    <span class="co">// It is not difficult to modify the data in order to generate</span></span>
-<span id="cb3-38"><a href="#cb3-38"></a>    <span class="co">// the same sum, namely</span></span>
-<span id="cb3-39"><a href="#cb3-39"></a>    <span class="co">//      sum = ... + data_prime[i-1]*i + data_prime[j-1]*j + ...</span></span>
-<span id="cb3-40"><a href="#cb3-40"></a>    <span class="co">//      etc.</span></span>
-<span id="cb3-41"><a href="#cb3-41"></a></span>
-<span id="cb3-42"><a href="#cb3-42"></a>    <span class="dt">uint32_t</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb3-43"><a href="#cb3-43"></a></span>
-<span id="cb3-44"><a href="#cb3-44"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int32_t</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> <span class="op">++</span>i<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb3-45"><a href="#cb3-45"></a>        sum <span class="op">+=</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)</span>data<span class="op">[</span>i<span class="op">]</span> <span class="op">*</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)(</span>i<span class="op">+</span><span class="dv">1</span><span class="op">);</span></span>
-<span id="cb3-46"><a href="#cb3-46"></a>    <span class="op">}</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a><span class="dt">uint32_t</span> adler32_core<span class="op">(</span></span>
+<span id="cb3-18"><a href="#cb3-18"></a>    <span class="dt">const</span> <span class="dt">uint8_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n</span>
+<span id="cb3-19"><a href="#cb3-19"></a><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a>    <span class="co">// 1. The *core concept* of Adler-32 (derived from</span></span>
+<span id="cb3-21"><a href="#cb3-21"></a>    <span class="co">// Fletcher) is that the checksum is the weighted</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a>    <span class="co">// sum of all the bytes in the data stream, where</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a>    <span class="co">// the weight is the byte&#39;s position in the stream,</span></span>
+<span id="cb3-24"><a href="#cb3-24"></a>    <span class="co">// i.e.</span></span>
+<span id="cb3-25"><a href="#cb3-25"></a>    <span class="co">//   sum = 1*data[0] + 2*data[1] + 3*data[2] + ... + n*data[n-1]</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a>    <span class="co">//</span></span>
+<span id="cb3-27"><a href="#cb3-27"></a>    <span class="co">// 2. Even though Alder-32 is *extremely fast* to</span></span>
+<span id="cb3-28"><a href="#cb3-28"></a>    <span class="co">// compute, and is much stronger than the older LRC</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a>    <span class="co">// algorithm (i.e. which simply xors all the bytes</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a>    <span class="co">// in the stream) which among other deficiencies is</span></span>
+<span id="cb3-31"><a href="#cb3-31"></a>    <span class="co">// not byte order dependent, Adler-32 is extremely</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a>    <span class="co">// *cryptographically weak* because for small n, the</span></span>
+<span id="cb3-33"><a href="#cb3-33"></a>    <span class="co">// sum will be much less than 2^32, therefore it</span></span>
+<span id="cb3-34"><a href="#cb3-34"></a>    <span class="co">// will not &quot;spread&quot; itself over the full bit range</span></span>
+<span id="cb3-35"><a href="#cb3-35"></a>    <span class="co">// of sum.</span></span>
+<span id="cb3-36"><a href="#cb3-36"></a>    <span class="co">//</span></span>
+<span id="cb3-37"><a href="#cb3-37"></a>    <span class="co">// 3. Adler-32 is easy to &quot;game&quot;, i.e. to generate</span></span>
+<span id="cb3-38"><a href="#cb3-38"></a>    <span class="co">// &quot;collisions&quot;. For example when i &lt; j &lt; k</span></span>
+<span id="cb3-39"><a href="#cb3-39"></a>    <span class="co">//      sum = ... + data[i-1]*i + ... + data[j-1]*j + ...</span></span>
+<span id="cb3-40"><a href="#cb3-40"></a>    <span class="co">// or   sum = ... + data[i-1]*i + ... + data[j-1]*j + ... + data[k-1]*k + ...</span></span>
+<span id="cb3-41"><a href="#cb3-41"></a>    <span class="co">// It is not difficult to game/modify the data in</span></span>
+<span id="cb3-42"><a href="#cb3-42"></a>    <span class="co">// order to generate the same sum, namely</span></span>
+<span id="cb3-43"><a href="#cb3-43"></a>    <span class="co">//      sum = ... + data_prime[i-1]*i + data_prime[j-1]*j + ...</span></span>
+<span id="cb3-44"><a href="#cb3-44"></a>    <span class="co">//      etc.</span></span>
+<span id="cb3-45"><a href="#cb3-45"></a></span>
+<span id="cb3-46"><a href="#cb3-46"></a>    <span class="dt">uint32_t</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
 <span id="cb3-47"><a href="#cb3-47"></a></span>
-<span id="cb3-48"><a href="#cb3-48"></a>    <span class="cf">return</span> sum<span class="op">;</span></span>
-<span id="cb3-49"><a href="#cb3-49"></a><span class="op">}</span></span>
-<span id="cb3-50"><a href="#cb3-50"></a></span>
-<span id="cb3-51"><a href="#cb3-51"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
-<span id="cb3-52"><a href="#cb3-52"></a><span class="dt">uint32_t</span> ayb_checksum32_interim<span class="op">(</span></span>
-<span id="cb3-53"><a href="#cb3-53"></a>    <span class="dt">const</span> <span class="dt">uint8_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n<span class="op">,</span> <span class="dt">int32_t</span> k</span>
-<span id="cb3-54"><a href="#cb3-54"></a><span class="op">)</span></span>
-<span id="cb3-55"><a href="#cb3-55"></a><span class="op">{</span></span>
-<span id="cb3-56"><a href="#cb3-56"></a>    <span class="co">// Based upon the assumption that the expected value of each</span></span>
-<span id="cb3-57"><a href="#cb3-57"></a>    <span class="co">// each byte in the data stream is 128, &#39;k&#39; should be designed</span></span>
-<span id="cb3-58"><a href="#cb3-58"></a>    <span class="co">// so that expected return value should be 2^32 - 1</span></span>
-<span id="cb3-59"><a href="#cb3-59"></a>    <span class="co">// in order to provide the best possible &quot;spread&quot;.</span></span>
-<span id="cb3-60"><a href="#cb3-60"></a></span>
-<span id="cb3-61"><a href="#cb3-61"></a>    <span class="dt">uint32_t</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb3-62"><a href="#cb3-62"></a>    <span class="dt">uint32_t</span> lrc <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb3-63"><a href="#cb3-63"></a></span>
-<span id="cb3-64"><a href="#cb3-64"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int32_t</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> <span class="op">++</span>i<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb3-65"><a href="#cb3-65"></a>        <span class="co">// lrc makes it much more difficult to game, but not impossible</span></span>
-<span id="cb3-66"><a href="#cb3-66"></a>        lrc <span class="op">^=</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)</span>data<span class="op">[</span>i<span class="op">];</span></span>
-<span id="cb3-67"><a href="#cb3-67"></a>        sum <span class="op">+=</span> lrc <span class="op">*</span> <span class="op">(</span>i<span class="op">+</span><span class="dv">1</span><span class="op">);</span></span>
-<span id="cb3-68"><a href="#cb3-68"></a>    <span class="op">}</span></span>
-<span id="cb3-69"><a href="#cb3-69"></a></span>
-<span id="cb3-70"><a href="#cb3-70"></a>    <span class="cf">if</span> <span class="op">((</span>k <span class="op">&amp;</span> <span class="dv">1</span><span class="op">)</span> <span class="op">==</span> <span class="dv">0</span><span class="op">)</span> <span class="op">{</span></span>
-<span id="cb3-71"><a href="#cb3-71"></a>        <span class="op">++</span>k<span class="op">;</span> <span class="co">// force k to be odd</span></span>
-<span id="cb3-72"><a href="#cb3-72"></a>    <span class="op">}</span></span>
-<span id="cb3-73"><a href="#cb3-73"></a></span>
-<span id="cb3-74"><a href="#cb3-74"></a>    <span class="cf">return</span> sum<span class="op">*</span>k<span class="op">;</span></span>
-<span id="cb3-75"><a href="#cb3-75"></a><span class="op">}</span></span>
-<span id="cb3-76"><a href="#cb3-76"></a></span>
-<span id="cb3-77"><a href="#cb3-77"></a>GCC_ATTRIB<span class="op">(</span><span class="dt">const</span><span class="op">)</span></span>
-<span id="cb3-78"><a href="#cb3-78"></a>CC_INLINE <span class="dt">int32_t</span> ayb_checksum32_calc_mult<span class="op">(</span><span class="dt">int32_t</span> n<span class="op">)</span></span>
-<span id="cb3-79"><a href="#cb3-79"></a><span class="op">{</span></span>
-<span id="cb3-80"><a href="#cb3-80"></a>    <span class="co">// recall geometric sum of 1 + 2 + 3 + ... + n = n*(n+1)/2</span></span>
-<span id="cb3-81"><a href="#cb3-81"></a>    <span class="co">// ==&gt; 128*(k + 2*k + 3*k + ... + n*k) = 2^32 - 1</span></span>
-<span id="cb3-82"><a href="#cb3-82"></a>    <span class="co">// ==&gt; 128*k*n*(n+1)/2 = 2^32 - 1</span></span>
-<span id="cb3-83"><a href="#cb3-83"></a>    <span class="co">// ==&gt; k*n*(n+1) ~= 2^26</span></span>
-<span id="cb3-84"><a href="#cb3-84"></a>    <span class="co">// ==&gt; k ~= (2^26)/(n * (n+1))</span></span>
-<span id="cb3-85"><a href="#cb3-85"></a>    <span class="co">// ==&gt; max n &lt; 2^13, otherwise k is zero</span></span>
+<span id="cb3-48"><a href="#cb3-48"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int32_t</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> <span class="op">++</span>i<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-49"><a href="#cb3-49"></a>        sum <span class="op">+=</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)</span>data<span class="op">[</span>i<span class="op">]</span> <span class="op">*</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)(</span>i<span class="op">+</span><span class="dv">1</span><span class="op">);</span></span>
+<span id="cb3-50"><a href="#cb3-50"></a>    <span class="op">}</span></span>
+<span id="cb3-51"><a href="#cb3-51"></a></span>
+<span id="cb3-52"><a href="#cb3-52"></a>    <span class="cf">return</span> sum<span class="op">;</span></span>
+<span id="cb3-53"><a href="#cb3-53"></a><span class="op">}</span></span>
+<span id="cb3-54"><a href="#cb3-54"></a></span>
+<span id="cb3-55"><a href="#cb3-55"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
+<span id="cb3-56"><a href="#cb3-56"></a><span class="dt">uint32_t</span> ayb_checksum32_interim<span class="op">(</span></span>
+<span id="cb3-57"><a href="#cb3-57"></a>    <span class="dt">const</span> <span class="dt">uint8_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n<span class="op">,</span> <span class="dt">int32_t</span> k</span>
+<span id="cb3-58"><a href="#cb3-58"></a><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-59"><a href="#cb3-59"></a>    <span class="co">// Based upon the assumption that the expected</span></span>
+<span id="cb3-60"><a href="#cb3-60"></a>    <span class="co">// value of each each byte in the data stream is</span></span>
+<span id="cb3-61"><a href="#cb3-61"></a>    <span class="co">// 128, &#39;k&#39; should be designed so that the expected</span></span>
+<span id="cb3-62"><a href="#cb3-62"></a>    <span class="co">// return value should be `2^32 - 1` in order to</span></span>
+<span id="cb3-63"><a href="#cb3-63"></a>    <span class="co">// provide the best possible &quot;spread&quot;.</span></span>
+<span id="cb3-64"><a href="#cb3-64"></a>    <span class="co">// Therefore in many cases, especially with</span></span>
+<span id="cb3-65"><a href="#cb3-65"></a>    <span class="co">// relatively short messages, changing the length</span></span>
+<span id="cb3-66"><a href="#cb3-66"></a>    <span class="co">// of the input data, by even a single byte, has</span></span>
+<span id="cb3-67"><a href="#cb3-67"></a>    <span class="co">// a major effect on the checksum.</span></span>
+<span id="cb3-68"><a href="#cb3-68"></a>    <span class="co">// Compare this to the original Adler/Fletcher</span></span>
+<span id="cb3-69"><a href="#cb3-69"></a>    <span class="co">// algorithm, where adding a zero byte to the end</span></span>
+<span id="cb3-70"><a href="#cb3-70"></a>    <span class="co">// of the message would not change the checksum.</span></span>
+<span id="cb3-71"><a href="#cb3-71"></a></span>
+<span id="cb3-72"><a href="#cb3-72"></a>    <span class="dt">uint32_t</span> lrc <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-73"><a href="#cb3-73"></a>    <span class="dt">uint32_t</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-74"><a href="#cb3-74"></a></span>
+<span id="cb3-75"><a href="#cb3-75"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int32_t</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> <span class="op">++</span>i<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-76"><a href="#cb3-76"></a>        lrc <span class="op">^=</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)</span>data<span class="op">[</span>i<span class="op">];</span></span>
+<span id="cb3-77"><a href="#cb3-77"></a>        sum <span class="op">+=</span> lrc <span class="op">*</span> <span class="op">(</span>i<span class="op">+</span><span class="dv">1</span><span class="op">);</span></span>
+<span id="cb3-78"><a href="#cb3-78"></a>    <span class="op">}</span></span>
+<span id="cb3-79"><a href="#cb3-79"></a></span>
+<span id="cb3-80"><a href="#cb3-80"></a>    <span class="cf">if</span> <span class="op">((</span>k <span class="op">&amp;</span> <span class="dv">1</span><span class="op">)</span> <span class="op">==</span> <span class="dv">0</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-81"><a href="#cb3-81"></a>        <span class="op">++</span>k<span class="op">;</span> <span class="co">// force k to be odd</span></span>
+<span id="cb3-82"><a href="#cb3-82"></a>    <span class="op">}</span></span>
+<span id="cb3-83"><a href="#cb3-83"></a></span>
+<span id="cb3-84"><a href="#cb3-84"></a>    <span class="cf">return</span> sum<span class="op">*</span>k<span class="op">;</span></span>
+<span id="cb3-85"><a href="#cb3-85"></a><span class="op">}</span></span>
 <span id="cb3-86"><a href="#cb3-86"></a></span>
-<span id="cb3-87"><a href="#cb3-87"></a>    assert<span class="op">(</span>n <span class="op">&gt;</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> n <span class="op">&lt;</span> <span class="dv">8192</span><span class="op">);</span> <span class="co">// 2^13 = 8192</span></span>
-<span id="cb3-88"><a href="#cb3-88"></a></span>
-<span id="cb3-89"><a href="#cb3-89"></a>    <span class="dt">int32_t</span> k <span class="op">=</span> <span class="op">(</span><span class="dv">1</span><span class="bu">L</span> <span class="op">&lt;&lt;</span> <span class="dv">26</span><span class="op">)/(</span>n <span class="op">*</span> <span class="op">(</span>n<span class="op">+</span><span class="dv">1</span><span class="op">));</span></span>
-<span id="cb3-90"><a href="#cb3-90"></a></span>
-<span id="cb3-91"><a href="#cb3-91"></a>    <span class="cf">if</span> <span class="op">((</span>k <span class="op">&amp;</span> <span class="dv">1</span><span class="op">)</span> <span class="op">==</span> <span class="dv">0</span><span class="op">)</span> <span class="op">{</span></span>
-<span id="cb3-92"><a href="#cb3-92"></a>        <span class="op">++</span>k<span class="op">;</span> <span class="co">// force odd</span></span>
-<span id="cb3-93"><a href="#cb3-93"></a>    <span class="op">}</span></span>
-<span id="cb3-94"><a href="#cb3-94"></a></span>
-<span id="cb3-95"><a href="#cb3-95"></a>    <span class="cf">return</span> k<span class="op">;</span></span>
-<span id="cb3-96"><a href="#cb3-96"></a><span class="op">}</span></span>
-<span id="cb3-97"><a href="#cb3-97"></a></span>
-<span id="cb3-98"><a href="#cb3-98"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
-<span id="cb3-99"><a href="#cb3-99"></a><span class="dt">uint32_t</span> ayb_checksum32<span class="op">(</span><span class="dt">const</span> <span class="dt">uint8_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n<span class="op">)</span></span>
-<span id="cb3-100"><a href="#cb3-100"></a><span class="op">{</span></span>
-<span id="cb3-101"><a href="#cb3-101"></a>    <span class="dt">const</span> <span class="dt">uint32_t</span> k <span class="op">=</span> ayb_checksum32_calc_mult<span class="op">(</span>n<span class="op">);</span> <span class="co">// has asserts</span></span>
-<span id="cb3-102"><a href="#cb3-102"></a></span>
-<span id="cb3-103"><a href="#cb3-103"></a>    <span class="dt">uint32_t</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb3-104"><a href="#cb3-104"></a>    <span class="dt">uint32_t</span> lrc <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb3-105"><a href="#cb3-105"></a></span>
-<span id="cb3-106"><a href="#cb3-106"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int32_t</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> <span class="op">++</span>i<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb3-107"><a href="#cb3-107"></a>        lrc <span class="op">^=</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)</span>data<span class="op">[</span>i<span class="op">];</span></span>
-<span id="cb3-108"><a href="#cb3-108"></a>        sum <span class="op">+=</span> lrc <span class="op">*</span> <span class="op">(</span>i<span class="op">+</span><span class="dv">1</span><span class="op">);</span></span>
-<span id="cb3-109"><a href="#cb3-109"></a>    <span class="op">}</span></span>
-<span id="cb3-110"><a href="#cb3-110"></a></span>
-<span id="cb3-111"><a href="#cb3-111"></a>    <span class="cf">return</span> sum<span class="op">*</span>k<span class="op">;</span></span>
-<span id="cb3-112"><a href="#cb3-112"></a><span class="op">}</span></span>
-<span id="cb3-113"><a href="#cb3-113"></a></span>
-<span id="cb3-114"><a href="#cb3-114"></a><span class="kw">extern</span> GCC_ATTRIB<span class="op">(</span><span class="dt">const</span><span class="op">)</span> <span class="co">// should be inlined</span></span>
-<span id="cb3-115"><a href="#cb3-115"></a><span class="dt">uint32_t</span> ayb_unwrap32<span class="op">(</span><span class="dt">uint64_t</span> key<span class="op">,</span> <span class="dt">uint64_t</span> y<span class="op">);</span></span>
-<span id="cb3-116"><a href="#cb3-116"></a></span>
-<span id="cb3-117"><a href="#cb3-117"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
-<span id="cb3-118"><a href="#cb3-118"></a><span class="dt">uint32_t</span> ayb_checksum_secure_32<span class="op">(</span><span class="dt">const</span> <span class="dt">uint8_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n<span class="op">,</span> <span class="dt">uint64_t</span> wrapped_secret_rnd<span class="op">)</span></span>
-<span id="cb3-119"><a href="#cb3-119"></a><span class="op">{</span></span>
-<span id="cb3-120"><a href="#cb3-120"></a>    <span class="co">// As I stated above, it is difficult, but not impossible, to &quot;game&quot;</span></span>
-<span id="cb3-121"><a href="#cb3-121"></a>    <span class="co">// ayb_checksum32(). But by xoring the result with a 32-bit secret</span></span>
-<span id="cb3-122"><a href="#cb3-122"></a>    <span class="co">// random value, makes it cryptographically extremely difficult to</span></span>
-<span id="cb3-123"><a href="#cb3-123"></a>    <span class="co">// &quot;game&quot;, especially within a short timeout period, say 30 minutes,</span></span>
-<span id="cb3-124"><a href="#cb3-124"></a>    <span class="co">// then it becomes effectively impossible to &quot;game&quot;.</span></span>
-<span id="cb3-125"><a href="#cb3-125"></a></span>
-<span id="cb3-126"><a href="#cb3-126"></a>    <span class="dt">const</span> <span class="dt">uint64_t</span> MASTER_SHARED_KEY <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb3-127"><a href="#cb3-127"></a>    <span class="co">// under real conditions, key should be non-zero</span></span>
-<span id="cb3-128"><a href="#cb3-128"></a></span>
-<span id="cb3-129"><a href="#cb3-129"></a>    <span class="cf">return</span> ayb_unwap32<span class="op">(</span>MASTER_SHARED_KEY<span class="op">,</span>wrapped_secret_rnd<span class="op">)</span> <span class="op">^</span> ayb_checksum32<span class="op">(</span>data<span class="op">,</span>n<span class="op">);</span></span>
-<span id="cb3-130"><a href="#cb3-130"></a><span class="op">}</span></span>
-<span id="cb3-131"><a href="#cb3-131"></a></span>
-<span id="cb3-132"><a href="#cb3-132"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
-<span id="cb3-133"><a href="#cb3-133"></a><span class="dt">uint64_t</span> ayb_checksum64<span class="op">(</span><span class="dt">const</span> <span class="dt">uint8_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n<span class="op">);</span></span>
-<span id="cb3-134"><a href="#cb3-134"></a><span class="co">// max n &lt; 2^29 bytes</span></span>
-<span id="cb3-135"><a href="#cb3-135"></a></span>
-<span id="cb3-136"><a href="#cb3-136"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
-<span id="cb3-137"><a href="#cb3-137"></a><span class="dt">uint64_t</span> ayb_checksuml64<span class="op">(</span><span class="dt">const</span> <span class="dt">uint32_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n<span class="op">);</span></span>
-<span id="cb3-138"><a href="#cb3-138"></a><span class="co">// max n &lt; 2^13 dwords (= 2^15 bytes)</span></span></code></pre></div>
+<span id="cb3-87"><a href="#cb3-87"></a>GCC_ATTRIB<span class="op">(</span><span class="dt">const</span><span class="op">)</span></span>
+<span id="cb3-88"><a href="#cb3-88"></a>CC_INLINE <span class="dt">int32_t</span> ayb_checksum32_calc_mult<span class="op">(</span><span class="dt">int32_t</span> n<span class="op">)</span></span>
+<span id="cb3-89"><a href="#cb3-89"></a><span class="op">{</span></span>
+<span id="cb3-90"><a href="#cb3-90"></a>    <span class="co">// recall geometric sum of 1 + 2 + 3 + ... + n = n*(n+1)/2</span></span>
+<span id="cb3-91"><a href="#cb3-91"></a>    <span class="co">// ==&gt; 128*(k + 2*k + 3*k + ... + n*k) = 2^32 - 1</span></span>
+<span id="cb3-92"><a href="#cb3-92"></a>    <span class="co">// ==&gt; 128*k*n*(n+1)/2 = 2^32 - 1</span></span>
+<span id="cb3-93"><a href="#cb3-93"></a>    <span class="co">// ==&gt; k*n*(n+1) ~= 2^26</span></span>
+<span id="cb3-94"><a href="#cb3-94"></a>    <span class="co">// ==&gt; k ~= (2^26)/(n * (n+1))</span></span>
+<span id="cb3-95"><a href="#cb3-95"></a>    <span class="co">// ==&gt; max n &lt; 2^13, otherwise k is zero</span></span>
+<span id="cb3-96"><a href="#cb3-96"></a></span>
+<span id="cb3-97"><a href="#cb3-97"></a>    assert<span class="op">(</span>n <span class="op">&gt;</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> n <span class="op">&lt;</span> <span class="dv">8192</span><span class="op">);</span> <span class="co">// 2^13 = 8192</span></span>
+<span id="cb3-98"><a href="#cb3-98"></a></span>
+<span id="cb3-99"><a href="#cb3-99"></a>    <span class="dt">int32_t</span> k <span class="op">=</span> <span class="op">(</span><span class="dv">1</span><span class="bu">L</span> <span class="op">&lt;&lt;</span> <span class="dv">26</span><span class="op">)/(</span>n <span class="op">*</span> <span class="op">(</span>n<span class="op">+</span><span class="dv">1</span><span class="op">));</span></span>
+<span id="cb3-100"><a href="#cb3-100"></a></span>
+<span id="cb3-101"><a href="#cb3-101"></a>    <span class="cf">if</span> <span class="op">((</span>k <span class="op">&amp;</span> <span class="dv">1</span><span class="op">)</span> <span class="op">==</span> <span class="dv">0</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-102"><a href="#cb3-102"></a>        <span class="op">++</span>k<span class="op">;</span> <span class="co">// force odd</span></span>
+<span id="cb3-103"><a href="#cb3-103"></a>    <span class="op">}</span></span>
+<span id="cb3-104"><a href="#cb3-104"></a></span>
+<span id="cb3-105"><a href="#cb3-105"></a>    <span class="cf">return</span> k<span class="op">;</span></span>
+<span id="cb3-106"><a href="#cb3-106"></a><span class="op">}</span></span>
+<span id="cb3-107"><a href="#cb3-107"></a></span>
+<span id="cb3-108"><a href="#cb3-108"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
+<span id="cb3-109"><a href="#cb3-109"></a><span class="dt">uint32_t</span> ayb_checksum32<span class="op">(</span></span>
+<span id="cb3-110"><a href="#cb3-110"></a>    <span class="dt">const</span> <span class="dt">uint8_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n</span>
+<span id="cb3-111"><a href="#cb3-111"></a><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-112"><a href="#cb3-112"></a>    <span class="co">// calc_mult() contains asserts so it should be the</span></span>
+<span id="cb3-113"><a href="#cb3-113"></a>    <span class="co">// first statement in this function</span></span>
+<span id="cb3-114"><a href="#cb3-114"></a>    <span class="dt">const</span> <span class="dt">uint32_t</span> k <span class="op">=</span> ayb_checksum32_calc_mult<span class="op">(</span>n<span class="op">);</span></span>
+<span id="cb3-115"><a href="#cb3-115"></a></span>
+<span id="cb3-116"><a href="#cb3-116"></a>    <span class="co">// under real conditions, secret should be non-zero</span></span>
+<span id="cb3-117"><a href="#cb3-117"></a>    <span class="dt">const</span> <span class="dt">uint8_t</span> SHARED_AYB_CHECKSUM32_SECRET8 <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-118"><a href="#cb3-118"></a></span>
+<span id="cb3-119"><a href="#cb3-119"></a>    <span class="dt">uint32_t</span> lrc <span class="op">=</span> SHARED_AYB_CHECKSUM32_SECRET8<span class="op">;</span></span>
+<span id="cb3-120"><a href="#cb3-120"></a>    <span class="dt">uint32_t</span> sum <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-121"><a href="#cb3-121"></a></span>
+<span id="cb3-122"><a href="#cb3-122"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int32_t</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> <span class="op">++</span>i<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-123"><a href="#cb3-123"></a>        <span class="co">// Use of lrc makes the checksum much more</span></span>
+<span id="cb3-124"><a href="#cb3-124"></a>        <span class="co">// difficult to &quot;game&quot; compared to the original</span></span>
+<span id="cb3-125"><a href="#cb3-125"></a>        <span class="co">// Adler/Fletcher algorithm.</span></span>
+<span id="cb3-126"><a href="#cb3-126"></a>        <span class="co">// Also with the simple addition of initializing</span></span>
+<span id="cb3-127"><a href="#cb3-127"></a>        <span class="co">// the lrc with a secret byte compounds the</span></span>
+<span id="cb3-128"><a href="#cb3-128"></a>        <span class="co">// difficulty of gaming by a factor of 256.</span></span>
+<span id="cb3-129"><a href="#cb3-129"></a></span>
+<span id="cb3-130"><a href="#cb3-130"></a>        lrc <span class="op">^=</span> <span class="op">(</span><span class="dt">uint32_t</span><span class="op">)</span>data<span class="op">[</span>i<span class="op">];</span></span>
+<span id="cb3-131"><a href="#cb3-131"></a>        sum <span class="op">+=</span> lrc <span class="op">*</span> <span class="op">(</span>i<span class="op">+</span><span class="dv">1</span><span class="op">);</span></span>
+<span id="cb3-132"><a href="#cb3-132"></a>    <span class="op">}</span></span>
+<span id="cb3-133"><a href="#cb3-133"></a></span>
+<span id="cb3-134"><a href="#cb3-134"></a>    <span class="cf">return</span> sum <span class="op">*</span> k<span class="op">;</span></span>
+<span id="cb3-135"><a href="#cb3-135"></a><span class="op">}</span></span>
+<span id="cb3-136"><a href="#cb3-136"></a></span>
+<span id="cb3-137"><a href="#cb3-137"></a><span class="kw">extern</span> GCC_ATTRIB<span class="op">(</span><span class="dt">const</span><span class="op">)</span> <span class="co">// should be inlined</span></span>
+<span id="cb3-138"><a href="#cb3-138"></a><span class="dt">uint32_t</span> ayb_unwrap32<span class="op">(</span><span class="dt">uint64_t</span> key<span class="op">,</span> <span class="dt">uint64_t</span> y<span class="op">);</span></span>
+<span id="cb3-139"><a href="#cb3-139"></a></span>
+<span id="cb3-140"><a href="#cb3-140"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
+<span id="cb3-141"><a href="#cb3-141"></a><span class="dt">uint32_t</span> ayb_checksum_secure_32<span class="op">(</span></span>
+<span id="cb3-142"><a href="#cb3-142"></a>    <span class="dt">const</span> <span class="dt">uint8_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n<span class="op">,</span></span>
+<span id="cb3-143"><a href="#cb3-143"></a>    <span class="dt">uint64_t</span> wrapped_secret_rnd</span>
+<span id="cb3-144"><a href="#cb3-144"></a><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-145"><a href="#cb3-145"></a>    <span class="co">// As we stated above, it is difficult, but not</span></span>
+<span id="cb3-146"><a href="#cb3-146"></a>    <span class="co">// impossible, to &quot;game&quot; the checksum. But by</span></span>
+<span id="cb3-147"><a href="#cb3-147"></a>    <span class="co">// xoring the result with a 32-bit shared secret</span></span>
+<span id="cb3-148"><a href="#cb3-148"></a>    <span class="co">// random value, now makes it *cryptographically*</span></span>
+<span id="cb3-149"><a href="#cb3-149"></a>    <span class="co">// difficult to game, especially within the confines</span></span>
+<span id="cb3-150"><a href="#cb3-150"></a>    <span class="co">// of a relatively short timeout period, say 60 min.</span></span>
+<span id="cb3-151"><a href="#cb3-151"></a></span>
+<span id="cb3-152"><a href="#cb3-152"></a>    <span class="co">// under real conditions, secret should be non-zero</span></span>
+<span id="cb3-153"><a href="#cb3-153"></a>    <span class="dt">const</span> <span class="dt">uint64_t</span> SHARED_SECRET_MASTER_KEY64 <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-154"><a href="#cb3-154"></a></span>
+<span id="cb3-155"><a href="#cb3-155"></a>    <span class="cf">return</span> ayb_unwrap32<span class="op">(</span>SHARED_SECRET_MASTER_KEY64<span class="op">,</span></span>
+<span id="cb3-156"><a href="#cb3-156"></a>            wrapped_secret_rnd<span class="op">)</span></span>
+<span id="cb3-157"><a href="#cb3-157"></a>        <span class="op">^</span> ayb_checksum32<span class="op">(</span>data<span class="op">,</span>n<span class="op">);</span></span>
+<span id="cb3-158"><a href="#cb3-158"></a><span class="op">}</span></span>
+<span id="cb3-159"><a href="#cb3-159"></a></span>
+<span id="cb3-160"><a href="#cb3-160"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
+<span id="cb3-161"><a href="#cb3-161"></a><span class="dt">uint64_t</span> ayb_checksum64<span class="op">(</span></span>
+<span id="cb3-162"><a href="#cb3-162"></a>    <span class="dt">const</span> <span class="dt">uint8_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n</span>
+<span id="cb3-163"><a href="#cb3-163"></a><span class="op">);</span></span>
+<span id="cb3-164"><a href="#cb3-164"></a><span class="co">// max n &lt; 2^29 bytes</span></span>
+<span id="cb3-165"><a href="#cb3-165"></a></span>
+<span id="cb3-166"><a href="#cb3-166"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
+<span id="cb3-167"><a href="#cb3-167"></a><span class="dt">uint64_t</span> ayb_checksuml64<span class="op">(</span></span>
+<span id="cb3-168"><a href="#cb3-168"></a>    <span class="dt">const</span> <span class="dt">uint32_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n</span>
+<span id="cb3-169"><a href="#cb3-169"></a><span class="op">);</span></span>
+<span id="cb3-170"><a href="#cb3-170"></a><span class="co">// max n &lt; 2^13 dwords (= 2^15 bytes)</span></span></code></pre></div>
 <ol start="3" type="a">
 <li>I invented high quality, tiny footprint, and extremely fast <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNGs</a> (Pseudorandom Number Generators). I validated the <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNGs</a> with the <q>gold standard</q> <a href="http://pracrand.sourceforge.net/">PractRand</a> utility. Use of <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNGs</a> is an important <a href="https://www2.cs.arizona.edu/~collberg/Teaching/553/2011/Resources/obfuscation.pdf">obfuscation</a> tactic. Each module was assigned its own tiny <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNG</a>, implemented as a C <a href="https://en.wikipedia.org/wiki/Inline_function">inline function</a>, with its own unique random IV (Initialization Vector). This avoids having a single global <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNG</a> function that is much more easily attacked.</li>
 <li>I tweaked the lightweight <a href="https://en.wikipedia.org/wiki/XXTEA">XXTEA</a> cipher in order to greatly improve its cryptographic strength.</li>
@@ -2098,7 +2132,7 @@ senior software engineer
 </tr>
 <tr class="odd">
 <td style="text-align: left;">3/5</td>
-<td style="text-align: left;">C++, HTML5, Javascript, <a href="https://webassembly.org/">WASM</a>, <a href="https://en.wikipedia.org/wiki/XML">XML</a>, JSON, Yaml, <a href="https://en.wikipedia.org/wiki/Executable_and_Linkable_Format">ELF</a>, <a href="https://github.com/lief-project/LIEF">Lief</a>, <a href="https://github.com/zyantific/zydis">Zydis</a>, <a href="https://github.com/novogen/pydis">Pydis</a>, <a href="https://www.srcml.org/">SrcML</a>, <a href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a>, <a href="https://jinja2docs.readthedocs.io/en/stable/">Jinja2</a>, Reveal.js, git, Jira, Excel, Visual Studio, <a href="https://en.wikipedia.org/wiki/Libvirt">libvirt</a>, <a href="https://en.wikipedia.org/wiki/VirtualBox">VirtualBox</a>, Windows User Mode API</td>
+<td style="text-align: left;">C++, HTML5, Javascript, <a href="https://webassembly.org/">WASM</a>, <a href="https://en.wikipedia.org/wiki/XML">XML</a>, JSON, Yaml, <a href="https://en.wikipedia.org/wiki/Executable_and_Linkable_Format">ELF</a>, <a href="https://github.com/lief-project/LIEF">Lief</a>, <a href="https://github.com/zyantific/zydis">Zydis</a>, <a href="https://github.com/novogen/pydis">Pydis</a>, <a href="https://www.srcml.org/">SrcML</a>, <a href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a>, <a href="https://jinja2docs.readthedocs.io/en/stable/">Jinja2</a>, Reveal.js, git, Jira, Excel, Visual Studio, <a href="https://en.wikipedia.org/wiki/Libvirt">libvirt</a>, <a href="https://en.wikipedia.org/wiki/VirtualBox">VirtualBox</a>, Android NDK, Windows User Mode API</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">2/5</td>
