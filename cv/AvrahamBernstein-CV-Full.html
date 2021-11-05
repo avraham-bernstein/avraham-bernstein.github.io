@@ -1340,8 +1340,10 @@ Secure<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1<
 <span id="cb3-153"><a href="#cb3-153"></a>GCC_ATTRIB<span class="op">(</span>pure<span class="op">,</span>nonnull<span class="op">)</span></span>
 <span id="cb3-154"><a href="#cb3-154"></a><span class="dt">uint64_t</span> ayb_checksuml64<span class="op">(</span></span>
 <span id="cb3-155"><a href="#cb3-155"></a>    <span class="dt">const</span> <span class="dt">uint32_t</span> <span class="op">*</span><span class="dt">restrict</span> data<span class="op">,</span> <span class="dt">int32_t</span> n</span>
-<span id="cb3-156"><a href="#cb3-156"></a>    <span class="co">// max n &lt; 2^13 dwords (= 2^15 bytes)</span></span>
-<span id="cb3-157"><a href="#cb3-157"></a><span class="op">);</span></span></code></pre></div>
+<span id="cb3-156"><a href="#cb3-156"></a>    <span class="co">// max n &lt; 2^13 dwords (= 2^15 bytes),</span></span>
+<span id="cb3-157"><a href="#cb3-157"></a>    <span class="co">// and in this version the lrc initialization secret</span></span>
+<span id="cb3-158"><a href="#cb3-158"></a>    <span class="co">// can be 32-bits</span></span>
+<span id="cb3-159"><a href="#cb3-159"></a><span class="op">);</span></span></code></pre></div>
 <ol start="3" type="a">
 <li>I invented high quality, tiny footprint, and extremely fast <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNGs</a> (Pseudorandom Number Generators). I validated the <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNGs</a> with the <q>gold standard</q> <a href="http://pracrand.sourceforge.net/">PractRand</a> utility. Use of <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNGs</a> is an important <a href="https://www2.cs.arizona.edu/~collberg/Teaching/553/2011/Resources/obfuscation.pdf">obfuscation</a> tactic. Each module was assigned its own tiny <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNG</a>, implemented as a C <a href="https://en.wikipedia.org/wiki/Inline_function">inline function</a>, with its own unique random IV (Initialization Vector). This avoids having a single global <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNG</a> function that is much more easily attacked.</li>
 <li>I tweaked the lightweight <a href="https://en.wikipedia.org/wiki/XXTEA">XXTEA</a> cipher in order to greatly improve its cryptographic strength.</li>

@@ -1145,7 +1145,9 @@ The following are many of the application domains in which I have worked:
         GCC_ATTRIB(pure,nonnull)
         uint64_t ayb_checksuml64(
             const uint32_t *restrict data, int32_t n
-            // max n < 2^13 dwords (= 2^15 bytes)
+            // max n < 2^13 dwords (= 2^15 bytes),
+            // and in this version the lrc initialization secret
+            // can be 32-bits
         );
 
         ```
