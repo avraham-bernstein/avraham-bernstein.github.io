@@ -8,7 +8,7 @@ subtitle: __Expert in Software Algorithm Design, Domain Specific Languages, & An
 
 author: Avraham Bernstein
 
-date: 2021-11-04
+date: 2021-11-05
 
 lang: en
 
@@ -1060,6 +1060,7 @@ The following are many of the application domains in which I have worked:
             // Compare this to the original Adler/Fletcher
             // algorithm, where adding a zero byte to the end
             // of the message would not change the checksum.
+            // TBD: `2^33 - 1` may provide a stronger checksum.
 
             uint32_t lrc = 0;
             uint32_t sum = 0;
@@ -1103,10 +1104,22 @@ The following are many of the application domains in which I have worked:
         ) {
             // calc_mult() contains asserts so it should be the
             // first statement in this function
+
             const uint32_t k = ayb_checksum32_calc_mult(n);
 
-            // under real conditions, secret should be non-zero
+            // Under real conditions, secret should be non-zero.
+            // The secret byte is used to initialize the lrc.
+            // This technique increases the difficulty of gaming
+            // the checksum by a factor of 256.
+
             const uint8_t SHARED_AYB_CHECKSUM32_SECRET8 = 0;
+
+            // Even stronger: By starting the message data with
+            // a 32-bit time stamp say with a 30 second window,
+            // or better by starting with a 32-bit OATH OTP
+            // token, greatly limits the degrees of freedom to
+            // game the checksum, and of course restricts the
+            // use of message replay attacks.
 
             uint32_t lrc = SHARED_AYB_CHECKSUM32_SECRET8;
             uint32_t sum = 0;
@@ -1115,9 +1128,6 @@ The following are many of the application domains in which I have worked:
                 // Use of lrc makes the checksum much more
                 // difficult to "game" compared to the original
                 // Adler/Fletcher algorithm.
-                // Also with the simple addition of initializing
-                // the lrc with a secret byte compounds the
-                // difficulty of gaming by a factor of 256.
 
                 lrc ^= (uint32_t)data[i];
                 sum += lrc * (i+1);
@@ -1126,40 +1136,17 @@ The following are many of the application domains in which I have worked:
             return sum * k;
         }
 
-        extern GCC_ATTRIB(const) // should be inlined
-        uint32_t ayb_unwrap32(uint64_t key, uint64_t y);
-
-        GCC_ATTRIB(pure,nonnull)
-        uint32_t ayb_checksum_secure_32(
-            const uint8_t *restrict data, int32_t n,
-            uint64_t wrapped_secret_rnd
-        ) {
-            // As we stated above, it is difficult, but not
-            // impossible, to "game" the checksum. But by
-            // xoring the result with a 32-bit shared secret
-            // random value, now makes it *cryptographically*
-            // difficult to game, especially within the confines
-            // of a relatively short timeout period, say 60 min.
-
-            // under real conditions, secret should be non-zero
-            const uint64_t SHARED_SECRET_MASTER_KEY64 = 0;
-
-            return ayb_unwrap32(SHARED_SECRET_MASTER_KEY64,
-                    wrapped_secret_rnd)
-                ^ ayb_checksum32(data,n);
-        }
-
         GCC_ATTRIB(pure,nonnull)
         uint64_t ayb_checksum64(
             const uint8_t *restrict data, int32_t n
+            // max n < 2^29 bytes
         );
-        // max n < 2^29 bytes
 
         GCC_ATTRIB(pure,nonnull)
         uint64_t ayb_checksuml64(
             const uint32_t *restrict data, int32_t n
+            // max n < 2^13 dwords (= 2^15 bytes)
         );
-        // max n < 2^13 dwords (= 2^15 bytes)
 
         ```
         c. I invented high quality, tiny footprint, and extremely fast [PRNGs][PRNG] (Pseudorandom Number Generators). I validated the [PRNGs][PRNG] with the "gold standard" [PractRand] utility. Use of [PRNGs][PRNG] is an important [obfuscation] tactic. Each module  was assigned its own tiny [PRNG], implemented as a C [inline function], with its own unique random IV (Initialization Vector). This avoids having a single global [PRNG] function that is much more easily attacked.
