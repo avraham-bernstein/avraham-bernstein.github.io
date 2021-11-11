@@ -8,7 +8,7 @@ subtitle: __Expert in Software Algorithm Design, Domain Specific Languages, & An
 
 author: Avraham Bernstein
 
-date: 2021-11-05
+date: 2021-11-11
 
 lang: en
 
@@ -1891,7 +1891,7 @@ __My expertise level ranking is based upon how frequently I use these languages,
 
 ### Language Research Interests
 
-#. [Nim] and [Python 3.10 structural pattern matching](https://www.python.org/dev/peps/pep-0635/) are interesting due to the way they elegantly handle ASTs ([Abstract Syntax Tree]) which are useful for writing compilers, refactoring, and obfuscation patterns.
+#. [Nim] and [Python 3.10 structural pattern matching](https://www.python.org/dev/peps/pep-0635/) are interesting due to the way they elegantly handle ASTs ([Abstract Syntax Tree]) which are useful for writing compilers, refactoring, and obfuscation patterns. Also [Nimscript] provides an efficient modern structured programming interface that can replace the [bash] shell for complex shell scripts, especially combined with [TinyC] when neccessary.
 
 #. A deeper understanding of [WASM]&nbsp;(Web Assembly) is interesting (1) in order to bring C binary performance into Web browser Javascript applications, and (2) as a virtual machine that can allow compiled C/Golang/Nim/Rust functions to be dynamically loaded into binary applications instead of [FORTH] whose stack programming paradigm is uncomfortable/unfamiliar for many programmers.
 
@@ -1932,6 +1932,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 [autodidact polymath]: https://iamautodidact.com/how-to-become-an-autodidact-polymath-the-complete-guide/
 
 [avalanche effect]: https://en.wikipedia.org/wiki/Avalanche_effect
+
+[bash]: https://www.gnu.org/software/bash/
 
 [beautiful soup]: https://beautiful-soup-4.readthedocs.io/en/latest/
 
@@ -2094,6 +2096,8 @@ There is a common misconception that only geniuses like [Leonardo da Vinci](http
 [nds]: https://en.wikipedia.org/wiki/Synamedia
 
 [nim]: https://nim-lang.org/
+
+[nimscript]: https://nim-lang.org/1.4.8/nims.html
 
 [no X86-64 disassembler is 100% accurate]: https://security.di.unimi.it/homes/gianz/pubs/issta10-nversion.pdf
 
