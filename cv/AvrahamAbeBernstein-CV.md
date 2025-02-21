@@ -33,8 +33,8 @@ __Secure[^secure] photo of the author from 2025__
 2. I have many inventions and some __recent patents__ in a wide variety of application domains, e.g.:
     * digital automotive industry
     * Internet TV
-    * cybersecurity and anti-[reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering)
-    * [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics)
+    * Cybersecurity and anti-[reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering)
+    * [Bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics)
     * accessibility
     * factory automation
     * VLSI chip design
@@ -99,7 +99,7 @@ $if(is_pdf)
 $else
 <details markdown="1"><summary>$(task)</summary>
 
-1. I implemented _C_ crytographic functions in _Javascript_ web assembly ([WASM](https://webassembly.org/)). _WASM_object code is much faster and much more difficult to debug than _Javascript_. Because this project was intended for the banking industry, in the future we could write a _WASM_ [obfuscator](https://en.wikipedia.org/wiki/Obfuscation) that would greatly increase the difficulty of debugging.
+1. I implemented _C_ cryptography functions in _Javascript_ web assembly ([WASM](https://webassembly.org/)). _WASM_object code is much faster and much more difficult to debug than _Javascript_. Because this project was intended for the banking industry, in the future we could write a _WASM_ [obfuscator](https://en.wikipedia.org/wiki/Obfuscation) that would greatly increase the difficulty of debugging.
 
 2. I implemented the project by using [Clang's wasm32 target](https://medium.com/@dougschaefer/going-straight-to-clang-for-webassembly-928df1484430).
 
@@ -120,7 +120,7 @@ $else
     * In particular the original bsdiff software incorporates the outdated bz binary compressor that has a 100 KB RAM footprint.
     * Mini-bsdiff is not bundled with any binary compressor at all.
     * Mini-bsdiff can be combined with the modern xz binary compressor designed for embedded systems that only has a 26 KB RAM footprint.
-    * It is not computationally feasible to generate an offlline mini-bsdiff patch where at least one of the source files is larger than 8MB, in which case it is preferable to use the VCDiff/xdiff algorithm which is commonly used on web sites.
+    * It is not computationally feasible to generate an offline mini-bsdiff patch where at least one of the source files is larger than 8MB, in which case it is preferable to use the VCDiff/xdiff algorithm which is commonly used on web sites.
     
 2. I invented [EU Patent EP3680773A1](https://worldwide.espacenet.com/patent/search/family/069147491/publication/EP3680773A1?q=20150616.9), a mini-bsdiff patch implementation for small FLASH memory systems where the FLASH is not big enough to temporarily hold both the original version "A" and new version "B" of the object code. Normally bsdiff requires both versions be available when applying the patch.
  
@@ -148,7 +148,7 @@ $endif
 
 ### 2013-14: _Discretix_ Netanya IL (renamed _Sansa Security_, acquired by [ARM](https://www.arm.com) UK)
 
-The company sold their Internet TV Cybsersecurity business unit to [Viaccess-Orca (2014)]($(html)#$(id)) above.
+The company sold their Internet TV Cybersecurity business unit to [Viaccess-Orca (2014)]($(html)#$(id)) above.
 
 $py(id="telequest"; task="Vehicle Navigation Algorithms: VP R&D")
 ### 2012: _Telequest_ (defunct) Jerusalem IL {#$(id)}
@@ -162,7 +162,7 @@ $else
 
 2. I developed algorithms to improve traffic throughput in traffic jams taking advantage of expected traffic trends according to history of the day of the week and expected events. 
 
-3. I designed live experiments using AWS simulations to optimize results. Co-ordinated work with a mathematical consultant specializing in optimization algorithms for a huge number of variables.
+3. I designed live experiments using AWS simulations to optimize results. Co-donated work with a mathematical consultant specializing in optimization algorithms for a huge number of variables.
 
 4. Theoretical algorithm experiments were conducted on a simulator of Tokyo traffic.
 
@@ -178,7 +178,7 @@ $else
 <details markdown="1"><summary><span class="hilite">$(task)</span></summary>
 
 The company's product was a novel _dry_ test kit for [MRSA](https://www.mayoclinic.org/diseases-conditions/mrsa/symptoms-causes/syc-20375336) using [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) (a [DNA](https://en.wikipedia.org/wiki/DNA) amplification device).
-_MRSA_ is a lethal strain of _staphlococcus_ bacteria which is the major [iatrogenic](https://en.wikipedia.org/wiki/Iatrogenesis) killer in hospitals for immunoligically compromised patients.
+_MRSA_ is a lethal strain of _staphylococcus_ bacteria which is the major [iatrogenic](https://en.wikipedia.org/wiki/Iatrogenesis) killer in hospitals for immunologically compromised patients.
 Therefore it is critically important that hospitals identify carriers among both patients and
 hospital staff as soon as they are infected.
 Most people who are infected with _MRSA_ carry it in their nasal passages. Most interesting such a person, even an immunologically
@@ -200,7 +200,7 @@ __Within 3 months I made a number of discoveries that validated the owner's scie
 enabled them to pass the _FDA_ trials. 
 In spite of my technical success, for commercial
 reasons, beyond the scope of my short article, anyway they were forced to close down their _PCR_ business unit;
-therefore my [threshhold  algorithm](https://www.pythonprog.com/thresholding-in-machine-learning/) was never patented.
+therefore my [threshold  algorithm](https://www.pythonprog.com/thresholding-in-machine-learning/) was never patented.
 
 1. Initially _Bar_ and the company's chief microbiologist gave me a 2 week crash course in the fields of microbiology and genetics that they felt I would need for my work.
 
@@ -218,20 +218,20 @@ therefore my [threshhold  algorithm](https://www.pythonprog.com/thresholding-in-
 
 8. I discovered a much more accurate and simple way to normalize the bioassay curve and to remove systematic noise, by noting that the "systematic" noise and the linear rise in the signal of the negative control sample precisely matched the patient samples (from the same batch). Therefore my simple normalization solution was to subtract the negative control sample from the patient samples.
 
-9. Both _Bar_ and the senior biochemist agreed with me that inhibition never increases the _PCR_ signal. Therefore I used an alternative AI [threshhold test](https://www.pythonprog.com/thresholding-in-machine-learning/), instead of the _Bar-Tichopad_ test that was based upon advanced mathematical function analysis to calculate the [Ct](https://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/real-time-pcr-basics/real-time-pcr-understanding-ct.html) of the assay. 
+9. Both _Bar_ and the senior biochemist agreed with me that inhibition never increases the _PCR_ signal. Therefore I used an alternative AI [threshold test](https://www.pythonprog.com/thresholding-in-machine-learning/), instead of the _Bar-Tichopad_ test that was based upon advanced mathematical function analysis to calculate the [Ct](https://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/real-time-pcr-basics/real-time-pcr-understanding-ct.html) of the assay. 
 
 10. I split the patient samples in half. For the control half, I used the single maximum signal from each sample. I recorded minimum PCR signal that indicated a positive Petri result. And similarly I recorded the maximum PCR signal indicated a negative Petri result. 
 
-11. __I used the other half of the patient samples to test my new threshhold algorithm. My predictions were 95% accurate in spite of the high degree of inhibition found in the preliminary chemistry!__
+11. __I used the other half of the patient samples to test my new threshold algorithm. My predictions were 95% accurate in spite of the high degree of inhibition found in the preliminary chemistry!__
     
-    * The explaination for the minor inaccuracy was some results were in the "gray" region where there was an overlap between the minimum PCR signal to indicate a postive result, and the maximum PCR signal to indicate a negative result.
+    * The explanation for the minor inaccuracy was some results were in the "gray" region where there was an overlap between the minimum PCR signal to indicate a positive result, and the maximum PCR signal to indicate a negative result.
 
-12. __My threshhold algorithm won a MRSA "shoot out" at the world famous UK [St Georges medical school hospital](https://www.stgeorges.nhs.uk/) against competing PCR kits from the huge international pharmaceutical companies!__ 
+12. __My threshold algorithm won a MRSA "shoot out" at the world famous UK [St Georges medical school hospital](https://www.stgeorges.nhs.uk/) against competing PCR kits from the huge international pharmaceutical companies!__ 
 
 </details>
 $endif
 
-$py(id="nds"; task="Internet TV Cybsecurity: software researcher")
+$py(id="NDS"; task="Internet TV Cybersecurity: software researcher")
 ### 2005-10: _NDS_ Jerusalem IL (eventually acquired by [Synamedia](https://www.synamedia.com/) UK) {#$(id)}
 
 $if(is_pdf)
@@ -294,12 +294,12 @@ $else
 
 2. I selected an external board in order to implemented a basic [SNMP agent](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol).
 
-3. I built a basic http [SNMP NMS](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol).
+3. I built a basic HTTP [SNMP NMS](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol) server.
 
 </details>
 $endif
 
-$py(id="vyyo2000"; task="Broadband Wireless Cable Networking: manager offline S/W utilites")
+$py(id="vyyo2000"; task="Broadband Wireless Cable Networking: manager offline S/W utilities")
 ### 2000-02: _Vyyo_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
@@ -342,7 +342,7 @@ $else
 </details>
 $endif
 
-$py(id="elop"; task="DSL for a milspec automated testing laboratory for the _BlackHawk_ helicopter: S/W architect")
+$py(id="elop"; task="DSL for a mil-spec automated testing laboratory for the _BlackHawk_ helicopter: S/W architect")
 ### 1996: CEO _Pitkha_ (defunct) Jerusalem IL, contractor for [Elop/Elbit](https://elbitsystems.com/) Rehovot IL {#$(id)}
 
 $if(is_pdf)
@@ -355,7 +355,7 @@ $else
 </details>
 $endif
 
-$py(id="dspg"; task="DSL for the VLSI _PINE_  CPU software toolchain: S/W architect")
+$py(id="dspg"; task="DSL for the VLSI _PINE_  CPU software tool chain: S/W architect")
 ### 1992-95: CEO _Pitkha_ (defunct) Jerusalem IL, contractor for [DSP Group](https://www.dspg.com/) Ramat Gan IL {#$(id)}
 
 $if(is_pdf)
@@ -382,7 +382,7 @@ $else
 $endif
 
 $py(id="cubital-printer"; task="Stereo lithography (i.e. 3D printing) device: intermediate programmer")
-### 1988-89: consultant to _Cubital_ (defunct) Herzliya IL, subsidary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
+### 1988-89: consultant to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
@@ -405,14 +405,14 @@ $else
 $endif
 
 $py(id="cubital-accessibility"; task="Public domain accessibility project for quadriplegics: S/W architect")
-### 1989: consultant to _Cubital_ (defunct) Herzliya IL, subsidary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
+### 1989: consultant to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
 
 $if(is_pdf)
 <span class="hilite">[Details: $(task)]($(html)#$(id))</span>
 $else
 <details markdown="1"><summary><span class="hilite">$(task)</span></summary>
 
-1. At that time, 1989, speech-to-text systems were not yet technically feasible or else exhorbitantly expensive.
+1. At that time, 1989, speech-to-text systems were not yet technically feasible or else exorbitantly expensive.
 
 2. Our hardware solution was based upon attaching a telescopically enhanced [light pen](https://en.wikipedia.org/wiki/Light_pen) to a then ubiquitous [CRT](https://www.howtogeek.com/722863/what-is-a-crt-and-why-dont-we-use-them-anymore/) display, where the light pen's select button was replaced with a [sip-and-puff  accessibility switch](https://enablingdevices.com/product/sip-and-puff-switches/). Normally a light pen needed to be ~1 cm from the display, but with our military grade optical enhancement it could be used ~80 cm away. 
 
@@ -433,7 +433,7 @@ $if(is_pdf)
 $else
 <details markdown="1"><summary><span class="hilite">$(task)</span></summary>
 
-1. This [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) annotates an [AutoCAD](https://www.autodesk.com/products/autocad/overview?term=1-YEAR&tab=subscription) leather sewing pattern with "road signs". The signs are associated with sewing commands that must be followed in real-time.
+1. This [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) annotates an [Auto-CAD](https://www.autodesk.com/products/autocad/overview?term=1-YEAR&tab=subscription) leather sewing pattern with "road signs". The signs are associated with sewing commands that must be followed in real-time.
 
 2. Since leather is a natural fabric, no pieces are identical with respect to size, thickness, and color. An expert human sewing machine operator will take these differences into account. Therefore the robot has a live video feed.
 
@@ -465,7 +465,7 @@ $endif
 
 1. Junior economist and programmer for electric utility capacity planning models.
 
-$py(id="oeb"; task="Public interest intervenor-economist in the ECAP77 hearings on marginal cost pricing for electricty")
+$py(id="oeb"; task="Public interest intervenor-economist in the ECAP77 hearings on marginal cost pricing for electricity")
 ### 1977: [Ontario Energy Board](https://www.oeb.ca) Toronto Ontario {#$(id)}
 
 $if(is_pdf)
@@ -633,9 +633,9 @@ The algorithm is implemented as follows:
 
 1. The original number is split in half into its lower bits and upper bits. Both Hamming weights are calculated.
 
-2. The lower bits will be [bitwise complemented](https://www.geeksforgeeks.org/bitwise-complement-operator-tilde/) when the Hamming weight of the upper bits  is _even_ , while the upper bits will be complemented when the Hamming weight of the lower bits is _odd_. Note that the complement operation is invertible because it does not change parity.
+2. The lower bits will be [bit-wise complemented](https://www.geeksforgeeks.org/bitwise-complement-operator-tilde/) when the Hamming weight of the upper bits  is _even_ , while the upper bits will be complemented when the Hamming weight of the lower bits is _odd_. Note that the complement operation is invertible because it does not change parity.
 
-3. The lower bits will be rotated by the original Hamming weight of the upper bits, and _vice versa_. Similarly the rotation operation is invertbile.
+3. The lower bits will be rotated by the original Hamming weight of the upper bits, and _vice versa_. Similarly the rotation operation is invertible.
 
 Most modern CPUs have a Hamming weight (aka `popcount`) instruction, therefore the run-time overhead of using this transformation is negligible.
 
@@ -726,8 +726,8 @@ int32_t ayb_fft_hw32(const uint32_t x)
     const int32_t WIDTH = sizeof(typeof(x)) * 8;
     const int32_t MAX_WIDTH = WIDTH/4;
 
-    int32_t sum = (WIDTH <= 32) ? __builtin_popcount(x) : \
-                __builtin_popcountll(x);
+    int32_t sum = (WIDTH <= 32) ? __builtin_popcount(x) : \\
+        __builtin_popcountll(x);
     
     for (int32_t width = 2; width <= MAX_WIDTH; width *= 2) {
         sum += width * ayb_squeeze_hw32(x, width);
@@ -767,9 +767,10 @@ We can take advantage of this feature in order to implement named function argum
 ```c
 #include <stdio.h>
 
-#define CALL(F,...)     F((F##_args_t){__VA_ARGS__})
-#define P(...)               __VA_ARGS__ // partials, somewhat like python partial functions
-#define CALLP(F,XN,...) F((F##_args_t){P XN,##__VA_ARGS__})
+#define CALL(F,...)  F((F##_args_t){__VA_ARGS__})
+#define P(...)  __VA_ARGS__  // partials, somewhat like python partial functions
+#define CALLP(F,WRAPPED_PARTIALS,...) F((F##_args_t) \\
+        {P WRAPPED_PARTIALS,##__VA_ARGS__})
 
 typedef struct { int a, b, c; } myfunc_args_t;
 int myfunc(myfunc_args_t args) { return args.a + args.b + args.c; }
@@ -846,7 +847,7 @@ $if(is_pdf)
 $else
 <details markdown="1"><summary>$(task)</summary>
 
-In the _Torah_ in [Gen. 18:19](https://mechon-mamre.org/p/pt/pt0118.htm) (Hebrew: _Parshat Vayeira_), _HaShem_ (English: the Jewish name of God) states that the reason why He chose _Avraham Avinu_ (English: our forefather Abraham) and his descendents to be His vanguard in this world is because "he \[Avraham] will command his children and his household after him to keep the way of the LORD, to do righteousness and justice"[^chosen]. According to [Nechama Leibowitz](https://en.wikipedia.org/wiki/Nechama_Leibowitz), the modern biblical commentator _par excelllence_,  this is _HaShem_'s "prime directive" to the Jewish People. I would like to believe that I have attempted to internalize this directive. My attempts will be what my family and friends will remember me for, and hopefully emulate, but hardly my contributions to computer science.
+In the _Torah_ in [Gen. 18:19](https://mechon-mamre.org/p/pt/pt0118.htm) (Hebrew: _Parshat Vayeira_), _HaShem_ (English: the Jewish name of God) states that the reason why He chose _Avraham Avinu_ (English: our forefather Abraham) and his descendants to be His vanguard in this world is because "he \[Avraham] will command his children and his household after him to keep the way of the LORD, to do righteousness and justice"[^chosen]. According to [Nechama Leibowitz](https://en.wikipedia.org/wiki/Nechama_Leibowitz), the modern biblical commentator _par excellance_,  this is _HaShem_'s "prime directive" to the Jewish People. I would like to believe that I have attempted to internalize this directive. My attempts will be what my family and friends will remember me for, and hopefully emulate, but hardly my contributions to computer science.
 
 1. 1995-96: I successfully fought the IDF eventually at the Supreme Court over their illegal "Oslo" rules of engagement that would require that IDF soldiers not respond to Palestinian threats at gunpoint, even from known terrorist murderers, until __after__ the Pals first fired at them!
 
@@ -872,15 +873,15 @@ _[Where there is no man, strive to be one](https://torahisteaching.com/2019/04/3
 
 The following is my very brief synopsis of the perfidy of the Oslo architects that the majority now (2025) recognize laid the groundwork for the October 7 Hamas massacre. Almost of all of my synopsis is based upon verifiable open source material, but my skepticism was refined by the education that the leaker gave me into the extent of government corruption. Today (2025) many are too young, or not yet born, to remember the sordid details of Oslo, and unfortunately many are afflicted with the "politically correct" reverence for the man who was primarily responsible.
 
-1. Unlike the rest of the modern State of Israel's "founding fathers" who were frustrated Bolsheviks, but at least had their primary education in a "Cheider", i.e. a religious Jewish primary school, while Peres' primary education was in a Jesuit school in Poland. As the visceral antisemite "Saint" Ignatius, the  founder the Jesuit order, boasted "give me a boy until the age of 7, and I will give you the man". Peres, was regularly in league with the Vatican, see [here](https://www.haaretz.com/2003-07-22/ty-article/peres-suggests-holy-sites-in-jlem-be-declared-world-capital/0000017f-e0d3-d38f-a57f-e6d376ac0000) and [here](https://werhit-mathenyahu.blogspot.com/2012/10/shimon-peres-vaticans-president-of.html). He unsuccessfully secretly attempted to revive the Vatican's 1947 "wet dream", see [here](https://israelbehindthenews.com/1997/09/22/the-vaticans-jerusalem-agenda/) and [here](https://www.redmoonrising.com/chamish/vaticanagenda.htm), to declare the Old City of Jerusalem as a [corpus separatum](https://en.wikipedia.org/wiki/Corpus_separatum_(Jerusalem)). _Pope Paul VI_ made _hollow_ declarations of Jewish reconcilliation in his 1965 _Nostra Aetate_ encyclical. Paul _and his successors_ could [never theologically accept the reestablishment of a modern Jewish State](https://www.israelnationalnews.com/news/343072). In spite of the pablum in _Nostra Aetate_, according to two millennia of fundamental Roman Catholic and Eastern Orthodox antisemitic beliefs originating with the New Testament Gospels, the Jews were damned to be a [wandering people](https://en.wikipedia.org/wiki/Wandering_Jew) for refusing to accept Jesus as their messianic savior - aka replacement theology or supersessionism. And it speaks volumes that the second largest _Apostolic_ (i.e. diplomatic) delegation to the Vatican is from Iran who openly declares that it is their God-given duty to annihilate the Jewish State in order to hasten the coming of their false messiah, i.e. the _Machdi_. Iran has a miniscule Christian community, while converting to Christianity carries a death penalty. Can we assume that their theologians have discussions about [how many angels can dance on the head of a pin](https://en.wikipedia.org/wiki/How_many_angels_can_dance_on_the_head_of_a_pin%3F)? As _Stalin_ quipped at _Yalta_ in 1945, the Vatican no longer has any divisions; but they do have world wide "moral legitimacy", while the Iranians have many divisions but no legitimacy. Together they make a lethal antisemitic duo.
+1. Unlike the rest of the modern State of Israel's "founding fathers" who were frustrated Bolsheviks, but at least had their primary education in a "Cheider", i.e. a religious Jewish primary school, while Peres' primary education was in a Jesuit school in Poland. As the visceral antisemite "Saint" Ignatius, the  founder the Jesuit order, boasted "give me a boy until the age of 7, and I will give you the man". Peres, was regularly in league with the Vatican, see [here](https://www.haaretz.com/2003-07-22/ty-article/peres-suggests-holy-sites-in-jlem-be-declared-world-capital/0000017f-e0d3-d38f-a57f-e6d376ac0000) and [here](https://werhit-mathenyahu.blogspot.com/2012/10/shimon-peres-vaticans-president-of.html). He unsuccessfully secretly attempted to revive the Vatican's 1947 "wet dream", see [here](https://israelbehindthenews.com/1997/09/22/the-vaticans-jerusalem-agenda/) and [here](https://www.redmoonrising.com/chamish/vaticanagenda.htm), to declare the Old City of Jerusalem as a [corpus separatum](https://en.wikipedia.org/wiki/Corpus_separatum_(Jerusalem)). _Pope Paul VI_ made _hollow_ declarations of Jewish reconciliation in his 1965 _Nostra Aetate_ encyclical. Paul _and his successors_ could [never theologically accept the reestablishment of a modern Jewish State](https://www.israelnationalnews.com/news/343072). In spite of the pablum in _Nostra Aetate_, according to two millennia of fundamental Roman Catholic and Eastern Orthodox antisemitic beliefs originating with the New Testament Gospels, the Jews were damned to be a [wandering people](https://en.wikipedia.org/wiki/Wandering_Jew) for refusing to accept Jesus as their messianic savior - aka replacement theology or supersessionism. And it speaks volumes that the second largest _Apostolic_ (i.e. diplomatic) delegation to the Vatican is from Iran who openly declares that it is their God-given duty to annihilate the Jewish State in order to hasten the coming of their false messiah, i.e. the _Machdi_. Iran has a minuscule Christian community, while converting to Christianity carries a death penalty. Can we assume that their theologians have discussions about [how many angels can dance on the head of a pin](https://en.wikipedia.org/wiki/How_many_angels_can_dance_on_the_head_of_a_pin%3F)? As _Stalin_ quipped at _Yalta_ in 1945, the Vatican no longer has any divisions; but they do have world wide "moral legitimacy", while the Iranians have many divisions but no legitimacy. Together they make a lethal antisemitic duo.
 
 2. The _Peres Center "For Peace"_ had almost nothing to do with peace. In fact it was a [profiteering operation](https://carolineglick.com/the_peace_profiteers/) that turned Peres into one of the wealthiest men in Israel by skimming funds that enabled the dictatorial and kleptomaniacal Arafat, and his successor Abbas, to become multi-billionaires. The _Peres Center_ established Arafat's core monopolies (e.g. mobile communications, cement, and petrol) that Arafat either personally owned or controlled, of course for which the _Peres Center_ received huge commissions.  The _Peres Center_ secretly awarded a \$100K prize to Norwegian diplomats [Terje Larson and his wife Mona Juul](https://carolineglick.com/the_peres_center_scandal/) who were highly influential sponsors of Peres' Nobel Prize bid. The ceremony had to be kept secret because Larson had the ignoble fame of being one of the tiny number of Western diplomats to ever be considered [persona non grata](https://en.wikipedia.org/wiki/Persona_non_grata) by the Israeli government. Peres was an equal partner with "birds of a feather" Arafat and Martin Schlaff[^schlaff] (who made his initial fortune [collaborating with the East Germany's _Stassi_ secret police](https://en.wikipedia.org/wiki/Martin_Schlaff)) in the lucrative _Jericho Oasis Casino_. Israel's then Attorney General _Elyakim Rubinstein_ obligingly rezoned the casino out of [Area B](https://blogs.timesofisrael.com/west-bank-areas-a-b-and-c-how-were-they-created/) in order to enable Israelis to "legally" play who were its main clientele. 
 
 3. Peres was able to co-opt his opportunistic Israeli supporters by giving them a small piece of the action - either via outright cash bribes, but usually via a "soft bribe" of professional advancement in highly lucrative jobs that were directly or indirectly controlled by the Israeli government.
 
 4. Already in 1993, Peres immediately launched his first major Oslo graft scheme. Then Foreign Minister Peres convinced the government to transfer Israeli tax rebates intended for the PA Treasury directly to Arafat's personal bank account in Tel Aviv. The then future directors of the _Peres Center_ transferred these funds to [Arafat's personal Swiss bank account](https://www.jewishvirtuallibrary.org/former-israeli-peace-envoys-charged-with-money-transfers-to-arafat), of course for a substantial commission. When [Adir Zik](https://en.wikipedia.org/wiki/Adir_Zik) publicized the scheme in his wildly popular "illegal" [Arutz-7](https://en.wikipedia.org/wiki/Arutz_Sheva) radio broadcasts, Peres was forced to respond that Arafat needed a "war chest" to fight Hamas who Peres and Rabin dubbed as "the real enemies of the peace, _along with the Jewish settlers_". It was a bald lie that the gullible public swallowed. Arafat never fought against Hamas. In fact he often hired Hamasniks as "false flag contractors" for the suicide bus bombing campaign that he orchestrated.
-    * Thousands of standard assault rifles that Israel and the US transferred to Arafat's forces in order "to fight Hamas" were often ballistically proven to have been used to murder Jews.
-    * And the government approved that the CIA give Arafat's forces sniper training courses "to fight Hamas". Again these weapons were ballistically proven to be used to assassinate influential "settlers". The leaker claims that the government supplied the Pals with the intelligence to target these people!
+    * With US aid, the government provided thousands of standard assault rifles to Arafat's forces in order "to fight Hamas". Many of these weapons were ballistically proven to have been used to murder Jews.
+    * And more deviously the government invited the CIA to give Arafat's forces sniper training courses "to fight Hamas". Again these weapons were ballistically proven to be used to assassinate influential "settlers". The leaker claims that the government selected the targets and supplied the Pals with the intelligence required to implement the assassinations. Since the Pals pulled the triggers under CIA guidance, then it provided the government with unimpeachable deniability.
 
 5. Israeli intelligence was always aware of this deception but refused to publicize it. The IDF and the _Shabak_ electronically intercepted all of Arafat's communications. They had a major military base which overlooked Arafat's Ramallah headquarters. They had spies on the ground. In response to the [2002 Netanya Park Hotel Pesach Massacre](https://en.wikipedia.org/wiki/Passover_massacre) then PM Ariel Sharon _temporarily_ stopped this deception until he was blackmailed[^blackmail] by the so-called "legal system" into advocating the so-called  "Disengagement" from Gaza. In the IDF's subsequent [Defensive Shield](https://en.wikipedia.org/wiki/Operation_Defensive_Shield) campaign, they captured and revealed hundreds of [documents](https://www.gov.il/en/pages/the-involvement-of-arafat-pa-senior-officials-in-terrorism) that proved Arafat micro-managed nearly every single attack since he first signed the Oslo Accords. Yet, until today (2025), in spite of the overwhelming evidence that Oslo was a sham, subsequent Israeli governments refused, or were afraid of US pressure, to declare the Accords null and void just as [Beilin](#beilin) had predicted.
 
@@ -888,7 +889,7 @@ The following is my very brief synopsis of the perfidy of the Oslo architects th
 
 7. At Peres' funeral in 2014, most Israelis and the leaders of the Western world reverently referred to him as a "prince of peace". Today most sentient Jewish Israelis finally understand that the Oslo Accords and Gaza Disengagement policies that he championed were the root cause of the October 7 Hamas massacre.
 
-8.  <a id="beilin"/>The leaker heard Beilin, who was Peres' Deputy Foreign Minister, brag to his confidants how he designed Oslo to be the perfect diplomatic trap. He compared it to a runaway train. Beilin, with a doctorate in political science, was aware that Western countries, and in particular the United States (at least until the second Trump Administration), would never accept Israel cancelling the Accords in spite of the Pals' fundamental egregious breaches. (See the 2012 [Hebrew TV debate](https://www.youtube.com/watch?v=e1XrXXyQX0A) between Beilin and Bennett, just before former PM _Naftali Bennett_ first entered the Knesset, where Beilin lectures Bennett like a sophomore how it would be diplomatically impossible for future Israeli governments to ever cancel the Oslo Accords).  Up until now (2025) Beilin's predications have been 100% correct for the past 30 years.
+8.  <a id="beilin"/>The leaker heard Beilin, who was Peres' Deputy Foreign Minister, brag to his confidants how he designed Oslo to be the perfect diplomatic trap. He compared it to a runaway train. Beilin, with a doctorate in political science, was aware that Western countries, and in particular the United States (at least until the second Trump Administration), would never accept Israel canceling the Accords in spite of the Pals' fundamental egregious breaches. (See the 2012 [Hebrew TV debate](https://www.youtube.com/watch?v=e1XrXXyQX0A) between Beilin and Bennett, just before former PM _Naftali Bennett_ first entered the Knesset, where Beilin lectures Bennett like a sophomore how it would be diplomatically impossible for future Israeli governments to ever cancel the Oslo Accords).  Up until now (2025) Beilin's predictions have been 100% correct for the past 30 years.
 
 9. The results of Oslo from 1993 until the October 7 2023 Hamas massacre and its aftermath has been thousands who have been murdered, maimed, widowed, and orphaned. Those responsible especially MKs who voted for these policies along with senior members of the legal and security establishment who enforced these policies must be made to pay financially for their crimes; and they should be exiled (like in ancient Greece) or be forced to live in internal exile within 10 km of the Gaza or Lebanese borders. A special tribunal should be established with supreme authority. Arguing that they could never have expected these events to happen is a lame excuse.
 Arafat and his successors and Hamas have always openly stated what their true murderous intentions were. They chose to ignore them due to the mainly soft bribes of career advancement from Peres and his ilk.
