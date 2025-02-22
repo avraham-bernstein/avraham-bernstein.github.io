@@ -35,7 +35,7 @@ __Secure[^secure] photo of the author from 2025__
 
 * __Immediate Family:__
 
-    * wife: <i>Judy Bernstein1 @<style class="hide">@</style> gmail</i>, +<style class="hide">@</style>972.50.7515111, designer of natural cosmetics
+    * wife: <i>Judy Bernstein1 AT gmail<style class="hide">@</style> DOT com</i>, +<style class="hide">@</style>972.50.7515111, designer of natural cosmetics
     * son: _Yirmiyahu_ + 4, astrophysicist and optics
     * daughter: _Naomi Sarah_ + 4, maternity nurse
     * daughter: _Carmiella_ + 1, cellist
