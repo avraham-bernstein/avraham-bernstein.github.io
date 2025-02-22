@@ -5,11 +5,10 @@ www = 'https://www.avrahambernstein.com'
 )
 <address markdown="1">
 __Author:__ Avraham "Abe" Bernstein
-<br/>__Email:__ Avraham DOT Bernstein AT gmail<style class="hide">@</style> DOT com
-<br/>__Tel/Whatsapp:__ +<style class="hide">@</style>972.54.6410955
+<br/>__Email:__ Avraham DOT Bernstein AT gmail DOT com
+<br/>__Tel/Whatsapp:__ +972.54.6410955
 <br/>__Home Geolocation:__ Jerusalem 9727433 ISRAEL
 <br/>__WWW:__ [$(www)]($(www))
-<br/>__Short CV PDF "Shadow" Version:__ <span class="hilite">[$(www)/cv/$(pdf)]($(www)/cv/$(pdf))</span>
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 <br/>__Last Update:__ 2025-02-24
@@ -29,6 +28,12 @@ __Author:__ Avraham "Abe" Bernstein
 __Secure[^secure] photo of the author from 2025__
 
 ---
+
+$if(not is_pdf)
+## <span class="hilite">Link To Short CV PDF "Shadow Version"</span>
+
+* [$(www)/cv/$(pdf)]($(www)/cv/$(pdf))</span>
+$endif
 
 ## Introduction
 
