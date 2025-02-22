@@ -1,11 +1,18 @@
+$py(
+html = 'AvrahamAbeBernstein-CV.html'
+pdf = 'AvrahamAbeBernstein-CV.pdf'
+www = 'https://www.avrahambernstein.com'
+)
 <address markdown="1">
 __Author:__ Avraham "Abe" Bernstein
-<br/>__Email:__ Avraham DOT Bernstein AT gmail DOT com
-<br/>__Tel/Whatsapp:__ +972.54.6410955
+<br/>__Email:__ Avraham DOT Bernstein AT gmail<style class="hide">@</style> DOT com
+<br/>__Tel/Whatsapp:__ +<style class="hide">@</style>972.54.6410955
 <br/>__Home Geolocation:__ Jerusalem 9727433 ISRAEL
+<br/>__WWW:__ [$(www)]($(www))
+<br/>__Short CV PDF "Shadow" Version:__  [$(www)/cv/$(pdf)]($(www)/cv/$(pdf))
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
-<br/>__License:__ FOSS SPDX BSD-3-Clause: https://opensource.org/licenses/BSD-3-Clause
-<br/>__Last Update:__ 2025-02-21
+<br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
+<br/>__Last Update:__ 2025-02-24
 </address>
 
 <table markdown="1">
@@ -23,10 +30,6 @@ __Secure[^secure] photo of the author from 2025__
 
 ---
 
-## Links
-
-*  __CV:__ [Long HTML](AvrahamAbeBernstein-CV.html),&nbsp;&nbsp;[Short PDF](AvrahamAbeBernstein-CV.pdf)
- 
 ## Introduction
 
 1. I have more than 40 years experience in state-of-the-art software development especially inventing new algorithms.
@@ -43,13 +46,13 @@ __Secure[^secure] photo of the author from 2025__
 4. I am an [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) and [polymath](https://en.wikipedia.org/wiki/Polymath). I easily learn and become an expert in new fields.
 5. I am a "hands-on" master software engineer. I enjoy programming. I design prototypes and minimum viable products for _CTO_ groups.
 6. I know many computer languages which I am able to learn easily due to my [compiler](https://en.wikipedia.org/wiki/Compiler) background; and my compiler background allows me to design [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) and to engage in automated [code refactoring](https://en.wikipedia.org/wiki/Code_refactoring).
-7. My preferred _programming_ languages are:
+7. I don't market myself as a programmer any more, but my "go to" _programming_ languages in which I am quite proficient are the following:
     * _C_
-    * _Python_
+    * _Python_ and _BeautifulSoup_
     * [Jinaj2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), the "gold standard" macro and template preprocessor
-    * [Pyexpander](https://pyexpander.sourceforge.io/), which is simpler than _Jinja2_ and in most cases just as useful, but _polluted_ by a [GPLv3 license](https://en.wikipedia.org/wiki/GNU_General_Public_License)
+    * [Pyexpander](https://pyexpander.sourceforge.io/), which is simpler than _Jinja2_ and just as useful except where inheritance is needed, BUT unfortunately it is _polluted_ by a [GPLv3 license](https://en.wikipedia.org/wiki/GNU_General_Public_License)
     * [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), including [Posix CLI commands](https://en.wikipedia.org/wiki/List_of_POSIX_commands)
-8. My preferred _data_ languages are _HTML_, _Markdown_, _XML_, _YAML_, and _Excel_.
+8. My "go to" _data_ languages are _HTML_, _Markdown_, _SRCML_, _XML_, _YAML_, and _Excel_.
 9. I thrive on undertaking new challenging projects. I am quite comfortable engaging in and leading __flexible__ "brain storming" sessions.
 10. I provide considerable value added to my clients.
 
