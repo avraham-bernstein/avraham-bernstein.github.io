@@ -1,8 +1,8 @@
 <address markdown="1">
 __Author:__ Avraham "Abe" Bernstein
-<br/>__Email:__ Avraham DOT Bernstein AT gmail DOT com
-<br/>__Tel/Whatsapp:__ +972.54.6410955
-<br/>__Last Update:__ 2025-02-22
+<br/>__Email:__ Avraham DOT Bernstein AT gmail<style class="hide">@</style> DOT com
+<br/>__Tel/Whatsapp:__ +<style class="hide">@</style>972.54.6410955
+<br/>__Last Update:__ 2025-02-24
 </address>
 
 ![Secure photo of the author](cv/AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -35,10 +35,10 @@ __Secure[^secure] photo of the author from 2025__
 
 * __Immediate Family:__
 
-    * wife: _Judy Bernstein1 @ gmail_, +972.50.7515111, designer of natural cosmetics
-    * son: _Yirmiyahoo @ gmail_ + 4, astrophysicist and optics
+    * wife: <i>Judy Bernstein1 @<style class="hide">@</style> gmail</i>, +<style class="hide">@</style>972.50.7515111, designer of natural cosmetics
+    * son: _Yirmiyahu_ + 4, astrophysicist and optics
     * daughter: _Naomi Sarah_ + 4, maternity nurse
-    * daughter: _Carmiella_ + 1, cellist and music teacher
+    * daughter: _Carmiella_ + 1, cellist
     * son: _Asher_ + 4, environmental scientist
 
 ## Footnotes
