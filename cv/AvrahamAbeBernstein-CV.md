@@ -9,7 +9,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__Tel/Whatsapp:__ +<style class="hide">@</style>972.54.6410955
 <br/>__Home Geolocation:__ Jerusalem 9727433 ISRAEL
 <br/>__WWW:__ [$(www)]($(www))
-<br/>__Short CV PDF "Shadow" Version:__  [$(www)/cv/$(pdf)]($(www)/cv/$(pdf))
+<br/>__Short CV PDF "Shadow" Version:__ <span class="hilite">[$(www)/cv/$(pdf)]($(www)/cv/$(pdf))</span>
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 <br/>__Last Update:__ 2025-02-24
@@ -50,7 +50,7 @@ __Secure[^secure] photo of the author from 2025__
     * _C_
     * _Python_ and _BeautifulSoup_
     * [Jinaj2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), the "gold standard" macro and template preprocessor
-    * [Pyexpander](https://pyexpander.sourceforge.io/), which is simpler than _Jinja2_ and just as useful except where inheritance is needed, BUT unfortunately it is _polluted_ by a [GPLv3 license](https://en.wikipedia.org/wiki/GNU_General_Public_License)
+    * [Pyexpander](https://pyexpander.sourceforge.io/), which is simpler than _Jinja2_ and just as useful except where inheritance is needed, _but_ unfortunately it is _polluted_ by a [GPLv3 license](https://en.wikipedia.org/wiki/GNU_General_Public_License)
     * [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), including [Posix CLI commands](https://en.wikipedia.org/wiki/List_of_POSIX_commands)
 8. My "go to" _data_ languages are _HTML_, _Markdown_, _SRCML_, _XML_, _YAML_, and _Excel_.
 9. I thrive on undertaking new challenging projects. I am quite comfortable engaging in and leading __flexible__ "brain storming" sessions.
