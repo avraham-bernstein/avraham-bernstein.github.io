@@ -438,10 +438,38 @@ code.</p></li>
 IL (subsidiary of <a href="https://www.orange.com/">Orange</a> FR)</h3>
 <details>
 <summary>
-TBD: Internet TV Cybersecurity: S/W security manager
+Internet TV Cybersecurity: S/W security manager
 </summary>
 <ol>
-<li>TBD</li>
+<li><p>I focused on obfuscation, i.e. anti-reverse engineering, of their smartphone (i.e.
+Android and iPhone) client player, by selecting a C/C++ obfuscating compiler and by building
+home brew utilities. I selected the WhiteCryption compiler originally built by InterTrust and
+acquired by Zimperium in 2021 after I left. When I first selected the product WhiteCryption was
+still in the beta stage. I worked very closely with the WhiteCryption development team - mainly
+specifying new features and testing existing ones. Previously I worked on an in-house
+obfuscation compiler at NDS, which I considered far beyond the manpower resources we had at
+Viaccess-Orca. After I left Viaccess, they switched to the French Quarkslab compiler partially
+because Viaccess HQ is in France.</p></li>
+<li><p>One of my most important utilities was designing an ELF Dynamic Share Object DSO (i.e. an
+<code>so</code> file) which had no export table which ostensibly eliminates the usefulness of a
+DSO. I designed a low-level mechanism to load an encrypted export table relying upon ELF's
+special <code>init</code> section which executes before the DSO is activated. The export table
+is one of the major attack surfaces in a DSO.</p></li>
+<li><p>I worked with the 3rd party software supplier of the video codec in order to
+substantially bolster the security of their product which proved to be a major potential
+security hole in our system. The challenge was that most of their customers did not require the
+security that we did, and for practical commercial reasons they were not willing to make a
+separate build for us. I managed to architect an optional security plugin for them that caused
+minimal changes to their system, and caused zero interference to their other customers who chose
+not to use the plugin.</p></li>
+<li><p>Initially the movie studios insisted that smartphones could not be rooted because it made
+them considerable more difficult to debug, so I developed a fuzzy logic-like mechanism to detect
+rootedness. The problem was that less expensive Android phones from Asia, that were flooding the
+market, were rooted by default because it saved the manufacturer a few hours of licensing work
+from Google who controlled AOSP (the Android Open Source Project). Therefore security had to be
+moved from the client to the content servers. For example a license that license that played 100
+hours of content a week was suspect, or a license that played content simultaneously from
+different geographic locations was suspect.</p></li>
 </ol>
 </details>
 <h3>2013-14: <em>Discretix</em> Netanya IL (renamed <em>Sansa Security</em>, acquired by <a
@@ -565,10 +593,53 @@ PCR kits from the huge international pharmaceutical companies!</strong></p></li>
 href="https://www.synamedia.com/">Synamedia</a> UK)</h3>
 <details>
 <summary>
-TBD: Internet TV Cybersecurity: software researcher
+Internet TV Cybersecurity: software researcher
 </summary>
 <ol>
-<li>TBD</li>
+<li><p>Most of my work at NDS was doing software security research including occasional code
+security audits.</p></li>
+<li><p>I was one of the first security researchers in the world to prove that the ubiquitous
+virtual machine packages, e.g. VMWare and VirtualBox, could break simple DRM protection schemes
+like date restrictions or replay count.</p></li>
+<li><p>I showed how X64 virtualization hardware could be used together with <a
+href="https://en.wikipedia.org/wiki/QEMU">QEMU</a> to break the software random number generator
+(RNG). This was a very critical attack because the fundamental security assumption was that each
+client PC had a world wide unique cryptrographic "nonce". But if confederate clients could share
+their nonces then a single license could be shared by all members of the confederacy. At that
+time, c. 2007, the cycle counter instruction <code>RDTSC</code> was easily subverted by the
+virtualization technology. After I left the company, since 2012 the CPU has a hardware RNG
+instruction <code>RDRAND</code> which is a much safer instruction from the perspective of
+security.</p></li>
+<li><p>I invited outside security researchers to give lectures and seminars to in-house
+developers on state-of-the-art security techniques. Based upon these lectures I developed an
+obfuscated <a href="https://en.wikipedia.org/wiki/Forth_(programming_language)">FORTH</a>-like
+compiler that was extremely difficult to reverse engineer.</p></li>
+<li><p>In 2007 NDS was invited by the Chinese government TV system to protect the 2008 Beijing
+Olympics TV feed. I "almost" won the contract. The Chinese government did not want Microsoft to
+be involved in the bidding because nearly 100% of servers and client PCs had stolen operating
+system licenses which could easily be revealed when Microsoft installed the protection software.
+At time the Olympic TV feed was owned by Microsoft company MSNBC. Eventually Microsoft agreed
+not to sue China for the stolen operating system licenses, and they offered the protection
+package for free so they won the contract.</p></li>
+<li><p>The Israeli cable TV operators had their feed stolen by Israeli expats in the US, and
+more massively in the Palestinian areas. I showed how to it was possible to easily technically
+stop these thefts. For reasons that are still not clear to me, the operators showed no interest
+in stopping the thefts.</p></li>
+<li><p>My first job at NDS was as a contractor. I built a tester and simulator for the NDS
+satellite software. I designed a DSL (domain specific language) in <a
+href="https://en.wikipedia.org/wiki/Tcl">TCL</a> to do this task. After my analysis of their
+software, I concluded that there were critical flaws in the design. I was quite knowledgeable in
+VAX/VMS O/S internals. The junior VP in charge of the project refused to believe that a mere QA
+guy could have such knowledge, so I built a graduated test program that blew his (virtual)
+satellite out of the sky. Afterwards my software was installed on every developer's desktop.
+Before checking in software into their version control system, it became standard operating
+procedure to run a 10 minute test prior to check-in.</p></li>
+<li><p>I worked with the QA department to analyze their bug reports, and concluded that nearly
+50% of their software effort was bug fixes. And they had more than 1000 software developers! I
+worked with the QA department in order to implement a program to greatly reduce bugs. I recall
+that their biggest problem was lazy software builds that often contained tens of thousands of
+warnings. My most important improvement was insisting on zero warnings, or adding explicit
+compiler approval of any warning to be explicitly allowed.</p></li>
 </ol>
 </details>
 <h3 id="vyyo2004">2004: <em>Vyyo</em> (defunct) Jerusalem IL</h3>
@@ -1273,14 +1344,17 @@ script he threw me out of the army - for the the rest of my reserve duty that se
 I immediately started to give interviews to the media. Soon I received a telephone call from my
 regiment's (Hebrew: <em>Gdud</em>) sergeant major who sternly warned me that soldiers in uniform
 were not permitted to speak with the media. When I reminded him that the army threw me out, he
-burst out laughing. In court the initial response of the Attorney General and the IDF's Adjutant
-General foolishly claimed that they never issued any such order. (Note that such a bald lie to
-the court is "normally" a very serious criminal offense). I brought affidavits from other
-soldiers, and it was obvious that thousands of other soldiers who heard this ridiculous order
-were seething too. The decision of the court was that such an order could never be
-"subsequently" issued, even though the court accepted their lame excuse that such an order had
-never indeed been issued. Is it suprising that the presiding judge on the panel who accepted
-this charade was none other than then Chief Justice Aharon Barak?
+burst out laughing.
+</p>
+<p>
+In court the initial response of the Attorney General and the IDF's Adjutant General foolishly
+claimed that they never issued any such order. (Note that such a bald lie to the court is
+"normally" a very serious criminal offense). I brought affidavits from other soldiers, and it
+was obvious that thousands of other soldiers who heard this ridiculous order were seething too.
+The decision of the court was that such an order could never be "subsequently" issued, even
+though the court accepted their lame excuse that such an order had never indeed been issued. Is
+it suprising that the presiding judge on the panel who accepted this charade was none other than
+then Chief Justice Aharon Barak?
 </p>
 </details></li>
 </ul></li>
@@ -1400,7 +1474,7 @@ thin 61-59 majority) and to the gullible Israeli public (incited by the left win
 The <em>Knesset</em> was too slow in delivering Peres' promise, so Arafat began his murderous
 tantrum to "convince" them to move faster - aka the second Intifada. Initially Arafat attacked
 the so-called "settlers" who the leftist government abandoned. But they resisted and refused to
-flee, in spite of the government's expectations to the contrary; so Arafat attacked Israel's
+flee, in spite of the government's expectations to the contrary; so Arafat terrorized Israel's
 soft underbelly, i.e. inside the "sacred" Green Line, in particular his "suicide" bus bombing
 campaign.
 </p>
