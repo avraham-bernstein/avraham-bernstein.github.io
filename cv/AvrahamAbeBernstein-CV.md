@@ -1,7 +1,9 @@
 $py(
-html = 'AvrahamAbeBernstein-CV.html'
 pdf = 'AvrahamAbeBernstein-CV.pdf'
 www = 'https://www.avrahambernstein.com'
+html = 'AvrahamAbeBernstein-CV.html'
+if is_pdf:
+    html = www + '/cv/' + html
 )
 <address markdown="1">
 __Author:__ Avraham "Abe" Bernstein
