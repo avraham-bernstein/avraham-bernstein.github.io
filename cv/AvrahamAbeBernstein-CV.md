@@ -43,7 +43,7 @@ $endif
 2. I have many inventions and some __recent patents__ in a wide variety of application domains, e.g.:
     * digital automotive industry
     * Internet TV
-    * Cybersecurity and anti-[reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering)
+    * cybersecurity and anti-[reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering)
     * [Bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics)
     * accessibility
     * factory automation
@@ -59,8 +59,8 @@ $endif
     * [Jinaj2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), the "gold standard" macro and template preprocessor
     * [Pyexpander](https://pyexpander.sourceforge.io/), which is simpler than _Jinja2_ and just as useful except where inheritance is needed, _but_ unfortunately it is _polluted_ by a [GPLv3 license](https://en.wikipedia.org/wiki/GNU_General_Public_License)
     * [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), including [Posix CLI commands](https://en.wikipedia.org/wiki/List_of_POSIX_commands)
-8. My "go to" _data_ languages are _HTML_, _Markdown_, _SRCML_, _XML_, _YAML_, and _Excel_.
-9. I thrive on undertaking new challenging projects. I am quite comfortable engaging in and leading __flexible__ "brain storming" sessions.
+8. My "go to" _data_ languages are _HTML_, _Markdown_, [srcML](https://www.srcml.org), _XML_, _YAML_, and _Excel_.
+9. I thrive on undertaking new challenging projects. I am quite comfortable engaging in and leading _flexible_ "brain storming" sessions.
 10. I provide considerable value added to my clients.
 
 ## Work Experience
