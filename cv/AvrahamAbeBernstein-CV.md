@@ -304,19 +304,25 @@ $if(is_pdf)
 $else
 <details markdown="1"><summary><span class="hilite">$(task)</span></summary>
 
-1. I invented a software system that allowed the blind to "see" and to understand computer images, especially maps and mathematical functions, using a standard PC or smartphone web browser, the device's builtin speaker, and ideally with a consumer grade graphics tablet and stylus (e.g. Wacom Bamboo ~\$50), although optionally with device's builtin mouse.
+1. I invented a software system that allowed the blind to "see" and to understand computer images, especially maps and mathematical functions, using a 
+    a. standard PC or smartphone web browser
+    b. the device's builtin speaker
+    c. ideally a consumer grade graphics tablet and stylus (e.g. [Wacom Bamboo](https://www.amazon.com/Wacom-Graphic-Drawing-Tablet-Beginners/dp/B07S1RR3FR) ~\$50)
+    d. although optionally, but less preferably, with the device's builtin mouse
 
 2. The software heavily relied upon the builtin [standard vector graphics (SVG)](https://en.wikipedia.org/wiki/SVG) capability of all modern web  browsers (since 1999).
-    a.  _SVG_ returns the cursor postion and color under the click position.
-    b. Unlike _JPG_ or _PNG_ pixelated images, _SVG_ has the ability to smoothly zoom in or zoom out of images described by vectors.
+    a. _SVG_ is an _XML_ variant. 
+    b. _SVG_ returns the postion and color at the cursor.
+    c. Unlike _JPG_ or _PNG_ pixelated images, _SVG_ has the ability to smoothly zoom in or zoom out of vector images.
 
-3. The basic concept can be understood by using an example image of a circle. Let the display be black, except for the perimeter of the circle which is a few pixels wide and which is colored white.
-    a.  In the simple case where the user's stylus hovers over a white pixel, a sound is played, but hovering over a black pixel yields no sound.
-    b. Blind users prefer a graphics tablet to a mouse because blind users still have hand-eye (or actually mind-eye) coordination, so they can easy navigate around the tablet. Mice have the problem that the cursor gets stuck at the edge of the display when you scroll beyond the edge. It is possible to provide sonic cues to ameliorate this problem, but using a tablet and stylus is much easier.
-    c. Divide the screen into a grid of 96x96 rectangles, or equivalently 8x8 12-tone chromatic octaves. Let the horizontal (x) axis be represented by a piano, and the vertical (y) axis be represented by a flute. Instead of playing the same sound for all white pixel positions, play the xy note combination in the grid position where the cursor is located.
-    d. If we would use two intersecting circles, say one white and blue, we could use different instrument combinations to represent the colors, and/or we could use the keyboard or click on the stylus to query which circle we are touching, where the application will provide a text-to-speech response.
+3. The basic concept can be understood by using an example image of a circle.
+    a. Let the display be black, except for the perimeter of the circle which is a few pixels wide and which is colored white.
+    b. In the simple case where the user's stylus hovers over a white pixel, a sound is played, but hovering over a black pixel yields no sound.
+    c. Blind users prefer a graphics tablet to a mouse because blind users still have hand-eye (or actually mind-eye) coordination, so they can easy navigate around the tablet. Mice have the problem that the cursor gets stuck at the edge of the display when you scroll beyond the edge. It is possible to provide sonic cues to ameliorate this problem, but using a tablet and stylus is much easier.
+    d. Divide the screen into a grid of 96x96 rectangles, or equivalently 8x8 12-tone chromatic octaves. Let the horizontal (x) axis be represented by a piano, and the vertical (y) axis be represented by a flute. Instead of playing the same sound for all white pixel positions, play the xy note combination in the grid position where the cursor is located.
+    e. If we would use two intersecting circles, say one white and blue, we could use different instrument combinations to represent the colors, and/or we could use the keyboard or click on the stylus to query which circle we are touching, where the application will provide a text-to-speech response.
     
-4. Images need to be prepared offline. But in the case of maps, most of which are alread designed using XML, it is possible to programmatically automate their preparation.
+4. Images need to be prepared offline. But in the case of maps, most of which are already designed using _XML_, it is possible to programmatically automate their preparation.
 
 </details>
 $endif

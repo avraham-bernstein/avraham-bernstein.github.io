@@ -678,35 +678,41 @@ which was 10x more efficient!</p></li>
 </summary>
 <ol>
 <li><p>I invented a software system that allowed the blind to "see" and to understand computer
-images, especially maps and mathematical functions, using a standard PC or smartphone web
-browser, the device's builtin speaker, and ideally with a consumer grade graphics tablet and
-stylus (e.g. Wacom Bamboo ~$50), although optionally with device's builtin mouse.</p></li>
+images, especially maps and mathematical functions, using a</p>
+<p>a. standard PC or smartphone web browser</p>
+<p>b. the device's builtin speaker</p>
+<p>c. ideally a consumer grade graphics tablet and stylus (e.g. <a
+href="https://www.amazon.com/Wacom-Graphic-Drawing-Tablet-Beginners/dp/B07S1RR3FR">Wacom
+Bamboo</a> ~$50)</p>
+<p>d. although optionally, but less preferably, with the device's builtin mouse</p></li>
 <li><p>The software heavily relied upon the builtin <a
 href="https://en.wikipedia.org/wiki/SVG">standard vector graphics (SVG)</a> capability of all
 modern web browsers (since 1999).</p>
-<p>a. <em>SVG</em> returns the cursor postion and color under the click position.</p>
-<p>b. Unlike <em>JPG</em> or <em>PNG</em> pixelated images, <em>SVG</em> has the ability to
-smoothly zoom in or zoom out of images described by vectors.</p></li>
-<li><p>The basic concept can be understood by using an example image of a circle. Let the
-display be black, except for the perimeter of the circle which is a few pixels wide and which is
-colored white.</p>
-<p>a. In the simple case where the user's stylus hovers over a white pixel, a sound is played,
+<p>a. <em>SVG</em> is an <em>XML</em> variant.</p>
+<p>b. <em>SVG</em> returns the postion and color at the cursor.</p>
+<p>c. Unlike <em>JPG</em> or <em>PNG</em> pixelated images, <em>SVG</em> has the ability to
+smoothly zoom in or zoom out of vector images.</p></li>
+<li><p>The basic concept can be understood by using an example image of a circle.</p>
+<p>a. Let the display be black, except for the perimeter of the circle which is a few pixels
+wide and which is colored white.</p>
+<p>b. In the simple case where the user's stylus hovers over a white pixel, a sound is played,
 but hovering over a black pixel yields no sound.</p>
-<p>b. Blind users prefer a graphics tablet to a mouse because blind users still have hand-eye
+<p>c. Blind users prefer a graphics tablet to a mouse because blind users still have hand-eye
 (or actually mind-eye) coordination, so they can easy navigate around the tablet. Mice have the
 problem that the cursor gets stuck at the edge of the display when you scroll beyond the edge.
 It is possible to provide sonic cues to ameliorate this problem, but using a tablet and stylus
 is much easier.</p>
-<p>c. Divide the screen into a grid of 96x96 rectangles, or equivalently 8x8 12-tone chromatic
+<p>d. Divide the screen into a grid of 96x96 rectangles, or equivalently 8x8 12-tone chromatic
 octaves. Let the horizontal (x) axis be represented by a piano, and the vertical (y) axis be
 represented by a flute. Instead of playing the same sound for all white pixel positions, play
 the xy note combination in the grid position where the cursor is located.</p>
-<p>d. If we would use two intersecting circles, say one white and blue, we could use different
+<p>e. If we would use two intersecting circles, say one white and blue, we could use different
 instrument combinations to represent the colors, and/or we could use the keyboard or click on
 the stylus to query which circle we are touching, where the application will provide a
 text-to-speech response.</p></li>
-<li><p>Images need to be prepared offline. But in the case of maps, most of which are alread
-designed using XML, it is possible to programmatically automate their preparation.</p></li>
+<li><p>Images need to be prepared offline. But in the case of maps, most of which are already
+designed using <em>XML</em>, it is possible to programmatically automate their
+preparation.</p></li>
 </ol>
 </details>
 <h3>2002: <em>TMT</em> (defunct) Jerusalem IL</h3>
