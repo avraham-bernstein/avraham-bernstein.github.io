@@ -8,7 +8,7 @@ if is_pdf:
 <address markdown="1">
 __Author:__ Avraham "Abe" Bernstein
 <br/>__Email:__ Avraham DOT Bernstein AT gmail DOT com
-<br/>__Tel/Whatsapp:__ +972.54.641-0955
+<br/>__Tel/Whatsapp:__ +<span class="hide">@</span>972.54.641-0955
 <br/>__Home Geolocation:__ Jerusalem 9727433 ISRAEL
 <br/>__WWW:__ [$(www)]($(www))
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
