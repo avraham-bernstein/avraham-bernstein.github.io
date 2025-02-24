@@ -11,8 +11,10 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__Tel/Whatsapp:__ +<span class="hide">@</span>972.54.641-0955
 <br/>__Home Geolocation:__ Jerusalem 9727433 ISRAEL
 <br/>__WWW:__ [$(www)]($(www))
+$if(not is_pdf)
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
+$endif
 <br/>__Last Update:__ 2025-02-24
 </address>
 
