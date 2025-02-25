@@ -819,15 +819,16 @@ helicopter: S/W architect</span>
 </summary>
 <ol>
 <li><p>Elop was a primary subcontractor for the BlackHawk helicopter fire control system for the
-US company who was the main contractor for the helicopter. There was a manual that specified
-about 1000 tests that the fire control system must pass. There were about 10 GPIB hardware
-devices attached to the software. Unsupervised automated tests would have to run for up to 4
-days. Test results would be sent to a log file, and it had a GUI dashboard to show the current
-status. The underlying system would be implemented in <em>C</em>. The laboratory computers would
-be running MS-DOS.</p></li>
+US company "LORAL" who was the main contractor for the helicopter (which was acquired by
+Lockheed Martin). They had an acceptance testing manual that specified over 1000 tests that the
+fire control system must pass. There were about 10 GPIB hardware devices attached to the
+software. Unsupervised automated tests would have to run for up to 4 days. Test results would be
+sent to a log file, and the app had GUI dashboard to show its current status. The underlying
+system would be implemented in <em>C</em>. The laboratory computers would be running
+MS-DOS.</p></li>
 <li><p>The key to the success of this project was my design of a domain specific language (DSL)
 to formally specify each of the tests. Also the language would have to be easy enough to use by
-the Elop system engineer, i.e. not a professional programmer, who would have to program many ad
+the Elop system engineer, who is not a professional programmer and would have to program many ad
 hoc tests on his own. I designed the DSL to be a lightweight version of BASIC along with plugin
 drivers for the specialized test hardware, along with the main device under test. I used lex and
 yacc to design the language.</p></li>
@@ -845,13 +846,13 @@ architect</span>
 <li><p>DSPG designed CPU micro-controllers that supported DSP functionality. When I joined them
 they were working on their original PINE chip. They were a VLSI "fabless" design center. After
 finishing their designs, they had them manufactured by a real "fab". At that time it could take
-up to 6 months for the fab to manufacture the physical chip. And DSPG usually designed the
+up to 6 months for the fab to manufacture the physical chip. And DSPG designed the application
 software that ran on their chips. At that time they designed the hardware and software internals
 for consumer telephone answering machines.</p></li>
 <li><p>VLSI software simulations ran extremely slowly because they simulated the low level
 transistor details of their circuitry.</p></li>
-<li><p>My job was (1) to design a clock accurate simulator that ran about 100x faster than the
-VLSI simulator, and (2) to supply an assembler and <em>C</em> compiler that could be used to
+<li><p>My job was (1) to design a clock accurate simulator that would run about 100x faster than
+the VLSI simulator, and (2) to supply an assembler and <em>C</em> compiler that could be used to
 test software applications months before the fab manufactured the physical chip.</p></li>
 <li><p>At that time QEMU did not yet exist, and the GCC tool chain was not yet mature, i.e. pre
 2.95, so I had to design my own assembler, simulator, linker, compiler, and debugger.</p></li>
@@ -859,14 +860,13 @@ test software applications months before the fab manufactured the physical chip.
 to formally describe each one of the CPU's opcodes, and most important to recognize when an
 instruction sequence would cause the pipeline to "stall". We built the DSL using lex and yacc.
 At that time it was not yet common practice that CPU designers could automatically dynamically
-insert delays into the instruction pipeline. It was the job of the application programmer, or
-perhaps the compiler, to automatically insert these delays. My DSL included an easy to specify
-language that detected stall conditions. Without this stall detection feature it was impossible
-for us to develop the assembler in a timely fashion, because in the early stages of the chip
-design, the VLSI architects made major change to the stall conditions almost daily. So our
-manually coded stall conditions had to constantly be rewritten. Once we implemented this
-feature, we could generate an updated assembler almost immediately, i.e. within a hour or
-two.</p></li>
+insert delays into the instruction pipeline. It was the job of the application programmer (or
+the compiler) to automatically insert these delays. My DSL included an easy to specify language
+that detected stall conditions. Without this stall detection feature it was impossible for us to
+develop the assembler in a timely fashion, because in the early stages of the design, the VLSI
+architects made major change to the stall conditions almost daily. So our manually coded stall
+conditions had to constantly be rewritten. Once we implemented this feature, we could generate
+an updated assembler almost immediately, i.e. within a hour or two.</p></li>
 <li><p>Another very important feature was that when debugging an application we could
 programmatically simulate access to the I/O ports. Still 30 years later, i.e. 2025, this is not
 a common feature of state of the art QEMU simulators.</p></li>
