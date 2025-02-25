@@ -237,15 +237,11 @@
   <style type="text/css">code {white-space: pre;}</style>
   <style type="text/css">q {quotes: "“" "”" "‘" "’";}</style>
   <script>
-  function show_all_details(id) {
-      console.log(id);
-      const nodes = document.getElementById(id).children;
+  function show_all_details() {
+      const nodes = document.getElementsByTagName("details");
       const max = nodes.length;
-      console.log(max);
       for (let i = 0; i < max; ++i) {
-          if (nodes[i].tagName === "DETAILS") {
-              nodes[i].setAttribute("open",true);
-          }
+          nodes[i].setAttribute("open",true);
       }
   }
   </script>
@@ -273,6 +269,8 @@ title="Secure photo of the author from 2025" alt="Secure photo of the author" />
 <p><strong>Secure<a href="#fn1" class="footnote-ref" id="fnref1"
 role="doc-noteref"><sup>1</sup></a> photo of the author from 2025</strong></p>
 <hr />
+<button onclick="show_all_details()">
+<p>Show All Details (useful for printing)</button></p>
 <h2><span class="hilite">Link To Short CV PDF "Shadow Version"</span></h2>
 <ul>
 <li><a

@@ -25,6 +25,8 @@ __Secure[^secure] photo of the author from 2025__
 ---
 
 $if(not is_pdf)
+<button onclick="show_all_details()">Show All Details (useful for printing)</button> 
+
 ## <span class="hilite">Link To Short CV PDF "Shadow Version"</span>
 
 * [$(www)/cv/$(pdf)]($(www)/cv/$(pdf))</span>

@@ -9,15 +9,11 @@ header-includes: |
     <style type="text/css">code {white-space: pre;}</style>
     <style type="text/css">q {quotes: "“" "”" "‘" "’";}</style>
     <script>
-    function show_all_details(id) {
-        console.log(id);
-        const nodes = document.getElementById(id).children;
+    function show_all_details() {
+        const nodes = document.getElementsByTagName("details");
         const max = nodes.length;
-        console.log(max);
         for (let i = 0; i < max; ++i) {
-            if (nodes[i].tagName === "DETAILS") {
-                nodes[i].setAttribute("open",true);
-            }
+            nodes[i].setAttribute("open",true);
         }
     }
     </script>
