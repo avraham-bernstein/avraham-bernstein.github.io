@@ -15,19 +15,10 @@ $if(not is_pdf)\
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 $endif\
-<br/>__Last Update:__ 2025-02-24
+<br/>__Last Update:__ 2025-02-25
 </address>
 
-<table markdown="1">
-<hr>
-<hd>
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
-</hd>
-<hd>
-![Under Construction](under-construction-20250220.png "Under construction since 2025-02-20")
-</hd>
-</hr>
-</table>
 
 __Secure[^secure] photo of the author from 2025__
 
@@ -65,7 +56,9 @@ $endif
 9. I thrive on undertaking new challenging projects. I am quite comfortable engaging in and leading _flexible_ "brain storming" sessions.
 10. I provide considerable value added to my clients.
 
-## Work Experience
+## Work Experience {#work}
+
+<!-- <button onclick="show_all_details('work')">Show All "Work Experience" Details (useful for printing)</button> -->
 
 $py(id="aurora"; task="Automotive Software Updates: researcher in CTO office")
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
@@ -268,7 +261,7 @@ $else
 
 5. In 2007 NDS was invited by the Chinese government TV system to protect the 2008 Beijing Olympics TV feed. I "almost" won the contract. The Chinese government did not want Microsoft to be involved in the bidding because nearly 100% of servers and client PCs had stolen operating system licenses which could easily be revealed when Microsoft installed the protection software. At time the Olympic TV feed was owned by Microsoft company MSNBC. Eventually Microsoft agreed not to sue China for the stolen operating system licenses, and they offered the protection package for free so they won the contract.
 
-6. The Israeli cable TV operators had their feed stolen by Israeli expats in the US, and more massively in the Palestinian areas. I showed how to it was possible to easily technically stop these thefts. For reasons that are still not clear to me, the operators showed no interest in stopping the thefts.
+6. The Israeli satellite TV operators had their feed stolen by Israeli expats in the US, and more massively in the Palestinian areas. I showed how to it was possible to easily technically stop these thefts. For reasons that are still not clear to me, the operators showed no interest in stopping the thefts.
 
 7. My first job at NDS was as a contractor. I built a tester and simulator for the NDS satellite software. I designed a DSL (domain specific language) in [TCL](https://en.wikipedia.org/wiki/Tcl) to do this task. After my analysis of their software, I concluded that there were critical flaws in the design. I was quite knowledgeable in VAX/VMS O/S internals. The junior VP in charge of the project refused to believe that a mere QA guy could have such knowledge, so I built a graduated test program that blew his (virtual) satellite out of the sky. Afterwards my software was installed on every developer's desktop. Before checking in software into their version control system, it became standard operating procedure to run a 10 minute test prior to check-in.
 
@@ -358,7 +351,13 @@ $if(is_pdf)
 $else
 <details markdown="1"><summary>$(task)</summary>
 
-1. 
+1. I invented a hybrid IP system for the modems where a modem had separate IP addresses for upstream (telephone dial-up) and downstream (RF). The invention took advantage of the fact that cable operator also operated the upstream dial-up network, so all the action took place by dynamically manipulating the edge router's [arp table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) at modem login.
+
+2. I designed the company's [SNMP NMS](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol) offline client using a GUI NMS client tool kit,  and the embedded system _agent_ for the modem and router in _C_.
+
+3. I invented the router's embedded [arp table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) using an extremely efficient FIFO [hash table](https://en.wikipedia.org/wiki/Hash_table) in _C_ that used no dynamic memory allocation.
+
+4. I designed an embedded remotely accessible and secure debugger for the router in [FORTH](https://en.wikipedia.org/wiki/Forth_(programming_language)) wrapped in _C_.
 
 </details>
 $endif
@@ -386,9 +385,11 @@ $py(id="optimet"; task="DSL for a conoscopic laser interferometry robot: S/W arc
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary>TBD: $(task)</summary>
+<details markdown="1"><summary>$(task)</summary>
 
-1. TBD
+1. I designed a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) for controlling an interferometer-like device that moved along an XY jig. I implemented the DSL in [TCL](https://en.wikipedia.org/wiki/Tcl) running under Windows NT.
+
+2. The most challenging part of the project was making visual sense of the raw "cloud" output of millions of XYZ points. I used the [OpenGL](https://www.opengl.org/) C API before they had published their [TCL](https://codeplea.com/opengl-with-c-and-tcl-tk) interface. I developed a tool kit in order to allow the end user to specify what primitives he should use to analyze the different regions of the object being scanned. In my development environment, I used to scan a tooth that I called "Timmy". The end result looked like an alpine environment, where the higher parts were colored white, the middle levels were blue, and the lower levels were green, etc.
 
 </details>
 $endif
@@ -399,9 +400,13 @@ $py(id="elop"; task="DSL for a mil-spec automated testing laboratory for the _Bl
 $if(is_pdf)
 <span class="hilite">[Details: $(task)]($(html)#$(id))</span>
 $else
-<details markdown="1"><summary><span class="hilite">TBD: $(task)</span></summary>
+<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
 
-1. TBD
+1. Elop was a primary subcontractor for the BlackHawk helicopter fire control system for the US company who was the main contractor for the helicopter. There was a manual that specified about 1000 tests that the  fire control system must pass. There were about 10 GPIB hardware devices attached to the software. Unsupervised automated tests would have to run for up to 4 days. Test results would be sent to a log file, and it had a GUI dashboard to show the current status. The underlying system would be implemented in _C_. The laboratory computers would be running MS-DOS.
+
+2. The key to the success of this project was my design of a domain specific language (DSL) to formally specify each of the tests. Also the language would have to be easy enough to use by the Elop system engineer, i.e. not a professional programmer, who would have to program many ad hoc tests on his own. I designed the DSL to be a lightweight version of BASIC along with plugin drivers for the specialized test hardware, along with the main device under test. I used lex and yacc to design the language.
+
+3. The system worked as planned for up to 4 days at time with no memory overflows!
 
 </details>
 $endif
@@ -412,9 +417,21 @@ $py(id="dspg"; task="DSL for the VLSI _PINE_  CPU software tool chain: S/W archi
 $if(is_pdf)
 <span class="hilite">[Details: $(task)]($(html)#$(id))</span>
 $else
-<details markdown="1"><summary><span class="hilite">TBD: $(task)</span></summary>
+<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
 
-1. TBD
+1. DSPG designed CPU micro-controllers that supported DSP functionality. When I joined them they were working on their original PINE chip. They were a VLSI "fabless" design center. After finishing their designs, they had them manufactured by a real "fab". At that time it could take up to 6 months for the fab to manufacture the physical chip. And DSPG usually designed the software that ran on their chips. At that time they designed the hardware and software internals for consumer telephone answering machines.
+
+2. VLSI software simulations ran extremely slowly because they simulated the low level transistor details of  their circuitry.
+
+3. My job was (1) to design a clock accurate simulator that ran about 100x faster than the VLSI simulator, and (2) to supply an assembler and _C_ compiler that could be used to test software applications months before the fab manufactured the physical chip.
+
+4. At that time QEMU did not yet exist, and the GCC tool chain was not yet mature, i.e. pre 2.95, so I had to design my own assembler, simulator, linker, compiler, and debugger.
+
+5. The key to the success of this project was my design of a domain specific language (DSL) to formally describe each one of the CPU's opcodes, and most important to recognize when an instruction sequence would cause the pipeline to "stall". We built the DSL using lex and yacc. At that time it was not yet common practice that CPU designers could automatically dynamically insert delays into the instruction pipeline. It was the job of the application programmer, or perhaps the compiler, to automatically insert these delays. My DSL included an easy to specify language that detected stall conditions. Without this stall detection feature it was impossible for us to develop the assembler in a timely fashion, because in the early stages of the chip design, the VLSI architects made major change to the stall conditions almost daily. So our manually coded stall conditions had to constantly be rewritten. Once we implemented this feature, we could generate an updated assembler almost immediately, i.e. within a hour or two.
+
+6. Another very important feature was that when debugging an application we could programmatically simulate access to the I/O ports. Still 30 years later, i.e. 2025, this is not a common feature of state of the art QEMU simulators.
+
+7. The system worked as planned. Especially important is that application developers were able to supply debugged applications months before the physical chip became available.
 
 </details>
 $endif
@@ -425,7 +442,7 @@ $py(id="iscar"; task="DSL for a shop floor product control system that conducted
 $if(is_pdf)
 <span class="hilite">[Details: $(task)]($(html)#$(id))</span>
 $else
-<details markdown="1"><summary><span class="hilite">TBD: $(task)</span></summary>
+<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
 
 1. TBD
 
@@ -892,6 +909,8 @@ $endif
 $if(not is_pdf)
 $py(id="community-service"; task="Community Service")
 ## <span class="hilite">Community Service: The  Ultimate Purpose in Life</span> {#$(id)}
+
+<!-- <button onclick="show_all_details('$(id)')">Show All "Community Service" Details (useful for printing)</button> -->
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
