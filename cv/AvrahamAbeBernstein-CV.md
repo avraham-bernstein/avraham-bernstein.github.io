@@ -15,7 +15,7 @@ $if(not is_pdf)\
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 $endif\
-<br/>__Last Update:__ 2025-02-25
+<br/>__Last Update:__ 2025-02-27
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -32,7 +32,7 @@ $if(not is_pdf)
 * [$(www)/cv/$(pdf)]($(www)/cv/$(pdf))</span>
 $endif
 
-## Introduction
+## Introduction: Cr8tive Solutions To Hard Problems
 
 1. I have more than 40 years experience in state-of-the-art software development especially inventing new algorithms.
 2. I have many inventions and some __recent patents__ in a wide variety of application domains, e.g.:
@@ -59,6 +59,7 @@ $endif
 10. I provide considerable value added to my clients.
 
 ## Work Experience {#work}
+
 
 <!-- <button onclick="show_all_details('work')">Show All "Work Experience" Details (useful for printing)</button> -->
 
@@ -164,7 +165,7 @@ $endif
 The company sold their Internet TV Cybersecurity business unit to [Viaccess-Orca (2014)]($(html)#$(id)) above.
 
 $py(id="telequest"; task="Vehicle Navigation Algorithms: VP R&D")
-### 2012: _Telequest_ (defunct) Jerusalem IL {#$(id)}
+### 2012: [Telequest](https://www.telequest.co.il) (stealth) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
@@ -186,9 +187,9 @@ $py(id="syntezza"; task="Novel Bioinformatics PCR Algorithms: software consultan
 ### 2011: consultant to [Syntezza Bioscience](https://www.syntezza.com/) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
-<span class="hilite">[Details: $(task)]($(html)#$(id))</span>
+[Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
+<details markdown="1"><summary>$(task)</span></summary>
 
 The company's product was a novel _dry_ test kit for [MRSA](https://www.mayoclinic.org/diseases-conditions/mrsa/symptoms-causes/syc-20375336) using [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) (a [DNA](https://en.wikipedia.org/wiki/DNA) amplification device).
 _MRSA_ is a lethal strain of _staphylococcus_ bacteria. It thrives in hospitals where it is the major [iatrogenic](https://en.wikipedia.org/wiki/Iatrogenesis) killer of immunologically compromised patients.
@@ -276,9 +277,9 @@ $py(id="vyyo2004"; task="Broadband Wireless Cable Networking Testing Laboratory:
 ### 2004: _Vyyo_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
-<span class="hilite">[Details: $(task)]($(html)#$(id))</span>
+[Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
+<details markdown="1"><summary>$(task)</summary>
 
 1. I designed an extremely efficient network testing laboratory.
 
@@ -297,9 +298,9 @@ $py(id="virtouch"; task="Blind Accessibility: VP R&D")
 ### 2002-03: _Virtouch_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
-<span class="hilite">[Details: $(task)]($(html)#$(id))</span>
+[Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
+<details markdown="1"><summary>$(task)</summary>
 
 1. I invented a software system that allowed the blind to "see" and to understand computer images, especially maps and mathematical functions, using a 
     a. standard PC or smartphone web browser
@@ -400,9 +401,9 @@ $py(id="elop"; task="DSL for a mil-spec automated testing laboratory for the _Bl
 ### 1996: CEO _Pitkha_ (defunct) Jerusalem IL, contractor for [Elop/Elbit](https://elbitsystems.com/) Rehovot IL {#$(id)}
 
 $if(is_pdf)
-<span class="hilite">[Details: $(task)]($(html)#$(id))</span>
+[Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
+<details markdown="1"><summary>$(task)</summary>
 
 1. Elop was a primary subcontractor for the BlackHawk helicopter fire control system for the US company "LORAL" who was the main contractor for the helicopter (which was acquired by Lockheed Martin). They had an acceptance testing manual that specified over 1000 tests that the  fire control system must pass. There were about 10 GPIB hardware devices attached to the software. Unsupervised automated tests would have to run for up to 4 days. Test results would be sent to a log file, and the app had GUI dashboard to show its current status. The underlying system would be implemented in _C_. The laboratory computers would be running MS-DOS.
 
@@ -417,9 +418,9 @@ $py(id="dspg"; task="DSL for the VLSI _PINE_  CPU software tool chain: S/W archi
 ### 1992-95: CEO _Pitkha_ (defunct) Jerusalem IL, contractor for [DSP Group](https://www.dspg.com/) Ramat Gan IL {#$(id)}
 
 $if(is_pdf)
-<span class="hilite">[Details: $(task)]($(html)#$(id))</span>
+[Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
+<details markdown="1"><summary>$(task)</summary>
 
 1. DSPG designed CPU micro-controllers that supported DSP functionality. When I joined them they were working on their original PINE chip. They were a VLSI "fabless" design center. After finishing their designs, they had them manufactured by a real "fab". At that time it could take up to 6 months for the fab to manufacture the physical chip. And DSPG designed the application software that ran on their chips. At that time they designed the hardware and software internals for consumer telephone answering machines.
 
@@ -442,9 +443,9 @@ $py(id="iscar"; task="DSL for a shop floor product control system that conducted
 ### 1990-91: consultant to [Digital Equipment Corp (DEC)](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation) Herzliya IL (eventually acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL), contractor for [Iscar Metalworking](https://www.iscar.com/index.aspx/countryid/1/lang/en) {#$(id)}
 
 $if(is_pdf)
-<span class="hilite">[Details: $(task)]($(html)#$(id))</span>
+[Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
+<details markdown="1"><summary>$(task)</summary>
 
 1. TBD
 
@@ -478,9 +479,9 @@ $py(id="cubital-accessibility"; task="Public domain accessibility project for qu
 ### 1989: consultant to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
 
 $if(is_pdf)
-<span class="hilite">[Details: $(task)]($(html)#$(id))</span>
+[Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
+<details markdown="1"><summary>$(task)</summary>
 
 1. At that time, 1989, speech-to-text systems were not yet technically feasible or else exorbitantly expensive.
 
@@ -495,13 +496,13 @@ $else
 </details>
 $endif
 
-$py(id="orisol"; task="My first DSL for a real-time leather sewing robot: S/W architect")
+$py(id="orisol"; task="DSL for a real-time leather sewing robot: S/W architect")
 ### 1987: _Orisol_ (defunct) Lod IL {#$(id)}
 
 $if(is_pdf)
-<span class="hilite">[Details: $(task)]($(html)#$(id))</span>
+[Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
+<details markdown="1"><summary>$(task)</summary>
 
 1. This [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) annotates an [Auto-CAD](https://www.autodesk.com/products/autocad/overview?term=1-YEAR&tab=subscription) leather sewing pattern with "road signs". The signs are associated with sewing commands that must be followed in real-time.
 
@@ -516,32 +517,15 @@ $else
 </details>
 $endif
 
-### 1985-86: [John Bryce](https://www.johnbryce.co.il) Jerusalem IL
-
-1. Junior _C_ programmer and technical support for the _Glyph_ Hebrew-English word processor.
-2. _VAX/VMS_ system admin. 
-
-### 1983-84: _Decision Systems Israel (DSI)_ (defunct) Ramat Gan IL, contractor for [Elta/IAI](https://www.iai.co.il) Ashod IL
-
-1. Junior embedded programmer for the "Namer" data entry terminal implemented on an Intel _8080_ in _PL/M_.
-2. Junior embedded programmer for the "Lavi" fighter plane initially implemented on a Fairchild CPU in _Jovial_, and subsequently on an Intel _80286_ CPU in _C_.
-
-### 1982-83: [Mitre Corporation](https://www.mitre.org/) McLean Virginia:
-
-1. Junior economist and _PL/1_ programmer for geothermal energy extraction project management.
-2. Junior _APL_ programmer in their _IBM VM/CMS_ computer center. 
-
-### 1980-81:  _J. W. Wilson & Associates_ Washington DC
-
-1. Junior economist and programmer for electric utility capacity planning models.
+### 1980-86: Junior Programmer and Economist Positions in the US and Israel
 
 $py(id="oeb"; task="Public interest intervenor-economist in the ECAP77 hearings on marginal cost pricing for electricity")
 ### 1977: [Ontario Energy Board](https://www.oeb.ca) Toronto Ontario {#$(id)}
 
 $if(is_pdf)
-<span class="hilite">[Details: $(task)]($(html)#$(id))</span>
+[Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary><span class="hilite">$(task)</span></summary>
+<details markdown="1"><summary>$(task)</summary>
 
 1. I was the first public interest [intervenor](https://www.merriam-webster.com/dictionary/intervenor) in the history of the _OEB_ to be awarded costs - at the suggestion of the _OEB_!
 
@@ -559,16 +543,16 @@ $else
 $endif
 
 $py(id="personal-inventions"; task="Inventions")
-## <span class="hilite">Unpatented Personal Inventions</span> {#$(id)}
+## Unpatented Personal Inventions {#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary>$(task)</summary>
+<details markdown="1">
 
 Note the public domain copyright at the beginning of this document.
 
-###  <span class="hilite">1. Crypto: Adler-32 Checksum Redux</span>
+###  1. Crypto: Adler-32 Checksum Redux {#adler-32}
 
 Two commonly used _non-cryptographic_ checksum algorithms are [Adler-32](https://en.wikipedia.org/wiki/Adler-32)
 and [CRC-32](https://en.wikipedia.org/wiki/Computation_of_cyclic_redundancy_checks#CRC-32_algorithm). 
@@ -649,7 +633,7 @@ The following are 2 major improvements:
 1. adler64: use 64-bit arithmetic that allows for a maximum byte array length of ~28K
 2. use a wider `uint32_t` array which speeds up the calculation by a factor of 4
 
-### <span class="hilite">2. Crypto: Lightweight Key Wrapper</span>
+### 2. Crypto: Lightweight Key Wrapper {#key-wrapper}
 
 This algorithm wraps a 32-bit number with a 64-bit key and a pseudo-random 32-bit number;
 and where the ALU can process 128-bit numbers then we can wrap a 64-bit number with a 128-bit key
@@ -687,7 +671,7 @@ uint32_t ayb_unwrap32(uint64_t key, uint64_t wrapper)
 }
 ```
 
-### <span class="hilite">3. Crypto: _Invertible_ "Cross Hamming Weight" Transformation</span>
+### 3. Crypto: _Invertible_ "Cross Hamming Weight" Transformation {#x-hamming-weight}
 
 Rotating a number by its Hamming weight is a cryptographically weak transformation because
 (1) the transformation does not change the original Hamming weight,
@@ -763,7 +747,7 @@ uint64_t ayb_invert_xhw64(uint64_t x)
 }
 ```
 
-### <span class="hilite">4. Crypto: _Non-invertible_ Uniformly Distributed FFT Hamming Weight</span> 
+### 4. Crypto: _Non-invertible_ Uniformly Distributed FFT Hamming Weight {#fft-hamming-weight}
 
 This algorithm calculates a value in the same range as classic Hamming weights, but the distribution is "nearly" uniformly distributed except for minor perturbations. For example a 32-bit number returns a value in the range \[0,32]. The algorithm is highly non-linear, i.e. cryptographically "bent".
 
@@ -807,7 +791,7 @@ int32_t ayb_fft_hw32(const uint32_t x)
 }
 ```
 
-### <span class="hilite">5. Container: Binary Expandable Hash Table</span>
+### 5. Container: Binary Expandable Hash Table {#binary-hash-table}
 
 1. Typically the maximum number of entries in a [hash table](https://en.wikipedia.org/wiki/Hash_table) is a _prime number_, while my algorithm uses `2**N` entries.
 
@@ -819,7 +803,7 @@ int32_t ayb_fft_hw32(const uint32_t x)
 
 _C_ source code: TBD.
 
-### <span class="hilite">6. Embedded Systems: Dynamically Loadable FLASH Configuration Files Larger Than RAM</span>
+### 6. Embedded Systems: Dynamically Loadable FLASH Configuration Files Larger Than RAM {#dynamic-flash-config-file}
 
 On embedded systems with limited RAM, it is not possible to load large configuration files into RAM, and it is normally a security risk to parse the configuration file when dynamically loading it regardless of its size. My invention allows the use of an off-line _pre-parsed_ configuration file into  object data format _without any executable code_. It can be dynamically loaded into FLASH memory at an address defined at load time where (1) the system architect must have mapped the FLASH memory accordingly, (2) the _C_ structure of object file must be recognized by the control program, and (3) it is extremely difficult (although not impossible) to modify the configuration for the duration of the load.
 
@@ -829,7 +813,7 @@ I show how the off-line pre-parser can be implemented without any executable _C_
 
 _C_ source code: TBD.
 
-### <span class="hilite">7. C: Named Function Arguments via Designated Initializers</span>
+### 7. C: Named Function Arguments via Designated Initializers {#c-named-func-args}
 
 [Designated initializers](https://en.cppreference.com/w/cpp/language/aggregate_initialization) is an old GCC extension since C99.
 We can take advantage of this feature in order to implement named function arguments.
@@ -860,7 +844,7 @@ int main()
 }
 ```
 
-### <span class="hilite">8. Accessibility: Generic Dyslexic Font</span>
+### 8. Accessibility: Generic Dyslexic Font {#dyslexic-font}
 
 I invented a scheme to modify existing fonts so that a dyslexic can easily read them by mimicking the concept how computer vision programs can decipher [QR codes](https://en.wikipedia.org/wiki/QR_code) regardless of how they are rotated. You should note that in QR codes there are 3 solid black squares in the top-left, top-right, and bottom-left corners, but not in the bottom-right corner. My invention pads the the left and right margins of each character in the font, allowing space for two vertical strips in each margin. Each character will have the same size padding. In the middle of the inner left strip, I add a diacritical dot. Now the dyslexic reader needs to follow a single rule, namely to note that a validly oriented character has a dot in its inner left margin. The margins have to be wide enough, so that the reader can recognize the spacing between a sequence of characters.
 
@@ -879,6 +863,8 @@ $endif
 
 1. __1978-79:__ [York Univ Graduate School](https://www.yorku.ca/) Toronto Ontario: __masters degree in economics with a minor in applied mathematics[^york]__
 
+    * My major project was the simulation of a hydro electric dam in _FORTRAN_.
+
 2. __1976-77:__ [Univ Of Toronto Rotman Graduate School Of Management](https://www.rotman.utoronto.ca/) Toronto Ontario: __no degree, applied credits to York Univ (above)__
 
 3. __1973-76:__ [Univ Of Toronto, Undergraduate School Of Arts & Sciences](https://www.utoronto.ca/) Toronto Ontario: __BA economics__
@@ -893,7 +879,7 @@ $py(id="personal"; task="Personal")
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
 $else
-<details markdown="1"><summary>$(task)</summary>
+<details markdown="1">
 
 1. __Born:__ 1957 Canada.
 2. ___Aliyah_ (English: immigration to Israel)__: 1983.
@@ -910,71 +896,67 @@ $endif
 
 $if(not is_pdf)
 $py(id="community-service"; task="Community Service")
-## <span class="hilite">Community Service: The  Ultimate Purpose in Life</span> {#$(id)}
+## Community Service: The  Ultimate Purpose in Life {#$(id)}
 
 <!-- <button onclick="show_all_details('$(id)')">Show All "Community Service" Details (useful for printing)</button> -->
-
-$if(is_pdf)
-[Details: $(task)]($(html)#$(id))
-$else
-<details markdown="1"><summary>$(task)</summary>
+<details markdown="1">
 
 In the _Torah_ in [Gen. 18:19](https://mechon-mamre.org/p/pt/pt0118.htm) (Hebrew: _Parshat Vayeira_), _HaShem_ (English: the Jewish name of God) states that the reason why He chose _Avraham Avinu_ (English: our forefather Abraham) and his descendants to be His vanguard in this world is because "he \[Avraham] will command his children and his household after him to keep the way of the LORD, to do righteousness and justice"[^chosen]. According to [Nechama Leibowitz](https://en.wikipedia.org/wiki/Nechama_Leibowitz), the modern biblical commentator _par excellance_,  this is _HaShem_'s "prime directive" to the Jewish People. I would like to believe that I have attempted to internalize this directive. My attempts will be what my family and friends will remember me for, and hopefully emulate, but hardly my contributions to computer science.
 
-1. 1995-96: I successfully fought the IDF eventually at the Supreme Court over their illegal "Oslo" rules of engagement that would require that IDF soldiers not respond to Palestinian threats at gunpoint, even from known terrorist murderers, until __after__ the Pals first fired at them!
-    * <details><summary>Details</summary>In 1995 I initially received these orders at an _impromptu_ visit in the field from then Major General, _Ilan Biran_, where I vigorously argued with him. The sycophantic general also said that he felt Oslo would usher in an era of peace that would reduce the need for any IDF presence along the Jordanian border, at the exact same time that the so-called "suicide" bus bombing campaign was in full swing in Israeli cities! At the time I was a corporal. Afterwards I wrote the general an official letter of complaint to which his bureau responded that I had "wax in my ears" in which they clarified why such an order _would have been_ patently illegal. A year later I received the exact same orders at a meeting of brigade officers under the command of then Major General _Uzi Dyan_, _Biran's_ successor. I anticipated such an order, so I took the letter with me. When the brigade (Hebrew: _Hativa_) commander, a colonel, started spewing his nonsense, I jumped up waving the letter from his predecessor why his orders were patently illegal. His jaw dropped.<p>I had already prepared my petition to the Supreme Court which I instructed my attorney to file that very same day. On the next day the army sent a brigadier general (Hebrew: _Tat Aluf_) to interview me, a corporal, about my objections. The brigadier didn't deal with the substance of my objections. Instead he claimed that I would cause WW III, and according to script he threw me out of the army - for the the rest of my reserve duty that season. From home, I immediately started to give interviews to the media. Soon I received a telephone call from my regiment's (Hebrew: _Gdud_) sergeant major who sternly warned me that soldiers in uniform were not permitted to speak with the media. When I reminded him that the army threw me out, he burst out laughing.</p><p>In court the response of the Attorney General and the IDF Adjutant General audaciously claimed that they never issued any such order. (Note that such a bald lie in a legal deposition is normally a very serious criminal offense, unless you happen to be the Attorney General). I brought affidavits from other soldiers, and it was obvious that thousands of other soldiers who heard this ridiculous order were seething too. The court agreed that such an order would be illegal, while the court accepted the IDF's lame excuse that it would be inconceivable that such outrageoulsy illegal orders could ever have been issued by these illustrious generals.  Is it surprising that the presiding judge on the panel who accepted this charade was none other than then Chief "Justice" Aharon Barak who presided over this travesty of justice held "behind closed doors" under the rubric of "military secrecy" in order to keep the IDF General Staff's depravity[^depravity] and sycophancy hidden from the general public?</p></details>
+1. 1995-96: I successfully fought the IDF eventually at the Supreme Court over their illegal "Oslo" rules of engagement that would require that IDF soldiers not respond to Palestinian threats at gunpoint, even from known terrorist murderers, until __after__ the Pals first fired at them! <details>
 
-2. 2017-20: I successfully fought the Ministry of Social Services at Jerusalem family court over their attempt to force the adoption of the three young children of my wife's cousin, where the Social Services' youth officer and their legal guardian, who the youth officer appointed, were engaged in criminal malfeasance. They argued against giving the father custody because they falsely accused him of sexually molesting one of his daughters, while the mother was mentally unstable. I proved that they had perjured themselves when in fact they were aware that other children had molested the girl on multiple occasions when she was held in locked-down youth facilities administered by Social Services.
-    * <details><summary>Details</summary>The key to winning the case was that I instructed the father to secretly record a revealing conversation with the naive junior social worker who was responsible for the daily care of his children in the institution. After receiving a stern warning following a visit from the young girl's grandfather, a retired social worker from the US black ghettos where child molestation was endemic, she felt obligated to install observation carmeras. She admitted to the father that she caught the molester on camera, and that she was aware about the previous molestation incidents in the other institution. And she described how when she brought the then 5 year-old girl to be treated by the institution's psychologist, he started treatment by using the conventional technique of giving a male doll to the little girl in order for her to gently describe what happened. Instead she astounded him by attempting to illustrate by pulling down the zipper of the psychologist! Of course the psychologist, the legal guardian, and their boss - the youth officer, denied everything. Unfortunately the family court judge regularly worked with these professional colleagues; therefore he refused to have them indicted for perjury, but he did eventually order that the children be released to the custody of their father primarily on the basis of the recordings.</details>
+    a. In 1995 I initially received these orders at an _impromptu_ visit in the field from then Major General, _Ilan Biran_, where I vigorously argued with him. At the time I was a corporal. The sycophantic general also said that he felt Oslo would usher in an era of peace that would reduce the need for any IDF presence along the Jordanian border, at the exact same time that the so-called "suicide" bus bombing campaign was in full swing in Israeli cities! Afterwards I wrote the general an official letter of complaint to which his bureau responded that I had "wax in my ears" in which they clarified why such an order _would have been_ patently illegal. A year later I received the exact same orders at a meeting of brigade officers under the command of then Major General _Uzi Dyan_, _Biran's_ successor. I anticipated such an order, so I took the letter with me. When the brigade (Hebrew: _Hativa_) commander, a colonel, started spewing his nonsense, I jumped up waving the letter from his predecessor why his orders were patently illegal. His jaw dropped.
+    b. I had already prepared my petition to the Supreme Court which I instructed my attorney to file that very same day. On the next day the army sent a brigadier general (Hebrew: _Tat Aluf_) to interview me, a corporal, about my objections. The brigadier didn't deal with the substance of my objections. Instead he claimed that I would cause WW III, and according to script he threw me out of the army - for the the rest of my reserve duty that season. From home, I immediately started to give interviews to the media. Soon I received a telephone call from my regiment's (Hebrew: _Gdud_) sergeant major who sternly warned me that soldiers in uniform were not permitted to speak with the media. When I reminded him that the army threw me out, he burst out laughing.
+    c. Immediately the Attorney General (AG) responded _in camera_  without my presence to Justice _Tzvi Tal_, who was on administrative "gate keeper" duty (Hebrew: _Shofet Toran_), that my petition was irrelevant and that I had no legal standing, because the IDF had thrown me out. _Baruch HaShem_ (English: thank God), _Tal_ ordered that my petition be heard with 10 days, referred to in Hebrew as a _Bagatz Bazak_. The AG had the audacity not to provide me with his response until I arrived at the court room, when he then attempted to argue that on account of "military secrecy", I did not have sufficient clearance to be allowed into the court room!
+    d. In the court room the AG and the IDF Adjutant General audaciously claimed that they never issued any such order. (Note that such a bald lie in a legal deposition is normally a very serious criminal offense, unless you happen to be the Attorney General). I brought affidavits from other soldiers, and it was obvious that thousands of other soldiers who heard this ridiculous order were seething too. The court agreed that such an order would be illegal, while the court accepted the IDF's lame excuse that it would be inconceivable that such outrageoulsy illegal orders could ever have been issued by these illustrious generals.  Is it surprising that the senior judge on the panel who accepted this charade was none other than then Chief "Justice" Aharon Barak who presided over this travesty of justice held "behind closed doors" under the rubric of "military secrecy" in order to keep the IDF General Staff's depravity[^depravity] and sycophancy hidden from the general public?
+    
+    </details>
 
-3. 2022: I successfully fought the Ministry of Education over their attempt to force an exceptionally bright autistic teenager to attend a school for emotionally retarded teens, or else face truancy charges. They supplied him with a "confederate" aid who sabotaged him while he attended school, and abandoned him during COVID home schooling. I proved my case by having the child evaluated at the world-renowned [Feuerstein Institute](https://feuerstein-institute.org/) who declared that he was indeed exceptionally bright.
+2. 2017-20: I successfully fought the Ministry of Social Services at Jerusalem family court over their attempt to force the adoption of the three young children of my wife's cousin, where the Social Services' youth officer and their legal guardian, who the youth officer appointed, were engaged in criminal malfeasance. They argued against giving the father custody because they falsely accused him of sexually molesting one of his daughters, while the mother was mentally unstable. I proved that they had perjured themselves when in fact they were aware that other children had molested the girl on multiple occasions when she was held in locked-down youth facilities administered by Social Services. <details>
+
+    a. The key to winning the case was that I instructed the father to secretly record a revealing conversation with the naive junior social worker who was responsible for the daily care of his children in the institution. After receiving a stern warning following a visit from the young girl's grandfather, a retired social worker from the US black ghettos where child molestation was endemic, she felt obligated to install observation carmeras. She admitted to the father that she caught the molester on camera, and that she was aware about the previous molestation incidents in the other institution. And she described how when she brought the then 5 year-old girl to be treated by the institution's psychologist, he started treatment by using the conventional technique of giving a male doll to the little girl in order for her to gently describe what happened. Instead she astounded him by attempting to illustrate by pulling down the zipper of the psychologist! Of course the psychologist, the legal guardian, and their boss - the youth officer, denied everything. Unfortunately the family court judge regularly worked with these professional colleagues; therefore he refused to have them indicted for perjury, but he did eventually order that the children be released to the custody of their father primarily on the basis of the recordings.
+    
+    </details>
+
+3. 2022: I successfully fought the Ministry of Education over their attempt to force an exceptionally bright autistic teenager to attend a school for emotionally retarded teens, or else face truancy charges. They supplied him with a "confederate" aid who sabotaged him while in the classroom, and abandoned him during COVID home schooling. I proved my case by having the child evaluated at the world-renowned [Feuerstein Institute](https://feuerstein-institute.org/) who declared that he was indeed exceptionally bright.
 
 4. 2022: My wife and I took in a poor homeless Russian refugee family into our home for 4 months when the husband  escaped from being drafted as cannon fodder into the Russian army's war against Ukraine, months before they were finally recognized by the Israeli Absorption Ministry.
 
-### <span class="hilite">Grass Roots Leader Against The Oslo Accords</span>
-
-<details markdown="1"><summary>Oslo Accords</summary>
+### Grass Roots Leader Against The Oslo Accords
 
 _[Where there is no man, strive to be one](https://torahisteaching.com/2019/04/30/where-there-is-no-man-be-a-manpart-1/), a maxim of [Rav Hillel (the Elder)](https://en.wikipedia.org/wiki/Hillel_the_Elder) c. 50 BCE_.
 
-1. 1993-96: In May 1993, 4 months before the declaration of the Oslo Accords on the White House lawn, I helped to establish the leadership of the grass roots anti-Oslo  campaign.
-    * <details><summary>Details</summary>On the street in my neighborhood I befriended a leaker (who today still wishes to remain anonymous) who worked in then Deputy Foreign Minister Beilin's office. The leaker complained that he was ashamed of his work. He was preparing the groundwork for the Oslo Accords. I convinced him to share his information with those who may be able to stop the Accords. His legal "ground rules" for sharing were never to reveal any government documents in order to have the cover of "plausible deniability". Therefore all the information that I shared was obtained orally. In spite of lack of documentation, his _bona fides_ soon became clear. I published a [samizdat](https://en.wikipedia.org/wiki/Samizdat), i.e. an underground newsletter as this was before the era of the Internet. My main distribution point was [Moshe Kempinski's](https://shorashimshop.com/blog/author/moshe/) [Shorashim Gift Shop](https://shorashimshop.com/shop/) in the Old City of Jerusalem.<p>I shared his information with [Ruth Matar o.b.m.](https://womeningreen.org/about-us/) founder of _Women In Green_, [Rav Benny Alon o.b.m.](https://en.wikipedia.org/wiki/Binyamin_Elon) co-founder of [Zu Artzenu](https://en.wikipedia.org/wiki/Moshe_Feiglin), and mainly with [Rav Shalom Gold o.b.m.](https://davidmweinberg.com/2023/07/14/tribute-to-rabbi-sholom-gold-of-jerusalem-the-most-passionate-of-zionists/), along with many others. I introduced him to [Steve Rodan](https://blogs.timesofisrael.com/author/steve-rodan/?anchor=about-me) then diplomatic reporter for the [Jerusalem Post](https://www.jpost.com/). After thoroughly investigating the leaker's claims, in December 1993 Rodan wrote an exposé in the _Jerusalem Post_ about the true intentions of the Accords, namely to unconditionally grant Arafat a [Judenrein](https://en.wikipedia.org/wiki/Judenfrei) Palestinian state regardless of the fraudulent obligations that Peres claimed Arafat agreed to undertake. Unfortunately most of Rodan's professional colleagues considered him to be "off of his rocker". He was forced to resign from the _Jerusalem Post_. It took almost 7 years for some to finally issue a [mea culpa](https://jewishworldreview.com/cols/tobin062200.asp).</p><p>I received advice from _Yossi Ben-Aharon_, former Director General of the Prime Minister's Office of _Yitzhak Shamir_, on "spy craft" in order to keep "under the radar". I took on the _nom de guerre_ "Avraham Yehuda", i.e. the full name given to me at my _Brit Milah_. I acted as the leaker's secret spokesman to the press, to opposition _MKs_ (i.e. _Knesset_ members), and to other influential people. Finally the majority of sentient Jewish Israelis can now (2025) recognize that there was a direct line of causality from the insanity and treachery of the Oslo Accords, to the so-called Gaza "Disengagement", to the Shalit prisoner exchange, and finally to the Hamas massacre on Simchat Torah 5784, i.e. on October 7 2023.</p></details>
+1. 1993-96: In May 1993, 4 months before the declaration of the Oslo Accords on the White House lawn, I helped to establish the leadership of the grass roots anti-Oslo  campaign. <details>
 
-2. The majority of sentient Jewish Israelis can now (2025) accept my key takeaway from the Oslo Accords, namely the architects of Oslo, Peres and Beilin, _designed it to fail_! 
-    * <details><summary>Details</summary> Peres had secretly promised the incorrigible arch-terrorist Arafat a [Judenrein](https://en.wikipedia.org/wiki/Judenfrei) state within a year knowing that he would never adhere to the provisions of the Accords that they proudly presented to the Knesset (comprised of Arabs, communists, and bribed Jewish members that still only gave them a razor thin 61-59 majority) and to the gullible Israeli public (incited by the left wing news media).<p>The _Knesset_ was too slow in delivering Peres' promise, so Arafat began his murderous tantrum to "convince" them to move faster - aka the second Intifada. Initially Arafat attacked the so-called "settlers" who the leftist government abandoned. But they resisted and refused to flee, in spite of the government's expectations to the contrary; so Arafat terrorized Israel's soft underbelly, i.e. inside the "sacred" Green Line, in particular his "suicide" bus bombing campaign. </p><p>The government had arranged the Baruch Goldstein massacre.[^goldstein] Beilin fully expected that it would lead to the expulsion of the Jewish community in Hevron, and thus break the settlers' resistance, but the expulsion never happened because then PM Rabin was afraid of an army revolt, so Arafat went berserk. No one alive at that time can ever forget how Peres referred to the victims of Arafat's bus bombings as "sacrifices for peace" as the streets were literally flowing with their blood, while he hysterically shrieked that "nothing could ever stop the peace process" (because it was his road to amassing a fortune). A bus blew up in Jerusalem in front of my son just before his wedding day. He entered the bus in order to try to save some of the victims. He came home drenched in blood.</p></details>
+    a. On the street in my neighborhood I befriended a leaker (who today still wishes to remain anonymous) who worked in then Deputy Foreign Minister Yossi Beilin's office. The leaker complained that he was ashamed of his work. He was preparing the groundwork for the Oslo Accords. I convinced him to share his information with those who may be able to stop the Accords. His legal "ground rules" for sharing were never to reveal any government documents in order to have the cover of "plausible deniability". Therefore all the information that I shared was obtained orally. In spite of lack of documentation, his _bona fides_ soon became clear. I published a [samizdat](https://en.wikipedia.org/wiki/Samizdat), i.e. an underground newsletter as this was before the era of the Internet. My main distribution point was [Moshe Kempinski's](https://shorashimshop.com/blog/author/moshe/) [Shorashim Gift Shop](https://shorashimshop.com/shop/) in the Old City of Jerusalem.
 
-3. My most successful personal act against Oslo was preventing Arafat's May 1994 attempt to ascend _Har HaBayit_ (English: the Temple Mount). Arafat desperately wanted to triumphantly ascend _Har HaBayit_ just like [Saladin](https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1187)) did in 1187 CE.
-    * <details><summary>Details</summary>Peres agreed, and it was Beilin's job to make it happen. I was in regular contact with _Yaakov Novik_ who organized the anti-Oslo demonstrations. We made sure that the police were aware that Novik intended to stage a massive demonstration of hundreds of thousands to prevent Arafat's ascent. The police were terrified that Jewish demonstrators would enter _East Jerusalem_ and directly confront Arab demonstrators, so the police nixed Beilin's plan.<p> The leaker informed me that Beilin countered that he would schedule the ascent for _Erev Shabbat_ (English: Friday night) in the hope that the mostly religious Jewish demonstrators would not show up. And the leaker said that Beilin secretly __ordered__ former Sephardi Chief Rabbi _Ovadiah Yosef_ to issue a _Halachic_ (English: Jewish legal) decision that it would be _forbidden_ for Jewish demonstrators to show up because it would force the police to mobilize thousands of policemen, many of whom were religious. _Yosef_, who at that time was the spiritual leader of the [Shas](https://en.wikipedia.org/wiki/Shas) political party that was a critical member Peres' coalition government, agreed because many _Shas_ _MKs_ (i.e. _Knesset_ members) were being blackmailed by the so-called "legal system" with criminal indictments if they did not kowtow to government diktats. (Eventually when their usefulness expired, many were indicted anyway including party leader _Aryeh Deri_ who was imprisoned for two years). I immediately informed former Ashkenazi Chief Rabbi _Shlomo Goren_ of what his nemesis _Yosef_ intended to do. _Goren_ went berserk. He issued a counter _Halachic_ decision that it would be _obligatory_ to violate Shabbat to prevent the mass terrorist murderer Arafat from ascending _Har HaBayit_, so Beilin and the police were forced to fold. As a consolation prize, Beilin arranged for Arafat to secretly and ignobly ascend dressed as an old woman!</p></details>
+    b. I shared his information with [Ruth Matar o.b.m.](https://womeningreen.org/about-us/) founder of _Women In Green_, [Rav Benny Alon o.b.m.](https://en.wikipedia.org/wiki/Binyamin_Elon) co-founder of [Zu Artzenu](https://en.wikipedia.org/wiki/Moshe_Feiglin), and mainly with [Rav Shalom Gold o.b.m.](https://davidmweinberg.com/2023/07/14/tribute-to-rabbi-sholom-gold-of-jerusalem-the-most-passionate-of-zionists/), along with many others. I introduced him to [Steve Rodan](https://blogs.timesofisrael.com/author/steve-rodan/?anchor=about-me) then diplomatic reporter for the [Jerusalem Post](https://www.jpost.com/). After thoroughly investigating the leaker's claims, in December 1993 Rodan wrote an exposé in the _Jerusalem Post_ about the true intentions of the Accords, namely to unconditionally grant Arafat a [Judenrein](https://en.wikipedia.org/wiki/Judenfrei) Palestinian state regardless of the fraudulent obligations that Peres claimed Arafat agreed to undertake. Unfortunately most of Rodan's professional colleagues considered him to be "off of his rocker". He was forced to resign from the _Jerusalem Post_. It took almost 7 years for some to finally issue a [mea culpa](https://jewishworldreview.com/cols/tobin062200.asp).
 
-#### Brief History Of The Oslo Accords
+    c. I received advice from _Yossi Ben-Aharon_, former Director General of the Prime Minister's Office of _Yitzhak Shamir_, on "spy craft" in order to keep "under the radar". I took on the _nom de guerre_ "Avraham Yehuda", i.e. the full name given to me at my _Brit Milah_. I acted as the leaker's secret spokesman to the press, to opposition _MKs_ (i.e. _Knesset_ members), and to other influential people. Finally the majority of sentient Jewish Israelis can now (2025) recognize that there was a direct line of causality from the insanity and treachery of the Oslo Accords, to the so-called Gaza "Disengagement", to the Shalit prisoner exchange, and finally to the Hamas massacre on Simchat Torah 5784, i.e. on October 7 2023.
 
-The following is my very brief synopsis of the perfidy of the Oslo architects that the majority now (2025) recognize laid the groundwork for the October 7 Hamas massacre. Almost of all of my synopsis is based upon verifiable open source material, but my skepticism was refined by the education that the leaker gave me into the extent of government corruption. Today (2025) many are too young, or not yet born, to remember the sordid details of Oslo, and unfortunately many are afflicted with the "politically correct" reverence for the man who was primarily responsible.
+    </details>
 
-1. Unlike the rest of the modern State of Israel's "founding fathers" who were frustrated Bolsheviks, but at least had their primary education in a "Cheider", i.e. a religious Jewish primary school, while Peres' primary education was in a Jesuit school in Poland. As the visceral antisemite "Saint" Ignatius, the  founder the Jesuit order, boasted "give me a boy until the age of 7, and I will give you the man". Peres, was regularly in league with the Vatican, see [here](https://www.haaretz.com/2003-07-22/ty-article/peres-suggests-holy-sites-in-jlem-be-declared-world-capital/0000017f-e0d3-d38f-a57f-e6d376ac0000) and [here](https://werhit-mathenyahu.blogspot.com/2012/10/shimon-peres-vaticans-president-of.html). 
-    * <details><summary>Details</summary>He unsuccessfully secretly attempted to revive the Vatican's 1947 "wet dream", see [here](https://israelbehindthenews.com/1997/09/22/the-vaticans-jerusalem-agenda/) and [here](https://www.redmoonrising.com/chamish/vaticanagenda.htm), to declare the Old City of Jerusalem as a [corpus separatum](https://en.wikipedia.org/wiki/Corpus_separatum_(Jerusalem)). _Pope Paul VI_ made _hollow_ declarations of Jewish reconciliation in his 1965 _Nostra Aetate_ encyclical. Paul _and his successors_ could [never theologically accept the reestablishment of a modern Jewish State](https://www.israelnationalnews.com/news/343072). In spite of the pablum in _Nostra Aetate_, according to two millennia of fundamental Roman Catholic and Eastern Orthodox antisemitic beliefs originating with the New Testament Gospels, the Jews were damned to be a [wandering people](https://en.wikipedia.org/wiki/Wandering_Jew) for refusing to accept Jesus as their messianic savior - aka replacement theology or supersessionism.<p>And it speaks volumes that the second largest _Apostolic_ (i.e. diplomatic) delegation to the Vatican is from Iran who openly declares that it is their God-given duty to annihilate the Jewish State in order to hasten the coming of their false messiah, i.e. the _Machdi_. Iran has a minuscule Christian community, while converting to Christianity carries a death penalty. Can we assume that their theologians have discussions about [how many angels can dance on the head of a pin](https://en.wikipedia.org/wiki/How_many_angels_can_dance_on_the_head_of_a_pin%3F)? As _Stalin_ quipped at _Yalta_ in 1945, the Vatican no longer has any divisions; but they do have world wide "moral legitimacy", while the Iranians have many divisions but no legitimacy. Together they make a lethal antisemitic duo.</p></details>
+2. The majority of sentient Jewish Israelis can now (2025) accept my key takeaway from the Oslo Accords, namely the architects of Oslo, Peres and Beilin, _designed it to fail_! <details>
 
-2. The _Peres Center "For Peace"_ had almost nothing to do with peace. In fact it was a [profiteering operation](https://carolineglick.com/the_peace_profiteers/) that turned Peres into one of the wealthiest men in Israel by skimming funds that enabled the dictatorial and kleptomaniacal Arafat, and his successor Abbas, to become multi-billionaires. Peres used his international "prestige" to [shill](https://www.merriam-webster.com/dictionary/shill) for billions of dollars from international donors and gullible US Jewish donors to fund projects which Arafat simply pocketed and for which Peres _et al_ received substantial commissions. The _Peres Center_ established Arafat's core monopolies (e.g. mobile communications, and petrol) that Arafat either personally owned or controlled, of course for which the _Peres Center_ received huge commissions.
-    * <details><summary>Details</summary>The _Peres Center_ secretly awarded a \$100K prize to Norwegian diplomats [Terje Larson and his wife Mona Juul](https://carolineglick.com/the_peres_center_scandal/) who were highly influential sponsors of Peres' Nobel Prize bid. The ceremony had to be kept secret because Larson had the ignoble fame of being one of the tiny number of Western diplomats to ever be considered [persona non grata](https://en.wikipedia.org/wiki/Persona_non_grata) by the Israeli government. Peres was an equal partner with "birds of a feather" Arafat and Martin Schlaff[^schlaff] (who made his initial fortune [collaborating with the East Germany's _Stassi_ secret police](https://en.wikipedia.org/wiki/Martin_Schlaff)) in the lucrative _Jericho Oasis Casino_. Israel's then Attorney General _Elyakim Rubinstein_ obligingly rezoned the casino out of [Area B](https://blogs.timesofisrael.com/west-bank-areas-a-b-and-c-how-were-they-created/) in order to enable Israelis to "legally" play who were its main clientele.</details>
+    a. Peres had secretly promised the incorrigible arch-terrorist Arafat a [Judenrein](https://en.wikipedia.org/wiki/Judenfrei) state within a year knowing that he would never adhere to the provisions of the Accords that they proudly presented to the Knesset (comprised of Arabs, communists, and bribed Jewish members that still only gave them a razor thin 61-59 majority) and to the gullible Israeli public (incited by the left wing news media).
 
-3. Peres was able to co-opt his opportunistic Israeli supporters by giving them a small piece of the action - either via outright cash bribes, but usually via a "soft bribe" of professional advancement in highly lucrative jobs that were directly or indirectly controlled by the Israeli government.
+    b. The _Knesset_ was too slow in delivering Peres' promise, so Arafat began his murderous tantrum to "convince" them to move faster - aka the second Intifada. Initially Arafat attacked the so-called "settlers" who the leftist government abandoned. But they resisted and refused to flee, in spite of the government's expectations to the contrary; so Arafat terrorized Israel's soft underbelly, i.e. inside the "sacred" Green Line, in particular his "suicide" bus bombing campaign.
 
-4. Already in 1993, Peres immediately launched his first major Oslo graft[^peres-graft] scheme. Then Foreign Minister Peres convinced the government to transfer Israeli tax rebates intended for the PA Treasury directly to Arafat's personal bank account in Tel Aviv. The then future directors of the _Peres Center_ transferred these funds to [Arafat's personal Swiss bank account](https://www.jewishvirtuallibrary.org/former-israeli-peace-envoys-charged-with-money-transfers-to-arafat), of course for a substantial commission.
-    * <details><summary>Details</summary>When [Adir Zik](https://en.wikipedia.org/wiki/Adir_Zik) publicized the scheme in his wildly popular "illegal" [Arutz-7](https://en.wikipedia.org/wiki/Arutz_Sheva) radio broadcasts, Peres was forced to respond that Arafat needed a "war chest" to fight Hamas who Peres and Rabin dubbed as "the real enemies of the peace, _along with the Jewish settlers_". It was a bald lie that the gullible public swallowed. Arafat never fought against Hamas. In fact he often hired Hamasniks as "false flag" contractors for the suicide bus bombing campaign that he orchestrated.<p>With US aid, the government openly provided thousands of standard assault rifles to Arafat's forces in order "to fight Hamas". Many of these weapons were ballistically proven to have been used to murder Jews.</p><p>And more sinister, the government invited the CIA to give Arafat's forces sniper training courses "to fight Hamas". Again these weapons were ballistically proven to be used to assassinate influential "settlers". The leaker claims that the government selected the targets and supplied the Pals with the intelligence required to implement the assassinations. Since the Pals pulled the triggers under CIA guidance, then it provided the government with unimpeachable deniability.</p></details>
+    c. The government had arranged the Baruch Goldstein massacre.[^goldstein] Beilin fully expected that it would lead to the expulsion of the Jewish community in Hevron, and thus break the settlers' resistance, but the expulsion never happened because then PM Rabin was afraid of an army revolt, so Arafat went berserk. No one alive at that time can ever forget how Peres referred to the victims of Arafat's bus bombings as "sacrifices for peace" as the streets were literally flowing with their blood, while he hysterically shrieked that "nothing could ever stop the peace process" (because it was his road to amassing a fortune). A bus blew up in Jerusalem in front of my son just before his wedding day. He entered the bus in order to try to save some of the victims. He came home drenched in blood.
+    
+    d. The leaker heard Beilin, brag to his confidants how he designed Oslo to be the perfect diplomatic trap. He compared it to a runaway train. Beilin, with a doctorate in political science, was aware that Western countries, and in particular the United States (at least until the second Trump Administration), would never accept Israel canceling the Accords in spite of the Pals' fundamental egregious breaches. (See the 2012 Hebrew TV debate between Beilin and Bennett, just before former PM Naftali Bennett first entered the Knesset, where Beilin lectures Bennett like a sophomore how it would be diplomatically impossible for future Israeli governments to ever cancel the Oslo Accords). Up until now (2025) Beilin's predictions have been 100% correct for the past 30 years.
+    
+    </details>
 
-5. Israeli intelligence was always aware of this deception but refused to publicize it. The IDF and the _Shabak_ electronically intercepted all of Arafat's communications. They had a major military base which overlooked Arafat's Ramallah headquarters. They had spies on the ground. In response to the [2002 Netanya Park Hotel Pesach Massacre](https://en.wikipedia.org/wiki/Passover_massacre) then PM Ariel Sharon _temporarily_ stopped this deception until he was blackmailed[^blackmail] by the so-called "legal system" into advocating the so-called  "Disengagement" from Gaza. In the IDF's subsequent [Defensive Shield](https://en.wikipedia.org/wiki/Operation_Defensive_Shield) campaign, they captured and revealed hundreds of [documents](https://www.gov.il/en/pages/the-involvement-of-arafat-pa-senior-officials-in-terrorism) that proved Arafat micro-managed nearly every single attack since he first signed the Oslo Accords. Yet, until today (2025), in spite of the overwhelming evidence that Oslo was a sham, subsequent Israeli governments refused, or were afraid of US pressure, to declare the Accords null and void just as [Beilin](#beilin) had predicted.
+3. My most successful personal act against Oslo was preventing Arafat's May 1994 attempt to ascend _Har HaBayit_ (English: the Temple Mount). Arafat desperately wanted to triumphantly ascend _Har HaBayit_ just like [Saladin](https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1187)) did in 1187 CE. <details>
 
-6. While Peres was a minister in successive Israeli governments from 1999-2007, he amassed a fortune in Palestinian investments, while the _Knesset_ "Ethics" committee should have sanctioned him for egregious violations of conflict of interests[^conflict-of-interests], but they incessantly refused. However they did eventually force him to [divest](http://israelvisit.co.il/BehindTheNews/Archives/Apr-22-05.htm) prior to the leftist _Knesset_ electing him to Israel's presidency in 2007, when my friend and colleague [David Bedein](https://israelbehindthenews.com/) loudly publicized the matter.
+    a. Peres agreed, and it was Beilin's job to make it happen. I was in regular contact with _Yaakov Novik_ who organized the anti-Oslo demonstrations. We made sure that the police were aware that Novik intended to stage a massive demonstration of hundreds of thousands to prevent Arafat's ascent. The police were terrified that Jewish demonstrators would enter _East Jerusalem_ and directly confront Arab demonstrators, so the police nixed Beilin's plan.
 
-7. At Peres' funeral in 2014, most Israelis and the leaders of the Western world reverently referred to him as a "prince of peace". Today most sentient Jewish Israelis finally understand that the Oslo Accords and Gaza Disengagement policies that he championed were the root cause of the October 7 Hamas massacre.
-
-8.  <a id="beilin"/>The leaker heard Beilin, who was Peres' Deputy Foreign Minister, brag to his confidants how he designed Oslo to be the perfect diplomatic trap. He compared it to a runaway train. Beilin, with a doctorate in political science, was aware that Western countries, and in particular the United States (at least until the second Trump Administration), would never accept Israel canceling the Accords in spite of the Pals' fundamental egregious breaches. (See the 2012 [Hebrew TV debate](https://www.youtube.com/watch?v=e1XrXXyQX0A) between Beilin and Bennett, just before former PM _Naftali Bennett_ first entered the Knesset, where Beilin lectures Bennett like a sophomore how it would be diplomatically impossible for future Israeli governments to ever cancel the Oslo Accords).  Up until now (2025) Beilin's predictions have been 100% correct for the past 30 years.
-
-9. The results of Oslo from 1993 until the October 7 2023 Hamas massacre and its aftermath has been thousands who have been murdered, maimed, widowed, and orphaned. Those responsible especially MKs who voted for these policies along with senior members of the legal and security establishment who enforced these policies must be made to pay financially for their crimes; and they should be exiled (like in ancient Greece) or be forced to live in internal exile within 10 km of the Gaza or Lebanese borders. A special tribunal should be established with supreme authority. Arguing that they could never have expected these events to happen is a lame excuse.
-Arafat and his successors and Hamas have always openly stated what their true murderous intentions were. They chose to ignore them due to the mainly soft bribes of career advancement from Peres and his ilk.
-
-</details>
-</details>
-$endif
+    b. The leaker informed me that Beilin countered that he would schedule the ascent for _Erev Shabbat_ (English: Friday night) in the hope that the mostly religious Jewish demonstrators would not show up. And the leaker said that Beilin secretly __ordered__ former Sephardi Chief Rabbi _Ovadiah Yosef_ to issue a _Halachic_ (English: Jewish legal) decision that it would be _forbidden_ for Jewish demonstrators to show up because it would force the police to mobilize thousands of policemen, many of whom were religious. _Yosef_, who at that time was the spiritual leader of the [Shas](https://en.wikipedia.org/wiki/Shas) political party that was a critical member Peres' coalition government, agreed because many _Shas_ _MKs_ (i.e. _Knesset_ members) were being blackmailed by the so-called "legal system" with criminal indictments if they did not kowtow to government diktats. (Eventually when their usefulness expired, many were indicted anyway including party leader _Aryeh Deri_ who was imprisoned for two years). I immediately informed former Ashkenazi Chief Rabbi _Shlomo Goren_ of what his nemesis _Yosef_ intended to do. _Goren_ went berserk. He issued a counter _Halachic_ decision that it would be _obligatory_ to violate Shabbat to prevent the mass terrorist murderer Arafat from ascending _Har HaBayit_, so Beilin and the police were forced to fold. As a consolation prize, Beilin arranged for Arafat to secretly and ignobly ascend dressed as an old woman!
+    
+    </details>
+    
+</details>    
 $endif
 
 ## Footnotes
@@ -989,17 +971,8 @@ $if(not is_pdf)
 
  [^chosen]: __Chosen People:__ It is quite telling that that the biggest haters of the Jewish People throughout history derive their hatred from this exact verse. What infuriates them is that Jews are the conscience of the world, who recognize a higher Divine law than _patently immoral_ laws of dictators and kings, and even of elected governments (e.g. Pharaoh, Haman, and Hitler). On the other hand, it is important to remember that throughout history there have existed a few brave non-Jews who [feared God](https://rabbisacks.org/covenant-conversation/shemot/on-not-obeying-immoral-orders/) by defying patently immoral laws of their governments, e.g. the Egyptian midwives Shifra and Puah in [Exodus 1:17](https://mechon-mamre.org/p/pt/pt0201.htm), and modern day [righteous gentiles](https://en.wikipedia.org/wiki/Righteous_Among_the_Nations) who hid Jews from the Nazis at great risk to their own lives.
  
- [^depravity]: __IDF General Staff Depravity:__ From the Oslo Accords to this day (2025) it is accurate to describe the IDF General Staff as depraved. Generals who are promoted to the General Staff are selected precisely because their main goal is _no longer_ to unequivocally win wars, or to save as many civilian lives as possible, or to save the lives of their soldiers.  We saw this clearly in their total lack of preparedness for the recent October 7 Hamas massacres. We saw it in their denial that the so-called _Disengagement_ would be a future existential disaster. We saw it in their lackluster execution of the Second Lebanese War. They are selected because they internalize the pseudo ethics of their bizarre "purity of arms" philosophy. Due to the IDF's generous early retirement benefits, they view the IDF just as a stepping stone in their future career path whether in politics or business, so they refrain from engaging in any politically incorrect activities that might even prevent them from so much as taking a vacation with their wives for a London shopping spree, because a UK court might indict them for "abusing the rights" of a poor Palestinian. Note that the spectacular initial response of the civilian reservists to the October 7 massacres was very much in spite of the hysteria and lack of preparedness of the General Staff.  And also note the fundamental flaw of their military ethics guru _Asa Kasher_, who is worshiped by both the IDF and legal system, is that he claims that our Islamic enemies only want to "share" _Eretz Yisrael_ (English: Land of Israel) with us with equal rights for all. However it has finally (2025) become painfully obvious to the majority of sentient Israeli Jews, including secular ones, that the goal of our Islamic enemies is to _annihilate_ the Jewish presence here, exactly like the Nazis wanted to do to European Jewry. The enemy acts exactly like [Amalek](https://www.chabad.org/library/article_cdo/aid/3942715/jewish/Who-Were-Amalek-and-the-Amalekites.htm) did, and we must treat them accordingly. A Jewish society is fundamentally based upon the principle of reciprocal ethics. A person does not steal from or murder his neighbor, because he does not want his neighbor to do these acts to him. However if one hates us so much that their primary reason for living is to murder us, and they have the wherewithal to do so, then we are obligated to kill him first. 
- 
- [^goldstein]: __Goldstein Massacre:__ The politically correct Israeli narrative is that Goldstein was a mass murderer. There were a large number of discrepancies in the testimony that are too long to discuss here, and that _Justice Shamgar_ admitted he simply chose to ignore. Peres had a huge motive to expel the "settlers" in order to make good on his promise to Arafat that he be given a [Judenrein](https://en.wikipedia.org/wiki/Judenfrei) Palestinian state because the treaty that the _Knesset_ and the people accepted did not call for such expulsions. As my article clearly shows, the Oslo implementation was based on massive government lies - the most egregious being the government's hiding of Arafat's responsibility for years of terrorism that resulted in thousands of deaths. The judicial system "rubber stamped" all government decisions that tread on "settler's" rights where the most egregious were stripping them of their gun permits, and ten years later the Gush Katif _Disengagement_ expulsion, and they "rubber stamped" administrative detention of anti-Oslo activists that "magically" stopped as soon as Bibi was first elected PM in 1996. There is no longer any _prima facie_ reason to believe in the objectivity of the Oslo judiciary.  Therefore, I rely on the leaker's statement that Goldstein was framed.
- 
-[^peres-graft]: __Peres History Of Graft:__ Graft was already part of Peres' DNA before Oslo. In the mid-1980s Peres shrewdly understood from the massive trove that _Yonatan Pollard_ supplied to Israeli intelligence how then US Secretary of Defense _Caspar Weinberger_ had set up an illegal CIA "slush fund" for the _Iran-Contra Affair_.  Peres attempted to blackmail Weinberger. Weinberger became livid. Weinberger pulled out all stops in order to find Peres's source. Weinberger eventually discoverd that Pollard was the source.  Since Peres was diplomatically untouchable, Weinberger demanded that Pollard pay dearly by becoming the first allied spy ever in US history to be given a life sentence, while Peres was reverse-blackmailed to agree not to intervene. In order to save his own credibilty, Peres agreed to sacrifice Pollard who spent 28 years in a maximum security US prison (!), followed by 5 years of parole restrictions. On Peres' orders, then first secretary of the Israeli embassy, _Elyakim Rubinstein_, slammed the embassy doors on Pollard when the FBI was in hot pursuit. _Rafi Eitan_, who was Pollard's handler and subsequently a government minister, wrote a newspaper article in _Yediot Aharonot_ in 2012 exposing Peres' betrayal of Pollard. As former PM _Moshe Sharett_ wrote in his memoirs in 1957 (!) "I consider Peres' rise to prominence a malignant, immoral disgrace. I will rend my clothes in mourning for the State if I see him become a minister in the Israeli government". Also Rubinstein had a history of scratching Peres' back. In his capacity of Attorney General he allowed a softball prosecution of _Avishai Raviv_ on his complicity in the Rabin assassination, nor did he prosecute Raviv's boss _Carmi Gilon_ whose orders Raviv admitted that he was following. And he rezoned Peres' Jericho casino in order to allow Israel clientel to play there in order to make it financially viable, especially in spite of Rubinstein's harsh earlier criticism of gambling.
- 
- [^schlaff]: __Martin Schlaff:__ Schlaff's final _Stassi_ act was enabling senior _Stassi_ agents to rifle the East German treasury just before the reunification of East and West Germany in 1990. Rabin's last official meeting a few hours before his assassination in 1995 just happened to be with Schlaff at which time they discussed the Schlaff-Peres casino proposal to which Rabin was vehemently opposed. Rabin's Chief of  Staff Dubi Weisglass just so happened to represent Schlaff's business interests in Israel. Might this have been the true motive for Rabin's assassination? During the casino's first year of operation it had revenue of over \$50M per month.
- 
- [^blackmail]: __"Legal" Blackmail:__  The so-called "legal" system under the leadership of then Chief Justice [Aharon Barak](https://en.wikipedia.org/wiki/Aharon_Barak) played a key role in enabling the Oslo Accords and the subsequent so-called "Disengagement". During his tenure Israel became a legal "reign of terror". Selective prosecution was _de rigueur_. Barak revived enforcement of the nebulous laws of [administrative detention of Jews](https://www.jewishpress.com/news/israel/government-israel/dm-katz-revokes-settlers-administrative-detentions-after-reinstating-them/2025/01/17/) which allowed the authorities to simply jail particularly "obnoxious" individuals opposed to the government's leftist policies, just like British Mandatory authorities used to suppress Jewish dissenters. The most egregious subversions of justice by the Barak court were (1) blackmailing then PM Sharon to implement the Disengagement or else face criminal charges for his election campaign financing violations, and (2) the sham prosecution of [Avishai Raviv](https://en.wikipedia.org/wiki/Avishai_Raviv), i.e. the _Shabak_ agent who could directly connect the assassination of then PM Rabin to [Carmi Gilon](https://en.wikipedia.org/wiki/Carmi_Gillon), the then head of the _Shabak_. Even though the new PM Peres was forced, by across-the-board public opinion, to fire the disgraced Gilon, Peres shamelessly immediately rewarded him by appointing him to head a government corporation (_Avner Insurance_), next as CEO of the _Peres Center_, and next as ambassador to Denmark. 
- 
- [^conflict-of-interests]: __Conflict of Interests:__ During the time when Peres was a government minister, Israel had a number of shooting episodes with the Pals. Peres used his influence to attempt to ensure his major investments would not be damaged by IDF fire, e.g. _Paltel_ and the casino.
+ [^depravity]: __IDF General Staff Depravity:__ (1) From the Oslo Accords to this day (2025) it is accurate to describe the IDF General Staff as depraved. Generals are promoted precisely because they are sycophants who have no interests in winning wars . (Reformed leftist historian [Dr. Gadi Taub](https://www.israelnationalnews.com/news/404518) further develops this theme). We saw this clearly in their criminal lack of preparation for the recent October 7 Hamas massacres (e.g. _Yoav Gallant_, _Aharon Haliva_, and _Yaron Finkelman_). We saw it in their denial that the so-called _Disengagement_ would be an existential disaster (e.g. _Shaul Mofaz_). We saw it in their lackluster execution of the _Second Lebanese War_ (e.g. _Dan Halutz_). On account of the IDF's generous early retirement benefits, they view the IDF just as a stepping stone in their future career path whether in politics or business, so they refrain from engaging in any politically incorrect activities that might even prevent them from so much as taking a vacation with their wives for a London shopping spree, because a UK court might indict them for "abusing the rights" of a poor Palestinian. _Note that the spectacular initial response of the civilian reservists to the October 7 massacres was very much in spite of the hysteria and lack of preparedness of the General Staff._ (2) They are promoted because they subscribe to the pseudo ethical creed of their _purity of arms_ philosophy.  Note that the fundamental flaw of their military ethics guru _Asa Kasher_, who is worshiped by both the IDF and legal system, is that he recognizes that our Islamic enemies also have a valid claim to _Eretz Yisrael_ (English: Land of Israel) even though they stated to immigrate here only since the 1880s. Therefore in his opinion our wars are a "garden variety" fight over land. However it has finally (2025) become painfully obvious to the majority of sentient Israeli Jews, including secular ones, that the goal of our Islamic enemies is a religiously motivated  _jihad_ (English: _annihilation_) of our Jewish presence here, exactly like the Nazis wanted to do to European Jewry. Their claims about land rights are simply a pretext. Politically correct leftists prefer to forget about the 1929 Arab massacres before there was a significant "Zionist" presence here. Just listen to the regular Islamic rants from the Iranians. (Reformed leftist political scientist and former Labor _MK_ [Einat Wilf](https://www.linkedin.com/posts/einatwilf_seven-arab-states-declare-war-in-an-attempt-ugcPost-7196581590959874049-1eHt), and in more detail [here](https://www.youtube.com/watch?v=tOCCMaQ0rm0), further develops this theme). The enemy acts exactly like [Amalek](https://www.chabad.org/library/article_cdo/aid/3942715/jewish/Who-Were-Amalek-and-the-Amalekites.htm) did, and we must treat them accordingly. A Jewish society is fundamentally based upon the principle of reciprocal ethics. Aside from the fact that _Torah_ gives us these ethical commands, logically a person should not steal from or murder his neighbor is because he does not want his neighbor to do similar acts to him. However if our enemy hates us so much that his primary reason for living is to murder us, and he has the wherewithal to do so, then we have a _moral obligation_ to kill him first.
+
+[^goldstein]: __Baruch Goldstein Massacre:__ The politically correct Israeli narrative is that Goldstein was a mass murderer. There were a large number of discrepancies in the testimony that are too long to discuss here, and that _Justice Shamgar_ admitted he simply chose to ignore. Peres had a huge motive to expel the "settlers" in order to make good on his promise to Arafat that he be given a [Judenrein](https://en.wikipedia.org/wiki/Judenfrei) Palestinian state because the treaty that the _Knesset_ and the people accepted did not call for such expulsions. As my article clearly shows, the Oslo implementation was based on massive government lies - the most egregious being the government's hiding of Arafat's responsibility for years of terrorism that resulted in thousands of deaths. The judicial system "rubber stamped" all government decisions that tread on "settler's" rights where the most egregious were stripping them of their gun permits, and ten years later the Gush Katif _Disengagement_ expulsion, and they "rubber stamped" administrative detention of anti-Oslo activists that "magically" stopped as soon as Bibi was first elected PM in 1996. There is no longer any _prima facie_ reason to believe in the objectivity of the Oslo judiciary.  Therefore, I rely on the leaker's statement that Goldstein was framed.
 
 $endif
- 
