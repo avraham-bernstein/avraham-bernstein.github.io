@@ -1,7 +1,7 @@
 $py(
+html = 'AvrahamAbeBernstein-CV.html'
 pdf = 'AvrahamAbeBernstein-CV.pdf'
 www = 'https://www.avrahambernstein.com'
-html = 'AvrahamAbeBernstein-CV.html'
 if is_pdf:
     html = www + '/cv/' + html
 )
@@ -10,12 +10,12 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__Email:__ Avraham DOT Bernstein AT gmail<span class="hide">@</span> DOT com
 <br/>__Tel/Whatsapp:__ +<span class="hide">@</span>972.54.641-0955
 <br/>__Home Geolocation:__ Jerusalem 9727433 ISRAEL
-<br/>__WWW:__ [$(www)]($(www))
+<br/>__www:__ [$(www)]($(www))
 $if(not is_pdf)\
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 $endif\
-<br/>__Last Update:__ 2025-02-27
+<br/>__Last Update:__ 2025-02-28
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -25,7 +25,7 @@ __Secure[^secure] photo of the author from 2025__
 ---
 
 $if(not is_pdf)
-<button onclick="show_all_details()">Show All Details (useful for printing)</button> 
+<button onclick="show_all_details()">Click Here To Open All Details<br>(useful for printing, and close by reloading page)</button>
 
 ## <span class="hilite">Link To Short CV PDF "Shadow Version"</span>
 
@@ -42,13 +42,13 @@ $endif
     * [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics)
     * accessibility
     * factory automation
-    * VLSI chip design
+    * VLSI CPU design
     * etc.
-3. In order to jump start my learning process I prefer to find a domain expert to mentor me, and I am also a good mentor myself. 
-4. I am an [expert generalist](https://simplicable.com/new/expert-generalist) and an [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath)[^polymath]. I easily learn and become an expert in new fields.
+3. I am an [expert generalist](https://simplicable.com/new/expert-generalist) and an [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath)[^polymath]. I easily learn and become an expert in new fields.
+4. In order to jump start my learning process I prefer to find a domain expert to mentor me, and I am also a good mentor myself. 
 5. I am a "hands-on" master software engineer. I enjoy programming. I design prototypes and minimum viable products for _CTO_ groups.
 6. I know many computer languages which I am able to learn easily due to my [compiler](https://en.wikipedia.org/wiki/Compiler) background; and my compiler background allows me to design [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) and to engage in automated [code refactoring](https://en.wikipedia.org/wiki/Code_refactoring).
-7. I don't market myself as a programmer any more, but my "go to" _programming_ languages in which I am quite proficient are the following:
+7. My "go to" _programming_ languages in which I am quite proficient are the following:
     * _C_
     * _Python_ and _BeautifulSoup_
     * [Jinaj2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), the "gold standard" macro and template preprocessor
@@ -63,7 +63,7 @@ $endif
 
 <!-- <button onclick="show_all_details('work')">Show All "Work Experience" Details (useful for printing)</button> -->
 
-$py(id="aurora"; task="Automotive Software Updates: researcher in CTO office")
+$py(id="aurora"; task="Automotive Software Updates: Researcher in CTO office")
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
 
 $if(is_pdf)
@@ -80,7 +80,7 @@ $else
 </details>
 $endif
 
-$py(id="morphisec"; task="Server Cybersecurity: reverse engineering object code")
+$py(id="morphisec"; task="Server Cybersecurity: Reverse engineering X64 object code")
 ### 2021: [Morphisec](https://www.morphisec.com/) Beer Sheva IL {#$(id)}
 
 $if(is_pdf)
@@ -99,7 +99,7 @@ $else
 </details>
 $endif
 
-$py(id="qedit"; task="Banking Cybersecurity Using WASM: software consultant")
+$py(id="qedit"; task="Banking Cryptographic Algorithms: Securing C algorithms in a web browser using WASM")
 ### 2021: consultant to [Qedit](https://qed-it.com/) Tel Aviv IL {#$(id)}
 
 $if(is_pdf)
@@ -114,8 +114,8 @@ $else
 </details>
 $endif
 
-$py(id="argus"; task="Automotive Software Updates: software research")
-### 2018-20: [Argus Cyber Security](https://en.wikipedia.org/wiki/Argus_Cyber_Security) Tel Aviv IL (renamed [PlaxidityX](https://plaxidityx.com/) IL, subsidiary of [Elektrobit/Continental](https://www.elektrobit.com/) DE) {#$(id)}
+$py(id="argus"; task="Automotive Software Updates: Software researcher")
+### 2018-20: [Argus Cyber Security](https://en.wikipedia.org/wiki/Argus_Cyber_Security) Tel Aviv IL (restructured as [PlaxidityX](https://plaxidityx.com/) IL, subsidiary of [Elektrobit/Continental](https://www.elektrobit.com/) DE) {#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
@@ -141,7 +141,7 @@ $else
 </details>
 $endif
 
-$py(id="viaccess"; task="Internet TV Cybersecurity: S/W security manager")
+$py(id="viaccess"; task="Internet TV Infrastructure: Cybersecurity obfuscation manager")
 ### 2014-17: [Viaccess-Orca](https://www.viaccess-orca.com/) Ra'anana IL (subsidiary of [Orange](https://www.orange.com/) FR) {#$(id)}
 
 $if(is_pdf)
@@ -160,9 +160,9 @@ $else
 </details>
 $endif
 
-### 2013-14: _Discretix_ Netanya IL (renamed _Sansa Security_, acquired by [ARM](https://www.arm.com) UK)
+### 2013-14: _Discretix_ Netanya IL (renamed _Sansa Security_, acquired by [ARM](https://www.arm.com) UK); Internet TV Cybersecurity {#discretix}
 
-The company sold their Internet TV Cybersecurity business unit to [Viaccess-Orca (2014)]($(html)#$(id)) above.
+The company sold their Internet TV business unit to [Viaccess-Orca (2014)]($(html)#$(id)) above.
 
 $py(id="telequest"; task="Vehicle Navigation Algorithms: VP R&D")
 ### 2012: [Telequest](https://www.telequest.co.il) (stealth) Jerusalem IL {#$(id)}
@@ -176,14 +176,14 @@ $else
 
 2. I developed algorithms to improve traffic throughput in traffic jams taking advantage of expected traffic trends according to history of the day of the week and expected events. 
 
-3. I designed live experiments using AWS simulations to optimize results. Co-donated work with a mathematical consultant specializing in optimization algorithms for a huge number of variables.
+3. I designed live experiments using AWS simulations to optimize results. Coordinated work with a mathematical consultant specializing in optimization algorithms for a huge number of variables.
 
 4. Theoretical algorithm experiments were conducted on a simulator of Tokyo traffic.
 
 </details>
 $endif
 
-$py(id="syntezza"; task="Novel Bioinformatics PCR Algorithms: software consultant")
+$py(id="syntezza"; task="PCR MRSA Kit: Inventor of bioinformatic PCR algorithm")
 ### 2011: consultant to [Syntezza Bioscience](https://www.syntezza.com/) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
@@ -246,8 +246,8 @@ therefore my [threshold  algorithm](https://www.pythonprog.com/thresholding-in-m
 </details>
 $endif
 
-$py(id="NDS"; task="Internet TV Cybersecurity: software researcher")
-### 2005-10: _NDS_ Jerusalem IL (eventually acquired by [Synamedia](https://www.synamedia.com/) UK) {#$(id)}
+$py(id="NDS"; task="Internet TV Infrastructure: Cybersecurity software researcher")
+### 2005-10: _NDS_ Jerusalem IL (acquired by [Synamedia](https://www.synamedia.com/) UK) {#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
@@ -273,7 +273,7 @@ $else
 </details>
 $endif
 
-$py(id="vyyo2004"; task="Broadband Wireless Cable Networking Testing Laboratory: architect")
+$py(id="vyyo2004"; task="Broadband RF Networking: Architect of super-efficient cable modem testing laboratory")
 ### 2004: _Vyyo_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
@@ -294,7 +294,7 @@ $else
 </details>
 $endif
 
-$py(id="virtouch"; task="Blind Accessibility: VP R&D")
+$py(id="virtouch"; task="Blind Accessibility Device: Inventor and VP R&D")
 ### 2002-03: _Virtouch_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
@@ -325,12 +325,12 @@ $else
 </details>
 $endif
 
-### 2002: _TMT_ (defunct) Jerusalem IL
+### 2002: _TMT_ (defunct) Jerusalem IL; Local Area RF Networking
 
-The company built local wireless cable networking equipment. I did similar tasks for _Vyyo_. See [Vyyo (2004) above]($(html)#vyyo2004) and [Vyyo (2000) below]($(html)#vyyo2000).
+I did similar tasks for _Vyyo_. See [Vyyo (2004) above]($(html)#vyyo2004) and [Vyyo (2000) below]($(html)#vyyo2000).
 
-$py(id="jolt"; task="Free Space Optics (FSO) Network Utilities: software consultant")
-### 2002: consultant to _Jolt_ Jerusalem IL (acquired by _MRV Communications_ IL, and eventually by [Adtran](https://www.adtran.com) US) {#$(id)}
+$py(id="jolt"; task="Free Space Optics Networking: Designer of SNMP NMS client and agent")
+### 2002 part-time consultant: _Jolt_ Jerusalem IL (acquired by _MRV Communications_ IL, and eventually by [Adtran](https://www.adtran.com) US) {#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
@@ -346,7 +346,7 @@ $else
 </details>
 $endif
 
-$py(id="vyyo2000"; task="Broadband Wireless Cable Networking: manager offline S/W utilities")
+$py(id="vyyo2000"; task="Broadband RF Networking: Manager of S/W utilities")
 ### 2000-02: _Vyyo_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
@@ -365,12 +365,12 @@ $else
 </details>
 $endif
 
-### 1999: contractor to _Phasecom_ Jerusalem IL (acquired by _Vyyo_ above)
+### 1999: contractor to _Phasecom_ Jerusalem IL (acquired by _Vyyo_ above); Broadband RF Networking {#phasecom}
 
 See the tasks that I did for the successor company [Vyyo (above)]($(html)#$(id)).
 
-$py(id="fourfold"; task="VLSI FORTH-like Stack CPU Novel GCC Compiler Port: S/W architect")
-### 1998: consultant to _Fourfold_ (defunct) Jerusalem IL {#$(id)}
+$py(id="fourfold"; task="Fabless VLSI CPU Design: Novel GCC compiler port for a FORTH-like CPU")
+### 1998: contractor to _Fourfold_ (defunct) Jerusalem IL  {#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
@@ -382,7 +382,7 @@ $else
 </details>
 $endif
 
-$py(id="optimet"; task="DSL for a conoscopic laser interferometry robot: S/W architect")
+$py(id="optimet"; task="Conoscopic Laser Interferometry: S/W architect of a DSL for a 2D measurement  robot")
 ### 1996-97: CEO _Pitkha_ (defunct) Jerusalem IL, contractor for _Optimet_ Jerusalem IL, subsidiary of [Ophir Optronics](https://www.ophiropt.com/en/) IL {#$(id)}
 
 $if(is_pdf)
@@ -397,8 +397,8 @@ $else
 </details>
 $endif
 
-$py(id="elop"; task="DSL for a mil-spec automated testing laboratory for the _BlackHawk_ helicopter: S/W architect")
-### 1996: CEO _Pitkha_ (defunct) Jerusalem IL, contractor for [Elop/Elbit](https://elbitsystems.com/) Rehovot IL {#$(id)}
+$py(id="elop"; task="Military Optical Devices: S/W architect of a DSL used to implement a mil-spec automated testing laboratory for the BlackHawk helicopter weapons targeting system" )
+### 1996: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to [Elop/Elbit](https://elbitsystems.com/) Rehovot IL{#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
@@ -414,8 +414,8 @@ $else
 </details>
 $endif
 
-$py(id="dspg"; task="DSL for the VLSI _PINE_  CPU software tool chain: S/W architect")
-### 1992-95: CEO _Pitkha_ (defunct) Jerusalem IL, contractor for [DSP Group](https://www.dspg.com/) Ramat Gan IL {#$(id)}
+$py(id="dspg"; task="Fabless DSP CPU  Design Center: Inventor and S/W architect of a DSL used to implement the software tool chain for the PINE CPU")
+### 1992-95: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to [DSP Group](https://www.dspg.com/) Ramat Gan IL {#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
@@ -439,8 +439,8 @@ $else
 </details>
 $endif
 
-$py(id="iscar"; task="DSL for a shop floor product control system that conducted a completely automated factory: S/W co-architect")
-### 1990-91: consultant to [Digital Equipment Corp (DEC)](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation) Herzliya IL (eventually acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL), contractor for [Iscar Metalworking](https://www.iscar.com/index.aspx/countryid/1/lang/en) {#$(id)}
+$py(id="iscar"; task="Metal Blade Production Factory: Co-inventor and S/W architect of a DSL used to implement a shop floor production control system that orchestrated a completely automated factory")
+### 1990-91: contractor to [Digital Equipment Corp (DEC)](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation) Herzliya IL (eventually acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL), contractor to [Iscar Metalworking](https://www.iscar.com/index.aspx/countryid/1/lang/en) {#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
@@ -452,8 +452,8 @@ $else
 </details>
 $endif
 
-$py(id="cubital-printer"; task="Stereo lithography (i.e. 3D printing) device: intermediate programmer")
-### 1988-89: consultant to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
+$py(id="cubital-printer"; task="One Of The Original 3D Printers: Intermediate programmer")
+### 1988-89: contractor to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
@@ -475,7 +475,7 @@ $else
 </details>
 $endif
 
-$py(id="cubital-accessibility"; task="Public domain accessibility project for quadriplegics: S/W architect")
+$py(id="cubital-accessibility"; task="PC Accessibility Device For Quadriplegics: Inventor and S/W architect")
 ### 1989: consultant to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
 
 $if(is_pdf)
@@ -496,7 +496,7 @@ $else
 </details>
 $endif
 
-$py(id="orisol"; task="DSL for a real-time leather sewing robot: S/W architect")
+$py(id="orisol"; task="High Speed Sewing Robot For Leather Goods: S/W architect of a DSL used to control the robot")
 ### 1987: _Orisol_ (defunct) Lod IL {#$(id)}
 
 $if(is_pdf)
@@ -519,7 +519,7 @@ $endif
 
 ### 1980-86: Junior Programmer and Economist Positions in the US and Israel
 
-$py(id="oeb"; task="Public interest intervenor-economist in the ECAP77 hearings on marginal cost pricing for electricity")
+$py(id="oeb"; task="Public Utility Commission: Public interest intervenor-economist at the ECAP77 hearings on marginal cost pricing for electricity")
 ### 1977: [Ontario Energy Board](https://www.oeb.ca) Toronto Ontario {#$(id)}
 
 $if(is_pdf)
@@ -863,7 +863,7 @@ $endif
 
 1. __1978-79:__ [York Univ Graduate School](https://www.yorku.ca/) Toronto Ontario: __masters degree in economics with a minor in applied mathematics[^york]__
 
-    * My major project was the simulation of a hydro electric dam in _FORTRAN_.
+    * My major project was an economic-engineering simulation of a hydro electric dam in _FORTRAN_.
 
 2. __1976-77:__ [Univ Of Toronto Rotman Graduate School Of Management](https://www.rotman.utoronto.ca/) Toronto Ontario: __no degree, applied credits to York Univ (above)__
 
@@ -907,8 +907,8 @@ In the _Torah_ in [Gen. 18:19](https://mechon-mamre.org/p/pt/pt0118.htm) (Hebrew
 
     a. In 1995 I initially received these orders at an _impromptu_ visit in the field from then Major General, _Ilan Biran_, where I vigorously argued with him. At the time I was a corporal. The sycophantic general also said that he felt Oslo would usher in an era of peace that would reduce the need for any IDF presence along the Jordanian border, at the exact same time that the so-called "suicide" bus bombing campaign was in full swing in Israeli cities! Afterwards I wrote the general an official letter of complaint to which his bureau responded that I had "wax in my ears" in which they clarified why such an order _would have been_ patently illegal. A year later I received the exact same orders at a meeting of brigade officers under the command of then Major General _Uzi Dyan_, _Biran's_ successor. I anticipated such an order, so I took the letter with me. When the brigade (Hebrew: _Hativa_) commander, a colonel, started spewing his nonsense, I jumped up waving the letter from his predecessor why his orders were patently illegal. His jaw dropped.
     b. I had already prepared my petition to the Supreme Court which I instructed my attorney to file that very same day. On the next day the army sent a brigadier general (Hebrew: _Tat Aluf_) to interview me, a corporal, about my objections. The brigadier didn't deal with the substance of my objections. Instead he claimed that I would cause WW III, and according to script he threw me out of the army - for the the rest of my reserve duty that season. From home, I immediately started to give interviews to the media. Soon I received a telephone call from my regiment's (Hebrew: _Gdud_) sergeant major who sternly warned me that soldiers in uniform were not permitted to speak with the media. When I reminded him that the army threw me out, he burst out laughing.
-    c. Immediately the Attorney General (AG) responded _in camera_  without my presence to Justice _Tzvi Tal_, who was on administrative "gate keeper" duty (Hebrew: _Shofet Toran_), that my petition was irrelevant and that I had no legal standing, because the IDF had thrown me out. _Baruch HaShem_ (English: thank God), _Tal_ ordered that my petition be heard with 10 days, referred to in Hebrew as a _Bagatz Bazak_. The AG had the audacity not to provide me with his response until I arrived at the court room, when he then attempted to argue that on account of "military secrecy", I did not have sufficient clearance to be allowed into the court room!
-    d. In the court room the AG and the IDF Adjutant General audaciously claimed that they never issued any such order. (Note that such a bald lie in a legal deposition is normally a very serious criminal offense, unless you happen to be the Attorney General). I brought affidavits from other soldiers, and it was obvious that thousands of other soldiers who heard this ridiculous order were seething too. The court agreed that such an order would be illegal, while the court accepted the IDF's lame excuse that it would be inconceivable that such outrageoulsy illegal orders could ever have been issued by these illustrious generals.  Is it surprising that the senior judge on the panel who accepted this charade was none other than then Chief "Justice" Aharon Barak who presided over this travesty of justice held "behind closed doors" under the rubric of "military secrecy" in order to keep the IDF General Staff's depravity[^depravity] and sycophancy hidden from the general public?
+    c. Immediately the Attorney General (AG) responded _in camera_  without my presence before Justice _Tzvi Tal_, who was on administrative "gate keeper" duty (Hebrew: _Shofet Toran_), that my petition was irrelevant and that I had no legal standing, because the IDF had thrown me out. _Baruch HaShem_ (English: thank God), _Tal_ ordered that my petition be heard within 10 days, referred to in Hebrew as a _Bagatz Bazak_. The AG had the audacity not to provide me with his response until the moment I arrived in the court room, when he then attempted to argue that on account of "military secrecy", I did not have sufficient clearance to be allowed into the court room!
+    d. In the court room the AG and the IDF Adjutant General audaciously claimed that they never issued any such order. (Note that such a bald lie in a legal deposition is normally a very serious criminal offense, unless you happen to be the Attorney General). I brought affidavits from other soldiers, and it was obvious that thousands of other soldiers who heard this ridiculous order were seething too. The court agreed that such an order would be illegal, while the court accepted the IDF's lame excuse that it would be inconceivable that such outrageously illegal orders could ever have been issued by these illustrious generals.  Is it surprising that the senior judge on the panel who accepted this charade was none other than then Chief "Justice" Aharon Barak who presided over this travesty of justice held "behind closed doors" under the rubric of "military secrecy" in order to keep the IDF General Staff's depravity[^depravity] and sycophancy hidden from the general public?
     
     </details>
 
