@@ -15,7 +15,7 @@ $if(not is_pdf)\
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 $endif\
-<br/>__Last Update:__ 2025-02-28
+<br/>__Last Update:__ 2025-03-02
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -63,7 +63,7 @@ $endif
 
 <!-- <button onclick="show_all_details('work')">Show All "Work Experience" Details (useful for printing)</button> -->
 
-$py(id="aurora"; task="Automotive Software Updates: Researcher in CTO office")
+$py(id="aurora"; task="Automotive Software Updates: CTO Group: Patent greatly reducing RAM consumption during FLASH updates; and greatly improved CPU efficiency and RAM consumption required for automated refactoring of C source code")
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
 
 $if(is_pdf)
@@ -80,7 +80,26 @@ $else
 </details>
 $endif
 
-$py(id="morphisec"; task="Server Cybersecurity: Reverse engineering X64 object code")
+$py(id="jct"; task="Lecturer on introduction to Cybersecurity")
+### 2022 part-time: [Jerusalem College Of Technology (JCT/Machon Lev)](https://www.jct.ac.il/en) Jerusalem IL {#$(id)}
+
+$if(is_pdf)
+[Details: $(task)]($(html)#$(id))
+$else
+<details markdown="1"><summary>$(task)</summary>
+
+1. I had mixed reviews from the students.
+
+2. They found I was a superb lecturer because I showed them how some of the course materials were  regularly used by Cybersecurity professionals in industry, unlike most of the teaching staff who were full-time academics.
+
+3. On the other hand, they rated me very poorly on my tutorials because I refused to "spoon feed" them. Admittedly some of the exercises were very difficult, and required substantial effort to answer them. I argued that it was essential for their understanding of the material that they solve the exercises themselves. I even stayed after class to help them.
+
+4. My takeaway is that if I should teach there again then I will not offer to do tutorials.
+
+</details>
+$endif
+
+$py(id="morphisec"; task="Server Cybersecurity: Reverse engineering and refactoring of X64 object code")
 ### 2021: [Morphisec](https://www.morphisec.com/) Beer Sheva IL {#$(id)}
 
 $if(is_pdf)
@@ -114,7 +133,7 @@ $else
 </details>
 $endif
 
-$py(id="argus"; task="Automotive Software Updates: Software researcher")
+$py(id="argus"; task="Automotive Software Updates: Patent greatly reducing FLASH memory required to implement bsdiff")
 ### 2018-20: [Argus Cyber Security](https://en.wikipedia.org/wiki/Argus_Cyber_Security) Tel Aviv IL (restructured as [PlaxidityX](https://plaxidityx.com/) IL, subsidiary of [Elektrobit/Continental](https://www.elektrobit.com/) DE) {#$(id)}
 
 $if(is_pdf)
@@ -141,6 +160,42 @@ $else
 </details>
 $endif
 
+$py(id="canary-mission"; task="SOHO Cybersecurity")
+### 2016 part-time: consultant to [Canary Mission](https://canarymission.org/) Jerusalem IL {#$(id)}
+
+$if(is_pdf)
+[Details: $(task)]($(html)#$(id))
+$else
+<details markdown="1"><summary>$(task)</summary>
+
+1. The company publicized public media posts of antisemites and anti-Zionists. Their information was used by the Israeli government immigration authorities, and by potential employers who often did social media background checks. Because they were extremely effective, left-wing organizations, including Jewish ones, hated them. They were the subject of intensive hostile cyber investigations by professional left-wing media organizations including [Times of Israel](https://www.timesofisrael.com/) and [The Forward](https://forward.com/). 
+
+2. The vast majority of their employees did journalist-like tasks. They had garden variety computer skills, and therefore would not be capable of handling sophisticated tasks like using virtual machine clients (e.g. [VirtualBox](https://www.virtualbox.org/)) or using [PGP](https://en.wikipedia.org/wiki/Encryption_software).
+
+3. The following are relatively simple, but effective, recommendations:
+
+    a. Use the then most recent Windows 10 Professional O/S on account of its regular security updates and its support of [BitLocker](https://support.microsoft.com/en-us/windows/bitlocker-drive-encryption-76b92ac9-1040-48d6-9f5f-d14b3c5fa178) full disk encryption. PCs are lost and stolen.
+    
+    b.  Use a random PC login password from a USB security dongle such as [Yubico](https://www.yubico.com/), along with a manual [passphrase](https://www.techrepublic.com/article/what-is-passphrase/) prefix. 
+
+    c. When the PC is unattended close the cover, and use a screen saver with a relatively short timeout, e.g. 10 minutes, Configure so that resumption requires a password. 
+
+    d. Use the _Firefox_ web browser (and not _Google Chrome_ !) with _multiple profiles_ in order to defend against [cross-site scripting attacks](https://en.wikipedia.org/wiki/Cross-site_scripting). There is no information leakage between profiles. They should have the following profiles:
+
+        * personal email and banking
+        * personal browsing
+        * company email and access to company data
+        * company browsing
+
+    e. Use email aliases when required to access social media.
+    
+    f. Use strong random passwords generated and stored in a _local_ [FOSS](https://itsfoss.com/what-is-foss/) password database application such as [KeePass](https://keepassxc.org/), and not a commerical password server. And as long as they used their security dongle for their random database password, then they could store their password database on a personal disk-on-key or a cloud file server such as [Dropbox](https://www.dropbox.com/). 
+    
+    g. Use [7-zip](https://www.7-zip.org/) for password protection of disk-on-key storage or file transfers. For file transfers, It has the disadvantage of using shared passwords, and therefore not nearly as secure as _PGP_, but defintely far better than in-the-clear transfers.
+
+</details>
+$endif
+
 $py(id="viaccess"; task="Internet TV Infrastructure: Cybersecurity obfuscation manager")
 ### 2014-17: [Viaccess-Orca](https://www.viaccess-orca.com/) Ra'anana IL (subsidiary of [Orange](https://www.orange.com/) FR) {#$(id)}
 
@@ -164,7 +219,7 @@ $endif
 
 The company sold their Internet TV business unit to [Viaccess-Orca (2014)]($(html)#$(id)) above.
 
-$py(id="telequest"; task="Vehicle Navigation Algorithms: VP R&D")
+$py(id="telequest"; task="Vehicle Navigation Algorithms: VP R&D: Traffic jam reduction algorithms")
 ### 2012: [Telequest](https://www.telequest.co.il) (stealth) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
@@ -183,7 +238,7 @@ $else
 </details>
 $endif
 
-$py(id="syntezza"; task="PCR MRSA Kit: Inventor of bioinformatic PCR algorithm")
+$py(id="syntezza"; task="PCR MRSA Kit: Inventor of bioinformatic PCR algorithms using AI threshold technique, and more accurate bioassay normalization and noise reduction")
 ### 2011: consultant to [Syntezza Bioscience](https://www.syntezza.com/) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
@@ -246,7 +301,7 @@ therefore my [threshold  algorithm](https://www.pythonprog.com/thresholding-in-m
 </details>
 $endif
 
-$py(id="NDS"; task="Internet TV Infrastructure: Cybersecurity software researcher")
+$py(id="NDS"; task="Internet TV Infrastructure: Cybersecurity researcher")
 ### 2005-10: _NDS_ Jerusalem IL (acquired by [Synamedia](https://www.synamedia.com/) UK) {#$(id)}
 
 $if(is_pdf)
@@ -294,7 +349,7 @@ $else
 </details>
 $endif
 
-$py(id="virtouch"; task="Blind Accessibility Device: Inventor and VP R&D")
+$py(id="virtouch"; task="Blind Accessibility Device: VP R&D: Inventor of product that allowed the blind to see/understand images in a PC/smartphone web browser ideally combined with a consumer grade graphics tablet")
 ### 2002-03: _Virtouch_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
@@ -346,7 +401,7 @@ $else
 </details>
 $endif
 
-$py(id="vyyo2000"; task="Broadband RF Networking: Manager of S/W utilities")
+$py(id="vyyo2000"; task="Broadband RF Networking: Manager of S/W utilities group; inventor of cable modem hybrid (RF/dial-up) IP allocation protocol")
 ### 2000-02: _Vyyo_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
@@ -397,7 +452,7 @@ $else
 </details>
 $endif
 
-$py(id="elop"; task="Military Optical Devices: S/W architect of a DSL used to implement a mil-spec automated testing laboratory for the BlackHawk helicopter weapons targeting system" )
+$py(id="elop"; task="Military Optical Devices: S/W architect of a DSL to implement a mil-spec automated testing laboratory for the BlackHawk helicopter weapons targeting system" )
 ### 1996: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to [Elop/Elbit](https://elbitsystems.com/) Rehovot IL{#$(id)}
 
 $if(is_pdf)
@@ -414,7 +469,7 @@ $else
 </details>
 $endif
 
-$py(id="dspg"; task="Fabless DSP CPU  Design Center: Inventor and S/W architect of a DSL used to implement the software tool chain for the PINE CPU")
+$py(id="dspg"; task="Fabless DSP CPU  Design Center: Inventor and S/W architect of a DSL to implement the software tool chain for the PINE CPU")
 ### 1992-95: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to [DSP Group](https://www.dspg.com/) Ramat Gan IL {#$(id)}
 
 $if(is_pdf)
@@ -439,7 +494,7 @@ $else
 </details>
 $endif
 
-$py(id="iscar"; task="Metal Blade Production Factory: Co-inventor and S/W architect of a DSL used to implement a shop floor production control system that orchestrated a completely automated factory")
+$py(id="iscar"; task="Metal Blade Production Factory: Co-inventor and S/W architect of a DSL to implement a shop floor production control system that orchestrated a completely automated factory")
 ### 1990-91: contractor to [Digital Equipment Corp (DEC)](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation) Herzliya IL (eventually acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL), contractor to [Iscar Metalworking](https://www.iscar.com/index.aspx/countryid/1/lang/en) {#$(id)}
 
 $if(is_pdf)
@@ -452,7 +507,7 @@ $else
 </details>
 $endif
 
-$py(id="cubital-printer"; task="One Of The Original 3D Printers: Intermediate programmer")
+$py(id="cubital-printer"; task="One Of The Original 3D Printers: S/W R&D")
 ### 1988-89: contractor to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
 
 $if(is_pdf)
@@ -460,7 +515,7 @@ $if(is_pdf)
 $else
 <details markdown="1"><summary>$(task)</summary>
 
-1. The company was a pioneer in the 3D printing industry, originally known as "stereo lithography" or "solid ground curing". Their "Solider" device weighed 4.5 ton and was the size of and was shipped in a half-size container. The parts were made from a polymer that was heated into a liquid, and the holes were filled with liquid wax. When a part cooled it became solid, while the wax melts in hot water and drains away.
+1. The company was a pioneer in the 3D printing industry, originally known as "stereo lithography" or "solid ground curing". Their "Solider" device weighed 4.5 ton and was the size of a half-size shipping container. The parts were made from a polymer that was heated into a liquid, and the holes were filled with liquid wax. When a part cooled it became solid, while the wax melts in hot water and drains away.
 
 2. I developed a _VAX/VMS_  printer driver by considering each layer of the printer output as if it were a separate page.
 
@@ -550,7 +605,7 @@ $if(is_pdf)
 $else
 <details markdown="1">
 
-Note the public domain copyright at the beginning of this document.
+<span class="hilite">Note the public domain copyright at the beginning of this document.<span>
 
 ###  1. Crypto: Adler-32 Checksum Redux {#adler-32}
 
@@ -882,10 +937,10 @@ $else
 <details markdown="1">
 
 1. __Born:__ 1957 Canada.
-2. ___Aliyah_ (English: immigration to Israel)__: 1983.
+2. ___Aliyah_ (English: immigration to Israel)__: 1983. Triple great grandfather was a disciple of the Vilna Gaon (Hebrew: _Gra_) who is buried on the Mount of Olives (Hebrew: _Har HaZeitim_).
 3. __Married:__ 2 boys + 2 girls, all married with many grandchildren. all of whom live in _Eretz Yisrael_ (English: the Land of Israel).
 4. __Religious Beliefs:__ God-fearing observant Jew and Zionist.
-5. __IDF Reserves:__ 1988-2001 combat infantry sergeant, where I served in the Central Command (Hebrew: _Pikud HaMerkaz_) in the Jordan Valley. Exceptionally I often acted in the role of deputy company commander (Hebrew: _Samap_) even though I was a _Shlav Betnik_ (English: those first drafted over age 26) with only 4 months of basic training. Considering that the IDF intended to send me to a combat infantry unit for the whole period of my 13 years of reserve duty, about half of my basic training was a complete waste of time, e.g. kitchen duty, gardening duty, and guard duty, instead of primarily focusing on combat skills.
+5. __IDF Reserves:__ 1988-2001 combat infantry sergeant, where I served in the Central Command (Hebrew: _Pikud HaMerkaz_) in the Jordan Valley. Exceptionally I often acted in the role of deputy company commander (Hebrew: _Samap_) even though I was a _Shlav Betnik_ (English: those first drafted over age 26) with only 4 months of basic training. Considering that the IDF intended to send me to a combat infantry unit for the whole period of my 13 years of reserve duty, about 3/4 of my basic training was a complete waste of time, e.g. kitchen duty, gardening duty, and guard duty, instead of primarily focusing on combat skills.
 6. __Sport:__ I still engage in regular vigorous exercise at a gym for 90 min 3x per week - cardio and heavy weights. When I was younger I engaged in Judo, freestyle wrestling, and Tai Chi.
 7. __Meditation:__ Developed my own meditation technique  based upon the principle of sympathetic harmonics. I can almost instantaneously lower my pulse to under 55 bpm. I can quickly teach this technique to others with just a clock that has a sweep second hand, and ideally by using a high speed metronome app that supports 300 beats per min, i.e. 5 Hz the brain's theta wave frequency.
 8. __Hobbies:__ Classical guitar (currently rusty). I teach the use of music composition software to my musically inclined children (one of whom is a concert cellist) and grandchildren.
@@ -971,7 +1026,7 @@ $if(not is_pdf)
 
  [^chosen]: __Chosen People:__ It is quite telling that that the biggest haters of the Jewish People throughout history derive their hatred from this exact verse. What infuriates them is that Jews are the conscience of the world, who recognize a higher Divine law than _patently immoral_ laws of dictators and kings, and even of elected governments (e.g. Pharaoh, Haman, and Hitler). On the other hand, it is important to remember that throughout history there have existed a few brave non-Jews who [feared God](https://rabbisacks.org/covenant-conversation/shemot/on-not-obeying-immoral-orders/) by defying patently immoral laws of their governments, e.g. the Egyptian midwives Shifra and Puah in [Exodus 1:17](https://mechon-mamre.org/p/pt/pt0201.htm), and modern day [righteous gentiles](https://en.wikipedia.org/wiki/Righteous_Among_the_Nations) who hid Jews from the Nazis at great risk to their own lives.
  
- [^depravity]: __IDF General Staff Depravity:__ (1) From the Oslo Accords to this day (2025) it is accurate to describe the IDF General Staff as depraved. Generals are promoted precisely because they are sycophants who have no interests in winning wars . (Reformed leftist historian [Dr. Gadi Taub](https://www.israelnationalnews.com/news/404518) further develops this theme). We saw this clearly in their criminal lack of preparation for the recent October 7 Hamas massacres (e.g. _Yoav Gallant_, _Aharon Haliva_, and _Yaron Finkelman_). We saw it in their denial that the so-called _Disengagement_ would be an existential disaster (e.g. _Shaul Mofaz_). We saw it in their lackluster execution of the _Second Lebanese War_ (e.g. _Dan Halutz_). On account of the IDF's generous early retirement benefits, they view the IDF just as a stepping stone in their future career path whether in politics or business, so they refrain from engaging in any politically incorrect activities that might even prevent them from so much as taking a vacation with their wives for a London shopping spree, because a UK court might indict them for "abusing the rights" of a poor Palestinian. _Note that the spectacular initial response of the civilian reservists to the October 7 massacres was very much in spite of the hysteria and lack of preparedness of the General Staff._ (2) They are promoted because they subscribe to the pseudo ethical creed of their _purity of arms_ philosophy.  Note that the fundamental flaw of their military ethics guru _Asa Kasher_, who is worshiped by both the IDF and legal system, is that he recognizes that our Islamic enemies also have a valid claim to _Eretz Yisrael_ (English: Land of Israel) even though they stated to immigrate here only since the 1880s. Therefore in his opinion our wars are a "garden variety" fight over land. However it has finally (2025) become painfully obvious to the majority of sentient Israeli Jews, including secular ones, that the goal of our Islamic enemies is a religiously motivated  _jihad_ (English: _annihilation_) of our Jewish presence here, exactly like the Nazis wanted to do to European Jewry. Their claims about land rights are simply a pretext. Politically correct leftists prefer to forget about the 1929 Arab massacres before there was a significant "Zionist" presence here. Just listen to the regular Islamic rants from the Iranians. (Reformed leftist political scientist and former Labor _MK_ [Einat Wilf](https://www.linkedin.com/posts/einatwilf_seven-arab-states-declare-war-in-an-attempt-ugcPost-7196581590959874049-1eHt), and in more detail [here](https://www.youtube.com/watch?v=tOCCMaQ0rm0), further develops this theme). The enemy acts exactly like [Amalek](https://www.chabad.org/library/article_cdo/aid/3942715/jewish/Who-Were-Amalek-and-the-Amalekites.htm) did, and we must treat them accordingly. A Jewish society is fundamentally based upon the principle of reciprocal ethics. Aside from the fact that _Torah_ gives us these ethical commands, logically a person should not steal from or murder his neighbor is because he does not want his neighbor to do similar acts to him. However if our enemy hates us so much that his primary reason for living is to murder us, and he has the wherewithal to do so, then we have a _moral obligation_ to kill him first.
+ [^depravity]: __IDF General Staff Depravity:__ (1) From the Oslo Accords to this day (2025) it is accurate to describe the IDF General Staff as depraved. Generals are promoted precisely because they are sycophants who have no interests in winning wars . (Reformed leftist historian [Dr. Gadi Taub](https://www.israelnationalnews.com/news/404518) further develops this theme). We saw this clearly in their criminal lack of preparation for the recent October 7 Hamas massacres (e.g. _Yoav Gallant_, _Ronen Bar_, _Herzl Halevi_, _Yaron Finkelman_, and especially [Aharon Haliva](https://www.israelnationalnews.com/news/381191) who should be court martialed and executed). We saw it in their denial that the so-called _Disengagement_ would be an existential disaster (e.g. _Shaul Mofaz_). We saw it in their lackluster execution of the _Second Lebanese War_ (e.g. _Dan Halutz_). On account of the IDF's generous early retirement benefits, they view the IDF just as a stepping stone in their future career path whether in politics or business, so they refrain from engaging in any politically incorrect activities that might even prevent them from so much as taking a vacation with their wives for a London shopping spree, because a UK court might indict them for "abusing the rights" of a poor Palestinian. _Note that the spectacular initial response of the civilian reservists to the October 7 massacres was very much in spite of the hysteria and lack of preparedness of the General Staff._ (2) They are promoted because they subscribe to the pseudo ethical creed of their _purity of arms_ philosophy.  Note that the fundamental flaw of their military ethics guru _Asa Kasher_, who is worshiped by both the IDF and legal system, is that he recognizes that our Islamic enemies also have a valid claim to _Eretz Yisrael_ (English: Land of Israel) even though they stated to immigrate here only since the 1880s. Therefore in his opinion our wars are a "garden variety" fight over land. However it has finally (2025) become painfully obvious to the majority of sentient Israeli Jews, including secular ones, that the goal of our Islamic enemies is a religiously motivated  _jihad_ (English: _annihilation_) of our Jewish presence here, exactly like the Nazis wanted to do to European Jewry. Their claims about land rights are simply a pretext. Politically correct leftists prefer to forget about the 1929 Arab massacres before there was a significant "Zionist" presence here. Just listen to the regular Islamic rants from the Iranians. (Reformed leftist political scientist and former Labor _MK_ [Einat Wilf](https://www.linkedin.com/posts/einatwilf_seven-arab-states-declare-war-in-an-attempt-ugcPost-7196581590959874049-1eHt), and in more detail [here](https://www.youtube.com/watch?v=tOCCMaQ0rm0), further develops this theme). The enemy acts exactly like [Amalek](https://www.chabad.org/library/article_cdo/aid/3942715/jewish/Who-Were-Amalek-and-the-Amalekites.htm) did, and we must treat them accordingly. A Jewish society is fundamentally based upon the principle of reciprocal ethics. Aside from the fact that _Torah_ gives us these ethical commands, logically a person should not steal from or murder his neighbor is because he does not want his neighbor to do similar acts to him. However if our enemy hates us so much that his primary reason for living is to murder us, and he has the wherewithal to do so, then we have a _moral obligation_ to kill him first.
 
 [^goldstein]: __Baruch Goldstein Massacre:__ The politically correct Israeli narrative is that Goldstein was a mass murderer. There were a large number of discrepancies in the testimony that are too long to discuss here, and that _Justice Shamgar_ admitted he simply chose to ignore. Peres had a huge motive to expel the "settlers" in order to make good on his promise to Arafat that he be given a [Judenrein](https://en.wikipedia.org/wiki/Judenfrei) Palestinian state because the treaty that the _Knesset_ and the people accepted did not call for such expulsions. As my article clearly shows, the Oslo implementation was based on massive government lies - the most egregious being the government's hiding of Arafat's responsibility for years of terrorism that resulted in thousands of deaths. The judicial system "rubber stamped" all government decisions that tread on "settler's" rights where the most egregious were stripping them of their gun permits, and ten years later the Gush Katif _Disengagement_ expulsion, and they "rubber stamped" administrative detention of anti-Oslo activists that "magically" stopped as soon as Bibi was first elected PM in 1996. There is no longer any _prima facie_ reason to believe in the objectivity of the Oslo judiciary.  Therefore, I rely on the leaker's statement that Goldstein was framed.
 
