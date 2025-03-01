@@ -195,6 +195,8 @@ $else
     
     h. Use [7-zip](https://www.7-zip.org/) for password protection of disk-on-key storage or file transfers. For file transfers, It has the disadvantage of using shared passwords, and therefore not nearly as secure as _PGP_, but defintely far better than in-the-clear transfers.
 
+    i. Assign an employee to be the security monitor. All employees must pass a quick monthly security review from the monitor.
+    
 </details>
 $endif
 
