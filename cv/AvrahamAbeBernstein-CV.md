@@ -176,22 +176,24 @@ $else
 
     a. Use the then most recent Windows 10 Professional O/S on account of its regular security updates and its support of [BitLocker](https://support.microsoft.com/en-us/windows/bitlocker-drive-encryption-76b92ac9-1040-48d6-9f5f-d14b3c5fa178) full disk encryption. PCs are lost and stolen.
     
-    b.  Use a random PC login password from a USB security dongle such as [Yubico](https://www.yubico.com/), along with a manual [passphrase](https://www.techrepublic.com/article/what-is-passphrase/) prefix. 
+    b. Make weekly backups of user data.
+    
+    c.  Use a random PC login password from a USB security dongle such as [Yubico](https://www.yubico.com/), along with a manual [passphrase](https://www.techrepublic.com/article/what-is-passphrase/) prefix. 
 
-    c. When the PC is unattended close the cover, and use a screen saver with a relatively short timeout, e.g. 10 minutes, Configure so that resumption requires a password. 
+    d. When the PC is unattended close the cover, and use a screen saver with a relatively short timeout, e.g. 10 minutes, Configure so that resumption requires a password. 
 
-    d. Use the _Firefox_ web browser (and not _Google Chrome_ !) with _multiple profiles_ in order to defend against [cross-site scripting attacks](https://en.wikipedia.org/wiki/Cross-site_scripting). There is no information leakage between profiles. They should have the following profiles:
+    e. Use the _Firefox_ web browser (and not _Google Chrome_ !) with _multiple profiles_ in order to defend against [cross-site scripting attacks](https://en.wikipedia.org/wiki/Cross-site_scripting). There is no information leakage between profiles. They should have the following profiles:
 
         * personal email and banking
         * personal browsing
         * company email and access to company data
         * company browsing
 
-    e. Use email aliases when required to access social media.
+    f. Use email aliases when required to access social media.
     
-    f. Use strong random passwords generated and stored in a _local_ [FOSS](https://itsfoss.com/what-is-foss/) password database application such as [KeePass](https://keepassxc.org/), and not a commerical password server. And as long as they used their security dongle for their random database password, then they could store their password database on a personal disk-on-key or a cloud file server such as [Dropbox](https://www.dropbox.com/). 
+    g. Use strong random passwords generated and stored in a _local_ [FOSS](https://itsfoss.com/what-is-foss/) password database application such as [KeePass](https://keepassxc.org/), and not a commerical password server. And as long as they used their security dongle for their random database password, then they could store their password database on a personal disk-on-key or a cloud file server such as [Dropbox](https://www.dropbox.com/). 
     
-    g. Use [7-zip](https://www.7-zip.org/) for password protection of disk-on-key storage or file transfers. For file transfers, It has the disadvantage of using shared passwords, and therefore not nearly as secure as _PGP_, but defintely far better than in-the-clear transfers.
+    h. Use [7-zip](https://www.7-zip.org/) for password protection of disk-on-key storage or file transfers. For file transfers, It has the disadvantage of using shared passwords, and therefore not nearly as secure as _PGP_, but defintely far better than in-the-clear transfers.
 
 </details>
 $endif
