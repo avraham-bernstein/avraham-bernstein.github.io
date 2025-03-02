@@ -270,14 +270,14 @@ title="Secure photo of the author from 2025" alt="Secure photo of the author" />
 role="doc-noteref"><sup>1</sup></a> photo of the author from 2025</strong></p>
 <hr />
 <button onclick="show_all_details()">
-<p>Click Here To Open All Details<br>(useful for printing, and close by reloading
-page)</button></p>
+<p>Click Here To Open All Details<br>(Useful for printing. Required for linking to "inner-*"
+local bookmarks. Close by reloading page.)</button></p>
 <h2><span class="hilite">Link To Short CV PDF "Shadow Version"</span></h2>
 <ul>
 <li><a
 href="https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf">https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf</a></span></li>
 </ul>
-<h2>Introduction: Cr8tive Solutions To Hard Problems</h2>
+<h2 id="intro">Introduction: Cr8tive Solutions To Hard Problems</h2>
 <ol>
 <li>I have more than 40 years experience in state-of-the-art software development especially
 inventing new algorithms.</li>
@@ -334,9 +334,9 @@ leading <em>flexible</em> "brain storming" sessions.</li>
 <h3 id="aurora">2022-25: <a href="https://www.AuroraLabs.com">Aurora Labs</a> Tel Aviv IL</h3>
 <details>
 <summary>
-Automotive Software Updates: CTO Group: Patent-pending greatly reducing RAM consumption during
-FLASH updates; and greatly improved CPU efficiency and RAM consumption required for automated
-refactoring of C source code
+Automotive Software Updates: CTO Group: Patent-pending algorithm greatly reducing RAM
+consumption during FLASH updates; and greatly improved CPU efficiency and RAM consumption
+required for automated refactoring of C source code
 </summary>
 <ol>
 <li><p>The company's core product relied upon <a
@@ -352,7 +352,7 @@ compiler <a href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</a> ou
 href="https://en.wikipedia.org/wiki/XML">XML</a> format with the Python <a
 href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a> library in order to
 generate the refactored source code.</p></li>
-<li><p>And I invented a technique (US patent pending) to greatly reduce RAM usage when the
+<li><p>And I invented an algorithm (US patent pending) to greatly reduce RAM usage when the
 embedded software generates <a href="https://en.wikipedia.org/wiki/Flash_memory">FLASH</a> files
 by modifying the internals of the ubiquitous <em>C</em> <a
 href="https://www.man7.org/linux/man-pages/man3/memcpy.3.html">memcpy</a> function by
@@ -427,7 +427,8 @@ Security</a> Tel Aviv IL (restructured as <a href="https://plaxidityx.com/">Plax
 subsidiary of <a href="https://www.elektrobit.com/">Elektrobit/Continental</a> DE)</h3>
 <details>
 <summary>
-Automotive Software Updates: Patent greatly reducing FLASH memory required to implement bsdiff
+Automotive Software Updates: Patented algorithm greatly reducing FLASH memory required to
+implement bsdiff
 </summary>
 <ol>
 <li><p>I architected and implemented a software design for efficient software updates of
@@ -451,8 +452,8 @@ the FLASH is not big enough to temporarily hold both the original version "A" an
 "B" of the object code. Normally bsdiff requires both versions be available when applying the
 patch.</p></li>
 <li><p>I experimented with Google's Courgette improvement to bsdiff, but it required a
-relatively large amount of RAM on the target device to support a linker. The large RAM is not
-typically available on legacy boards used in the automotive industry. I developed an algorithm
+relatively large amount of RAM on the target device to support a linker. Such large RAM is not
+typically available on legacy boards used in the automotive industry. I invented an algorithm
 that dispensed with the need for a linker.</p></li>
 <li><p>I experimented with techniques for using source code patching instead of bsdiff object
 patching. The Elektrobit management refused to believe that it was commercially feasible to have
@@ -498,7 +499,8 @@ timeout, e.g. 10 minutes, Configure so that resumption requires a password.</p>
 <p>e. Use the <em>Firefox</em> web browser (and not <em>Google Chrome</em> !) with <em>multiple
 profiles</em> in order to defend against <a
 href="https://en.wikipedia.org/wiki/Cross-site_scripting">cross-site scripting attacks</a>.
-There is no information leakage between profiles. They should have the following profiles:</p>
+There is no information leakage between profiles. (Also still today, 2025, Firefox has the best
+buitlin bookmarking tool). They should at least use the following profiles:</p>
 <pre><code> * personal email and banking
  * personal browsing
  * company email and access to company data
@@ -1081,7 +1083,7 @@ href="#community-service">community service</a> projects, described below, where
 <details markdown="1">
 <p><span class="hilite">Note the public domain copyright at the beginning of this
 document.<span></p>
-<h3 id="adler-32">1. Crypto: Adler-32 Checksum Redux</h3>
+<h3 id="inner-adler-32">1. Crypto: Adler-32 Checksum Redux</h3>
 <p>Two commonly used <em>non-cryptographic</em> checksum algorithms are <a
 href="https://en.wikipedia.org/wiki/Adler-32">Adler-32</a> and <a
 href="https://en.wikipedia.org/wiki/Computation_of_cyclic_redundancy_checks#CRC-32_algorithm">CRC-32</a>.
@@ -1111,6 +1113,7 @@ collisions. However it is very easy to correct this problem by using a constant 
 of the original algorithm. This algorithm is quite useful as an extremely fast
 <em>non-cryptographic</em> <a href="https://en.wikipedia.org/wiki/Hash_function">hash
 function</a>.</p>
+<details>
 <div class="sourceCode" id="cb3"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;assert.h&gt;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdint.h&gt;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1158,13 +1161,15 @@ function</a>.</p>
 <li>use a wider <code>uint32_t</code> array which speeds up the calculation by a factor of
 4</li>
 </ol>
-<h3 id="key-wrapper">2. Crypto: Lightweight Key Wrapper</h3>
+</details>
+<h3 id="inner-key-wrapper">2. Crypto: Lightweight Key Wrapper</h3>
 <p>This algorithm wraps a 32-bit number with a 64-bit key and a pseudo-random 32-bit number; and
 where the ALU can process 128-bit numbers then we can wrap a 64-bit number with a 128-bit key
 and a pseudo-random 64-bit number. The random number can be generated on-the-fly in a local
 random number generator. The algorithm is extremely fast. It is implemented in a few assembly
 instructions. It can be executed <code>inline</code>. Therefore it is quite useful for
 obfuscation.</p>
+<details>
 <p>Here is the <em>C</em> source code:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdint.h&gt;</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1190,17 +1195,19 @@ obfuscation.</p>
 <span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="dt">uint32_t</span> x <span class="op">=</span> un<span class="op">.</span>package<span class="op">.</span>xr <span class="op">^</span> <span class="op">~</span>un<span class="op">.</span>package<span class="op">.</span>rc<span class="op">;</span></span>
 <span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x<span class="op">;</span></span>
 <span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<h3 id="x-hamming-weight">3. Crypto: <em>Invertible</em> "Cross Hamming Weight"
+</details>
+<h3 id="inner-cross-hamming-weight">3. Crypto: <em>Invertible</em> "Cross Hamming Weight"
 Transformation</h3>
 <p>Rotating a number by its Hamming weight is a cryptographically weak transformation because
 (1) the transformation does not change the original Hamming weight, and (2) Hamming weights have
 a binomial distribution where the weight has an extremely high probability of being in the
 center of the distribution.</p>
-<p>This simple invention improves these flaws. The transformation flattens the distribution by
-(1) making the upper and lower half of the number into 2 adjacent <code>N/2</code>-bit binomial
+<p>This invention improves these flaws. The transformation flattens the distribution by (1)
+making the upper and lower half of the number into 2 adjacent <code>N/2</code>-bit binomial
 distributions, and (2) 75% of the time it changes the original Hamming weight. And it is
 possible to apply the transformation twice, where the result is 4 adjacent <code>N/4</code>-bit
 binomial distributions.</p>
+<details>
 <p>The algorithm is implemented as follows:</p>
 <ol>
 <li><p>The original number is split in half into its lower bits and upper bits. Both Hamming
@@ -1271,12 +1278,14 @@ dependent rotations</a> used in <em>RC5</em> and <em>RC6</em>.</p>
 <span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
 <span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span> <span class="co">// </span><span class="al">TBD</span></span>
 <span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<h3 id="fft-hamming-weight">4. Crypto: <em>Non-invertible</em> Uniformly Distributed FFT Hamming
-Weight</h3>
+</details>
+<h3 id="inner-fft-hamming-weight">4. Crypto: <em>Non-invertible</em> Uniformly Distributed FFT
+Hamming Weight</h3>
 <p>This algorithm calculates a value in the same range as classic Hamming weights, but the
 distribution is "nearly" uniformly distributed except for minor perturbations. For example a
-32-bit number returns a value in the range [0,32]. The algorithm is highly non-linear, i.e.
+32-bit number returns a weight in the range [0,32]. The algorithm is highly non-linear, i.e.
 cryptographically "bent".</p>
+<details>
 <ol>
 <li><code>WIDTH</code> is the bit width of the domain of <code>x</code>.</li>
 <li>We successively squeeze <code>x</code> by dividing it into 2-bit width groups, 4-bit width
@@ -1316,14 +1325,15 @@ calculate the FFT Hamming weight.</li>
 <span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> sum <span class="op">%</span> <span class="op">(</span>WIDTH<span class="op">+</span><span class="dv">1</span><span class="op">);</span></span>
 <span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<h3 id="binary-hash-table">5. Container: Binary Expandable Hash Table</h3>
+</details>
+<h3 id="inner-binary-hash-table">5. Container: Binary Expandable Hash Table</h3>
 <ol>
 <li><p>Typically the maximum number of entries in a <a
 href="https://en.wikipedia.org/wiki/Hash_table">hash table</a> is a <em>prime number</em>, while
 my algorithm uses <code>2**N</code> entries.</p></li>
 <li><p>Typically when expanding the size of a hash table, all entries must be rehashed, while my
 algorithm does not require any rehashing.</p></li>
-<li><p>Typically hash tables are "sparse", i.e. they contain a lot of empty entries, because the
+<li><p>Typically hash tables are "sparse", i.e. they contain many empty entries, because the
 same data structure is used to store both the data associated with the keys, and to
 search/update keys. My algorithm uses two separate data structures which greatly minimizes
 sparseness. One structure defines the maximum number of keys, while the second structure defines
@@ -1336,8 +1346,8 @@ sparseness, and not to move the data associated with existing keys when the tabl
 expanded.</p></li>
 </ol>
 <p><em>C</em> source code: TBD.</p>
-<h3 id="dynamic-flash-config-file">6. Embedded Systems: Dynamically Loadable FLASH Configuration
-Files Larger Than RAM</h3>
+<h3 id="inner-dynamic-flash-config-file">6. Embedded Systems: Dynamically Loadable FLASH
+Configuration Files Larger Than RAM</h3>
 <p>On embedded systems with limited RAM, it is not possible to load large configuration files
 into RAM, and it is normally a security risk to parse the configuration file when dynamically
 loading it regardless of its size. My invention allows the use of an off-line
@@ -1361,7 +1371,7 @@ href="https://gcc.gnu.org/onlinedocs/gcc/Designated-Inits.html">designated initi
 feature along with <a href="https://jinja.palletsprojects.com/en/stable/">Jinja2</a>
 preprocessing.</p>
 <p><em>C</em> source code: TBD.</p>
-<h3 id="c-named-func-args">7. C: Named Function Arguments via Designated Initializers</h3>
+<h3 id="inner-c-named-func-args">7. C: Named Function Arguments via Designated Initializers</h3>
 <p><a href="https://en.cppreference.com/w/cpp/language/aggregate_initialization">Designated
 initializers</a> is an old GCC extension since C99. We can take advantage of this feature in
 order to implement named function arguments.</p>
@@ -1388,7 +1398,7 @@ order to implement named function arguments.</p>
 <span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;</span><span class="sc">%d</span><span class="st">,</span><span class="sc">%d\n</span><span class="st">&quot;</span><span class="op">,</span>retc1<span class="op">,</span> retc2<span class="op">);</span></span>
 <span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
 <span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<h3 id="dyslexic-font">8. Accessibility: Generic Dyslexic Font</h3>
+<h3 id="inner-dyslexic-font">8. Accessibility: Generic Dyslexic Font</h3>
 <p>I invented a scheme to modify existing fonts so that a dyslexic can easily read them by
 mimicking the concept how computer vision programs can decipher <a
 href="https://en.wikipedia.org/wiki/QR_code">QR codes</a> regardless of how they are rotated.
@@ -1409,7 +1419,7 @@ wide enough, so that the reader can recognize the spacing between a sequence of 
 </tr>
 </table>
 </details>
-<h2>Education</h2>
+<h2 id="education">Education</h2>
 <ol>
 <li><p><strong>1978-79:</strong> <a href="https://www.yorku.ca/">York Univ Graduate School</a>
 Toronto Ontario: <strong>masters degree in economics with a minor in applied mathematics<a
@@ -1565,7 +1575,7 @@ months when the husband escaped from being drafted as cannon fodder into the Rus
 against Ukraine, months before they were finally recognized by the Israeli Absorption
 Ministry.</p></li>
 </ol>
-<h3>Grass Roots Leader Against The Oslo Accords</h3>
+<h3 id="inner-oslo">Grass Roots Leader Against The Oslo Accords</h3>
 <p><em><a
 href="https://torahisteaching.com/2019/04/30/where-there-is-no-man-be-a-manpart-1/">Where there
 is no man, strive to be one</a>, a maxim of <a
@@ -1740,37 +1750,41 @@ and Puah in <a href="https://mechon-mamre.org/p/pt/pt0201.htm">Exodus 1:17</a>, 
 <a href="https://en.wikipedia.org/wiki/Righteous_Among_the_Nations">righteous gentiles</a> who
 hid Jews from the Nazis at great risk to their own lives.<a href="#fnref4" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p><strong>IDF General Staff Depravity:</strong> (1) From the Oslo Accords to this
-day (2025) it is accurate to describe the IDF General Staff as depraved. Generals are promoted
-precisely because they are sycophants who have no interests in winning wars . (Reformed leftist
-historian <a href="https://www.israelnationalnews.com/news/404518">Dr. Gadi Taub</a> further
-develops this theme). We saw this clearly in their criminal lack of preparation for the recent
-October 7 Hamas massacres (e.g. <em>Yoav Gallant</em> - fired, <em>Ronen Bar</em> - to be fired,
-<em>Herzl Halevi</em> - resigned, <em>Yaron Finkelman</em> - resigned, Avi Rosenfeld - should be
-court martialed, and especially <a href="https://www.israelnationalnews.com/news/381191">Aharon
+<li id="fn5"><p><strong>IDF General Staff Depravity:</strong> <strong>(1)</strong> From the Oslo
+Accords to this day (2025) it is accurate to describe the IDF General Staff as
+<em>depraved</em>. Generals are promoted precisely because they are sycophants who have no
+interests in winning wars . (Reformed leftist historian <a
+href="https://www.israelnationalnews.com/news/404518">Dr. Gadi Taub</a> further develops this
+theme). We saw this clearly in their criminal lack of preparation for the recent October 7 Hamas
+massacres (e.g. <em>Yoav Gallant</em> - fired, <em>Ronen Bar</em> - to be fired, <em>Herzl
+Halevi</em> - resigned, <em>Yaron Finkelman</em> - resigned, Avi Rosenfeld - should be court
+martialed, and especially <a href="https://www.israelnationalnews.com/news/381191">Aharon
 Haliva</a> - resigned but should be court martialed and executed). We saw it in their denial
 that the so-called <em>Disengagement</em> would be an existential disaster (e.g. <em>Shaul
 Mofaz</em>). We saw it in their lackluster execution of the <em>Second Lebanese War</em> (e.g.
-<em>Dan Halutz</em>). On account of the IDF's generous early retirement benefits, they view the
-IDF just as a stepping stone in their future career path whether in politics or business, so
-they refrain from engaging in any politically incorrect activities that might even prevent them
-from so much as taking a vacation with their wives for a London shopping spree, because a UK
-court might indict them for "abusing the rights" of a poor Palestinian. <em>Note that the
-spectacular valor of the initial response of the civilian reservists to the October 7 massacres
-was very much in spite of the hysteria and lack of preparedness of the General Staff.</em> (2)
-They are promoted because they subscribe to the pseudo ethical creed of their <em>purity of
-arms</em> philosophy. Note that the fundamental flaw of their military ethics guru <em>Asa
-Kasher</em>, who is worshiped by both the IDF and legal system, is that he recognizes that our
-Islamic enemies also have a valid claim to <em>Eretz Yisrael</em> (English: Land of Israel) even
-though they stated to immigrate here only since the 1880s. Therefore in his opinion our wars are
-a "garden variety" land dispute. However it has finally (2025) become painfully obvious to the
-majority of sentient Israeli Jews, including secular ones, that the goal of our Islamic enemies
-is a religiously motivated <em>jihad</em> (English: <em>annihilation</em>) of our Jewish
-presence here, exactly like the Nazis wanted to do to European Jewry. Their claims about land
-rights are simply a pretext. Politically correct leftists prefer to forget about the 1929 Arab
-massacres before there was a significant "Zionist" presence here. Just listen to the regular
-Islamic rants from the Iranians. (Reformed leftist political scientist and former Labor
-<em>MK</em> <a
+<em>Dan Halutz</em> who infamously sold his retirement stock porfolio the day before the war
+broke out). On account of the IDF's generous early retirement benefits, they view the IDF just
+as a stepping stone in their future career path whether in politics or business, so they refrain
+from engaging in any politically incorrect activities that might even prevent them from so much
+as taking a vacation with their wives for a London shopping spree, because a UK court might
+indict them for "abusing the rights" of a poor Palestinian. <em>Note that the spectacular valor
+of the initial response of the civilian reservists to the October 7 massacres was very much in
+spite of the hysteria and lack of preparedness of the General Staff.</em> <strong>(2)</strong>
+They are promoted because they subscribe to the pseudo ethical creed of so-called <em>purity of
+arms</em>. Note that the fundamental flaw of their military ethics guru <em>Asa Kasher</em>, who
+is worshiped by both the IDF and legal system, is that he "recognizes" that our Islamic enemies
+also have a valid claim to <em>Eretz Yisrael</em> (English: Land of Israel) even though they
+started to immigrate here only since the 1880s to become "koolies", and massively since the
+1920s when the antisemitic British Foreign Office wanted to obstruct the <em>Balfour
+Declaration</em>. Therefore in <em>Kasher's</em> opinion our wars are just a "garden variety"
+land dispute. However, it has finally (2025) become painfully obvious to the majority of
+sentient Israeli Jews, including secular ones, that the goal of our Islamic enemies is a
+religiously motivated <em>jihad</em> (English: <em>annihilation</em>) of our Jewish presence
+here, exactly like the Nazis wanted to do to European Jewry. Their claim about land rights is
+simply a pretext that ignoramuses and antisemites buy lock, stock, and barrel. Politically
+correct Israeli leftists prefer to forget about the 1929 Arab massacres before there was any
+significant "Zionist" presence here. Just listen to the regular Islamic rants from the Iranians.
+(Reformed leftist political scientist and former Labor <em>MK</em> <a
 href="https://www.linkedin.com/posts/einatwilf_seven-arab-states-declare-war-in-an-attempt-ugcPost-7196581590959874049-1eHt">Einat
 Wilf</a>, and in more detail <a href="https://www.youtube.com/watch?v=tOCCMaQ0rm0">here</a>,
 further develops this theme). The enemy acts exactly like <a
@@ -1780,8 +1794,13 @@ principle of reciprocal ethics. Aside from the fact that <em>Torah</em> gives us
 commands, logically a person should not steal from or murder his neighbor is because he does not
 want his neighbor to do similar acts to him. However if our enemy hates us so much that his
 primary reason for living is to murder us, and he has the wherewithal to do so, then we have a
-<em>moral obligation</em> to kill him first.<a href="#fnref5" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
+<em>moral obligation</em> to kill him first. Early opinion polls taken just after the October 7
+masssacres, in both the PA and Gaza, showed that the vast majority of Muslims supported the
+massacres, and that thousands of Hamas "civilians" participated in the massacres. Even in Nazi
+Germany there were a small number of <a
+href="https://en.wikipedia.org/wiki/Righteous_Among_the_Nations">righteous gentiles</a> who
+attempted to save Jews, but no such incidents have yet to be recorded among the Gazans.<a
+href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn6"><p><strong>Baruch Goldstein Massacre:</strong> The politically correct Israeli
 narrative is that Goldstein was a mass murderer. There were a large number of discrepancies in
 the testimony that are too long to discuss here, and that <em>Justice Shamgar</em> admitted he

@@ -25,14 +25,14 @@ __Secure[^secure] photo of the author from 2025__
 ---
 
 $if(not is_pdf)
-<button onclick="show_all_details()">Click Here To Open All Details<br>(useful for printing, and close by reloading page)</button>
+<button onclick="show_all_details()">Click Here To Open All Details<br>(Useful for printing. Required for linking to "inner-*" local bookmarks. Close by reloading page.)</button>
 
 ## <span class="hilite">Link To Short CV PDF "Shadow Version"</span>
 
 * [$(www)/cv/$(pdf)]($(www)/cv/$(pdf))</span>
 $endif
 
-## Introduction: Cr8tive Solutions To Hard Problems
+## Introduction: Cr8tive Solutions To Hard Problems {#intro}
 
 1. I have more than 40 years experience in state-of-the-art software development especially inventing new algorithms.
 2. I have many inventions and some __recent patents__ in a wide variety of application domains, e.g.:
@@ -63,7 +63,7 @@ $endif
 
 <!-- <button onclick="show_all_details('work')">Show All "Work Experience" Details (useful for printing)</button> -->
 
-$py(id="aurora"; task="Automotive Software Updates: CTO Group: Patent-pending greatly reducing RAM consumption during FLASH updates; and greatly improved CPU efficiency and RAM consumption required for automated refactoring of C source code")
+$py(id="aurora"; task="Automotive Software Updates: CTO Group: Patent-pending algorithm greatly reducing RAM consumption during FLASH updates; and greatly improved CPU efficiency and RAM consumption required for automated refactoring of C source code")
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
 
 $if(is_pdf)
@@ -75,7 +75,7 @@ $else
 
 2. I invented an extremely efficient technique to greatly improve the efficiency of their initial refactoring software by combining the [SRCML](https://www.srcml.org/) compiler [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) output in [XML](https://en.wikipedia.org/wiki/XML) format with the Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) library in order to generate the refactored source code.
 
-3. And I invented a technique (US patent pending) to greatly reduce RAM usage when the embedded software generates [FLASH](https://en.wikipedia.org/wiki/Flash_memory) files by modifying the internals of the ubiquitous _C_ [memcpy](https://www.man7.org/linux/man-pages/man3/memcpy.3.html) function by incorporating [Posix](https://en.wikipedia.org/wiki/POSIX)-like buffered I/O when memcpy is used to sequentially write to FLASH. The RAM savings enables usage of larger "chunks" that enables higher compression ratios for legacy system boards with small amounts of RAM, e.g. less than 256 KB. Sometimes compression ratios could be improved by 25%.
+3. And I invented an algorithm (US patent pending) to greatly reduce RAM usage when the embedded software generates [FLASH](https://en.wikipedia.org/wiki/Flash_memory) files by modifying the internals of the ubiquitous _C_ [memcpy](https://www.man7.org/linux/man-pages/man3/memcpy.3.html) function by incorporating [Posix](https://en.wikipedia.org/wiki/POSIX)-like buffered I/O when memcpy is used to sequentially write to FLASH. The RAM savings enables usage of larger "chunks" that enables higher compression ratios for legacy system boards with small amounts of RAM, e.g. less than 256 KB. Sometimes compression ratios could be improved by 25%.
 
 </details>
 $endif
@@ -133,7 +133,7 @@ $else
 </details>
 $endif
 
-$py(id="argus"; task="Automotive Software Updates: Patent greatly reducing FLASH memory required to implement bsdiff")
+$py(id="argus"; task="Automotive Software Updates: Patented algorithm greatly reducing FLASH memory required to implement bsdiff")
 ### 2018-20: [Argus Cyber Security](https://en.wikipedia.org/wiki/Argus_Cyber_Security) Tel Aviv IL (restructured as [PlaxidityX](https://plaxidityx.com/) IL, subsidiary of [Elektrobit/Continental](https://www.elektrobit.com/) DE) {#$(id)}
 
 $if(is_pdf)
@@ -151,7 +151,7 @@ $else
     
 2. I invented [EU Patent EP3680773A1](https://worldwide.espacenet.com/patent/search/family/069147491/publication/EP3680773A1?q=20150616.9), a mini-bsdiff patch implementation for small FLASH memory systems where the FLASH is not big enough to temporarily hold both the original version "A" and new version "B" of the object code. Normally bsdiff requires both versions be available when applying the patch.
  
- 3. I experimented with Google's Courgette improvement to bsdiff, but it required a relatively large amount of RAM on the target device to support a linker. The large RAM is not typically available on legacy boards used in the automotive industry. I developed an algorithm that dispensed with the need for a linker.
+ 3. I experimented with Google's Courgette improvement to bsdiff, but it required a relatively large amount of RAM on the target device to support a linker. Such large RAM is not typically available on legacy boards used in the automotive industry. I invented an algorithm that dispensed with the need for a linker.
 
 4. I experimented with techniques for using source code patching instead of bsdiff object patching. The Elektrobit management refused to believe that it was commercially feasible to have access to an OEM's source code. I switched jobs to [Aurora Labs](#aurora) above because I believed that source code patching is a better solution.
 
@@ -182,7 +182,7 @@ $else
 
     d. When the PC is unattended close the cover, and use a screen saver with a relatively short timeout, e.g. 10 minutes, Configure so that resumption requires a password. 
 
-    e. Use the _Firefox_ web browser (and not _Google Chrome_ !) with _multiple profiles_ in order to defend against [cross-site scripting attacks](https://en.wikipedia.org/wiki/Cross-site_scripting). There is no information leakage between profiles. They should have the following profiles:
+    e. Use the _Firefox_ web browser (and not _Google Chrome_ !) with _multiple profiles_ in order to defend against [cross-site scripting attacks](https://en.wikipedia.org/wiki/Cross-site_scripting). There is no information leakage between profiles. (Also still today, 2025, Firefox has the best buitlin bookmarking tool). They should at least use the following profiles:
 
         * personal email and banking
         * personal browsing
@@ -611,7 +611,7 @@ $else
 
 <span class="hilite">Note the public domain copyright at the beginning of this document.<span>
 
-###  1. Crypto: Adler-32 Checksum Redux {#adler-32}
+###  1. Crypto: Adler-32 Checksum Redux {#inner-adler-32}
 
 Two commonly used _non-cryptographic_ checksum algorithms are [Adler-32](https://en.wikipedia.org/wiki/Adler-32)
 and [CRC-32](https://en.wikipedia.org/wiki/Computation_of_cyclic_redundancy_checks#CRC-32_algorithm). 
@@ -642,6 +642,8 @@ Clearly short messages will have too small a spread, which results in many colli
 However it is very easy to correct this problem by using a constant  multiplier `k`
 which is a function of `n`. We still retain the speed and simplicity of the original algorithm.
 This algorithm is quite useful as an extremely fast _non-cryptographic_ [hash function](https://en.wikipedia.org/wiki/Hash_function).
+
+<details markdown="1">
 
 ```c
 #include <assert.h>
@@ -692,7 +694,9 @@ The following are 2 major improvements:
 1. adler64: use 64-bit arithmetic that allows for a maximum byte array length of ~28K
 2. use a wider `uint32_t` array which speeds up the calculation by a factor of 4
 
-### 2. Crypto: Lightweight Key Wrapper {#key-wrapper}
+</details>
+
+### 2. Crypto: Lightweight Key Wrapper {#inner-key-wrapper}
 
 This algorithm wraps a 32-bit number with a 64-bit key and a pseudo-random 32-bit number;
 and where the ALU can process 128-bit numbers then we can wrap a 64-bit number with a 128-bit key
@@ -700,6 +704,8 @@ and a pseudo-random 64-bit number.
 The random number can be generated on-the-fly in a local random number generator.
 The algorithm is extremely fast. It is implemented in a few assembly instructions.
 It can be executed `inline`. Therefore it is quite useful for obfuscation.
+
+<details markdown="1">
 
 Here is the _C_ source code:
 
@@ -730,17 +736,21 @@ uint32_t ayb_unwrap32(uint64_t key, uint64_t wrapper)
 }
 ```
 
-### 3. Crypto: _Invertible_ "Cross Hamming Weight" Transformation {#x-hamming-weight}
+</details>
+
+### 3. Crypto: _Invertible_ "Cross Hamming Weight" Transformation {#inner-cross-hamming-weight}
 
 Rotating a number by its Hamming weight is a cryptographically weak transformation because
 (1) the transformation does not change the original Hamming weight,
 and (2) Hamming weights have a binomial distribution where the weight has an extremely high
 probability of being in the center of the distribution.
 
-This simple invention improves these flaws. The transformation flattens the distribution by
+This invention improves these flaws. The transformation flattens the distribution by
 (1) making the upper and lower half of the number into 2 adjacent `N/2`-bit binomial distributions,
 and (2) 75% of the time it changes the original Hamming weight.
 And it is possible to apply the transformation twice, where the result is 4 adjacent `N/4`-bit binomial distributions.
+
+<details markdown="1">
 
 The algorithm is implemented as follows:
 
@@ -805,10 +815,13 @@ uint64_t ayb_invert_xhw64(uint64_t x)
     return 0; // TBD
 }
 ```
+</details>
 
-### 4. Crypto: _Non-invertible_ Uniformly Distributed FFT Hamming Weight {#fft-hamming-weight}
+### 4. Crypto: _Non-invertible_ Uniformly Distributed FFT Hamming Weight {#inner-fft-hamming-weight}
 
-This algorithm calculates a value in the same range as classic Hamming weights, but the distribution is "nearly" uniformly distributed except for minor perturbations. For example a 32-bit number returns a value in the range \[0,32]. The algorithm is highly non-linear, i.e. cryptographically "bent".
+This algorithm calculates a value in the same range as classic Hamming weights, but the distribution is "nearly" uniformly distributed except for minor perturbations. For example a 32-bit number returns a weight in the range \[0,32]. The algorithm is highly non-linear, i.e. cryptographically "bent".
+
+<details markdown="1">
 
 1. `WIDTH` is the bit width of the domain of `x`.
 2. We successively squeeze `x` by dividing it into 2-bit width groups, 4-bit width groups, 8-bit width groups, etc., where the maximum width is `WIDTH/4`.
@@ -850,19 +863,21 @@ int32_t ayb_fft_hw32(const uint32_t x)
 }
 ```
 
-### 5. Container: Binary Expandable Hash Table {#binary-hash-table}
+</details>
+
+### 5. Container: Binary Expandable Hash Table {#inner-binary-hash-table}
 
 1. Typically the maximum number of entries in a [hash table](https://en.wikipedia.org/wiki/Hash_table) is a _prime number_, while my algorithm uses `2**N` entries.
 
 2. Typically when expanding the size of a hash table, all entries must be rehashed, while my algorithm does not require any rehashing.
 
-3. Typically hash tables are "sparse", i.e. they contain a lot of empty entries, because the same data structure is used to store both the data associated with the keys, and to search/update keys. My algorithm uses two separate data structures which greatly minimizes sparseness. One structure defines the maximum number of keys, while the second structure defines the maximum number of data entries.
+3. Typically hash tables are "sparse", i.e. they contain many empty entries, because the same data structure is used to store both the data associated with the keys, and to search/update keys. My algorithm uses two separate data structures which greatly minimizes sparseness. One structure defines the maximum number of keys, while the second structure defines the maximum number of data entries.
 
 4. Where the operating system supports the _Linux_ `vmalloc` or the _Win32_ `VirtualAlloc` allocators, then it is possible to allocate large memory regions with virtually linear address spaces but are composed of physically non-contiguous pages. My algorithm can take advantage of these allocators to further reduce sparseness, and not to move the data associated with existing keys when the table is expanded.
 
 _C_ source code: TBD.
 
-### 6. Embedded Systems: Dynamically Loadable FLASH Configuration Files Larger Than RAM {#dynamic-flash-config-file}
+### 6. Embedded Systems: Dynamically Loadable FLASH Configuration Files Larger Than RAM {#inner-dynamic-flash-config-file}
 
 On embedded systems with limited RAM, it is not possible to load large configuration files into RAM, and it is normally a security risk to parse the configuration file when dynamically loading it regardless of its size. My invention allows the use of an off-line _pre-parsed_ configuration file into  object data format _without any executable code_. It can be dynamically loaded into FLASH memory at an address defined at load time where (1) the system architect must have mapped the FLASH memory accordingly, (2) the _C_ structure of object file must be recognized by the control program, and (3) it is extremely difficult (although not impossible) to modify the configuration for the duration of the load.
 
@@ -872,7 +887,7 @@ I show how the off-line pre-parser can be implemented without any executable _C_
 
 _C_ source code: TBD.
 
-### 7. C: Named Function Arguments via Designated Initializers {#c-named-func-args}
+### 7. C: Named Function Arguments via Designated Initializers {#inner-c-named-func-args}
 
 [Designated initializers](https://en.cppreference.com/w/cpp/language/aggregate_initialization) is an old GCC extension since C99.
 We can take advantage of this feature in order to implement named function arguments.
@@ -903,7 +918,7 @@ int main()
 }
 ```
 
-### 8. Accessibility: Generic Dyslexic Font {#dyslexic-font}
+### 8. Accessibility: Generic Dyslexic Font {#inner-dyslexic-font}
 
 I invented a scheme to modify existing fonts so that a dyslexic can easily read them by mimicking the concept how computer vision programs can decipher [QR codes](https://en.wikipedia.org/wiki/QR_code) regardless of how they are rotated. You should note that in QR codes there are 3 solid black squares in the top-left, top-right, and bottom-left corners, but not in the bottom-right corner. My invention pads the the left and right margins of each character in the font, allowing space for two vertical strips in each margin. Each character will have the same size padding. In the middle of the inner left strip, I add a diacritical dot. Now the dyslexic reader needs to follow a single rule, namely to note that a validly oriented character has a dot in its inner left margin. The margins have to be wide enough, so that the reader can recognize the spacing between a sequence of characters.
 
@@ -915,10 +930,11 @@ I invented a scheme to modify existing fonts so that a dyslexic can easily read 
 </tr>
 </table>
 
+$# end of Invention details
 </details>
 $endif
 
-## Education
+## Education {#education}
 
 1. __1978-79:__ [York Univ Graduate School](https://www.yorku.ca/) Toronto Ontario: __masters degree in economics with a minor in applied mathematics[^york]__
 
@@ -981,7 +997,7 @@ In the _Torah_ in [Gen. 18:19](https://mechon-mamre.org/p/pt/pt0118.htm) (Hebrew
 
 4. 2022: My wife and I took in a poor homeless Russian refugee family into our home for 4 months when the husband  escaped from being drafted as cannon fodder into the Russian army's war against Ukraine, months before they were finally recognized by the Israeli Absorption Ministry.
 
-### Grass Roots Leader Against The Oslo Accords
+### Grass Roots Leader Against The Oslo Accords {#inner-oslo}
 
 _[Where there is no man, strive to be one](https://torahisteaching.com/2019/04/30/where-there-is-no-man-be-a-manpart-1/), a maxim of [Rav Hillel (the Elder)](https://en.wikipedia.org/wiki/Hillel_the_Elder) c. 50 BCE_.
 
@@ -1030,7 +1046,7 @@ $if(not is_pdf)
 
  [^chosen]: __Chosen People:__ It is quite telling that that the biggest haters of the Jewish People throughout history derive their hatred from this exact verse. What infuriates them is that Jews are the conscience of the world, who recognize a higher Divine law than _patently immoral_ laws of dictators and kings, and even of elected governments (e.g. Pharaoh, Haman, and Hitler). On the other hand, it is important to remember that throughout history there have existed a few brave non-Jews who [feared God](https://rabbisacks.org/covenant-conversation/shemot/on-not-obeying-immoral-orders/) by defying patently immoral laws of their governments, e.g. the Egyptian midwives Shifra and Puah in [Exodus 1:17](https://mechon-mamre.org/p/pt/pt0201.htm), and modern day [righteous gentiles](https://en.wikipedia.org/wiki/Righteous_Among_the_Nations) who hid Jews from the Nazis at great risk to their own lives.
  
- [^depravity]: __IDF General Staff Depravity:__ (1) From the Oslo Accords to this day (2025) it is accurate to describe the IDF General Staff as depraved. Generals are promoted precisely because they are sycophants who have no interests in winning wars . (Reformed leftist historian [Dr. Gadi Taub](https://www.israelnationalnews.com/news/404518) further develops this theme). We saw this clearly in their criminal lack of preparation for the recent October 7 Hamas massacres (e.g. _Yoav Gallant_ - fired, _Ronen Bar_ - to be fired, _Herzl Halevi_ - resigned, _Yaron Finkelman_ - resigned, Avi Rosenfeld - should be court martialed, and especially [Aharon Haliva](https://www.israelnationalnews.com/news/381191) - resigned but should be court martialed and executed). We saw it in their denial that the so-called _Disengagement_ would be an existential disaster (e.g. _Shaul Mofaz_). We saw it in their lackluster execution of the _Second Lebanese War_ (e.g. _Dan Halutz_). On account of the IDF's generous early retirement benefits, they view the IDF just as a stepping stone in their future career path whether in politics or business, so they refrain from engaging in any politically incorrect activities that might even prevent them from so much as taking a vacation with their wives for a London shopping spree, because a UK court might indict them for "abusing the rights" of a poor Palestinian. _Note that the spectacular valor of the initial response of the civilian reservists to the October 7 massacres was very much in spite of the hysteria and lack of preparedness of the General Staff._ (2) They are promoted because they subscribe to the pseudo ethical creed of their _purity of arms_ philosophy.  Note that the fundamental flaw of their military ethics guru _Asa Kasher_, who is worshiped by both the IDF and legal system, is that he recognizes that our Islamic enemies also have a valid claim to _Eretz Yisrael_ (English: Land of Israel) even though they stated to immigrate here only since the 1880s. Therefore in his opinion our wars are a "garden variety" land dispute. However it has finally (2025) become painfully obvious to the majority of sentient Israeli Jews, including secular ones, that the goal of our Islamic enemies is a religiously motivated  _jihad_ (English: _annihilation_) of our Jewish presence here, exactly like the Nazis wanted to do to European Jewry. Their claims about land rights are simply a pretext. Politically correct leftists prefer to forget about the 1929 Arab massacres before there was a significant "Zionist" presence here. Just listen to the regular Islamic rants from the Iranians. (Reformed leftist political scientist and former Labor _MK_ [Einat Wilf](https://www.linkedin.com/posts/einatwilf_seven-arab-states-declare-war-in-an-attempt-ugcPost-7196581590959874049-1eHt), and in more detail [here](https://www.youtube.com/watch?v=tOCCMaQ0rm0), further develops this theme). The enemy acts exactly like [Amalek](https://www.chabad.org/library/article_cdo/aid/3942715/jewish/Who-Were-Amalek-and-the-Amalekites.htm) did, and we must treat them accordingly. A Jewish society is fundamentally based upon the principle of reciprocal ethics. Aside from the fact that _Torah_ gives us these ethical commands, logically a person should not steal from or murder his neighbor is because he does not want his neighbor to do similar acts to him. However if our enemy hates us so much that his primary reason for living is to murder us, and he has the wherewithal to do so, then we have a _moral obligation_ to kill him first.
+ [^depravity]: __IDF General Staff Depravity:__ __(1)__ From the Oslo Accords to this day (2025) it is accurate to describe the IDF General Staff as _depraved_. Generals are promoted precisely because they are sycophants who have no interests in winning wars . (Reformed leftist historian [Dr. Gadi Taub](https://www.israelnationalnews.com/news/404518) further develops this theme). We saw this clearly in their criminal lack of preparation for the recent October 7 Hamas massacres (e.g. _Yoav Gallant_ - fired, _Ronen Bar_ - to be fired, _Herzl Halevi_ - resigned, _Yaron Finkelman_ - resigned, Avi Rosenfeld - should be court martialed, and especially [Aharon Haliva](https://www.israelnationalnews.com/news/381191) - resigned but should be court martialed and executed). We saw it in their denial that the so-called _Disengagement_ would be an existential disaster (e.g. _Shaul Mofaz_). We saw it in their lackluster execution of the _Second Lebanese War_ (e.g. _Dan Halutz_ who infamously sold his retirement stock porfolio the day before the war broke out). On account of the IDF's generous early retirement benefits, they view the IDF just as a stepping stone in their future career path whether in politics or business, so they refrain from engaging in any politically incorrect activities that might even prevent them from so much as taking a vacation with their wives for a London shopping spree, because a UK court might indict them for "abusing the rights" of a poor Palestinian. _Note that the spectacular valor of the initial response of the civilian reservists to the October 7 massacres was very much in spite of the hysteria and lack of preparedness of the General Staff._ __(2)__ They are promoted because they subscribe to the pseudo ethical creed of so-called _purity of arms_.  Note that the fundamental flaw of their military ethics guru _Asa Kasher_, who is worshiped by both the IDF and legal system, is that he "recognizes" that our Islamic enemies also have a valid claim to _Eretz Yisrael_ (English: Land of Israel) even though they started to immigrate here only since the 1880s to become "koolies", and massively since the 1920s when the antisemitic British Foreign Office wanted to obstruct the _Balfour Declaration_. Therefore in _Kasher's_ opinion our wars are just a "garden variety" land dispute. However, it has finally (2025) become painfully obvious to the majority of sentient Israeli Jews, including secular ones, that the goal of our Islamic enemies is a religiously motivated  _jihad_ (English: _annihilation_) of our Jewish presence here, exactly like the Nazis wanted to do to European Jewry. Their claim about land rights is simply a pretext that ignoramuses and antisemites buy lock, stock, and barrel. Politically correct Israeli leftists prefer to forget about the 1929 Arab massacres before there was any significant "Zionist" presence here. Just listen to the regular Islamic rants from the Iranians. (Reformed leftist political scientist and former Labor _MK_ [Einat Wilf](https://www.linkedin.com/posts/einatwilf_seven-arab-states-declare-war-in-an-attempt-ugcPost-7196581590959874049-1eHt), and in more detail [here](https://www.youtube.com/watch?v=tOCCMaQ0rm0), further develops this theme). The enemy acts exactly like [Amalek](https://www.chabad.org/library/article_cdo/aid/3942715/jewish/Who-Were-Amalek-and-the-Amalekites.htm) did, and we must treat them accordingly. A Jewish society is fundamentally based upon the principle of reciprocal ethics. Aside from the fact that _Torah_ gives us these ethical commands, logically a person should not steal from or murder his neighbor is because he does not want his neighbor to do similar acts to him. However if our enemy hates us so much that his primary reason for living is to murder us, and he has the wherewithal to do so, then we have a _moral obligation_ to kill him first. Early opinion polls taken just after the October 7 masssacres, in both the PA and Gaza, showed that the vast majority of Muslims supported the massacres, and that thousands of Hamas "civilians" participated in the massacres. Even in Nazi Germany there were a small number of [righteous gentiles](https://en.wikipedia.org/wiki/Righteous_Among_the_Nations)  who attempted to save Jews, but no such incidents have  yet to be recorded among the Gazans. 
 
 [^goldstein]: __Baruch Goldstein Massacre:__ The politically correct Israeli narrative is that Goldstein was a mass murderer. There were a large number of discrepancies in the testimony that are too long to discuss here, and that _Justice Shamgar_ admitted he simply chose to ignore. Peres had a huge motive to expel the "settlers" in order to make good on his promise to Arafat that he be given a [Judenrein](https://en.wikipedia.org/wiki/Judenfrei) Palestinian state because the treaty that the _Knesset_ and the people accepted did not call for such expulsions. As my article clearly shows, the Oslo implementation was based on massive government lies - the most egregious being the government's hiding of Arafat's responsibility for years of terrorism that resulted in thousands of deaths. The judicial system "rubber stamped" all government decisions that tread on "settler's" rights where the most egregious were stripping them of their gun permits, and ten years later the Gush Katif _Disengagement_ expulsion, and they "rubber stamped" administrative detention of anti-Oslo activists that "magically" stopped as soon as Bibi was first elected PM in 1996. There is no longer any _prima facie_ reason to believe in the objectivity of the Oslo judiciary.  Therefore, I rely on the leaker's statement that Goldstein was framed.
 
