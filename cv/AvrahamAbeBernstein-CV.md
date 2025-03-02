@@ -957,7 +957,7 @@ $else
 <details markdown="1">
 
 1. __Born:__ 1957 Canada.
-2. ___Aliyah_ (English: immigration to Israel)__: 1983. Triple great grandfather was a disciple of the Vilna Gaon (Hebrew: _Gra_) who is buried on the Mount of Olives (Hebrew: _Har HaZeitim_).
+2. ___Aliyah_ (English: immigration to Israel)__: 1983. My triple great grandfather, Rav Aharon Visanska 1809-93, was a disciple of the Vilna Gaon (Hebrew: _Gra_). During his adult life he shuttled between Jerusalem and Michigan. His granddaughter Rachel Kahn, i.e. my great grandmother, was born in  Michigan in 1874. Aharon was buried on the Mount of Olives (Hebrew: _Har HaZeitim_). 
 3. __Married:__ 2 boys + 2 girls, all married with many grandchildren. all of whom live in _Eretz Yisrael_ (English: the Land of Israel).
 4. __Religious Beliefs:__ God-fearing observant Jew and Zionist.
 5. __IDF Reserves:__ 1988-2001 combat infantry sergeant, where I served in the Central Command (Hebrew: _Pikud HaMerkaz_) in the Jordan Valley. Exceptionally I often acted in the role of deputy company commander (Hebrew: _Samap_) even though I was a _Shlav Betnik_ (English: those first drafted over age 26) with only 4 months of basic training. Considering that the IDF intended to send me to a combat infantry unit for the whole period of my 13 years of reserve duty, about 2/3 of my basic training was a complete waste of time, e.g. kitchen duty, gardening duty, and guard duty, instead of primarily focusing on combat skills.
