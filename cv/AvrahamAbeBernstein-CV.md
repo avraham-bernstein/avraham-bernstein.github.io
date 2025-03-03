@@ -15,7 +15,7 @@ $if(not is_pdf)\
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 $endif\
-<br/>__Last Update:__ 2025-03-02
+<br/>__Last Update:__ 2025-03-03
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -75,7 +75,7 @@ $else
 
 2. I invented an extremely efficient technique to greatly improve the efficiency of their initial refactoring software by combining the [srcML](https://www.srcml.org/) compiler [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) output in [XML](https://en.wikipedia.org/wiki/XML) format with the Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) library in order to generate the refactored source code.
 
-3. And I invented an algorithm (US patent pending) to greatly reduce RAM usage when the embedded software generates [FLASH](https://en.wikipedia.org/wiki/Flash_memory) files by modifying the internals of the ubiquitous _C_ [memcpy](https://www.man7.org/linux/man-pages/man3/memcpy.3.html) function by incorporating [Posix](https://en.wikipedia.org/wiki/POSIX)-like buffered I/O when memcpy is used to sequentially write to FLASH. The RAM savings enables usage of larger "chunks" that enables higher compression ratios for legacy system boards with small amounts of RAM, e.g. less than 256 KB. Sometimes compression ratios could be improved by 25%.
+3. And I invented an algorithm (US patent pending) to greatly reduce RAM usage when the embedded software generates [FLASH](https://en.wikipedia.org/wiki/Flash_memory) files by modifying the internals of the ubiquitous _C_ [memcpy](https://www.man7.org/linux/man-pages/man3/memcpy.3.html) function by incorporating [Posix](https://en.wikipedia.org/wiki/POSIX)-like buffered I/O when memcpy is used to sequentially write to FLASH. The RAM savings enables usage of larger "chunks" that enables higher compression ratios for legacy system boards with small amounts of RAM, e.g. less than 256 KB. Sometimes compression ratios could be improved by up to 25%.
 
 </details>
 $endif
@@ -168,34 +168,34 @@ $if(is_pdf)
 $else
 <details markdown="1"><summary>$(task)</summary>
 
-1. The company publicized public media posts of antisemites and anti-Zionists. Their information was used by the Israeli government immigration authorities, and by potential employers who often did social media background checks. Because they were extremely effective, left-wing organizations, including Jewish ones, hated them. They were the subject of intensive hostile cyber investigations by professional left-wing media organizations including [Times of Israel](https://www.timesofisrael.com/) and [The Forward](https://forward.com/). 
+1. The company publicizes and collates social media posts of antisemites, anti-Zionists, and terrorists. Their information was used by the Israeli government immigration authorities, and by potential employers who often did social media background checks. Because they were effective at blacklisting (aka "outing") these miscreants, left-wing organizations, including Jewish "progressive" ones, hated them. They were the subject of intensive hostile investigations by professional left-wing media organizations including [Times of Israel](https://www.timesofisrael.com/topic/canary-mission/) and [The Forward](https://forward.com/tag/canary-mission/) - who by the way eventually "outed" them. Therefore the company required cybersecurity "hygiene".
 
 2. The vast majority of their employees did journalist-like tasks. They had garden variety computer skills, and therefore would not be capable of handling sophisticated tasks like using virtual machine clients (e.g. [VirtualBox](https://www.virtualbox.org/)) or using [PGP](https://en.wikipedia.org/wiki/Encryption_software).
 
-3. The following are relatively simple, but effective, recommendations:
+3. The following are relatively simple, but effective, cybersecurity defense recommendations:
 
     a. Use the then most recent Windows 10 Professional O/S on account of its regular security updates and its support of [BitLocker](https://support.microsoft.com/en-us/windows/bitlocker-drive-encryption-76b92ac9-1040-48d6-9f5f-d14b3c5fa178) full disk encryption. PCs are lost and stolen.
     
-    b. Make weekly backups of user data.
-    
-    c.  Use a random PC login password from a USB security dongle such as [Yubico](https://www.yubico.com/), along with a manual [passphrase](https://www.techrepublic.com/article/what-is-passphrase/) prefix. 
+    b.  Use a random PC login password from a USB security token such as [Yubico](https://www.yubico.com/), along with a manual [passphrase](https://www.techrepublic.com/article/what-is-passphrase/) prefix. At that time the basic capability of the token was to store and emit a permanent manufacturer-configured "random" 16 character password. (More modern keys support additional services such as _TOTP_ authenticator one-time keys with a timeout). By pressing the button on the token it would act as a second keyboard in order to allow the password to be emitted into the PC. When using the emitted password, it is important that the user append it with his own memorized, say 8 character, password, otherwise security is compromised if the token is lost or stolen.
 
-    d. When the PC is unattended close the cover, and use a screen saver with a relatively short timeout, e.g. 10 minutes, Configure so that resumption requires a password. 
+    c. When the PC is unattended close the cover, and use a screen saver with a relatively short timeout, e.g. 10 minutes, Configure so that resumption requires a password. 
 
-    e. Use the _Firefox_ web browser (and especially not _Google Chrome_ !) with _multiple profiles_ in order to defend against [cross-site scripting attacks](https://en.wikipedia.org/wiki/Cross-site_scripting). There is no information leakage between profiles. (Also still today, 2025, Firefox has the best builtin bookmarking tool). They should at least use the following profiles:
+    d. Use the _Firefox_ web browser (and especially not _Google Chrome_ !) with _multiple profiles_ in order to defend against [cross-site scripting attacks](https://en.wikipedia.org/wiki/Cross-site_scripting). There is no information leakage between profiles. Also still today (2025) Firefox has the best builtin bookmarking tool. They should at least use the following profiles:
 
         * personal email and banking
         * personal browsing
-        * company email and access to company data
-        * company browsing
+        * company email and accessing company data
+        * work related browsing
 
-    f. Use email aliases when required to access social media.
+    e. Use email aliases when required to access potentially hostile social media.
     
-    g. Use strong random passwords generated and stored in a _local_ [FOSS](https://itsfoss.com/what-is-foss/) password database application such as [KeePass](https://keepassxc.org/), and not a commerical password server. And as long as they used their security dongle for their random database password, then they could store their password database on a personal disk-on-key or a cloud file server such as [Dropbox](https://www.dropbox.com/). 
+    f. Use strong random passwords generated and stored in a _local_ [FOSS](https://itsfoss.com/what-is-foss/) password database application such as [KeePass](https://keepassxc.org/), and not a commercial password server in the cloud (which have historically been periodically hacked). And as long as the user used his security token to protect his password database with his permanent password (appended with his memorized suffix), then he could safely store the database on a disk-on-key or a cloud file server such as [Dropbox](https://www.dropbox.com/). 
     
-    h. Use [7-zip](https://www.7-zip.org/) for password protection of disk-on-key storage or file transfers. For file transfers, It has the disadvantage of using shared passwords, and therefore not nearly as secure as _PGP_, but defintely far better than in-the-clear transfers.
+    g. Use [7-zip](https://www.7-zip.org/) for password protection of disk-on-key storage or file transfers. For file transfers, It has the disadvantage of using shared passwords, and therefore not nearly as secure as _PGP_, but definitely far better than in-the-clear transfers.
 
-    i. Assign an employee to be the security monitor. All employees must pass a quick monthly security review from the monitor.
+    h. Make weekly encrypted backups of user data.
+    
+    i. Assign _two_ employees to be security monitors. They should store backup security tokens and user PC backups off-site. All employees must pass a quick monthly security review from the monitor.
     
 </details>
 $endif
@@ -317,7 +317,7 @@ $else
 
 2. I was one of the first security researchers in the world to prove that the ubiquitous virtual machine packages, e.g. VMWare and VirtualBox, could break simple DRM protection schemes like date restrictions or replay count.
 
-3. I showed how X64 virtualization hardware could be used together with [QEMU](https://en.wikipedia.org/wiki/QEMU) to break the software random number generator (RNG). This was a very critical attack because the fundamental security assumption was that each client PC had a world wide unique cryptrographic "nonce". But if confederate clients could share their nonces then a single license could be shared by all members of the confederacy. At that time, c. 2007, the cycle counter instruction `RDTSC` was easily subverted by the virtualization technology. After I left the company, since 2012 the CPU has a hardware RNG instruction `RDRAND` which is a much safer instruction from the perspective of security.
+3. I showed how X64 virtualization hardware could be used together with [QEMU](https://en.wikipedia.org/wiki/QEMU) to break the software random number generator (RNG). This was a very critical attack because the fundamental security assumption was that each client PC had a world wide unique cryptographic "nonce". But if confederate clients could share their nonces then a single license could be shared by all members of the confederacy. At that time, c. 2007, the cycle counter instruction `RDTSC` was easily subverted by the virtualization technology. After I left the company, since 2012 the CPU has a hardware RNG instruction `RDRAND` which is a much safer instruction from the perspective of security.
 
 4. I invited outside security researchers to give lectures and seminars to in-house developers on state-of-the-art security techniques. Based upon these lectures I developed an obfuscated [FORTH](https://en.wikipedia.org/wiki/Forth_(programming_language))-like compiler that was extremely difficult to reverse engineer.
 
@@ -369,7 +369,7 @@ $else
 
 2. The software heavily relied upon the builtin [standard vector graphics (SVG)](https://en.wikipedia.org/wiki/SVG) capability of all modern web  browsers (since 1999).
     a. _SVG_ is an _XML_ variant. 
-    b. _SVG_ returns the postion and color at the cursor.
+    b. _SVG_ returns the position and color at the cursor.
     c. Unlike _JPG_ or _PNG_ pixelated images, _SVG_ has the ability to smoothly zoom in or zoom out of vector images.
 
 3. The basic concept can be understood by using an example image of a circle.
@@ -506,7 +506,31 @@ $if(is_pdf)
 $else
 <details markdown="1"><summary>$(task)</summary>
 
-1. TBD
+1. Iscar's Matkash plant in Tefen in northern Israel was a hi-tech factory that manufactured hundreds of different small cutting blades according to different chemical specifications and sizes via a sintering (i.e. a mini furnace) process. Typically the blades were bonded to steel materials, e.g. a circular saw.
+
+2. The plant was totally automated. Human intervention was required only in the event of an accident, where there was a red siren on top of the workstation.
+
+3. The plant included:
+
+    * various types of workstations that had multiple stands where parts and raw materials were placed, and the end product was removed
+    * robotic arms automatically inserted parts and raw materials into the station, and removed the end product
+    * robotic automatically guided vehicles delivered and removed pallets from the workstations to the correct stand, and moved them to the conveyor system or to the storage area
+    * some pallets were transported by conveyor
+    * some pallets were placed on stacks
+    * pallets were temporarily stored in a storage area made up of hundreds of stands
+    * parts that were stored for too long had to oiled in order to prevent rust
+
+4. My job and that of my partner was to automatically orchestrate the plant via S/W. We had a powerful VAX/VMS computer at our disposal with a relational database. Our liaison from DEC insisted that the main programming language be _Pascal_.
+
+5. We came to the project with no knowledge of factory automation. So we started with month long mentoring from an industrial engineer who did.
+
+6. Our solution was to design a domain specific language (DSL) that described every single object in the factory's "object kingdom", and how they interacted with one another. The DSL had to configurable by the factory engineer who was not a software engineer, while the clerical staff required a GUI window into the DSL for making on-the-fly configurations and viewing the status of the factory.
+
+7. It became immediately obvious that the S/W required object oriented techniques to implement. At that time object oriented programming was just being developed in research/university settings. The first version of _C++_ was just released, and _SNOBOL_ was a research tool. There was no Internet yet at that time, but ample literature was available in the Hebrew Univ computer science library. Recall that we had a hard requirement to use the procedural _Pascal_ language,
+
+8. VAX/VMS had a command line utility for designing command "ensembles" which could be executed via callbacks to a compilable language, i.e. _Pascal_. We used these ensembles to define every type of object, along with their attributes, supported by the system. (Today, 30 years later, I would use XML instead which had not yet been invented).
+
+9. To make a very long and very old story short, in 18 months we built a working factory that included a scheduler!
 
 </details>
 $endif
@@ -588,17 +612,15 @@ $else
 
 1. I was the first public interest [intervenor](https://www.merriam-webster.com/dictionary/intervenor) in the history of the _OEB_ to be awarded costs - at the suggestion of the _OEB_!
 
-2. In a nutshell [marginal cost pricing](https://en.wikipedia.org/wiki/Marginal_cost) is also referred to as "congestion pricing". The majority of consumers understand that the price for road tolls or parking lots or hotels etc. should be much higher during peak usage periods. The same principle holds true for electric power generation. Generating stations that run 24x7, e.g. nuclear, generate much cheaper electricity than using gas turbines that are designed to run during peak load periods that occur a few hundred hours per year. But for the past 50 years consumers were used to flat rates.
+2. In a nutshell [marginal cost pricing](https://en.wikipedia.org/wiki/Marginal_cost) is also referred to as "congestion pricing". The majority of consumers understand that the price for road tolls or parking lots or tourism facilities, etc., should be much higher during peak usage periods. The same principle holds true for electric power generation. Therefore it was always recommended to activate electric water boilers in the middle of the night (and similarly today when charging electric vehicles), but the flat rate system provided no price incentive to do so. Generation "base" stations that run 24x7, e.g. nuclear, produce less expensive electricity than "intermediate" coal station designed to run 8 hours a day, and there are huge differences in the price of electricity from gas turbines designed to run during peak loads that occur a few hundred hours per year (e.g. during extreme weather conditions). But for the previous 50 years consumers were used to flat rates.
 
 3. Due to intense political pressure from the mineral smelting industry, who relied upon subsidized electricity prices and who directly employed tens of thousands of people and who threatened to leave the province if the subsidies were removed, the Ontario government caved in to the pressure, and forced the public electric utility, then called [Ontario Hydro](https://en.wikipedia.org/wiki/Ontario_Hydro), to withdraw their case after the hearings had already begun. I became the primary intervenor at the hearings to present the case for [marginal cost pricing](https://www.britannica.com/money/marginal-cost-pricing).
 
-4. I published a full page op-ed about the hearings in Canada's then newspaper of record [The Globe and Mail](https://www.theglobeandmail.com/). In that article I proposed to immediately economically rationalize electricty prices, while simultaneously granting the smelting industry with gradually decreasing annual subsidies to help them make the transition to the new pricing scheme. My proposal was a political "no go" because the politicians could never sell to the general public granting any explicit subsidies to some of the wealthiest corporations in the province, even though it was clear that subsidized electric prices fostered general growth of electric power consumption with the concomitant outrageous financial consequences associated with expanding generation capacity. Instead the politicians preferred to treat the general public as fools by arguing that maintaining the current pricing scheme did not constitute a subsidy.
+4. I published a full page op-ed about the hearings in Canada's then newspaper of record [The Globe and Mail](https://www.theglobeandmail.com/). In that article I proposed to immediately economically rationalize electricity prices, while simultaneously granting the smelting industry with gradually decreasing annual subsidies to help them make the transition to the new pricing scheme. My proposal was a political "non-starter" because the politicians could never sell to the general public granting explicit subsidies to some of the wealthiest corporations in the province, even though it was clear that subsidized electric prices fostered general growth of electric power consumption with the concomitant outrageous financial consequences associated with expanding generation capacity (i.e. at the time building new nuclear power stations). Instead the politicians preferred to treat the general public as fools by arguing that maintaining the _status quo_ of flat pricing (and even worse by granting discounts to industrial consumers) did not constitute a subsidy.
 
-5. I initially learned about the hearings from a course in my MBA program (1976) when I complained to the Ontario Hydro economic team (beside the Univ campus) about the mediocre _B_ grade my professor gave me on my term paper.
+5. I initially learned about the hearings from a course in my MBA program (1976) when I complained to the Ontario Hydro economic team (beside the Univ campus) about the mediocre _B_ grade my professor gave me on my term paper. At the same time I had my discussions with the economic team, the government ordered them to withdraw their proposal. They suggested to me that I join the hearings as a public interest intervenor to advocate _marginal cost pricing_ in their stead, and that they would give me behind the scenes technical support. I agreed to their proposal. I would have the exact same legal standing as the smelting industry because I paid an electric bill of about \$25 a month!
 
-6. I had legal standing because I paid an electric bill of about \$25 a month!
-
-7. This job was a formative learning experience for me that subsequently effected my whole life because I learned that a single individual can effectively stand up to the corruption of large business and government. With perfect hindsight, it was clearly a case of Divine intervention (Hebrew: _Hashgacha Pratit_). Years later in my life in Israel, I became involved in a number of community service projects, where I learned that a single individual can make a difference and successfully hold their ground against government corruption.
+6. This job was a formative learning experience for me that subsequently effected my whole life because I learned that a single individual can effectively stand up to the corruption of large business and government. With perfect hindsight, it was clearly a case of Divine intervention (Hebrew: _Hashgacha Pratit_). Years later in my life in Israel, I became involved in a number of community service projects where I showed that a single individual can make a difference and successfully push back against government corruption.
 
 </details>
 $endif
@@ -960,7 +982,7 @@ $else
 
 1. __Born:__ 1957 Canada.
 2. ___Aliyah_ (English: immigration to Israel)__: 1983. My triple great grandfather, Rav Aharon Visanska born in Poland in 1809, was a disciple of the Vilna Gaon (Hebrew: _Gra_). During his adult life he shuttled between Jerusalem and Michigan. His granddaughter Rachel, i.e. my great grandmother, was born in  Michigan in 1874. Aharon was buried on the Mount of Olives (Hebrew: _Har HaZeitim_) in 1893. Rachel's son Hershel Tzvi, i.e. my grandfather, was born in Ontario in 1896. He fought in WW I in the _Jewish Legion_ in Turkey and later in Palestine under _General Allenby_. Hershel Tzvi returned to Ontario where I was born.
-3. __Married:__ I have 2 boys + 2 girls, all married with many grandchildren. all of whom live in _Eretz Yisrael_ (English: the Land of Israel). As of this writing, 2025-03-02,  since the Hamas massacre on 2023-10-07 both of my sons have spent about 6 months in the IDF, and they both just began a 2 month call-up this week. 
+3. __Married:__ I have 2 boys + 2 girls, all married with many grandchildren. all of whom live in _Eretz Yisrael_ (English: the Land of Israel). As of this writing, 2025-03-03,  since the Hamas massacre on 2023-10-07 both of my sons have spent about 6 months in the IDF, and they both just began a 2 month call-up this week. 
 4. __Religious Beliefs:__ I am a God-fearing observant Jew and Zionist.
 5. __IDF Reserves 1988-2001:__ I was a combat infantry sergeant, where I served in the Central Command (Hebrew: _Pikud HaMerkaz_) in the Jordan Valley. Exceptionally I often acted in the role of deputy company commander (Hebrew: _Samap_) even though I was a _Shlav Betnik_ (English: those first drafted over age 26) with only 4 months of basic training. Considering that the IDF intended to send me to a combat infantry unit for the whole period of my 13 years of reserve duty, about 2/3 of my basic training was a complete waste of time, e.g. kitchen duty, gardening duty, and guard duty, instead of primarily focusing on combat skills.
 6. __Sport:__ I still engage in regular vigorous exercise at a gym for 90 min 3x per week - cardio and heavy weights. When I was younger I engaged in Judo, freestyle wrestling, and Tai Chi.
@@ -973,7 +995,7 @@ $endif
 
 ## Footnotes
 
-[^secure]: __Secure Photo:__ This secure photo was built using [GIMP](https://www.gimp.org/) blurring filters (e.g. Gaussian, clothify, and oilify) along with a prominent distorted visible email address watermark. This digital "camouflage" will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be digitally compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate it with any other person besides me. Similarly if a site were to maliciously display my photo without my permission in order to imply my association with them then it would be trivial for anyone who may be suspicious of their claim to challenge the site by asking me for a verification email. And it would be interesting to consider adding an [Eurion](https://en.wikipedia.org/wiki/EURion_constellation) currency watermark that would fool Photoshop software along with high quality printers and scanners into believing that the watermarked photo is a banknote in order to prevent it from being manipulated or printed. The general field of obscuring personal information is referred to as [de-identification](https://en.wikipedia.org/wiki/De-identification). There was an Israeli company, _D-ID_ now defunct, that specialized in obscurring high quality images without using any blurring filters which could not be used in automated password verification scanners!
+[^secure]: __Secure Photo:__ This secure photo was built using [GIMP](https://www.gimp.org/) blurring filters (e.g. Gaussian, clothify, and oilify) along with a prominent distorted visible email address watermark. This digital "camouflage" will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be digitally compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate it with any other person besides me. Similarly if a site were to maliciously display my photo without my permission in order to imply my association with them then it would be trivial for anyone who may be suspicious of their claim to challenge the site by asking me for a verification email. And it would be interesting to consider adding an [Eurion](https://en.wikipedia.org/wiki/EURion_constellation) currency watermark that would fool Photoshop software along with high quality printers and scanners into believing that the watermarked photo is a banknote in order to prevent it from being manipulated or printed. The general field of obscuring personal information is referred to as [de-identification](https://en.wikipedia.org/wiki/De-identification). There was an Israeli company, _D-ID_ now defunct, that specialized in obscuring high quality images without using any blurring filters which could not be used in automated password verification scanners!
 
 [^polymath]: __Autodidact Polymath:__ There is a common misconception that only geniuses like _Leonardo da Vinci_ deserve the appellation autodidact polymath, and therefore by referring to myself as one then I am making the bombastic claim to be a genius in the same category as Leonardo. There is an outstanding [TED talk](https://www.youtube.com/watch?v=VGF3kjgCaMQ) showing how children from Indian slums with the appropriate mentoring can become _autodidact polymaths_. And there was a similarly successful project done with children from [Mexican slums](https://www.wired.com/2013/10/free-thinkers/). Many very intelligent people, especially as they get older, don’t like moving outside of their intellectual comfort zone, whereas I revel in taking on intellectual challenges in new fields outside of my comfort zone. Note my "grand slams" in a wide range of application domains, where the only way to quickly achieve expertise was self-learning admittedly with the help of highly qualified mentors. I feel that I still maintain a high degree of child-like [mental plasticity](https://www.psychologytoday.com/us/basics/neuroplasticity). Part of this skill I retain by regular interaction with my own young grandchildren, where my play with them is much more analytical than I used to exhibit with my own children.
 
