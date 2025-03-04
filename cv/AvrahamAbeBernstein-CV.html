@@ -353,14 +353,16 @@ href="https://en.wikipedia.org/wiki/XML">XML</a> format with the Python <a
 href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a> library in order to
 generate the refactored source code. I improved their build speed time by 5x (i.e. from 6 hours
 to 1 hour) and reduced RAM consumption by 2x (from a 64 GB workstation to 32 GB).</p></li>
-<li><p>And I invented an algorithm (US patent pending) to greatly reduce RAM usage when the
-embedded software generates <a href="https://en.wikipedia.org/wiki/Flash_memory">FLASH</a> files
-by modifying the internals of the ubiquitous <em>C</em> <a
+<li><p>And I invented an algorithm (US patent pending) for embedded systems to greatly reduce
+RAM usage when the software generates <a
+href="https://en.wikipedia.org/wiki/Flash_memory">FLASH</a> files by modifying the internals of
+the ubiquitous <em>C</em> <a
 href="https://www.man7.org/linux/man-pages/man3/memcpy.3.html">memcpy</a> function by
 incorporating <a href="https://en.wikipedia.org/wiki/POSIX">Posix</a>-like buffered I/O when
-memcpy is used to sequentially write to FLASH. The RAM savings enables usage of larger "chunks"
-that enables higher compression ratios for legacy system boards with small amounts of RAM, e.g.
-less than 256 KB. Sometimes compression ratios could be improved by up to 25%.</p></li>
+<em>memcpy</em> is used to sequentially write to FLASH. The RAM savings enables usage of larger
+"chunks" that enables higher compression ratios for legacy system boards with small amounts of
+RAM, e.g. less than 256 KB. Sometimes compression ratios could be improved by up to
+25%.</p></li>
 </ol>
 </details>
 <h3 id="jct">2022 part-time: <a href="https://www.jct.ac.il/en">Jerusalem College Of Technology
@@ -433,7 +435,10 @@ implement bsdiff
 </summary>
 <ol>
 <li><p>I architected and implemented a software design for efficient software updates of
-embedded systems using mini-bsdiff delta encoding.</p>
+embedded systems using mini-bsdiff <a href="https://en.wikipedia.org/wiki/Delta_encoding">delta
+encoding</a>. Note that <em>delta encoding</em> allows for significantly smaller, e.g. 10x
+smaller, software updates compared to <em>zip</em>-like updates when the update contains minor
+differences.</p>
 <ul>
 <li>Note that the original bsdiff software is not designed for the size limitations of embedded
 systems especially for legacy automotive boards.</li>

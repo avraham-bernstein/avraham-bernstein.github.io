@@ -75,7 +75,7 @@ $else
 
 2. I invented an extremely efficient technique to greatly improve the efficiency of their initial refactoring software by combining the [srcML](https://www.srcml.org/) compiler [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) output in [XML](https://en.wikipedia.org/wiki/XML) format with the Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) library in order to generate the refactored source code. I improved their build speed time by 5x (i.e. from 6 hours to 1 hour) and reduced RAM consumption by 2x (from a 64 GB workstation to 32 GB).
 
-3. And I invented an algorithm (US patent pending) to greatly reduce RAM usage when the embedded software generates [FLASH](https://en.wikipedia.org/wiki/Flash_memory) files by modifying the internals of the ubiquitous _C_ [memcpy](https://www.man7.org/linux/man-pages/man3/memcpy.3.html) function by incorporating [Posix](https://en.wikipedia.org/wiki/POSIX)-like buffered I/O when memcpy is used to sequentially write to FLASH. The RAM savings enables usage of larger "chunks" that enables higher compression ratios for legacy system boards with small amounts of RAM, e.g. less than 256 KB. Sometimes compression ratios could be improved by up to 25%.
+3. And I invented an algorithm (US patent pending) for embedded systems to greatly reduce RAM usage when the software generates [FLASH](https://en.wikipedia.org/wiki/Flash_memory) files by modifying the internals of the ubiquitous _C_ [memcpy](https://www.man7.org/linux/man-pages/man3/memcpy.3.html) function by incorporating [Posix](https://en.wikipedia.org/wiki/POSIX)-like buffered I/O when _memcpy_ is used to sequentially write to FLASH. The RAM savings enables usage of larger "chunks" that enables higher compression ratios for legacy system boards with small amounts of RAM, e.g. less than 256 KB. Sometimes compression ratios could be improved by up to 25%.
 
 </details>
 $endif
@@ -141,7 +141,7 @@ $if(is_pdf)
 $else
 <details markdown="1"><summary>$(task)</summary>
 
-1. I architected and implemented a software design for efficient software updates of embedded systems using mini-bsdiff delta encoding.
+1. I architected and implemented a software design for efficient software updates of embedded systems using mini-bsdiff [delta encoding](https://en.wikipedia.org/wiki/Delta_encoding). Note that _delta encoding_ allows for significantly smaller, e.g. 10x smaller, software updates compared to _zip_-like updates when the update contains minor differences.
 
     * Note that the original bsdiff software is not designed for the size limitations of embedded systems especially for legacy automotive boards.
     * In particular the original bsdiff software incorporates the outdated bz binary compressor that has a 100 KB RAM footprint.
