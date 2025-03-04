@@ -153,7 +153,7 @@ $else
  
  3. I experimented with [Google's Courgette](https://www.chromium.org/developers/design-documents/software-updates-courgette/) improvement to _bsdiff_, but it required a relatively large amount of RAM on the target device to support a linker. Such large RAM is not typically available on legacy boards used in the automotive industry. I invented an algorithm that dispensed with the need for a linker.
 
-4. I experimented with techniques for using source code patching instead of _bsdiff_ object code patching. The _Elektrobit_ management refused to believe that it was commercially feasible to have access to an OEM's source code. I switched jobs to [Aurora Labs](#aurora) above because I believed that _Aurora Lab's_ source code patching is a better solution.
+4. I experimented with techniques for using _source code_ patching instead of _bsdiff_ _object code_ patching. The _Elektrobit_ management refused to believe that it was commercially feasible to have access to an OEM's source code. I switched jobs to [Aurora Labs](#aurora) above because I believed that _Aurora Labs'_ source code patching is a better solution.
 
 5. I was the company's [Misra C](https://en.wikipedia.org/wiki/MISRA_C) "enforcer". While I understood the safety rationale and the legal requirements for _Misra C_, I found many of their rules to be unnecessarily pedantic. I developed [Jinja2](https://jinja.palletsprojects.com/en/stable/) preprocessing utilities that worked around these pedantic rules, but that still generated valid _Misra C_ code.
     
