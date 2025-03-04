@@ -141,13 +141,13 @@ $if(is_pdf)
 $else
 <details markdown="1"><summary>$(task)</summary>
 
-1. I architected and implemented a software design for efficient software updates of embedded systems using mini-bsdiff [delta encoding](https://en.wikipedia.org/wiki/Delta_encoding). Note that _delta encoding_ allows for significantly smaller, e.g. 10x smaller, software updates compared to _zip_-like updates when the update contains minor differences.
+1. I architected and implemented a software design for efficient software updates of embedded systems using [mini-bsdiff](https://github.com/thoughtpolice/minibsdiff) [delta encoding](https://en.wikipedia.org/wiki/Delta_encoding). Note that _delta encoding_ enables significantly smaller, e.g. 10x smaller, software updates compared to _zip_-like updates when the update contains minor differences.
 
-    * Note that the original bsdiff software is not designed for the size limitations of embedded systems especially for legacy automotive boards.
-    * In particular the original bsdiff software incorporates the outdated bz binary compressor that has a 100 KB RAM footprint.
-    * Mini-bsdiff is not bundled with any binary compressor at all.
-    * Mini-bsdiff can be combined with the modern xz binary compressor designed for embedded systems that only has a 26 KB RAM footprint.
-    * It is not computationally feasible to generate an offline mini-bsdiff patch where at least one of the source files is larger than 8MB, in which case it is preferable to use the VCDiff/xdiff algorithm which is commonly used on web sites.
+    * Note that the original [bsdiff](https://github.com/mendsley/bsdiff) software is not designed for the size limitations of embedded systems especially for legacy automotive boards.
+    * In particular the original _bsdiff_ software incorporates the outdated _bz_ binary compressor that has a 100 KB RAM footprint.
+    * _Mini-bsdiff_ is not bundled with any binary compressor at all.
+    * _Mini-bsdiff_ can be combined with the modern _xz_ binary compressor designed for embedded systems that only has a 26 KB RAM footprint.
+    * It is not computationally feasible to generate an offline _mini-bsdiff_ patch where at least one of the source files is larger than 8MB, in which case it is preferable to use the _VCDiff/xdiff_ algorithm which is commonly used on web sites.
     
 2. I invented [EU Patent EP3680773A1](https://worldwide.espacenet.com/patent/search/family/069147491/publication/EP3680773A1?q=20150616.9), a mini-bsdiff patch implementation for small FLASH memory systems where the FLASH is not big enough to temporarily hold both the original version "A" and new version "B" of the object code. Normally bsdiff requires both versions be available when applying the patch.
  

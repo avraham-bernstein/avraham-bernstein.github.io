@@ -435,21 +435,22 @@ implement bsdiff
 </summary>
 <ol>
 <li><p>I architected and implemented a software design for efficient software updates of
-embedded systems using mini-bsdiff <a href="https://en.wikipedia.org/wiki/Delta_encoding">delta
-encoding</a>. Note that <em>delta encoding</em> allows for significantly smaller, e.g. 10x
-smaller, software updates compared to <em>zip</em>-like updates when the update contains minor
-differences.</p>
+embedded systems using <a href="https://github.com/thoughtpolice/minibsdiff">mini-bsdiff</a> <a
+href="https://en.wikipedia.org/wiki/Delta_encoding">delta encoding</a>. Note that <em>delta
+encoding</em> enables significantly smaller, e.g. 10x smaller, software updates compared to
+<em>zip</em>-like updates when the update contains minor differences.</p>
 <ul>
-<li>Note that the original bsdiff software is not designed for the size limitations of embedded
-systems especially for legacy automotive boards.</li>
-<li>In particular the original bsdiff software incorporates the outdated bz binary compressor
-that has a 100 KB RAM footprint.</li>
-<li>Mini-bsdiff is not bundled with any binary compressor at all.</li>
-<li>Mini-bsdiff can be combined with the modern xz binary compressor designed for embedded
-systems that only has a 26 KB RAM footprint.</li>
-<li>It is not computationally feasible to generate an offline mini-bsdiff patch where at least
-one of the source files is larger than 8MB, in which case it is preferable to use the
-VCDiff/xdiff algorithm which is commonly used on web sites.</li>
+<li>Note that the original <a href="https://github.com/mendsley/bsdiff">bsdiff</a> software is
+not designed for the size limitations of embedded systems especially for legacy automotive
+boards.</li>
+<li>In particular the original <em>bsdiff</em> software incorporates the outdated <em>bz</em>
+binary compressor that has a 100 KB RAM footprint.</li>
+<li><em>Mini-bsdiff</em> is not bundled with any binary compressor at all.</li>
+<li><em>Mini-bsdiff</em> can be combined with the modern <em>xz</em> binary compressor designed
+for embedded systems that only has a 26 KB RAM footprint.</li>
+<li>It is not computationally feasible to generate an offline <em>mini-bsdiff</em> patch where
+at least one of the source files is larger than 8MB, in which case it is preferable to use the
+<em>VCDiff/xdiff</em> algorithm which is commonly used on web sites.</li>
 </ul></li>
 <li><p>I invented <a
 href="https://worldwide.espacenet.com/patent/search/family/069147491/publication/EP3680773A1?q=20150616.9">EU
