@@ -561,13 +561,13 @@ separate build for us. I managed to architect an optional security plugin for th
 minimal changes to their system, and caused zero interference to their other customers who chose
 not to use the plugin.</p></li>
 <li><p>Initially the movie studios insisted that smartphones could not be rooted because it made
-them considerable more difficult to debug, so I developed a fuzzy logic-like mechanism to detect
+them considerably more difficult to debug, so I developed a fuzzy logic-like mechanism to detect
 rootedness. The problem was that less expensive Android phones from Asia, that were flooding the
 market, were rooted by default because it saved the manufacturer a few hours of licensing work
-from Google who controlled AOSP (the Android Open Source Project). Therefore security had to be
-moved from the client to the content servers. For example a subscriber who played 100 hours of
-content a week was suspect, or a subscriber who played content simultaneously from different
-geographic locations was suspect.</p></li>
+from Google who controlled the <a href="https://source.android.com/">Android Open Source Project
+(AOSP)</a>. Therefore security had to be moved from the client to the content servers. For
+example a subscriber who played 100 hours of content a week was suspect, or a subscriber who
+played content simultaneously from different geographic locations was suspect.</p></li>
 </ol>
 </details>
 <h3 id="discretix">2013-14: <em>Discretix</em> Netanya IL (renamed <em>Sansa Security</em>,
@@ -985,10 +985,11 @@ Metal Blade Production Factory: Co-inventor and S/W architect of a DSL to implem
 production control system that orchestrated a completely automated factory
 </summary>
 <ol>
-<li><p>Iscar's Matkash plant in Tefen in northern Israel was a hi-tech factory that manufactured
-hundreds of different small cutting blades according to different chemical specifications and
-sizes via a sintering (i.e. a mini furnace) process. Typically the blades were bonded to steel
-materials, e.g. a circular saw.</p></li>
+<li><p>Iscar's <em>Matkash</em> plant in <em>Tefen</em> in northern Israel was an uber hi-tech
+factory that manufactured hundreds of different small cutting blades according to different
+chemical compositions and sizes via a <a
+href="https://en.wikipedia.org/wiki/Sintering">sintering</a> process. Typically the blades were
+bonded to steel materials, e.g. a circular saw.</p></li>
 <li><p>The plant was totally automated. Human intervention was required only in the event of an
 accident, where there was a red siren on top of the workstation.</p></li>
 <li><p>The plant included:</p>
@@ -1005,27 +1006,31 @@ the correct stand, and moved them to the conveyor system or to the storage area<
 <li>parts that were stored for too long had to oiled in order to prevent rust</li>
 </ul></li>
 <li><p>My job and that of my partner was to automatically orchestrate the plant via S/W. We had
-a powerful VAX/VMS computer at our disposal with a relational database. Our liaison from DEC
-insisted that the main programming language be <em>Pascal</em>.</p></li>
+a powerful <a href="https://en.wikipedia.org/wiki/OpenVMS">VAX/VMS</a> computer at our disposal
+with a relational database. Our liaison from <em>DEC</em> insisted that the main programming
+language be <em>Pascal</em>.</p></li>
 <li><p>We came to the project with no knowledge of factory automation. So we started with month
 long mentoring from an industrial engineer who did.</p></li>
-<li><p>Our solution was to design a domain specific language (DSL) that described every single
-object in the factory's "object kingdom", and how they interacted with one another. The DSL had
-to configurable by the factory engineer who was not a software engineer, while the clerical
-staff required a GUI window into the DSL for making on-the-fly configurations and viewing the
-status of the factory.</p></li>
-<li><p>It became immediately obvious that the S/W required object oriented techniques to
-implement. At that time object oriented programming was just being developed in
-research/university settings. The first version of <em>C++</em> was just released, and
-<em>SNOBOL</em> was a research tool. There was no Internet yet at that time, but ample
+<li><p>Our solution was to design a <a
+href="https://en.wikipedia.org/wiki/Domain-specific_language">domain specific language (DSL)</a>
+that described every single object in the factory's "object kingdom", and how they interacted
+with one another. The <em>DSL</em> had to configurable by the factory engineer who was not a
+software engineer, while the clerical staff required a <em>GUI</em> window into the <em>DSL</em>
+for making on-the-fly configurations and viewing the status of the factory.</p></li>
+<li><p>It became immediately obvious that the S/W required <em>object oriented</em> techniques
+to implement. At that time <a
+href="https://en.wikipedia.org/wiki/Object-oriented_programming">object oriented programming
+(OOP)</a> was just being developed in research/university settings. The first version of
+<em>C++</em> was just released, and <a href="https://en.wikipedia.org/wiki/SNOBOL">SNOBOL</a>
+was a <em>OOP</em> research prototype. There was no Internet yet at that time, but ample
 literature was available in the Hebrew Univ computer science library. Recall that we had a hard
 requirement to use the procedural <em>Pascal</em> language,</p></li>
-<li><p>VAX/VMS had a command line utility for designing command "ensembles" which could be
-executed via callbacks to a compilable language, i.e. <em>Pascal</em>. We used these ensembles
-to define every type of object, along with their attributes, supported by the system. (Today, 30
-years later, I would use XML instead which had not yet been invented).</p></li>
-<li><p>To make a very long and very old story short, in 18 months we built a working factory
-that included a scheduler!</p></li>
+<li><p><em>VAX/VMS</em> had a command line utility for designing command "ensembles" which could
+be executed via callbacks to a compilable language, e.g. <em>Pascal</em>. We used these
+ensembles to define every type of object, along with their attributes, supported by the our DSL.
+(Today, 30 years later, I would use XML instead which had not yet been invented).</p></li>
+<li><p>To make a very long story short, in 18 months we built a working factory that included a
+scheduler!</p></li>
 </ol>
 </details>
 <h3 id="cubital-printer">1988-89: contractor to <em>Cubital</em> (defunct) Herzliya IL,

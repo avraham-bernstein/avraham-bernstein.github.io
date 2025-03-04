@@ -214,7 +214,7 @@ $else
  
 3. I worked with the 3rd party software supplier of the video codec in order to substantially bolster the security of their product which proved to be a major potential security hole in our system. The challenge was that most of their customers did not require the security that we did, and for practical commercial reasons they were not willing to make a separate build for us. I managed to architect an optional security plugin for them that caused minimal changes to their system, and caused zero interference to their other customers who chose not to use the plugin.
 
-4. Initially the movie studios insisted that smartphones could not be rooted because it made them considerable more difficult to debug, so I developed a fuzzy logic-like mechanism to detect rootedness. The problem was that less expensive Android phones from Asia, that were flooding the market, were rooted by default because it saved the manufacturer a few hours of licensing work from Google who controlled AOSP (the Android Open Source Project). Therefore security had to be moved from the client to the content servers. For example a subscriber who played 100 hours of content a week was suspect, or a subscriber who played content simultaneously from different geographic locations was suspect.
+4. Initially the movie studios insisted that smartphones could not be rooted because it made them considerably more difficult to debug, so I developed a fuzzy logic-like mechanism to detect rootedness. The problem was that less expensive Android phones from Asia, that were flooding the market, were rooted by default because it saved the manufacturer a few hours of licensing work from Google who controlled the [Android Open Source Project (AOSP)](https://source.android.com/). Therefore security had to be moved from the client to the content servers. For example a subscriber who played 100 hours of content a week was suspect, or a subscriber who played content simultaneously from different geographic locations was suspect.
 
 </details>
 $endif
@@ -506,7 +506,7 @@ $if(is_pdf)
 $else
 <details markdown="1"><summary>$(task)</summary>
 
-1. Iscar's Matkash plant in Tefen in northern Israel was a hi-tech factory that manufactured hundreds of different small cutting blades according to different chemical specifications and sizes via a sintering (i.e. a mini furnace) process. Typically the blades were bonded to steel materials, e.g. a circular saw.
+1. Iscar's _Matkash_ plant in _Tefen_ in northern Israel was an uber hi-tech factory that manufactured hundreds of different small cutting blades according to different chemical compositions and sizes via a [sintering](https://en.wikipedia.org/wiki/Sintering) process. Typically the blades were bonded to steel materials, e.g. a circular saw.
 
 2. The plant was totally automated. Human intervention was required only in the event of an accident, where there was a red siren on top of the workstation.
 
@@ -520,17 +520,17 @@ $else
     * pallets were temporarily stored in a storage area made up of hundreds of stands
     * parts that were stored for too long had to oiled in order to prevent rust
 
-4. My job and that of my partner was to automatically orchestrate the plant via S/W. We had a powerful VAX/VMS computer at our disposal with a relational database. Our liaison from DEC insisted that the main programming language be _Pascal_.
+4. My job and that of my partner was to automatically orchestrate the plant via S/W. We had a powerful [VAX/VMS](https://en.wikipedia.org/wiki/OpenVMS) computer at our disposal with a relational database. Our liaison from _DEC_ insisted that the main programming language be _Pascal_.
 
 5. We came to the project with no knowledge of factory automation. So we started with month long mentoring from an industrial engineer who did.
 
-6. Our solution was to design a domain specific language (DSL) that described every single object in the factory's "object kingdom", and how they interacted with one another. The DSL had to configurable by the factory engineer who was not a software engineer, while the clerical staff required a GUI window into the DSL for making on-the-fly configurations and viewing the status of the factory.
+6. Our solution was to design a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) that described every single object in the factory's "object kingdom", and how they interacted with one another. The _DSL_ had to configurable by the factory engineer who was not a software engineer, while the clerical staff required a _GUI_ window into the _DSL_ for making on-the-fly configurations and viewing the status of the factory.
 
-7. It became immediately obvious that the S/W required object oriented techniques to implement. At that time object oriented programming was just being developed in research/university settings. The first version of _C++_ was just released, and _SNOBOL_ was a research tool. There was no Internet yet at that time, but ample literature was available in the Hebrew Univ computer science library. Recall that we had a hard requirement to use the procedural _Pascal_ language,
+7. It became immediately obvious that the S/W required _object oriented_ techniques to implement. At that time [object oriented programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming) was just being developed in research/university settings. The first version of _C++_ was just released, and [SNOBOL](https://en.wikipedia.org/wiki/SNOBOL) was a _OOP_ research prototype. There was no Internet yet at that time, but ample literature was available in the Hebrew Univ computer science library. Recall that we had a hard requirement to use the procedural _Pascal_ language,
 
-8. VAX/VMS had a command line utility for designing command "ensembles" which could be executed via callbacks to a compilable language, i.e. _Pascal_. We used these ensembles to define every type of object, along with their attributes, supported by the system. (Today, 30 years later, I would use XML instead which had not yet been invented).
+8. _VAX/VMS_ had a command line utility for designing command "ensembles" which could be executed via callbacks to a compilable language, e.g. _Pascal_. We used these ensembles to define every type of object, along with their attributes, supported by the our DSL. (Today, 30 years later, I would use XML instead which had not yet been invented).
 
-9. To make a very long and very old story short, in 18 months we built a working factory that included a scheduler!
+9. To make a very long story short, in 18 months we built a working factory that included a scheduler!
 
 </details>
 $endif
