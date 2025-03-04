@@ -149,7 +149,7 @@ $else
     * _Mini-bsdiff_ can be combined with the modern _xz_ binary compressor designed for embedded systems that only has a 26 KB RAM footprint.
     * It is not computationally feasible to generate an offline _mini-bsdiff_ patch where at least one of the source files is larger than 8MB, in which case it is preferable to use the _VCDiff/xdiff_ algorithm which is commonly used on web sites.
     
-2. I invented [EU Patent EP3680773A1](https://worldwide.espacenet.com/patent/search/family/069147491/publication/EP3680773A1?q=20150616.9), a mini-bsdiff patch implementation for small FLASH memory systems where the FLASH is not big enough to temporarily hold both the original version "A" and new version "B" of the object code. Normally bsdiff requires both versions be available when applying the patch.
+2. I invented [EU Patent EP3680773A1](https://worldwide.espacenet.com/patent/search/family/069147491/publication/EP3680773A1?q=20150616.9), a _mini-bsdiff_ patch implementation for small FLASH memory systems where the FLASH is not big enough to temporarily hold both the original version "A" and new version "B" of the object code. Normally the _bsdiff_ algorithms requires both versions be available when applying the patch. I had discussions with _Colin Percival_ the original inventor of _bsdiff_.
  
  3. I experimented with [Google's Courgette](https://www.chromium.org/developers/design-documents/software-updates-courgette/) improvement to _bsdiff_, but it required a relatively large amount of RAM on the target device to support a linker. Such large RAM is not typically available on legacy boards used in the automotive industry. I invented an algorithm that dispensed with the need for a linker.
 
