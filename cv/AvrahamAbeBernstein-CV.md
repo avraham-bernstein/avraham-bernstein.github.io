@@ -15,7 +15,7 @@ $if(not is_pdf)\
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 $endif\
-<br/>__Last Update:__ 2025-03-03
+<br/>__Last Update:__ 2025-03-04
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -73,7 +73,7 @@ $else
 
 1. The company's core product relied upon [refactoring](https://en.wikipedia.org/wiki/Code_refactoring) the automotive client [OEM's](https://en.wikipedia.org/wiki/Original_equipment_manufacturer) source code in order to make it much more efficient to generate software updates. Sometimes their product could reduce update times by a factor of 10 compared to the default technique of using [LZMA](https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm) (i.e. successor to _zip_) compression.
 
-2. I invented an extremely efficient technique to greatly improve the efficiency of their initial refactoring software by combining the [srcML](https://www.srcml.org/) compiler [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) output in [XML](https://en.wikipedia.org/wiki/XML) format with the Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) library in order to generate the refactored source code.
+2. I invented an extremely efficient technique to greatly improve the efficiency of their initial refactoring software by combining the [srcML](https://www.srcml.org/) compiler [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) output in [XML](https://en.wikipedia.org/wiki/XML) format with the Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) library in order to generate the refactored source code. I improved their build speed time by 5x (i.e. from 6 hours to 1 hour) and reduced RAM consumption by 2x (from a 64 GB workstation to 32 GB).
 
 3. And I invented an algorithm (US patent pending) to greatly reduce RAM usage when the embedded software generates [FLASH](https://en.wikipedia.org/wiki/Flash_memory) files by modifying the internals of the ubiquitous _C_ [memcpy](https://www.man7.org/linux/man-pages/man3/memcpy.3.html) function by incorporating [Posix](https://en.wikipedia.org/wiki/POSIX)-like buffered I/O when memcpy is used to sequentially write to FLASH. The RAM savings enables usage of larger "chunks" that enables higher compression ratios for legacy system boards with small amounts of RAM, e.g. less than 256 KB. Sometimes compression ratios could be improved by up to 25%.
 
@@ -262,7 +262,7 @@ Prior to _PCR_ technology, it took a laboratory about 48 hours to identify the d
 a culture in a "gold standard" [Petri dish](https://en.wikipedia.org/wiki/Petri_dish), 
 but _PCR_ technology can make the identification within 2 hours.
  
-__Before joining the company I had zero background in biology, micro-biology, genetics, or biochemistry.__ 
+__Before joining the company I had zero background in biology, microbiology, genetics, or biochemistry.__ 
 When I arrived the company was in imminent danger of closing down their _PCR_ business unit
 because their initial [FDA](https://en.wikipedia.org/wiki/Food_and_Drug_Administration) trials completely
 failed that they had spent about \$500K to prepare by taking 800 samples from a few Israeli hospitals.
@@ -280,19 +280,19 @@ therefore my [threshold  algorithm](https://www.pythonprog.com/thresholding-in-m
 
 2. My first task was to generate amplified graphs of all 800 samples, and to study them. Note that every sample had a _PCR_ result, and an associated "gold standard" _Petri dish_ result.
 
-3. My second task was to carefully read the manual of the _PCR_ device. I noted that the company's junior biochemist who was responsible for administering the hospital tests had used an incorrect protocol for configuring the _PCR_ devices. The 3 control samples that every batch contains were placed in incorrect test tube slots. Therefore all test results were nonsensical!
+3. My second task was to carefully read the manual of the _PCR_ device. I noted that the company's junior microbiologist who was responsible for administering the hospital tests had used an incorrect protocol for configuring the _PCR_ devices. The 3 control samples that every batch contains were placed in incorrect test tube slots. Therefore all test results were nonsensical!
 
 4. Even though the samples had been thrown away weeks before I arrived, fortunately they had saved the raw data from the _PCR_ devices, that allowed me to reconstruct the _Bar-Tichopad_ algorithm. The new results were better, but still hardly good enough for the _FDA_ that required 80% accuracy.
 
 5. I noted that tests from the pure laboratory colonies of _MRSA_, with extremely high concentrations never to be encountered in a patient sample, all failed. This indicated to me that there was a flaw in the industry standard _Bar-Tichopad_ algorithm.
 
-6. And I noted that many tests with negative _PCR_ results, in spite of the positive Petri results, had random graphs instead of the smooth [bioassay](https://en.wikipedia.org/wiki/Bioassay) sigmoidal shaped curve of the [logistic function](https://en.wikipedia.org/wiki/Logistic_function) that _Bar-Tichopad_ expected. After discussing the matter with _Bar_ and the senior biochemist, this indicated that the graphs were statistically noisy due to [PCR inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors). Therefore the company's preliminary chemistry did not yet filter out nasal impurities that mature chemistry was supposed to do. Maybe we had to "throw in the towel", i.e. to give up?
+6. And I noted that many tests with negative _PCR_ results, in spite of the positive Petri results, had random graphs instead of the smooth [bioassay](https://en.wikipedia.org/wiki/Bioassay) sigmoidal shaped curve of the [logistic function](https://en.wikipedia.org/wiki/Logistic_function) that _Bar-Tichopad_ expected. After discussing the matter with _Bar_ and the senior microbiologist, this indicated that the graphs were statistically noisy due to [PCR inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors). Therefore the company's preliminary chemistry did not yet filter out nasal impurities that mature chemistry was supposed to do. Maybe we had to "throw in the towel", i.e. to give up?
 
 7. So I put on my "thinking cap", and discovered a completely new algorithm that was much better than the Bar-Tsichopad algorithm.
 
 8. I discovered a much more accurate and simple way to normalize the bioassay curve and to remove systematic noise, by noting that the "systematic" noise and the linear rise in the signal of the negative control sample precisely matched the patient samples (from the same batch). Therefore my simple normalization solution was to subtract the negative control sample from the patient samples.
 
-9. Both _Bar_ and the senior biochemist agreed with me that inhibition never increases the _PCR_ signal. Therefore I used an alternative [AI threshold test](https://www.pythonprog.com/thresholding-in-machine-learning/), instead of the _Bar-Tichopad_ test that was based upon advanced mathematical functional analysis to calculate the [Ct](https://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/real-time-pcr-basics/real-time-pcr-understanding-ct.html) of the assay. 
+9. Both _Bar_ and the senior microbiologist agreed with me that inhibition never increases the _PCR_ signal. Therefore I used an alternative [AI threshold test](https://www.pythonprog.com/thresholding-in-machine-learning/), instead of the _Bar-Tichopad_ test that was based upon advanced mathematical functional analysis to calculate the [Ct](https://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/real-time-pcr-basics/real-time-pcr-understanding-ct.html) of the assay. 
 
 10. I split the patient samples in half. For the control half, I used the single maximum signal from each sample. I recorded minimum PCR signal that indicated a positive Petri result. And similarly I recorded the maximum PCR signal indicated a negative Petri result. 
 
@@ -559,7 +559,7 @@ $else
 $endif
 
 $py(id="cubital-accessibility"; task="PC Accessibility Device For Quadriplegics: Inventor and S/W architect")
-### 1989: consultant to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
+### 1989: contractor to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
 
 $if(is_pdf)
 [Details: $(task)]($(html)#$(id))
