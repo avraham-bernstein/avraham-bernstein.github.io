@@ -459,14 +459,17 @@ Patent EP3680773A1</a>, a mini-bsdiff patch implementation for small FLASH memor
 the FLASH is not big enough to temporarily hold both the original version "A" and new version
 "B" of the object code. Normally bsdiff requires both versions be available when applying the
 patch.</p></li>
-<li><p>I experimented with Google's Courgette improvement to bsdiff, but it required a
-relatively large amount of RAM on the target device to support a linker. Such large RAM is not
-typically available on legacy boards used in the automotive industry. I invented an algorithm
-that dispensed with the need for a linker.</p></li>
-<li><p>I experimented with techniques for using source code patching instead of bsdiff object
-patching. The Elektrobit management refused to believe that it was commercially feasible to have
-access to an OEM's source code. I switched jobs to <a href="#aurora">Aurora Labs</a> above
-because I believed that source code patching is a better solution.</p></li>
+<li><p>I experimented with <a
+href="https://www.chromium.org/developers/design-documents/software-updates-courgette/">Google's
+Courgette</a> improvement to <em>bsdiff</em>, but it required a relatively large amount of RAM
+on the target device to support a linker. Such large RAM is not typically available on legacy
+boards used in the automotive industry. I invented an algorithm that dispensed with the need for
+a linker.</p></li>
+<li><p>I experimented with techniques for using source code patching instead of <em>bsdiff</em>
+object code patching. The <em>Elektrobit</em> management refused to believe that it was
+commercially feasible to have access to an OEM's source code. I switched jobs to <a
+href="#aurora">Aurora Labs</a> above because I believed that <em>Aurora Lab's</em> source code
+patching is a better solution.</p></li>
 <li><p>I was the company's <a href="https://en.wikipedia.org/wiki/MISRA_C">Misra C</a>
 "enforcer". While I understood the safety rationale and the legal requirements for <em>Misra
 C</em>, I found many of their rules to be unnecessarily pedantic. I developed <a
