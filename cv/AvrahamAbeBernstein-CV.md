@@ -7,7 +7,7 @@ if is_pdf:
 
 def pdetails(id,task):
     ARROW = "&#x27A4;"
-    return ARROW + " [" + task + "](" + html + "#" + id + ")"
+    return " [" + ARROW + " " + task + "](" + html + "#" + id + ")"
     
 def hdetails(task):
     return '<details markdown="1"><summary>' + task + '</summary>'
@@ -80,9 +80,9 @@ $(hdetails(task))
 
 1. The company's core product relied upon [refactoring](https://en.wikipedia.org/wiki/Code_refactoring) the automotive client [OEM's](https://en.wikipedia.org/wiki/Original_equipment_manufacturer) source code in order to make it much more efficient to generate software updates. Sometimes their product could reduce update times 10x compared to the default technique of using [LZMA](https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm) (i.e. successor to _zip_) compression.
 
-2. I invented an extremely efficient technique to greatly improve the efficiency of their initial _offline_ refactoring software by combining the [srcML](https://www.srcml.org/) compiler [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) output in [XML](https://en.wikipedia.org/wiki/XML) format with the Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) library in order to generate the refactored source code. I improved their build speed time by 5x (i.e. from 6 hours to 1 hour) and reduced RAM consumption by 2x (from a 64 GB workstation to 32 GB).
+2. I invented an extremely efficient technique to greatly improve the efficiency of their initial _offline_ refactoring software by combining the [srcML](https://www.srcml.org/) compiler [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) output in [XML](https://en.wikipedia.org/wiki/XML) format with the Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) library in order to generate the refactored source code. I improved their build speed time by 5x (i.e. from 6 hours to 1 hour) and reduced RAM consumption by 2x (from a 64 GB workstation to 32 GB). Admittedly their original refactoring engine was a hand coded _C_ to _AST_ compiler which they implemented in _Python_.
 
-3. And I invented an algorithm (US patent pending) for embedded systems to greatly reduce RAM usage when the software generates [FLASH](https://en.wikipedia.org/wiki/Flash_memory) files by modifying the internals of the ubiquitous _C_ [memcpy](https://www.man7.org/linux/man-pages/man3/memcpy.3.html) function by incorporating [Posix](https://en.wikipedia.org/wiki/POSIX)-like buffered I/O when _memcpy_ is used to sequentially write to FLASH. The RAM savings enables usage of larger "chunks" that enables higher compression ratios for legacy system boards with small amounts of RAM, e.g. less than 256 KB. Sometimes compression ratios could be improved by up to 25%.
+3. I invented an algorithm (US patent pending) for embedded systems to greatly reduce RAM usage when the software generates [FLASH](https://en.wikipedia.org/wiki/Flash_memory) files by modifying the internals of the ubiquitous _C_ [memcpy](https://www.man7.org/linux/man-pages/man3/memcpy.3.html) function by incorporating [Posix](https://en.wikipedia.org/wiki/POSIX)-like buffered I/O when _memcpy_ is used to sequentially write to FLASH. The RAM savings enables usage of larger [bsdiff](https://github.com/mendsley/bsdiff) _patch_ "chunks" that enables higher compression ratios for legacy system boards with small amounts of RAM, i.e. 64-256 KB. Sometimes compression ratios could be improved by up to 25% - where the critical [KPI](https://www.forbes.com/advisor/business/what-is-a-kpi-definition-examples/) in the software update business is improving compression ratios.
 
 </details>
 $endif

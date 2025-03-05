@@ -353,17 +353,20 @@ href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</a> output in <a
 href="https://en.wikipedia.org/wiki/XML">XML</a> format with the Python <a
 href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a> library in order to
 generate the refactored source code. I improved their build speed time by 5x (i.e. from 6 hours
-to 1 hour) and reduced RAM consumption by 2x (from a 64 GB workstation to 32 GB).</p></li>
-<li><p>And I invented an algorithm (US patent pending) for embedded systems to greatly reduce
-RAM usage when the software generates <a
-href="https://en.wikipedia.org/wiki/Flash_memory">FLASH</a> files by modifying the internals of
-the ubiquitous <em>C</em> <a
+to 1 hour) and reduced RAM consumption by 2x (from a 64 GB workstation to 32 GB). Admittedly
+their original refactoring engine was a hand coded <em>C</em> to <em>AST</em> compiler which
+they implemented in <em>Python</em>.</p></li>
+<li><p>I invented an algorithm (US patent pending) for embedded systems to greatly reduce RAM
+usage when the software generates <a href="https://en.wikipedia.org/wiki/Flash_memory">FLASH</a>
+files by modifying the internals of the ubiquitous <em>C</em> <a
 href="https://www.man7.org/linux/man-pages/man3/memcpy.3.html">memcpy</a> function by
 incorporating <a href="https://en.wikipedia.org/wiki/POSIX">Posix</a>-like buffered I/O when
 <em>memcpy</em> is used to sequentially write to FLASH. The RAM savings enables usage of larger
-"chunks" that enables higher compression ratios for legacy system boards with small amounts of
-RAM, e.g. less than 256 KB. Sometimes compression ratios could be improved by up to
-25%.</p></li>
+<a href="https://github.com/mendsley/bsdiff">bsdiff</a> <em>patch</em> "chunks" that enables
+higher compression ratios for legacy system boards with small amounts of RAM, i.e. 64-256 KB.
+Sometimes compression ratios could be improved by up to 25% - where the critical <a
+href="https://www.forbes.com/advisor/business/what-is-a-kpi-definition-examples/">KPI</a> in the
+software update business is improving compression ratios.</p></li>
 </ol>
 </details>
 <h3 id="jct">2022 part-time: <a href="https://www.jct.ac.il/en">Jerusalem College Of Technology
