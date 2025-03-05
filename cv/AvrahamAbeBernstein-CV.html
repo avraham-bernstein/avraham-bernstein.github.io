@@ -347,7 +347,7 @@ reduce update times 10x compared to the default technique of using <a
 href="https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm">LZMA</a>
 (i.e. successor to <em>zip</em>) compression.</p></li>
 <li><p>I invented an extremely efficient technique to greatly improve the efficiency of their
-initial <em>offline</em> refactoring software by combining the <a
+initial <em>offline</em> refactoring of embedded <em>C</em> software by combining the <a
 href="https://www.srcml.org/">srcML</a> compiler <a
 href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</a> output in <a
 href="https://en.wikipedia.org/wiki/XML">XML</a> format with the Python <a
@@ -438,14 +438,15 @@ Automotive Software Updates: Patented algorithm greatly reducing FLASH memory re
 implement bsdiff
 </summary>
 <ol>
-<li><p>I architected and implemented a software design for efficient software updates of
-embedded systems using <a href="https://github.com/thoughtpolice/minibsdiff">mini-bsdiff</a> <a
+<li><p>I architected and implemented a software design for efficient software updates of the
+<em>object code</em> of embedded systems using <a
+href="https://github.com/thoughtpolice/minibsdiff">mini-bsdiff</a> <a
 href="https://en.wikipedia.org/wiki/Delta_encoding">delta encoding</a>. Note that <em>delta
 encoding</em> enables significantly smaller, e.g. 10x smaller, software updates compared to
 <em>zip</em>-like updates when the update contains minor differences.</p>
 <ul>
-<li>Note that the original <a href="https://github.com/mendsley/bsdiff">bsdiff</a> software is
-not designed for the size limitations of embedded systems especially for legacy automotive
+<li>The original <a href="https://github.com/mendsley/bsdiff">bsdiff</a> software is not
+designed for the size limitations of embedded systems especially for legacy automotive
 boards.</li>
 <li>In particular the original <em>bsdiff</em> software incorporates the outdated <em>bz</em>
 binary compressor that has a 100 KB RAM footprint.</li>
@@ -466,9 +467,9 @@ the original inventor of <em>bsdiff</em>.</p></li>
 <li><p>I experimented with <a
 href="https://www.chromium.org/developers/design-documents/software-updates-courgette/">Google's
 Courgette</a> improvement to <em>bsdiff</em>, but it required a relatively large amount of RAM
-on the target device to support a linker. Such large RAM is not typically available on legacy
-boards used in the automotive industry. I invented an algorithm that dispensed with the need for
-a linker.</p></li>
+on the target device in order to support a <em>linker</em>. Such large RAM is not typically
+available on legacy boards used in the automotive industry. I invented an algorithm that
+dispensed with the need for a linker.</p></li>
 <li><p>I experimented with techniques for using <em>source code</em> patching instead of
 <em>bsdiff</em> <em>object code</em> patching. The <em>Elektrobit</em> management refused to
 believe that it was commercially feasible to have access to an OEM's source code. I switched
