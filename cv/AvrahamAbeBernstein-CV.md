@@ -4,6 +4,13 @@ pdf = 'AvrahamAbeBernstein-CV.pdf'
 www = 'https://www.avrahambernstein.com'
 if is_pdf:
     html = www + '/cv/' + html
+
+def pdetails(id,task):
+    ARROW = "&#x27A4;"
+    return ARROW + " [" + task + "](" + html + "#" + id + ")"
+    
+def hdetails(task):
+    return '<details markdown="1"><summary>' + task + '</summary>'
 )
 <address markdown="1">
 __Author:__ Avraham "Abe" Bernstein
@@ -15,7 +22,7 @@ $if(not is_pdf)\
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 $endif\
-<br/>__Last Update:__ 2025-03-04
+<br/>__Last Update:__ 2025-03-05
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -67,9 +74,9 @@ $py(id="aurora"; task="Automotive Software Updates: CTO Group: Patent-pending al
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. The company's core product relied upon [refactoring](https://en.wikipedia.org/wiki/Code_refactoring) the automotive client [OEM's](https://en.wikipedia.org/wiki/Original_equipment_manufacturer) source code in order to make it much more efficient to generate software updates. Sometimes their product could reduce update times 10x compared to the default technique of using [LZMA](https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm) (i.e. successor to _zip_) compression.
 
@@ -84,9 +91,9 @@ $py(id="jct"; task="Lecturer: Introduction to Cybersecurity")
 ### 2022 part-time: [Jerusalem College Of Technology (JCT/Machon Lev)](https://www.jct.ac.il/en) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. I had mixed reviews from the students.
 
@@ -103,9 +110,9 @@ $py(id="morphisec"; task="Server Cybersecurity: Reverse engineering and refactor
 ### 2021: [Morphisec](https://www.morphisec.com/) Beer Sheva IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. I reverse engineered the [X64](https://en.wikipedia.org/wiki/X86-64) [object code](https://en.wikipedia.org/wiki/Object_code) of the _Linux_ kernel module [libc](https://man7.org/linux/man-pages/man7/libc.7.html) in order to modify the internals of the [exec functions](https://www.man7.org/linux/man-pages/man3/exec.3.html), where these functions are used in [stack smashing](https://en.wikipedia.org/wiki/Stack_buffer_overflow) attacks, _but without changing the addresses of any of the libc exports_.
 
@@ -122,9 +129,9 @@ $py(id="qedit"; task="Banking Cryptographic Algorithms: Securing C algorithms in
 ### 2021: consultant to [Qedit](https://qed-it.com/) Tel Aviv IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. I implemented _C_ cryptography functions in _Javascript_ web assembly ([WASM](https://webassembly.org/)). _WASM_object code is much faster and much more difficult to debug than _Javascript_. Because this project was intended for the banking industry, in the future we could write a _WASM_ [obfuscator](https://en.wikipedia.org/wiki/Obfuscation) that would greatly increase the difficulty of debugging.
 
@@ -137,9 +144,9 @@ $py(id="argus"; task="Automotive Software Updates: Patented algorithm greatly re
 ### 2018-20: [Argus Cyber Security](https://en.wikipedia.org/wiki/Argus_Cyber_Security) Tel Aviv IL (restructured as [PlaxidityX](https://plaxidityx.com/) IL, subsidiary of [Elektrobit/Continental](https://www.elektrobit.com/) DE) {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. I architected and implemented a software design for efficient software updates of embedded systems using [mini-bsdiff](https://github.com/thoughtpolice/minibsdiff) [delta encoding](https://en.wikipedia.org/wiki/Delta_encoding). Note that _delta encoding_ enables significantly smaller, e.g. 10x smaller, software updates compared to _zip_-like updates when the update contains minor differences.
 
@@ -164,11 +171,11 @@ $py(id="canary-mission"; task="Consultant: SOHO Cybersecurity")
 ### 2016 part-time: [Canary Mission](https://canarymission.org/) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
-1. The company publicizes and collates social media posts of antisemites, anti-Zionists, and terrorists. Their information was used by the Israeli government immigration authorities, and by potential employers who often did social media background checks. Because they were effective at blacklisting (aka "outing") these miscreants, left-wing organizations, including Jewish "progressive" ones, hated them. They were the subject of intensive hostile investigations by professional left-wing media organizations including [Times of Israel](https://www.timesofisrael.com/topic/canary-mission/) and [The Forward](https://forward.com/tag/canary-mission/) - who by the way eventually "outed" them. Therefore the company required cybersecurity "hygiene".
+1. The company publicizes and collates social media posts of antisemites, anti-Zionists, and terrorist "wannabes". Their information was used by the Israeli government immigration authorities, and by potential employers who often did social media background checks. Because they were effective at blacklisting (aka "outing") these miscreants, left-wing organizations, including Jewish "progressive" ones, hated them. They were the subject of intensive hostile investigations by professional left-wing media organizations including [Times of Israel](https://www.timesofisrael.com/topic/canary-mission/) and [The Forward](https://forward.com/tag/canary-mission/) - who by the way eventually "outed" them. Therefore the company required cybersecurity "hygiene".
 
 2. The vast majority of their employees did journalist-like tasks. They had garden variety computer skills, and therefore would not be capable of handling sophisticated tasks like using virtual machine clients (e.g. [VirtualBox](https://www.virtualbox.org/)) or using [PGP](https://en.wikipedia.org/wiki/Encryption_software).
 
@@ -204,9 +211,9 @@ $py(id="viaccess"; task="Internet TV Infrastructure: Cybersecurity obfuscation m
 ### 2014-17: [Viaccess-Orca](https://www.viaccess-orca.com/) Ra'anana IL (subsidiary of [Orange](https://www.orange.com/) FR) {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. I focused on obfuscation, i.e. anti-reverse engineering, of their smartphone (i.e. Android and iPhone) client player, by selecting a C/C++ obfuscating compiler and by building home brew utilities. I selected the WhiteCryption compiler originally built by InterTrust and acquired by Zimperium in 2021 after I left. When I first selected the product WhiteCryption was still in the beta stage. I worked very closely with the WhiteCryption development team - mainly specifying new features and testing existing ones. Previously I worked on an in-house obfuscation compiler at NDS, which I considered far beyond the manpower resources we had at Viaccess-Orca. After I left Viaccess, they switched to the French Quarkslab compiler partially because Viaccess HQ is in France.
 
@@ -227,9 +234,9 @@ $py(id="telequest"; task="Vehicle Navigation Algorithms: VP R&D: Traffic jam red
 ### 2012: [Telequest](https://www.telequest.co.il) (stealth) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. The company was a failed competitor to [Waze](https://www.waze.com/apps).
 
@@ -246,7 +253,7 @@ $py(id="syntezza"; task="PCR MRSA Kit: Inventor of bioinformatic PCR algorithms 
 ### 2011: consultant to [Syntezza Bioscience](https://www.syntezza.com/) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
 <details markdown="1"><summary>$(task)</span></summary>
 
@@ -309,9 +316,9 @@ $py(id="NDS"; task="Internet TV Infrastructure: Cybersecurity researcher")
 ### 2005-10: _NDS_ Jerusalem IL (acquired by [Synamedia](https://www.synamedia.com/) UK) {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. Most of my work at NDS was doing software security research including occasional code security audits.
 
@@ -336,9 +343,9 @@ $py(id="vyyo2004"; task="Broadband RF Networking: Architect of super-efficient c
 ### 2004: _Vyyo_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. I designed an extremely efficient network testing laboratory.
 
@@ -357,9 +364,9 @@ $py(id="virtouch"; task="Blind Accessibility Device: VP R&D: Inventor of product
 ### 2002-03: _Virtouch_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. I invented a software system that allowed the blind to "see" and to understand computer images, especially maps and mathematical functions, using a 
     a. standard PC or smartphone web browser
@@ -392,9 +399,9 @@ $py(id="jolt"; task="Free Space Optics Networking: Consultant: Designer of SNMP 
 ### 2002 part-time: _Jolt_ Jerusalem IL (acquired by _MRV Communications_ IL, and eventually by [Adtran](https://www.adtran.com) US) {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. The company's [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) hardware was streamlined to handle calibrating/aiming the optical equipment. It had no CPU, and minimal configuration I/O ports.
 
@@ -409,9 +416,9 @@ $py(id="vyyo2000"; task="Broadband RF Networking: Manager of S/W utilities group
 ### 2000-02: _Vyyo_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. I invented a hybrid IP system for the modems where a modem had separate IP addresses for upstream (telephone dial-up) and downstream (RF). The invention took advantage of the fact that cable operator also operated the upstream dial-up network, so all the action took place by dynamically manipulating the edge router's [arp table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) at modem login.
 
@@ -432,9 +439,9 @@ $py(id="fourfold"; task="Fabless VLSI CPU Design: Novel GCC compiler port for a 
 ### 1998: contractor to _Fourfold_ (defunct) Jerusalem IL  {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. The novelty of this port was that the [GCC](https://en.wikipedia.org/wiki/GNU_Compiler_Collection) model assumes a small finite number of special purpose [registers](https://en.wikipedia.org/wiki/Hardware_register), while this [FORTH](https://en.wikipedia.org/wiki/Forth_(programming_language))-like stack hardware could be considered to contain an infinite number of registers, or alternatively no registers at all.
 
@@ -445,9 +452,9 @@ $py(id="optimet"; task="Conoscopic Laser Interferometry: S/W architect of a DSL 
 ### 1996-97: CEO _Pitkha_ (defunct) Jerusalem IL, contractor for _Optimet_ Jerusalem IL, subsidiary of [Ophir Optronics](https://www.ophiropt.com/en/) IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. I designed a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) for controlling an interferometer-like device that moved along an XY jig. I implemented the _DSL_ in [TCL](https://en.wikipedia.org/wiki/Tcl) running under Windows NT.
 
@@ -460,9 +467,9 @@ $py(id="elop"; task="Military Optical Devices: S/W architect of a DSL to impleme
 ### 1996: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to [Elop/Elbit](https://elbitsystems.com/) Rehovot IL{#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. Elop was a primary subcontractor for the BlackHawk helicopter fire control system for the US company _LORAL_ who was the main contractor for the helicopter (which was acquired by _Lockheed Martin_). They had an acceptance testing manual that specified over 1000 tests that the  fire control system must pass. There were about 10 _GPIB_ interface hardware devices attached to the software. Unsupervised automated tests would have to run for up to 4 days. Test results would be sent to a log file, and the app had GUI dashboard to show its current status. The underlying system would be implemented in _C_. The laboratory computers would be running MS-DOS.
 
@@ -477,9 +484,9 @@ $py(id="dspg"; task="Fabless DSP CPU  Design Center: Inventor and S/W architect 
 ### 1992-95: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to [DSP Group](https://www.dspg.com/) Ramat Gan IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. _DSPG_ designed CPU micro-controllers that supported DSP functionality. When I joined them they were working on their original _PINE_ chip. They were a VLSI "fabless" design center. After finishing their designs, they had them manufactured by a real "fab". At that time it could take up to 6 months for the fab to manufacture the physical chip. And _DSPG_ designed the application software that ran on their chips. At that time they designed the hardware and software internals for consumer telephone answering machines.
 
@@ -502,9 +509,9 @@ $py(id="iscar"; task="Metal Blade Production Factory: Co-inventor and S/W archit
 ### 1990-91: contractor to [Digital Equipment Corp (DEC)](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation) Herzliya IL (eventually acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL), contractor to [Iscar Metalworking](https://www.iscar.com/index.aspx/countryid/1/lang/en) {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. Iscar's _Matkash_ plant in _Tefen_ in northern Israel was an uber hi-tech factory that manufactured hundreds of different small cutting blades according to different chemical compositions and sizes via a [sintering](https://en.wikipedia.org/wiki/Sintering) process. Typically the blades were bonded to steel materials, e.g. a circular saw.
 
@@ -539,9 +546,9 @@ $py(id="cubital-printer"; task="One Of The Original 3D Printers: S/W R&D")
 ### 1988-89: contractor to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. The company was a pioneer in the 3D printing industry, originally known as "stereo lithography" or "solid ground curing". Their "Solider" device weighed 4.5 ton and was the size of a half-size shipping container. The parts were made from a polymer that was heated into a liquid, and the holes were filled with liquid wax. When a part cooled it became solid, while the wax melts in hot water and drains away.
 
@@ -562,9 +569,9 @@ $py(id="cubital-accessibility"; task="PC Accessibility Device For Quadriplegics:
 ### 1989: contractor to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. At that time, 1989, speech-to-text systems were not yet technically feasible or else exorbitantly expensive.
 
@@ -583,9 +590,9 @@ $py(id="orisol"; task="High Speed Sewing Robot For Leather Goods: S/W architect 
 ### 1987: _Orisol_ (defunct) Lod IL {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. I designed a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) to annotate an [Auto-CAD](https://www.autodesk.com/products/autocad/overview?term=1-YEAR&tab=subscription) leather sewing pattern with "road signs". These signs were associated with sewing commands that must be followed in real-time.
 
@@ -606,9 +613,9 @@ $py(id="oeb"; task="Public Utility Commission: Public interest intervenor-econom
 ### 1977: [Ontario Energy Board](https://www.oeb.ca) Toronto Ontario {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
-<details markdown="1"><summary>$(task)</summary>
+$(hdetails(task))
 
 1. I was the first public interest [intervenor](https://www.merriam-webster.com/dictionary/intervenor) in the history of the _OEB_ to be awarded costs - at the suggestion of the _OEB_!
 
@@ -629,7 +636,7 @@ $py(id="personal-inventions"; task="Inventions")
 ## Unpatented Personal Inventions {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
 <details markdown="1">
 
@@ -976,7 +983,7 @@ $py(id="personal"; task="Personal")
 ## Personal {#$(id)}
 
 $if(is_pdf)
-[Details: $(task)]($(html)#$(id))
+$(pdetails(id,task))
 $else
 <details markdown="1">
 
