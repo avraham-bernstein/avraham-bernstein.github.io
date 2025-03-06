@@ -22,16 +22,16 @@ $if(not is_pdf)\
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 $endif\
-<br/>__Last Update:__ 2025-03-05
+<br/>__Last Update:__ 2025-03-06
 </address>
 
-![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
+$if(not is_pdf)
+![Secure photo of the author](../AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
 
-__Secure[^secure] photo of the author from 2025__
+__Secure[^secure-photo] photo of the author from 2025__
 
 ---
 
-$if(not is_pdf)
 <button onclick="show_all_details()">Click Here To Open All Details<br>(Useful for printing. Required for external linking to "inner-*" local bookmarks. Close by reloading page.)</button>
 
 ## <span class="hilite">Link To Short CV PDF "Shadow Version"</span>
@@ -41,7 +41,7 @@ $endif
 
 ## Introduction: Cr8tive Solutions To Hard Problems {#intro}
 
-1. I have more than 40 years experience in state-of-the-art software development especially inventing new algorithms.
+1. I have more than 40 years experience in state-of-the-art software development especially inventing new algorithms. I provide considerable value added to my clients.
 2. I have many inventions and some __recent patents__ in a wide variety of application domains, e.g.:
     * digital automotive industry
     * Internet TV
@@ -54,7 +54,7 @@ $endif
 3. I am an [expert generalist](https://simplicable.com/new/expert-generalist) and an [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath)[^polymath]. I easily learn and become an expert in new fields.
 4. In order to jump start my learning process I prefer to find a domain expert to mentor me, and I am also a good mentor myself. 
 5. I am a "hands-on" master software engineer. I enjoy programming. I design prototypes and minimum viable products for _CTO_ groups.
-6. I know many computer languages which I am able to learn easily due to my [compiler](https://en.wikipedia.org/wiki/Compiler) background; and my compiler background allows me to design [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) and to engage in automated [code refactoring](https://en.wikipedia.org/wiki/Code_refactoring).
+6. I know many computer languages which I am able to learn easily due to my [compiler](https://en.wikipedia.org/wiki/Compiler) background; and my compiler background allows me to design [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), and to engage in automated [code refactoring](https://en.wikipedia.org/wiki/Code_refactoring).
 7. My "go to" _programming_ languages in which I am quite proficient are the following:
     * _C_
     * _Python_ and _BeautifulSoup_
@@ -63,10 +63,8 @@ $endif
     * [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), including [Posix CLI commands](https://en.wikipedia.org/wiki/List_of_POSIX_commands)
 8. My "go to" _data_ languages are _HTML_, _Markdown_, [pandoc](https://www.pandoc.org), [srcML](https://www.srcml.org), _XML_, _YAML_, and _Excel_.
 9. I thrive on undertaking new challenging projects. I am quite comfortable engaging in and leading _flexible_ "brain storming" sessions.
-10. I provide considerable value added to my clients.
 
 ## Work Experience {#work}
-
 
 <!-- <button onclick="show_all_details('work')">Show All "Work Experience" Details (useful for printing)</button> -->
 
@@ -167,7 +165,7 @@ $(hdetails(task))
 </details>
 $endif
 
-$py(id="canary-mission"; task="Consultant: SOHO Cybersecurity")
+$py(id="canary-mission"; task='Consultant: SOHO Cybersecurity "Hygiene"')
 ### 2016 part-time: [Canary Mission](https://canarymission.org/) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
@@ -475,7 +473,7 @@ $(hdetails(task))
 
 2. The key to the success of this project was my design of a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) to formally specify each of the tests. Also the language would have to be easy enough to use by the _Elop_ system engineer, who is not a professional programmer, and would have to program many _ad hoc_ tests on his own. I designed the _DSL_ to be a lightweight version of _BASIC_ along with plugin drivers for the specialized test hardware, along with the main device under test. I used _lex_ and _yacc_ to design the language.
 
-3. The system worked as planned for up to 4 days at time with no memory overflows!
+3. The system worked as planned, unattended for up to 4 days at time with no memory leaks.
 
 </details>
 $endif
@@ -488,7 +486,7 @@ $(pdetails(id,task))
 $else
 $(hdetails(task))
 
-1. _DSPG_ designed CPU micro-controllers that supported DSP functionality. When I joined them they were working on their original _PINE_ chip. They were a VLSI "fabless" design center. After finishing their designs, they had them manufactured by a real "fab". At that time it could take up to 6 months for the fab to manufacture the physical chip. And _DSPG_ designed the application software that ran on their chips. At that time they designed the hardware and software internals for consumer telephone answering machines.
+1. _DSPG_ designed CPU micro-controllers that supported DSP functionality. When I joined them they were working on their original _PINE_ chip. They were a VLSI "fabless" design center. After finishing their designs, they had them manufactured by a real physical "fab". At that time it could take up to 6 months for the fab to manufacture the physical chip. And _DSPG_ designed the application software that ran on their chips. At that time they designed the hardware and software internals for consumer telephone answering machines.
 
 2. VLSI software simulations ran extremely slowly because they simulated the low level transistor details of  their circuitry.
 
@@ -496,7 +494,7 @@ $(hdetails(task))
 
 4. At that time the first release of _QEMU_ would be about 15 years away, and the GCC tool chain was not yet mature, i.e. pre 2.95, so I had to design my own assembler, simulator, linker, compiler, and debugger.
 
-5. The key to the success of this project was my design of a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) to formally describe each one of the CPU's opcodes, and most important to recognize when an instruction sequence would cause the pipeline to "stall". We built the _DSL_ using _lex_ and _yacc_. At that time it was not yet common practice that CPU designers could automatically dynamically insert delays into the instruction pipeline. It was the job of the application programmer (or the compiler) to automatically insert these delays. My _DSL_ included an easy to specify language that detected stall conditions. Without this stall detection feature it was impossible for us to develop the assembler in a timely fashion, because in the early stages of the design, the VLSI architects made major change to the stall conditions almost daily. So our manually coded stall conditions had to constantly be rewritten. Once we implemented this feature, we could generate an updated assembler almost immediately, i.e. within a hour or two.
+5. The key to the success of this project was my design of a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) to formally describe each one of the CPU's opcodes, and most important to recognize when an instruction sequence would cause the pipeline to "stall". We built the _DSL_ using _lex_ and _yacc_. At that time it was not yet common practice that CPU designers could automatically dynamically insert delays into the instruction pipeline. It was the job of the application programmer (or the compiler) to automatically insert these delays. My _DSL_ included an easy to specify language that detected stall conditions. Without this stall detection feature it was impossible for us to develop the assembler in a timely fashion, because in the early stages of the design, the VLSI architects made major changes to the stall conditions almost daily. So our manually coded stall condition analyzer had to constantly be rewritten. But once we implemented this feature, we could generate an updated assembler almost immediately, i.e. within a hour or two.
 
 6. Another very important feature was that when debugging an application we could programmatically simulate access to the _I/O_ ports. Still more than 15 years after the first release of _QEMU_, i.e. 2025, this is not yet a builtin feature of state of the art _QEMU_ simulators.
 
@@ -515,7 +513,7 @@ $(hdetails(task))
 
 1. Iscar's _Matkash_ plant in _Tefen_ in northern Israel was an uber hi-tech factory that manufactured hundreds of different small cutting blades according to different chemical compositions and sizes via a [sintering](https://en.wikipedia.org/wiki/Sintering) process. Typically the blades were bonded to steel materials, e.g. a circular saw.
 
-2. The plant was totally automated. Human intervention was required only in the event of an accident, where there was a red siren on top of the workstation.
+2. The plant was totally automated. Human intervention was required in the event of maintenance or an accident.
 
 3. The plant included:
 
@@ -526,18 +524,21 @@ $(hdetails(task))
     * some pallets were placed on stacks
     * pallets were temporarily stored in a storage area made up of hundreds of stands
     * parts that were stored for too long had to oiled in order to prevent rust
+    * tools that required maintenance, e.g. cutting tools, recorded their consumption before being sent for repair (e.g. sharpening)
 
 4. My job and that of my partner was to automatically orchestrate the plant via S/W. We had a powerful [VAX/VMS](https://en.wikipedia.org/wiki/OpenVMS) computer at our disposal with a relational database. Our liaison from _DEC_ insisted that the main programming language be _Pascal_.
 
 5. We came to the project with no knowledge of factory automation. So we started with month long mentoring from an industrial engineer who did.
 
-6. Our solution was to design a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) that described every single object in the factory's "object kingdom", and how they interacted with one another. The _DSL_ had to configurable by the factory engineer who was not a software engineer, while the clerical staff required a _GUI_ window into the _DSL_ for making on-the-fly configurations and viewing the status of the factory.
+6. Our solution was to design a [domain specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) that described every single object (i.e. a few hundred 100) in the factory's "object kingdom", and how they interacted with one another. The _DSL_ had to configurable by the factory engineer who was not a software engineer, while the clerical staff required a _GUI_ window into the _DSL_ for making on-the-fly configurations and viewing the status of the factory.
 
 7. It became immediately obvious that the S/W required _object oriented_ techniques to implement. At that time [object oriented programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming) was just being developed in research/university settings. The first version of _C++_ was just released, and [SNOBOL](https://en.wikipedia.org/wiki/SNOBOL) was an _OOP_ research prototype. There was no Internet yet at that time, but ample literature was available in the Hebrew Univ computer science library. Recall that we had a hard requirement to use the procedural _Pascal_ language,
 
-8. _VAX/VMS_ had a command line utility for designing command "ensembles" which could be executed via callbacks to a compilable language, e.g. _Pascal_. We used these ensembles to define every type of object, along with their attributes, supported by the our DSL. (Today, 30 years later, I would use XML instead which had not yet been invented).
+8. _VAX/VMS_ had a command line utility for designing command "ensembles" which could be executed via callbacks to a compilable language, e.g. _Pascal_. We used these ensembles to define every type of object, along with their attributes, supported by the our _DSL_. (Today, 30 years later, I would use XML instead which had not yet been invented).
 
-9. To make a very long story short, in 18 months we built a working factory that included a scheduler!
+9. There were tens of thousands object instances stored in a database on disk - including their configuration and current status. The database regularly stored status updates. The database was constantly scanned in order to implement the next task that our scheduler required. In the event that the main computer shut down, either expectedly or unexpectedly, the database allowed for a smooth restart/recovery.
+
+10. After about a year, we built a working factory.
 
 </details>
 $endif
@@ -1000,9 +1001,21 @@ $else
 </details>
 $endif
 
-## Footnotes
+## Colophon
 
-[^secure]: __Secure Photo:__ This secure photo was built using [GIMP](https://www.gimp.org/) blurring filters (e.g. Gaussian, clothify, and oilify) along with a prominent distorted visible email address watermark. This digital "camouflage" will defeat almost all face matching algorithms - in spite of the fact that my 3 year old grandson has no problem identifying me from this photo. It protects my privacy in two ways. (1) Harvesting it from the Internet, and adding it to a database of photos that will be digitally compared with CCTV surveillance photos will not work. (2) The photo has built-in [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication). The prominent email address watermark prevents a web site from maliciously displaying my photo while attempting to associate it with any other person besides me. Similarly if a site were to maliciously display my photo without my permission in order to imply my association with them then it would be trivial for anyone who may be suspicious of their claim to challenge the site by asking me for a verification email. And it would be interesting to consider adding an [Eurion](https://en.wikipedia.org/wiki/EURion_constellation) currency watermark that would fool Photoshop software along with high quality printers and scanners into believing that the watermarked photo is a banknote in order to prevent it from being manipulated or printed. The general field of obscuring personal information is referred to as [de-identification](https://en.wikipedia.org/wiki/De-identification). There was an Israeli company, _D-ID_ now defunct, that specialized in obscuring high quality images without using any blurring filters which could not be used in automated password verification scanners!
+This document was designed in _pandoc_ (_FOSS_) _Markdown_ under _Ubuntu_. _Pyexpander_ (_FOSS_) was used for 
+macro preprocessing. Two formats were automatically generated at the same time, (1) PDF (using the _wkhtmltopdf_ 
+plugin), and (2) HTML. As is standard in the hi-tech industry, the mandatory PDF format incorporates a single 
+line for the employer name, and usually a two line headline about the details of the task. Superficially the HTML 
+version mimics the same format. The PDF task description is a link into the HTML version, where the HTML version 
+uses the HTML `<details>` tag to optionally allow viewing the full description of the task. This design is 
+similar to a web news site with a short description of headlines that enables clicking to access details. The 
+advantage of this scheme is that most HR departments do not allow their readers to contact the candidate for 
+further details without first having an official interview which is a major process. This scheme short circuits 
+this dilemna to the advantage of both the reader and the candidate. For my source code see: 
+[https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
+
+## Footnotes
 
 [^polymath]: __Autodidact Polymath:__ There is a common misconception that only geniuses like _Leonardo da Vinci_ deserve the appellation autodidact polymath, and therefore by referring to myself as one then I am making the bombastic claim to be a genius in the same category as Leonardo. There is an outstanding [TED talk](https://www.youtube.com/watch?v=VGF3kjgCaMQ) showing how children from Indian slums with the appropriate mentoring can become _autodidact polymaths_. And there was a similarly successful project done with children from [Mexican slums](https://www.wired.com/2013/10/free-thinkers/). Many very intelligent people, especially as they get older, don’t like moving outside of their intellectual comfort zone, whereas I revel in taking on intellectual challenges in new fields outside of my comfort zone. Note my "grand slams" in a wide range of application domains, where the only way to quickly achieve expertise was self-learning admittedly with the help of highly qualified mentors. I feel that I still maintain a high degree of child-like [mental plasticity](https://www.psychologytoday.com/us/basics/neuroplasticity). Part of this skill I retain by regular interaction with my own young grandchildren, where my play with them is much more analytical than I used to exhibit with my own children.
 

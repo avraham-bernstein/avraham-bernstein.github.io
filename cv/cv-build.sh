@@ -11,9 +11,9 @@ MD=$ROOT.md
 PDF=$ROOT.pdf
 
 expander.py --eval 'is_pdf=False' -f $MD > cv.html.md
-pandoc cv.html.md --metadata-file=cv-metadata.yml -s --columns=96 \
-    -f markdown_phpextra+backtick_code_blocks+header_attributes -t html5 -o $HTML
+pandoc --verbose -f markdown_phpextra+backtick_code_blocks+header_attributes -t html5  -s --columns=96 \
+	-o $HTML --metadata-file=cv.yml cv.html.md ../secure-photo.fn.md
 
 expander.py --eval  'is_pdf=True' -f $MD > cv.pdf.md
-pandoc cv.pdf.md --metadata-file=cv-metadata.yml -s --columns=120 \
-    -f markdown_phpextra+backtick_code_blocks --pdf-engine=wkhtmltopdf -o $PDF
+pandoc -f markdown_phpextra+backtick_code_blocks --pdf-engine=wkhtmltopdf -s --columns=120 \
+	-o $PDF --metadata-file=cv.yml cv.pdf.md
