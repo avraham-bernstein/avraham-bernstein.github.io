@@ -1013,8 +1013,8 @@ $else
 
 I designed this novel document format in _pandoc_ (_FOSS_) _markdown_ under _Ubuntu_.
 I used _Pyexpander_ (_FOSS_) for macro preprocessing.
-Two formats were automatically generated from the same _markdown_ source file at the same time:
-(1) PDF (using the _wkhtmltopdf_ plugin), and (2) HTML.
+The following two formats were automatically generated from the same _markdown_ source file:
+(1) HTML, and (2) PDF (using the _wkhtmltopdf_ plugin).
 As is standard in the hi-tech industry,
 the mandatory PDF format incorporates a single line for the employer name,
 and a short headline about the details of the task.
