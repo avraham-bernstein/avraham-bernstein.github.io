@@ -1018,8 +1018,8 @@ version mimics the same format. The PDF headline links to the HTML version, wher
 uses the HTML `<details>` tag to optionally allow viewing the full description of the task. This design is 
 similar to a web news site with a listing of headlines that enables clicking to access details. The 
 advantage of this scheme is that most HR departments do not allow their readers to contact the candidate for 
-further details without first having an official interview which is a major process. This scheme short circuits 
-this dilemna to the advantage of both the reader and the candidate. For my source code see: 
+further details without first having an official interview which is a major formal process. My scheme short 
+circuits this dilemna to the advantage of both the reader and the candidate. For my source code see: 
 [https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
 
 </details>
