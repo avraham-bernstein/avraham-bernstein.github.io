@@ -559,18 +559,25 @@ Internet TV Infrastructure: Cybersecurity obfuscation manager
 <ol>
 <li><p>I focused on obfuscation, i.e. anti-reverse engineering, of their smartphone (i.e.
 Android and iPhone) client player, by selecting a C/C++ obfuscating compiler and by building
-home brew utilities. I selected the WhiteCryption compiler originally built by InterTrust and
-acquired by Zimperium in 2021 after I left. When I first selected the product WhiteCryption was
-still in the beta stage. I worked very closely with the WhiteCryption development team - mainly
-specifying new features and testing existing ones. Previously I worked on an in-house
-obfuscation compiler at NDS, which I considered far beyond the manpower resources we had at
-Viaccess-Orca. After I left Viaccess, they switched to the French Quarkslab compiler partially
-because Viaccess HQ is in France.</p></li>
-<li><p>One of my most important utilities was designing an ELF Dynamic Share Object DSO (i.e. an
-<code>so</code> file) which had no export table which ostensibly eliminates the usefulness of a
-DSO. I designed a low-level mechanism to load an encrypted export table relying upon ELF's
-special <code>init</code> section which executes before the DSO is activated. The export table
-is one of the major attack surfaces in a DSO.</p></li>
+home brew utilities. I selected the <em>WhiteCryption</em> compiler originally built by
+<em>InterTrust</em> and subsequently acquired by <em>Zimperium</em> in 2021 after I left. When I
+first selected the product <em>WhiteCryption</em> was still in the <em>beta</em> stage. I worked
+very closely with the <em>WhiteCryption</em> development team - mainly specifying new features
+and testing existing ones. Previously I worked on an in-house obfuscation compiler at NDS
+(called <em>chameleon</em>), which I considered to be far beyond the manpower resources we had
+at <em>Viaccess-Orca</em>, therefore I decided to use <em>WhiteCryption</em> as our contractor.
+After I left <em>Viaccess</em>, they switched to the French <em>Quarkslab</em> obfuscating
+compiler partly because <em>Viaccess'</em> HQ is also in France.</p></li>
+<li><p>One of my most important utilities I invented was an <a
+href="https://en.wikipedia.org/wiki/Executable_and_Linkable_Format">ELF</a> <a
+href="https://www.webopedia.com/definitions/dynamic-shared-object/">Dynamic Share Object
+(DSO)</a> (i.e. an <code>so</code> file) which had no export table which ostensibly eliminates
+the usefulness of a <em>DSO</em> (thus making the term into an <em>oxymoron</em>). I designed a
+low level mechanism to load an encrypted export table relying upon <em>ELF's</em> special
+<code>init</code> section which executes code in the address space of the caller when the
+<em>DSO</em> is first loaded (which is an uncommonly used feature of the <em>DSO</em>). I added
+this mechanism because the export table is one of the major <em>attack surfaces</em> in a
+<em>DSO</em>.</p></li>
 <li><p>I worked with the 3rd party software supplier of the video codec in order to
 substantially bolster the security of their product which proved to be a major potential
 security hole in our system. The challenge was that most of their customers did not require the
@@ -578,14 +585,15 @@ security that we did, and for practical commercial reasons they were not willing
 separate build for us. I managed to architect an optional security plugin for them that caused
 minimal changes to their system, and caused zero interference to their other customers who chose
 not to use the plugin.</p></li>
-<li><p>Initially the movie studios insisted that smartphones could not be rooted because it made
-them considerably more difficult to debug, so I developed a fuzzy logic-like mechanism to detect
-rootedness. The problem was that less expensive Android phones from Asia, that were flooding the
-market, were rooted by default because it saved the manufacturer a few hours of licensing work
-from Google who controlled the <a href="https://source.android.com/">Android Open Source Project
-(AOSP)</a>. Therefore security had to be moved from the client to the content servers. For
-example a subscriber who played 100 hours of content a week was suspect, or a subscriber who
-played content simultaneously from different geographic locations was suspect.</p></li>
+<li><p>Initially the movie studios insisted that smartphones could not be <em>rooted</em>
+because it made them considerably more difficult to debug, so I developed a <em>fuzzy
+logic</em>-like mechanism to detect rootedness. The problem was that less expensive Android
+phones from the Far East were flooding the market, were rooted by default because it saved the
+manufacturer a few hours of licensing work from Google who controlled the <a
+href="https://source.android.com/">Android Open Source Project (AOSP)</a>. Therefore security
+had to be moved from the client to the content servers. For example a subscriber who played 100
+hours of content a week was suspect, or a subscriber who played content simultaneously from
+different geographic locations was suspect.</p></li>
 </ol>
 </details>
 <h3 id="discretix">2013-14: <em>Discretix</em> Netanya IL (renamed <em>Sansa Security</em>,
