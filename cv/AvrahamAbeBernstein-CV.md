@@ -431,12 +431,12 @@ $(hdetails(task))
 </details>
 $endif
 
-### 1999: contractor to _Phasecom_ Jerusalem IL (acquired by _Vyyo_ above); Broadband RF Networking {#phasecom}
+### 1999: contractor to _Phasecom_ Jerusalem IL (acquired by _Vyyo_ above)
 
-See the tasks that I did for the successor company [Vyyo (above)]($(html)#$(id)).
+Broadband RF Networking: See the tasks that I did for the successor company [Vyyo (above)]($(html)#$(id)).
 
 $py(id="fourfold"; task="Fabless VLSI CPU Design: Novel GCC compiler port for a FORTH-like CPU")
-### 1998: contractor to _Fourfold_ (defunct) Jerusalem IL  {#$(id)}
+### 1998: contractor to _Fourfold_ (defunct) Jerusalem IL {#$(id)}
 
 $if(is_pdf)
 $(pdetails(id,task))
