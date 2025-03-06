@@ -2,6 +2,7 @@ $py(
 html = 'AvrahamAbeBernstein-CV.html'
 pdf = 'AvrahamAbeBernstein-CV.pdf'
 www = 'https://www.avrahambernstein.com'
+photo = www + "/AvrahamAbeBernstein-20250202-Watermarked.20pc.png"
 if is_pdf:
     html = www + '/cv/' + html
 
