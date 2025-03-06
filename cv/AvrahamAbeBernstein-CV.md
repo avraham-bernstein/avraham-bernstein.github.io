@@ -1016,7 +1016,7 @@ plugin), and (2) HTML. As is standard in the hi-tech industry, the mandatory PDF
 line for the employer name, and usually a two line headline about the details of the task. Superficially the HTML 
 version mimics the same format. The PDF task description is a link into the HTML version, where the HTML version 
 uses the HTML `<details>` tag to optionally allow viewing the full description of the task. This design is 
-similar to a web news site with a short description of headlines that enables clicking to access details. The 
+similar to a web news site with a listing of headlines that enables clicking to access details. The 
 advantage of this scheme is that most HR departments do not allow their readers to contact the candidate for 
 further details without first having an official interview which is a major process. This scheme short circuits 
 this dilemna to the advantage of both the reader and the candidate. For my source code see: 
