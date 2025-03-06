@@ -2,7 +2,8 @@ $py(
 html = 'AvrahamAbeBernstein-CV.html'
 pdf = 'AvrahamAbeBernstein-CV.pdf'
 www = 'https://www.avrahambernstein.com'
-photo = www + "/AvrahamAbeBernstein-20250202-Watermarked.20pc.png"
+photo = www + '/AvrahamAbeBernstein-20250202-Watermarked.20pc.png'
+
 if is_pdf:
     html = www + '/cv/' + html
 
@@ -27,7 +28,7 @@ $endif\
 </address>
 
 $if(not is_pdf)
-![Secure photo of the author](../AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
+![Secure photo of the author]($(photo) "Secure photo of the author from 2025")
 
 __Secure[^secure-photo] photo of the author from 2025__
 
@@ -42,7 +43,7 @@ $endif
 
 ## Introduction: Cr8tive Solutions To Hard Problems {#intro}
 
-1. I have more than 40 years experience in state-of-the-art software development especially inventing new algorithms. I provide considerable value added to my clients.
+1. I have more than 40 years experience in state-of-the-art software development especially (a) inventing new algorithms, and (b) designing [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) which can grossly simplify many difficult problem domains. I have a long history of providing considerable value added to my employers.
 2. I have many inventions and some __recent patents__ in a wide variety of application domains, e.g.:
     * digital automotive industry
     * Internet TV
@@ -69,7 +70,7 @@ $endif
 
 <!-- <button onclick="show_all_details('work')">Show All "Work Experience" Details (useful for printing)</button> -->
 
-$py(id="aurora"; task="Automotive Software Updates: CTO Group: Patent-pending algorithm greatly reducing RAM consumption during FLASH updates; and greatly improved CPU efficiency and RAM consumption required for automated refactoring of C source code")
+$py(id="aurora"; task="Automotive Software Updates: CTO Group: (a) I invented a patent-pending algorithm to greatly reduce RAM consumption during FLASH updates which improves compression efficiency which is the core KPI of the software update industry; and (b) I greatly improved the CPU efficiency and RAM consumption of their core product which refactors embedded C source code")
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
 
 $if(is_pdf)
@@ -1010,16 +1011,21 @@ $(pdetails(id,task))
 $else
 <details markdown="1">
 
-This document was designed in _pandoc_ (_FOSS_) _Markdown_ under _Ubuntu_. _Pyexpander_ (_FOSS_) was used for 
-macro preprocessing. Two formats were automatically generated at the same time, (1) PDF (using the _wkhtmltopdf_ 
-plugin), and (2) HTML. As is standard in the hi-tech industry, the mandatory PDF format incorporates a single 
-line for the employer name, and a short headline about the details of the task. Superficially the HTML 
-version mimics the same format. The PDF headline links to the HTML version, where the HTML version 
-uses the HTML `<details>` tag to optionally allow viewing the full description of the task. This design is 
-similar to a web news site with a listing of headlines that enables clicking to access details. The 
-advantage of this scheme is that most HR departments do not allow their readers to contact the candidate for 
-further details without first having an official interview which is a major formal process. My scheme short 
-circuits this dilemna to the advantage of both the reader and the candidate. For my source code see: 
+I designed this novel document format in _pandoc_ (_FOSS_) _markdown_ under _Ubuntu_.
+I used _Pyexpander_ (_FOSS_) for macro preprocessing.
+Two formats were automatically generated from the same _markdown_ source file at the same time:
+(1) PDF (using the _wkhtmltopdf_ plugin), and (2) HTML.
+As is standard in the hi-tech industry,
+the mandatory PDF format incorporates a single line for the employer name,
+and a short headline about the details of the task.
+Superficially the HTML version mimics the same format.
+The PDF headline links to the HTML version, where the HTML version uses the HTML `<details>` tag
+to optionally allow viewing the full description of the task.
+This design is similar to a web news site with a listing of headlines that enables clicking to access details.
+The advantage of this scheme is that most _HR_ departments forbid their readers from contacting a candidate for 
+more details without first conducting an official interview which is a major formal process.
+My scheme short circuits this dilemna to the advantage of both the reader and the candidate.
+See my source code at: 
 [https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
 
 </details>
