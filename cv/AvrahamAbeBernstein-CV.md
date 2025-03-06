@@ -1002,7 +1002,13 @@ $else
 </details>
 $endif
 
-## Colophon
+$py(id="colophon"; task="Colophon")
+## Colophon {#$(id)}
+
+$if(is_pdf)
+$(pdetails(id,task))
+$else
+<details markdown="1">
 
 This document was designed in _pandoc_ (_FOSS_) _Markdown_ under _Ubuntu_. _Pyexpander_ (_FOSS_) was used for 
 macro preprocessing. Two formats were automatically generated at the same time, (1) PDF (using the _wkhtmltopdf_ 
@@ -1015,6 +1021,8 @@ advantage of this scheme is that most HR departments do not allow their readers 
 further details without first having an official interview which is a major process. This scheme short circuits 
 this dilemna to the advantage of both the reader and the candidate. For my source code see: 
 [https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
+
+$endif
 
 ## Footnotes
 
