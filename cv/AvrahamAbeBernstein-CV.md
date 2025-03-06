@@ -1014,7 +1014,7 @@ This document was designed in _pandoc_ (_FOSS_) _Markdown_ under _Ubuntu_. _Pyex
 macro preprocessing. Two formats were automatically generated at the same time, (1) PDF (using the _wkhtmltopdf_ 
 plugin), and (2) HTML. As is standard in the hi-tech industry, the mandatory PDF format incorporates a single 
 line for the employer name, and a short headline about the details of the task. Superficially the HTML 
-version mimics the same format. The PDF task description is a link into the HTML version, where the HTML version 
+version mimics the same format. The PDF headline links to the HTML version, where the HTML version 
 uses the HTML `<details>` tag to optionally allow viewing the full description of the task. This design is 
 similar to a web news site with a listing of headlines that enables clicking to access details. The 
 advantage of this scheme is that most HR departments do not allow their readers to contact the candidate for 
