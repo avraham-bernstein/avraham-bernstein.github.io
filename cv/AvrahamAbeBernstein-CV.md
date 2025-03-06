@@ -1022,6 +1022,7 @@ further details without first having an official interview which is a major proc
 this dilemna to the advantage of both the reader and the candidate. For my source code see: 
 [https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
 
+</details>
 $endif
 
 ## Footnotes
