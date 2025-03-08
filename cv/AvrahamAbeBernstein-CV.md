@@ -232,7 +232,7 @@ $endif
 The company sold their Internet TV business unit to [Viaccess-Orca (2014)]($(html)#$(id)) above.
 
 $py(id="nvt";task="CTO Nigerian Agritech")
-### 2013 part-time: _NVT_ (defunct) US
+### 2013 part-time: _NVT_ (defunct) US {#$(id)}
 
 $if(is_pdf)
 $(pdetails(id,task))
