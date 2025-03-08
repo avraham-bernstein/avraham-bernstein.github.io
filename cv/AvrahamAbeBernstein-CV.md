@@ -24,7 +24,7 @@ $if(not is_pdf)\
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 $endif\
-<br/>__Last Update:__ 2025-03-06
+<br/>__Last Update:__ 2025-03-08
 </address>
 
 $if(not is_pdf)
@@ -43,32 +43,33 @@ $endif
 
 ## Introduction: Cr8tive Solutions To Hard Problems {#intro}
 
-1. I have more than 40 years experience in state-of-the-art software development especially (a) inventing new algorithms, and (b) designing [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) which can grossly simplify many difficult problem domains. I have a long history of providing considerable value added to my employers.
-2. I have many inventions and some __recent patents__ in a wide variety of application domains, e.g.:
+1. I have more than 40 years experience in state-of-the-art software development:
+	* inventing new [algorithms](https://en.wikipedia.org/wiki/Algorithm)
+	* inventing [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) which can grossly simplify many difficult problem domains, especially for non-programmers
+	* using [compiler](https://en.wikipedia.org/wiki/Compiler) tools to automatically [refactor](https://en.wikipedia.org/wiki/Code_refactoring) source code, and for anti-[reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering) [obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software))
+2. I am a "hands-on" master software engineer. I enjoy programming. I design prototypes and minimum viable products for _CTO_ groups.
+3. I have many inventions and some __recent patents__ in a wide variety of application domains, e.g.:
     * digital automotive industry
     * Internet TV
-    * cybersecurity and anti-[reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering)
-    * [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics)
+    * cybersecurity
+    * bioinformatics
     * accessibility
     * factory automation
     * VLSI CPU design
-    * etc.
-3. I am an [expert generalist](https://simplicable.com/new/expert-generalist) and an [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath)[^polymath]. I easily learn and become an expert in new fields.
-4. In order to jump start my learning process I prefer to find a domain expert to mentor me, and I am also a good mentor myself. 
-5. I am a "hands-on" master software engineer. I enjoy programming. I design prototypes and minimum viable products for _CTO_ groups.
-6. I know many computer languages which I am able to learn easily due to my [compiler](https://en.wikipedia.org/wiki/Compiler) background; and my compiler background allows me to design [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), and to engage in automated [code refactoring](https://en.wikipedia.org/wiki/Code_refactoring).
+4. I am an [expert generalist](https://simplicable.com/new/expert-generalist) and an [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath)[^polymath]. I easily learn and become an expert in new fields.
+5. In order to jump start my learning process I prefer to find a domain expert to mentor me, and I am also a good mentor myself. 
+6. I know many computer languages which I am able to learn easily due to my [compiler](https://en.wikipedia.org/wiki/Compiler) background.
 7. My "go to" _programming_ languages in which I am quite proficient are the following:
-    * _C_
-    * _Python_ and _BeautifulSoup_
-    * [Jinaj2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), the "gold standard" macro and template preprocessor
-    * [Pyexpander](https://pyexpander.sourceforge.io/), which is simpler than _Jinja2_ and just as useful except where inheritance is needed, _but_ unfortunately it is _polluted_ by a [GPLv3 license](https://en.wikipedia.org/wiki/GNU_General_Public_License)
+    * [C](https://en.wikipedia.org/wiki/C_(programming_language))
+    * [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/)
+    * [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), the "gold standard" macro and template preprocessor
+    * [Pyexpander](https://pyexpander.sourceforge.io/), which is simpler than _Jinja2_ and just as useful except where template inheritance is needed, _but_ unfortunately it is _polluted_ by a [GPLv3 license](https://en.wikipedia.org/wiki/GNU_General_Public_License)
     * [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), including [Posix CLI commands](https://en.wikipedia.org/wiki/List_of_POSIX_commands)
 8. My "go to" _data_ languages are _HTML_, _Markdown_, [pandoc](https://www.pandoc.org), [srcML](https://www.srcml.org), _XML_, _YAML_, and _Excel_.
 9. I thrive on undertaking new challenging projects. I am quite comfortable engaging in and leading _flexible_ "brain storming" sessions.
+10. I have a long history of providing considerable value added to my employers.
 
 ## Work Experience {#work}
-
-<!-- <button onclick="show_all_details('work')">Show All "Work Experience" Details (useful for printing)</button> -->
 
 $py(id="aurora"; task="Automotive Software Updates: CTO Group: (a) I invented a patent-pending algorithm to greatly reduce RAM consumption during FLASH updates which improves compression efficiency which is the core KPI of the software update industry; and (b) I greatly improved the CPU efficiency and RAM consumption of their core product which refactors embedded C source code")
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
@@ -226,9 +227,31 @@ $(hdetails(task))
 </details>
 $endif
 
-### 2013-14: _Discretix_ Netanya IL (renamed _Sansa Security_, acquired by [ARM](https://www.arm.com) UK); Internet TV Cybersecurity {#discretix}
+### 2013-14: _Discretix_ Netanya IL (renamed _Sansa Security_, acquired by [ARM](https://www.arm.com) UK) {#discretix}
 
 The company sold their Internet TV business unit to [Viaccess-Orca (2014)]($(html)#$(id)) above.
+
+$py(id="nvt";task="CTO Nigerian Agritech")
+### 2013 part-time: _NVT_ (defunct) US
+
+$if(is_pdf)
+$(pdetails(id,task))
+$else
+$(hdetails(task))
+
+1. The company developed [cassava](https://en.wikipedia.org/wiki/Cassava) (aka tapioca flour) processing facilities in rural Nigeria. Before Nigeria joined _OPEC_, cassava was their primary sustenance source of food. Now that their oil reserves are dwindling, and world demand for oil is decreasing, the Nigerian government is preparing for the day when they can no longer afford to import subsidized wheat.
+
+2. My job was to search for technology, primarily from Israel, that would be useful for establishing factories in rural jungle regions where the cassava is grown. For example:
+
+* food storage techniques in humid regions that did not require refrigeration
+* small gas turbines for electricity production
+* local area cellular telephone network
+* portable hospitals
+* portable modular housing
+* protecting the undercarriage of off-road vehicles
+
+</details>
+$endif
 
 $py(id="telequest"; task="Vehicle Navigation Algorithms: VP R&D: Traffic jam reduction algorithms")
 ### 2012: [Telequest](https://www.telequest.co.il) (stealth) Jerusalem IL {#$(id)}
@@ -240,7 +263,7 @@ $(hdetails(task))
 
 1. The company was a failed competitor to [Waze](https://www.waze.com/apps).
 
-2. I developed algorithms to improve traffic throughput in traffic jams taking advantage of expected traffic trends according to history of the day of the week and expected events. 
+2. I developed algorithms to improve traffic throughput in traffic jams taking advantage of expected traffic trends according to history of the day of the week and expected events. I developed probabilistic algorithms to prevent generating secondary traffic jams.
 
 3. I designed live experiments using AWS simulations to optimize results. Coordinated work with a mathematical consultant specializing in optimization algorithms for a huge number of variables.
 
@@ -449,7 +472,7 @@ $(hdetails(task))
 $endif
 
 $py(id="optimet"; task="Conoscopic Laser Interferometry: S/W architect of a DSL for a 2D measurement  robot")
-### 1996-97: CEO _Pitkha_ (defunct) Jerusalem IL, contractor for _Optimet_ Jerusalem IL, subsidiary of [Ophir Optronics](https://www.ophiropt.com/en/) IL {#$(id)}
+### 1996-97: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to _Optimet_ Jerusalem IL, subsidiary of [Ophir Optronics](https://www.ophiropt.com/en/) IL {#$(id)}
 
 $if(is_pdf)
 $(pdetails(id,task))
