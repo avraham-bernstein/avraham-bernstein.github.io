@@ -24,7 +24,7 @@ $if(not is_pdf)\
 <br/>__Copyright__ &copy; Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 $endif\
-<br/>__Last Update:__ 2025-03-08
+<br/>__Last Update:__ 2025-03-09
 </address>
 
 $if(not is_pdf)
@@ -232,7 +232,7 @@ $endif
 The company sold their Internet TV business unit to [Viaccess-Orca (2014)]($(html)#$(id)) above.
 
 $py(id="nvt";task="CTO Nigerian Agritech")
-### 2013 part-time: _NVT_ (defunct) US {#$(id)}
+### 2013 part-time: _NVT_ (defunct) US
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -243,11 +243,11 @@ $(hdetails(task))
 
 2. My job was to search for technology, primarily from Israel, that would be useful for establishing factories in rural jungle regions where the cassava is grown. For example:
 
-* food storage techniques in humid regions that did not require refrigeration
-* small gas turbines for electricity production
+* food storage techniques in humid regions that do not require refrigeration
+* small gas turbines for electricity generation
 * local area cellular telephone network
-* portable hospitals
-* portable modular housing
+* portable hospitals, the size of a shipping container
+* portable modular housing units that are foldable and can be loaded from a flatbed truck
 * protecting the undercarriage of off-road vehicles
 
 </details>
