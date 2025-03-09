@@ -49,7 +49,7 @@ $endif
 	* using [compiler](https://en.wikipedia.org/wiki/Compiler) tools to automatically [refactor](https://en.wikipedia.org/wiki/Code_refactoring) source code, and for anti-[reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering) [obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software))
 2. I am a "hands-on" master software engineer. I enjoy programming. I design prototypes and minimum viable products for _CTO_ groups.
 3. I have many inventions and some __recent patents__ in a wide variety of application domains, e.g.:
-    * digital automotive industry
+    * digital automotive technology
     * Internet TV
     * cybersecurity
     * bioinformatics
@@ -63,7 +63,7 @@ $endif
     * [C](https://en.wikipedia.org/wiki/C_(programming_language))
     * [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/)
     * [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), the "gold standard" macro and template preprocessor
-    * [Pyexpander](https://pyexpander.sourceforge.io/), which is simpler than _Jinja2_ and just as useful except where template inheritance is needed, _but_ unfortunately it is _polluted_ by a [GPLv3 license](https://en.wikipedia.org/wiki/GNU_General_Public_License)
+    * [Pyexpander](https://pyexpander.sourceforge.io/), which is simpler than _Jinja2_ and just as useful _except_ where template inheritance is needed, _but_ unfortunately it is _polluted_ by a [GPLv3 license](https://en.wikipedia.org/wiki/GNU_General_Public_License)
     * [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), including [Posix CLI commands](https://en.wikipedia.org/wiki/List_of_POSIX_commands)
 8. My "go to" _data_ languages are _HTML_, _Markdown_, [pandoc](https://www.pandoc.org), [srcML](https://www.srcml.org), _XML_, _YAML_, and _Excel_.
 9. I thrive on undertaking new challenging projects. I am quite comfortable engaging in and leading _flexible_ "brain storming" sessions.
