@@ -74,7 +74,7 @@ $endif
     * [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), including [Posix CLI commands](https://en.wikipedia.org/wiki/List_of_POSIX_commands)
 8. My "go to" _data_ languages are _HTML_, _Markdown_, [pandoc](https://www.pandoc.org), [srcML](https://www.srcml.org), _XML_, _YAML_, and _Excel_.
 9. I thrive on undertaking new challenging projects. I am quite comfortable engaging in and leading _flexible_ "brain storming" sessions.
-10. I have a long history of providing considerable value added to my employers.
+10. I have a long history of providing considerable value added to my employers. Browsing the links describing the details of my projects will reveal a long history of "home runs". I am especially proud of my work in fields of [bioinformatics]($(html)#syntezza) and accessibility, see [here]($(html)#virtouch) and [here]($(html)#cubital-accessibility), even though they are not in the application domains where I normally work.
 
 ## Work Experience {#work}
 
