@@ -1,11 +1,23 @@
+$py(
+now = '2025-03-10'
+
+linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
+photo = 'AvrahamAbeBernstein-20250202-Watermarked.20pc.png'
+www = 'https://www.avrahambernstein.com'
+cv_root = www + '/cv/AvrahamAbeBernstein-CV'
+
+def obfus(text):
+	return '<span class="hide">' + text + '</span>'
+)
 <address markdown="1">
 __Author:__ Avraham "Abe" Bernstein
-<br/>__Email:__ Avraham DOT Bernstein AT gmail<style class="hide">@</style> DOT com
-<br/>__Tel/Whatsapp:__ +<style class="hide">@</style>972.54.641-0955
-<br/>__Last Update:__ 2025-03-05
+<br/>__Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
+<br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
+<br/>__www:__ [$(www)]($(www))
+<br/>__Last Update:__ $(now)
 </address>
 
-![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
+![Secure photo of the author]($(photo) "Secure photo of the author from 2025")
 
 __Secure[^secure-photo] photo of the author from 2025__
 
@@ -25,7 +37,9 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Links
 
-*  __CV:__ Computer Scientist,&nbsp;&nbsp;[Long HTML](cv/AvrahamAbeBernstein-CV.html),&nbsp;&nbsp;[Short PDF](cv/AvrahamAbeBernstein-CV.pdf)
+* __CV:__ Computer Scientist,&nbsp;&nbsp;[Long HTML]($(cv_root).html),&nbsp;&nbsp;[Short PDF]($(cv_root).pdf)
+
+* __linkedin:__ [$(linkedin)]($(linkedin))
 
 * __Articles:__ TBD
 
@@ -35,7 +49,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 * __Immediate Family:__
 
-    * wife: <i>Judy DOT Bernstein1 AT gmail<style class="hide">@</style> DOT com</i>, +<style class="hide">@</style>972.50.751-5111, designer of natural cosmetics
+    * wife: <i>Judy DOT Bernstein1 AT gmail$(obfus('bozo@example.com')) DOT com</i>, +$(obfus('bozo@example.com'))972.50.751-5111, designer of natural cosmetics
     * son: _Yirmiyahu_ + 4, astrophysicist and optics
     * daughter: _Naomi Sarah_ + 4, maternity nurse
     * daughter: _Carmiella_ + 1, cellist and music teacher
