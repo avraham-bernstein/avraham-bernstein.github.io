@@ -4,6 +4,7 @@ yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
 pdf = 'AvrahamAbeBernstein-CV.pdf'
+linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
 photo = www + '/AvrahamAbeBernstein-20250202-Watermarked.20pc.png'
 
@@ -26,7 +27,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
 <br/>__Home Geolocation:__ Jerusalem 9727433 ISRAEL
 <br/>__www:__ [$(www)]($(www))
-<br/>__linkedin:__ [https://www.linkedin.com/in/avrahambernstein/](https://www.linkedin.com/in/avrahambernstein/)
+<br/>__linkedin:__ [$(linkedin)]($(linkedin))
 $if(not is_pdf)\
 <br/>__Copyright__ &copy; Avraham Bernstein 2017-$(yy), Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
@@ -1023,7 +1024,7 @@ $else
 1. __Born:__ 1957 Canada.
 2. __Aliyah (English: immigration to Israel)__: 1983.
 	* My triple great grandfather, Rav Aharon Visanska 1809-1893, was born in a rural region of Augustow Poland. He was a disciple of the Vilna Gaon (Hebrew: _Gra_). As a young adult he resided in Jerusalem. He emigrated to Michigan where he raised his family and became a community rabbi. He returned to Jerusalem where he died and was buried on the Mount of Olives (Hebrew: _Har HaZeitim_). His granddaughter Rachel 1874-1919, my great grandmother, was born in  Michigan. She married a Canadian immigrant from Poland, Yechiel Michael 1872-1926, my great grandfather, who was born in the same Polish community as Rav Aharon's. Their eldest son Hershel Tzvi 1896-1977, my grandfather, was born in Ontario. He fought in _WW I_ in the _Jewish Legion_ in Turkey and later in Palestine under _General Allenby_. Hershel Tzvi returned to Ontario where I was eventually born.
-3. __Married:__ I have 2 boys and 2 girls, all married with many grandchildren, all of whom live in _Eretz Yisrael_ (English: the Land of Israel).
+3. __Married:__ + 2 boys + 2 girls, all married with many grandchildren, all of whom live in _Eretz Yisrael_ (English: the Land of Israel).
 	* Since the Hamas _Simchat Torah_ (2023-10-07) massacre, both of my sons spent about 6 months in the IDF, and as of this writing ($(now)) they both were recently called up for 2 months of reserve duty (Hebrew: _Miluim_). 
 4. __Religious Beliefs:__ I am a God-fearing observant Jew and Zionist.
 5. __IDF Reserves 1988-2001:__ I was a combat infantry sergeant, where I served in the Central Command (Hebrew: _Pikud HaMerkaz_) in the Jordan Valley.
