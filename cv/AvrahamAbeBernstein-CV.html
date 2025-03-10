@@ -255,14 +255,16 @@
 </header>
 <address>
 <strong>Author:</strong> Avraham "Abe" Bernstein <br/><strong>Email:</strong> Avraham DOT
-Bernstein AT gmail<span class="hide">@</span> DOT com <br/><strong>Tel/Whatsapp:</strong>
-+<span class="hide">@</span>972.54.641-0955 <br/><strong>Home Geolocation:</strong> Jerusalem
-9727433 ISRAEL <br/><strong>www:</strong> <a
+Bernstein AT gmail<span class="hide">bozo@example.com</span> DOT com
+<br/><strong>Tel/Whatsapp:</strong> +<span class="hide">bozo@example.com</span>972.54.641-0955
+<br/><strong>Home Geolocation:</strong> Jerusalem 9727433 ISRAEL <br/><strong>www:</strong> <a
 href="https://www.avrahambernstein.com">https://www.avrahambernstein.com</a>
-<br/><strong>Copyright</strong> © Avraham Bernstein 2025, Jerusalem ISRAEL. All rights reserved.
-<br/><strong>License:</strong> FOSS SPDX BSD-3-Clause: <a
+<br/><strong>linkedin:</strong> <a
+href="https://www.linkedin.com/in/avrahambernstein/">https://www.linkedin.com/in/avrahambernstein/</a>
+<br/><strong>Copyright</strong> © Avraham Bernstein 2017-2025, Jerusalem ISRAEL. All rights
+reserved. <br/><strong>License:</strong> FOSS SPDX BSD-3-Clause: <a
 href="https://opensource.org/licenses/BSD-3-Clause">https://opensource.org/licenses/BSD-3-Clause</a>
-<br/><strong>Last Update:</strong> 2025-03-09
+<br/><strong>Last Update:</strong> 2025-03-10
 </address>
 <p><img src="https://www.avrahambernstein.com/AvrahamAbeBernstein-20250202-Watermarked.20pc.png"
 title="Secure photo of the author from 2025" alt="Secure photo of the author" /></p>
@@ -319,9 +321,9 @@ href="https://en.wikipedia.org/wiki/Compiler">compiler</a> background.</li>
 href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Jinja_(template_engine)">Jinja2</a>, the "gold
 standard" macro and template preprocessor</li>
-<li><a href="https://pyexpander.sourceforge.io/">Pyexpander</a>, which is simpler than
-<em>Jinja2</em> and just as useful <em>except</em> where template inheritance is needed,
-<em>but</em> unfortunately it is <em>polluted</em> by a <a
+<li><a href="https://pyexpander.sourceforge.io/">Pyexpander</a>, which is much simpler to use
+than <em>Jinja2</em> and just as useful <em>except</em> where template inheritance is needed,
+<em>but</em> unfortunately is <em>polluted</em> by a <a
 href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GPLv3 license</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a>, including <a
 href="https://en.wikipedia.org/wiki/List_of_POSIX_commands">Posix CLI commands</a></li>
@@ -365,10 +367,10 @@ usage when the software generates <a href="https://en.wikipedia.org/wiki/Flash_m
 files by modifying the internals of the ubiquitous <em>C</em> <a
 href="https://www.man7.org/linux/man-pages/man3/memcpy.3.html">memcpy</a> function by
 incorporating <a href="https://en.wikipedia.org/wiki/POSIX">Posix</a>-like buffered I/O when
-<em>memcpy</em> is used to sequentially write to FLASH. The RAM savings enables usage of larger
-<a href="https://github.com/mendsley/bsdiff">bsdiff</a> <em>patch</em> "chunks" that enables
-higher compression ratios for legacy system boards with small amounts of RAM, i.e. 64-256 KB.
-Sometimes compression ratios could be improved by up to 25% - where the critical <a
+<em>memcpy</em> is used to sequentially write to <em>FLASH</em>. The RAM savings enables usage
+of larger <a href="https://github.com/mendsley/bsdiff">bsdiff</a> <em>patch</em> "chunks" that
+enables higher compression ratios for legacy system boards with small amounts of RAM, i.e.
+64-256 KB. Sometimes compression ratios could be improved by up to 25% - where the critical <a
 href="https://www.forbes.com/advisor/business/what-is-a-kpi-definition-examples/">KPI</a> in the
 software update business is improving compression ratios.</p></li>
 </ol>
@@ -423,9 +425,9 @@ Banking Cryptographic Algorithms: Securing C algorithms in a web browser using W
 </summary>
 <ol>
 <li><p>I implemented <em>C</em> cryptography functions in <em>Javascript</em> web assembly (<a
-href="https://webassembly.org/">WASM</a>). _WASM_object code is much faster and much more
-difficult to debug than <em>Javascript</em>. Because this project was intended for the banking
-industry, in the future we could write a <em>WASM</em> <a
+href="https://webassembly.org/">WASM</a>). <em>WASM</em> object code is much faster and much
+more difficult to debug than <em>Javascript</em>. Because this project was intended for the
+banking industry, in the future we could write a <em>WASM</em> <a
 href="https://en.wikipedia.org/wiki/Obfuscation">obfuscator</a> that would greatly increase the
 difficulty of debugging.</p></li>
 <li><p>I implemented the project by using <a
@@ -443,7 +445,7 @@ implement bsdiff
 </summary>
 <ol>
 <li><p>I architected and implemented a software design for efficient software updates of the
-<em>object code</em> of embedded systems using <a
+<em>object code</em> of embedded systems using <em>FOSS</em> <a
 href="https://github.com/thoughtpolice/minibsdiff">mini-bsdiff</a> <a
 href="https://en.wikipedia.org/wiki/Delta_encoding">delta encoding</a>. Note that <em>delta
 encoding</em> enables significantly smaller, e.g. 10x smaller, software updates compared to
@@ -463,11 +465,11 @@ at least one of the source files is larger than 8MB, in which case it is prefera
 </ul></li>
 <li><p>I invented <a
 href="https://worldwide.espacenet.com/patent/search/family/069147491/publication/EP3680773A1?q=20150616.9">EU
-Patent EP3680773A1</a>, a <em>mini-bsdiff</em> patch implementation for small FLASH memory
-systems where the FLASH is not big enough to temporarily hold both the original version "A" and
-new version "B" of the object code. Normally the <em>bsdiff</em> algorithm requires both
-versions be available when applying the patch. I had discussions with <em>Colin Percival</em>
-the original inventor of <em>bsdiff</em>.</p></li>
+Patent EP3680773A1</a>, a <em>mini-bsdiff</em> patch implementation for small <em>FLASH</em>
+memory systems where the <em>FLASH</em> is not big enough to temporarily hold both the original
+version "A" and new version "B" of the object code. Normally the <em>bsdiff</em> (and
+<em>mini-bsdiff</em>) algorithm requires both versions be available when applying the patch. I
+had discussions with <em>Colin Percival</em> the original inventor of <em>bsdiff</em>.</p></li>
 <li><p>I experimented with <a
 href="https://www.chromium.org/developers/design-documents/software-updates-courgette/">Google's
 Courgette</a> improvement to <em>bsdiff</em>, but it required a relatively large amount of RAM
@@ -515,13 +517,13 @@ href="https://support.microsoft.com/en-us/windows/bitlocker-drive-encryption-76b
 full disk encryption. PCs are lost and stolen.</p>
 <p>b. Use a random PC login password from a USB security token such as <a
 href="https://www.yubico.com/">Yubico</a>, along with a manual <a
-href="https://www.techrepublic.com/article/what-is-passphrase/">passphrase</a> prefix. At that
+href="https://www.techrepublic.com/article/what-is-passphrase/">passphrase</a> suffix. At that
 time the basic capability of the token was to store and emit a permanent manufacturer-configured
 "random" 16 character password. (More modern keys support additional services such as
 <em>TOTP</em> authenticator one-time keys with a timeout). By pressing the button on the token
 it would act as a second keyboard in order to allow the password to be emitted into the PC. When
 using the emitted password, it is important that the user append it with his own memorized, say
-8 character, password, otherwise security is compromised if the token is lost or stolen.</p>
+8 character, suffix, otherwise security is compromised if the token is lost or stolen.</p>
 <p>c. When the PC is unattended close the cover, and use a screen saver with a relatively short
 timeout, e.g. 10 minutes, Configure so that resumption requires a password.</p>
 <p>d. Use the <em>Firefox</em> web browser (and especially not <em>Google Chrome</em> !) with
@@ -546,9 +548,9 @@ storage or file transfers. For file transfers, It has the disadvantage of using 
 passwords, and therefore not nearly as secure as <em>PGP</em>, but definitely far better than
 in-the-clear transfers.</p>
 <p>h. Make weekly encrypted backups of user data.</p>
-<p>i. Assign <em>two</em> employees to be security monitors. They should store backup security
-tokens and user PC backups off-site. All employees must pass a quick monthly security review
-from the monitor.</p></li>
+<p>i. Assign an employee along with a deputy to be security monitors. They should store backup
+security tokens and user PC backups off-site. All employees must pass a quick monthly security
+review from the monitor.</p></li>
 </ol>
 </details>
 <h3 id="viaccess">2014-17: <a href="https://www.viaccess-orca.com/">Viaccess-Orca</a> Ra'anana
@@ -561,11 +563,11 @@ Internet TV Infrastructure: Cybersecurity obfuscation manager
 <li><p>I focused on obfuscation, i.e. anti-reverse engineering, of their smartphone (i.e.
 Android and iPhone) client player, by selecting a C/C++ obfuscating compiler and by building
 home brew utilities. I selected the <em>WhiteCryption</em> compiler originally built by
-<em>InterTrust</em> and subsequently acquired by <em>Zimperium</em> in 2021 after I left. When I
-first selected the product <em>WhiteCryption</em> was still in the <em>beta</em> stage. I worked
-very closely with the <em>WhiteCryption</em> development team - mainly specifying new features
-and testing existing ones. Previously I worked on an in-house obfuscation compiler at NDS
-(called <em>chameleon</em>), which I considered to be far beyond the manpower resources we had
+<em>InterTrust</em> (subsequently acquired by <em>Zimperium</em> in 2021 after I left). When I
+first selected <em>WhiteCryption</em>, it was still in the <em>beta</em> stage. I worked very
+closely with the <em>WhiteCryption</em> development team - mainly specifying new features and
+testing existing ones. Previously I worked on an in-house obfuscation compiler at NDS (called
+<em>chameleon</em>), which I considered to be far beyond the manpower resources we had available
 at <em>Viaccess-Orca</em>, therefore I decided to use <em>WhiteCryption</em> as our contractor.
 After I left <em>Viaccess</em>, they switched to the French <em>Quarkslab</em> obfuscating
 compiler partly because <em>Viaccess'</em> HQ is also in France.</p></li>
@@ -576,28 +578,30 @@ href="https://www.webopedia.com/definitions/dynamic-shared-object/">Dynamic Shar
 eliminates the usefulness of a <em>DSO</em> (thus making the term into an <em>oxymoron</em>). I
 designed a low level <em>asynchronous</em> mechanism to load an encrypted export table relying
 upon <em>ELF's</em> special <code>init</code> section which executes code in the address space
-of the caller when the <em>DSO</em> is first loaded (which is an uncommonly used feature of the
-<em>DSO</em>). I designed this mechanism because the export table is one of the major <em>attack
+of the caller when the <em>DSO</em> is first loaded. It is an uncommonly used feature of the
+<em>DSO</em>. I designed this mechanism because the export table is one of the major <em>attack
 surfaces</em> in a <em>DSO</em>.</p></li>
 <li><p>I worked with the 3rd party software supplier of the video codec in order to
 substantially bolster the security of their product which proved to be a major potential
 security hole in our system. The challenge was that most of their customers did not require the
 security that we did, and for practical commercial reasons they were not willing to make a
 separate build for us. I managed to architect an optional security plugin for them that caused
-minimal changes to their system, and caused zero interference to their other customers who chose
-not to use the plugin.</p></li>
-<li><p>Initially the movie studios insisted that smartphones could not be <a
+negligible changes to their system, and caused zero interference to their other customers who
+chose not to use a plugin.</p></li>
+<li><p>Initially the movie studios insisted that our player client software would not be allowed
+to play their content unless the client was <a
 href="https://www.androidauthority.com/what-is-rooted-phone-3338226/">rooted</a> because it made
-them considerably more difficult to prevent piracy, so I developed an extremely accurate <a
-href="https://en.wikipedia.org/wiki/Fuzzy_logic">fuzzy logic</a> algorithm to detect rootedness
-with almost no "false positives" (because the out of pocket and negative publicity costs of
-falsely accusing a subscriber of having a rooted phone were horrendous). The problem was that
-less expensive Android phones from the Far East were flooding the market, were rooted by default
-because it saved the manufacturer a few hours of licensing work from Google who controlled the
-<a href="https://source.android.com/">Android Open Source Project (AOSP)</a>. Therefore security
-had to be moved from the client to the content servers. For example a subscriber who played 100
-hours of content a week was suspect, or a subscriber who played content simultaneously from
-different geographic locations was suspect.</p></li>
+the client considerably more difficult to debug and to prevent piracy. Therefore I developed an
+extremely accurate <a href="https://en.wikipedia.org/wiki/Fuzzy_logic">fuzzy logic</a> algorithm
+to detect rootedness with almost no "false positives" (because the out of pocket and negative
+publicity costs of falsely accusing a subscriber of having a rooted phone were horrendous). The
+problem was that less expensive Android phones from the Far East were flooding the market, were
+rooted by default because it saved the manufacturer a few hours of licensing work from Google
+who controlled the <a href="https://source.android.com/">Android Open Source Project (AOSP)</a>.
+Therefore the studios agreed that security had to be moved from the client to the content
+servers. For example a subscriber who played 100 hours of content a week was suspect, or a
+subscriber who played content simultaneously from different geographic locations was
+suspect.</p></li>
 </ol>
 </details>
 <h3 id="discretix">2013-14: <em>Discretix</em> Netanya IL (renamed <em>Sansa Security</em>,
@@ -619,7 +623,7 @@ they can no longer afford to import subsidized wheat.</p></li>
 establishing factories in rural jungle regions where the cassava is grown. For example:</p></li>
 </ol>
 <ul>
-<li>food storage techniques in humid regions that do not require refrigeration</li>
+<li>food storage techniques for hot humid regions that do not require refrigeration</li>
 <li>small gas turbines for electricity generation</li>
 <li>local area cellular telephone network</li>
 <li>portable hospitals, the size of a shipping container</li>
@@ -668,21 +672,23 @@ death. Prior to <em>PCR</em> technology, it took a laboratory about 48 hours to 
 disease by growing a culture in a "gold standard" <a
 href="https://en.wikipedia.org/wiki/Petri_dish">Petri dish</a>, but <em>PCR</em> technology can
 make the identification within 2 hours.</p>
-<p><strong>Before joining the company I had zero background in biology, microbiology, genetics,
-or biochemistry.</strong> When I arrived the company was in imminent danger of closing down
-their <em>PCR</em> business unit because their initial <a
+<p><strong>Before joining the company I had zero university background in <a
+href="https://www.youtube.com/watch?v=1HoVF6iv7OE">biology</a>, microbiology, genetics, or
+biochemistry.</strong> When I arrived the company was in imminent danger of closing down their
+<em>PCR</em> business unit because their initial <a
 href="https://en.wikipedia.org/wiki/Food_and_Drug_Administration">FDA</a> trials completely
-failed that they had spent about $500K to prepare by taking 800 samples from a few Israeli
-hospitals. The owner was "pulling his hair out" because he felt that his science was 100%
-correct. First he hired <a href="https://www.researchgate.net/profile/Tzachi-Bar">Tzachi Bar</a>
-to consult, the inventor of PCR mathematical algorithms used in all PCR devices at that time
-world wide, but <em>Bar</em> could not help him. I happened to be the owner's neighbor. He knew
-that I was a computer scientist, so he took his final chance with me. <strong>Within 3 months I
-made a number of discoveries that validated the owner's science and enabled them to pass the
-<em>FDA</em> trials.</strong> In spite of my technical success, for commercial reasons beyond
-the scope of my short article, they were forced to close down their <em>PCR</em> business unit;
-therefore my <a href="https://www.pythonprog.com/thresholding-in-machine-learning/">threshold
-algorithm</a> was never patented.</p>
+failed that they had spent about $500K to prepare by collecting 800 patient samples from a few
+Israeli hospitals. The owner was "pulling his hair out" because he felt that his science was
+100% correct. First he hired <a href="https://www.researchgate.net/profile/Tzachi-Bar">Tzachi
+Bar</a> to consult, the inventor of PCR mathematical algorithms used in all PCR devices at that
+time world wide, but <em>Bar</em> could not help him. I happened to be the owner's neighbor. He
+knew that I was a computer scientist, so he took his final chance with me. <strong>Within 3
+months I made a number of discoveries that validated the owner's science and enabled them to
+pass the <em>FDA</em> trials.</strong> In spite of my technical success, for commercial reasons
+beyond the scope of my short article, they were forced to close down their <em>PCR</em> business
+unit; therefore my <a
+href="https://www.pythonprog.com/thresholding-in-machine-learning/">threshold algorithm</a> was
+never patented.</p>
 <ol>
 <li><p>Initially <em>Bar</em> and the company's chief microbiologist gave me a 2 week crash
 course in the fields of microbiology and genetics that they felt I would need for my
@@ -702,8 +708,8 @@ the <em>FDA</em> that required 80% accuracy.</p></li>
 <li><p>I noted that tests from the pure laboratory colonies of <em>MRSA</em>, with extremely
 high concentrations never to be encountered in a patient sample, all failed. This indicated to
 me that there was a flaw in the industry standard <em>Bar-Tichopad</em> algorithm.</p></li>
-<li><p>And I noted that many tests with negative <em>PCR</em> results, in spite of the positive
-Petri results, had random graphs instead of the smooth <a
+<li><p>Secondly I noted that many tests with negative <em>PCR</em> results, in spite of the
+positive Petri results, had random graphs instead of the smooth <a
 href="https://en.wikipedia.org/wiki/Bioassay">bioassay</a> sigmoidal shaped curve of the <a
 href="https://en.wikipedia.org/wiki/Logistic_function">logistic function</a> that
 <em>Bar-Tichopad</em> expected. After discussing the matter with <em>Bar</em> and the senior
@@ -752,48 +758,48 @@ Internet TV Infrastructure: Cybersecurity researcher
 <li><p>Most of my work at NDS was doing software security research including occasional code
 security audits.</p></li>
 <li><p>I was one of the first security researchers in the world to prove that the ubiquitous
-virtual machine packages, e.g. VMWare and VirtualBox, could break simple DRM protection schemes
-like date restrictions or replay count.</p></li>
-<li><p>I showed how X64 virtualization hardware could be used together with <a
+virtual machine packages, e.g. <em>VMWare</em> and <em>VirtualBox</em>, could break simple
+<em>DRM</em> protection schemes like date restrictions or replay count.</p></li>
+<li><p>I showed how <em>X64</em> virtualization hardware could be used together with <a
 href="https://en.wikipedia.org/wiki/QEMU">QEMU</a> to break the software random number generator
 (RNG). This was a very critical attack because the fundamental security assumption was that each
-client PC had a world wide unique cryptographic "nonce". But if confederate clients could share
-their nonces then a single license could be shared by all members of the confederacy. At that
-time, c. 2007, the cycle counter instruction <code>RDTSC</code> was easily subverted by the
-virtualization technology. After I left the company, since 2012 the CPU has a hardware RNG
-instruction <code>RDRAND</code> which is a much safer instruction from the perspective of
-security.</p></li>
+client PC had a worldwide unique cryptographic "nonce". But if confederate clients could share
+their nonces on their own trivial web server then a single license could be shared by all
+members of the confederacy. At that time, c. 2007, the cycle counter instruction
+<code>RDTSC</code> was easily subverted by the virtualization technology. After I left the
+company, since 2012 the CPU has a hardware RNG instruction <code>RDRAND</code> which is a much
+safer instruction from the perspective of security.</p></li>
 <li><p>I invited outside security researchers to give lectures and seminars to in-house
 developers on state-of-the-art security techniques. Based upon these lectures I developed an
 obfuscated <a href="https://en.wikipedia.org/wiki/Forth_(programming_language)">FORTH</a>-like
 compiler that was extremely difficult to reverse engineer.</p></li>
-<li><p>In 2007 NDS was invited by the Chinese government TV system to protect the 2008 Beijing
+<li><p>In 2007 NDS was invited by the Chinese government CCTV system to protect the 2008 Beijing
 Olympics TV feed. I "almost" won the contract. The Chinese government did not want Microsoft to
 be involved in the bidding because nearly 100% of servers and client PCs had stolen operating
 system licenses which could easily be revealed when Microsoft installed the protection software.
-At time the Olympic TV feed was owned by Microsoft company MSNBC. Eventually Microsoft agreed
+At time the Olympic TV feed was owned by a Microsoft company MSNBC. Eventually Microsoft agreed
 not to sue China for the stolen operating system licenses, and they offered the protection
 package for free so they won the contract.</p></li>
 <li><p>The Israeli satellite TV operators had their feed stolen by Israeli expats in the US, and
 more massively in the Palestinian areas. I showed how to it was possible to easily technically
 stop these thefts. For reasons that are still not clear to me, the operators showed no interest
-in stopping the thefts.</p></li>
-<li><p>My first job at NDS was as a contractor. I built a tester and simulator for the NDS
-satellite software. I designed a <a
+in stopping these thefts.</p></li>
+<li><p>My first job at NDS was as a quality assurance (<em>QA</em>) contractor. I built a tester
+and simulator for the NDS satellite software. I designed a <a
 href="https://en.wikipedia.org/wiki/Domain-specific_language">domain specific language (DSL)</a>
 in <a href="https://en.wikipedia.org/wiki/Tcl">TCL</a> to do this task. After my analysis of
-their software, I concluded that there were critical flaws in the design. I was quite
+their software, I concluded that there were critical flaws in its design. I was quite
 knowledgeable in VAX/VMS O/S internals. The junior VP in charge of the project refused to
 believe that a "mere QA guy" could have such knowledge, so I built a graduated test program that
 blew his (virtual) satellite out of the sky. Afterwards my software was installed on every
 developer's desktop. Before checking in software into their version control system, it became
 standard operating procedure to run a 10 minute test prior to check-in.</p></li>
-<li><p>I worked with the QA department to analyze their bug reports, and concluded that nearly
-50% of their software effort was bug fixes. And they had more than 1000 software developers! I
-worked with the QA department in order to implement a program to greatly reduce bugs. I recall
-that their biggest problem was lazy software builds that often contained tens of thousands of
-warnings. My most important improvement was insisting on zero warnings, or adding explicit
-compiler approval of any warning to be explicitly allowed.</p></li>
+<li><p>I worked with NDS' <em>QA</em> department to analyze their bug reports, and concluded
+that nearly 50% of their software effort was bug fixes. And they had more than 1000 software
+developers! I worked with the QA department in order to implement a program to greatly reduce
+bugs. I recall that their biggest problem was lazy software builds that often contained tens of
+thousands of warnings. My most important improvement was insisting on zero warnings, or adding
+explicit compiler approval of any warning to be explicitly allowed.</p></li>
 </ol>
 </details>
 <h3 id="vyyo2004">2004: <em>Vyyo</em> (defunct) Jerusalem IL</h3>
@@ -836,7 +842,7 @@ images, especially maps and mathematical functions, using a</p>
 <p>c. ideally a consumer grade graphics tablet and stylus (e.g. <a
 href="https://www.amazon.com/Wacom-Graphic-Drawing-Tablet-Beginners/dp/B07S1RR3FR">Wacom
 Bamboo</a> ~$50)</p>
-<p>d. although optionally, but less preferably, with the device's builtin mouse</p></li>
+<p>d. and optionally, but less preferably, with the device's builtin mouse</p></li>
 <li><p>The software heavily relied upon the builtin <a
 href="https://en.wikipedia.org/wiki/SVG">standard vector graphics (SVG)</a> capability of all
 modern web browsers (since 1999).</p>
@@ -863,7 +869,7 @@ instrument combinations to represent the colors, and/or we could use the keyboar
 the stylus to query which circle we are touching, where the application will provide a
 text-to-speech response.</p></li>
 <li><p>Images need to be prepared offline. But in the case of maps, most of which are already
-designed using <em>XML</em>, it is possible to programmatically automate their
+designed using <em>XML</em> variants, it is possible to programmatically automate their
 preparation.</p></li>
 </ol>
 </details>
@@ -882,7 +888,8 @@ Free Space Optics Networking: Consultant: Designer of SNMP NMS client and agent
 href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">FPGA</a> hardware was
 streamlined to handle calibrating/aiming the optical equipment. It had no CPU, and minimal
 configuration I/O ports.</p></li>
-<li><p>I selected an external board in order to implemented a basic <a
+<li><p>I selected an external interface card, with builtin <em>Java</em> support, in order to
+implement a basic <a
 href="https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol">SNMP agent</a>.</p></li>
 <li><p>I built a basic HTTP <a
 href="https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol">SNMP NMS</a>
@@ -908,8 +915,8 @@ client using a GUI NMS client tool kit, and the embedded system <em>agent</em> f
 router in <em>C</em>.</p></li>
 <li><p>I invented the router's embedded <a
 href="https://en.wikipedia.org/wiki/Address_Resolution_Protocol">arp table</a> using an
-extremely efficient FIFO <a href="https://en.wikipedia.org/wiki/Hash_table">hash table</a> in
-<em>C</em> that used no dynamic memory allocation.</p></li>
+extremely efficient <em>FIFO</em> <a href="https://en.wikipedia.org/wiki/Hash_table">hash
+table</a> in <em>C</em> that used no dynamic memory allocation.</p></li>
 <li><p>I designed an embedded remotely accessible and secure debugger for the router in <a
 href="https://en.wikipedia.org/wiki/Forth_(programming_language)">FORTH</a> wrapped in
 <em>C</em>.</p></li>
@@ -952,7 +959,7 @@ href="https://codeplea.com/opengl-with-c-and-tcl-tk">TCL</a> interface. I develo
 in order to allow the end user to specify what graphics primitives he should use to analyze the
 different regions of the object being scanned. In my development environment, I used to scan a
 tooth that I called "Timmy". The end result looked like an alpine environment, where the higher
-parts were colored white, the middle levels were blue, and the lower levels were green,
+parts were colored white, the middle levels were green, and the lower levels were blue,
 etc.</p></li>
 </ol>
 </details>
@@ -964,18 +971,18 @@ Military Optical Devices: S/W architect of a DSL to implement a mil-spec automat
 laboratory for the BlackHawk helicopter weapons targeting system
 </summary>
 <ol>
-<li><p>Elop was a primary subcontractor for the BlackHawk helicopter fire control system for the
-US company <em>LORAL</em> who was the main contractor for the helicopter (which was acquired by
-<em>Lockheed Martin</em>). They had an acceptance testing manual that specified over 1000 tests
-that the fire control system must pass. There were about 10 <em>GPIB</em> interface hardware
-devices attached to the software. Unsupervised automated tests would have to run for up to 4
-days. Test results would be sent to a log file, and the app had GUI dashboard to show its
-current status. The underlying system would be implemented in <em>C</em>. The laboratory
-computers would be running MS-DOS.</p></li>
+<li><p>Elop was a primary subcontractor for the <em>BlackHawk</em> helicopter missile fire
+control system for the US company <em>LORAL</em> who was the main contractor for the helicopter
+(which was acquired by <em>Lockheed Martin</em>). They had an acceptance testing manual that
+specified over 1000 tests that the fire control system must pass. There were about 10
+<em>GPIB</em> interface hardware devices attached to the software. Unsupervised automated tests
+would have to run for up to 4 days at a time. Test results would be sent to a log file, and the
+app had GUI dashboard to show its current status. The underlying system would be implemented in
+<em>C</em>. The laboratory computers would be running MS-DOS.</p></li>
 <li><p>The key to the success of this project was my design of a <a
 href="https://en.wikipedia.org/wiki/Domain-specific_language">domain specific language (DSL)</a>
 to formally specify each of the tests. Also the language would have to be easy enough to use by
-the <em>Elop</em> system engineer, who is not a professional programmer, and would have to
+the <em>Elop</em> system engineer, who was not a professional programmer, and would have to
 program many <em>ad hoc</em> tests on his own. I designed the <em>DSL</em> to be a lightweight
 version of <em>BASIC</em> along with plugin drivers for the specialized test hardware, along
 with the main device under test. I used <em>lex</em> and <em>yacc</em> to design the
@@ -996,8 +1003,9 @@ tool chain for the PINE CPU
 joined them they were working on their original <em>PINE</em> chip. They were a VLSI "fabless"
 design center. After finishing their designs, they had them manufactured by a real physical
 "fab". At that time it could take up to 6 months for the fab to manufacture the physical chip.
-And <em>DSPG</em> designed the application software that ran on their chips. At that time they
-designed the hardware and software internals for consumer telephone answering machines.</p></li>
+Design flaws would be horrendously expensive. And <em>DSPG</em> designed the application
+software that ran on their chips. At that time they designed the hardware and software internals
+for consumer telephone answering machines.</p></li>
 <li><p>VLSI software simulations ran extremely slowly because they simulated the low level
 transistor details of their circuitry.</p></li>
 <li><p>My job was (1) to design a clock accurate simulator that would run about 100x faster than
@@ -1005,26 +1013,27 @@ the VLSI simulator, and (2) to supply an assembler and <em>C</em> compiler that 
 test software applications months before the fab manufactured the physical chip.</p></li>
 <li><p>At that time the first release of <em>QEMU</em> would be about 15 years away, and the GCC
 tool chain was not yet mature, i.e. pre 2.95, so I had to design my own assembler, simulator,
-linker, compiler, and debugger.</p></li>
+linker, compiler, and debugger, for an early version of Microsoft Windows.</p></li>
 <li><p>The key to the success of this project was my design of a <a
 href="https://en.wikipedia.org/wiki/Domain-specific_language">domain specific language (DSL)</a>
 to formally describe each one of the CPU's opcodes, and most important to recognize when an
 instruction sequence would cause the pipeline to "stall". We built the <em>DSL</em> using
-<em>lex</em> and <em>yacc</em>. At that time it was not yet common practice that CPU designers
-could automatically dynamically insert delays into the instruction pipeline. It was the job of
-the application programmer (or the compiler) to automatically insert these delays. My
+<em>lex</em> and <em>yacc</em>. At that time it was not yet common industry practice that CPU
+designers could automatically dynamically insert delays into the instruction pipeline. It was
+the job of the application programmer (or the compiler) to automatically insert these delays. My
 <em>DSL</em> included an easy to specify language that detected stall conditions. Without this
 stall detection feature it was impossible for us to develop the assembler in a timely fashion,
 because in the early stages of the design, the VLSI architects made major changes to the stall
-conditions almost daily. So our manually coded stall condition analyzer had to constantly be
-rewritten. But once we implemented this feature, we could generate an updated assembler almost
-immediately, i.e. within a hour or two.</p></li>
+conditions almost daily. Therefore our manually coded stall condition analyzer had to constantly
+be rewritten. But once we implemented this feature, we could generate an updated assembler
+almost immediately, i.e. within a hour or two.</p></li>
 <li><p>Another very important feature was that when debugging an application we could
 programmatically simulate access to the <em>I/O</em> ports. Still more than 15 years after the
-first release of <em>QEMU</em>, i.e. 2025, this is not yet a builtin feature of state of the art
+first release of <em>QEMU</em>, i.e. 2025, this is not yet a builtin feature of state-of-the art
 <em>QEMU</em> simulators.</p></li>
 <li><p>The system worked as planned. Especially important is that application developers were
-able to supply debugged applications months before the physical chip became available.</p></li>
+able to supply working debugged applications months before the physical chip became
+available.</p></li>
 </ol>
 </details>
 <h3 id="iscar">1990-91: contractor to <a
@@ -1056,7 +1065,8 @@ the correct stand, and moved them to the conveyor system or to the storage area<
 <li>some pallets were transported by conveyor</li>
 <li>some pallets were placed on stacks</li>
 <li>pallets were temporarily stored in a storage area made up of hundreds of stands</li>
-<li>parts that were stored for too long had to oiled in order to prevent rust</li>
+<li>work-in-progress parts that were stored for too long had to oiled in order to prevent
+rust</li>
 <li>tools that required maintenance, e.g. cutting tools, recorded their consumption before being
 sent for repair (e.g. sharpening)</li>
 </ul></li>
@@ -1078,20 +1088,20 @@ to implement. At that time <a
 href="https://en.wikipedia.org/wiki/Object-oriented_programming">object oriented programming
 (OOP)</a> was just being developed in research/university settings. The first version of
 <em>C++</em> was just released, and <a href="https://en.wikipedia.org/wiki/SNOBOL">SNOBOL</a>
-was an <em>OOP</em> research prototype. There was no Internet yet at that time, but ample
-literature was available in the Hebrew Univ computer science library. Recall that we had a hard
-requirement to use the procedural <em>Pascal</em> language,</p></li>
+was an <em>OOP</em> research prototype. There was no Internet yet at that time, but literature
+was available in the Hebrew Univ computer science library. Recall that we had a hard requirement
+to use the procedural <em>Pascal</em> language,</p></li>
 <li><p><em>VAX/VMS</em> had a command line utility for designing command "ensembles" which could
 be executed via callbacks to a compilable language, e.g. <em>Pascal</em>. We used these
 ensembles to define every type of object, along with their attributes, supported by the our
-<em>DSL</em>. (Today, 30 years later, I would use XML instead which had not yet been
+<em>DSL</em>. Today (2025), 30 years later, I would use XML instead (which had not yet been
 invented).</p></li>
 <li><p>There were tens of thousands object instances stored in a database on disk - including
 their configuration and current status. The database regularly stored status updates. The
 database was constantly scanned in order to implement the next task that our scheduler required.
 In the event that the main computer shut down, either expectedly or unexpectedly, the database
 allowed for a smooth restart/recovery.</p></li>
-<li><p>After about a year, we built a working factory.</p></li>
+<li><p>After about a year, we implemented a working factory!</p></li>
 </ol>
 </details>
 <h3 id="cubital-printer">1988-89: contractor to <em>Cubital</em> (defunct) Herzliya IL,
@@ -1134,18 +1144,18 @@ href="https://en.wikipedia.org/wiki/Light_pen">light pen</a> to a then ubiquitou
 href="https://www.howtogeek.com/722863/what-is-a-crt-and-why-dont-we-use-them-anymore/">CRT</a>
 display, where the light pen's select button was replaced with a <a
 href="https://enablingdevices.com/product/sip-and-puff-switches/">sip-and-puff accessibility
-switch</a>. Normally a light pen needed to be ~1 cm from the display, but with our military
-grade optical enhancement it could be used ~80 cm away.</p></li>
+switch</a>. Normally a light pen needed to be ~1 cm. from the display, but with our military
+grade optical enhancement it could be ~80 cm. away.</p></li>
 <li><p>My initial software invention overlaid half of the display with a <a
 href="https://en.wikipedia.org/wiki/Virtual_keyboard">virtual keyboard</a>, where the light pen
 was used to select a key. The final solution used an "expert mode" where a virtual
 <em>hidden</em> keyboard covered 100% of the display, but a key popped up only when the light
 pen hovered over an individual key.</p></li>
 <li><p>The first user of the device was <em>Shulamit Gabai</em> who was stricken with polio in
-all of her limbs by the <em>Or Akiva</em> disaster where sewage leaked into the clean water
-system. She was able to use the device to type 30 characters per minute, and thus was able to
-become an editor for a book publisher.</p></li>
-<li><p>For a new learning experience, I wrote the program in <em>Prolog</em>.</p></li>
+all of her limbs by the <em>Or Akiva</em> municipal disaster where sewage leaked into the clean
+water system. She was able to use the device to type 30 characters per minute, and thus was able
+to become an editor for a book publisher.</p></li>
+<li><p>For a new learning experience, I wrote the software in <em>Prolog</em>.</p></li>
 </ol>
 </details>
 <h3 id="orisol">1987: <em>Orisol</em> (defunct) Lod IL</h3>
@@ -1164,11 +1174,11 @@ thickness, and color. An expert human sewing machine operator will take these di
 account. Therefore the robot required a live video feed which had to be analyzed in real
 time.</p></li>
 <li><p>A high speed sewing robot can execute a few thousand stitches per minute. On account of
-torque it takes a few seconds to change speed. Making mistakes may cause the machine to make
+torque, it takes a few seconds to change speed. Making mistakes may cause the machine to make
 hundreds of unnecessary stitches which could seriously damage the expensive fabric.</p></li>
-<li><p>Among other things the signs specify minimum and maximum speeds, the sizes of the minimum
-and maximum overlapping regions, the pattern matching algorithm to be used depending upon the
-texture and color of the leather, etc.</p></li>
+<li><p>Among other things, the "road" signs specify minimum and maximum speeds, the sizes of the
+minimum and maximum overlapping regions, the pattern matching algorithm to be used depending
+upon the texture and color of the leather, etc.</p></li>
 <li><p>For example speed is a function of the angular changes, and the complexity of the of the
 matching algorithm.</p></li>
 </ol>
@@ -1222,13 +1232,14 @@ with the economic team, the government ordered them to withdraw their proposal. 
 to me that I join the hearings as a public interest intervenor to advocate <em>marginal cost
 pricing</em> in their stead, and that they would give me behind the scenes technical support. I
 agreed to their proposal. I would have the exact same legal standing as the smelting industry
-because I paid an electric bill of about $25 a month!</p></li>
+because I paid a shared electric bill of about $25 a month!</p></li>
 <li><p>This job was a formative learning experience for me that subsequently effected my whole
 life because I learned that a single individual can effectively stand up to the corruption of
 large business and government. With perfect hindsight, it was clearly a case of Divine
 intervention (Hebrew: <em>Hashgacha Pratit</em>). Years later in my life in Israel, I became
 involved in a number of community service projects where I showed that a single individual can
-make a difference and successfully push back against government corruption.</p></li>
+make a difference and successfully push back against government corruption. (See <em>future</em>
+articles in my web site on my community service).</p></li>
 </ol>
 </details>
 <h2 id="personal-inventions">Unpatented Personal Inventions</h2>
@@ -1500,15 +1511,15 @@ expanded.</p></li>
 <p><em>C</em> source code: TBD.</p>
 <h3 id="inner-dynamic-flash-config-file">6. Embedded Systems: Dynamically Loadable FLASH
 Configuration Files Larger Than RAM</h3>
-<p>On embedded systems with limited RAM, it is not possible to load large configuration files
-into RAM, and it is normally a security risk to parse the configuration file when dynamically
-loading it regardless of its size. My invention allows the use of an off-line
+<p>On embedded systems with limited RAM, it is <em>not</em> possible to load large configuration
+files into RAM, and it is normally a security risk to parse the configuration file when
+dynamically loading it regardless of its size. My invention allows the use of an off-line
 <em>pre-parsed</em> configuration file into object data format <em>without any executable
-code</em>. It can be dynamically loaded into FLASH memory at an address defined at load time
-where (1) the system architect must have mapped the FLASH memory accordingly, (2) the <em>C</em>
-structure of object file must be recognized by the control program, and (3) it is extremely
-difficult (although not impossible) to modify the configuration for the duration of the
-load.</p>
+code</em>. It can be dynamically loaded into <em>FLASH</em> memory at an address defined at load
+time where (1) the system architect must have mapped the <em>FLASH</em> memory accordingly, (2)
+the <em>C</em> structure of object file must be recognized by the control program, and (3) it is
+extremely difficult (although not impossible) to modify the configuration for the duration of
+the load.</p>
 <p>The format can be designed to support variable sized memory regions in a way that can be
 legally supported by the <a href="https://en.wikipedia.org/wiki/MISRA_C">Misra C</a> mandated
 rules for safe programming design in industries such as automotive, aircraft, and medical
@@ -1516,7 +1527,7 @@ equipment, etc. Normally <em>Misra C</em> forbids the use of variable sized data
 example, <em>Misra C</em> rules normally force developers to allocate space for sparse arrays,
 so that an array of file names would require enough space in each array element to support the
 longest possible file name. However my invention enables the array elements to be stored in a
-packed heap in FLASH, so that each array element is a pointer into the heap.</p>
+packed heap in <em>FLASH</em>, so that each array element is a pointer into the heap.</p>
 <p>I show how the off-line pre-parser can be implemented without any executable <em>C</em> code
 by taking advantage of the GCC's <a
 href="https://gcc.gnu.org/onlinedocs/gcc/Designated-Inits.html">designated initializer</a>
@@ -1600,35 +1611,46 @@ which has 4x4 squares. Subsequently I became "addicted" to programming for life.
 <details>
 <ol>
 <li><strong>Born:</strong> 1957 Canada.</li>
-<li><strong><em>Aliyah</em> (English: immigration to Israel)</strong>: 1983. My triple great
-grandfather, Rav Aharon Visanska 1809-1893, was born in Poland. He was a disciple of the Vilna
-Gaon (Hebrew: <em>Gra</em>). During his adult life he shuttled between Jerusalem and Michigan.
-His granddaughter Rachel 1874-1919, my great grandmother, was born in Michigan. Aharon was
-buried on the Mount of Olives (Hebrew: <em>Har HaZeitim</em>). Rachel's son Hershel Tzvi
-1896-1977, my grandfather, was born in Ontario. He fought in WW I in the <em>Jewish Legion</em>
-in Turkey and later in Palestine under <em>General Allenby</em>. Hershel Tzvi returned to
-Ontario where I was born.</li>
-<li><strong>Married:</strong> I have 2 boys + 2 girls, all married with many grandchildren. all
-of whom live in <em>Eretz Yisrael</em> (English: the Land of Israel). As of this writing,
-2025-03-05, since the Hamas massacre on 2023-10-07 both of my sons have spent about 6 months in
-the IDF, and they both just began a 2 month call-up this week.</li>
+<li><strong>Aliyah (English: immigration to Israel)</strong>: 1983.
+<ul>
+<li>My triple great grandfather, Rav Aharon Visanska 1809-1893, was born in a rural region of
+Augustow Poland. He was a disciple of the Vilna Gaon (Hebrew: <em>Gra</em>). As a young adult he
+resided in Jerusalem. He emigrated to Michigan where he raised his family and became a community
+rabbi. He returned to Jerusalem where he died and was buried on the Mount of Olives (Hebrew:
+<em>Har HaZeitim</em>). His granddaughter Rachel 1874-1919, my great grandmother, was born in
+Michigan. She married a Canadian immigrant from Poland, Yechiel Michael 1872-1926, my great
+grandfather, who was born in the same Polish community as Rav Aharon's. Their eldest son Hershel
+Tzvi 1896-1977, my grandfather, was born in Ontario. He fought in <em>WW I</em> in the
+<em>Jewish Legion</em> in Turkey and later in Palestine under <em>General Allenby</em>. Hershel
+Tzvi returned to Ontario where I was eventually born.</li>
+</ul></li>
+<li><strong>Married:</strong> I have 2 boys and 2 girls, all married with many grandchildren,
+all of whom live in <em>Eretz Yisrael</em> (English: the Land of Israel).
+<ul>
+<li>Since the Hamas <em>Simchat Torah</em> (2023-10-07) massacre, both of my sons spent about 6
+months in the IDF, and as of this writing (2025-03-10) they both were recently called up for 2
+months of reserve duty (Hebrew: <em>Miluim</em>).</li>
+</ul></li>
 <li><strong>Religious Beliefs:</strong> I am a God-fearing observant Jew and Zionist.</li>
 <li><strong>IDF Reserves 1988-2001:</strong> I was a combat infantry sergeant, where I served in
-the Central Command (Hebrew: <em>Pikud HaMerkaz</em>) in the Jordan Valley. Exceptionally I
-often acted in the role of deputy company commander (Hebrew: <em>Samap</em>) even though I was a
-<em>Shlav Betnik</em> (English: those first drafted over age 26) with only 4 months of basic
-training. Considering that the IDF intended to send me to a combat infantry unit for the whole
-period of my 13 years of reserve duty, about 2/3 of my basic training was a complete waste of
-time, e.g. kitchen duty, gardening duty, and guard duty, instead of primarily focusing on combat
-skills.</li>
-<li><strong>Sport:</strong> I still engage in regular vigorous exercise at a gym for 90 min 3x
+the Central Command (Hebrew: <em>Pikud HaMerkaz</em>) in the Jordan Valley.
+<ul>
+<li>Exceptionally I often acted in the role of deputy company commander (Hebrew: <em>Samap</em>)
+even though I was a <em>Shlav Betnik</em> (English: those first drafted over age 26) with only 4
+months of basic training. Considering that the IDF intended to send me to a combat infantry unit
+for the whole period of my 13 years of reserve duty, about 2/3 of my basic training was a
+complete waste of time, e.g. kitchen duty, gardening duty, and guard duty, instead of primarily
+focusing on combat skills.</li>
+</ul></li>
+<li><strong>Sport:</strong> I still engage in regular vigorous exercise at a gym for 90 min. 3x
 per week - cardio and heavy weights. When I was younger I engaged in Judo, freestyle wrestling,
 and Tai Chi.</li>
 <li><strong>Meditation:</strong> I developed my own meditation technique based upon the
-principle of sympathetic harmonics. I can almost instantaneously lower my pulse to under 55 bpm.
-I can quickly teach this technique to others with just a clock that has a sweep second hand, and
-ideally by using a high speed metronome app that supports 300 beats per min, i.e. 5 Hz the
-brain's theta wave frequency.</li>
+principle of <a href="https://en.wikipedia.org/wiki/Sympathetic_resonance">sympathetic
+harmonics</a>. Within minutes I can lower my pulse to under 55 bpm. I can quickly teach this
+technique to others with just a clock that has a sweep second hand, and ideally by using a high
+speed metronome app that supports 300 beats per min., i.e. 5 Hz the brain's <a
+href="https://www.healthline.com/health/theta-waves">theta wave</a> frequency.</li>
 <li><strong>Hobbies:</strong> I play classical guitar (currently rusty). I teach the use of
 music composition software to my musically inclined children (one of whom is a concert cellist)
 and grandchildren.</li>
@@ -1638,8 +1660,8 @@ friends.</li>
 </details>
 <h2 id="colophon">Colophon</h2>
 <details>
-<p>I designed this novel document format in <em>pandoc</em> (<em>FOSS</em>) <em>markdown</em>
-under <em>Ubuntu</em>. I used <em>Pyexpander</em> (<em>FOSS</em>) for macro preprocessing. The
+<p>I designed this novel document format in (<em>FOSS</em>) <em>pandoc</em> <em>markdown</em>
+under <em>Ubuntu</em>. I used (<em>FOSS</em>) <em>Pyexpander</em> for macro preprocessing. The
 following two formats were automatically generated from the same <em>markdown</em> source file:
 (1) HTML, and (2) PDF (using the <em>wkhtmltopdf</em> plugin). As is standard in the hi-tech
 industry, the mandatory PDF format incorporates a single line for the employer name, and a short
