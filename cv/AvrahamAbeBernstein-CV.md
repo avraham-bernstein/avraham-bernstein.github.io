@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-10'
+now = '2025-03-11'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -7,6 +7,8 @@ pdf = 'AvrahamAbeBernstein-CV.pdf'
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
 photo = www + '/AvrahamAbeBernstein-20250202-Watermarked.20pc.png'
+
+RIGHT_POINTING_TRIANGLE = "&#x25B8;"
 
 if is_pdf:
     html = www + '/cv/' + html
@@ -18,8 +20,7 @@ def hdetails(task):
     return '<details markdown="1"><summary>' + task + '</summary>'
 
 def pdetails(id,task):
-    ARROW = "&#x27A4;"
-    return " [" + ARROW + " " + task + "](" + html + "#" + id + ")"  
+    return " [" + RIGHT_POINTING_TRIANGLE + " " + task + "](" + html + "#" + id + ")"  
 )
 <address markdown="1">
 __Author:__ Avraham "Abe" Bernstein
@@ -75,7 +76,7 @@ $endif
     * [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), including [Posix CLI commands](https://en.wikipedia.org/wiki/List_of_POSIX_commands)
 8. My "go to" _data_ languages are _HTML_, _Markdown_, [pandoc](https://www.pandoc.org), [srcML](https://www.srcml.org), _XML_, _YAML_, and _Excel_.
 9. I thrive on undertaking new challenging projects. I am quite comfortable engaging in and leading _flexible_ "brain storming" sessions.
-10. I have a long history of providing considerable value added to my employers. Browse the links that describe the details of my career. They will reveal a long history of "home runs". I am especially proud of my inventions in the fields of [bioinformatics]($(html)#syntezza) and accessibility (see [here]($(html)#virtouch) and [here]($(html)#cubital-accessibility)), even though they are not in the application domains where I usually work.
+10. I have a long history of providing considerable value added to my employers. Browse the links below (typically preceded by the _right pointing triangle_ symbol "$(RIGHT_POINTING_TRIANGLE)") that describe the details of my career. They will reveal a long history of "home runs". I am especially proud of my inventions in the fields of [bioinformatics]($(html)#syntezza) and [accessibility]($(html)#virtouch) (and [here]($(html)#cubital-accessibility)) even though they are not in the application domains where I usually work.
 
 ## Work Experience {#work}
 
@@ -418,6 +419,8 @@ $(hdetails(task))
     e. If we would use two intersecting circles, say one white and blue, we could use different instrument combinations to represent the colors, and/or we could use the keyboard or click on the stylus to query which circle we are touching, where the application will provide a text-to-speech response.
     
 4. Images need to be prepared offline. But in the case of maps, most of which are already designed using _XML_ variants, it is possible to programmatically automate their preparation.
+
+5. I applied for and was awarded a large _matching_ grant from the EU in the field of accessibility for the blind in order to productize my work, where the funds would be administered by the office of Israel's _Chief Scientist_. Unfortunately my employer was having a history of financial problems, so they decided to liquidate.
 
 </details>
 $endif
@@ -1025,12 +1028,13 @@ $else
 2. __Aliyah (English: immigration to Israel)__: 1983.
 	* My triple great grandfather, Rav Aharon Visanska 1809-1893, was born in a rural region of Augustow Poland. He was a disciple of the Vilna Gaon (Hebrew: _Gra_). As a young adult he resided in Jerusalem. He emigrated to Michigan where he raised his family and became a community rabbi. He returned to Jerusalem where he died and was buried on the Mount of Olives (Hebrew: _Har HaZeitim_). His granddaughter Rachel 1874-1919, my great grandmother, was born in  Michigan. She married a Canadian immigrant from Poland, Yechiel Michael 1872-1926, my great grandfather, who was born in the same Polish community as Rav Aharon's. Their eldest son Hershel Tzvi 1896-1977, my grandfather, was born in Ontario. He fought in _WW I_ in the _Jewish Legion_ in Turkey and later in Palestine under _General Allenby_. Hershel Tzvi returned to Ontario where I was eventually born.
 3. __Married:__ + 2 boys + 2 girls, all married with many grandchildren, all of whom live in _Eretz Yisrael_ (English: the Land of Israel).
-	* Since the Hamas _Simchat Torah_ (2023-10-07) massacre, both of my sons spent about 6 months in the IDF, and as of this writing ($(now)) they both were recently called up for 2 months of reserve duty (Hebrew: _Miluim_). 
+	* Since the Hamas _Simchat Torah 5784_ (2023-10-07) massacre, both of my sons spent about 6 months in the IDF, and as of this writing ($(now)) they both were recently called up for 2 months of reserve duty (Hebrew: _Miluim_). 
 4. __Religious Beliefs:__ I am a God-fearing observant Jew and Zionist.
 5. __IDF Reserves 1988-2001:__ I was a combat infantry sergeant, where I served in the Central Command (Hebrew: _Pikud HaMerkaz_) in the Jordan Valley.
 	* Exceptionally I often acted in the role of deputy company commander (Hebrew: _Samap_) even though I was a _Shlav Betnik_ (English: those first drafted over age 26) with only 4 months of basic training. Considering that the IDF intended to send me to a combat infantry unit for the whole period of my 13 years of reserve duty, about 2/3 of my basic training was a complete waste of time, e.g. kitchen duty, gardening duty, and guard duty, instead of primarily focusing on combat skills.
 6. __Sport:__ I still engage in regular vigorous exercise at a gym for 90 min. 3x per week - cardio and heavy weights. When I was younger I engaged in Judo, freestyle wrestling, and Tai Chi.
-7. __Meditation:__ I developed my own meditation technique  based upon the principle of [sympathetic harmonics](https://en.wikipedia.org/wiki/Sympathetic_resonance). Within minutes I can lower my pulse to under 55 bpm. I can quickly teach this technique to others with just a clock that has a sweep second hand, and ideally by using a high speed metronome app that supports 300 beats per min., i.e. 5 Hz the brain's [theta wave](https://www.healthline.com/health/theta-waves) frequency.
+7. __Meditation (aka Mindfulness):__ I developed my own meditation technique based upon the principle of [sympathetic harmonics](https://en.wikipedia.org/wiki/Sympathetic_resonance). Within minutes I can lower my pulse to 48-54 bpm.
+	* I can quickly teach this technique to others with just a clock that has a sweep second hand, and ideally by using a high speed metronome app, with combined audio and visual feedback, that supports 300 beats per min., i.e. 5 Hz the brain's [theta wave](https://www.healthline.com/health/theta-waves) frequency. I can feel when I do intensive concentrative work, I naturally enter this state. I would like to purchase the moderately priced (~\$130) [NeuroSky](https://en.wikipedia.org/wiki/NeuroSky) device in order to engage in further experiments. (Warning the product has mixed customer reviews. It is absolutely critical when purchasing this device that you specify whether your local _AC_ electricity source is 110V or 220V).
 8. __Hobbies:__ I play classical guitar (currently rusty). I teach the use of music composition software to my musically inclined children (one of whom is a concert cellist) and grandchildren.
 9. __Android Phone & PC Windows and Linux Repairs:__ For family and close friends.
 
@@ -1053,11 +1057,14 @@ As is standard in the hi-tech industry,
 the mandatory PDF format incorporates a single line for the employer name,
 and a short headline about the details of the task.
 Superficially the HTML version mimics the same format.
-The PDF headline links to the HTML version, where the HTML version uses the HTML `<details>` tag
-to optionally allow viewing the full description of the task.
-This design is similar to a web news site with a listing of headlines that enables clicking to access details.
-The advantage of this scheme is that most _HR_ departments forbid their readers from contacting a candidate for 
-more details without first conducting an official interview which is a major formal process.
+The PDF headline links to the HTML version, where the HTML version uses the HTML `<details>`
+tag (typically preceded by the _right pointing triangle_ symbol "$(RIGHT_POINTING_TRIANGLE)")
+to optionally enable viewing the full description of the task.
+This design is similar to a web news site with a listing of headlines that enables clicking to
+access details.
+The advantage of this scheme is that most _HR_ departments forbid their readers from contacting
+a candidate for more details without first conducting an official interview which is typically a
+major formal process.
 My scheme short circuits this dilemna to the advantage of both the reader and the candidate.
 See my source code at: 
 [https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
