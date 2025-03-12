@@ -79,9 +79,13 @@ $endif
 
 ### 2025-present: Independent Commercial S/W Product Development {#obfuscation}
 
-I am starting (2025-03-30) to develop commerical [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for _C/C++_ and [web assembly (WASM)](https://webassembly.org/). I will give away a _FOSS_ _C/C++_ source code "name mangler" that will illustrate the use of [srcML](https://www.srcml.org/) combined with _Python_ [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/).
+I am starting (2025-04-01) my own firm to develop commercial
+[obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for _C/C++_ and
+[web assembly (WASM)](https://webassembly.org/). I will give away a _FOSS_ _C/C++_ source code
+"name mangler" that will illustrate the use of [srcML](https://www.srcml.org/) combined with
+_Python_ [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/).
 
-$py(id="aurora"; task="Automotive Software Updates: CTO Group: (a) I invented a patent-pending algorithm to greatly reduce RAM consumption during FLASH updates which improves compression efficiency which is the core KPI of the software update industry; and (b) I greatly improved the CPU efficiency and RAM consumption of their core product which refactors embedded C source code")
+$py(id="aurora"; task="Automotive Software Updates: CTO Group: (a) Invented a patent-pending algorithm to greatly reduce RAM consumption during FLASH updates which improves compression efficiency which is the core KPI of the software update industry. (b) Greatly improved the CPU efficiency and RAM consumption of the company's core product that automatically refactors embedded C source code of their automotive industry clients.")
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
 
 $if(is_pdf)
