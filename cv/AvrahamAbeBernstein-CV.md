@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-11'
+now = '2025-03-12'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -30,6 +30,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__www:__ [$(www)]($(www))
 <br/>__linkedin:__ [$(linkedin)]($(linkedin))
 $if(not is_pdf)\
+<br/><span class="hilite">__PDF:__ [$(www)/cv/$(pdf)]($(www)/cv/$(pdf))</span> 
 <br/>__Copyright__ &copy; Avraham Bernstein 2017-$(yy), Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 $endif\
@@ -44,10 +45,6 @@ __Secure[^secure-photo] photo of the author from 2025__
 ---
 
 <button onclick="show_all_details()">Click Here To Open All Details<br>(Useful for printing. Required for external linking to "inner-*" local bookmarks. Close by reloading page.)</button>
-
-## <span class="hilite">Link To Short CV PDF "Shadow Version"</span>
-
-* [$(www)/cv/$(pdf)]($(www)/cv/$(pdf))</span>
 $endif
 
 ## Introduction: Cr8tive Solutions To Hard Problems {#intro}
@@ -79,6 +76,10 @@ $endif
 10. I have a long history of providing considerable value added to my employers. Browse the links below (typically preceded by the _right pointing triangle_ symbol "$(RIGHT_POINTING_TRIANGLE)") that describe the details of my career. They will reveal a long history of "home runs". I am especially proud of my inventions in the fields of [bioinformatics]($(html)#syntezza) and [accessibility]($(html)#virtouch) (and [here]($(html)#cubital-accessibility)) even though they are not in the application domains where I usually work.
 
 ## Work Experience {#work}
+
+### 2025-present: Independent Commercial S/W Product Development {#obfuscation}
+
+I am starting (2025-03-30) to develop commerical [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for _C/C++_ and [web assembly (WASM)](https://webassembly.org/). I will give away a _FOSS_ _C/C++_ source code "name mangler" that will illustrate the use of [srcML](https://www.srcml.org/) combined with _Python_ [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/).
 
 $py(id="aurora"; task="Automotive Software Updates: CTO Group: (a) I invented a patent-pending algorithm to greatly reduce RAM consumption during FLASH updates which improves compression efficiency which is the core KPI of the software update industry; and (b) I greatly improved the CPU efficiency and RAM consumption of their core product which refactors embedded C source code")
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
@@ -143,14 +144,14 @@ $(pdetails(id,task))
 $else
 $(hdetails(task))
 
-1. I implemented _C_ cryptography functions in _Javascript_ web assembly ([WASM](https://webassembly.org/)). _WASM_ object code is much faster and much more difficult to debug than _Javascript_. Because this project was intended for the banking industry, in the future we could write a _WASM_ [obfuscator](https://en.wikipedia.org/wiki/Obfuscation) that would greatly increase the difficulty of debugging.
+1. I implemented _C_ cryptography functions in _Javascript_ [web assembly (WASM)](https://webassembly.org/). _WASM_ object code is much faster and much more difficult to debug than _Javascript_. Because this project was intended for the banking industry, in the future we could write a _WASM_ [obfuscator](https://en.wikipedia.org/wiki/Obfuscation) that would greatly increase the difficulty of debugging.
 
 2. I implemented the project by using [Clang's wasm32 target](https://medium.com/@dougschaefer/going-straight-to-clang-for-webassembly-928df1484430).
 
 </details>
 $endif
 
-$py(id="argus"; task="Automotive Software Updates: Patented algorithm greatly reducing FLASH memory required to implement bsdiff")
+$py(id="argus"; task="Automotive Software Updates: (a) Patented an algorithm greatly reducing FLASH memory required to implement mini-bsdiff. (b) Architected and implemented an embedded S/W update driver based upon mini-bsdiff and the xz compressor.")
 ### 2018-20: [Argus Cyber Security](https://en.wikipedia.org/wiki/Argus_Cyber_Security) Tel Aviv IL (restructured as [PlaxidityX](https://plaxidityx.com/) IL, subsidiary of [Elektrobit/Continental](https://www.elektrobit.com/) DE) {#$(id)}
 
 $if(is_pdf)
@@ -158,13 +159,14 @@ $(pdetails(id,task))
 $else
 $(hdetails(task))
 
-1. I architected and implemented a software design for efficient software updates of the _object code_ of embedded systems using _FOSS_ [mini-bsdiff](https://github.com/thoughtpolice/minibsdiff) [delta encoding](https://en.wikipedia.org/wiki/Delta_encoding). Note that _delta encoding_ enables significantly smaller, e.g. 10x smaller, software updates compared to _zip_-like updates when the update contains minor differences.
+1. I architected and implemented a software design for efficient software updates of the _object code_ of embedded systems using the _FOSS_ [mini-bsdiff](https://github.com/thoughtpolice/minibsdiff) [delta encoding](https://en.wikipedia.org/wiki/Delta_encoding) combined with the embedded _FOSS_ [xz](https://github.com/tukaani-project/xz-embedded) binary compressor. Note that _delta encoding_ enables significantly smaller, e.g. 10x smaller, software updates compared to _zip_-like updates when the update contains minor differences.
 
     * The original [bsdiff](https://github.com/mendsley/bsdiff) software is not designed for the size limitations of embedded systems especially for legacy automotive boards.
     * In particular the original _bsdiff_ software incorporates the outdated _bz_ binary compressor that has a 100 KB RAM footprint.
     * _Mini-bsdiff_ is not bundled with any binary compressor at all.
-    * _Mini-bsdiff_ can be combined with the modern _xz_ binary compressor designed for embedded systems that only has a 26 KB RAM footprint.
-    * It is not computationally feasible to generate an offline _mini-bsdiff_ patch where at least one of the source files is larger than 8MB, in which case it is preferable to use the _VCDiff/xdiff_ algorithm which is commonly used on web sites.
+    * The _xz_ binary decompressor designed for embedded systems has only has a 26 KB RAM footprint.
+    * During the offline preprocessing of the patch "chunks", we calculated the RAM consumption of the processing stages in order to design dynamic memory overlays per chunk. More efficient use of RAM enabled us to process bigger chunks which compressed better than smaller chunks. Compression efficiency is the core [KPI](https://www.forbes.com/advisor/business/what-is-a-kpi-definition-examples/) of the software update industry.
+    * Note it is usually _not_ computationally feasible to generate an offline _mini-bsdiff_ patch where at least one of the source files is larger than 8MB, in which case it is preferable to use the (less efficient) [VCDiff/xdelta](https://en.wikipedia.org/wiki/VCDIFF) algorithm that is commonly used on web sites.
     
 2. I invented [EU Patent EP3680773A1](https://worldwide.espacenet.com/patent/search/family/069147491/publication/EP3680773A1?q=20150616.9), a _mini-bsdiff_ patch implementation for small _FLASH_ memory systems where the _FLASH_ is not big enough to temporarily hold both the original version "A" and new version "B" of the object code. Normally the _bsdiff_ (and _mini-bsdiff_) algorithm requires both versions be available when applying the patch. I had discussions with _Colin Percival_ the original inventor of _bsdiff_.
  

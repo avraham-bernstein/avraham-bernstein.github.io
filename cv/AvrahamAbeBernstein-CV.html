@@ -261,10 +261,12 @@ Bernstein AT gmail<span class="hide">bozo@example.com</span> DOT com
 href="https://www.avrahambernstein.com">https://www.avrahambernstein.com</a>
 <br/><strong>linkedin:</strong> <a
 href="https://www.linkedin.com/in/avrahambernstein/">https://www.linkedin.com/in/avrahambernstein/</a>
+<br/><span class="hilite"><strong>PDF:</strong> <a
+href="https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf">https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf</a></span>
 <br/><strong>Copyright</strong> © Avraham Bernstein 2017-2025, Jerusalem ISRAEL. All rights
 reserved. <br/><strong>License:</strong> FOSS SPDX BSD-3-Clause: <a
 href="https://opensource.org/licenses/BSD-3-Clause">https://opensource.org/licenses/BSD-3-Clause</a>
-<br/><strong>Last Update:</strong> 2025-03-11
+<br/><strong>Last Update:</strong> 2025-03-12
 </address>
 <p><img src="https://www.avrahambernstein.com/AvrahamAbeBernstein-20250202-Watermarked.20pc.png"
 title="Secure photo of the author from 2025" alt="Secure photo of the author" /></p>
@@ -274,11 +276,6 @@ role="doc-noteref"><sup>1</sup></a> photo of the author from 2025</strong></p>
 <button onclick="show_all_details()">
 <p>Click Here To Open All Details<br>(Useful for printing. Required for external linking to
 "inner-*" local bookmarks. Close by reloading page.)</button></p>
-<h2><span class="hilite">Link To Short CV PDF "Shadow Version"</span></h2>
-<ul>
-<li><a
-href="https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf">https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf</a></span></li>
-</ul>
 <h2 id="intro">Introduction: Cr8tive Solutions To Hard Problems</h2>
 <ol>
 <li>I have more than 40 years experience in state-of-the-art software development:
@@ -343,6 +340,13 @@ href="AvrahamAbeBernstein-CV.html#cubital-accessibility">here</a>) even though t
 the application domains where I usually work.</li>
 </ol>
 <h2 id="work">Work Experience</h2>
+<h3 id="obfuscation">2025-present: Independent Commercial S/W Product Development</h3>
+<p>I am starting (2025-03-30) to develop commerical <a
+href="https://en.wikipedia.org/wiki/Obfuscation_(software)">obfuscating</a> compilers for
+<em>C/C++</em> and <a href="https://webassembly.org/">web assembly (WASM)</a>. I will give away
+a <em>FOSS</em> <em>C/C++</em> source code "name mangler" that will illustrate the use of <a
+href="https://www.srcml.org/">srcML</a> combined with <em>Python</em> <a
+href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a>.</p>
 <h3 id="aurora">2022-25: <a href="https://www.AuroraLabs.com">Aurora Labs</a> Tel Aviv IL</h3>
 <details>
 <summary>
@@ -431,10 +435,10 @@ different libc object code implementation.</p></li>
 Banking Cryptographic Algorithms: Securing C algorithms in a web browser using WASM
 </summary>
 <ol>
-<li><p>I implemented <em>C</em> cryptography functions in <em>Javascript</em> web assembly (<a
-href="https://webassembly.org/">WASM</a>). <em>WASM</em> object code is much faster and much
-more difficult to debug than <em>Javascript</em>. Because this project was intended for the
-banking industry, in the future we could write a <em>WASM</em> <a
+<li><p>I implemented <em>C</em> cryptography functions in <em>Javascript</em> <a
+href="https://webassembly.org/">web assembly (WASM)</a>. <em>WASM</em> object code is much
+faster and much more difficult to debug than <em>Javascript</em>. Because this project was
+intended for the banking industry, in the future we could write a <em>WASM</em> <a
 href="https://en.wikipedia.org/wiki/Obfuscation">obfuscator</a> that would greatly increase the
 difficulty of debugging.</p></li>
 <li><p>I implemented the project by using <a
@@ -447,16 +451,19 @@ Security</a> Tel Aviv IL (restructured as <a href="https://plaxidityx.com/">Plax
 subsidiary of <a href="https://www.elektrobit.com/">Elektrobit/Continental</a> DE)</h3>
 <details>
 <summary>
-Automotive Software Updates: Patented algorithm greatly reducing FLASH memory required to
-implement bsdiff
+Automotive Software Updates: (a) Patented an algorithm greatly reducing FLASH memory required to
+implement mini-bsdiff. (b) Architected and implemented an embedded S/W update driver based upon
+mini-bsdiff and the xz compressor.
 </summary>
 <ol>
 <li><p>I architected and implemented a software design for efficient software updates of the
-<em>object code</em> of embedded systems using <em>FOSS</em> <a
+<em>object code</em> of embedded systems using the <em>FOSS</em> <a
 href="https://github.com/thoughtpolice/minibsdiff">mini-bsdiff</a> <a
-href="https://en.wikipedia.org/wiki/Delta_encoding">delta encoding</a>. Note that <em>delta
-encoding</em> enables significantly smaller, e.g. 10x smaller, software updates compared to
-<em>zip</em>-like updates when the update contains minor differences.</p>
+href="https://en.wikipedia.org/wiki/Delta_encoding">delta encoding</a> combined with the
+embedded <em>FOSS</em> <a href="https://github.com/tukaani-project/xz-embedded">xz</a> binary
+compressor. Note that <em>delta encoding</em> enables significantly smaller, e.g. 10x smaller,
+software updates compared to <em>zip</em>-like updates when the update contains minor
+differences.</p>
 <ul>
 <li>The original <a href="https://github.com/mendsley/bsdiff">bsdiff</a> software is not
 designed for the size limitations of embedded systems especially for legacy automotive
@@ -464,11 +471,19 @@ boards.</li>
 <li>In particular the original <em>bsdiff</em> software incorporates the outdated <em>bz</em>
 binary compressor that has a 100 KB RAM footprint.</li>
 <li><em>Mini-bsdiff</em> is not bundled with any binary compressor at all.</li>
-<li><em>Mini-bsdiff</em> can be combined with the modern <em>xz</em> binary compressor designed
-for embedded systems that only has a 26 KB RAM footprint.</li>
-<li>It is not computationally feasible to generate an offline <em>mini-bsdiff</em> patch where
-at least one of the source files is larger than 8MB, in which case it is preferable to use the
-<em>VCDiff/xdiff</em> algorithm which is commonly used on web sites.</li>
+<li>The <em>xz</em> binary decompressor designed for embedded systems has only has a 26 KB RAM
+footprint.</li>
+<li>During the offline preprocessing of the patch "chunks", we calculated the RAM consumption of
+the processing stages in order to design dynamic memory overlays per chunk. More efficient use
+of RAM enabled us to process bigger chunks which compressed better than smaller chunks.
+Compression efficiency is the core <a
+href="https://www.forbes.com/advisor/business/what-is-a-kpi-definition-examples/">KPI</a> of the
+software update industry.</li>
+<li>Note it is usually <em>not</em> computationally feasible to generate an offline
+<em>mini-bsdiff</em> patch where at least one of the source files is larger than 8MB, in which
+case it is preferable to use the (less efficient) <a
+href="https://en.wikipedia.org/wiki/VCDIFF">VCDiff/xdelta</a> algorithm that is commonly used on
+web sites.</li>
 </ul></li>
 <li><p>I invented <a
 href="https://worldwide.espacenet.com/patent/search/family/069147491/publication/EP3680773A1?q=20150616.9">EU
@@ -1639,7 +1654,7 @@ Tzvi returned to Ontario where I was eventually born.</li>
 whom live in <em>Eretz Yisrael</em> (English: the Land of Israel).
 <ul>
 <li>Since the Hamas <em>Simchat Torah 5784</em> (2023-10-07) massacre, both of my sons spent
-about 6 months in the IDF, and as of this writing (2025-03-11) they both were recently called up
+about 6 months in the IDF, and as of this writing (2025-03-12) they both were recently called up
 for 2 months of reserve duty (Hebrew: <em>Miluim</em>).</li>
 </ul></li>
 <li><strong>Religious Beliefs:</strong> I am a God-fearing observant Jew and Zionist.</li>
