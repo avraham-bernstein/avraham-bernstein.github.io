@@ -454,7 +454,7 @@ subsidiary of <a href="https://www.elektrobit.com/">Elektrobit/Continental</a> D
 <summary>
 Automotive Software Updates: (a) Patented an algorithm greatly reducing FLASH memory required to
 implement mini-bsdiff. (b) Architected and implemented an embedded S/W update driver based upon
-mini-bsdiff and the xz compressor.
+mini-bsdiff and the xz binary compressor.
 </summary>
 <ol>
 <li><p>I architected and implemented a software design for efficient software updates of the
@@ -472,8 +472,8 @@ boards.</li>
 <li>In particular the original <em>bsdiff</em> software incorporates the outdated <em>bz</em>
 binary compressor that has a 100 KB RAM footprint.</li>
 <li><em>Mini-bsdiff</em> is not bundled with any binary compressor at all.</li>
-<li>The <em>xz</em> binary decompressor designed for embedded systems has only has a 26 KB RAM
-footprint.</li>
+<li>The <em>xz</em> binary <u>de</u>compressor designed for embedded systems has only has a 26
+KB RAM footprint.</li>
 <li>During the offline preprocessing of the patch "chunks", we calculated the RAM consumption of
 the processing stages in order to design dynamic memory overlays per chunk. More efficient use
 of RAM enabled us to process bigger chunks which compressed better than smaller chunks.

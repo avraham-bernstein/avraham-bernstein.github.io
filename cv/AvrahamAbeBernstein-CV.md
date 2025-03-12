@@ -155,7 +155,7 @@ $(hdetails(task))
 </details>
 $endif
 
-$py(id="argus"; task="Automotive Software Updates: (a) Patented an algorithm greatly reducing FLASH memory required to implement mini-bsdiff. (b) Architected and implemented an embedded S/W update driver based upon mini-bsdiff and the xz compressor.")
+$py(id="argus"; task="Automotive Software Updates: (a) Patented an algorithm greatly reducing FLASH memory required to implement mini-bsdiff. (b) Architected and implemented an embedded S/W update driver based upon mini-bsdiff and the xz binary compressor.")
 ### 2018-20: [Argus Cyber Security](https://en.wikipedia.org/wiki/Argus_Cyber_Security) Tel Aviv IL (restructured as [PlaxidityX](https://plaxidityx.com/) IL, subsidiary of [Elektrobit/Continental](https://www.elektrobit.com/) DE) {#$(id)}
 
 $if(is_pdf)
@@ -168,7 +168,7 @@ $(hdetails(task))
     * The original [bsdiff](https://github.com/mendsley/bsdiff) software is not designed for the size limitations of embedded systems especially for legacy automotive boards.
     * In particular the original _bsdiff_ software incorporates the outdated _bz_ binary compressor that has a 100 KB RAM footprint.
     * _Mini-bsdiff_ is not bundled with any binary compressor at all.
-    * The _xz_ binary decompressor designed for embedded systems has only has a 26 KB RAM footprint.
+    * The _xz_ binary <u>de</u>compressor designed for embedded systems has only has a 26 KB RAM footprint.
     * During the offline preprocessing of the patch "chunks", we calculated the RAM consumption of the processing stages in order to design dynamic memory overlays per chunk. More efficient use of RAM enabled us to process bigger chunks which compressed better than smaller chunks. Compression efficiency is the core [KPI](https://www.forbes.com/advisor/business/what-is-a-kpi-definition-examples/) of the software update industry.
     * Note it is usually _not_ computationally feasible to generate an offline _mini-bsdiff_ patch where at least one of the source files is larger than 8MB, in which case it is preferable to use the (less efficient) [VCDiff/xdelta](https://en.wikipedia.org/wiki/VCDIFF) algorithm that is commonly used on web sites.
     
