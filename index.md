@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-10'
+now = '2025-03-15'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 photo = 'AvrahamAbeBernstein-20250202-Watermarked.20pc.png'
@@ -40,6 +40,8 @@ __Secure[^secure-photo] photo of the author from 2025__
 * __CV:__ Computer Scientist: [Long HTML]($(cv_root).html),&nbsp;&nbsp;[Short PDF]($(cv_root).pdf)
 
 * __linkedin:__ [$(linkedin)]($(linkedin))
+
+* __video messaging channels:__ [google meet](https://workspace.google.com/products/meet/), [microsoft-teams](https://www.microsoft.com/en-us/microsoft-teams/log-in), [whatsapp](https://www.whatsapp.com/), [zoom](https://zoom.us/join)
 
 * __Articles:__ TBD
 
