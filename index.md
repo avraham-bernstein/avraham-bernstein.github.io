@@ -15,8 +15,8 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
 <br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
 <br/>__video channels:__
-<br/>__$(DOT) primary:__ [whatsapp](https://www.whatsapp.com/), [zoom](https://zoom.us/join)
-<br/>__$(DOT) secondary:__ [google meet](https://workspace.google.com/products/meet/), [microsoft teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
+<br/>&nbsp;&nbsp;__$(DOT) primary:__ [whatsapp](https://www.whatsapp.com/), [zoom](https://zoom.us/join)
+<br/>&nbsp;&nbsp;__$(DOT) secondary:__ [google meet](https://workspace.google.com/products/meet/), [microsoft teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
 <br/>__www:__ [$(www)]($(www))
 <br/>__Last Update:__ $(now)
 </address>
