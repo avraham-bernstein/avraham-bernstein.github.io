@@ -1,5 +1,6 @@
 $py(
-now = '2025-03-15'
+now = '2025-03-16'
+DOT = '&#x2022;'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 photo = 'AvrahamAbeBernstein-20250202-Watermarked.20pc.png'
@@ -13,6 +14,9 @@ def obfus(text):
 __Author:__ Avraham "Abe" Bernstein
 <br/>__Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
 <br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
+<br/>__video channels:__
+<br/>__$(DOT) primary:__ [whatsapp](https://www.whatsapp.com/), [zoom](https://zoom.us/join)
+<br/>__$(DOT) secondary:__ [google meet](https://workspace.google.com/products/meet/), [microsoft-teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
 <br/>__www:__ [$(www)]($(www))
 <br/>__Last Update:__ $(now)
 </address>
@@ -40,8 +44,6 @@ __Secure[^secure-photo] photo of the author from 2025__
 * __CV:__ Computer Scientist: [Long HTML]($(cv_root).html),&nbsp;&nbsp;[Short PDF]($(cv_root).pdf)
 
 * __linkedin:__ [$(linkedin)]($(linkedin))
-
-* __video messaging channels:__ [google meet](https://workspace.google.com/products/meet/), [microsoft-teams](https://www.microsoft.com/en-us/microsoft-teams/log-in), [whatsapp](https://www.whatsapp.com/), [zoom](https://zoom.us/join)
 
 * __Articles:__ TBD
 
