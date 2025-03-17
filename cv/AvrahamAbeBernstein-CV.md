@@ -1050,8 +1050,8 @@ $else
 8. __Hobbies:__ I play classical guitar (currently rusty). I teach the use of music composition software to my musically inclined children (one of whom is a concert cellist) and grandchildren.
 9. __Android Phone & PC Windows and Linux Repairs:__ For family and close friends.
 10. __My computer equipment:__
-	* __PC: Lenovo Thinkpad E14 Gen6:__ i5 CPU, 32GB RAM, 1TB SSD, Xubuntu 24.04; industrial grade with no CPU overheating
-	* __Smartphone: Samsung Galaxy A34:__ 6GB RAM, 128GB FLASH, Android 14; excellent budget phone with [Knox](https://www.androidauthority.com/what-is-samsung-knox-3272792/) security
+	* __PC:__ [Lenovo Thinkpad E14 Gen 6](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpade/lenovo-thinkpad-e14-gen-6-14-inch-intel/21m7003aus?orgRef=https%253A%252F%252Fduckduckgo.com%252F): i5 CPU, 32GB RAM, 1TB SSD, [Xubuntu](https://xubuntu.org/) 24.04; industrial grade with no CPU overheating
+	* __Smartphone:__ [Samsung Galaxy A34](https://www.samsung.com/us/smartphones/galaxy-a35-5g/): 6GB RAM, 128GB FLASH, Android 14; excellent budget phone with [Knox](https://www.androidauthority.com/what-is-samsung-knox-3272792/) security
 
 </details>
 $endif
