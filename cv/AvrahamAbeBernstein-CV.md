@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-12'
+now = '2025-03-17'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -79,11 +79,13 @@ $endif
 
 ### 2025-present: Independent Commercial S/W Product Development {#obfuscation}
 
-I am starting (2025-04-01) my own firm to develop commercial
-[obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for _C/C++_ and
-[web assembly (WASM)](https://webassembly.org/). I will give away a _FOSS_ _C/C++_ source code
-"name mangler" that will illustrate the use of [srcML](https://www.srcml.org/) combined with
-_Python_ [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/).
+I am starting (2025-04-01) my own firm to develop commercial [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for
+(1) _C/C++_ implemented via [clang AST](https://clang.llvm.org/docs/IntroductionToTheClangAST.html)), 
+and (2) [web assembly (WASM)](https://webassembly.org/) implemented via the [parsimonious](https://github.com/erikrose/parsimonious) Python PEG parser.
+And I will open source some compiler utilities that analyze _C_ source code based upon [srcML](https://www.srcml.org/) combined with _Python_ [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) including 
+(1) a "name mangler",
+(2) optional and named function call arguments,
+and (3) detection and elimination of duplicate code where the variable names are parameterized (implemented as [GCC statement expressions](https://gcc.gnu.org/onlinedocs/gcc/Statement-Exprs.html)).
 
 $py(id="aurora"; task="Automotive Software Updates: CTO Group: (a) Invented a patent-pending algorithm to greatly reduce RAM consumption during FLASH updates which improves compression efficiency which is the core KPI of the software update industry. (b) Greatly improved the CPU efficiency and RAM consumption of the company's core product that automatically refactors embedded C source code of their automotive industry clients.")
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
@@ -199,16 +201,16 @@ $(hdetails(task))
 
     a. Use the then most recent Windows 10 Professional O/S on account of its regular security updates and its support of [BitLocker](https://support.microsoft.com/en-us/windows/bitlocker-drive-encryption-76b92ac9-1040-48d6-9f5f-d14b3c5fa178) full disk encryption. PCs are lost and stolen.
     
-    b.  Use a random PC login password from a USB security token such as [Yubico](https://www.yubico.com/), along with a manual [passphrase](https://www.techrepublic.com/article/what-is-passphrase/) suffix. At that time the basic capability of the token was to store and emit a permanent manufacturer-configured "random" 16 character password. (More modern keys support additional services such as _TOTP_ authenticator one-time keys with a timeout). By pressing the button on the token it would act as a second keyboard in order to allow the password to be emitted into the PC. When using the emitted password, it is important that the user append it with his own memorized, say 8 character, suffix, otherwise security is compromised if the token is lost or stolen.
+    b.  Use a random PC login password from a USB security token such as [Yubico](https://www.yubico.com/). _At that time_ the basic capability of the token was to store and emit a permanent manufacturer-configured "random" 16 character password. (More modern keys support additional services such as _TOTP_ authenticator one-time keys with a timeout). By pressing the button on the token it would act as a second keyboard in order to allow the password to be emitted into the PC. In addition to the token password, it was extremely important to add a (memorized) suffix, otherwise if the token were lost or stolen then security could be compromised.
 
     c. When the PC is unattended close the cover, and use a screen saver with a relatively short timeout, e.g. 10 minutes, Configure so that resumption requires a password. 
 
     d. Use the _Firefox_ web browser (and especially not _Google Chrome_ !) with _multiple profiles_ in order to defend against [cross-site scripting attacks](https://en.wikipedia.org/wiki/Cross-site_scripting). There is no information leakage between profiles. Also still today ($(yy)) Firefox has the best builtin bookmarking tool. They should at least use the following profiles:
 
-        * personal email and banking
-        * personal browsing
-        * company email and accessing company data
-        * work related browsing
+		* personal email and banking
+		* personal browsing
+		* company email and accessing company data
+		* work related browsing
 
     e. Use email aliases when required to access potentially hostile social media.
     
@@ -945,9 +947,13 @@ int32_t ayb_fft_hw32(const uint32_t x)
 
 2. Typically when expanding the size of a hash table, all entries must be rehashed, while my algorithm does not require any rehashing.
 
-3. Typically hash tables are "sparse", i.e. they contain many empty entries, because the same data structure is used to store both the data associated with the keys, and to search/update keys. My algorithm uses two separate data structures which greatly minimizes sparseness. One structure defines the maximum number of keys, while the second structure defines the maximum number of data entries.
+3. The search time to find a free storage entry will be exactly _O(1)_!
 
-4. Where the operating system supports the _Linux_ `vmalloc` or the _Win32_ `VirtualAlloc` allocators, then it is possible to allocate large memory regions with virtually linear address spaces but are composed of physically non-contiguous pages. My algorithm can take advantage of these allocators to further reduce sparseness, and not to move the data associated with existing keys when the table is expanded.
+4. For a table that is up to 75% full, the search time to find a unique key will _on average_ be less than _O(2)_.
+
+5. Typically hash tables are "sparse", i.e. they contain many empty entries, because the same data structure is used to store both the data associated with the keys, and to search/update keys. Part of my "secret sauce" is that my algorithm uses 2 separate data structures which greatly minimizes sparseness. One structure defines the maximum number of keys, while the second structure defines the maximum number of data entries.
+
+6. Where the operating system supports the _Linux_ `vmalloc` or the _Win32_ `VirtualAlloc` allocators, then it is possible to allocate large memory regions with virtually linear address spaces but are composed of physically non-contiguous pages. My algorithm can take advantage of these allocators to further reduce sparseness, and not to move the data associated with existing keys when the table is expanded.
 
 _C_ source code: TBD.
 
@@ -1043,6 +1049,9 @@ $else
 	* I can quickly teach this technique to others with just a clock that has a sweep second hand, and ideally by using a high speed metronome app, with combined audio and visual feedback, that supports 300 beats per min., i.e. 5 Hz the brain's [theta wave](https://www.healthline.com/health/theta-waves) frequency. I can feel when I do intensive concentrative work, I naturally enter this state. I would like to purchase the moderately priced (~\$130) [NeuroSky](https://en.wikipedia.org/wiki/NeuroSky) device in order to engage in further experiments. (Warning the product has mixed customer reviews. It is absolutely critical when purchasing this device that you specify whether your local _AC_ electricity source is 110V or 220V).
 8. __Hobbies:__ I play classical guitar (currently rusty). I teach the use of music composition software to my musically inclined children (one of whom is a concert cellist) and grandchildren.
 9. __Android Phone & PC Windows and Linux Repairs:__ For family and close friends.
+10. __My computer equipment:__
+	* __PC: Lenovo Thinkpad E14 Gen6:__ i5 CPU, 32GB RAM, 1TB SSD, Xubuntu 24.04; industrial grade with no CPU overheating
+	* __Smartphone: Samsung Galaxy A34:__ 6GB RAM, 128GB FLASH, Android 14; excellent budget phone with [Knox](https://www.androidauthority.com/what-is-samsung-knox-3272792/) security
 
 </details>
 $endif

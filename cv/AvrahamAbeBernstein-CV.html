@@ -266,7 +266,7 @@ href="https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf">https://ww
 <br/><strong>Copyright</strong> © Avraham Bernstein 2017-2025, Jerusalem ISRAEL. All rights
 reserved. <br/><strong>License:</strong> FOSS SPDX BSD-3-Clause: <a
 href="https://opensource.org/licenses/BSD-3-Clause">https://opensource.org/licenses/BSD-3-Clause</a>
-<br/><strong>Last Update:</strong> 2025-03-12
+<br/><strong>Last Update:</strong> 2025-03-17
 </address>
 <p><img src="https://www.avrahambernstein.com/AvrahamAbeBernstein-20250202-Watermarked.20pc.png"
 title="Secure photo of the author from 2025" alt="Secure photo of the author" /></p>
@@ -342,11 +342,18 @@ the application domains where I usually work.</li>
 <h2 id="work">Work Experience</h2>
 <h3 id="obfuscation">2025-present: Independent Commercial S/W Product Development</h3>
 <p>I am starting (2025-04-01) my own firm to develop commercial <a
-href="https://en.wikipedia.org/wiki/Obfuscation_(software)">obfuscating</a> compilers for
-<em>C/C++</em> and <a href="https://webassembly.org/">web assembly (WASM)</a>. I will give away
-a <em>FOSS</em> <em>C/C++</em> source code "name mangler" that will illustrate the use of <a
+href="https://en.wikipedia.org/wiki/Obfuscation_(software)">obfuscating</a> compilers for (1)
+<em>C/C++</em> implemented via <a
+href="https://clang.llvm.org/docs/IntroductionToTheClangAST.html">clang AST</a>), and (2) <a
+href="https://webassembly.org/">web assembly (WASM)</a> implemented via the <a
+href="https://github.com/erikrose/parsimonious">parsimonious</a> Python PEG parser. And I will
+open source some compiler utilities that analyze <em>C</em> source code based upon <a
 href="https://www.srcml.org/">srcML</a> combined with <em>Python</em> <a
-href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a>.</p>
+href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a> including (1) a
+"name mangler", (2) optional and named function call arguments, and (3) detection and
+elimination of duplicate code where the variable names are parameterized (implemented as <a
+href="https://gcc.gnu.org/onlinedocs/gcc/Statement-Exprs.html">GCC statement
+expressions</a>).</p>
 <h3 id="aurora">2022-25: <a href="https://www.AuroraLabs.com">Aurora Labs</a> Tel Aviv IL</h3>
 <details>
 <summary>
@@ -539,14 +546,13 @@ updates and its support of <a
 href="https://support.microsoft.com/en-us/windows/bitlocker-drive-encryption-76b92ac9-1040-48d6-9f5f-d14b3c5fa178">BitLocker</a>
 full disk encryption. PCs are lost and stolen.</p>
 <p>b. Use a random PC login password from a USB security token such as <a
-href="https://www.yubico.com/">Yubico</a>, along with a manual <a
-href="https://www.techrepublic.com/article/what-is-passphrase/">passphrase</a> suffix. At that
-time the basic capability of the token was to store and emit a permanent manufacturer-configured
-"random" 16 character password. (More modern keys support additional services such as
-<em>TOTP</em> authenticator one-time keys with a timeout). By pressing the button on the token
-it would act as a second keyboard in order to allow the password to be emitted into the PC. When
-using the emitted password, it is important that the user append it with his own memorized, say
-8 character, suffix, otherwise security is compromised if the token is lost or stolen.</p>
+href="https://www.yubico.com/">Yubico</a>. <em>At that time</em> the basic capability of the
+token was to store and emit a permanent manufacturer-configured "random" 16 character password.
+(More modern keys support additional services such as <em>TOTP</em> authenticator one-time keys
+with a timeout). By pressing the button on the token it would act as a second keyboard in order
+to allow the password to be emitted into the PC. In addition to the token password, it was
+extremely important to add a (memorized) suffix, otherwise if the token were lost or stolen then
+security could be compromised.</p>
 <p>c. When the PC is unattended close the cover, and use a screen saver with a relatively short
 timeout, e.g. 10 minutes, Configure so that resumption requires a password.</p>
 <p>d. Use the <em>Firefox</em> web browser (and especially not <em>Google Chrome</em> !) with
@@ -1523,11 +1529,14 @@ href="https://en.wikipedia.org/wiki/Hash_table">hash table</a> is a <em>prime nu
 my algorithm uses <code>2**N</code> entries.</p></li>
 <li><p>Typically when expanding the size of a hash table, all entries must be rehashed, while my
 algorithm does not require any rehashing.</p></li>
+<li><p>The search time to find a free storage entry will be exactly <em>O(1)</em>!</p></li>
+<li><p>For a table that is up to 75% full, the search time to find a unique key will <em>on
+average</em> be less than <em>O(2)</em>.</p></li>
 <li><p>Typically hash tables are "sparse", i.e. they contain many empty entries, because the
 same data structure is used to store both the data associated with the keys, and to
-search/update keys. My algorithm uses two separate data structures which greatly minimizes
-sparseness. One structure defines the maximum number of keys, while the second structure defines
-the maximum number of data entries.</p></li>
+search/update keys. Part of my "secret sauce" is that my algorithm uses 2 separate data
+structures which greatly minimizes sparseness. One structure defines the maximum number of keys,
+while the second structure defines the maximum number of data entries.</p></li>
 <li><p>Where the operating system supports the <em>Linux</em> <code>vmalloc</code> or the
 <em>Win32</em> <code>VirtualAlloc</code> allocators, then it is possible to allocate large
 memory regions with virtually linear address spaces but are composed of physically
@@ -1655,7 +1664,7 @@ Tzvi returned to Ontario where I was eventually born.</li>
 whom live in <em>Eretz Yisrael</em> (English: the Land of Israel).
 <ul>
 <li>Since the Hamas <em>Simchat Torah 5784</em> (2023-10-07) massacre, both of my sons spent
-about 6 months in the IDF, and as of this writing (2025-03-12) they both were recently called up
+about 6 months in the IDF, and as of this writing (2025-03-17) they both were recently called up
 for 2 months of reserve duty (Hebrew: <em>Miluim</em>).</li>
 </ul></li>
 <li><strong>Religious Beliefs:</strong> I am a God-fearing observant Jew and Zionist.</li>
@@ -1691,6 +1700,14 @@ music composition software to my musically inclined children (one of whom is a c
 and grandchildren.</li>
 <li><strong>Android Phone &amp; PC Windows and Linux Repairs:</strong> For family and close
 friends.</li>
+<li><strong>My computer equipment:</strong>
+<ul>
+<li><strong>PC: Lenovo Thinkpad E14 Gen6:</strong> i5 CPU, 32GB RAM, 1TB SSD, Xubuntu 24.04;
+industrial grade with no CPU overheating</li>
+<li><strong>Smartphone: Samsung Galaxy A34:</strong> 6GB RAM, 128GB FLASH, Android 14; excellent
+budget phone with <a
+href="https://www.androidauthority.com/what-is-samsung-knox-3272792/">Knox</a> security</li>
+</ul></li>
 </ol>
 </details>
 <h2 id="colophon">Colophon</h2>
