@@ -80,7 +80,7 @@ $endif
 ### 2025-present: Independent Commercial S/W Product Development {#obfuscation}
 
 I am starting (2025-04-01) my own firm to develop commercial [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for
-(1) _C/C++_ implemention via [clang AST](https://clang.llvm.org/docs/IntroductionToTheClangAST.html), 
+(1) _C/C++_ implemention via the [clang AST](https://clang.llvm.org/docs/IntroductionToTheClangAST.html) library, 
 and (2) [web assembly (WASM)](https://webassembly.org/) implemention via the [parsimonious](https://github.com/erikrose/parsimonious) Python PEG parser.
 And I will open source some compiler utilities that refactor _C_ source code based upon [srcML](https://www.srcml.org/) ([polluting GPLv3 license](https://en.wikipedia.org/wiki/GNU_General_Public_License)) combined with _Python_ [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) including 
 (1) a "name mangler",
