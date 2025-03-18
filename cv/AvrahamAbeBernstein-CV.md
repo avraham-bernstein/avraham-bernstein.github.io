@@ -754,6 +754,7 @@ uint32_t ayb_adler32(const int32_t n, int32_t * k_ptr, const uint8_t *restrict a
         // therefore the largest possible sum is: (n*(n+1)/2)*255*k <= 0xffffffff
         
         k = 0xffffffffUL / ((((uint32_t)n*((uint32_t)n+1UL))/2UL)*255UL);
+        if ((k & 1UL) == 0) { --k; } // force k to be odd
         
         if (k_ptr != 0) { *k_ptr = k; } // return optimal `k`
     }
