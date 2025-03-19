@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-18'
+now = '2025-03-19'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -81,14 +81,22 @@ $endif
 
 I am starting (2025-04-01) my own firm to develop commercial [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for:
 
-1. _C/C++_ (implemention via the [clang AST](https://clang.llvm.org/docs/IntroductionToTheClangAST.html) library)
-2. [web assembly (WASM)](https://webassembly.org/) (implemention via the [parsimonious](https://github.com/erikrose/parsimonious) Python PEG parser)
+1. _C11/C++2014_
+	* implementation via [srcML (proprietary license)](https://www.srcml.org) and Python's [Beautiful Soup (MIT license)](https://beautiful-soup-4.readthedocs.io/en/latest/)
+2. [web assembly (WASM)](https://webassembly.org/)
+	* implemention via the [parsimonious (MIT license)](https://github.com/erikrose/parsimonious) Python PEG parser
 
-And I will open source some compiler utilities that refactor _C_ source code based upon [srcML](https://www.srcml.org/) ([polluting GPLv3 license](https://en.wikipedia.org/wiki/GNU_General_Public_License)) combined with _Python_ [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) including:
+And I intend to develop lightweight and inexpensive commercial compiler utilities that refactor _C_ source code, via _srcML_ and _Beautiful Soup_, including:
 
-1. lightweight obfuscating [name mangler](https://en.wikipedia.org/wiki/Name_mangling) (similar to [stunnix cxx-obfus](http://stunnix.com/support/doc/cxxo/cxx-obfus.shtml))
-2. enabling optional and named function call arguments (implementation via the [GCC designated initializer](https://gcc.gnu.org/onlinedocs/gcc/Designated-Inits.html) extension)
-3. detection and elimination of duplicate code where variable names are parameterized (implementation via the [GCC statement expressions](https://gcc.gnu.org/onlinedocs/gcc/Statement-Exprs.html) extension)
+1. enabling optional and named function call arguments
+	* implementation via the [GCC designated initializer](https://gcc.gnu.org/onlinedocs/gcc/Designated-Inits.html) extension
+2. obfuscating [name mangler](https://en.wikipedia.org/wiki/Name_mangling)
+	* similar to [stunnix cxx-obfus](http://stunnix.com/support/doc/cxxo/cxx-obfus.shtml)
+3. compile time _constant_ string encryption
+4. _static_ variable and function name obfuscation
+5. fully functional [ELF dynamic shared object (DSO)](https://amir.rachum.com/shared-libraries/) files that shroud their global export table
+6. detection and elimination of duplicate code where variable names are parameterized
+	* implementation via the [GCC statement expressions](https://gcc.gnu.org/onlinedocs/gcc/Statement-Exprs.html) extension, and the [clang block extension](https://clang.llvm.org/docs/BlockLanguageSpec.html)
 
 $py(id="aurora"; task="Automotive Software Updates: CTO Group: (a) Invented a patent-pending algorithm to greatly reduce RAM consumption during FLASH updates which improves compression efficiency which is the core KPI of the software update industry. (b) Greatly improved the CPU efficiency and RAM consumption of the company's core product that automatically refactors embedded C source code of their automotive industry clients.")
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
