@@ -77,7 +77,7 @@ $endif
 
 ## Work Experience {#work}
 
-### 2025-present: Independent Commercial S/W Obfuscation Product Development {#obfuscation}
+### 2025-present: Independent Commercial S/W Cybersecurity Obfuscation Product Development {#obfuscation}
 
 I am starting (2025-04-01) my own firm to develop commercial [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for:
 
