@@ -77,7 +77,7 @@ $endif
 
 ## Work Experience {#work}
 
-### 2025-present: Independent Commercial S/W Product Development {#obfuscation}
+### 2025-present: Independent Commercial S/W Obfuscation Product Development {#obfuscation}
 
 I am starting (2025-04-01) my own firm to develop commercial [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for:
 
@@ -92,7 +92,7 @@ And I intend to develop lightweight and inexpensive commercial compiler utilitie
 	* implementation via the [GCC designated initializer](https://gcc.gnu.org/onlinedocs/gcc/Designated-Inits.html) extension
 2. obfuscating [name mangler](https://en.wikipedia.org/wiki/Name_mangling)
 	* similar to [stunnix cxx-obfus](http://stunnix.com/support/doc/cxxo/cxx-obfus.shtml)
-3. compile time _constant_ string encryption
+3. compile time _constant_ string encryption that decrypts at startup
 4. _static_ variable and function name obfuscation
 5. fully functional [ELF dynamic shared object (DSO)](https://amir.rachum.com/shared-libraries/) files that shroud their global export table
 6. detection and elimination of duplicate code where variable names are parameterized
