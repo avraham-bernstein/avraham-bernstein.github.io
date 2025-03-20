@@ -1,0 +1,30 @@
+---
+title: 'Avraham "Abe" Bernstein | CV'
+lang: en
+
+header-includes: |
+    <style>.hide {display: none;}</style>
+    <style>.hilite {background-color:#FFFF00;}</style>
+    <style type="text/css">code {white-space: pre;}</style>
+    <style type="text/css">q {quotes: "“" "”" "‘" "’";}</style>
+    <script>
+    function show_all_details() {
+        const nodes = document.getElementsByTagName("details");
+        const max = nodes.length;
+        for (let i = 0; i < max; ++i) {
+            nodes[i].setAttribute("open",true);
+        }
+    }
+    </script>
+    <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QAAAAAAAD5Q7t/        AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gUNDykqSsuRUgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAFESURBVEjH7ZW9SgNBFIW/tXDNjxA7iy1tgmJpa2FhaxEQBCuFRfAJfALfQGwEa7ETbaxESRHB3t7GoEYNgn8ci9wNS5zsToqASO4w7My5Zzgz98ywASCGGGMMOf6rwDjQBB6AMGO1evoLcANsAUF/mlhD3bbuyCc9q+12eY6FFynipYdAMi8jdgy77ydQNUIdcWXjWU8BECXDnjvz3x7E9j0A9nqwvCgD2zY+d3kwgXhEtBGTiBDRRDwhCp4evCH2ERXXCVaBKeAYeAXegUOgYjmfKABLwIrrBHXbxWIKm0F8Wy7PgxAxhzgxPE6bPJ9z7WScPJNBTBt+my6Rj5HxgM84SkpUQrQQX4jIsaPIci1EcYASXScl2jTgNONRnRlnw/MlfyCWE4GGgbUMgZpxGhkCn4g7xBFiocMJRj+ckcDfF/gBCTJDUqZhh4kAAAAASUVORK5CYII=" 
+    />
+
+# wkhtmltopddf  options
+fontsize: 11pt
+papersize: A4
+margin-top: 15mm
+margin-bottom: 15mm
+margin-left: 15mm
+margin-right: 15mm
+---

@@ -1,0 +1,15 @@
+User-agent: *
+# in order to prevent CV search engine confusion, the only CVs that we google to see are:
+# the 2 html versions (abbrev & full) in the default directory
+Disallow: /AvrahamBernsteinCV.html
+Disallow: /cv/default/AvrahamBernstein-CV-Abbrev.docx
+Disallow: /cv/default/AvrahamBernstein-CV-Abbrev.pdf
+Disallow: /cv/default/AvrahamBernstein-CV-Full.docx
+Disallow: /cv/default/AvrahamBernstein-CV-Full.pdf
+Disallow: /cv/ardix/
+Disallow: /cv/tkos/
+Disallow: /cv/wizedom/
+# for reasons of anti-harvesting privacy we do not want google to see these 2 files
+Disallow: /AvrahamBernstein-3.0.vcf
+Disallow: /AvrahamBernstein-4.0.vcf
+
