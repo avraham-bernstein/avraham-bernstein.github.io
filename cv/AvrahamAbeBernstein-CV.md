@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-19'
+now = '2025-03-21'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -82,7 +82,7 @@ $endif
 I am starting (2025-04-01) my own firm to develop commercial [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for:
 
 1. _C11/C++2014_
-	* implementation via [srcML (proprietary license)](https://www.srcml.org) and Python's [Beautiful Soup (MIT license)](https://beautiful-soup-4.readthedocs.io/en/latest/)
+	* implementation via [srcML (commercia license)](https://www.srcml.org) and Python's [Beautiful Soup (MIT license)](https://beautiful-soup-4.readthedocs.io/en/latest/)
 2. [web assembly (WASM)](https://webassembly.org/)
 	* implemention via the [parsimonious (MIT license)](https://github.com/erikrose/parsimonious) Python PEG parser
 
