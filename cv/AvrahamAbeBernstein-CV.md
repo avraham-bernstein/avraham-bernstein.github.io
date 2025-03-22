@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-21'
+now = '2025-03-22'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -1053,7 +1053,8 @@ $else
 	* My triple great grandfather, Rav Aharon Visanska 1809-1893, was born in a rural region of Augustow Poland. He was a disciple of the Vilna Gaon (Hebrew: _Gra_). As a young adult he resided in Jerusalem. He emigrated to Michigan where he raised his family and became a community rabbi. He returned to Jerusalem where he died and was buried on the Mount of Olives (Hebrew: _Har HaZeitim_). His granddaughter Rachel 1874-1919, my great grandmother, was born in  Michigan. She married a Canadian immigrant from Poland, Yechiel Michael 1872-1926, my great grandfather, who was born in the same Polish community as Rav Aharon's. Their eldest son Hershel Tzvi 1896-1977, my grandfather, was born in Ontario. He fought in _WW I_ in the _Jewish Legion_ in Turkey and later in Palestine under _General Allenby_. Hershel Tzvi returned to Ontario where I was eventually born.
 3. __Married:__ + 2 boys + 2 girls, all married with many grandchildren, all of whom live in _Eretz Yisrael_ (English: the Land of Israel).
 	* Since the Hamas _Simchat Torah 5784_ (2023-10-07) massacre, both of my sons spent about 6 months in the IDF, and as of this writing ($(now)) they both were recently called up for 2 months of reserve duty (Hebrew: _Miluim_). 
-4. __Religious Beliefs:__ I am a God-fearing observant Jew and Zionist.
+4. __Religious Beliefs:__ I am a God-fearing _Torah_ observant Jew and Zionist.
+	* These beliefs are intertwined since 3800 years ago when _Hashem_ (English: traditional Jewish name for God) chose _Avraham Avinu_ (English: our father Abraham) and his descendants to be God's vaguard on this earth and to grant them _Eretz Yisrael_ (English: the Land of Israel). As the _Torah_ states in [Gen. 18:19](https://mechon-mamre.org/p/pt/pt0118.htm) "For I have known him \[Avraham], to the end that he may command his children and his household after him, that they may keep the way of the LORD, to do righteousness and justice ...".
 5. __IDF Reserves 1988-2001:__ I was a combat infantry sergeant, where I served in the Central Command (Hebrew: _Pikud HaMerkaz_) in the Jordan Valley.
 	* Exceptionally I often acted in the role of deputy company commander (Hebrew: _Samap_) even though I was a _Shlav Betnik_ (English: those first drafted over age 26) with only 4 months of basic training. Considering that the IDF intended to send me to a combat infantry unit for the whole period of my 13 years of reserve duty, about 2/3 of my basic training was a complete waste of time, e.g. kitchen duty, gardening duty, and guard duty, instead of primarily focusing on combat skills.
 6. __Sport:__ I still engage in regular vigorous exercise at a gym for 90 min. 3x per week - cardio and heavy weights. When I was younger I engaged in Judo, freestyle wrestling, and Tai Chi.
