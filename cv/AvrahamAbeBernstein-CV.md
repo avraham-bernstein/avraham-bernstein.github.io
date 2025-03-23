@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-22'
+now = '2025-03-23'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -1054,7 +1054,7 @@ $else
 3. __Married:__ + 2 boys + 2 girls, all married with many grandchildren, all of whom live in _Eretz Yisrael_ (English: the Land of Israel).
 	* Since the Hamas _Simchat Torah 5784_ (2023-10-07) massacre, both of my sons spent about 6 months in the IDF, and as of this writing ($(now)) they both were recently called up for 2 months of reserve duty (Hebrew: _Miluim_). 
 4. __Religious Beliefs:__ I am a God-fearing _Torah_ observant Jew and Zionist.
-	* These beliefs are intertwined since 3800 years ago when _Hashem_ (English: traditional Jewish name for God) chose _Avraham Avinu_ (English: our father Abraham) and his descendants to be God's vaguard on this earth and to grant them _Eretz Yisrael_ (English: the Land of Israel). As the _Torah_ states in [Gen. 18:19](https://mechon-mamre.org/p/pt/pt0118.htm) "For I have known him \[Avraham], to the end that he may command his children and his household after him, that they may keep the way of the LORD, to do righteousness and justice ...".
+	* These beliefs are inherently intertwined. About 3800 years ago _Hashem_ (English: traditional Jewish name for God) chose _Avraham Avinu_ (English: our father Abraham) and his descendants to be God's vaguard on this earth and to grant them _Eretz Yisrael_ (English: the Land of Israel). As the _Torah_ states in [Gen. 17:8](https://mechon-mamre.org/p/pt/pt0117.htm) "And I will give unto thee, and to thy seed after thee, the land of thy sojournings, all the land of Canaan, for an everlasting possession; and I will be their God", and in [Gen. 18:19](https://mechon-mamre.org/p/pt/pt0118.htm) "For I have known him \[Avraham], to the end that he may command his children and his household after him, that they may keep the way of the LORD, to do righteousness and justice ...". And note very well, except for a miniscule number of crazies or ignoramuses, no Jew believes that Christianity or Islam superceded the convenant that _Hashem_ made with the Jewish People at Mount Sinai 3400 years ago when He miraculously redeemed them from the bondage of Egypt, which by the way is the reason that these derivative religions have a vicsceral hatred of the Jews to this day.
 5. __IDF Reserves 1988-2001:__ I was a combat infantry sergeant, where I served in the Central Command (Hebrew: _Pikud HaMerkaz_) in the Jordan Valley.
 	* Exceptionally I often acted in the role of deputy company commander (Hebrew: _Samap_) even though I was a _Shlav Betnik_ (English: those first drafted over age 26) with only 4 months of basic training. Considering that the IDF intended to send me to a combat infantry unit for the whole period of my 13 years of reserve duty, about 2/3 of my basic training was a complete waste of time, e.g. kitchen duty, gardening duty, and guard duty, instead of primarily focusing on combat skills.
 6. __Sport:__ I still engage in regular vigorous exercise at a gym for 90 min. 3x per week - cardio and heavy weights. When I was younger I engaged in Judo, freestyle wrestling, and Tai Chi.
