@@ -475,7 +475,7 @@ $(hdetails(task))
 
 1. I invented a hybrid IP system for the modems where a modem had separate IP addresses for upstream (telephone dial-up) and downstream (RF). The invention took advantage of the fact that cable operator also operated the upstream dial-up network, so all the action took place by dynamically manipulating the edge router's [arp table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) at modem login.
 
-2. I designed the company's [SNMP NMS](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol) offline client using a GUI NMS client tool kit,  and the embedded system _agent_ for the modem and router in _C_.
+2. I designed the company's [SNMP NMS](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol) offline client using a GUI NMS client tool kit with [TCL](https://en.wikipedia.org/wiki/Tcl) macros, and the embedded system _agent_ for the modem and router in _C_.
 
 3. I invented the router's embedded [arp table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) using an extremely efficient _FIFO_ [hash table](https://en.wikipedia.org/wiki/Hash_table) in _C_ that used no dynamic memory allocation.
 
