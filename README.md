@@ -1,5 +1,5 @@
 # README: avraham-bernstein.github.io Web Site
 
-This repository currenty serves as my professional home page and CV.
+This repository serves as my home page, professional CV, and document site.
 
-Last update: 2025-03-09
+Last update: 2025-03-24
