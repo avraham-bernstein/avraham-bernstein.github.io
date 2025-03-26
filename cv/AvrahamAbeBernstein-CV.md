@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-24'
+now = '2025-03-26'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -1036,9 +1036,11 @@ $endif
 
 3. __1973-76:__ [Univ Of Toronto, Undergraduate School Of Arts & Sciences](https://www.utoronto.ca/) Toronto Ontario: __BA economics__
 
-4. __1969-73:__ [Vincent Massey Secondary School](https://www.publicboard.ca/en/massey/index.aspx) Windsor Ontario: __"Honours" (grade 13) high school diploma__
+4. __1969-73:__ Secondary School, Ontario Canada: __"Honours" (grade 13) high school diploma__
 
     * I took my first course in computer science in _FORTRAN_ on an [IBM 1130](http://ibm1130.org/) mini-computer with 16 KB RAM. My first serious program was a _perfect_ game of _Qubic_, 3D tic-tac-toe, using 4 levels of boards each of which has 4x4 squares. Subsequently I became "addicted" to programming for life.
+    
+    * Also besides advanced courses in mathematics, one of my more useful courses was learing how to "touch type".
 
 $py(id="personal"; task="Personal")
 ## Personal {#$(id)}
@@ -1063,7 +1065,7 @@ $else
 8. __Hobbies:__ I play classical guitar (currently rusty). I teach the use of music composition software to my musically inclined children (one of whom is a concert cellist) and grandchildren. For example see this beautiful [lilypond](https://lilypond.org/) [score](https://github.com/avraham-bernstein/avraham-bernstein.github.io/blob/master/music/sf4.pdf), its automatically generated [mp3 output](https://github.com/avraham-bernstein/avraham-bernstein.github.io/blob/master/music/sf4.mp3), and the [abc](https://abcnotation.com/) music [notation](https://github.com/avraham-bernstein/avraham-bernstein.github.io/blob/master/music/sf4.abc.txt) which generated the above score and mp3 file. Some children may prefer the [musescore](https://www.musehub.com/app/musescore-studio) app that has a GUI.
 9. __Android Phone & PC Windows and Linux Repairs:__ For family and close friends.
 10. __My computer equipment:__
-	* __PC:__ [Lenovo Thinkpad E14 Gen 6](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpade/lenovo-thinkpad-e14-gen-6-14-inch-intel/21m7003aus?orgRef=https%253A%252F%252Fduckduckgo.com%252F): i5 CPU, 32GB RAM, 1TB SSD, 14 inch display, [Xubuntu](https://xubuntu.org/) 24.04; industrial grade, chose an i5 CPU to prevent CPU overheating while it still has more than enough H/W threads, native Linux support, price is reasonable
+	* __PC:__ [Lenovo Thinkpad E14 Gen 6 (Intel, 14 inch)](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpade/lenovo-thinkpad-e14-gen-6-14-inch-intel/21m7003aus?orgRef=https%253A%252F%252Fduckduckgo.com%252F): i5 CPU, 32GB RAM, 1TB SSD, [Xubuntu](https://xubuntu.org/) 24.04; industrial grade, chose an i5 to prevent CPU overheating while it still has more than enough H/W threads, native Linux support, price is reasonable
 	* __31.5 Inch 1920x1080 Display:__ [Lenovo "D32-40"](https://www.lenovo.com/ao/en/monitors/d32-40/?orgRef=https%253A%252F%252Fduckduckgo.com%252F); huge ultra-readable "business class" display for an outstanding low price precisely because it does _not_ have the latest "home theater" or "gamer" specs which I really don't need
 	* __Mechanical Backlight Gamer's Keyboard:__ [Redragon Andromedia K558R-1](https://www.redragonzone.com/products/redragon-k558-keyboard); I can "touch type" so a mechanical keyboard is a necessity, bought locally so dual-language keyboard has builtin backlighting support, price is good
 	* __Erogonomic Trackball Mouse:__ [Logitech "Ergo M575"](https://www.logitech.com/en-us/shop/p/m575-ergo-wireless-trackball.910-005869); avoids shoulder and carpal tunnel injuries, excellent price
