@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-18'
+now = '2025-03-27'
 DOT = '&#x2022;'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
@@ -29,7 +29,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Contact
 
-* __Home Geolocation:__ Jerusalem 9727433 ISRAEL,&nbsp;&nbsp;[31.808472N, 35.200944E](https://www.google.com/maps/place/31.808472,35.200944)
+* __Home Geolocation:__ Ramot Bet, Jerusalem 9727433 ISRAEL, [31.808472N, 35.200944E](https://www.google.com/maps/place/31.808472,35.200944)
 
 * __Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 
