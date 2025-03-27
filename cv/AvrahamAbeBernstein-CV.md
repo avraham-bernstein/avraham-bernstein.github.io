@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-26'
+now = '2025-03-27'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -1053,7 +1053,7 @@ $else
 1. __Born:__ 1957 Canada.
 2. __Aliyah (English: immigration to Israel)__: 1983.
 	* My triple great grandfather, Rav Aharon Visanska 1809-1893, was born in a rural region of Augustow Poland. He was a disciple of the Vilna Gaon (Hebrew: _Gra_). As a young adult he resided in _Yerushalayim_ (English: Jerusalem). He emigrated to Michigan where he raised his family and became a community rabbi. He returned to _Yerushalayim_ where he died and was buried on the Mount of Olives (Hebrew: _Har HaZeitim_). His granddaughter Rachel 1874-1919, my great grandmother, was born in  Michigan. She married a Canadian immigrant from Poland, Yechiel Michael 1872-1926, my great grandfather, who was born in the same Polish community as Rav Aharon's. Their eldest son Hershel Tzvi 1896-1977, my grandfather, was born in Ontario. He fought in _WW I_ in the _Jewish Legion_ in Turkey and later in Palestine under _General Allenby_. Hershel Tzvi returned to Ontario where I was eventually born.
-3. __Married:__ + 2 boys + 2 girls, all married with many grandchildren, all of whom live in _Eretz Yisrael_ (English: the Land of Israel).
+3. __Married:__ 1978, 2 boys + 2 girls, all married with many grandchildren, all of whom live in _Eretz Yisrael_ (English: the Land of Israel).
 	* Since the _Islamofascist_ _Hamas_ babarian massacre on _Simchat Torah 5784_ (aka Oct. 7, 2023), both of my sons spent about 6 months in the IDF, and at the beginning of March 2025 they were both called up again for about 75 days of reserve duty (Hebrew: _Milu'im_). 
 4. __Religious Beliefs:__ I am a God-fearing _Torah_ observant Jew and Zionist.
 	* My belief in God, _Torah_, and Israel has always been the core belief of the Jews since _Avraham Avinu_ (English: our forefather Abraham) established Judaism c. 3800 years ago.
