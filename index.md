@@ -54,9 +54,9 @@ __Secure[^secure-photo] photo of the author from 2025__
 * __Immediate Family:__
 
     * wife: <i>Judy DOT Bernstein1 AT gmail$(obfus('bozo@example.com')) DOT com</i>, +$(obfus('bozo@example.com'))972.50.751-5111: designer of natural cosmetics
-    * son: _Yirmiyahu_ + 4: astrophysicist and optics
-    * daughter: _Naomi Sarah_ + 4: maternity nurse
-    * daughter: _Carmiella_ + 1: cellist and music teacher
-    * son: _Asher_ + 4: environmental scientist
+    * son-1: _Yirmiyahu_ + 4: astrophysicist and optics
+    * daughter-2: _Naomi Sarah_ + 4: maternity nurse
+    * daughter-3: _Carmiella_ + 1: cellist and music teacher
+    * son-4: _Asher_ + 4: environmental scientist
 
 ## Footnotes
