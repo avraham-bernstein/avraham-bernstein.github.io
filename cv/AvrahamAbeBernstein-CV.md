@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-29'
+now = '2025-03-30'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -82,9 +82,9 @@ $endif
 I am starting (2025-04-01) my own firm to develop commercial [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for:
 
 1. _C11/C++2014_
-	* implementation via [srcML (commercia license)](https://www.srcml.org) and Python's [Beautiful Soup (MIT license)](https://beautiful-soup-4.readthedocs.io/en/latest/)
+	* implementation via [srcML (commercial license)](https://www.srcml.org) and Python's [Beautiful Soup (MIT license)](https://beautiful-soup-4.readthedocs.io/en/latest/)
 2. [web assembly (WASM)](https://webassembly.org/)
-	* implemention via the [parsimonious (MIT license)](https://github.com/erikrose/parsimonious) Python PEG parser
+	* implementation via the [parsimonious (MIT license)](https://github.com/erikrose/parsimonious) Python PEG parser
 
 And I intend to develop lightweight and inexpensive commercial compiler utilities that refactor _C_ source code, via _srcML_ and _Beautiful Soup_, including:
 
@@ -1040,7 +1040,7 @@ $endif
 
     * I took my first course in computer science in _FORTRAN_ on an [IBM 1130](http://ibm1130.org/) mini-computer with 16 KB RAM. My first serious program was a _perfect_ game of _Qubic_, 3D tic-tac-toe, using 4 levels of boards each of which has 4x4 squares. Subsequently I became "addicted" to programming for life.
     
-    * Also besides advanced courses in mathematics, one of my more useful courses was learing how to "touch type".
+    * Also besides advanced courses in mathematics, one of my more useful courses was learning how to "touch type".
 
 $py(id="personal"; task="Personal")
 ## Personal {#$(id)}
@@ -1054,7 +1054,7 @@ $else
 2. __Aliyah (English: immigration to Israel)__: 1983.
 	* My triple great grandfather, Rav Aharon Visanska 1809-1893, was born in a rural region of Augustow Poland. He was a disciple of the Vilna Gaon (Hebrew: _Gra_). As a young adult he resided in _Yerushalayim_ (English: Jerusalem). He emigrated to Michigan where he raised his family and became a community rabbi. He returned to _Yerushalayim_ where he died and was buried on the Mount of Olives (Hebrew: _Har HaZeitim_). His granddaughter Rachel 1874-1919, my great grandmother, was born in  Michigan. She married a Canadian immigrant from Poland, Yechiel Michael 1872-1926, my great grandfather, who was born in the same Polish community as Rav Aharon's. Their eldest son Hershel Tzvi 1896-1977, my grandfather, was born in Ontario. He fought in _WW I_ in the _Jewish Legion_ in Turkey and later in Palestine under _General Allenby_. Hershel Tzvi returned to Ontario where I was eventually born.
 3. __Married:__ 1978, 2 boys + 2 girls, all married with many grandchildren, all of whom live in _Eretz Yisrael_ (English: the Land of Israel).
-	* Since the _Islamofascist_ _Hamas_ babarian massacre on _Simchat Torah 5784_ (aka Oct. 7, 2023), both of my sons spent about 6 months in the IDF, and at the beginning of March 2025 they were both called up again for about 75 days of reserve duty (Hebrew: _Milu'im_). 
+	* Since the _Islamofascist_ _Hamas_ barbarian massacre on _Simchat Torah 5784_ (aka Oct. 7, 2023), both of my sons spent about 6 months in the IDF, and at the beginning of March 2025 they were both called up again for about 75 days of reserve duty (Hebrew: _Milu'im_). 
 4. __Religious Beliefs:__ I am a God-fearing _Torah_ observant Jew and Zionist.
 	* My belief in God, _Torah_, and Israel has always been the core belief of the Jews since _Avraham Avinu_ (English: our forefather Abraham) established Judaism c. 3800 years ago.
  5. __IDF Reserves 1988-2001:__ I was a combat infantry sergeant, where I served in the Central Command (Hebrew: _Pikud HaMerkaz_) in the Jordan Valley.
@@ -1098,7 +1098,7 @@ access details.
 The advantage of this scheme is that most _HR_ departments forbid their readers from contacting
 a candidate for more details without first conducting an official interview which is typically a
 major formal process.
-My scheme short circuits this dilemna to the advantage of both the reader and the candidate.
+My scheme short circuits this dilemma to the advantage of both the reader and the candidate.
 See my source code at: 
 [https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
 
