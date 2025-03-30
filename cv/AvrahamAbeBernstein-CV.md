@@ -16,6 +16,12 @@ if is_pdf:
 def obfus(text):
 	return '<span class="hide">' + text + '</span>'
 
+def para(link):
+	if is_pdf:
+		return ''
+	else:
+		return '<a href="#' + link + '">&para;</a> {#' + link + '}'
+
 def hdetails(task):
     return '<details markdown="1"><summary>' + task + '</summary>'
 
@@ -47,7 +53,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 <button onclick="show_all_details()">Click Here To Open All Details<br>(Useful for printing. Required for external linking to "inner-*" local bookmarks. Close by reloading page.)</button>
 $endif
 
-## Introduction: Cr8tive Solutions To Hard Problems {#intro}
+## Introduction: Cr8tive Solutions To Hard Problems $(para('intro'))
 
 1. I have more than 40 years experience in state-of-the-art software development:
 	* inventing new [algorithms](https://en.wikipedia.org/wiki/Algorithm)
@@ -75,9 +81,9 @@ $endif
 9. I thrive on undertaking new challenging projects. I am quite comfortable engaging in and leading _flexible_ "brain storming" sessions.
 10. I have a long history of providing considerable value added to my employers. Browse the links below (typically preceded by the _right pointing triangle_ symbol "$(RIGHT_POINTING_TRIANGLE)") that describe the details of my career. They will reveal a long history of "home runs". I am especially proud of my inventions in the fields of [bioinformatics]($(html)#syntezza) and [accessibility]($(html)#virtouch) (and [here]($(html)#cubital-accessibility)) even though they are not in the application domains where I usually work.
 
-## Work Experience {#work}
+## Work Experience $(para('work'))
 
-### 2025-present: Independent Commercial S/W Cybersecurity Obfuscation Product Development {#obfuscation}
+### 2025-present: Independent Commercial S/W Cybersecurity Obfuscation Product Development $(para('obfuscation'))
 
 I am starting (2025-04-01) my own firm to develop commercial [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for:
 
@@ -99,7 +105,7 @@ And I intend to develop lightweight and inexpensive commercial compiler utilitie
 	* implementation via the [GCC statement expressions](https://gcc.gnu.org/onlinedocs/gcc/Statement-Exprs.html) extension, and the [clang block extension](https://clang.llvm.org/docs/BlockLanguageSpec.html)
 
 $py(id="aurora"; task="Automotive Software Updates: CTO Group: (a) Invented a patent-pending algorithm to greatly reduce RAM consumption during FLASH updates which improves compression efficiency which is the core KPI of the software update industry. (b) Greatly improved the CPU efficiency and RAM consumption of the company's core product that automatically refactors embedded C source code of their automotive industry clients.")
-### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL {#$(id)}
+### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -116,7 +122,7 @@ $(hdetails(task))
 $endif
 
 $py(id="jct"; task="Lecturer: Introduction to Cybersecurity")
-### 2022 part-time: [Jerusalem College Of Technology (JCT/Machon Lev)](https://www.jct.ac.il/en) Jerusalem IL {#$(id)}
+### 2022 part-time: [Jerusalem College Of Technology (JCT/Machon Lev)](https://www.jct.ac.il/en) Jerusalem IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -135,7 +141,7 @@ $(hdetails(task))
 $endif
 
 $py(id="morphisec"; task="Server Cybersecurity: Reverse engineering and refactoring of X64 object code")
-### 2021: [Morphisec](https://www.morphisec.com/) Beer Sheva IL {#$(id)}
+### 2021: [Morphisec](https://www.morphisec.com/) Beer Sheva IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -154,7 +160,7 @@ $(hdetails(task))
 $endif
 
 $py(id="qedit"; task="Banking Cryptographic Algorithms: Securing C algorithms in a web browser using WASM")
-### 2021: consultant to [Qedit](https://qed-it.com/) Tel Aviv IL {#$(id)}
+### 2021: consultant to [Qedit](https://qed-it.com/) Tel Aviv IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -169,7 +175,7 @@ $(hdetails(task))
 $endif
 
 $py(id="argus"; task="Automotive Software Updates: (a) Patented an algorithm greatly reducing FLASH memory required to implement mini-bsdiff. (b) Architected and implemented an embedded S/W update driver based upon mini-bsdiff and the xz binary compressor.")
-### 2018-20: [Argus Cyber Security](https://en.wikipedia.org/wiki/Argus_Cyber_Security) Tel Aviv IL (restructured as [PlaxidityX](https://plaxidityx.com/) IL, subsidiary of [Elektrobit/Continental](https://www.elektrobit.com/) DE) {#$(id)}
+### 2018-20: [Argus Cyber Security](https://en.wikipedia.org/wiki/Argus_Cyber_Security) Tel Aviv IL (restructured as [PlaxidityX](https://plaxidityx.com/) IL, subsidiary of [Elektrobit/Continental](https://www.elektrobit.com/) DE) $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -197,7 +203,7 @@ $(hdetails(task))
 $endif
 
 $py(id="canary-mission"; task='Consultant: SOHO Cybersecurity "Hygiene"')
-### 2016 part-time: [Canary Mission](https://canarymission.org/) Jerusalem IL {#$(id)}
+### 2016 part-time: [Canary Mission](https://canarymission.org/) Jerusalem IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -237,7 +243,7 @@ $(hdetails(task))
 $endif
 
 $py(id="viaccess"; task="Internet TV Infrastructure: Cybersecurity obfuscation manager")
-### 2014-17: [Viaccess-Orca](https://www.viaccess-orca.com/) Ra'anana IL (subsidiary of [Orange](https://www.orange.com/) FR) {#$(id)}
+### 2014-17: [Viaccess-Orca](https://www.viaccess-orca.com/) Ra'anana IL (subsidiary of [Orange](https://www.orange.com/) FR) $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -255,12 +261,12 @@ $(hdetails(task))
 </details>
 $endif
 
-### 2013-14: _Discretix_ Netanya IL (renamed _Sansa Security_, acquired by [ARM](https://www.arm.com) UK) {#discretix}
+### 2013-14: _Discretix_ Netanya IL (renamed _Sansa Security_, acquired by [ARM](https://www.arm.com) UK) $(para('discretix'))
 
 The company sold their Internet TV business unit to [Viaccess-Orca (2014)]($(html)#$(id)) above.
 
 $py(id="nvt";task="CTO Nigerian Agritech")
-### 2013 part-time: _NVT_ (defunct) US {#$(id)}
+### 2013 part-time: _NVT_ (defunct) US $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -282,7 +288,7 @@ $(hdetails(task))
 $endif
 
 $py(id="telequest"; task="Vehicle Navigation Algorithms: VP R&D: Traffic jam reduction algorithms")
-### 2012: [Telequest](https://www.telequest.co.il) (stealth) Jerusalem IL {#$(id)}
+### 2012: [Telequest](https://www.telequest.co.il) (stealth) Jerusalem IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -301,7 +307,7 @@ $(hdetails(task))
 $endif
 
 $py(id="syntezza"; task="PCR MRSA Kit: Inventor of bioinformatic PCR algorithms using AI threshold technique, and more accurate bioassay normalization and noise reduction")
-### 2011: consultant to [Syntezza Bioscience](https://www.syntezza.com/) Jerusalem IL {#$(id)}
+### 2011: consultant to [Syntezza Bioscience](https://www.syntezza.com/) Jerusalem IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -364,7 +370,7 @@ therefore my [threshold  algorithm](https://www.pythonprog.com/thresholding-in-m
 $endif
 
 $py(id="NDS"; task="Internet TV Infrastructure: Cybersecurity researcher")
-### 2005-10: _NDS_ Jerusalem IL (acquired by [Synamedia](https://www.synamedia.com/) UK) {#$(id)}
+### 2005-10: _NDS_ Jerusalem IL (acquired by [Synamedia](https://www.synamedia.com/) UK) $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -391,7 +397,7 @@ $(hdetails(task))
 $endif
 
 $py(id="vyyo2004"; task="Broadband RF Networking: Architect of super-efficient cable modem testing laboratory")
-### 2004: _Vyyo_ (defunct) Jerusalem IL {#$(id)}
+### 2004: _Vyyo_ (defunct) Jerusalem IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -412,7 +418,7 @@ $(hdetails(task))
 $endif
 
 $py(id="virtouch"; task="Blind Accessibility Device: VP R&D: Inventor of product that allowed the blind to see/understand images in a PC/smartphone web browser ideally combined with a consumer grade graphics tablet")
-### 2002-03: _Virtouch_ (defunct) Jerusalem IL {#$(id)}
+### 2002-03: _Virtouch_ (defunct) Jerusalem IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -449,7 +455,7 @@ $endif
 I did similar tasks for _Vyyo_. See [Vyyo (2004) above]($(html)#vyyo2004) and [Vyyo (2000) below]($(html)#vyyo2000).
 
 $py(id="jolt"; task="Free Space Optics Networking: Consultant: Designer of SNMP NMS client and agent")
-### 2002 part-time: _Jolt_ Jerusalem IL (acquired by _MRV Communications_ IL, and eventually by [Adtran](https://www.adtran.com) US) {#$(id)}
+### 2002 part-time: _Jolt_ Jerusalem IL (acquired by _MRV Communications_ IL, and eventually by [Adtran](https://www.adtran.com) US) $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -466,7 +472,7 @@ $(hdetails(task))
 $endif
 
 $py(id="vyyo2000"; task="Broadband RF Networking: Manager of S/W utilities group; inventor of cable modem hybrid (RF/dial-up) IP allocation protocol")
-### 2000-02: _Vyyo_ (defunct) Jerusalem IL {#$(id)}
+### 2000-02: _Vyyo_ (defunct) Jerusalem IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -489,7 +495,7 @@ $endif
 Broadband RF Networking: See the tasks that I did for the successor company [Vyyo (above)]($(html)#$(id)).
 
 $py(id="fourfold"; task="Fabless VLSI CPU Design: Novel GCC compiler port for a FORTH-like CPU")
-### 1998: contractor to _Fourfold_ (defunct) Jerusalem IL {#$(id)}
+### 1998: contractor to _Fourfold_ (defunct) Jerusalem IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -502,7 +508,7 @@ $(hdetails(task))
 $endif
 
 $py(id="optimet"; task="Conoscopic Laser Interferometry: S/W architect of a DSL for a 2D measurement  robot")
-### 1996-97: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to _Optimet_ Jerusalem IL, subsidiary of [Ophir Optronics](https://www.ophiropt.com/en/) IL {#$(id)}
+### 1996-97: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to _Optimet_ Jerusalem IL, subsidiary of [Ophir Optronics](https://www.ophiropt.com/en/) IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -517,7 +523,7 @@ $(hdetails(task))
 $endif
 
 $py(id="elop"; task="Military Optical Devices: S/W architect of a DSL to implement a mil-spec automated testing laboratory for the BlackHawk helicopter weapons targeting system" )
-### 1996: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to [Elop/Elbit](https://elbitsystems.com/) Rehovot IL{#$(id)}
+### 1996: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to [Elop/Elbit](https://elbitsystems.com/) Rehovot IL$(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -534,7 +540,7 @@ $(hdetails(task))
 $endif
 
 $py(id="dspg"; task="Fabless DSP CPU  Design Center: Inventor and S/W architect of a DSL to implement the software tool chain for the PINE CPU")
-### 1992-95: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to [DSP Group](https://www.dspg.com/) Ramat Gan IL {#$(id)}
+### 1992-95: CEO _Pitkha_ (defunct) Jerusalem IL, contractor to [DSP Group](https://www.dspg.com/) Ramat Gan IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -559,7 +565,7 @@ $(hdetails(task))
 $endif
 
 $py(id="iscar"; task="Metal Blade Production Factory: Co-inventor and S/W architect of a DSL to implement a shop floor production control system that orchestrated a completely automated factory")
-### 1990-91: contractor to [Digital Equipment Corp (DEC)](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation) Herzliya IL (eventually acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL), contractor to [Iscar Metalworking](https://www.iscar.com/index.aspx/countryid/1/lang/en) {#$(id)}
+### 1990-91: contractor to [Digital Equipment Corp (DEC)](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation) Herzliya IL (eventually acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL), contractor to [Iscar Metalworking](https://www.iscar.com/index.aspx/countryid/1/lang/en) $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -599,7 +605,7 @@ $(hdetails(task))
 $endif
 
 $py(id="cubital-printer"; task="One Of The Original 3D Printers: S/W R&D")
-### 1988-89: contractor to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
+### 1988-89: contractor to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -622,7 +628,7 @@ $(hdetails(task))
 $endif
 
 $py(id="cubital-accessibility"; task="PC Accessibility Device For Quadriplegics: Inventor and S/W architect")
-### 1989: contractor to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) {#$(id)}
+### 1989: contractor to _Cubital_ (defunct) Herzliya IL, subsidiary of _Scitex_ IL (acquired by [Hewlett-Packard](https://www.hp.com/il-he/home.html) IL) $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -643,7 +649,7 @@ $(hdetails(task))
 $endif
 
 $py(id="orisol"; task="High Speed Sewing Robot For Leather Goods: S/W architect of a DSL used to control the robot")
-### 1987: _Orisol_ (defunct) Lod IL {#$(id)}
+### 1987: _Orisol_ (defunct) Lod IL $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -666,7 +672,7 @@ $endif
 ### 1980-86: Junior Programmer and Economist Positions in the US and Israel
 
 $py(id="oeb"; task="Public Utility Commission: Public interest intervenor-economist at the ECAP77 hearings on marginal cost pricing for electricity")
-### 1977: [Ontario Energy Board](https://www.oeb.ca) Toronto Ontario {#$(id)}
+### 1977: [Ontario Energy Board](https://www.oeb.ca) Toronto Ontario $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -689,16 +695,16 @@ $(hdetails(task))
 $endif
 
 $py(id="personal-inventions"; task="Inventions")
-## Unpatented Personal Inventions {#$(id)}
+## Unpatented Personal Inventions $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
 $else
 <details markdown="1">
 
-<span class="hilite">Note the public domain copyright at the beginning of this document.<span>
+<span class="hilite">Note the _FOSS_ license at the beginning of this document.<span>
 
-###  1. Crypto: Adler-32 Checksum Redux {#inner-adler-32}
+###  1. Crypto: Adler-32 Checksum Redux $(para('inner-adler-32'))
 
 Two commonly used _non-cryptographic_ checksum algorithms are [Adler-32](https://en.wikipedia.org/wiki/Adler-32)
 and [CRC-32](https://en.wikipedia.org/wiki/Computation_of_cyclic_redundancy_checks#CRC-32_algorithm). 
@@ -784,7 +790,7 @@ The following are 2 major improvements:
 
 </details>
 
-### 2. Crypto: Lightweight Key Wrapper {#inner-key-wrapper}
+### 2. Crypto: Lightweight Key Wrapper $(para('inner-key-wrapper'))
 
 This algorithm wraps a 32-bit number with a 64-bit key and a pseudo-random 32-bit number;
 and where the ALU can process 128-bit numbers then we can wrap a 64-bit number with a 128-bit key
@@ -826,7 +832,7 @@ uint32_t ayb_unwrap32(uint64_t key, uint64_t wrapper)
 
 </details>
 
-### 3. Crypto: _Invertible_ "Cross Hamming Weight" Transformation {#inner-cross-hamming-weight}
+### 3. Crypto: _Invertible_ "Cross Hamming Weight" Transformation $(para('inner-cross-hamming-weight'))
 
 Rotating a number by its Hamming weight is a cryptographically weak transformation because
 (1) the transformation does not change the original Hamming weight,
@@ -905,7 +911,7 @@ uint64_t ayb_invert_xhw64(uint64_t x)
 ```
 </details>
 
-### 4. Crypto: _Non-invertible_ Uniformly Distributed FFT Hamming Weight {#inner-fft-hamming-weight}
+### 4. Crypto: _Non-invertible_ Uniformly Distributed FFT Hamming Weight $(para('inner-fft-hamming-weight'))
 
 This algorithm calculates a value in the same range as classic Hamming weights, but the distribution is "nearly" uniformly distributed except for minor perturbations. For example a 32-bit number returns a weight in the range \[0,32]. The algorithm is highly non-linear, i.e. cryptographically "bent".
 
@@ -953,7 +959,7 @@ int32_t ayb_fft_hw32(const uint32_t x)
 
 </details>
 
-### 5. Container: Binary Expandable Hash Table {#inner-binary-hash-table}
+### 5. Container: Binary Expandable Hash Table $(para('inner-binary-hash-table'))
 
 1. Typically the maximum number of entries in a [hash table](https://en.wikipedia.org/wiki/Hash_table) is a _prime number_, while my algorithm uses `2**N` entries.
 
@@ -969,7 +975,7 @@ int32_t ayb_fft_hw32(const uint32_t x)
 
 _C_ source code: TBD.
 
-### 6. Embedded Systems: Dynamically Loadable FLASH Configuration Files Larger Than RAM {#inner-dynamic-flash-config-file}
+### 6. Embedded Systems: Dynamically Loadable FLASH Configuration Files Larger Than RAM $(para('inner-dynamic-flash-config-file'))
 
 On embedded systems with limited RAM, it is _not_ possible to load large configuration files into RAM, and it is normally a security risk to parse the configuration file when dynamically loading it regardless of its size. My invention allows the use of an off-line _pre-parsed_ configuration file into  object data format _without any executable code_. It can be dynamically loaded into _FLASH_ memory at an address defined at load time where (1) the system architect must have mapped the _FLASH_ memory accordingly, (2) the _C_ structure of object file must be recognized by the control program, and (3) it is extremely difficult (although not impossible) to modify the configuration for the duration of the load.
 
@@ -979,7 +985,7 @@ I show how the off-line pre-parser can be implemented without any executable _C_
 
 _C_ source code: TBD.
 
-### 7. C: Named Function Arguments via Designated Initializers {#inner-c-named-func-args}
+### 7. C: Named Function Arguments via Designated Initializers $(para('inner-c-named-func-args'))
 
 [Designated initializers](https://en.cppreference.com/w/cpp/language/aggregate_initialization) is an old GCC extension since C99.
 We can take advantage of this feature in order to implement named function arguments.
@@ -1010,7 +1016,7 @@ int main()
 }
 ```
 
-### 8. Accessibility: Generic Dyslexic Font {#inner-dyslexic-font}
+### 8. Accessibility: Generic Dyslexic Font $(para('inner-dyslexic-font'))
 
 I invented a scheme to modify existing fonts so that a dyslexic can easily read them by mimicking the concept how computer vision programs can decipher [QR codes](https://en.wikipedia.org/wiki/QR_code) regardless of how they are rotated. You should note that in QR codes there are 3 solid black squares in the top-left, top-right, and bottom-left corners, but not in the bottom-right corner. My invention pads the left and right margins of each character in the font, allowing space for two vertical strips in each margin. Each character will have the same size padding. In the middle of the inner left strip, I add a diacritical dot. Now the dyslexic reader needs to follow a single rule, namely to note that a validly oriented character has a dot in its inner left margin. The margins have to be wide enough, so that the reader can recognize the spacing between a sequence of characters.
 
@@ -1026,7 +1032,7 @@ $# end of Invention details
 </details>
 $endif
 
-## Education {#education}
+## Education $(para('education'))
 
 1. __1978-79:__ [York Univ Graduate School](https://www.yorku.ca/) Toronto Ontario: __masters degree in economics with a minor in applied mathematics[^york]__
 
@@ -1043,7 +1049,7 @@ $endif
     * Also besides advanced courses in mathematics, one of my more useful courses was learning how to "touch type".
 
 $py(id="personal"; task="Personal")
-## Personal {#$(id)}
+## Personal $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
@@ -1075,7 +1081,7 @@ $else
 $endif
 
 $py(id="colophon"; task="Colophon")
-## Colophon {#$(id)}
+## Colophon $(para(id))
 
 $if(is_pdf)
 $(pdetails(id,task))
