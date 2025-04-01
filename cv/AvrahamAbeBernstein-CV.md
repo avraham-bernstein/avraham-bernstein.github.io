@@ -32,7 +32,7 @@ def pdetails(id,task):
 __Author:__ Avraham "Abe" Bernstein
 <br/>__Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DOT com
 <br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
-<br/>__Home:__ Jerusalem 9727433 ISRAEL
+<br/>__Home Locality:__ Jerusalem 9727433 ISRAEL
 <br/>__www:__ [$(www)]($(www))
 <br/>__linkedin:__ [$(linkedin)]($(linkedin))
 $if(not is_pdf)\
