@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-29'
+now = '2025-04-02'
 DOT = '&#x2022;'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
@@ -14,10 +14,12 @@ def obfus(text):
 __Author:__ Avraham "Abe" Bernstein
 <br/>__Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
 <br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
-<br/>__video channels:__
+<br/>__Video Channels:__
 <br/>&nbsp;&nbsp;__$(DOT) primary:__ [whatsapp](https://www.whatsapp.com/), [zoom](https://zoom.us/join)
 <br/>&nbsp;&nbsp;__$(DOT) secondary:__ [google meet](https://workspace.google.com/products/meet/), [microsoft teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
-<br/>__www:__ [$(www)]($(www))
+<br/>__Home Geolocation:__ Ramot Bet, Jerusalem 9727433 ISRAEL, [31.808472N, 35.200944E](https://www.google.com/maps/place/31.808472,35.200944)
+<br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
+<br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not available Fri. evenings beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
 <br/>__Last Update:__ $(now)
 </address>
 
@@ -27,23 +29,15 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ---
 
-## Contact
-
-* __Home Geolocation:__ Ramot Bet, Jerusalem 9727433 ISRAEL, [31.808472N, 35.200944E](https://www.google.com/maps/place/31.808472,35.200944)
-
-* __Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
+## Links
 
 * __[Jerusalem Public Transit Access](https://moovitapp.com/index/en/public_transit-Jerusalem-Israel-site_21889814-1):__ 2 min. walk via bus lines 61, 62, & 72 at [stop 2263 Yigal Alon - Shai](https://www.google.com/maps/place/%D7%99%D7%92%D7%90%D7%9C+%D7%90%D7%9C%D7%95%D7%9F%2F%D7%A9''%D7%99%E2%80%AD/@31.8084194,35.200695,18.75z/data=!4m5!3m4!1s0x1502d611ce627b0d:0x85b254a042ae21b9!8m2!3d31.8089172!4d35.2007217?hl=en-US), or a 12 min. walk (or transfer) via the many lines at the hub [stop 5130 Golda/Tzomet Ramot](https://www.google.com/maps/place/Ramot+Junction%2FGolda/@31.8088152,35.2036742,18z/data=!4m5!3m4!1s0x1502d6055edc8dc9:0x9d0c1ea988bd94c2!8m2!3d31.8096483!4d35.2040617?hl=en-US)
 
-* __[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not available Fri. evenings beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
-
-* __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
-
-## Links
-
 * __CV:__ Computer Scientist: [Long HTML]($(cv_root).html),&nbsp;&nbsp;[Short PDF]($(cv_root).pdf)
 
-* __linkedin:__ [$(linkedin)]($(linkedin))
+* __Linkedin:__ [$(linkedin)]($(linkedin))
+
+* __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
 
 * __Articles:__ TBD
 
