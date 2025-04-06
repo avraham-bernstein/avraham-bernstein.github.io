@@ -32,7 +32,7 @@ def pdetails(id,task):
 __Author:__ Avraham "Abe" Bernstein
 <br/>__Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DOT com
 <br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
-<br/>__Home Locality:__ Jerusalem 9727433 ISRAEL
+<br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 <br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not available Fri. evenings beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
 <br/>__WWW:__ [$(www)]($(www))
@@ -1097,7 +1097,7 @@ The following two formats were automatically generated from the same _markdown_ 
 As is standard in the hi-tech industry,
 the mandatory PDF format incorporates a single line for the employer name,
 and a short headline about the details of the task.
-Superficially the HTML version mimics the same format.
+Superficially the HTML version mimics the identical format.
 The PDF headline links to the HTML version, where the HTML version uses the HTML `<details>`
 tag (typically preceded by the _right pointing triangle_ symbol "$(RIGHT_POINTING_TRIANGLE)")
 to optionally enable viewing the full description of the task.
