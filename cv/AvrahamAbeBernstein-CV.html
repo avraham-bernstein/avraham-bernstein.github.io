@@ -442,8 +442,14 @@ relatively simple model of the CPU's pipeline. Even though there was already a <
 href="https://www.qemu.org/">QEMU</a> description for the CPU (1) it did not take into account
 the pipeline, and (2) my instruction specification <a
 href="https://en.wikipedia.org/wiki/Domain-specific_language">Domain Specific Language (DSL)</a>
-included non-QEMU extensions in order to allow for simple generation of random
-instructions.</p></li>
+included non-QEMU extensions in order to allow for simple generation of random instructions.
+With perfect hindsight, I should have redesigned the <em>DSL</em> in order to merge my
+extensions into the <em>QEMU</em> CPU description.</p>
+<ul>
+<li>I sketched a design for a proprietary <em>QEMU</em> generic extension that would allow
+"smart" programatic access to the I/O ports, but the company closed before the work could
+begin.</li>
+</ul></li>
 </ol>
 </details>
 <h3 id="jct">2022 part-time: <a href="https://www.jct.ac.il/en">Jerusalem College Of Technology
