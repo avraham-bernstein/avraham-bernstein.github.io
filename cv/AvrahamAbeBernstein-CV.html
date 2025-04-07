@@ -272,7 +272,7 @@ href="https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf">https://ww
 <br/><strong>Copyright</strong> © Avraham Bernstein 2017-2025, Jerusalem ISRAEL. All rights
 reserved. <br/><strong>License:</strong> FOSS SPDX BSD-3-Clause: <a
 href="https://opensource.org/licenses/BSD-3-Clause">https://opensource.org/licenses/BSD-3-Clause</a>
-<br/><strong>Last Update:</strong> 2025-04-06
+<br/><strong>Last Update:</strong> 2025-04-07
 </address>
 <p><img src="https://www.avrahambernstein.com/AvrahamAbeBernstein-20250202-Watermarked.20pc.png"
 title="Secure photo of the author from 2025" alt="Secure photo of the author" /></p>
@@ -427,6 +427,23 @@ enables higher compression ratios for legacy system boards with small amounts of
 64-256 KB. Sometimes compression ratios could be improved by up to 25% - where the critical <a
 href="https://www.forbes.com/advisor/business/what-is-a-kpi-definition-examples/">KPI</a> in the
 software update business is improving compression ratios.</p></li>
+<li><p>The company wanted to develop a commercial application that could estimate the CPU cycle
+time of embedded programs designed for the <a
+href="https://www.infineon.com/cms/en/product/microcontroller/?redirId=158483">Infineon
+TriCore</a> CPU. Since <em>AI</em> became "cool", they hired an <em>AI</em> expert to design an
+<a href="https://en.wikipedia.org/wiki/Large_language_model">LLM</a> that could be trained by
+using thousands of automatically generated random programs attached to a <a
+href="https://en.wikipedia.org/wiki/JTAG">JTAG</a> device in order to measure the instruction
+cycles. Initially it was my task to generate syntactically correct programs in assembly code
+that did not have nonsensical branches or loops. I designed the generator in <em>Python</em>.
+Afterwards I greatly improved the accuracy of the <em>LLM</em> estimations by simply using the
+instruction cycle times specified by the chip's assembler manual <em>along</em> with designing a
+relatively simple model of the CPU's pipeline. Even though there was already a <em>FOSS</em> <a
+href="https://www.qemu.org/">QEMU</a> description for the CPU (1) it did not take into account
+the pipeline, and (2) my instruction specification <a
+href="https://en.wikipedia.org/wiki/Domain-specific_language">Domain Specific Language (DSL)</a>
+included non-QEMU extensions in order to allow for simple generation of random
+instructions.</p></li>
 </ol>
 </details>
 <h3 id="jct">2022 part-time: <a href="https://www.jct.ac.il/en">Jerusalem College Of Technology
