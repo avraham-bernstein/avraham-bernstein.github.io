@@ -1,5 +1,5 @@
 $py(
-now = '2025-04-07'
+now = '2025-04-10'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -52,7 +52,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ---
 
-<button onclick="show_all_details()">Click Here To Open All Details<br>(Useful for printing. Required for external linking to "inner-*" local bookmarks. Close by reloading page.)</button>
+<button onclick="show_all_details()"><span class="hilite">Click Here To Automatically Open All HTML `<details>` Tags, i.e. at the right pointing triangle character "$(RIGHT_POINTING_TRIANGLE)"</span>.<br>Useful for printing. Required for external linking to "inner-*" local bookmarks. Close by reloading page.</button>
 $endif
 
 ## Introduction: Cr8tive Solutions To Hard Problems $(para('intro'))
