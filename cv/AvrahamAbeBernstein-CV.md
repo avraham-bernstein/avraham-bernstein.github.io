@@ -1045,7 +1045,7 @@ __~1996:__ Windows NT Internals, at the Sivan Training Center in Jerusalem.
 
 __~1987:__ Database Theory, at the Michlelet Beit Vegan Teacher's College in Jerusalem. I was a substitute teacher for 3 months.
 
-I strongly recommend that high school students who learn trigonometry should also learn the much simpler base-60 [rational trigonometry](http://www.ms.lt/derlius/WildbergerDivineProportions.pdf) used the ancient Akkadians and Babylonians.
+I strongly recommend that high school students who learn trigonometry should also learn the much simpler base-60 [rational trigonometry](http://www.ms.lt/derlius/WildbergerDivineProportions.pdf) used by the ancient Akkadians and Babylonians.
 
 </details>
 $endif
