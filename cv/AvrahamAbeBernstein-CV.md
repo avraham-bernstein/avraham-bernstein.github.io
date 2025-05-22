@@ -1035,7 +1035,7 @@ __2022:__ Introduction To Cybersecurity, at [Jerusalem College Of Technology (JC
 
 __~2018:__ At a family function, I taught a smart (but not genius) girl in 2nd grade, exponents, logarithms, and hexadecimal arithmetic with the help of her smartphone calculator, over a period of ~60 minutes.
 
-__~2016:__ I volunteered to teach 3 Units of Mathematics for Israeli Secondary School Matriculation (= Bagrut) for smart girls who had no background in math, at an Ulpana in Ra'anana. They all passed!
+__~2016:__ I volunteered to teach 3 Units of Mathematics for Israeli Secondary School Matriculation (= Bagrut) to smart girls who had no background in math, at an Ulpana in Ra'anana. They all passed!
 
 __~2014:__ "Kinesiologically" I taught my grandson, then 10 years old who has a learning disability, how to multiply using floor tiles and masking tape. I knew he was successful when he announced that "4x2" is the same as "2x4".
 
