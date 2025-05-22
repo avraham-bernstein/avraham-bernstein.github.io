@@ -1,5 +1,5 @@
 $py(
-now = '2025-04-20'
+now = '2025-05-22'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
@@ -87,7 +87,7 @@ $endif
 
 ### 2025-present: Independent Commercial S/W Cybersecurity Obfuscation Product Development $(para('obfuscation'))
 
-I am starting (2025-04-01) my own firm to develop commercial [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for:
+I am starting (2025-06-01) my own firm to develop commercial [obfuscating (= anti reverse-engineering)](https://en.wikipedia.org/wiki/Obfuscation_(software)) compilers for:
 
 1. _C11/C++2014_
 	* implementation via [srcML (commercial license)](https://www.srcml.org) and Python's [Beautiful Soup (MIT license)](https://beautiful-soup-4.readthedocs.io/en/latest/)
@@ -106,6 +106,10 @@ And I intend to develop lightweight and inexpensive commercial compiler utilitie
 6. detection and elimination of duplicate code where variable names are parameterized
 	* implementation via the [GCC statement expressions](https://gcc.gnu.org/onlinedocs/gcc/Statement-Exprs.html) extension, and the [clang block extension](https://clang.llvm.org/docs/BlockLanguageSpec.html)
 
+#### Obfuscation Explanation
+
+A professional software engineer who is an experienced "hacker" is usually able to "reverse engineer" well designed software even when the software is delivered as [object code](https://www.geeksforgeeks.org/difference-between-source-code-and-object-code/) via a [compiler](https://www.wordnik.com/words/compiler). [P-code](https://www.wordnik.com/words/p-code) such as that produced by [Javascript](https://www.geeksforgeeks.org/what-is-javascript/) is relatively easy to hack. However obfuscation mixes up the software as if it were processed with a blender. Of course correct obfuscation must retain the original code logic, but its code footprint can only be slightly larger than the original and execute slightly slower, otherwise the obfuscation has no commercial value. The obfuscation places "speed bumps" in front of the hacker, but eventually, say within a few weeks or months, a good hacker will overcome the obfuscation; therefore it is incumbent upon the obfuscater to regularly supply another randomized version every few months. For example the kind of software that contains secrets that should be obfuscated includes unexploded military ordinance, media players of proprietary content, banking/bitcoin applications, etc.
+
 $py(id="aurora"; task="Automotive Software Updates: CTO Group: (a) Invented a patent-pending algorithm to greatly reduce RAM consumption during FLASH updates which improves compression efficiency which is the core KPI of the software update industry. (b) Greatly improved the CPU efficiency and RAM consumption of the company's core product that automatically refactors embedded C source code of their automotive industry clients.")
 ### 2022-25: [Aurora Labs](https://www.AuroraLabs.com) Tel Aviv IL $(para(id))
 
@@ -122,25 +126,6 @@ $(hdetails(task))
 
 4. The company wanted to develop a commercial application that could estimate the CPU cycle time of embedded programs designed for the [Infineon TriCore](https://www.infineon.com/cms/en/product/microcontroller/?redirId=158483) CPU. Since _AI_ became "cool", they hired an _AI_ expert to design an [LLM](https://en.wikipedia.org/wiki/Large_language_model) that could be trained by using thousands of automatically generated random programs attached to a [JTAG](https://en.wikipedia.org/wiki/JTAG) device in order to measure the instruction cycles. Initially it was my task to generate syntactically correct programs in assembly code that did not have nonsensical branches or loops. I designed the generator in _Python_. Afterwards I greatly improved the accuracy of the _LLM_ estimations by simply using the instruction cycle times specified by the chip's assembler manual _along_ with designing a relatively simple model of the CPU's pipeline. Even though there was already a _FOSS_ [QEMU](https://www.qemu.org/) description for the CPU (1) it did not take into account the pipeline, and (2) my instruction specification [Domain Specific Language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) included non-QEMU extensions in order to allow for simple generation of random instructions. With perfect hindsight, I should have redesigned the _DSL_ in order to merge my extensions into the _QEMU_ CPU description.
 	* I sketched a design for a proprietary _QEMU_ generic extension that would allow "smart" programmatic access to the I/O ports, but the company closed before the work could begin. Note that I invented this same feature c. 1993 for the debugger and simulator that I implemented for [DSPG](#dspg). It was critical for enabling them to design and debug application programs 6 months before their physical chips became physically available.
-</details>
-$endif
-
-$py(id="jct"; task="Lecturer: Introduction to Cybersecurity")
-### 2022 part-time: [Jerusalem College Of Technology (JCT/Machon Lev)](https://www.jct.ac.il/en) Jerusalem IL $(para(id))
-
-$if(is_pdf)
-$(pdetails(id,task))
-$else
-$(hdetails(task))
-
-1. I had mixed reviews from the students.
-
-2. They found I was a superb lecturer because I exhibited mastery of the subject matter and because I showed them how some of the course materials were  regularly used by Cybersecurity professionals in industry, unlike most of the teaching staff who were full-time academics.
-
-3. On the other hand, they rated me very poorly on my tutorials because I refused to "spoon feed" them. Admittedly some of the exercises were very difficult, and required substantial effort to answer them. I argued that it was essential for their understanding of the material that they solve the exercises themselves. I even stayed after class to help them.
-
-4. My takeaway is that if I should teach there again then I will not offer to do tutorials.
-
 </details>
 $endif
 
@@ -1033,6 +1018,35 @@ I invented a scheme to modify existing fonts so that a dyslexic can easily read 
 </table>
 
 $# end of Invention details
+</details>
+$endif
+
+$py(id="teaching"; task="Teaching")
+## Part-time Teaching Experience $(para(id))
+
+$if(is_pdf)
+$(pdetails(id,task))
+$else
+<details markdown="1">
+
+__2022:__ Introduction To Cybersecurity, at [Jerusalem College Of Technology (JCT/Machon Lev)](https://www.jct.ac.il/en).
+
+* The students and faculty loved my lectures because I regularly emphasized what course materials would be critical for their future professional work. However they extremely disliked my tutorials because I insisted that it was pedagogically critical to work out the difficult problems on their own. The majority of the students wanted me to "spoon feed" them. Often I stayed for more than one hour after class to help them.
+
+__~2018:__ At a family function, I taught a smart (but not genius) girl in 2nd grade, exponents, logarithms, and hexadecimal arithmetic with the help of her smartphone calculator, over a period of ~60 minutes.
+
+__~2016:__ I volunteered to teach 3 Units of Mathematics for Israeli Secondary School Matriculation (= Bagrut) for smart girls who had no background in math, at an Ulpana in Ra'anana. They all passed!
+
+__~2014:__ "Kinesiologically" I taught my grandson, then 10 years old who has a learning disability, how to multiply using floor tiles and masking tape. I knew he was successful when he announced that "4x2" is the same as "2x4".
+
+__~2014-2022:__ I taught most of my young grandchildren Python [Turtle Graphics](https://docs.python.org/3/library/turtle.html) when they were 10-12 years old. 
+
+__~1996:__ Windows NT Internals, at the Sivan Training Center in Jerusalem.
+
+__~1987:__ Database Theory, at the Michlelet Beit Vegan Teacher's College in Jerusalem. I was a substitute teacher for 3 months.
+
+I strongly recommend that high school students who learn trigonometry should also learn the much simpler base-60 [rational trigonometry](http://www.ms.lt/derlius/WildbergerDivineProportions.pdf) used the ancient Akkadians and Babylonians.
+
 </details>
 $endif
 
