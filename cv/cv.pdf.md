@@ -8,7 +8,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not available Fri. evenings (Jm time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
 <br/>__WWW:__ [https://www.avrahambernstein.com](https://www.avrahambernstein.com)
 <br/>__Linkedin:__ [https://www.linkedin.com/in/avrahambernstein/](https://www.linkedin.com/in/avrahambernstein/)
-<br/>__Last Update:__ 2025-05-22
+<br/>__Last Update:__ 2025-07-02
 </address>
 
 
