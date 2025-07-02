@@ -11,7 +11,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/><span class="hilite">__PDF:__ [https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf)</span> 
 <br/>__Copyright__ &copy; Avraham Bernstein 2017-2025, Jerusalem ISRAEL. All rights reserved.
 <br/>__License:__ FOSS SPDX BSD-3-Clause: [https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
-<br/>__Last Update:__ 2025-05-22
+<br/>__Last Update:__ 2025-07-02
 </address>
 
 
