@@ -1,5 +1,5 @@
 $py(
-now = '2025-05-22'
+now = '2025-07-02'
 yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
