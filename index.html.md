@@ -1,29 +1,18 @@
-$py(
-now = '2025-07-03'
-DOT = '&#x2022;'
 
-linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
-photo = 'AvrahamAbeBernstein-20250202-Watermarked.20pc.png'
-www = 'https://www.avrahambernstein.com'
-cv_root = www + '/cv/AvrahamAbeBernstein-CV'
-
-def obfus(text):
-	return '<span class="hide">' + text + '</span>'
-)
 <address markdown="1">
 __Author:__ Avraham "Abe" Bernstein
-<br/>__Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
-<br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
+<br/>__Email:__ Avraham DOT Bernstein AT gmail<span class="hide">bozo@example.com</span> DOT com
+<br/>__Tel/Whatsapp:__ +<span class="hide">bozo@example.com</span>972.54.641-0955
 <br/>__Video Channels:__
-<br/>&nbsp;&nbsp;__$(DOT) primary:__ [whatsapp](https://www.whatsapp.com/), [zoom](https://zoom.us/join)
-<br/>&nbsp;&nbsp;__$(DOT) secondary:__ [google meet](https://workspace.google.com/products/meet/), [microsoft teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
+<br/>&nbsp;&nbsp;__&#x2022; primary:__ [whatsapp](https://www.whatsapp.com/), [zoom](https://zoom.us/join)
+<br/>&nbsp;&nbsp;__&#x2022; secondary:__ [google meet](https://workspace.google.com/products/meet/), [microsoft teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 <br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not available Fri. evenings (Jm time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
-<br/>__Last Update:__ $(now)
+<br/>__Last Update:__ 2025-07-03
 </address>
 
-![Secure photo of the author]($(photo) "Secure photo of the author from 2025")
+![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
 
 __Secure[^secure-photo] photo of the author from 2025__
 
@@ -39,7 +28,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Immediate Family
 
-1. Wife: <i>Judy DOT Bernstein1 AT gmail$(obfus('bozo@example.com')) DOT com</i>, +$(obfus('bozo@example.com'))972.50.751-5111: designer of natural cosmetics
+1. Wife: <i>Judy DOT Bernstein1 AT gmail<span class="hide">bozo@example.com</span> DOT com</i>, +<span class="hide">bozo@example.com</span>972.50.751-5111: designer of natural cosmetics
 
 2. Son: _Yirmiyahu_ + 4: astrophysicist and optics
 
@@ -51,9 +40,9 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Links
 
-* __CV:__ Computer Scientist: [Long HTML]($(cv_root).html),&nbsp;&nbsp;[Short PDF]($(cv_root).pdf)
+* __CV:__ Computer Scientist: [Long HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html),&nbsp;&nbsp;[Short PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf)
 
-* __Linkedin:__ [$(linkedin)]($(linkedin))
+* __Linkedin:__ [https://www.linkedin.com/in/avrahambernstein/](https://www.linkedin.com/in/avrahambernstein/)
 
 * __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
 
