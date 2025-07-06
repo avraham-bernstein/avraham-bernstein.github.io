@@ -82,7 +82,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* [PyExpander](https://pyexpander.sourceforge.io/)
 		* [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
 		* [ubuntu](https://en.wikipedia.org/wiki/Ubuntu)
-		* virtual machines, and light weight containers ("lxc")
+		* virtual machines and [light weight containers (lxc)](https://dev.to/damilola_oladele/get-started-with-lxc-explained-with-installation-guide-4efj)
 		* [xfce](https://en.wikipedia.org/wiki/Xfce)
 		* [markdown](https://en.wikipedia.org/wiki/Markdown)
 		* [mkdocs](https://www.mkdocs.org/)
