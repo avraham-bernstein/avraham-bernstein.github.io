@@ -60,7 +60,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 * __Articles & Blog:__ TBD
 
-	* torah & israel:
+	1. torah & israel:
 		* aliyah
 		* divine creation
 		* wars against hamas and iranian islamofascists
@@ -70,7 +70,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* israel's "deep state" juristocracy
 		* startup nation
 		* ...
-	* computer science:
+	2. computer science:
 		* [obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) anti-reverse engineering
 		* cybersecurity
 		* [AST](https://en.wikipedia.org/wiki/AST) [source code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) using Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) and XML
@@ -88,12 +88,12 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* [mkdocs](https://www.mkdocs.org/)
 		* a learning program for a new computer science student
 		* ...
-	* accessibility & special education
-	* music composition
-	* health & excercise:
+	3. accessibility & special education
+	4. music composition
+	5. health & excercise:
 		* my 5 min. course to teach deep meditation just by using a clock with a second hand
 		* ...
-	* bookmarks
+	6. bookmarks
 
 * __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
 
