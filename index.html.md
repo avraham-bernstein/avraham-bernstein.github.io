@@ -63,6 +63,6 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## View From My Jerusalem Porch Overlooking The Navel of The World: The True "Urbi Et Orbi" 
 
-* TBD
+![Jerusalem View From My Porch](JmViewFromMyPorch_20250706_170242.jpg)
 
 ## Footnotes
