@@ -5,11 +5,11 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__Tel/Whatsapp:__ +<span class="hide">bozo@example.com</span>972.54.641-0955
 <br/>__Video Channels:__
 <br/>&nbsp;&nbsp;__&#x2022; primary:__ [whatsapp](https://www.whatsapp.com/), [zoom](https://zoom.us/join)
-<br/>&nbsp;&nbsp;__&#x2022; secondary:__ [google meet](https://workspace.google.com/products/meet/), [microsoft teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
+<br/>&nbsp;&nbsp;__&#x2022; secondary:__ [GOOGL meet](https://workspace.google.com/products/meet/), [MSFT teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 <br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evenings (Jm. time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
-<br/>__Last Update:__ 2025-07-03
+<br/>__Last Update:__ 2025-07-06
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -45,16 +45,20 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 * __Linkedin:__ [https://www.linkedin.com/in/avrahambernstein/](https://www.linkedin.com/in/avrahambernstein/)
 
-* __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
-
-* __Articles:__ TBD
-
-* __Computer Science & Obfuscation Wiki:__ TBD
-
 * __Github:__ TBD
 
-* __Blog:__ TBD
+* __Articles & Blog:__ TBD
 
-* __Bookmarks:__ TBD
+	* torah & israel:
+		* aliyah, divine creation, wars against hamas and iranian islamofascism, oslo fiasco, juristocracy, startup nation, ...
+	* computer science:
+		* [obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) (anti-reverse engineering), [AST](https://en.wikipedia.org/wiki/AST) [source code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) using Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) and XML, security, [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), modern C11 programming, algorithms, [Misra C](https://en.wikipedia.org/wiki/MISRA_C), [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine), [PyExpander](https://pyexpander.sourceforge.io/), bash, Ubuntu, Xfce, markdown, [mkdocs](https://www.mkdocs.org/), ...
+	* accessibility & special education
+	* music composition
+	* bookmarks
+
+* __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
+
+## View From My Jerusalem Porch Overlooking The Navel of The World: The True "Urbi Et Orbi" 
 
 ## Footnotes
