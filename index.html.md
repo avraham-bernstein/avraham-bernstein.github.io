@@ -55,6 +55,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* wars against hamas and iranian islamofascists
 		* "progressive" antisemitism
 		* oslo so-called "peace process" fiasco
+		* successful challenge of the IDF's illegal rules of engagement at the supreme court
 		* my experience as an anti-oslo spy
 		* israel's "deep state" juristocracy
 		* startup nation
@@ -65,7 +66,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* [AST](https://en.wikipedia.org/wiki/AST) [source code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) using Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) and XML
 		* [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language)
 		* modern [C11](https://en.wikipedia.org/wiki/C11_(C_standard_revision)) programming
-		* [algorithms](https://en.wikipedia.org/wiki/Algorithm)
+		* [algorithmic](https://en.wikipedia.org/wiki/Algorithm) inventions
 		* [Misra C](https://en.wikipedia.org/wiki/MISRA_C)
 		* [Jinja2](https://jinja.palletsprojects.com/en/stable/)
 		* [PyExpander](https://pyexpander.sourceforge.io/)
