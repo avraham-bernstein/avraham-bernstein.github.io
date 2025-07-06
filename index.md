@@ -66,6 +66,8 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* [obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) (anti-reverse engineering), cybersecurity, [AST](https://en.wikipedia.org/wiki/AST) [source code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) using Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) and XML, [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), modern [C11](https://en.wikipedia.org/wiki/C11_(C_standard_revision)) programming, [algorithms](https://en.wikipedia.org/wiki/Algorithm), [Misra C](https://en.wikipedia.org/wiki/MISRA_C), [Jinja2](https://jinja.palletsprojects.com/en/stable/), [PyExpander](https://pyexpander.sourceforge.io/), [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), [ubuntu](https://en.wikipedia.org/wiki/Ubuntu), [xfce](https://en.wikipedia.org/wiki/Xfce), [markdown](https://en.wikipedia.org/wiki/Markdown), [mkdocs](https://www.mkdocs.org/), ...
 	* accessibility & special education
 	* music composition
+	* health & excercise:
+		* 5 min. course to learn deep meditation just by using a clock with a second hand, ...
 	* bookmarks
 
 * __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
