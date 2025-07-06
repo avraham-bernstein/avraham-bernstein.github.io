@@ -72,8 +72,8 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 * __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
 
-## View From My Jerusalem Porch Overlooking The Navel of The World: The True "Urbi Et Orbi" 
+## View From My North Jerusalem Porch Overlooking The Navel of The World: The True "Urbi Et Orbi" 
 
-![Jerusalem View From My Porch](JmViewFromMyPorch_20250706_170242.jpg)
+![View From My Jerusalem Porch](JmViewFromMyPorch_20250706_170242.jpg)
 
 ## Footnotes
