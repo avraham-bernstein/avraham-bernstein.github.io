@@ -5,10 +5,10 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__Tel/Whatsapp:__ +<span class="hide">bozo@example.com</span>972.54.641-0955
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
-<br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not available Fri. evenings (Jm time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
+<br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ , nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
 <br/>__WWW:__ [https://www.avrahambernstein.com](https://www.avrahambernstein.com)
 <br/>__Linkedin:__ [https://www.linkedin.com/in/avrahambernstein/](https://www.linkedin.com/in/avrahambernstein/)
-<br/>__Last Update:__ 2025-07-02
+<br/>__Last Update:__ 2025-07-06
 </address>
 
 
