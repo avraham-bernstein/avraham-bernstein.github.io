@@ -61,12 +61,16 @@ __Secure[^secure-photo] photo of the author from 2025__
 * __Articles & Blog:__ TBD
 
 	1. torah & israel:
-		* aliyah
-		* divine creation
+		* my aliyah
+		* the scientific support for divine creation
 		* wars against hamas and iranian islamofascists
-		* "progressive" antisemitism
+		* desecration of hashem's name: 
+			* the oct 7 rave dancers under a statue of budda while the majority of jews danced in front of torah scrolls on simchat torah
+			* hareidi draft evasion during an existential war
+			* "pride" lgbtq+ march in the streets of jerusalem
+		* "progressive" antisemitism in the western world
 		* oslo so-called "peace process" fiasco
-		* successful challenge of the IDF's illegal rules of engagement at the supreme court
+		* my successful challenge of the IDF's illegal rules of engagement at the supreme court during the height of the oslo lunacy
 		* my experience as an anti-oslo spy
 		* israel's "deep state" juristocracy
 		* startup nation
@@ -87,18 +91,23 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* [xfce](https://en.wikipedia.org/wiki/Xfce)
 		* [markdown](https://en.wikipedia.org/wiki/Markdown)
 		* [mkdocs](https://www.mkdocs.org/)
-		* a learning program for a new computer science student
+		* a curriculum for a new computer science student
 		* ...
 	3. accessibility & special education
+		* my invention enabling the blind to "see"/understand maps and mathematical functions by using a standard web browser and a consumer grade graphics tablet
+		* my invention of a generic dyslexic friendly font
+		* kinesiological teaching of multiplication
+		* teaching a second grader advanced mathematics: exponents and binary arithmetic
+		* ...
 	4. music composition
-	5. health & excercise:
+	5. health & exercise:
 		* my 5 min. course to teach deep meditation just by using a clock with a second hand
 		* ...
 	6. bookmarks
 
 * __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
 
-## View From My North Jerusalem Porch Overlooking The Navel of The World: The True "Urbi Et Orbi" 
+## View From My North Jerusalem Porch With Southern Exposure Overlooking The Navel of The World: The True Place To Declare "Urbi Et Orbi" 
 
 ![View From My Jerusalem Porch](JmViewFromMyPorch_20250706_170242.jpg)
 
