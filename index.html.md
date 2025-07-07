@@ -93,9 +93,9 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* my 5 min. course to teach deep meditation just by using a clock with a second hand
 		* ...
 	6. community service:
-		* 2023: rescued an extremely bright autistic teen from being instituionalized due to malicious negligence by the ministry of education
-		* 2016-19: rescued 3 young children at family court from foster care when social services maliciously and falsely accused the father of being a pedophile when in fact his young daughter was molested in locked-down institutions (i.e. plural) run by social services
-		* 1977: while a student in an MBA program led the battle for marginal cost pricing for electricity in the province of ontario, in the face of strident corporate opposition by huge electricity consumers for smelting metal (with government backing) to subsidize electricity prices
+		* 2023 Jerusalem: rescued an extremely bright autistic teen from being instituionalized due to malicious negligence by the ministry of education
+		* 2016-19 Jerusalem: rescued 3 young children at family court from foster care when social services maliciously and falsely accused the father of being a pedophile when in fact his young daughter was molested in locked-down institutions (i.e. plural) run by social services
+		* 1977 Toronto: while a student in an MBA program led the battle for marginal cost pricing for electricity in the province of ontario, in the face of strident corporate opposition by huge electricity consumers for smelting metal (with surreptitious government backing) to subsidize electricity prices
 	7. bookmarks
 
 * __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
