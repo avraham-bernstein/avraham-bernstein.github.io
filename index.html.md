@@ -54,9 +54,9 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* the scientific support for divine creation
 		* wars against hamas and iranian islamofascists
 		* desecration of hashem's name:
-			a. the oct 7 "rave" dancers under a [statue of budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of jews danced in front of torah scrolls on simchat torah
-			b. hareidi draft evasion during an existential war
-			c. so-called "pride" lgbtq+ marches in the streets of jerusalem
+			1. the oct 7 "rave" dancers under a [statue of budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of jews danced in front of torah scrolls on simchat torah
+			2. hareidi draft evasion during an existential war
+			3. so-called "pride" lgbtq+ marches in the streets of jerusalem
 		* "progressive" antisemitism in the western world
 		* oslo so-called "peace process" fiasco
 		* my successful challenge of the IDF's illegal rules of engagement at the supreme court during the height of the oslo lunacy
