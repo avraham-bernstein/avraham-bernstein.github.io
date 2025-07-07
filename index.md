@@ -105,7 +105,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* ...
 	6. community service:
 		* 2023: rescued an extremely bright autistic teen from being instituionalized due to gross negligence by the ministry of education
-		* 2020: rescued 3 young children at family court from foster care when social services maliciously and falsely accused the father of being a pedophile when in fact his young daughter was molested in locked-down institutions (i.e. plural) run by social services
+		* 2018-20: rescued 3 young children at family court from foster care when social services maliciously and falsely accused the father of being a pedophile when in fact his young daughter was molested in locked-down institutions (i.e. plural) run by social services
 		* 1977: while a student in an MBA program led the battle for marginal cost pricing for electricity in the province of ontario, in the face of strident corporate huge energy consumers opposition (with government support) to subsidize electricity prices
 	7. bookmarks
 
