@@ -64,7 +64,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* my aliyah
 		* the scientific support for divine creation
 		* wars against hamas and iranian islamofascists
-		* desecration of hashem's name: 
+		* desecration of hashem's name:
 			a. the oct 7 "rave" dancers under a [statue of budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of jews danced in front of torah scrolls on simchat torah
 			b. hareidi draft evasion during an existential war
 			c. so-called "pride" lgbtq+ marches in the streets of jerusalem
