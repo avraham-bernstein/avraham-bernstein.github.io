@@ -63,7 +63,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 	1. torah & israel:
 		* my aliyah
 		* the scientific support for divine creation
-		* wars against hamas and iranian islamofascists
+		* wars against hamas and iranian islamofascist barbarians
 		* desecration of hashem's name:
 			1. the oct 7 "rave" dancers under a [statue of budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of jews danced in front of torah scrolls on simchat torah
 			2. hareidi draft evasion during an existential war
