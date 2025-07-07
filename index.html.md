@@ -83,7 +83,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* a curriculum for a new computer science student
 		* ...
 	3. accessibility & special education
-		* my invention enabling the blind to "see"/understand maps and mathematical functions by using a standard web browser and a consumer grade graphics tablet
+		* my invention enabling the blind to sonically "see"/understand maps and mathematical functions by using a standard web browser and a consumer grade graphics tablet
 		* my invention of a generic dyslexic friendly font
 		* kinesiological teaching of multiplication
 		* teaching a second grader advanced mathematics: exponents and binary arithmetic
