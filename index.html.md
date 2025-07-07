@@ -92,7 +92,11 @@ __Secure[^secure-photo] photo of the author from 2025__
 	5. health & exercise:
 		* my 5 min. course to teach deep meditation just by using a clock with a second hand
 		* ...
-	6. bookmarks
+	6. community service:
+		* 2023: rescued an extremely bright autistic teen from being instituionalized due to gross negligence by the ministry of education
+		* 2020: rescued 3 young children at family court from foster care when social services maliciously and falsely accused the father of being a pedophile when in fact the child was molested in locked down institution__s__ run by social services
+		* 1977: led the battle for marginal cost pricing for electricity in the province of ontario, in the face of strident corporate opposition (with government support) to subsidize electricity prices
+	7. bookmarks
 
 * __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
 
