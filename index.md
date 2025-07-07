@@ -111,7 +111,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 * __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
 
-## View From My North Jerusalem Porch With Southern Exposure Overlooking The Navel of The World: The True Place To Declare "Urbi Et Orbi" 
+## View From My North Jerusalem Porch With Southern Exposure Overlooking The Navel Of The World: The True Place To Declare "Urbi Et Orbi" 
 
 ![View From My Jerusalem Porch](JmViewFromMyPorch_20250706_170242.jpg)
 
