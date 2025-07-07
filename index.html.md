@@ -95,7 +95,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 	6. community service:
 		* 2023 Jerusalem: rescued an extremely bright autistic teen from being institutionalized due to malicious negligence by the ministry of education
 		* 2016-19 Jerusalem: rescued 3 young children at family court from foster care when the ministry of social services maliciously and falsely accused the father of being a pedophile when in fact his young daughter was serially (!) molested in locked-down institutions run by social services
-		* 1977 Toronto: while a student in an MBA program led the battle for [marginal cost pricing for electricity](https://neon.energy/marginal-pricing) in the province of ontario, in the face of strident corporate opposition by huge electricity consumers for smelting metal (with surreptitious government backing) to subsidize electricity prices
+		* 1977 Toronto: while a student in an MBA program led the battle for [marginal cost pricing for electricity](https://neon.energy/marginal-pricing) in the province of ontario, in the face of strident corporate opposition by huge electricity consumers who smelted metal who advocated hidden subsidies with surreptitious government backing 
 	7. bookmarks
 
 * __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
