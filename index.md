@@ -62,7 +62,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 	1. torah & israel:
 		* my aliyah
-		* the scientific support for divine creation
+		* the scientific evidence for divine creation
 		* wars against hamas and iranian islamofascist barbarians
 		* desecration of [hashem's](https://www.myjewishlearning.com/article/hashem/) name:
 			1. the oct 7 ["rave" dancers under a statue of budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of jews [danced in front of torah scrolls on simchat torah](https://www.jpost.com/opinion/article-825795)
