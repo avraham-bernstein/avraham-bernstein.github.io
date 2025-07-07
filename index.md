@@ -64,9 +64,9 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* my aliyah
 		* the scientific support for divine creation
 		* wars against hamas and iranian islamofascist barbarians
-		* desecration of hashem's name:
+		* desecration of [hashem's](https://www.myjewishlearning.com/article/hashem/) name:
 			1. the oct 7 ["rave" dancers under a statue of budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of jews [danced in front of torah scrolls on simchat torah](https://www.jpost.com/opinion/article-825795)
-			2. hareidi draft evasion during an existential war
+			2. [hareidi](https://www.myjewishlearning.com/article/haredim-charedim/) draft evasion during an existential war
 			3. so-called "pride" lgbtq+ marches in the streets of jerusalem
 		* "progressive" antisemitism in the western world
 		* oslo so-called "peace process" fiasco
