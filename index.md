@@ -68,7 +68,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 			1. the oct 7 ["rave" dancers under a statue of budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of jews [danced in front of torah scrolls on simchat torah](https://www.jpost.com/opinion/article-825795)
 			2. [hareidi](https://www.myjewishlearning.com/article/haredim-charedim/) draft evasion during an existential war
 			3. so-called "pride" lgbtq+ marches in the streets of jerusalem
-		* "progressive" antisemitism in the western world
+		* so-called "progressive" antisemitism in the western world
 		* oslo so-called "peace process" fiasco
 		* my successful challenge of the IDF's illegal rules of engagement at the supreme court during the height of the oslo lunacy
 		* my experience as an anti-oslo spy
