@@ -86,12 +86,12 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* [Misra C](https://en.wikipedia.org/wiki/MISRA_C)
 		* [Jinja2](https://jinja.palletsprojects.com/en/stable/)
 		* [PyExpander](https://pyexpander.sourceforge.io/)
-		* [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
-		* [ubuntu](https://en.wikipedia.org/wiki/Ubuntu)
+		* [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+		* [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu)
 		* virtual machines and [light weight containers (lxc)](https://dev.to/damilola_oladele/get-started-with-lxc-explained-with-installation-guide-4efj)
-		* [xfce](https://en.wikipedia.org/wiki/Xfce)
-		* [markdown](https://en.wikipedia.org/wiki/Markdown)
-		* [mkdocs](https://www.mkdocs.org/)
+		* [Xfce](https://en.wikipedia.org/wiki/Xfce)
+		* [Markdown](https://en.wikipedia.org/wiki/Markdown)
+		* [Mkdocs](https://www.mkdocs.org/)
 		* a curriculum for a new computer science student
 		* ...
 	3. Accessibility & Special Education:
