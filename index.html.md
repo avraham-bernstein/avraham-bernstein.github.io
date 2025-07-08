@@ -85,7 +85,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 			1. an extremely efficient `2^N` sized hash table that can grow without rehashing
 			2. novel and efficient _Hamming Weight_-like calculation, i.e. that maps a number in the range \[0,(`2^N`)-1\] to the range \[0,N\], via the use of DFTs that generates a nearly uniform probability distribution that makes it useful as a cryptographic primitive
 			3. highly efficient (i.e. via register operations) _invertible_ pseudo-random key wrapper primitive that maps a `2^N` bit number to a `2^(2N)` bit number
-			4. bioinformatics PCR simple and accurate "systematic" noise reduction calculation
+			4. bioinformatics PCR trivial and accurate "systematic" noise reduction calculation
 			5. bioinformatics PCR highly accurate "Ct" calculation using AI techniques (i.e. without the use of functional analysis) that generally works even when encountering "inhibition"
 		* ...
 	3. Accessibility & Special Education:
