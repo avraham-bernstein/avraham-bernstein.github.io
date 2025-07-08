@@ -116,7 +116,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* 2023 Jerusalem: Rescued an extremely bright autistic teen from being declared truant and forcibly sent to an institution for emotional retards due to malicious negligence by the Ministry of Education.
 		* 2016-19 Jerusalem: Rescued 3 young children at family court from foster care when the Ministry of Social Services maliciously and falsely accused the father of being a pedophile when in fact his young daughter was serially molested in locked-down institutions run by Social Services.
 		* 1977 Toronto: While a student in an MBA program led the battle for [marginal cost pricing for electricity](https://neon.energy/marginal-pricing) in the Province of Ontario, in the face of strident corporate opposition by huge electricity consumers who smelted metal who advocated hidden subsidies with surreptitious government backing.
-	7. My Bookmarks.
+	7. My Bookmarks
 
 ## View From My North Jerusalem Porch With Southern Exposure Overlooking The Navel Of The World: The True Place From Which To Declare "Urbi Et Orbi" 
 
