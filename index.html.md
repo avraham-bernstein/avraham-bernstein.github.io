@@ -52,7 +52,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 	1. Torah & _Yisrael_:
 		* My _Aliyah_, i.e. immigration to _Eretz Yisrael_.
 		* The scientific evidence for divine creation.
-		* The reason why [HaShem](https://www.myjewishlearning.com/article/hashem/) chose the Jews, and _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)](https://mechon-mamre.org/p/pt/pt0118.htm). In our time the world is witnessing (1) the fulfillment of this directive when the Jewish People stands alone in the world to rise up like a lioness to devour evil, and (2) the utter nonsense of the _Abrahamic_ "supercessionist" (aka replacement) theologies.            
+		* The reason why [HaShem](https://www.myjewishlearning.com/article/hashem/) chose the Jews, along with _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)](https://mechon-mamre.org/p/pt/pt0118.htm). In our time the world is witnessing (1) the fulfillment of this directive when the Jewish People stand alone in the world to rise up like a lioness to devour evil, and (2) the utter nonsense of the _Abrahamic_ "supercessionist" (aka replacement) theologies.            
 		* Wars against Hamas and Iranian Islamofascist barbarians.
 		* Desecration of [Hashem's](https://www.myjewishlearning.com/article/hashem/) name:
 			1. The Oct. 7 ["rave" dancers under a statue of Budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of believing Jews [danced in front of Torah scrolls on _Simchat Torah_](https://www.jpost.com/opinion/article-825795).
