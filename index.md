@@ -82,7 +82,13 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* [AST](https://en.wikipedia.org/wiki/AST) [source code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) using Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) and XML
 		* [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language)
 		* modern [C11](https://en.wikipedia.org/wiki/C11_(C_standard_revision)) programming
-		* [algorithmic](https://en.wikipedia.org/wiki/Algorithm) inventions
+		* my [algorithmic](https://en.wikipedia.org/wiki/Algorithm) inventions:
+			1. an extremely efficient `2^N` sized hash table that can grow without rehashing
+			2. novel and efficient _Hamming Weight_-like calculation, i.e. that maps a number in the range \[0,`2^N`-1\] to the range \[0,N\], via the use of DFTs that generates a nearly uniform probability distribution that makes it useful as a cryptographic primitive
+			3. highly efficient (i.e. via register operations) invertible pseudo-random key wrapper primitive that converts a `2^N` bit number to a `2^(2N)` bit number.
+			4. bioinformatics PCR simple and accurate systematic noise reduction calculation
+			5. bioinformatics PCR highly accurate "Ct" calculation using AI techniques (i.e. without the use of functional analysis) that generally works even when encountering "inhibition"
+			6. ...
 		* [Misra C](https://en.wikipedia.org/wiki/MISRA_C)
 		* [Jinja2](https://jinja.palletsprojects.com/en/stable/)
 		* [PyExpander](https://pyexpander.sourceforge.io/)
