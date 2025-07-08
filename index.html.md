@@ -50,7 +50,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 * __Articles & Blog:__ TBD
 
 	1. Torah & _Yisrael_:
-		* My _Aliyah_ (i.e. immigration to _Eretz Yisrael_).
+		* My _Aliyah_, i.e. immigration to _Eretz Yisrael_.
 		* The scientific evidence for divine creation.
 		* The reason why [HaShem](https://www.myjewishlearning.com/article/hashem/) chose the Jews, and _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)](https://mechon-mamre.org/p/pt/pt0118.htm). In our time the world is witnessing (1) the fulfillment of this directive when the Jewish People stands alone in the world to rise up like a lioness to devour evil, and (2) the utter nonsense of the _Abrahamic_ "supercessionist" (aka replacement) theologies.            
 		* Wars against Hamas and Iranian Islamofascist barbarians.
@@ -58,8 +58,8 @@ __Secure[^secure-photo] photo of the author from 2025__
 			1. The Oct. 7 ["rave" dancers under a statue of Budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of believing Jews [danced in front of Torah scrolls on _Simchat Torah_](https://www.jpost.com/opinion/article-825795).
 			2. [Hareidi](https://www.myjewishlearning.com/article/haredim-charedim/) draft evasion during an existential war.
 			3. So-called "pride" "lgbtq+" marches in the streets of _Yerushalayim_.
-		* The massive worldwide uptick in so-called "progressive" antisemitism in the Western world. We will soon see the fulfillment of the prophecy [blessed be those who bless _Yisrael_, and cursed be those who  curse _Yisrael_ (Num. 24:9)](https://mechon-mamre.org/p/pt/pt0424.htm).
-		* The Oslo so-called "peace process" fiasco. Oslo was not a "noble experiment" that just happened to fail. The primary instigators, _Shimon Peres_ and _Yossi Beilin_, intentionally designed it to fail!
+		* The massive uptick in so-called "progressive" antisemitism in the Western world. We will soon see the fulfillment of the prophecy [blessed be those who bless _Yisrael_, and cursed be those who  curse _Yisrael_ (Num. 24:9)](https://mechon-mamre.org/p/pt/pt0424.htm).
+		* The Oslo so-called "peace process" fiasco. Oslo was not a "noble experiment" that "just happened" to fail. The primary instigators, _Shimon Peres_ and _Yossi Beilin_, intentionally designed it to fail!
 		* 1995-96: My successful challenge of the IDF's illegal rules of engagement at the Supreme Court during the height of the Oslo lunacy.
 		* 1993-95: My experience as an anti-Oslo spy.
 		* Israel's "deep state" [juristocracy](https://valdaiclub.com/a/highlights/juristocracy-from-the-rule-of-law/).
