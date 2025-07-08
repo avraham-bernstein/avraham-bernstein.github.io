@@ -9,7 +9,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 <br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evenings (Jm. time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
-<br/>__Last Update:__ 2025-07-07
+<br/>__Last Update:__ 2025-07-08
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -21,9 +21,9 @@ __Secure[^secure-photo] photo of the author from 2025__
 * __Geolocation:__ Ramot Bet, Jerusalem 9727433 ISRAEL, [31.808472N, 35.200944E](https://www.google.com/maps/place/31.808472,35.200944). __Call for exact address!__
 
 * __[Public Transit](https://moovitapp.com/index/en/public_transit-Jerusalem-Israel-site_21889814-1):__ 
-	1. 3 min. walk via bus lines 61, 62, or 72 at [stop #3483 Yigal Alon (westbound) - Derech HaHoresh](https://www.google.com/maps/place/Yigal+Allon%2FHaHoresh+Road/@31.8083434,35.2003684,17.13z/data=!4m14!1m7!3m6!1s0x1502d611ce627b0d:0x85b254a042ae21b9!2z15nXkteQ15wg15DXnNeV158v16knJ9eZ!8m2!3d31.808916!4d35.200722!16s%2Fg%2F12hrkrhm8!3m5!1s0x1502d60fc8b79bc7:0x3e3a8a7dc9ab930d!8m2!3d31.810358!4d35.201721!16s%2Fg%2F12hm16kmn?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDQwMS4wIKXMDSoASAFQAw%3D%3D), i.e. the 2nd stop on _Yigal Alon St_. At the crosswalk on _Yigal Alon_, cross into _Derech HaHoresh_. Continue walking for about 40 meters, and then turn right into the first side street.
+	1. 3 min. walk via bus lines 61, 62, or 72 at [stop #3483 Yigal Alon (westbound) - Derech HaHoresh](https://www.google.com/maps/place/Yigal+Allon%2FHaHoresh+Road/@31.8083434,35.2003684,17.13z/data=!4m14!1m7!3m6!1s0x1502d611ce627b0d:0x85b254a042ae21b9!2z15nXkteQ15wg15DXnNeV158v16knJ9eZ!8m2!3d31.808916!4d35.200722!16s%2Fg%2F12hrkrhm8!3m5!1s0x1502d60fc8b79bc7:0x3e3a8a7dc9ab930d!8m2!3d31.810358!4d35.201721!16s%2Fg%2F12hm16kmn?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDQwMS4wIKXMDSoASAFQAw%3D%3D), i.e. the 2nd stop on _Yigal Alon St_. At the crosswalk on _Yigal Alon_, cross into _Derech HaHoresh_. Continue walking for about 40 meters, and then turn right into the first side street, and continue walking for about 150 meters.
 		* In order to return to town, return to _Yigal Alon_ across the street from the stop where you arrived, at [stop #2262 Yigal Alon (eastbound) - Derech HaHoresh](https://www.google.com/maps/place/Yigal+Allon%2FHaHoresh+Road/@31.8091604,35.2014654,18.58z/data=!4m6!3m5!1s0x1502d60fd7cd4491:0x3d6c0f4d8bc96fac!8m2!3d31.80946!4d35.201637!16s%2Fg%2F12hn7ywtg?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D) take bus lines 62 (to the central bus station), 72 (to mid-town), or 61 (to _Mt. Scopus_), all of which stop at hub [stop #4009 Ramot Junction/Golda (southbound)](https://www.google.com/maps/place/Ramot+Junction%2FGolda/@31.8087551,35.203711,18.29z/data=!4m14!1m7!3m6!1s0x1502d6055edc8dc9:0x9d0c1ea988bd94c2!2sRamot+Junction%2FGolda!8m2!3d31.809649!4d35.204063!16s%2Fg%2F12jw0jcvm!3m5!1s0x1502d61aa9b0c601:0x72811a6d56863e21!8m2!3d31.80825!4d35.203987!16s%2Fg%2F12hp_pynq?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D).
-	2. Or alternatively a 12 min. walk (or wait to transfer to bus lines 61, 62, or 72 mentioned above) via the many north Jerusalem bus lines that go to hub [stop #5130 Ramot Junction/Golda (northbound)](https://www.google.com/maps/place/Ramot+Junction%2FGolda/@31.8088152,35.2036742,18z/data=!4m5!3m4!1s0x1502d6055edc8dc9:0x9d0c1ea988bd94c2!8m2!3d31.8096483!4d35.2040617?hl=en-US). From the stop, walk north on _Golda Meir Blvd._ for about 300 meters until the traffic lights at _Yigal Alon_ (left side) and _Harry Truman_ (right side) streets. Turn left into _Yigal Alon_, and continue to walk (westbound) until the 2nd bus stop (i.e. #3483 mentioned above) at the corner of _Derech HaHoresh_. At the crosswalk, turn left into _Derech HaHoresh_. Continue walking for about 40 meters, and then turn right into the first side street.
+	2. Or alternatively a 12 min. walk (or wait to transfer to bus lines 61, 62, or 72 mentioned above) via the many north Jerusalem bus lines that go to hub [stop #5130 Ramot Junction/Golda (northbound)](https://www.google.com/maps/place/Ramot+Junction%2FGolda/@31.8088152,35.2036742,18z/data=!4m5!3m4!1s0x1502d6055edc8dc9:0x9d0c1ea988bd94c2!8m2!3d31.8096483!4d35.2040617?hl=en-US). From the stop, walk north on _Golda Meir Blvd._ for about 300 meters until the traffic lights at _Yigal Alon_ (left side) and _Harry Truman_ (right side) streets. Turn left into _Yigal Alon_, and continue to walk (westbound) about 300 meters until the 2nd bus stop (i.e. #3483 mentioned above) at the corner of _Derech HaHoresh_. At the crosswalk, turn left into _Derech HaHoresh_. Continue walking for about 40 meters, and then turn right into the first side street, and continue walking for about 150 meters.
 
 * __Driving:__ Long term street parking is available at or near [Derech HaHoresh 18, 20, 22, or 24](https://www.google.com/maps/place/Derech+Hahoresh+8-30,+Jerusalem/@31.8083226,35.1986383,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x1502d611ce627b0d:0x85b254a042ae21b9!2z15nXkteQ15wg15DXnNeV158v16knJ9eZ!8m2!3d31.808916!4d35.200722!16s%2Fg%2F12hrkrhm8!3m5!1s0x1502d611cab7eed3:0xb28cfd5d57b34ef6!8m2!3d31.8083226!4d35.2012132!16s%2Fg%2F11g62crx2y?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDQwMS4wIKXMDSoASAFQAw%3D%3D). On the north (i.e. even numbered) side of _HaHoresh_, walk __up__ the steps between the cottages until the first street.
 
@@ -49,22 +49,23 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 * __Articles & Blog:__ TBD
 
-	1. torah & israel:
-		* my aliyah
-		* the scientific evidence for divine creation
-		* wars against hamas and iranian islamofascist barbarians
-		* desecration of [hashem's](https://www.myjewishlearning.com/article/hashem/) name:
-			1. the oct 7 ["rave" dancers under a statue of budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of jews [danced in front of torah scrolls on simchat torah](https://www.jpost.com/opinion/article-825795)
-			2. [hareidi](https://www.myjewishlearning.com/article/haredim-charedim/) draft evasion during an existential war
-			3. so-called "pride" lgbtq+ marches in the streets of jerusalem
-		* so-called "progressive" antisemitism in the western world
-		* oslo so-called "peace process" fiasco
-		* my successful challenge of the IDF's illegal rules of engagement at the supreme court during the height of the oslo lunacy
-		* my experience as an anti-oslo spy
-		* israel's "deep state" [juristocracy](https://valdaiclub.com/a/highlights/juristocracy-from-the-rule-of-law/)
-		* startup nation
+	1. Torah & _Yisrael_:
+		* My _Aliyah_ (i.e. immigration to _Eretz Yisrael_).
+		* The scientific evidence for divine creation.
+		* The reason why [HaShem](https://www.myjewishlearning.com/article/hashem/) chose the Jews, and _His_ primary directive to the Jewish People [to keep the way of _HaShem_, to execute righteousness and justice (Gen. 18:19)](https://mechon-mamre.org/p/pt/pt0118.htm). In our time the world is witnessing (1) the fulfillment of this directive when the Jewish People stands alone in the world to rise up like a lioness to devour evil, and (2) the utter nonsense of the _Abrahamic_ "supercessionist" (aka replacement) theologies.            
+		* Wars against Hamas and Iranian Islamofascist barbarians.
+		* Desecration of [Hashem's](https://www.myjewishlearning.com/article/hashem/) name:
+			1. The Oct. 7 ["rave" dancers under a statue of Budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of believing Jews [danced in front of Torah scrolls on _Simchat Torah_](https://www.jpost.com/opinion/article-825795).
+			2. [Hareidi](https://www.myjewishlearning.com/article/haredim-charedim/) draft evasion during an existential war.
+			3. So-called "pride" "lgbtq+" marches in the streets of _Yerushalayim_.
+		* The massive worldwide uptick in so-called "progressive" antisemitism in the Western world. We will soon see the fulfillment of the prophecy [blessed be those who bless _Yisrael_, and cursed be those who  curse _Yisrael_ (Num. 24:9)](https://mechon-mamre.org/p/pt/pt0424.htm).
+		* The Oslo so-called "peace process" fiasco. Oslo was not a "noble experiment" that just happened to fail. The primary instigators, _Shimon Peres_ and _Yossi Beilin_, intentionally designed it to fail!
+		* 1995-96: My successful challenge of the IDF's illegal rules of engagement at the Supreme Court during the height of the Oslo lunacy.
+		* 1993-95: My experience as an anti-Oslo spy.
+		* Israel's "deep state" [juristocracy](https://valdaiclub.com/a/highlights/juristocracy-from-the-rule-of-law/).
+		* The "Startup Nation".
 		* ...
-	2. computer science:
+	2. Computer Science:
 		* [obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) anti-reverse engineering
 		* cybersecurity
 		* [AST](https://en.wikipedia.org/wiki/AST) [source code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) using Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) and XML
@@ -82,25 +83,25 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* [mkdocs](https://www.mkdocs.org/)
 		* a curriculum for a new computer science student
 		* ...
-	3. accessibility & special education
-		* my invention enabling the blind to sonically "see"/understand maps and mathematical functions by using a standard web browser and a consumer grade graphics tablet
-		* my invention of a generic dyslexic friendly font
-		* kinesiological teaching of multiplication
-		* teaching a second grader advanced mathematics: exponents and binary arithmetic
+	3. Accessibility & Special Education:
+		* My invention enabling the blind to sonically "see"/understand maps and mathematical functions by using a standard web browser and a consumer grade graphics tablet.
+		* My invention of a generic _dyslexic_ friendly font.
+		* How I taught kinesiological multiplication.
+		* How I taught a second grader advanced mathematics in 30 min., i.e. exponents and binary arithmetic.
 		* ...
-	4. music composition
-	5. health & exercise:
-		* my 5 min. course to teach deep meditation just by using a clock with a second hand
+	4. Music Composition Software
+	5. Health & Exercise:
+		* My 5 min. course to teach deep meditation just by using a clock with a second hand.
 		* ...
-	6. community service:
-		* 2023 Jerusalem: rescued an extremely bright autistic teen from being declared truant and forcibly sent to an institution for emotional retards due to malicious negligence by the ministry of education
-		* 2016-19 Jerusalem: rescued 3 young children at family court from foster care when the ministry of social services maliciously and falsely accused the father of being a pedophile when in fact his young daughter was serially molested in locked-down institutions run by social services
-		* 1977 Toronto: while a student in an MBA program led the battle for [marginal cost pricing for electricity](https://neon.energy/marginal-pricing) in the province of ontario, in the face of strident corporate opposition by huge electricity consumers who smelted metal who advocated hidden subsidies with surreptitious government backing 
-	7. bookmarks
+	6. Community Service:
+		* 2023 Jerusalem: Rescued an extremely bright autistic teen from being declared truant and forcibly sent to an institution for emotional retards due to malicious negligence by the Ministry of Education.
+		* 2016-19 Jerusalem: Rescued 3 young children at family court from foster care when the Ministry of Social Services maliciously and falsely accused the father of being a pedophile when in fact his young daughter was serially molested in locked-down institutions run by Social Services.
+		* 1977 Toronto: While a student in an MBA program led the battle for [marginal cost pricing for electricity](https://neon.energy/marginal-pricing) in the Province of Ontario, in the face of strident corporate opposition by huge electricity consumers who smelted metal who advocated hidden subsidies with surreptitious government backing.
+	7. My Bookmarks.
 
 * __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
 
-## View From My North Jerusalem Porch With Southern Exposure Overlooking The Navel Of The World: The True Place To Declare "Urbi Et Orbi" 
+## View From My North Jerusalem Porch With Southern Exposure Overlooking The Navel Of The World: The True Place From Which To Declare "Urbi Et Orbi" 
 
 ![View From My Jerusalem Porch](JmViewFromMyPorch_20250706_170242.jpg)
 
