@@ -98,6 +98,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 			3. highly efficient (i.e. via register operations) _invertible_ pseudo-random key wrapper primitive that maps a `2^N` bit number to a `2^(2N)` bit number
 			4. bioinformatics PCR trivial and accurate "systematic" noise reduction calculation
 			5. bioinformatics PCR highly accurate "Ct" calculation using AI techniques (i.e. without the use of functional analysis) that generally works even when encountering "inhibition"
+			6. ...
 		* ...
 	3. Accessibility & Special Education:
 		* My invention enabling the blind to sonically "see"/understand maps and mathematical functions by using a standard web browser and a consumer grade graphics tablet.
