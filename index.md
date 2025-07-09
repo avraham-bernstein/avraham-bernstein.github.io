@@ -104,7 +104,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* ...
 	3. Accessibility & Special Education:
 		* My invention enabling the blind to sonically "see"/understand maps and mathematical functions by using a standard web browser and a consumer grade graphics tablet.
-		* My invention of a generic _dyslexic_ friendly font, by mimicking the concept that computer vision algorithms use to identify a QR code regardless of its physical orientation.
+		* My invention of a generic [dyslexic](https://en.wikipedia.org/wiki/Dyslexia) friendly font, by mimicking the concept that computer vision algorithms use to correctly identify a [QR code](https://en.wikipedia.org/wiki/QR_code), regardless of its physical orientation.
 		* How I taught kinesiological multiplication to my grandson using floor tiles and masking tape.
 		* How I taught a second grader advanced mathematics in 30 min., i.e. exponents and binary arithmetic.
 		* Teaching [rational trigonometry](https://en.wikipedia.org/wiki/Divine_Proportions:_Rational_Trigonometry_to_Universal_Geometry) based upon the system that the ancient [Akkadians](https://en.wikipedia.org/wiki/Akkadian_Empire) invented about 4000 years ago.
