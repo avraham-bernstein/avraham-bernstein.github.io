@@ -51,7 +51,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 * __Articles & Blog:__ TBD
 
-	1. Torah & _Yisrael_:
+	1. _Torah_ & _Yisrael_:
 		* My _Aliyah_, i.e. immigration to _Eretz Yisrael_.
 		* The scientific evidence for divine creation.
 		* The reason why [HaShem](https://www.myjewishlearning.com/article/hashem/) chose the Jews, along with _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)](https://mechon-mamre.org/p/pt/pt0118.htm). In our time the world is witnessing (1) the fulfillment of this directive when the Jewish People stand alone in the world to rise up like a lioness to devour evil, and (2) the moral bankruptcy of the _Abrahamic_ "supercessionist" (aka replacement) theologies. The supercessionists have a highly flawed understanding of "ethical monotheism". Islam, while being monotheistic, worships [A God Who Hates](https://en.wikipedia.org/wiki/A_God_Who_Hates). They openly admit that their God approves murder, pillaging, piracy, and slavery. Christianity, with highly suspect monotheistic credentials (i.e. their belief in the Trinity), [fundamentally cannot accept that morality requires adherence to God's laws](https://biblehub.com/topical/t/the_danger_of_legalism.htm), and cannot accept that evil requires force to be eradicated.       
