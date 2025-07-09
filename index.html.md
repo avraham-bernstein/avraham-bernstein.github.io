@@ -9,7 +9,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 <br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evenings (Jm. time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
-<br/>__Last Update:__ 2025-07-08
+<br/>__Last Update:__ 2025-07-09
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -54,12 +54,12 @@ __Secure[^secure-photo] photo of the author from 2025__
 	1. Torah & _Yisrael_:
 		* My _Aliyah_, i.e. immigration to _Eretz Yisrael_.
 		* The scientific evidence for divine creation.
-		* The reason why [HaShem](https://www.myjewishlearning.com/article/hashem/) chose the Jews, along with _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)](https://mechon-mamre.org/p/pt/pt0118.htm). In our time the world is witnessing (1) the fulfillment of this directive when the Jewish People stand alone in the world to rise up like a lioness to devour evil, and (2) the utter nonsense of the _Abrahamic_ "supercessionist" (aka replacement) theologies.            
+		* The reason why [HaShem](https://www.myjewishlearning.com/article/hashem/) chose the Jews, along with _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)](https://mechon-mamre.org/p/pt/pt0118.htm). In our time the world is witnessing (1) the fulfillment of this directive when the Jewish People stand alone in the world to rise up like a lioness to devour evil, and (2) the moral bankruptcy of the _Abrahamic_ "supercessionist" (aka replacement) theologies. The supercessionists have a highly flawed understanding of "ethical monotheism". Islam, while being monotheistic, worships [A God Who Hates](https://en.wikipedia.org/wiki/A_God_Who_Hates). They openly admit that their God approves murder, pillaging, piracy, and slavery. Christianity, with highly suspect monotheistic credentials (i.e. their belief in the Trinity), [fundamentally cannot accept that morality requires adherence to God's laws](https://biblehub.com/topical/t/the_danger_of_legalism.htm), and cannot accept that evil requires force to be eradicated.       
 		* Wars against Hamas and Iranian Islamofascist barbarians.
 		* Desecration of [Hashem's](https://www.myjewishlearning.com/article/hashem/) name:
 			1. The Oct. 7 ["rave" dancers under a statue of Budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of believing Jews [danced in front of Torah scrolls on _Simchat Torah_](https://www.jpost.com/opinion/article-825795).
 			2. [Hareidi](https://www.myjewishlearning.com/article/haredim-charedim/) draft evasion during an existential war.
-			3. So-called "pride" "lgbtq+" marches in the streets of _Yerushalayim_.
+			3. So-called "pride" "LGBTQ+" marches in the streets of _Yerushalayim_: About 3400 years ago, _Hashem_ revealed the _Torah_ to the Jewish People at Mount Sinai 7 weeks after _HaShem_ miraculously liberated them from hundreds of years of Egyptian bondage. The revelation was an extraordinary event. Hashem demanded that the Jews uphold an ethical legal system that reflected that Man was created in the image of God. It was a radical concept for the ancient world, and still required thousands of years for Man, at least in the Western world, to subsequently digest many of its concepts. Among other things, the _Torah_ forbids deviant sexual behavior, i.e. adultery, incest, beastiality, and homosexuality. People who proudly display such deviancy, even the few who have _bona fide_ psychological urges, are spitting in _HaShem's_ face. Unfortunately in the State of Israel, in the name of "freedom of expression", the so-called "legal system" encourages such behavior even though it is reprehensible to the vast majority of the population. These so-called "judges" would never allow anyone to publicly defecate on the Israeli flag on Independence Day but they have no qualms allowing someone to defecate on the _Torah_.
 		* The massive uptick in so-called "progressive" antisemitism in the Western world. We will soon see the fulfillment of the prophecy [blessed be those who bless _Yisrael_, and cursed be those who  curse _Yisrael_ (Num. 24:9)](https://mechon-mamre.org/p/pt/pt0424.htm).
 		* The Oslo so-called "peace process" fiasco. Oslo was not a "noble experiment" that "just happened" to fail. The primary instigators, _Shimon Peres_ and _Yossi Beilin_, intentionally designed it to fail!
 		* 1995-96: My successful challenge of the IDF's illegal rules of engagement at the Supreme Court during the height of the Oslo lunacy.
@@ -84,18 +84,19 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* [Mkdocs](https://www.mkdocs.org/)
 		* a curriculum for a new computer science student
 		* my [algorithmic](https://en.wikipedia.org/wiki/Algorithm) inventions:
-			1. an extremely efficient `2^N` sized hash table that can grow without rehashing
-			2. novel and efficient _Hamming Weight_-like calculation, i.e. that maps a number in the range \[`0,(2^N)-1`\] to the range \[`0,N`\], via the use of DFTs that generates a nearly uniform probability distribution that makes it useful as a cryptographic primitive
+			1. an extremely efficient `2^N` sized [hash table](https://en.wikipedia.org/wiki/Hash_table) that can grow without rehashing
+			2. novel and efficient [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight)-_like_ calculation, i.e. that maps a number in the range \[`0,(2^N)-1`\] to the range \[`0,N`\], via the use of a [DFT](https://en.wikipedia.org/wiki/Discrete_Fourier_transform) that generates a nearly uniform probability distribution that makes it useful as a cryptographic primitive
 			3. highly efficient (i.e. via register operations) _invertible_ pseudo-random key wrapper primitive that maps a `2^N` bit number to a `2^(2N)` bit number
-			4. bioinformatics PCR trivial and accurate "systematic" noise reduction calculation
-			5. bioinformatics PCR highly accurate "Ct" calculation using AI techniques (i.e. without the use of functional analysis) that generally works even when encountering "inhibition"
+			4. bioinformatics [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) trivial and accurate "systematic" noise reduction calculation
+			5. bioinformatics [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) highly accurate [Ct](https://torontech.com/what-is-ct-value-in-real-time-pcr/) calculation using AI techniques (i.e. without the use of functional analysis) that generally works even when encountering [inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors)
 			6. ...
 		* ...
 	3. Accessibility & Special Education:
 		* My invention enabling the blind to sonically "see"/understand maps and mathematical functions by using a standard web browser and a consumer grade graphics tablet.
 		* My invention of a generic _dyslexic_ friendly font.
-		* How I taught kinesiological multiplication.
+		* How I taught kinesiological multiplication to my grandson using floor tiles and masking tape.
 		* How I taught a second grader advanced mathematics in 30 min., i.e. exponents and binary arithmetic.
+		* Teaching [rational trigonometry](https://en.wikipedia.org/wiki/Divine_Proportions:_Rational_Trigonometry_to_Universal_Geometry) based upon the system that the ancient [Akkadians](https://en.wikipedia.org/wiki/Akkadian_Empire) invented about 4000 years ago.
 		* ...
 	4. Music Composition Software
 	5. Health & Exercise:
