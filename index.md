@@ -95,8 +95,8 @@ __Secure[^secure-photo] photo of the author from 2025__
 		* [Mkdocs](https://www.mkdocs.org/)
 		* a curriculum for a new computer science student
 		* my [algorithmic](https://en.wikipedia.org/wiki/Algorithm) inventions:
-			1. an extremely efficient `2^N` sized [hash table](https://en.wikipedia.org/wiki/Hash_table) that can grow without rehashing
-			2. novel and efficient [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight)-_like_ calculation, i.e. that maps a number in the range \[`0,(2^N)-1`\] to the range \[`0,N`\], via the use of a [DFT](https://en.wikipedia.org/wiki/Discrete_Fourier_transform) that generates a nearly uniform probability distribution that makes it useful as a cryptographic primitive
+			1. an extremely efficient `2^N` sized [hash table](https://en.wikipedia.org/wiki/Hash_table) that can grow without rehashing or moving the data associated with the hash key that is stored in the table
+			2. novel and efficient [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight)-__like__ calculation, i.e. that maps a number in the range \[`0,(2^N)-1`\] to the range \[`0,N`\], via the use of a [DFT](https://en.wikipedia.org/wiki/Discrete_Fourier_transform) that generates a nearly uniform probability distribution that makes it useful as a cryptographic primitive
 			3. highly efficient (i.e. via register operations) _invertible_ pseudo-random key wrapper primitive that maps a `2^N` bit number to a `2^(2N)` bit number
 			4. bioinformatics [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) trivial and accurate "systematic" noise reduction calculation
 			5. bioinformatics [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) highly accurate [Ct](https://torontech.com/what-is-ct-value-in-real-time-pcr/) calculation using AI techniques (i.e. without the use of functional analysis) that generally works even when encountering [inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors)
