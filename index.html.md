@@ -9,7 +9,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 <br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evenings (Jm. time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
-<br/>__Last Update:__ 2025-07-11
+<br/>__Last Update:__ 2025-07-13
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -49,65 +49,137 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 * __Github:__ TBD
 
-* __Articles & Blog:__ TBD
+## Articles & Blog: TBD
 
-	1. _Torah_ & _Yisrael_:
-		* My _Aliyah_, i.e. immigration to _Eretz Yisrael_.
-		* The scientific evidence for divine creation, according to the [Ramban's (c. 1250 CE)](https://en.wikipedia.org/wiki/Nachmanides) commentary on the first two chapters of the book of [Genesis](https://en.wikipedia.org/wiki/Book_of_Genesis), [Gerald Schroeder's book "Genesis and the Big Bang" ](https://www.amazon.com/Genesis-Big-Bang-Discovery-Harmony/dp/0553354132), and [Nathan Aviezer's book "In the Beginning: Biblical Creation and Science"](https://ktav.com/products/in-the-beginning).
-		* The reason why [HaShem](https://www.myjewishlearning.com/article/hashem/) chose the Jews, along with _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)](https://mechon-mamre.org/p/pt/pt0118.htm): In our time (i.e. 2025) the world is witnessing (1) the fulfillment of this directive when the Jewish People stand alone in the world to rise up like a lioness to devour evil, and (2) the moral bankruptcy of the _Abrahamic_ "supercessionist" (aka replacement) theologies. The supercessionists have a highly flawed understanding of "ethical monotheism". Islam, while being monotheistic, worships [A God Who Hates](https://en.wikipedia.org/wiki/A_God_Who_Hates). They openly admit that their God approves murder, pillaging, piracy, and slavery. Christianity, with highly suspect monotheistic credentials (i.e. their belief in the Trinity), [fundamentally cannot accept that ethical behavior requires adherence to God's laws](https://biblehub.com/topical/t/the_danger_of_legalism.htm), and cannot accept that evil often requires force to be eradicated.
-		* Review of the 1961 debate between Israeli Ambassador Rav Yaakov Herzog and Oxford historian Arnold Toynbee whether or not the Jewish People are in a state of [Fossil or Ferment](https://www.sefaria.org.il/Judaism%3B_Fossil_or_Ferment%2C_Preface.1?lang=en).
-		* Wars against Hamas and Iranian Islamofascist barbarians.
-		* Desecration of [Hashem's](https://www.myjewishlearning.com/article/hashem/) name:
-			1. The Oct. 7 ["rave" dancers under a statue of Budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of believing Jews [danced in front of Torah scrolls on _Simchat Torah_](https://www.jpost.com/opinion/article-825795).
-			2. [Hareidi](https://www.myjewishlearning.com/article/haredim-charedim/) draft evasion during an existential war: Their behavior is indefensible. Their excuses are nonsensical. Just like we witnessed a miraculous victory over the Iranians, I pray that one day soon _HaShem_ will publicly call their leadership to account for their disgusting behavior.
-			3. So-called "pride" "LGBTQ+" marches in the streets of _Yerushalayim_: About 3400 years ago, _Hashem_ revealed the _Torah_ to the Jewish People at Mount Sinai 7 weeks after _HaShem_ miraculously liberated them from hundreds of years of Egyptian bondage. The revelation was an extraordinary event. _Hashem_ instructed the Jews to uphold a new ethical legal system that reflected that Man was created in the image of God. It was a radical revolutionary concept for the ancient world that still required thousands of years for Man, at least in the Western world, to subsequently digest. Among other things, the _Torah_ forbids deviant sexual behavior, i.e. adultery, incest, beastiality, and __homosexuality__ - see [Lev. 18:1-30](https://mechon-mamre.org/p/pt/pt0318.htm) which is read during the _Yom Kippur_ service in order to emphasize the fundamental depravity of these offenses. People who proudly display such deviancy, even the few who have _bona fide_ psychological or physical urges, are spitting in _HaShem's_ face - regardless of the current fad of political correctness. Unfortunately in the State of Israel, in the name of "freedom of expression", the so-called "legal system" encourages such behavior even though it is reprehensible to the vast majority of the population. These so-called "judges" would never allow anyone to publicly defecate on the Israeli flag on Independence Day, but they have no qualms allowing someone to defecate on the _Torah_.
-		* The massive uptick in so-called "progressive" antisemitism in the Western world: I pray that we will soon see the fulfillment of the prophecy [blessed be those who bless _Yisrael_, and cursed be those who  curse _Yisrael_ (Num. 24:9)](https://mechon-mamre.org/p/pt/pt0424.htm).
-		* The Oslo so-called "peace process" fiasco. Oslo was not a "noble experiment" that "just happened" to fail. The primary perpetrators, _Shimon Peres_ and _Yossi Beilin_, __intentionally designed it to fail!__ It must never be forgotten that Oslo enabled the so-called Gaza "Disengagement" which paved the way for the _Hamas_ barbarians to rule Gaza.
-		* 1995-96: My __successful__ challenge of the IDF's illegal rules of engagement at the Supreme Court during the height of the Oslo lunacy: An IDF general (i.e. Ilan Biran, the then _Aluf Pikud HaMerkaz_), ordered me, in front of other soldiers, to refrain from preemptively defending myself when a PA terrorist aimed his rifle at me (or at other soldiers or at civilians) until __AFTER__ the bullet left the terrorist's rifle! Also Biran predicted how the new era of "peace" would eliminate the need for an IDF presence in the Jordan Valley even while Arafat was blowing up buses in _Yerushalayim_ while he was speaking! For his fealty to the so-called "peace process" (and concomitant lack of concern for the lives of his soldiers), the Oslo government subsequently rewarded Biran by appointing him as Director General of the Ministry Defense, and later as chairman of government controlled corporations, i.e. _Israel Oil Refineries_, _Bezeq_, and _Yes_. Unfortunately after 30 years of the fake peace rigidly enforced by a fake legal system that ignored the associated massive corruption required to make it work, _HaShem_ overwhelmed the Jewish People with the Oct. 7 massacres, which immediately woke up the vast majority of Israeli Jews from their stupor. I call this "baseball bat to the head" therapy. According to ancient Jewish tradition already stemming from the time of the Egyptian bondage, nothing happens to the Jewish People, whether good or bad, that is not dictated by _HaShem_ - see  [Gen. 15:13](https://mechon-mamre.org/p/pt/pt0115.htm).
-		* 1993-95: My experience as an anti-Oslo spy.
-		* Israel's "deep state" [juristocracy](https://valdaiclub.com/a/highlights/juristocracy-from-the-rule-of-law/).
-		* The "Startup Nation".
-		* ...
-	2. Computer Science:
-		* [obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) anti-reverse engineering
-		* cybersecurity
-		* [AST](https://en.wikipedia.org/wiki/AST) [source code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) using Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) and XML
-		* [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language)
-		* modern [C11](https://en.wikipedia.org/wiki/C11_(C_standard_revision)) programming
-		* [Misra C](https://en.wikipedia.org/wiki/MISRA_C)
-		* [Jinja2](https://jinja.palletsprojects.com/en/stable/)
-		* [PyExpander](https://pyexpander.sourceforge.io/)
-		* [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
-		* [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu)
-		* virtual machines and [light weight containers (lxc)](https://dev.to/damilola_oladele/get-started-with-lxc-explained-with-installation-guide-4efj)
-		* [Xfce](https://en.wikipedia.org/wiki/Xfce)
-		* [Markdown](https://en.wikipedia.org/wiki/Markdown)
-		* [Mkdocs](https://www.mkdocs.org/)
-		* a curriculum for a new computer science student
-		* my [algorithmic](https://en.wikipedia.org/wiki/Algorithm) inventions:
-			1. an extremely efficient `2^N` sized [hash table](https://en.wikipedia.org/wiki/Hash_table) that can grow without rehashing or moving the data associated with the hash key that is stored in the table
-			2. novel and efficient [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight)-__like__ calculation, i.e. that maps a number in the range \[`0,(2^N)-1`\] to the range \[`0,N`\], via the use of a [DFT](https://en.wikipedia.org/wiki/Discrete_Fourier_transform) that generates a nearly uniform probability distribution that makes it useful as a cryptographic primitive
-			3. highly efficient (i.e. via register operations) _invertible_ pseudo-random key wrapper primitive that maps a `2^N` bit number to a `2^(2N)` bit number
-			4. bioinformatics [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) trivial and accurate "systematic" noise reduction calculation
-			5. bioinformatics [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) highly accurate [Ct](https://torontech.com/what-is-ct-value-in-real-time-pcr/) calculation using AI techniques (i.e. without the use of functional analysis) that generally works even when encountering [inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors)
-			6. ...
-		* ...
-	3. Accessibility & Special Education:
-		* My invention enabling the blind to sonically "see"/understand maps and mathematical functions by using a standard web browser and a consumer grade graphics tablet.
-		* My invention of a generic [dyslexic](https://en.wikipedia.org/wiki/Dyslexia) friendly font, by mimicking the concept that computer vision algorithms use to correctly identify a [QR code](https://en.wikipedia.org/wiki/QR_code), regardless of its physical orientation.
-		* How I taught kinesiological multiplication to my grandson using floor tiles and masking tape.
-		* How I taught a second grader advanced mathematics in 30 min., i.e. exponents and binary arithmetic.
-		* Teaching [rational trigonometry](https://en.wikipedia.org/wiki/Divine_Proportions:_Rational_Trigonometry_to_Universal_Geometry) based upon the system that the ancient [Akkadians](https://en.wikipedia.org/wiki/Akkadian_Empire) invented about 4000 years ago.
-		* ...
-	4. Music Composition Software
-	5. Health & Exercise:
-		* My 5 min. course to teach deep meditation just by using a clock with a second hand.
-		* ...
-	6. Community Service:
-		* 2023 Jerusalem: Rescued an extremely bright autistic teen from being declared truant and forcibly sent to an institution for emotional retards due to malicious negligence by the Ministry of Education.
-		* 2016-19 Jerusalem: Rescued 3 young children at family court from foster care when the Ministry of Social Services maliciously and falsely accused the father (my wife's relative) of being a pedophile when in fact I showed that his young daughter was serially molested in locked-down institutions run by Social Services: Even though we eventually won our case which is highly unusual when social services declares the father to be a pedophile, the most depressing element was that the judge presiding over this trial became aware that the senior social services youth officer was committing perjury, and that the court appointed legal guardian of the children was aware of this perjury yet remained silent, yet the judge never criminally sanctioned his "colleagues" with whom he worked for many years in the family court system. The deputy legal advisor for the ministry refused to get involved in this case. And our expensive attorney who initially promised that he would advocate that they be charged with contempt and perjury, eventually backed down by saying that we should just be extremely grateful for the outcome.
-		* 1977 Toronto: While a student in an MBA program, led the battle for [marginal cost pricing for electricity](https://neon.energy/marginal-pricing) in the Province of Ontario, in the face of strident corporate opposition by huge electricity consumers who smelted metal who advocated hidden subsidies with surreptitious government backing: I lost my case, but still the [Ontario Energy Board](https://oeb.ca), where the hearing took place, awarded me costs. I published an op-ed in Canada's then newspaper of record [The Globe and Mail](https://www.theglobeandmail.com/). Most important, this hearing was a God-given life changing experience that taught me how a single individual could successfully stand up to corporate and government corruption, as can be seen by my subsequent experience throughout my life. 
-	7. My Bookmarks
+### 1. Torah & Yisrael
+
+<details markdown="1"><summary>1) My _Aliyah_, i.e. immigration to _Eretz Yisrael_</summary>
+</details>
+
+<p>
+<details markdown="1"><summary>2) The scientific evidence for divine creation, according to the [Ramban's (c. 1250 CE)](https://en.wikipedia.org/wiki/Nachmanides) commentary on the first chapter of the book of [Genesis](https://en.wikipedia.org/wiki/Book_of_Genesis), [Gerald Schroeder's book "Genesis and the Big Bang" ](https://www.amazon.com/Genesis-Big-Bang-Discovery-Harmony/dp/0553354132), and [Nathan Aviezer's book "In the Beginning: Biblical Creation and Science"](https://ktav.com/products/in-the-beginning)</summary>
+<p>
+Almost 800 years ago the _Ramban_ had an ancient Rabbinic tradition that the only thing that [HaShem](https://www.myjewishlearning.com/article/hashem/) actually created _ex nihilo_ were atomic particles (Greek: _Hyla_, Hebrew: _Tohu VeBohu_) which were used to subsequently form all other elements in the universe including stars, planets, plants, animals, and Man, etc. These particles were compressed into an object the size of a mustard seed. Light appeared when this object exploded. This is identical to the "Big Bang" theory now accepted by all modern astrophysicist cosmologists in the past 60 years.
+</p><p>
+The _Ramban_ refers to each "day" of creation as an _epoch_ (Hebrew: _Tekufa_). On each new "day" _HaShem_ injected massive changes into the universe. Darwinian "evolutionary" theory cannot account for the explosive changes in life after each new day. Each new day increased the "orderliness" of the universe, i.e. a reduction in _entropy_. The Hebrew expression _and it was evening and it was morning_ that closes each day of creation alludes to this increase in order. The _Ramban_ states that the root meaning of the word "evening" comes from the Hebrew _Ta'arovet_ (English: "an unordered mixture"), while "morning" comes from the Hebrew word _Mevukar_ (English: "ordered").
+</p><p>
+_HaShem's_ ultimate act of creation was modern Man on the 6th day, 5785 years ago, which conforms to the archeological time frame of modern civilization and writing. Since then the passage of time is as we now know it. This transformation happened nearly simultaneously worldwide wherever civilization existed from Mesopotamia, the Nile Delta, the Indus Valley, the Mekong Delta, the Yellow River Valley, etc.  Don't fool yourselves. The psychology of modern Man has not changed in this period.
+</details>
+
+<p>
+<details markdown="1"><summary>3) The reason why [HaShem](https://www.myjewishlearning.com/article/hashem/) chose the Jews, along with _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)](https://mechon-mamre.org/p/pt/pt0118.htm)</summary>
+<p>
+In our time (i.e. 2025) the world is witnessing (1) the fulfillment of this directive when the Jewish People stand alone in the world to rise up like a lioness to devour evil, and (2) the moral bankruptcy of the _Abrahamic_ "supercessionist" (aka replacement) theologies. The supercessionists have a highly flawed understanding of "ethical monotheism". Islam, while being monotheistic, worships [A God Who Hates](https://en.wikipedia.org/wiki/A_God_Who_Hates). They openly admit that their God approves murder, pillaging, piracy, and slavery. Christianity, with highly suspect monotheistic credentials (i.e. their belief in the Trinity), [fundamentally cannot accept that ethical behavior requires adherence to God's laws](https://biblehub.com/topical/t/the_danger_of_legalism.htm), and cannot accept that evil often requires force to be eradicated.
+</details>
+
+4) Summary of the 1961 debate between Israeli Ambassador Rav Yaakov Herzog and Oxford historian Arnold Toynbee whether or not the Jewish People are in a state of [Fossil or Ferment](https://www.sefaria.org.il/Judaism%3B_Fossil_or_Ferment%2C_Preface.1?lang=en)
+
+5) Wars against Hamas and Iranian Islamofascist barbarians
+
+<p>
+<details markdown="1"><summary>6) Desecration of [Hashem's](https://www.myjewishlearning.com/article/hashem/) name:</summary>
+
+a. The Oct. 7 ["rave" dancers under a statue of Budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of believing Jews [danced in front of Torah scrolls on _Simchat Torah_](https://www.jpost.com/opinion/article-825795).
+
+b. [Hareidi](https://www.myjewishlearning.com/article/haredim-charedim/) draft evasion during an existential war: Their behavior is indefensible. Their excuses are nonsensical. Just like we witnessed a miraculous victory over the Iranians, I pray that one day soon _HaShem_ will publicly call their leadership to account for their disgusting behavior.
+
+c. So-called "pride" "LGBTQ+" marches in the streets of _Yerushalayim_: About 3400 years ago, _Hashem_ revealed the _Torah_ to the Jewish People at Mount Sinai 7 weeks after _HaShem_ miraculously liberated them from hundreds of years of Egyptian bondage. The revelation was an extraordinary event. _Hashem_ instructed the Jews to uphold a new ethical legal system that reflected that Man was created in the image of God. It was a radical revolutionary concept for the ancient world that still required thousands of years for Man, at least in the Western world, to subsequently digest. Among other things, the _Torah_ forbids deviant sexual behavior, i.e. adultery, incest, beastiality, and __homosexuality__ - see [Lev. 18:1-30](https://mechon-mamre.org/p/pt/pt0318.htm) which is read during the _Yom Kippur_ service in order to emphasize the fundamental depravity of these offenses. People who proudly display such deviancy, even the few who have _bona fide_ psychological or physical urges, are spitting in _HaShem's_ face - regardless of the current fad of political correctness. Unfortunately in the State of Israel, in the name of "freedom of expression", the so-called "legal system" encourages such behavior even though it is reprehensible to the vast majority of the population. These so-called "judges" would never allow anyone to publicly defecate on the Israeli flag on Independence Day, but they have no qualms allowing someone to defecate on the _Torah_.
+</details>
+
+<p>
+<details markdown="1"><summary>7) The massive uptick in so-called "progressive" antisemitism in the Western world</summary>
+<p>
+I pray that we will soon see the fulfillment of the prophecy [blessed be those who bless _Yisrael_, and cursed be those who  curse _Yisrael_ (Num. 24:9)](https://mechon-mamre.org/p/pt/pt0424.htm).
+</details>
+
+<p>
+<details markdown="1"><summary>8) The Oslo so-called "peace process" fiasco</summary>
+<p>
+Oslo was not a "noble experiment" that "just happened" to fail. The primary perpetrators, _Shimon Peres_ and _Yossi Beilin_, __intentionally designed it to fail!__ It must never be forgotten that Oslo enabled the so-called Gaza "Disengagement" which paved the way for the _Hamas_ barbarians to rule Gaza.
+</details>
+
+<p>
+<details markdown="1"><summary>9) 1995-96: My __successful__ challenge of the IDF's illegal rules of engagement at the Supreme Court during the height of the Oslo lunacy</summary>
+<p> 
+An IDF general (i.e. Ilan Biran, the then _Aluf Pikud HaMerkaz_), ordered me, in front of other soldiers, to refrain from preemptively defending myself when a Palestinian terrorist aimed his rifle at me (or at other soldiers or at civilians) until __AFTER__ the bullet left the terrorist's rifle! Also Biran predicted how the new era of "peace" would eliminate the need for an IDF presence in the Jordan Valley even while Arafat was blowing up buses in _Yerushalayim_ while he was speaking!
+</p><p>
+For his fealty to the so-called "peace process", and concomitant lack of concern for the lives of his soldiers, the Oslo government subsequently rewarded Biran by appointing him as Director General of the Ministry Defense, and later as chairman of government controlled corporations, i.e. _Israel Oil Refineries_, _Bezeq_, and _Yes_. 
+</p><p>
+Unfortunately after 30 years of the fake peace rigidly enforced by a fake legal system that ignored the associated massive corruption required to make it work, _HaShem_ overwhelmed the Jewish People with the Oct. 7 massacres, which immediately woke up the vast majority of Israeli Jews from their stupor. I call this "baseball bat to the head" therapy. According to ancient Jewish tradition already stemming from the time of the Egyptian bondage, nothing happens to the Jewish People, whether good or bad, that is not dictated by _HaShem_ - see  [Gen. 15:13](https://mechon-mamre.org/p/pt/pt0115.htm).
+</details>
+
+<p>
+10) 1993-95: My experience as an anti-Oslo spy
+
+<p>
+11) Israel's "deep state"  [juristocracy](https://valdaiclub.com/a/highlights/juristocracy-from-the-rule-of-law/)
+
+<p>
+12) The "Startup Nation"
+
+### 2. Community Service
+
+<details markdown="1"><summary>2023 Jerusalem: Rescued an extremely bright autistic teen from being declared truant and forcibly sent to an institution for emotional retards due to malicious negligence by the Ministry of Education</summary>
+</details>
+
+<p>
+<details markdown="1"><summary>2016-19 Jerusalem: Rescued 3 young children at family court from foster care when the Ministry of Social Services maliciously and falsely accused the father (my wife's relative) of being a pedophile when in fact I showed that his young daughter was serially molested in locked-down institutions run by Social Services</summary>
+<p>
+Even though we eventually won our case which is highly unusual when social services declares the father to be a pedophile, the most depressing element was that the judge presiding over this trial became aware that the senior social services youth officer was committing perjury, and that the court appointed legal guardian of the children was aware of this perjury yet remained silent, yet the judge never criminally sanctioned his "colleagues" with whom he worked for many years in the family court system. The deputy legal advisor for the ministry refused to get involved in this case. And our expensive attorney who initially promised that he would advocate that they be charged with contempt and perjury, eventually backed down by saying that we should just be extremely grateful for the outcome.
+
+</details>
+
+<p>
+<details markdown="1"><summary>1977 Toronto: While a student in an MBA program, I led the battle for [marginal cost pricing for electricity](https://neon.energy/marginal-pricing) in the Province of Ontario</summary>
+<p>
+The corporate opposition was led by huge electricity consumers who smelted metal. They advocated hidden subsidies with surreptitious government backing. I lost my case, but still the [Ontario Energy Board](https://oeb.ca), where the hearing took place, awarded me costs. I published an op-ed in Canada's then newspaper of record [The Globe and Mail](https://www.theglobeandmail.com/). Most important, this hearing was a God-given life changing experience that taught me how a single individual could successfully stand up to corporate and government corruption, as can be seen by my subsequent experience throughout my life. 
+
+</details>
+
+### 3. Computer Science
+
+1. [obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) anti-reverse engineering
+2. cybersecurity
+3. [AST](https://en.wikipedia.org/wiki/AST) [source code refactoring](https://en.wikipedia.org/wiki/Code_refactoring) using Python [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) and XML
+4. [domain specific languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language)
+5. modern [C11](https://en.wikipedia.org/wiki/C11_(C_standard_revision)) programming
+6. [Misra C](https://en.wikipedia.org/wiki/MISRA_C)
+7. [Jinja2](https://jinja.palletsprojects.com/en/stable/)
+8. [PyExpander](https://pyexpander.sourceforge.io/)
+9. [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+10. [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu)
+11. virtual machines and [light weight containers (lxc)](https://dev.to/damilola_oladele/get-started-with-lxc-explained-with-installation-guide-4efj)
+12. [Xfce](https://en.wikipedia.org/wiki/Xfce)
+13. [Markdown](https://en.wikipedia.org/wiki/Markdown)
+14. [Mkdocs](https://www.mkdocs.org/)
+15. a curriculum for a new computer science student
+16. my [algorithmic](https://en.wikipedia.org/wiki/Algorithm) inventions:
+	
+	a. an extremely efficient `2^N` sized [hash table](https://en.wikipedia.org/wiki/Hash_table) that can grow without rehashing or moving the data associated with the hash key that is stored in the table
+	b. novel and efficient [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight)-__like__ calculation, i.e. that maps a number in the range \[`0,(2^N)-1`\] to the range \[`0,N`\], via the use of a [DFT](https://en.wikipedia.org/wiki/Discrete_Fourier_transform) that generates a nearly uniform probability distribution that makes it useful as a cryptographic primitive
+	c. highly efficient (i.e. via register operations) _invertible_ pseudo-random key wrapper primitive that maps a `2^N` bit number to a `2^(2N)` bit number
+	d. bioinformatics [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) trivial and accurate "systematic" noise reduction calculation
+	e. bioinformatics [PCR](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) highly accurate [Ct](https://torontech.com/what-is-ct-value-in-real-time-pcr/) calculation using AI techniques (i.e. without the use of functional analysis) that generally works even when encountering [inhibition](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors)
+
+###	4. Accessibility & Special Education
+
+1. My invention enabling the blind to sonically "see"/understand maps and mathematical functions by using a standard web browser and a consumer grade graphics tablet.
+
+2. My invention of a generic [dyslexic](https://en.wikipedia.org/wiki/Dyslexia) friendly font, by mimicking the concept that computer vision algorithms use to correctly identify a [QR code](https://en.wikipedia.org/wiki/QR_code), regardless of its physical orientation.
+
+3. How I taught kinesiological multiplication to my grandson using floor tiles and masking tape.
+
+4. How I taught a second grader advanced mathematics in 30 min., i.e. exponents and binary arithmetic.
+
+5. Teaching [rational trigonometry](https://en.wikipedia.org/wiki/Divine_Proportions:_Rational_Trigonometry_to_Universal_Geometry) based upon the system that the ancient [Akkadians](https://en.wikipedia.org/wiki/Akkadian_Empire) invented about 4000 years ago.
+
+### 5. Music Composition Software
+
+### 6. Health & Exercise
+
+1. My 5 min. course to teach deep meditation just by using a clock with a second hand.
+
+### 7. My Bookmarks
 
 ## View From My North Jerusalem Porch With Southern Exposure Overlooking The Navel Of The World: The True Place From Which To Declare "Urbi Et Orbi" 
 
