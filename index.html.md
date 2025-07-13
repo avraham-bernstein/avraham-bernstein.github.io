@@ -54,42 +54,50 @@ __Secure[^secure-photo] photo of the author from 2025__
 ### 1. Torah & Yisrael
 
 <details markdown="1"><summary>1) My _Aliyah_, i.e. immigration to _Eretz Yisrael_</summary>
+<p>
+I came on _Aliyah_ in 1983 from the US. I have always lived in _Yerushalayim_. I came with my wife and my two oldest then infant children. I had a university degree, a few years experience in hi-tech, and enough money to place a substantial down payment on an apartment. I understood if I were to wait even a few years, and took out a mortgage on a home, then it was unlikely that I would ever leave the _Golden Medina_.
+</p><p>
+For an observant God-fearing Jew, the ultimate place to live is in _Eretz Yisrael_. For the past 2000 years, every year at the end of the Passover _Seder_, we all sang _next year in Jerusalem_. With the advent of the Zionist movement, _Aliyah_ began in earnest about 1880. Until the 1960's it was physically difficult to live in Israel. But by the time I came in 1983, even though at the time, the standard of living was less than in North America, one could still expect to live a long healthy and fulfilling life in the modern State of Israel.
+</p><p>
+Now (in 2025) I have no regrets moving to Israel. The values and life style of my children and grandchildren are so much better than my North American relatives. Israel's standard of living is one of the highest in the world. As a hi-tech professional, I am in the ultimate place in the world. It is sad but true, that many progressive people in the West hate the Jewish People, but I am proud to be a member of a righteous and just nation, even if it has to "dwell alone". And it is clear to any objective person, that we are living in the footsteps of the _Mashiach_ (English: Messiah). The ancient prophesies are being fulfilled.
+</p><p>
+Unfortunately since the delusional Olso "peace accords" in 1993 there were many divisions in Israeli society, between religious, secular, left, and right. Most of these divisions are now disappearing since the Oct. 7 Hamas massacres. The process was painful, but Israeli society is now maturing.
 </details>
 
 <p>
 <details markdown="1"><summary>2) The scientific evidence for divine creation, according to the [Ramban's (c. 1250 CE)](https://en.wikipedia.org/wiki/Nachmanides) commentary on the first chapter of the book of [Genesis](https://en.wikipedia.org/wiki/Book_of_Genesis), [Gerald Schroeder's book "Genesis and the Big Bang" ](https://www.amazon.com/Genesis-Big-Bang-Discovery-Harmony/dp/0553354132), and [Nathan Aviezer's book "In the Beginning: Biblical Creation and Science"](https://ktav.com/products/in-the-beginning)</summary>
 <p>
-Almost 800 years ago the _Ramban_ had an ancient Rabbinic tradition that the only thing that [HaShem](https://www.myjewishlearning.com/article/hashem/) actually created _ex nihilo_ were atomic particles (Greek: _Hyla_, Hebrew: _Tohu VeBohu_) which were used to subsequently form all other elements in the universe including stars, planets, plants, animals, and Man, etc. These particles were compressed into an object the size of a mustard seed. Light appeared when this object exploded. This is identical to the "Big Bang" theory now accepted by all modern astrophysicist cosmologists in the past 60 years.
+About 800 years ago the _Ramban_ described the ancient Rabbinic tradition that the only thing that [HaShem]( https://www.myjewishlearning.com/article/hashem/ ) actually created _ex nihilo_ were atomic particles (Greek: _Hyla_, Hebrew: _Tohu VeBohu_) which were used to subsequently form all other elements in the universe including stars, planets, plants, animals, and Man, etc. _HaShem_ compressed this chaotic mass of particles into a dark object the size of a mustard seed for an unknown period of time. Creation began when _HaShem_ caused this object to explode, scattering the particles throughout the universe, and then light appeared. This is identical to the description of the "Big Bang" theory that is now accepted by all modern astrophysicist cosmologists since the past 60 years.
 </p><p>
-The _Ramban_ refers to each "day" of creation as an _epoch_ (Hebrew: _Tekufa_). On each new "day" _HaShem_ injected massive changes into the universe. Darwinian "evolutionary" theory cannot account for the explosive changes in life after each new day. Each new day increased the "orderliness" of the universe, i.e. a reduction in _entropy_. The Hebrew expression _and it was evening and it was morning_ that closes each day of creation alludes to this increase in order. The _Ramban_ states that the root meaning of the word "evening" (Hebrew: _Erev_) is derived from the Hebrew _Ta'arovet_ (English: "an unordered mixture"), while the word "morning" (Hebrew: _Boker_) is derived from the Hebrew _Mevukar_ (English: "ordered").
+The _Ramban_ refers to each "day" of creation as an _epoch_ (Hebrew: _Tekufa_). On each new day _HaShem_ injected massive changes into the universe. Darwinian "evolutionary" theory cannot account for the explosive changes in life after each new day. Each new day increased the "order" in the universe, i.e. reduced _entropy_. The Hebrew expression [and it was evening and it was morning (Gen. 1:5)]( https://mechon-mamre.org/p/pt/pt0101.htm ) (Hebrew: _Vayehi Erev Vayehi Voker_) that closes each day of creation alludes to this increase in order. The _Ramban_ states that the root meaning of the word "evening" (Hebrew: _Erev_) is derived from the Hebrew _Ta'arovet_ (English: "an unordered mixture"), while the word "morning" (Hebrew: _Boker_) is derived from the Hebrew _Mevukar_ (English: "ordered").
 </p><p>
-_HaShem's_ ultimate act of creation was modern Man on the 6th day, 5785 years ago, which conforms to the archeological time frame of modern civilization and writing. Since then the passage of time is as we now know it. This transformation happened nearly simultaneously worldwide wherever civilization existed from Mesopotamia, the Nile Delta, the Indus Valley, the Mekong Delta, the Yellow River Valley, etc.  Don't fool yourselves. The psychology of modern Man has not changed since this time.
+_HaShem's_ ultimate act of creation was modern Man on the 6th day, on _Rosh Hashanna_ 5785 years ago, which conforms to the archeological time frame of the beginning of civilization, history, and writing. Since then the passage of time is as we now know it. This transformation happened nearly simultaneously worldwide wherever civilization existed from Mesopotamia, the Nile Delta, the Indus Valley, the Mekong Delta, the Yellow River Valley, etc.  Don't fool yourselves. The psychology of modern Man has not changed since this time.
 </details>
 
 <p>
-<details markdown="1"><summary>3) The reason why [HaShem](https://www.myjewishlearning.com/article/hashem/) chose the Jews, along with _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)](https://mechon-mamre.org/p/pt/pt0118.htm)</summary>
+<details markdown="1"><summary>3) The reason why [HaShem]( https://www.myjewishlearning.com/article/hashem/ ) chose the Jews, along with _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)]( https://mechon-mamre.org/p/pt/pt0118.htm )</summary>
 <p>
-In our time (i.e. 2025) the world is witnessing (1) the fulfillment of this directive when the Jewish People stand alone in the world to rise up like a lioness to devour evil, and (2) the moral bankruptcy of the _Abrahamic_ "supercessionist" (aka replacement) theologies. The supercessionists have a highly flawed understanding of "ethical monotheism". Islam, while being monotheistic, worships [A God Who Hates](https://en.wikipedia.org/wiki/A_God_Who_Hates). They openly admit that their God approves murder, pillaging, piracy, and slavery. Christianity, with highly suspect monotheistic credentials (i.e. their belief in the Trinity), [fundamentally cannot accept that ethical behavior requires adherence to God's laws](https://biblehub.com/topical/t/the_danger_of_legalism.htm), and cannot accept that evil often requires force to be eradicated.
+In our time (i.e. 2025) the world is witnessing (1) the fulfillment of this directive when the Jewish People who [dwells alone (Num. 23:9)]( https://mechon-mamre.org/p/pt/pt0423.htm ) in this world will [rise up like a lioness (Num. 23:24)]( https://mechon-mamre.org/p/pt/pt0423.htm ) to devour evil, and (2) the moral bankruptcy of the _Abrahamic_ "supercessionist" (aka replacement) theologies. The supercessionists have a highly flawed understanding of "ethical monotheism". Islam, while being monotheistic, worships [A God Who Hates]( https://en.wikipedia.org/wiki/A_God_Who_Hates ). The _Quran_ openly states that their God sanctions murder, pillaging, piracy, and slavery. Christianity, with highly suspect monotheistic credentials (i.e. their belief in the Trinity), [fundamentally cannot accept that ethical behavior requires adherence to God's laws]( https://biblehub.com/topical/t/the_danger_of_legalism.htm ), and cannot accept that evil often requires force to be eradicated.
 </details>
 
-4) Summary of the 1961 debate between Israeli Ambassador Rav Yaakov Herzog and Oxford historian Arnold Toynbee whether or not the Jewish People are in a state of [Fossil or Ferment](https://www.sefaria.org.il/Judaism%3B_Fossil_or_Ferment%2C_Preface.1?lang=en)
+4) Summary of the 1961 debate between Israeli Ambassador Rav Yaakov Herzog and Oxford historian Arnold Toynbee whether or not the Jewish People are in a state of [Fossil or Ferment]( https://www.sefaria.org.il/Judaism%3B_Fossil_or_Ferment%2C_Preface.1?lang=en )
 
 5) Wars against Hamas and Iranian Islamofascist barbarians
 
 <p>
-<details markdown="1"><summary>6) Desecration of [Hashem's](https://www.myjewishlearning.com/article/hashem/) name:</summary>
+<details markdown="1"><summary>6) Desecration of [Hashem's]( https://www.myjewishlearning.com/article/hashem/ ) name:</summary>
 
-a. The Oct. 7 ["rave" dancers under a statue of Budda](https://www.catholicsforisrael.com/images/stories/nova_buddha.webp) while the majority of believing Jews [danced in front of Torah scrolls on _Simchat Torah_](https://www.jpost.com/opinion/article-825795).
+a. The Oct. 7 ["rave" dancers undulated under a statue of Budda]( https://www.catholicsforisrael.com/images/stories/nova_buddha.webp ) while the majority of believing Jews [danced in front of Torah scrolls on the night of _Simchat Torah_]( https://www.jpost.com/opinion/article-825795 ). They were engaged in the cardinal sin of idolatry exactly like those who danced in front of the [Golden Calf]( https://www.jewishvirtuallibrary.org/golden-calf ) about 3400 years ago, who _HaShem_ ordered to be killed on account of their offense. I feel that nearly all of the dancers were aware of the gravity of their offense, but they had a tenuous connection to the "quaint" beliefs of Judaism. Their apologists claim that no reasonable person believes in idols anymore, and that they just wanted to have some "fun". On the other hand, when the Hamas barbarians murdered hundreds of them in the morning, many were heard screaming _Shema Yisrael_ which is what traditional Jews have said since time immemorial when they die.
 
-b. [Hareidi](https://www.myjewishlearning.com/article/haredim-charedim/) draft evasion during an existential war: Their behavior is indefensible. Their excuses are nonsensical. Just like we witnessed a miraculous victory over the Iranians, I pray that one day soon _HaShem_ will publicly call their leadership to account for their disgusting behavior.
+b. [Hareidi]( https://www.myjewishlearning.com/article/haredim-charedim/ ) draft evasion during an existential war: Their behavior is indefensible. Their excuses are nonsensical. They argue about the danger of secularization if they were to join the army, yet almost half of the IDF's ground forces are religious Zionists. The _hareidim_ have not yet fully theologically accepted the establishment of the secular State of Israel, therefore many would prefer to live in the Diaspora. However 90 years ago the Nazi fascists, and now the current worldwide support of the the Islamofascists are forcing most Jews to immigrate to Israel (i.e. to make _Aliyah_). The _hareidim_ are incapable of publicly admitting and praising _HaShem's_ miracles that make it possible to live in Israel. They refuse to acknowledge the recent miraculous victory over Iran, nor the miraculous victory over the Arab armies in 1967, nor how land is blooming after 2000 years of desolation. I pray that _HaShem_ will publicly shame the leaders of the _hareidi_ community.
 
-c. So-called "pride" "LGBTQ+" marches in the streets of _Yerushalayim_: About 3400 years ago, _Hashem_ revealed the _Torah_ to the Jewish People at Mount Sinai 7 weeks after _HaShem_ miraculously liberated them from hundreds of years of Egyptian bondage. The revelation was an extraordinary event. _Hashem_ instructed the Jews to uphold a new ethical legal system that reflected that Man was created in the image of God. It was a radical revolutionary concept for the ancient world that still required thousands of years for Man, at least in the Western world, to subsequently digest. Among other things, the _Torah_ forbids deviant sexual behavior, i.e. adultery, incest, beastiality, and __homosexuality__ - see [Lev. 18:1-30](https://mechon-mamre.org/p/pt/pt0318.htm) which is read during the _Yom Kippur_ service in order to emphasize the fundamental depravity of these offenses. People who proudly display such deviancy, even the few who have _bona fide_ psychological or physical urges, are spitting in _HaShem's_ face - regardless of the current fad of political correctness. Unfortunately in the State of Israel, in the name of "freedom of expression", the so-called "legal system" encourages such behavior even though it is reprehensible to the vast majority of the population. These so-called "judges" would never allow anyone to publicly defecate on the Israeli flag on Independence Day, but they have no qualms allowing someone to defecate on the _Torah_.
+c. So-called "pride" "LGBTQ+" marches in the streets of _Yerushalayim_: About 3400 years ago, _Hashem_ revealed the _Torah_ to the Jewish People at Mount Sinai 7 weeks after _HaShem_ miraculously liberated them from hundreds of years of Egyptian bondage. The revelation was an extraordinary event. _Hashem_ instructed the Jews to uphold a new ethical legal system that reflected that Man was created in the image of God. It was a radical revolutionary concept for the ancient world that still required thousands of years for Man, at least in the Western world, to subsequently digest. Among other things, the _Torah_ forbids deviant sexual behavior, i.e. adultery, incest, beastiality, and __homosexuality__ - see [Lev. 18:1-30]( https://mechon-mamre.org/p/pt/pt0318.htm ) which is read during the _Yom Kippur_ service in order to emphasize the fundamental depravity of these offenses. People who proudly display such deviancy, even the few who have _bona fide_ psychological or physical urges, are spitting in _HaShem's_ face - regardless of the current fad of political correctness. Unfortunately in the State of Israel, in the name of "freedom of expression", the so-called "legal system" encourages such behavior even though it is reprehensible to the vast majority of the population. These so-called "judges" would never allow anyone to publicly defecate on the Israeli flag on Independence Day, but they have no qualms allowing someone to defecate on the _Torah_.
 </details>
 
 <p>
 <details markdown="1"><summary>7) The massive uptick in so-called "progressive" antisemitism in the Western world</summary>
 <p>
-I pray that we will soon see the fulfillment of the prophecy [blessed be those who bless _Yisrael_, and cursed be those who  curse _Yisrael_ (Num. 24:9)](https://mechon-mamre.org/p/pt/pt0424.htm).
+I pray that we will soon see the fulfillment of the prophecy [blessed be those who bless _Yisrael_, and cursed be those who  curse _Yisrael_ (Num. 24:9)]( https://mechon-mamre.org/p/pt/pt0424.htm ).
 </details>
 
 <p>
@@ -105,14 +113,14 @@ An IDF general (i.e. Ilan Biran, the then _Aluf Pikud HaMerkaz_), ordered me, in
 </p><p>
 For his fealty to the so-called "peace process", and concomitant lack of concern for the lives of his soldiers, the Oslo government subsequently rewarded Biran by appointing him as Director General of the Ministry Defense, and later as chairman of government controlled corporations, i.e. _Israel Oil Refineries_, _Bezeq_, and _Yes_. 
 </p><p>
-Unfortunately after 30 years of the fake peace rigidly enforced by a fake legal system that ignored the associated massive corruption required to make it work, _HaShem_ overwhelmed the Jewish People with the Oct. 7 massacres, which immediately woke up the vast majority of Israeli Jews from their stupor. I call this "baseball bat to the head" therapy. According to ancient Jewish tradition already stemming from the time of the Egyptian bondage, nothing happens to the Jewish People, whether good or bad, that is not dictated by _HaShem_ - see  [Gen. 15:13](https://mechon-mamre.org/p/pt/pt0115.htm).
+Unfortunately after 30 years of the fake peace rigidly enforced by a fake legal system that ignored the associated massive corruption required to make it work, _HaShem_ overwhelmed the Jewish People with the Oct. 7 massacres, which immediately woke up the vast majority of Israeli Jews from their stupor. I call this "baseball bat to the head" therapy. According to ancient Jewish tradition already stemming from the time of the Egyptian bondage, nothing happens to the Jewish People, whether good or bad, that is not dictated by _HaShem_ - see  [Gen. 15:13]( https://mechon-mamre.org/p/pt/pt0115.htm ).
 </details>
 
 <p>
 10) 1993-95: My experience as an anti-Oslo spy
 
 <p>
-11) Israel's "deep state"  [juristocracy](https://valdaiclub.com/a/highlights/juristocracy-from-the-rule-of-law/)
+11) Israel's "deep state"  [juristocracy]( https://valdaiclub.com/a/highlights/juristocracy-from-the-rule-of-law/ )
 
 <p>
 12) The "Startup Nation"
@@ -120,20 +128,20 @@ Unfortunately after 30 years of the fake peace rigidly enforced by a fake legal 
 ### 2. Community Service
 
 <details markdown="1"><summary>2023 Jerusalem: Rescued an extremely bright autistic teen from being declared truant and forcibly sent to an institution for emotional retards due to malicious negligence by the Ministry of Education</summary>
+<p>
+The boy had been learning successfully in a top school (i.e. _Machon Lev_ highschool), but started having problems during COVID when he was forced to be schooled at home. We achieved victory by sending the boy to be evaluated by the world renowned [Feuerstein Institute]( https://feuerstein-institute.org/  ) who specialize in the treatment, especially of children, who don't act like "normal" children. Their evaluation confirmed that the was extremely bright. The ministry was simply too lazy to provide him with an assistant which they were legally obligated to provide. Finally when they did provide him with an assistant, the ministry maliciously instructed the assistant to attempt to convince the boy to drop out of school.
 </details>
 
 <p>
 <details markdown="1"><summary>2016-19 Jerusalem: Rescued 3 young children at family court from foster care when the Ministry of Social Services maliciously and falsely accused the father (my wife's relative) of being a pedophile when in fact I showed that his young daughter was serially molested in locked-down institutions run by Social Services</summary>
 <p>
 Even though we eventually won our case which is highly unusual when social services declares the father to be a pedophile, the most depressing element was that the judge presiding over this trial became aware that the senior social services youth officer was committing perjury, and that the court appointed legal guardian of the children was aware of this perjury yet remained silent, yet the judge never criminally sanctioned his "colleagues" with whom he worked for many years in the family court system. The deputy legal advisor for the ministry refused to get involved in this case. And our expensive attorney who initially promised that he would advocate that they be charged with contempt and perjury, eventually backed down by saying that we should just be extremely grateful for the outcome.
-
 </details>
 
 <p>
-<details markdown="1"><summary>1977 Toronto: While a student in an MBA program, I led the battle for [marginal cost pricing for electricity](https://neon.energy/marginal-pricing) in the Province of Ontario</summary>
+<details markdown="1"><summary>1977 Toronto: While a student in an MBA program, I led the battle for [marginal cost pricing for electricity]( https://neon.energy/marginal-pricing ) in the Province of Ontario Canada</summary>
 <p>
-The corporate opposition was led by huge electricity consumers who smelted metal. They advocated hidden subsidies with surreptitious government backing. I lost my case, but still the [Ontario Energy Board](https://oeb.ca), where the hearing took place, awarded me costs. I published an op-ed in Canada's then newspaper of record [The Globe and Mail](https://www.theglobeandmail.com/). Most important, this hearing was a God-given life changing experience that taught me how a single individual could successfully stand up to corporate and government corruption, as can be seen by my subsequent experience throughout my life. 
-
+The corporate opposition was led by huge electricity consumers who smelted metal. They advocated hidden subsidies with surreptitious government backing. I lost my case, but still the [Ontario Energy Board]( https://oeb.ca ), where the hearing took place, awarded me costs. I published an op-ed in Canada's then newspaper of record [The Globe and Mail]( https://www.theglobeandmail.com/ ). Most important, this hearing was a God-given life changing experience that taught me how a single individual could successfully stand up to corporate and government corruption, as can be seen by my subsequent experience throughout my life. 
 </details>
 
 ### 3. Computer Science
@@ -165,13 +173,13 @@ The corporate opposition was led by huge electricity consumers who smelted metal
 
 1. My invention enabling the blind to sonically "see"/understand maps and mathematical functions by using a standard web browser and a consumer grade graphics tablet.
 
-2. My invention of a generic [dyslexic](https://en.wikipedia.org/wiki/Dyslexia) friendly font, by mimicking the concept that computer vision algorithms use to correctly identify a [QR code](https://en.wikipedia.org/wiki/QR_code), regardless of its physical orientation.
+2. My invention of a generic [dyslexic]( https://en.wikipedia.org/wiki/Dyslexia) friendly font, by mimicking the concept that computer vision algorithms use to correctly identify a [QR code]( https://en.wikipedia.org/wiki/QR_code), regardless of its physical orientation.
 
 3. How I taught kinesiological multiplication to my grandson using floor tiles and masking tape.
 
 4. How I taught a second grader advanced mathematics in 30 min., i.e. exponents and binary arithmetic.
 
-5. Teaching [rational trigonometry](https://en.wikipedia.org/wiki/Divine_Proportions:_Rational_Trigonometry_to_Universal_Geometry) based upon the system that the ancient [Akkadians](https://en.wikipedia.org/wiki/Akkadian_Empire) invented about 4000 years ago.
+5. Teaching [rational trigonometry]( https://en.wikipedia.org/wiki/Divine_Proportions:_Rational_Trigonometry_to_Universal_Geometry) based upon the system that the ancient [Akkadians]( https://en.wikipedia.org/wiki/Akkadian_Empire) invented about 4000 years ago.
 
 ### 5. Music Composition Software
 
