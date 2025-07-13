@@ -67,7 +67,7 @@ Unfortunately since the delusional Olso "peace accords" in 1993 there were many 
 <p>
 <details markdown="1"><summary>2) The scientific evidence for divine creation, according to the [Ramban's (c. 1250 CE)](https://en.wikipedia.org/wiki/Nachmanides) commentary on the first chapter of the book of [Genesis](https://en.wikipedia.org/wiki/Book_of_Genesis), [Gerald Schroeder's book "Genesis and the Big Bang" ](https://www.amazon.com/Genesis-Big-Bang-Discovery-Harmony/dp/0553354132), and [Nathan Aviezer's book "In the Beginning: Biblical Creation and Science"](https://ktav.com/products/in-the-beginning)</summary>
 <p>
-About 800 years ago the _Ramban_ described the ancient Rabbinic tradition that the only thing that [HaShem]( https://www.myjewishlearning.com/article/hashem/ ) actually created _ex nihilo_ were atomic particles (Greek: _Hyla_, Hebrew: _Tohu VeBohu_) which were used to subsequently form all other elements in the universe including stars, planets, plants, animals, and Man, etc. _HaShem_ compressed this chaotic mass of particles into a dark object the size of a mustard seed for an unknown period of time. Creation began when _HaShem_ caused this object to explode, scattering the particles throughout the universe, and then light appeared. This is identical to the description of the "Big Bang" theory that is now accepted by all modern astrophysicist cosmologists since the past 60 years.
+About 800 years ago the _Ramban_ described the ancient Rabbinic tradition that the only thing that [HaShem]( https://www.myjewishlearning.com/article/hashem/ ) actually created _ex nihilo_ were atomic particles (Greek: _Hyla_, Hebrew: _Tohu VeBohu_) which were used to subsequently form all other elements in the universe including stars, planets, plants, animals, and Man, etc. _HaShem_ compressed this chaotic mass of particles into a dark object the size of a mustard seed for an unknown period of time. Creation began when _HaShem_ caused this object to explode, scattering the particles throughout the universe, and then light appeared. This is identical to the description of the "Big Bang" theory that is now accepted by all modern astrophysicist cosmologists for the past 60 years.
 </p><p>
 The _Ramban_ refers to each "day" of creation as an _epoch_ (Hebrew: _Tekufa_). On each new day _HaShem_ injected massive changes into the universe. Darwinian "evolutionary" theory cannot account for the explosive changes in life after each new day. Each new day increased the "order" in the universe, i.e. reduced _entropy_. The Hebrew expression [and it was evening and it was morning (Gen. 1:5)]( https://mechon-mamre.org/p/pt/pt0101.htm ) (Hebrew: _Vayehi Erev Vayehi Voker_) that closes each day of creation alludes to this increase in order. The _Ramban_ states that the root meaning of the word "evening" (Hebrew: _Erev_) is derived from the Hebrew _Ta'arovet_ (English: "an unordered mixture"), while the word "morning" (Hebrew: _Boker_) is derived from the Hebrew _Mevukar_ (English: "ordered").
 </p><p>
@@ -186,6 +186,10 @@ The corporate opposition was led by huge electricity consumers who smelted metal
 ### 6. Health & Exercise
 
 <details markdown="1"><summary>1) My 5 min. course to teach deep meditation just by using a clock with a second hand</summary>
+<p>
+Bottom line, a meditative state is achieved when your brain wave frequency is about 5 Hz, i.e. 5 beats per second or 300 beats per minute. If you can count to 5 in your mind every second of a clock, or follow a metronome app that is set to 300 bpm, then you are in a deep meditative state. The better metronome apps usually provide both sound and visual feedback. The best learning technique is to __synchronize__ the sound and visual feedback. Initially most people can handle 180-240 bpm. With practice you can achieve 300.
+</p><p>
+Another, but indirect meditation techniqe, is via your phone's pulse app, typically measured by monitoring the blood flow through your finger or thumb by shining the camera's light into it. A pulse of 54 or less is indicative of deep meditation. You will need to control your breathing in order to achieve this low pulse rate.
 </details>
 
 <details markdown="1"><summary>2) How to reverse the natural course of cognitive decline among the elderly</summary>
@@ -201,10 +205,20 @@ The corporate opposition was led by huge electricity consumers who smelted metal
 2. proper diet
 
 	* especially monitor sugar and cholesterol
+	
+	* eat fruits and vegetables
+	
+	* prefer fish over meat
 
+	* limit milk
+	
+	* limit alcohol
+	
+	* don't smoke
+	
 3. proper sleep habits
 
-	* about 7 hours
+	* at least 7 hours
 
 4. cognitively challenging activities
 
@@ -214,9 +228,11 @@ The corporate opposition was led by huge electricity consumers who smelted metal
 	
 	* skip rope like a boxer
 	
-	* chess, or bridge
+	* play chess, or bridge, etc.
 	
-	* etc.
+	* learn a new topic
+	
+	* read an intellectually challenging book
 
 5. meditation
 
