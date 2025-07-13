@@ -185,7 +185,43 @@ The corporate opposition was led by huge electricity consumers who smelted metal
 
 ### 6. Health & Exercise
 
-1. My 5 min. course to teach deep meditation just by using a clock with a second hand.
+<details markdown="1"><summary>1) My 5 min. course to teach deep meditation just by using a clock with a second hand</summary>
+</details>
+
+<details markdown="1"><summary>2) How to reverse the natural course of cognitive decline among the elderly</summary>
+
+1. vigorous exercise, both aerobic and muscular
+
+	* intensive aerobic excercise at least 20 minutes 3x per week floods the hippocampus with blood which _generates_ new brain cells; where intensive means 80-90% of your theoretical maximum heart rate, i.e 220-YourAge; for example if you are 70 then your theoretical maximum is 150=220-70
+	
+	* daily walks for 15-30 minutes
+
+	* lift weights that are heavy for you, at least 2x per week; increases bone density which _reverses_ osteoporosis; do 2 sets of 6-8, where the second last lift in the set has achieved muscle exhaustion, so the last lift also relies upon the tendon; requires rest/recovery of 2-3 days in order to prevent tendon injury
+
+2. proper diet
+
+	* especially monitor sugar and cholesterol
+
+3. proper sleep habits
+
+	* about 7 hours
+
+4. cognitively challenging activities
+
+	* play a musical instrument
+	
+	* juggle
+	
+	* skip rope like a boxer
+	
+	* chess, or bridge
+	
+	* etc.
+
+5. meditation
+
+6. prevent loneliness; connecting with family and friends
+</details>
 
 ### 7. My Bookmarks
 
