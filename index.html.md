@@ -9,7 +9,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 <br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evenings (Jm. time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
-<br/>__Last Update:__ 2025-07-13
+<br/>__Last Update:__ 2025-07-14
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -53,15 +53,17 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ### 1. Torah & Yisrael
 
-<details markdown="1"><summary>1) My _Aliyah_, i.e. immigration to _Eretz Yisrael_</summary>
+<details markdown="1"><summary>1) My _Aliyah_, i.e. immigration to _Eretz Yisrael_ (English: the Land of Israel)</summary>
 <p>
-I came on _Aliyah_ in 1983 from the US. I have always lived in _Yerushalayim_. I came with my wife and my two oldest then infant children. I had a university degree, a few years experience in hi-tech, and enough money to place a substantial down payment on an apartment. I understood if I were to wait even a few years, and took out a mortgage on a home, then it was unlikely that I would ever leave the _Golden Medina_.
+I came on _Aliyah_ in 1983 from the US. I came with my wife and my two oldest then infant children. I had a university degree, a few years experience in hi-tech, and enough money to place a substantial down payment on an apartment. I understood if I were to wait even a few years, and took out a mortgage on a home, then it was unlikely that I would ever leave the _Golden Medina_.
 </p><p>
-For an observant God-fearing Jew, the ultimate place to live is in _Eretz Yisrael_. For the past 2000 years, every year at the end of the Passover _Seder_, we all sang _next year in Jerusalem_. With the advent of the Zionist movement, _Aliyah_ began in earnest about 1880. Until the 1960's it was physically difficult to live in Israel. But by the time I came in 1983, even though at the time, the standard of living was less than in North America, one could still expect to live a long healthy and fulfilling life in the modern State of Israel.
+I have always lived in _Yerushalayim_ (English: Jerusalem). _Har Habayit_ (English: the Temple Mount) is the navel of the world from which the _Shechina_ (English: God's presence) eminates throughout the world. 
 </p><p>
-Now (in 2025) I have no regrets moving to Israel. The values and life style of my children and grandchildren are so much better than my North American relatives. Israel's standard of living is one of the highest in the world. As a hi-tech professional, I am in the ultimate place in the world. It is sad but true, that many progressive people in the West hate the Jewish People, but I am proud to be a member of a righteous and just nation, even if it has to "dwell alone". And it is clear to any objective person, that we are living in the footsteps of the _Mashiach_ (English: Messiah). The ancient prophesies are being fulfilled.
+For an observant God-fearing Jew, the ultimate place to live is in _Eretz Yisrael_. For the past 2000 years, every year at the end of the Passover _Seder_, every Jewish family chants the prayer _next year in Jerusalem_. With the advent of the Zionist movement, _Aliyah_ began in earnest about 1880. Until the 1960's it was physically difficult to live in Israel. But by the time I came in 1983, even though at the time, the standard of living was much less than in North America, still one could expect to live a long healthy and fulfilling life in the modern State of Israel.
 </p><p>
-Unfortunately since the delusional Olso "peace accords" in 1993 there were many divisions in Israeli society, between religious, secular, left, and right. Most of these divisions are now disappearing since the Oct. 7 Hamas massacres. The process was painful, but Israeli society is now maturing.
+Now (in 2025) I have no regrets moving to Israel. The transformation is as [if we were in a dream (Psalm 126)](https://mechon-mamre.org/p/pt/pt26c6.htm). The values and life style of my children and grandchildren are so much better than my North American friends and relatives. Israel's standard of living is one of the highest in the world. Professionally I live at the pinnacle of the hi-tech world. It is sad but true, that many progressive people in the West hate the Jewish People, but I am proud to be a member of a righteous and just nation, even if we are forced to "dwell alone". And it is clear to any objective person, that we are living in the footsteps of the _Mashiach_ (English: Messiah). The ancient prophesies are being fulfilled before our eyes.
+</p><p>
+Unfortunately since the delusional Olso "peace accords" in 1993 there were many divisions in Israeli society, between religious, secular, left, and right. Most of these divisions are now disappearing since the Oct. 7 Hamas massacres. The process was painful, but Israeli society is now healing and maturing, and most are becoming much more aware that _HaShem_ is the _Ribono Shel Olam_ (English: Master of the Universe).
 </details>
 
 <p>
@@ -85,11 +87,11 @@ In our time (i.e. 2025) the world is witnessing (1) the fulfillment of this dire
 5) Wars against Hamas and Iranian Islamofascist barbarians
 
 <p>
-<details markdown="1"><summary>6) Desecration of [Hashem's]( https://www.myjewishlearning.com/article/hashem/ ) name:</summary>
+<details markdown="1"><summary>6) Current massive desecration of [Hashem's]( https://www.myjewishlearning.com/article/hashem/ ) name</summary>
 
 a. The Oct. 7 ["rave" dancers undulated under a statue of Budda]( https://www.catholicsforisrael.com/images/stories/nova_buddha.webp ) while the majority of believing Jews [danced in front of Torah scrolls on the night of _Simchat Torah_]( https://www.jpost.com/opinion/article-825795 ). They were engaged in the cardinal sin of idolatry exactly like those who danced in front of the [Golden Calf]( https://www.jewishvirtuallibrary.org/golden-calf ) about 3400 years ago, who _HaShem_ ordered to be killed on account of their offense. I feel that nearly all of the dancers were aware of the gravity of their offense, but they had a tenuous connection to the "quaint" beliefs of Judaism. Their apologists claim that no reasonable person believes in idols anymore, and that they just wanted to have some "fun". On the other hand, when the Hamas barbarians murdered hundreds of them in the morning, many were heard screaming _Shema Yisrael_ which is what traditional Jews have said since time immemorial when they die.
 
-b. [Hareidi]( https://www.myjewishlearning.com/article/haredim-charedim/ ) draft evasion during an existential war: Their behavior is indefensible. Their excuses are nonsensical. They argue about the danger of secularization if they were to join the army, yet almost half of the IDF's ground forces are religious Zionists. The _hareidim_ have not yet fully theologically accepted the establishment of the secular State of Israel, therefore many would prefer to live in the Diaspora. However 90 years ago the Nazi fascists, and now the current worldwide support of the the Islamofascists are forcing most Jews to immigrate to Israel (i.e. to make _Aliyah_). The _hareidim_ are incapable of publicly admitting and praising _HaShem's_ miracles that make it possible to live in Israel. They refuse to acknowledge the recent miraculous victory over Iran, nor the miraculous victory over the Arab armies in 1967, nor how land is blooming after 2000 years of desolation. I pray that _HaShem_ will publicly shame the leaders of the _hareidi_ community.
+b. [Hareidi]( https://www.myjewishlearning.com/article/haredim-charedim/ ) draft evasion during an existential war: Their behavior is indefensible. Their excuses are nonsensical. They argue about the danger of secularization if they were to join the IDF, yet almost half of the IDF's ground forces are religious Zionists. The _hareidim_ have not yet fully theologically accepted the establishment of the secular State of Israel, therefore many would prefer to live in the Diaspora. However 90 years ago the Nazi fascists, and now the current worldwide support of the the Islamofascists, are forcing most Jews to immigrate to make _Aliyah_. The _hareidim_ are incapable of publicly admitting and praising _HaShem's_ miracles that make it possible for us to live and to thrive in _Eretz Yisrael_. They refuse to acknowledge the recent miraculous victory over Iran, nor the miraculous victory over the Arab armies in 1967, nor how land is blooming after 2000 years of desolation. I pray that _HaShem_ will publicly shame the leaders of the _hareidi_ community.
 
 c. So-called "pride" "LGBTQ+" marches in the streets of _Yerushalayim_: About 3400 years ago, _Hashem_ revealed the _Torah_ to the Jewish People at Mount Sinai 7 weeks after _HaShem_ miraculously liberated them from hundreds of years of Egyptian bondage. The revelation was an extraordinary event. _Hashem_ instructed the Jews to uphold a new ethical legal system that reflected that Man was created in the image of God. It was a radical revolutionary concept for the ancient world that still required thousands of years for Man, at least in the Western world, to subsequently digest. Among other things, the _Torah_ forbids deviant sexual behavior, i.e. adultery, incest, beastiality, and __homosexuality__ - see [Lev. 18:1-30]( https://mechon-mamre.org/p/pt/pt0318.htm ) which is read during the _Yom Kippur_ service in order to emphasize the fundamental depravity of these offenses. People who proudly display such deviancy, even the few who have _bona fide_ psychological or physical urges, are spitting in _HaShem's_ face - regardless of the current fad of political correctness. Unfortunately in the State of Israel, in the name of "freedom of expression", the so-called "legal system" encourages such behavior even though it is reprehensible to the vast majority of the population. These so-called "judges" would never allow anyone to publicly defecate on the Israeli flag on Independence Day, but they have no qualms allowing someone to defecate on the _Torah_.
 </details>
@@ -129,7 +131,7 @@ Unfortunately after 30 years of the fake peace rigidly enforced by a fake legal 
 
 <details markdown="1"><summary>2023 Jerusalem: Rescued an extremely bright autistic teen from being declared truant and forcibly sent to an institution for emotional retards due to malicious negligence by the Ministry of Education</summary>
 <p>
-The boy had been learning successfully in a top school (i.e. _Machon Lev_ highschool), but started having problems during COVID when he was forced to be schooled at home. We achieved victory by sending the boy to be evaluated by the world renowned [Feuerstein Institute]( https://feuerstein-institute.org/  ) who specialize in the treatment, especially of children, who don't act "normal". Their evaluation confirmed that the was extremely bright. The ministry was simply too lazy to provide him with an assistant which they were legally obligated to do. Finally when they did provide him with an assistant, the ministry maliciously instructed the assistant to attempt to convince the boy to drop out of school.
+The boy had been learning successfully in a top school (i.e. _Machon Lev_ highschool), but started having problems during COVID when he was forced to be schooled at home. We achieved victory by sending the boy to be evaluated by the world renowned [Feuerstein Institute]( https://feuerstein-institute.org/ ) who specialize in the treatment, especially of children, who don't act "normal". Their evaluation confirmed that the was extremely bright. The ministry was simply too lazy to provide him with an assistant which they were legally obligated to do. Finally when they did provide him with an assistant, the ministry maliciously instructed the assistant to attempt to convince the boy to drop out of school.
 </details>
 
 <p>
@@ -185,9 +187,9 @@ The corporate opposition was led by huge electricity consumers who smelted metal
 
 ### 6. Health & Exercise
 
-<details markdown="1"><summary>1) My 5 min. course to teach deep meditation just by using a clock with a second hand</summary>
+<details markdown="1"><summary>1) My 3 min. course to teach deep meditation just by using a clock with a second hand</summary>
 <p>
-Bottom line, a meditative state is achieved when your brain wave frequency is about 5 Hz, i.e. 5 beats per second or 300 beats per minute. If you can count to 5 in your mind every second of a clock, or follow a metronome app that is set to 300 bpm, then you are in a deep meditative state. The better metronome apps usually provide both sound and visual feedback. The best learning technique is to __synchronize__ the sound and visual feedback. Initially most people can handle 180-240 bpm. With practice you can achieve 300.
+Bottom line, a meditative state is achieved when your brain wave frequency is about 5 Hz, i.e. 5 beats per second or 300 beats per minute. If you can count to 5 in your mind every second of a clock for at least 15 consecutive seconds, or follow a metronome app that is set to 300 bpm, then you are in a deep meditative state. The better metronome apps usually provide both sound and visual feedback. The best learning technique is to __synchronize__ the sound and visual feedback. Initially most people can handle 180-240 bpm. With practice you can achieve 300.
 </p><p>
 Another, but indirect meditation techniqe, is via your phone's pulse app, typically measured by monitoring the blood flow through your finger or thumb by shining the camera's light into it. A pulse of 54 or less is indicative of deep meditation. You will need to control your breathing in order to achieve this low pulse rate.
 </details>
@@ -196,29 +198,37 @@ Another, but indirect meditation techniqe, is via your phone's pulse app, typica
 
 1. vigorous exercise, both aerobic and muscular
 
-	* intensive aerobic excercise at least 20 minutes 3x per week floods the hippocampus with blood which _generates_ new brain cells; where intensive means 80-90% of your theoretical maximum heart rate, i.e 220-YourAge; for example if you are 70 then your theoretical maximum is 150=220-70
+	* _intensive_ aerobic excercise for at least 20 minutes 3x per week which [floods the hippocampus with blood which generates new brain cells]( https://www.ted.com/talks/wendy_suzuki_the_brain_changing_benefits_of_exercise ); where intensive means 80-90% of your theoretical maximum heart rate, i.e 220-YourAge; for example if you are 70 then your theoretical maximum is 150=220-70 bpm
 	
-	* daily walks for 15-30 minutes
+	* daily walks for 15-30 minutes, ideally 2x per day
+	
+	* daily stretching or yoga
 
-	* lift weights that are heavy for you, at least 2x per week; increases bone density which _reverses_ osteoporosis; do 2 sets of 6-8, where the second last lift in the set has achieved muscle exhaustion, so the last lift also relies upon the tendon; requires rest/recovery of 2-3 days in order to prevent tendon injury
+	* lift weights that exercise various muscles that are heavy for you, at least 2x per week; increases bone density which _reverses_ osteoporosis; do 2 sets of 6-8, where the second last lift in the set has achieved muscle exhaustion, so the last lift also relies upon tendon assistance; requires rest/recovery of 2-3 days in order to prevent tendon injury
 
 2. proper diet
 
-	* especially monitor sugar and cholesterol
+	* especially monitor sugar and cholesterol with regular blood tests, i.e. once every 3-6 months
 	
-	* eat fruits and vegetables
+	* regularly drink lots of unsweetened water; I prefer to add a few drops of natural lemon juice
 	
-	* prefer fish over meat
+	* eat raw fruits and raw (or steamed) vegetables, especially those with [anti-carcinogenic properties]( https://www.healwithfood.org/cancer/foods.php )
+	
+	* eat fish with omega-3 fatty acids, and limit meat consumption
 
-	* limit milk
+	* limit milk consumption (with the exception of non-sweetened probiotic cultured yogurt)
 	
-	* limit alcohol
+	* limit alcohol consumption
 	
 	* don't smoke
 	
+	* control your weight which helps to regulate blood pressure and limits joint pains
+	
 3. proper sleep habits
 
-	* at least 7 hours
+	* at least 7 hours of night time sleep
+	
+	* take an occasional nap
 
 4. cognitively challenging activities
 
@@ -236,7 +246,7 @@ Another, but indirect meditation techniqe, is via your phone's pulse app, typica
 
 5. meditation
 
-6. prevent loneliness; connecting with family and friends
+6. prevent loneliness; connect with family and friends
 </details>
 
 ### 7. My Bookmarks
