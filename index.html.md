@@ -55,7 +55,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 <details markdown="1"><summary>1) My _Aliyah_, i.e. immigration to _Eretz Yisrael_ (English: the Land of Israel)</summary>
 <p>
-I came on _Aliyah_ in 1983 from the US. I came with my wife and my two oldest then infant children. I had a university degree, a few years experience in hi-tech, and enough money to place a substantial down payment on an apartment. I understood if I were to wait even a few years, and took out a mortgage on a home, then it was unlikely that I would ever leave the _Golden Medina_.
+I came on _Aliyah_ in 1983 from the US. I came with my wife and my two oldest then infant children. I had a university degree, a few years experience in hi-tech, and enough money to make a down payment on an apartment. I understood if I were to wait even a few years, and took out a mortgage on a home, then it was unlikely that I would ever leave the _Golden Medina_.
 </p><p>
 I have always lived in _Yerushalayim_ (English: Jerusalem). _Har Habayit_ (English: the Temple Mount) is the navel of the world from which the _Shechina_ (English: God's presence) eminates throughout the world. 
 </p><p>
