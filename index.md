@@ -205,11 +205,12 @@ Bottom line, a meditative state is achieved when your brain wave frequency is ab
 Another, but indirect meditation techniqe, is via your phone's pulse app, typically measured by monitoring the blood flow through your finger or thumb by shining the camera's light into it. A pulse of 54 or less is indicative of deep meditation. You will need to control your breathing in order to achieve this low pulse rate.
 </details>
 
-<details markdown="1"><summary>2) How to reverse the natural course of cognitive decline among the elderly</summary>
+<details markdown="1"><summary>2) How to prevent the natural course of cognitive decline among the elderly</summary>
 
 1. vigorous exercise, both aerobic and muscular
 
 	* _intensive_ aerobic excercise for at least 20 minutes 3x per week which [floods the hippocampus with blood which generates new brain cells]( https://www.ted.com/talks/wendy_suzuki_the_brain_changing_benefits_of_exercise ); where intensive means 80-90% of your theoretical maximum heart rate, i.e 220-YourAge; for example if you are 70 then your theoretical maximum is 150=220-70 bpm
+		* note that I personally engage in 30 minutes of intensive aerobics 5x per week
 	
 	* daily walks for 15-30 minutes, ideally 2x per day
 	
