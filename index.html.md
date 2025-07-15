@@ -211,13 +211,13 @@ Another, but indirect meditation techniqe, is via your phone's pulse app, typica
 
 2. proper diet
 
-	* especially monitor glucose and cholesterol with regular blood tests, i.e. every 3-6 months
+	* monitor glucose and cholesterol levels with regular blood tests, i.e. every 3-6 months
 	
 	* regularly drink lots of unsweetened water; I prefer to add a few drops of natural lemon juice; lack of proper hydration substantially reduces cognition
 	
-	* eat fish with omega-3 fatty acids (the elixir for the brain), and limit meat consumption
+	* eat fish with omega-3 fatty acids (the elixir of the brain), and limit meat consumption
 
-	* eat raw fruits and raw (or steamed) vegetables, especially those with [anti-carcinogenic properties]( https://www.healwithfood.org/cancer/foods.php )
+	* eat raw fruits and raw (or lightly steamed) vegetables, especially those with [anti-carcinogenic properties]( https://www.healwithfood.org/cancer/foods.php )
 	
 	* eliminate consumption of sugar and artificial sweeteners; most people find cinnamon to be a good sweetener substitute while at the same time it reduces your glycemic index
 	 
