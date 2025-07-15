@@ -1,5 +1,5 @@
 $py(
-now = '2025-07-14'
+now = '2025-07-15'
 DOT = '&#x2022;'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
@@ -62,35 +62,27 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Articles & Blog: TBD
 
-### 1. Torah & Yisrael
+### 1. Torah & Yisrael: Political Correctness "Trigger Warning"
 
 <details markdown="1"><summary>1) My _Aliyah_, i.e. immigration to _Eretz Yisrael_ (English: the Land of Israel)</summary>
-<p>
-I came on _Aliyah_ in 1983 from the US. I came with my wife and my two oldest then infant children. I had a university degree, a few years experience in hi-tech, and enough money to make a down payment on an apartment. I understood if I were to wait even a few years, and took out a mortgage on a home, then it was unlikely that I would ever leave the _Golden Medina_.
-</p><p>
-I have always lived in _Yerushalayim_ (English: Jerusalem). _Har Habayit_ (English: the Temple Mount) is the navel of the world from which the _Shechina_ (English: God's presence) eminates throughout the world. 
-</p><p>
-For an observant God-fearing Jew, the ultimate place to live is in _Eretz Yisrael_. For the past 2000 years, every year at the end of the Passover _Seder_, every Jewish family chants the prayer _next year in Jerusalem_. With the advent of the Zionist movement, _Aliyah_ began in earnest about 1880. Until the 1960's it was physically difficult to live in Israel. But by the time I came in 1983, even though at the time the standard of living was much less than in North America, still one could expect to live a long healthy and fulfilling life in the modern State of Israel.
-</p><p>
-Now (in 2025) I have no regrets moving to Israel. The transformation is as [if we were in a dream (Psalm 126)](https://mechon-mamre.org/p/pt/pt26c6.htm). The values and life style of my children and grandchildren are so much better than my North American friends and relatives. Israel's standard of living is one of the highest in the world. Professionally I live at the pinnacle of the hi-tech world. It is sad but true, that many progressive people in the West hate the Jewish People, but I am proud to be a member of a righteous and just nation, even if we are forced to "dwell alone". And it is clear to any objective person, that we are living in the footsteps of the _Mashiach_ (English: Messiah). The ancient prophesies are being fulfilled before our eyes.
-</p><p>
-Unfortunately since the delusional Olso "peace accords" in 1993 there were many divisions in Israeli society, between religious, secular, left, and right. Most of these divisions are now disappearing since the Oct. 7 Hamas massacres. The process was painful, but Israeli society is now healing and maturing, and most are becoming much more aware that _HaShem_ is the _Ribono Shel Olam_ (English: Master of the Universe).
+* I came on _Aliyah_ in 1983 from the US. I came with my wife and my two oldest then infant children. I had a university degree, a few years experience in hi-tech, and enough money to make a down payment on an apartment. I understood if I were to wait even a few years, and took out a mortgage on a home, then it was unlikely that I would ever leave the _Golden Medina_.
+* I have always lived in _Yerushalayim_ (English: Jerusalem). _Har Habayit_ (English: the Temple Mount) is the navel of the world from which the _Shechina_ (English: God's presence) eminates throughout the world. 
+* For an observant God-fearing Jew, the ultimate place to live is in _Eretz Yisrael_. For the past 2000 years, every year at the end of the Passover _Seder_, every Jewish family chants the prayer _next year in Jerusalem_. With the advent of the Zionist movement, _Aliyah_ began in earnest about 1880. Until the 1960's it was physically difficult to live in Israel. But by the time I came in 1983, even though at the time the standard of living was much less than in North America, still one could expect to live a long healthy and fulfilling life in the modern State of Israel.
+* Now (in 2025) I have no regrets moving to Israel. The transformation is as [if we were in a dream (Psalm 126)](https://mechon-mamre.org/p/pt/pt26c6.htm). The values and life style of my children and grandchildren are so much better than my North American friends and relatives. Israel's standard of living is one of the highest in the world. Professionally I live at the pinnacle of the hi-tech world. It is sad but true, that many progressive people in the West hate the Jewish People, but I am proud to be a member of a righteous and just nation, even if we are forced to "dwell alone". And it is clear to any objective person, that we are living in the footsteps of the _Mashiach_ (English: Messiah). The ancient prophesies are being fulfilled before our eyes.
+* Unfortunately since the delusional Olso "peace accords" in 1993 there were many divisions in Israeli society, between religious, secular, left, and right. Most of these divisions are now disappearing since the Oct. 7 Hamas massacres. The process was painful, but Israeli society is now healing and maturing, and most are becoming much more aware that _HaShem_ is the _Ribono Shel Olam_ (English: Master of the Universe).
 </details>
 
 <p>
-<details markdown="1"><summary>2) The scientific evidence for divine creation, according to the [Ramban's (c. 1250 CE)](https://en.wikipedia.org/wiki/Nachmanides) commentary on the first chapter of the book of [Genesis](https://en.wikipedia.org/wiki/Book_of_Genesis), [Gerald Schroeder's book "Genesis and the Big Bang" ](https://www.amazon.com/Genesis-Big-Bang-Discovery-Harmony/dp/0553354132), and [Nathan Aviezer's book "In the Beginning: Biblical Creation and Science"](https://ktav.com/products/in-the-beginning)</summary>
-<p>
-About 800 years ago the _Ramban_ described the ancient Rabbinic tradition that the only thing that [HaShem]( https://www.myjewishlearning.com/article/hashem/ ) actually created _ex nihilo_ were atomic particles (Greek: _Hyla_, Hebrew: _Tohu VeBohu_) which were used to subsequently form all other elements in the universe including stars, planets, plants, animals, and Man, etc. _HaShem_ compressed this chaotic mass of particles into a dark object the size of a mustard seed for an unknown period of time. Creation began when _HaShem_ caused this object to explode, scattering the particles throughout the universe, and then light appeared. This is identical to the description of the "Big Bang" theory that is now accepted by all modern astrophysicist cosmologists for the past 60 years.
-</p><p>
-The _Ramban_ refers to each "day" of creation as an _epoch_ (Hebrew: _Tekufa_). On each new day _HaShem_ injected massive changes into the universe. Darwinian "evolutionary" theory cannot account for the explosive changes in life after each new day. Each new day increased the "order" in the universe, i.e. reduced _entropy_. The Hebrew expression [and it was evening and it was morning (Gen. 1:5)]( https://mechon-mamre.org/p/pt/pt0101.htm ) (Hebrew: _Vayehi Erev Vayehi Voker_) that closes each day of creation alludes to this increase in order. The _Ramban_ states that the root meaning of the word "evening" (Hebrew: _Erev_) is derived from the Hebrew _Ta'arovet_ (English: "an unordered mixture"), while the word "morning" (Hebrew: _Boker_) is derived from the Hebrew _Mevukar_ (English: "ordered").
-</p><p>
-_HaShem's_ ultimate act of creation was modern Man on the 6th day, on _Rosh Hashanna_ 5785 years ago, which conforms to the archeological time frame of the beginning of civilization, history, and writing. Since then the passage of time is as we now know it. This transformation happened nearly simultaneously worldwide wherever civilization existed from Mesopotamia, the Nile Delta, the Indus Valley, the Mekong Delta, the Yellow River Valley, etc.  Don't fool yourselves. The psychology of modern Man has not changed since this time.
+<details markdown="1"><summary>2) The scientific evidence for divine creation, according to the [Ramban's (c. 1250 CE)]( https://www.myjewishlearning.com/article/nahmanides-ramban/ ) commentary on the first chapter of the book of [Genesis]( https://en.wikipedia.org/wiki/Book_of_Genesis ), [Gerald Schroeder's book "Genesis and the Big Bang" ](https://www.amazon.com/Genesis-Big-Bang-Discovery-Harmony/dp/0553354132), and [Nathan Aviezer's book "In the Beginning: Biblical Creation and Science"](https://ktav.com/products/in-the-beginning)</summary>
+* About 800 years ago the _Ramban_ described the ancient Rabbinic tradition that the only thing that [HaShem]( https://www.myjewishlearning.com/article/hashem/ ) actually created _ex nihilo_ were atomic particles (Greek: _Hyla_, Hebrew: _Tohu VeBohu_) which were used to subsequently form all other elements in the universe including stars, planets, plants, animals, and Man, etc. _HaShem_ compressed this chaotic mass of particles into a dark object the size of a mustard seed for an unknown period of time. Creation began when _HaShem_ caused this object to explode, scattering the particles throughout the universe, and then light appeared. This is identical to the description of the "Big Bang" theory that is now accepted by all modern astrophysicist cosmologists for the past 60 years.
+* The _Ramban_ refers to each "day" of creation as an _epoch_ (Hebrew: _Tekufa_). On each new day _HaShem_ injected massive changes into the universe. Darwinian "evolutionary" theory cannot account for the explosive changes in life after each new day. Each new day increased the "order" in the universe, i.e. reduced _entropy_. The Hebrew expression [and it was evening and it was morning (Gen. 1:5)]( https://mechon-mamre.org/p/pt/pt0101.htm ) (Hebrew: _Vayehi Erev Vayehi Voker_) that closes each day of creation alludes to this increase in order. The _Ramban_ states that the root meaning of the word "evening" (Hebrew: _Erev_) is derived from the Hebrew _Ta'arovet_ (English: "an unordered mixture"), while the word "morning" (Hebrew: _Boker_) is derived from the Hebrew _Mevukar_ (English: "ordered").
+* _HaShem's_ ultimate act of creation was modern Man on the 6th day, on _Rosh Hashanna_ 5785 years ago, which conforms to the archeological time frame of the beginning of civilization, history, and writing. Since then the passage of time is as we now know it. This transformation happened nearly simultaneously worldwide wherever civilization existed from Mesopotamia, the Nile Delta, the Indus Valley, the Mekong Delta, the Yellow River Valley, etc.  Don't fool yourselves. The psychology of modern Man has not changed since this time.
 </details>
 
 <p>
 <details markdown="1"><summary>3) The reason why [HaShem]( https://www.myjewishlearning.com/article/hashem/ ) chose the Jews, along with _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)]( https://mechon-mamre.org/p/pt/pt0118.htm )</summary>
-<p>
-In our time (i.e. 2025) the world is witnessing (1) the fulfillment of this directive when the Jewish People who [dwells alone (Num. 23:9)]( https://mechon-mamre.org/p/pt/pt0423.htm ) in this world will [rise up like a lioness (Num. 23:24)]( https://mechon-mamre.org/p/pt/pt0423.htm ) to devour evil, and (2) the moral bankruptcy of the _Abrahamic_ "supercessionist" (aka replacement) theologies. The supercessionists have a highly flawed understanding of "ethical monotheism". Islam, while being monotheistic, worships [A God Who Hates]( https://en.wikipedia.org/wiki/A_God_Who_Hates ). The _Quran_ openly states that their God sanctions murder, pillaging, piracy, and slavery. Christianity, with highly suspect monotheistic credentials (i.e. their belief in the Trinity), [fundamentally cannot accept that ethical behavior requires adherence to God's laws]( https://biblehub.com/topical/t/the_danger_of_legalism.htm ), and cannot accept that evil often requires force to be eradicated.
+* In our time (i.e. 2025) the world is witnessing (1) the fulfillment of this directive when the Jewish People who [dwells alone (Num. 23:9)]( https://mechon-mamre.org/p/pt/pt0423.htm ) in this world will [rise up like a lioness (Num. 23:24)]( https://mechon-mamre.org/p/pt/pt0423.htm ) to devour evil, and (2) the moral bankruptcy of the _Abrahamic_ "supercessionist" (aka replacement) theologies.
+* The supercessionists have a highly flawed understanding of "ethical monotheism". Islam, while being monotheistic, worships [A God Who Hates]( https://en.wikipedia.org/wiki/A_God_Who_Hates ). The _Quran_ openly states that their God sanctions murder, pillaging, piracy, and slavery. Christianity, with highly suspect monotheistic credentials (i.e. their belief in the Trinity), [fundamentally cannot accept that ethical behavior requires adherence to God's laws]( https://biblehub.com/topical/t/the_danger_of_legalism.htm ), and cannot accept that evil often requires force to be eradicated.
 </details>
 
 4) Summary of the 1961 debate between Israeli Ambassador Rav Yaakov Herzog and Oxford historian Arnold Toynbee whether or not the Jewish People are in a state of [Fossil or Ferment]( https://www.sefaria.org.il/Judaism%3B_Fossil_or_Ferment%2C_Preface.1?lang=en )
@@ -98,13 +90,26 @@ In our time (i.e. 2025) the world is witnessing (1) the fulfillment of this dire
 5) Wars against Hamas and Iranian Islamofascist barbarians
 
 <p>
-<details markdown="1"><summary>6) Current massive desecration of [Hashem's]( https://www.myjewishlearning.com/article/hashem/ ) name</summary>
+<details markdown="1"><summary>6) Current massive public desecration of [Hashem's]( https://www.myjewishlearning.com/article/hashem/ ) name:</summary>
 
-a. The Oct. 7 ["rave" dancers undulated under a statue of Budda]( https://www.catholicsforisrael.com/images/stories/nova_buddha.webp ) while the majority of believing Jews [danced in front of Torah scrolls on the night of _Simchat Torah_]( https://www.jpost.com/opinion/article-825795 ). They were engaged in the cardinal sin of idolatry exactly like those who danced in front of the [Golden Calf]( https://www.jewishvirtuallibrary.org/golden-calf ) about 3400 years ago, who _HaShem_ ordered to be killed on account of their offense. I feel that nearly all of the dancers were aware of the gravity of their offense, but they had a tenuous connection to the "quaint" beliefs of Judaism. Their apologists claim that no reasonable person believes in idols anymore, and that they just wanted to have some "fun". On the other hand, when the Hamas barbarians murdered hundreds of them in the morning, many were heard screaming _Shema Yisrael_ which is what traditional Jews have said since time immemorial when they die.
+a. The Oct. 7 ["rave" dancers undulated under a statue of Budda]( https://www.catholicsforisrael.com/images/stories/nova_buddha.webp ) while the majority of believing Jews [danced in front of Torah scrolls on the night of _Simchat Torah_]( https://www.jpost.com/opinion/article-825795 ):
 
-b. [Hareidi]( https://www.myjewishlearning.com/article/haredim-charedim/ ) draft evasion during an existential war: Their behavior is indefensible. Their excuses are nonsensical. They argue about the danger of secularization if they were to join the IDF, yet almost half of the IDF's ground forces are religious Zionists, who are on the front lines and who volunteer for the most dangerous tasks in this war because they inherently understand the theological significance of what we are fighting for. The _hareidim_ have not yet fully theologically accepted the establishment of the secular State of Israel, therefore many would prefer to live in the Diaspora. However 90 years ago the Nazi fascists, and now the current worldwide support of the the Islamofascists, are forcing most Jews to make _Aliyah_. The _hareidim_ are incapable of publicly admitting and praising _HaShem's_ miracles that make it possible for us to live and to thrive in _Eretz Yisrael_. They refuse to acknowledge the recent miraculous victory over Iran, nor the miraculous victory over the Arab armies in 1967, nor how land is blooming after 2000 years of desolation. I pray that _HaShem_ will publicly shame the leaders of the _hareidi_ community.
+* They were engaged in the cardinal sin of idolatry exactly like those who danced in front of the [Golden Calf]( https://www.jewishvirtuallibrary.org/golden-calf ) about 3400 years ago, who _HaShem_ ordered to be killed on account of their offense. I feel that nearly all of the dancers were aware of the gravity of their offense, but they had a tenuous connection to the "quaint" beliefs of Judaism. Their apologists claim that no reasonable person believes in idols anymore, and that they just wanted to have some "fun".
+* On the other hand, when the Hamas barbarians murdered hundreds of them in the morning, many were heard screaming _Shema Yisrael_ which is what traditional Jews have said since time immemorial when they die.
 
-c. So-called "pride" "LGBTQ+" marches in the streets of _Yerushalayim_: About 3400 years ago, _Hashem_ revealed the _Torah_ to the Jewish People at Mount Sinai 7 weeks after _HaShem_ miraculously liberated them from hundreds of years of Egyptian bondage. The revelation was an extraordinary event. _Hashem_ instructed the Jews to uphold a new ethical legal system that reflected that Man was created in the image of God. It was a radical revolutionary concept for the ancient world that still required thousands of years for Man, at least in the Western world, to subsequently digest. Among other things, the _Torah_ forbids deviant sexual behavior, i.e. adultery, incest, beastiality, and __homosexuality__ - see [Lev. 18:1-30]( https://mechon-mamre.org/p/pt/pt0318.htm ) which is read during the _Yom Kippur_ service in order to emphasize the fundamental depravity of these offenses. People who proudly display such deviancy, even the few who have _bona fide_ psychological or physical urges, are spitting in _HaShem's_ face - regardless of the current fad of political correctness. Unfortunately in the State of Israel, in the name of "freedom of expression", the so-called "legal system" encourages such behavior even though it is reprehensible to the vast majority of the population. These so-called "judges" would never allow anyone to publicly defecate on the Israeli flag on Independence Day, but they have no qualms allowing someone to defecate on the _Torah_.
+b. The [Hareidi]( https://www.myjewishlearning.com/article/haredim-charedim/ ) theological advocacy of draft evasion during our existential war against the Hamas Islamofascist barbarians: 
+
+* Their behavior is indefensible. Their excuses are nonsensical. They argue about the danger of secularization if they were to join the IDF, yet almost half of the IDF's ground forces are religious Zionists, who are on the front lines, and who volunteer for the most dangerous missions in this war because they inherently understand the theological significance for which we are fighting. 
+* The _hareidim_ have not yet fully theologically accepted the establishment of the secular State of Israel, therefore many would prefer to live in the Diaspora which is a fundamental denial of the core belief in Judaism (according to [Ramban's]( https://www.myjewishlearning.com/article/nahmanides-ramban/ ) commentary on the first verse of the _Torah_). However 90 years ago the Nazi fascists, and now the current worldwide support of the the Islamofascists, are forcing most Jews to seriously consider _Aliyah_. 
+* The _hareidim_ are incapable of publicly admitting and praising _HaShem's_ miracles that make it possible for us to live and to thrive in _Eretz Yisrael_. They refuse to acknowledge the recent miraculous victory over Iran, nor the miraculous victory over the Arab armies in 1967, nor how land is blooming after 2000 years of desolation. This grave sin is referred to as lack of _HaKaret HaTov_ (English: thanks).
+* And just this month (July 2025) the _hareidi_ leadership has achieved a new nadir. In the _Knesset_ (English: parliament) they are preventing the expulsion an Arab _MK_ (English: member of _Knesset_), _Ayman Odeh_, who has publicly praised the Hamas barbarians, who inflicted the largest massacre of Jews since the _Sho'ah_ (English: the Nazi Holocaust). The difference between the _hareidim_ and the crazy marginal [Neturia Karta]( https://en.wikipedia.org/wiki/Neturei_Karta ) sect, who publicly support the Iranian denial of the _Sho'ah_, has become microscopic.
+* I pray that _HaShem_ will publicly shame the leaders of the _hareidi_ community.
+
+c. So-called "pride" "LGBTQ+" marches in the streets of _Yerushalayim_: 
+
+* About 3400 years ago, _Hashem_ revealed the _Torah_ to the Jewish People at Mount Sinai 7 weeks after _HaShem_ miraculously liberated them from hundreds of years of Egyptian bondage. The revelation was an extraordinary event. _Hashem_ instructed the Jews to uphold a new ethical legal system that reflected that Man was created in the image of God. It was a radical revolutionary concept for the ancient world that still required thousands of years for Man, at least in the Western world, to subsequently digest. 
+* Among other things, the _Torah_ forbids deviant sexual behavior, i.e. adultery, incest, beastiality, and __homosexuality__ - see [Lev. 18:1-30]( https://mechon-mamre.org/p/pt/pt0318.htm ) which is read during the _Yom Kippur_ service in order to emphasize the fundamental depravity of these offenses. People who proudly display such deviancy, even the few who have _bona fide_ psychological or physical urges, are spitting in _HaShem's_ face - regardless of the current fad of political correctness. 
+* Unfortunately in the State of Israel, in the name of "freedom of expression", the so-called "legal system" encourages such behavior even though it is reprehensible to the vast majority of the population. These so-called "judges" would never allow anyone to publicly defecate on the Israeli flag on Independence Day, but they have no qualms allowing someone to defecate on the _Torah_.
 </details>
 
 <p>
@@ -115,18 +120,16 @@ I pray that we will soon see the fulfillment of the prophecy [blessed be those w
 
 <p>
 <details markdown="1"><summary>8) The Oslo so-called "peace process" fiasco</summary>
-<p>
-Oslo was not a "noble experiment" that "just happened" to fail. The primary perpetrators, _Shimon Peres_ and _Yossi Beilin_, __intentionally designed it to fail!__ It must never be forgotten that Oslo enabled the so-called Gaza "Disengagement" which paved the way for the _Hamas_ barbarians to rule Gaza.
+
+* Oslo was not a "noble experiment" that "just happened" to fail. The primary perpetrators, _Shimon Peres_ and _Yossi Beilin_, __intentionally designed it to fail!__ It must never be forgotten that Oslo enabled the so-called Gaza "Disengagement" which paved the way for the _Hamas_ barbarians to rule Gaza.
 </details>
 
 <p>
 <details markdown="1"><summary>9) 1995-96: My __successful__ challenge of the IDF's illegal rules of engagement at the Supreme Court during the height of the Oslo lunacy</summary>
-<p> 
-An IDF general (i.e. Ilan Biran, the then _Aluf Pikud HaMerkaz_), ordered me, in front of other soldiers, to refrain from preemptively defending myself when a Palestinian terrorist aimed his rifle at me (or at other soldiers or at civilians) until __AFTER__ the bullet left the terrorist's rifle! Also Biran predicted how the new era of "peace" would eliminate the need for an IDF presence in the Jordan Valley even while Arafat was blowing up buses in _Yerushalayim_ while he was speaking!
-</p><p>
-For his fealty to the so-called "peace process", and concomitant lack of concern for the lives of his soldiers, the Oslo government subsequently rewarded Biran by appointing him as Director General of the Ministry Defense, and later as chairman of government controlled corporations, i.e. _Israel Oil Refineries_, _Bezeq_, and _Yes_. 
-</p><p>
-Unfortunately after 30 years of the fake peace rigidly enforced by a fake legal system that ignored the associated massive corruption required to make it work, _HaShem_ overwhelmed the Jewish People with the Oct. 7 massacres, which immediately woke up the vast majority of Israeli Jews from their stupor. I call this "baseball bat to the head" therapy. According to ancient Jewish tradition already stemming from the time of the Egyptian bondage, nothing happens to the Jewish People, whether good or bad, that is not dictated by _HaShem_ - see  [Gen. 15:13]( https://mechon-mamre.org/p/pt/pt0115.htm ).
+
+* An IDF general (i.e. Ilan Biran, the then _Aluf Pikud HaMerkaz_), ordered me, in front of other soldiers, to refrain from preemptively defending myself when a Palestinian terrorist aimed his rifle at me (or at other soldiers or at civilians) until __AFTER__ the bullet left the terrorist's rifle! Also Biran predicted how the new era of "peace" would eliminate the need for an IDF presence in the Jordan Valley even while Arafat was blowing up buses in _Yerushalayim_ while he was speaking!
+* For his fealty to the so-called "peace process", and concomitant lack of concern for the lives of his soldiers, the Oslo government subsequently rewarded Biran by appointing him as Director General of the Ministry Defense, and later as chairman of government controlled corporations, i.e. _Israel Oil Refineries_, _Bezeq_, and _Yes_. 
+* Unfortunately after 30 years of the fake peace rigidly enforced by a fake legal system that ignored the associated massive corruption required to make it work, _HaShem_ overwhelmed the Jewish People with the Oct. 7 massacres, which immediately woke up the vast majority of Israeli Jews from their stupor. I call this "baseball bat to the head" therapy. According to ancient Jewish tradition already stemming from the time of the Egyptian bondage, nothing happens to the Jewish People, whether good or bad, that is not dictated by _HaShem_ - see  [Gen. 15:13]( https://mechon-mamre.org/p/pt/pt0115.htm ).
 </details>
 
 <p>
@@ -209,32 +212,35 @@ Another, but indirect meditation techniqe, is via your phone's pulse app, typica
 
 1. vigorous exercise, both aerobic and muscular
 
-	* _intensive_ aerobic excercise for at least 20 minutes 3x per week which [floods the hippocampus with blood which generates new brain cells]( https://www.ted.com/talks/wendy_suzuki_the_brain_changing_benefits_of_exercise ); where intensive means 80-90% of your theoretical maximum heart rate, i.e 220-YourAge; for example if you are 70 then your theoretical maximum is 150=220-70 bpm
-		* note that I personally engage in 30 minutes of intensive aerobics 5x per week
+	* _intensive_ aerobic excercise for at least 20 minutes 3x per week which [floods the hippocampus with blood which _GENERATES_ new brain cells]( https://www.ted.com/talks/wendy_suzuki_the_brain_changing_benefits_of_exercise ); where intensive means 75-90% of your theoretical maximum heart rate, i.e 220-YourAge; for example if you are 70 then your theoretical maximum is 150=220-70 bpm; I personally engage in 30 minutes of intensive aerobics 5x per week at 85% of my theoretical maximum heart rate
 	
 	* daily walks for 15-30 minutes, ideally 2x per day
 	
 	* daily stretching or yoga
 
-	* lift weights that exercise various muscles that are heavy for you, at least 2x per week; increases bone density which _reverses_ osteoporosis; do 2 sets of 6-8, where the second last lift in the set has achieved muscle exhaustion, so the last lift also relies upon tendon assistance; requires rest/recovery of 2-3 days in order to prevent tendon injury
+	* lift weights that exercise various muscle groups that are _heavy for you_, 2-3x per week which increases bone density and _REVERSES_ osteoporosis; do 2 sets of 6-10, where the _second last_ lift in the set has achieved muscle exhaustion, so the _last_ lift also relies upon tendon assistance; requires rest/recovery of 2-3 days in order to prevent tendon injury
 
 2. proper diet
 
-	* especially monitor sugar and cholesterol with regular blood tests, i.e. once every 3-6 months
+	* especially monitor glucose and cholesterol with regular blood tests, i.e. every 3-6 months
 	
-	* regularly drink lots of unsweetened water; I prefer to add a few drops of natural lemon juice
+	* regularly drink lots of unsweetened water; I prefer to add a few drops of natural lemon juice; lack of proper hydration substantially reduces cognition
 	
+	* eat fish with omega-3 fatty acids (the elixir for the brain), and limit meat consumption
+
 	* eat raw fruits and raw (or steamed) vegetables, especially those with [anti-carcinogenic properties]( https://www.healwithfood.org/cancer/foods.php )
 	
-	* eat fish with omega-3 fatty acids, and limit meat consumption
-
-	* limit milk consumption (with the exception of non-sweetened probiotic cultured yogurt)
+	* eliminate consumption of sugar and artificial sweeteners; most people find cinnamon to be a good sweetener substitute while at the same time it reduces your glycemic index
+	 
+	* limit alcohol and caffeine consumption
 	
-	* limit alcohol consumption
+	* limit milk consumption, except for a daily portion of non-sweetened probiotic cultured yogurt
 	
 	* don't smoke
 	
 	* control your weight which helps to regulate blood pressure and limits joint pains
+	
+	* limit salt consumption which causes most people's blood pressure to increase; instead try using new spices such as tumeric, ginger, or garlic powder, etc.
 	
 3. proper sleep habits
 
@@ -248,7 +254,7 @@ Another, but indirect meditation techniqe, is via your phone's pulse app, typica
 	
 	* juggle
 	
-	* skip rope like a boxer
+	* skip rope like a boxer, or learn ballet
 	
 	* play chess, or bridge, etc.
 	
