@@ -89,7 +89,7 @@ a. The Oct. 7 ["rave" dancers undulated under a statue of Budda]( https://www.ca
 b. The [Hareidi]( https://www.myjewishlearning.com/article/haredim-charedim/ ) theological advocacy of draft evasion during our existential war against the Hamas Islamofascist barbarians: 
 
 * Their behavior is indefensible. Their excuses are nonsensical. They argue about the danger of secularization if they were to join the IDF, yet almost half of the IDF's ground forces are religious Zionists, who are on the front lines, and who volunteer for the most dangerous missions in this war because they inherently understand the theological significance for which we are fighting. 
-* The _hareidim_ have not yet fully theologically accepted the establishment of the secular State of Israel, therefore many would prefer to live in the Diaspora which is a fundamental denial of the core belief in Judaism (according to [Ramban's]( https://www.myjewishlearning.com/article/nahmanides-ramban/ ) commentary on the first verse of the _Torah_). However 90 years ago the Nazi fascists, and now the current worldwide support of the the Islamofascists, are forcing most Jews to seriously consider _Aliyah_. 
+* The _hareidim_ have not yet fully theologically accepted the establishment of the secular State of Israel, therefore many would prefer to live in the Diaspora which is a fundamental denial of the core belief in Judaism according to [Ramban's]( https://www.myjewishlearning.com/article/nahmanides-ramban/ ) commentary on the first verse of the _Torah_ (Gen. 1:1). However 90 years ago the Nazi fascists, and now the current worldwide support of the the Islamofascists, are forcing most Jews to seriously consider _Aliyah_. 
 * The _hareidim_ are incapable of publicly admitting and praising _HaShem's_ miracles that make it possible for us to live and to thrive in _Eretz Yisrael_. They refuse to acknowledge the recent miraculous victory over Iran, nor the miraculous victory over the Arab armies in 1967, nor how land is blooming after 2000 years of desolation. This grave sin is referred to as lack of _HaKaret HaTov_ (English: thanks).
 * And just this month (July 2025) the _hareidi_ leadership has achieved a new nadir. In the _Knesset_ (English: parliament) they are preventing the expulsion of an Arab _MK_ (English: member of _Knesset_), _Ayman Odeh_, who has publicly praised the Hamas barbarians, who inflicted the largest massacre of Jews since the _Sho'ah_ (English: the Nazi Holocaust). The difference between the _hareidim_ and the crazy marginal [Neturia Karta]( https://en.wikipedia.org/wiki/Neturei_Karta ) sect, who publicly support the Iranian denial of the _Sho'ah_, has become microscopic.
 * I pray that _HaShem_ will publicly shame the leaders of the _hareidi_ community.
@@ -134,7 +134,7 @@ I pray that we will soon see the fulfillment of the prophecy [blessed be those w
 
 <details markdown="1"><summary>2023 Jerusalem: Rescued an extremely bright autistic teen from being declared truant and forcibly sent to an institution for emotional retards due to malicious negligence by the Ministry of Education</summary>
 <p>
-The boy had been learning successfully in a top school (i.e. _Machon Lev_ highschool), but started having problems during COVID when he was forced to be schooled at home. We achieved victory by sending the boy to be evaluated by the world renowned [Feuerstein Institute]( https://feuerstein-institute.org/ ) who specialize in the treatment, especially of children, who don't act "normal". Their evaluation confirmed that the was extremely bright. The ministry was simply too lazy to provide him with an assistant which they were legally obligated to do. Finally when they did provide him with an assistant, the ministry maliciously instructed the assistant to attempt to convince the boy to drop out of school.
+The boy had been learning successfully in a top school (i.e. _Machon Lev_ highschool), but started having problems during _Covid_ when he was forced to be schooled at home. We achieved victory by sending the boy to be evaluated by the world renowned [Feuerstein Institute]( https://feuerstein-institute.org/ ) who specialize in the treatment of people, especially of children, who don't act "normal". Their evaluation confirmed that the was extremely bright. The ministry was simply too lazy to provide him with an assistant which they were legally obligated to do. Finally when they did provide him with an assistant, the ministry maliciously instructed the assistant to attempt to convince the boy to drop out of school.
 </details>
 
 <p>
@@ -194,14 +194,14 @@ The corporate opposition was led by huge electricity consumers who smelted metal
 <p>
 Bottom line, a meditative state is achieved when your brain wave frequency is about 5 Hz, i.e. 5 beats per second or 300 beats per minute. If you can count to 5 in your mind every second of a clock for at least 15 consecutive seconds, or follow a metronome app that is set to 300 bpm, then you are in a deep meditative state. The better metronome apps usually provide both sound and visual feedback. Here is an excellent free Android [metronome app]( https://stonekick.com/metronome.html ). The best learning technique is to __synchronize__ the sound and visual feedback. Initially most people can handle 180-240 bpm. With practice you can achieve 300.
 </p><p>
-Another, but indirect meditation techniqe, is via your phone's pulse app, typically measured by monitoring the blood flow through your finger or thumb by shining the camera's light into it. A pulse of 54 or less is indicative of deep meditation. You will need to control your breathing in order to achieve this low pulse rate.
+Another, but indirect meditation technique, is via your phone's pulse app, typically measured by monitoring the blood flow through your finger or thumb by shining the camera's light into it. A pulse of 54 or less is indicative of deep meditation. You will need to control your breathing in order to achieve this low pulse rate.
 </details>
 
 <details markdown="1"><summary>2) How to prevent the natural course of cognitive decline among the elderly</summary>
 
 1. vigorous exercise, both aerobic and muscular
 
-	* _intensive_ aerobic excercise for at least 20 minutes 3x per week which [floods the hippocampus with blood which _GENERATES_ new brain cells]( https://www.ted.com/talks/wendy_suzuki_the_brain_changing_benefits_of_exercise ); where intensive means 75-90% of your theoretical maximum heart rate, i.e 220-YourAge; for example if you are 70 then your theoretical maximum is 150=220-70 bpm; I personally engage in 30 minutes of intensive aerobics 5x per week at 85% of my theoretical maximum heart rate
+	* _intensive_ aerobic exercise for at least 20 minutes 3x per week which [floods the hippocampus with blood which _GENERATES_ new brain cells]( https://www.ted.com/talks/wendy_suzuki_the_brain_changing_benefits_of_exercise ); where intensive means 75-90% of your theoretical maximum heart rate, i.e 220-YourAge; for example if you are 70 then your theoretical maximum is 150=220-70 bpm; I personally engage in 30 minutes of intensive aerobics 5x per week at 85% of my theoretical maximum heart rate
 	
 	* daily walks for 15-30 minutes, ideally 2x per day
 	
@@ -233,7 +233,7 @@ Another, but indirect meditation techniqe, is via your phone's pulse app, typica
 	
 	* control your weight which helps to regulate blood pressure and limits joint pains
 	
-	* limit salt consumption which causes most people's blood pressure to increase; instead try using new spices such as tumeric, ginger, or garlic powder, etc.
+	* limit salt consumption which causes most people's blood pressure to increase; instead try using new spices such as turmeric, ginger, or garlic powder, etc.
 	
 3. proper sleep habits
 
