@@ -208,8 +208,8 @@ Another, but indirect meditation techniqe, is via your phone's pulse app, typica
 	* daily stretching or yoga
 
 	* lift weights that exercise various muscle groups that are _heavy for you_, 2x per week which increases bone density and can [reverse osteoporosis]( https://melioguide.com/osteoporosis-exercises/osteoporosis-reversed/ ); do 2 sets of 6-10, where the _second last_ lift in the set has achieved muscle exhaustion, so the _last_ lift relies upon tendon assist; __requires rest/recovery of 3 days in order to prevent tendon injury__
-		* consuming calcium rich foods or medication, which are stored in your liver, will not be properly utilized by your bones unless your bones hormonically signal to your liver that it needs to repair a break
-		* microscopic tears of tendons on the bone surface generate this signal
+		* consuming calcium rich foods or medication, which are stored in your liver, will not be properly utilized by your bones unless your bones can send a hormonal signal to your liver that it needs to repair a break
+		* microscopic tears of tendons on the bone surface generate such a signal
 		* lifting a weight with tendon assist after muscle exhaustion causes such a microscopic tear
 		* [see how the reversal process works]( https://www.livestrong.com/article/140765-what-happens-muscles-after-lifting-weights/ )
 
