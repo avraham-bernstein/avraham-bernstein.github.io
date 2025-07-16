@@ -128,7 +128,7 @@ I pray that we will soon see the fulfillment of the prophecy [blessed be those w
 <details markdown="1"><summary>9) 1995-96: My __successful__ challenge of the IDF's illegal rules of engagement at the Supreme Court during the height of the Oslo lunacy</summary>
 
 * An IDF general (i.e. Ilan Biran, the then _Aluf Pikud HaMerkaz_), ordered me, in front of other soldiers, to refrain from preemptively defending myself when a Palestinian terrorist aimed his rifle at me (or at other soldiers or at civilians) until __AFTER__ the bullet left the terrorist's rifle! Also Biran predicted how the new era of "peace" would eliminate the need for an IDF presence in the Jordan Valley even while Arafat was blowing up buses in _Yerushalayim_ while he was speaking!
-* For his fealty to the so-called "peace process", and concomitant lack of concern for the lives of his soldiers, the Oslo government subsequently rewarded Biran by appointing him as Director General of the Ministry Defense, and later as chairman of government controlled corporations, i.e. _Israel Oil Refineries_, _Bezeq_, and _Yes_. 
+* For his fealty to the so-called "peace process", and concomitant lack of concern for the lives of his soldiers, the Oslo government subsequently rewarded Biran by appointing him as Director General of the Ministry of Defense, and later as chairman of government controlled corporations, i.e. _Israel Oil Refineries_, _Bezeq_, and _Yes_. 
 * Unfortunately after 30 years of the fake peace rigidly enforced by a fake legal system that ignored the associated massive corruption required to make it work, _HaShem_ overwhelmed the Jewish People with the Oct. 7 massacres, which immediately woke up the vast majority of Israeli Jews from their stupor. I call this "baseball bat to the head" therapy. According to ancient Jewish tradition already stemming from the time of the Egyptian bondage, nothing happens to the Jewish People, whether good or bad, that is not dictated by _HaShem_ - see  [Gen. 15:13]( https://mechon-mamre.org/p/pt/pt0115.htm ).
 </details>
 
@@ -145,13 +145,13 @@ I pray that we will soon see the fulfillment of the prophecy [blessed be those w
 
 <details markdown="1"><summary>2023 Jerusalem: Rescued an extremely bright autistic teen from being declared truant and forcibly sent to an institution for emotional retards due to malicious negligence by the Ministry of Education</summary>
 <p>
-The boy had been learning successfully in a top school (i.e. _Machon Lev_ highschool), but started having problems during _Covid_ when he was forced to be schooled at home. We achieved victory by sending the boy to be evaluated by the world renowned [Feuerstein Institute]( https://feuerstein-institute.org/ ) who specialize in the treatment of people, especially of children, who don't act "normal". Their evaluation confirmed that the was extremely bright. The ministry was simply too lazy to provide him with an assistant which they were legally obligated to do. Finally when they did provide him with an assistant, the ministry maliciously instructed the assistant to attempt to convince the boy to drop out of school.
+The boy had been learning successfully in a top school (i.e. _Machon Lev_ highschool), but started having problems during _Covid_ when he was forced to be schooled at home. We achieved victory by sending the boy to be evaluated by the world renowned [Feuerstein Institute]( https://feuerstein-institute.org/ ) who specialize in the treatment of people, especially of children, who don't act normally. Their evaluation confirmed that he was extremely bright. The ministry was simply too lazy to provide him with an assistant which they were legally obligated to do. Finally when they did provide him with an assistant, the ministry maliciously instructed the assistant to attempt to convince the boy to drop out of school.
 </details>
 
 <p>
 <details markdown="1"><summary>2016-19 Jerusalem: Rescued 3 young children at family court from foster care when the Ministry of Social Services maliciously and falsely accused the father (my wife's relative) of being a pedophile when in fact I showed that his young daughter was serially molested in locked-down institutions run by Social Services</summary>
 <p>
-Even though we eventually won our case which is highly unusual when social services declares the father to be a pedophile, the most depressing element was that the judge presiding over this trial became aware that the senior social services youth officer was committing perjury, and that the court appointed legal guardian of the children was aware of this perjury yet remained silent, yet the judge never criminally sanctioned his "colleagues" with whom he worked for many years in the family court system. The deputy legal advisor for the ministry refused to get involved in this case. And our expensive attorney who initially promised that he would advocate that they be charged with contempt and perjury, eventually backed down by saying that we should just be extremely grateful for the outcome.
+Even though we eventually won our case which is highly unusual when social services declares the father to be a pedophile, the most depressing element was that the judge presiding over this trial became aware that the senior social services youth officer was committing perjury, and that the court appointed legal guardian of the children was aware of this perjury yet remained silent, yet the judge never criminally sanctioned his "colleagues" with whom he worked for many years in the family court system. The deputy legal advisor for the ministry refused to get involved in our case. And our expensive attorney who initially promised that he would advocate that they be charged with contempt and perjury, eventually backed down by saying that we should just be extremely grateful for the outcome.
 </details>
 
 <p>
@@ -197,6 +197,8 @@ The corporate opposition was led by huge electricity consumers who smelted metal
 
 5. Teaching [rational trigonometry]( https://en.wikipedia.org/wiki/Divine_Proportions:_Rational_Trigonometry_to_Universal_Geometry) based upon the system that the ancient [Akkadians]( https://en.wikipedia.org/wiki/Akkadian_Empire) invented about 4000 years ago.
 
+6. The history of the discovery of the number "zero" in the ancient world.
+
 ### 5. Music Composition Software
 
 ### 6. Health & Exercise
@@ -219,7 +221,7 @@ Another, but indirect meditation technique, is via your phone's pulse app, typic
 	* daily stretching or yoga
 
 	* lift weights that exercise various muscle groups that are _heavy for you_, 2x per week which increases bone density and can [reverse osteoporosis]( https://melioguide.com/osteoporosis-exercises/osteoporosis-reversed/ ); do 2 sets of 6-10, where the _second last_ lift in the set has achieved muscle exhaustion, so the _last_ lift relies upon tendon assist; __requires rest/recovery of 3 days in order to prevent tendon injury__
-		* consuming calcium rich foods or medication, which are stored in your liver, will not be properly utilized by your bones unless your bones can send a hormonal signal to your liver that it needs to repair a break
+		* consuming calcium rich foods or medication, which are stored in your liver, __will not__ be absorbed by your bones unless your bones first send a hormonal signal to your liver that it needs to repair a break
 		* microscopic tears of tendons on the bone surface generate such a signal
 		* lifting a weight with tendon assist after muscle exhaustion causes such a microscopic tear
 		* [see how the reversal process works]( https://www.livestrong.com/article/140765-what-happens-muscles-after-lifting-weights/ )
