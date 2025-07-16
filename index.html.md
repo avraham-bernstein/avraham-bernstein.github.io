@@ -132,7 +132,13 @@ I pray that we will soon see the fulfillment of the prophecy [blessed be those w
 
 ### 2. Community Service
 
-<details markdown="1"><summary>2023 Jerusalem: Rescued an extremely bright autistic teen from being declared truant and forcibly sent to an institution for emotional retards due to malicious negligence by the Ministry of Education</summary>
+<details markdown="1"><summary>2023 Jerusalem: Hosted a Russian refugee family in my home for 3 months that fled to prevent the father from becoming a cannon fodder conscript in the Ukranian war</summary>
+<p>
+Because the Russian government halted all Jewish Agency activities in order to prevent conscripts from fleeing, Jews who did manage to escape simply showed up at Ben Gurion airport, and declared themselves as refugee new immigrants. Normally it would take the Ministry of Absorption 3-4 months to prepare the paperwork to receive a new immigrant family. Until the paperwork is approved the immigrants have no financial benefits, and due to the war Russian currency was not easily convertible to hard currencies. The family stayed in two spare rooms in my home which had an adjacent bathroom. I arranged to receive the family via the Russian Olim group _Machanayim_. In a previous job, I worked with one of their senior people.
+</details>
+
+<p>
+<details markdown="1"><summary>2022-23 Jerusalem: Rescued an extremely bright autistic teen from being declared truant and forcibly sent to an institution for emotional retards due to malicious negligence by the Ministry of Education</summary>
 <p>
 The boy had been learning successfully in a top school (i.e. _Machon Lev_ highschool), but started having problems during _Covid_ when he was forced to be schooled at home. We achieved victory by sending the boy to be evaluated by the world renowned [Feuerstein Institute]( https://feuerstein-institute.org/ ) who specialize in the treatment of people, especially of children, who don't act normally. Their evaluation confirmed that he was extremely bright. The ministry was simply too lazy to provide him with an assistant which they were legally obligated to do. Finally when they did provide him with an assistant, the ministry maliciously instructed the assistant to attempt to convince the boy to drop out of school.
 </details>
