@@ -267,6 +267,8 @@ Another, but indirect meditation technique, is via your phone's pulse app, typic
 	* learn a new topic
 	
 	* read an intellectually challenging book
+	
+	* keep a journal or blog
 
 5. meditation
 
