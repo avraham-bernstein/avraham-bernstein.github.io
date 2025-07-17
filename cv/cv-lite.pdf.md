@@ -229,22 +229,6 @@ Broadband RF Networking: See the tasks that I did for the successor company [Vyy
 
 
 
-### 1987: _Orisol_ (defunct) Lod IL 
-
-
- [&#x25B8; High Speed Sewing Robot For Leather Goods: S/W architect of a DSL used to control the robot](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html#orisol)
-
-
-### 1980-86: Junior Programmer and Economist Positions in the US and Israel
-
-
-### 1977: [Ontario Energy Board](https://www.oeb.ca) Toronto Ontario 
-
-
- [&#x25B8; Public Utility Commission: Public interest intervenor-economist at the ECAP77 hearings on marginal cost pricing for electricity](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html#oeb)
-
-
-
 
 ## Unpatented Personal Inventions 
 
@@ -274,20 +258,6 @@ Broadband RF Networking: See the tasks that I did for the successor company [Vyy
     * I took my first course in computer science in _FORTRAN_ on an [IBM 1130](http://ibm1130.org/) mini-computer with 16 KB RAM. My first serious program was a _perfect_ game of _Qubic_, 3D tic-tac-toe, using 4 levels of boards each of which has 4x4 squares. Subsequently I became "addicted" to programming for life.
     
     * Also besides advanced courses in mathematics, one of my more useful courses was learning how to "touch type".
-
-
-
-## Personal 
-
-
- [&#x25B8; Personal](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html#personal)
-
-
-
-## Colophon 
-
-
- [&#x25B8; Colophon](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html#colophon)
 
 
 

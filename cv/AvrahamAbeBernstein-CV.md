@@ -4,6 +4,7 @@ yy = 2025
 
 html = 'AvrahamAbeBernstein-CV.html'
 pdf = 'AvrahamAbeBernstein-CV.pdf'
+lite_pdf = 'AvrahamAbeBernstein-CV-Lite.pdf'
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
 photo = www + '/AvrahamAbeBernstein-20250202-Watermarked.20pc.png'
@@ -637,6 +638,7 @@ $(hdetails(task))
 </details>
 $endif
 
+$if(not is_lite)
 $py(id="orisol"; task="High Speed Sewing Robot For Leather Goods: S/W architect of a DSL used to control the robot")
 ### 1987: _Orisol_ (defunct) Lod IL $(para(id))
 
@@ -681,6 +683,7 @@ $(hdetails(task))
 6. This job was a formative learning experience for me that subsequently effected my whole life because I learned that a single individual can effectively stand up to the corruption of large business and government. With perfect hindsight, it was clearly a case of Divine intervention (Hebrew: _Hashgacha Pratit_). Years later in my life in Israel, I became involved in a number of community service projects where I showed that a single individual can make a difference and successfully push back against government corruption. (See _future_ articles in my web site on my community service).
 
 </details>
+$endif
 $endif
 
 $py(id="personal-inventions"; task="Inventions")
@@ -1066,6 +1069,7 @@ $endif
     
     * Also besides advanced courses in mathematics, one of my more useful courses was learning how to "touch type".
 
+$if(not is_lite)
 $py(id="personal"; task="Personal")
 ## Personal $(para(id))
 
@@ -1127,6 +1131,7 @@ See my source code at:
 [https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
 
 </details>
+$endif
 $endif
 
 ## Footnotes

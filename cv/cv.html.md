@@ -565,6 +565,7 @@ Broadband RF Networking: See the tasks that I did for the successor company [Vyy
 
 
 
+
 ### 1987: _Orisol_ (defunct) Lod IL <a href="#orisol">&para;</a> {#orisol}
 
 
@@ -604,6 +605,7 @@ Broadband RF Networking: See the tasks that I did for the successor company [Vyy
 6. This job was a formative learning experience for me that subsequently effected my whole life because I learned that a single individual can effectively stand up to the corruption of large business and government. With perfect hindsight, it was clearly a case of Divine intervention (Hebrew: _Hashgacha Pratit_). Years later in my life in Israel, I became involved in a number of community service projects where I showed that a single individual can make a difference and successfully push back against government corruption. (See _future_ articles in my web site on my community service).
 
 </details>
+
 
 
 
@@ -985,6 +987,7 @@ I highly recommend that high school students who learn trigonometry should also 
     * Also besides advanced courses in mathematics, one of my more useful courses was learning how to "touch type".
 
 
+
 ## Personal <a href="#personal">&para;</a> {#personal}
 
 
@@ -1041,6 +1044,7 @@ See my source code at:
 [https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv](https://github.com/avraham-bernstein/avraham-bernstein.github.io/tree/master/cv).
 
 </details>
+
 
 
 ## Footnotes
