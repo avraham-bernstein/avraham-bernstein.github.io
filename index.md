@@ -52,7 +52,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Links
 
-* __CV:__ Computer Scientist: [Long HTML]($(cv_root).html),&nbsp;&nbsp;[Short PDF]($(cv_root).pdf)
+* __CV:__ Computer Scientist: [Long HTML]($(cv_root).html),&nbsp;&nbsp;[Short PDF]($(cv_root).pdf),&nbsp;&nbsp;[Lite PDF]($(cv_root)-Lite.pdf)
 
 * __Linkedin:__ [$(linkedin)]($(linkedin))
 
