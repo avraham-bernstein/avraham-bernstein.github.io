@@ -51,7 +51,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Articles & Blog: TBD
 
-### 1. Torah & Yisrael: Political Correctness "Trigger Warning"
+### 1. Torah & Yisrael: Politically Correct "Trigger Warning"
 
 <details markdown="1"><summary>1) My _Aliyah_, i.e. immigration to _Eretz Yisrael_ (English: the Land of Israel)</summary>
 * I came on _Aliyah_ in 1983 from the US. I came with my wife and my two oldest then infant children. I had a university degree, a few years experience in hi-tech, and enough money to make a down payment on an apartment. I understood if I were to wait even a few years, and took out a mortgage on a home, then it was unlikely that I would ever leave the _Golden Medina_.
@@ -79,7 +79,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 5) Wars against Hamas and Iranian Islamofascist barbarians
 
 <p>
-<details markdown="1"><summary>6) Current massive public desecration of [Hashem's]( https://www.myjewishlearning.com/article/hashem/ ) name: Political Correctness "Trigger Warning"</summary>
+<details markdown="1"><summary>6) Current massive public desecration of [Hashem's]( https://www.myjewishlearning.com/article/hashem/ ) name:</summary>
 
 a. The Oct. 7 ["rave" dancers undulated under a statue of Budda]( https://www.catholicsforisrael.com/images/stories/nova_buddha.webp ) while the majority of believing Jews [danced in front of Torah scrolls on the night of _Simchat Torah_]( https://www.jpost.com/opinion/article-825795 ):
 
