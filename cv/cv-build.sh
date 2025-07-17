@@ -21,4 +21,4 @@ pandoc -f markdown_phpextra+backtick_code_blocks --pdf-engine=wkhtmltopdf -s --c
 
 expander.py --eval  'is_pdf=True;is_lite=True' -f $MD > cv-lite.pdf.md
 pandoc -f markdown_phpextra+backtick_code_blocks --pdf-engine=wkhtmltopdf -s --columns=120 \
-	-o $LITE_PDF --metadata-file=cv.yml cv-lite.pdf.md
+	-o $LITE_PDF --metadata-file=cv-lite.yml cv-lite.pdf.md
