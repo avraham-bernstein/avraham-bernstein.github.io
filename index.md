@@ -64,7 +64,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ### 1. Torah & Yisrael: Politically Correct "Trigger Warning"
 
-<details markdown="1"><summary>1) My _Aliyah_, i.e. immigration to _Eretz Yisrael_ (English: the Land of Israel)</summary>
+<details markdown="1"><summary>1) My _Aliyah_, i.e. immigration to _Eretz Yisrael_ (English: the Land of Israel): "To build and to be built" (Hebrew: _Livnot Ulehibanot_)</summary>
 
 * I came on _Aliyah_ in 1983 from the US. I came with my wife and my two oldest then infant children. I had a university degree, a few years experience in hi-tech, and enough money to make a down payment on an apartment. I understood if I were to wait even a few years, and took out a mortgage on a home, then it was unlikely that I would ever leave the [Golden Medina]( https://www.israelnationalnews.com/news/341046 ).
 
@@ -72,7 +72,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 * For an observant God-fearing Jew, the ultimate place to live is in _Eretz Yisrael_. For the past 2000 years, every year at the end of the Passover _Seder_, every Jewish family chants the prayer _next year in Jerusalem_. With the advent of the Zionist movement, _Aliyah_ began in earnest about 1880. Until the 1960's it was physically difficult to live in Israel. But by the time I came in 1983, even though at the time the standard of living was much less than in North America, still one could expect to live a long healthy and fulfilling life in the modern State of Israel.
 
-* Now (in 2025) I have no regrets moving to Israel. The transformation is as [if we were in a dream (Psalm 126)](https://mechon-mamre.org/p/pt/pt26c6.htm). The values and life style of my children and grandchildren are so much better than my North American friends and relatives. Israel's standard of living is one of the highest in the world. Professionally I live at the pinnacle of the hi-tech world. It is sad but true, that many progressive people in the West hate the Jewish People, but I am proud to be a member of a righteous and just nation, even if we are forced to "dwell alone". And it is clear to any objective person, that we are living in the footsteps of the _Mashiach_ (English: Messiah). The ancient prophesies are being fulfilled before our eyes, in particular see [Zecharia 8]( https://mechon-mamre.org/p/pt/pt2308.htm ):
+* Now (in 2025) I have no regrets moving to Israel. I truly believe that I was part of the process of building the land, and that I personally grew and was transformed in the process. The transformation is as [if we were in a dream (Psalm 126)](https://mechon-mamre.org/p/pt/pt26c6.htm). The values and life style of my children and grandchildren are so much better than my North American friends and relatives. Israel's standard of living is one of the highest in the world. Professionally I live at the pinnacle of the hi-tech world. It is sad but true, that many progressive people in the West hate the Jewish People, but I am proud to be a member of a righteous and just nation, even if we are forced to "dwell alone". And it is clear to any objective person, that we are living in the footsteps of the _Mashiach_ (English: Messiah). The ancient prophesies are being fulfilled before our eyes, in particular see [Zecharia 8]( https://mechon-mamre.org/p/pt/pt2308.htm ):
 	
 > 4) Thus saith the LORD of hosts: There shall yet old men and old women sit in the broad places of Jerusalem, every man with his staff in his hand for very age.
 
