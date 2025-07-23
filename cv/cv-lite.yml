@@ -14,10 +14,10 @@ header-includes: |
 # wkhtmltopddf  options
 fontsize: 11pt
 papersize: A4
-margin-top: 15mm
-margin-bottom: 15mm
-margin-left: 15mm
-margin-right: 15mm
+margin-top: 12mm
+margin-bottom: 12mm
+margin-left: 12mm
+margin-right: 12mm
 #    <script>
 #    function show_all_details() {
 #        const nodes = document.getElementsByTagName("details");

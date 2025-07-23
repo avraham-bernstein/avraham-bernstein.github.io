@@ -67,7 +67,7 @@ __2011:__ [Syntezza Bioscience](https://www.syntezza.com/), Jerusalem: Bioinform
 
 * In just 3 months I invented an AI-driven [PCR]( https://www.genome.gov/about-genomics/fact-sheets/Polymerase-Chain-Reaction-Fact-Sheet ) threshold algorithm and noise-reduction techniques for a [MRSA]( https://www.webmd.com/skin-problems-and-treatments/understanding-mrsa ) diagnostic kit. When I first began work with this company, their kit was a complete failure. Even though I had zero background in micro-biology, I discovered that the PCR "control" test tubes were configured improperly in all of their 800 hospital samples, for which I able to correct after-the-fact even though the samples were long destroyed. And I discovered that their preliminary chemistry was not able to filter the [inhibitors](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) in their nasal samples. I invented a new extremely accurate algorithm for "Ct" detection in spite of 50+% of inhibited data points, and which worked on pure MRSA colonies, both of which resulted in non-sigmoidal shaped graphs of the underlying biological assays which was the fundamental assumption of industry standard PCR algorithms. The algorithm won a MRSA detector "shoot-out" against the big pharma labs at the world famous St. George's medical school in London.
 
-__2005-10:__ _NDS_ (now [Synamedia]((https://www.synamedia.com/)), Jerusalem: Cybersecurity Researcher for Internet TV industry
+__2005-10:__ _NDS_ (now [Synamedia](https://www.synamedia.com/)), Jerusalem: Cybersecurity Researcher for Internet TV industry
 
 __2002-03:__ _Virtouch_, Jerusalem (defunct): VP R&D, Accessibility Technology
 
@@ -148,4 +148,6 @@ __1973-78:__ _University of Toronto_, Canada: Undergraduate School of Arts & Sci
 
 Part-time instructor and mentor in various technical domains. Strong advocate of pairing with domain experts to accelerate onboarding and innovation.
 
-## 8. Portfolio & More: See details in [Full CV](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html)
+## 8. Portfolio & More:
+
+See details in [Full CV](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html).

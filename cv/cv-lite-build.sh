@@ -18,5 +18,5 @@ expander.py -f $MD > $LITE_MD
 pandoc --verbose -f markdown_phpextra+backtick_code_blocks+header_attributes -t html5  -s --columns=96 \
 	-o $HTML --metadata-file=$LITE_YML $LITE_MD
 	 
-pandoc -f markdown_phpextra+backtick_code_blocks --pdf-engine=wkhtmltopdf -s --columns=128 -V geometry:margin=2cm \
+pandoc -f markdown_phpextra+backtick_code_blocks --pdf-engine=wkhtmltopdf -s --columns=128 \
 	-o $PDF --metadata-file=$LITE_YML $LITE_MD
