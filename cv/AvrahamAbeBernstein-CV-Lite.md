@@ -82,7 +82,7 @@ __2005-10:__ _NDS_ (now [Synamedia](https://www.synamedia.com/)), Jerusalem: Cyb
 
 __2002-03:__ _Virtouch_, Jerusalem (defunct): VP R&D, Accessibility Technology
 
-* Invented web browser-based solution enabling the blind to interpret images and maps via a graphics tablet and sound card.
+* Invented web browser based solution enabling the blind to interpret images and maps via a graphics tablet and sound card.
 
 __1999-2004:__ _Vyyo_, Jerusalem (defunct): for RF wireless cable modem industry
 
