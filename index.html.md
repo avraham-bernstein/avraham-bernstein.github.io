@@ -41,7 +41,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Links
 
-* __CV:__ Computer Scientist: [Long HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html),&nbsp;&nbsp;[Short PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf),&nbsp;&nbsp;[Lite PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.pdf)
+* __CV:__ Computer Scientist: [Full HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html),&nbsp;&nbsp;[Full PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf),&nbsp;&nbsp;[Lite HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.html),&nbsp;&nbsp;[Lite PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.pdf)
 
 * __Linkedin:__ [https://www.linkedin.com/in/avrahambernstein/](https://www.linkedin.com/in/avrahambernstein/)
 

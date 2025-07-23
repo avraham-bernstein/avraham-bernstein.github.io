@@ -6,6 +6,7 @@ linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 photo = 'AvrahamAbeBernstein-20250202-Watermarked.20pc.png'
 www = 'https://www.avrahambernstein.com'
 cv_root = www + '/cv/AvrahamAbeBernstein-CV'
+cv_lite_root = www + '/cv/AvrahamAbeBernstein-CV-Lite'
 
 def obfus(text):
 	return '<span class="hide">' + text + '</span>'
@@ -52,7 +53,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Links
 
-* __CV:__ Computer Scientist: [Long HTML]($(cv_root).html),&nbsp;&nbsp;[Short PDF]($(cv_root).pdf),&nbsp;&nbsp;[Lite PDF]($(cv_root)-Lite.pdf)
+* __CV:__ Computer Scientist: [Full HTML]($(cv_root).html),&nbsp;&nbsp;[Full PDF]($(cv_root).pdf),&nbsp;&nbsp;[Lite HTML]($(cv_lite_root).html),&nbsp;&nbsp;[Lite PDF]($(cv_lite_root).pdf)
 
 * __Linkedin:__ [$(linkedin)]($(linkedin))
 
