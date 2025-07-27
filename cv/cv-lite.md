@@ -47,7 +47,7 @@ __2022-25:__ [Aurora Labs](https://www.auroralabs.com/), Tel Aviv: Senior Softwa
 
 __2021:__ [Morphisec](https://www.morphisec.com/), Beer Sheva: Anti-Reverse Engineering Modifications to _Linux_ Kernel
 
-* The challenges were (1) not to change the addresses of the the kernel function, and (2) to automatically modify the kernels of the many different Linux distributions.
+* The challenges were (1) not to change the addresses of any kernel function, and (2) to automatically modify the kernels of the many different Linux distributions.
 
 __2021:__ [Qedit](https://qed-it.com/), Tel Aviv: WASM Cybersecurity Consultant for Financial Industry
 
