@@ -200,7 +200,7 @@ href="https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.pdf">Lite 
 href="https://www.avrahambernstein.com">https://www.avrahambernstein.com</a>
 <br/><strong>Linkedin:</strong> <a
 href="https://www.linkedin.com/in/avrahambernstein/">https://www.linkedin.com/in/avrahambernstein/</a>
-<br/><strong>Last Update:</strong> 2025-07-25
+<br/><strong>Last Update:</strong> 2025-07-27
 </address>
 <h2>1. Summary</h2>
 <p>Senior software architect and polymath with over 40 years of innovation in algorithm design,
@@ -208,12 +208,16 @@ compiler construction, and obfuscation tools across industries including cyberse
 automotive, accessibility, and bioinformatics. Adept at designing domain-specific languages,
 anti-reverse engineering, and building MVPs and prototypes for CTO teams. Holds multiple patents
 and thrives on technically challenging projects.</p>
-<p><strong>NOTE FOR HR! This CV is slightly unusual. It is 6 pages long instead of 3 even though
-it was reduced by ChatGPT. It represents my 40+ years experience as a polymath in a wide range
-of domains at an expert level, and includes many inventions. Normally the inventions require a
-few lines of explanation in order to show their signficance. Therefore this CV is quite
-different than someone's who has been working in the same field using the same tools for 10-15
-years without producing any inventions, where a 2 page CV would suffice.</strong></p>
+<p><strong>NOTICE for pedantic HR types:</strong> This CV is slightly unusual. It is 6 pages
+long instead of 3, OMG! It represents my 40+ years experience as a polymath in a wide range of
+domains at an expert level, and includes many inventions, many of which are recent. Normally the
+inventions require a few lines of explanation in order to show their signficance. Therefore this
+CV is quite different than someone's who has been working in the same field using the same tools
+for 10-15 years without producing any inventions, where a 2 page CV would suffice. When am I
+able to present my CV directly to a potential employer with a technical background, I have never
+encountered one who was not extremely impressed by my background, nor who gave me negative
+comments on account of its length. And I am 69, which means it will be more likely for me to be
+hired as a contractor or a consultant, instead of as a regular employee.</p>
 <h2>2. Core Skills &amp; Tools</h2>
 <ul>
 <li><p><strong>Languages:</strong> C, Python, Bash, HTML, Markdown, XML, YAML</p></li>
@@ -248,13 +252,13 @@ href="https://en.wikipedia.org/wiki/Code_refactoring">source code refactoring</a
 Senior Software Architect in CTO office for Digital Automotive Industry</p>
 <ul>
 <li><p><strong>Invented a patent-pending</strong> algorithm to reduce RAM usage and boost
-compression during FLASH updates. The key to the patent was the use of buffered-IO windows,
-similar to the Linux file system, which eliminated the need to allocate a pre-image in RAM the
-size of the FLASH sector especially when the size of the DMA write region is typically only 256
-bytes. Thus we are able to transfer larger FLASH chunks which typically results in significantly
-better compression. For small FLASH devices, in the range of 64-128 KB, compression could often
-be improved by up to 25%. And the board's original FLASH driver could be utilized without any
-modification.</p></li>
+compression during FLASH updates. The key to the patent was the use of buffered I/O windows,
+similar to the <em>Linux</em> file system, which eliminated the need to allocate a pre-image in
+RAM the size of the FLASH sector especially when the size of the <em>DMA</em> write region is
+typically only 256 bytes. Thus we are able to transfer larger FLASH chunks which typically
+results in significantly better compression. For small FLASH devices, in the range of 64-128 KB,
+compression could often be improved by up to 25%. And the board's original FLASH driver could be
+utilized without any modification.</p></li>
 <li><p>Optimized CPU and RAM usage, by a factor of <strong>5x (!)</strong>, of the company's
 core source code refactoring product for embedded automotive C code via the use of <a
 href="https://www.srcml.org/">srcML</a> and <a
@@ -265,7 +269,11 @@ href="https://www.linkedin.com/in/carmit-sahar/">Carmit Sahar</a>, who designed 
 version.</p></li>
 </ul>
 <p><strong>2021:</strong> <a href="https://www.morphisec.com/">Morphisec</a>, Beer Sheva:
-Anti-Reverse Engineering Modifications to Linux Kernel</p>
+Anti-Reverse Engineering Modifications to <em>Linux</em> Kernel</p>
+<ul>
+<li>The challenges were (1) not to change the addresses of the the kernel function, and (2) to
+automatically modify the kernels of the many different Linux distributions.</li>
+</ul>
 <p><strong>2021:</strong> <a href="https://qed-it.com/">Qedit</a>, Tel Aviv: WASM Cybersecurity
 Consultant for Financial Industry</p>
 <p><strong>2017-20:</strong> <em>Argus Cyber Security</em> (now <a
@@ -288,17 +296,14 @@ href="https://en.wikipedia.org/wiki/XZ_Utils">xz</a> compression.</p></li>
 industry</p>
 <p><strong>2013 part-time:</strong> <em>NVT</em>, US (defunct): CTO of Agritech Startup for <a
 href="https://en.wikipedia.org/wiki/Cassava">Cassava</a> Production in Nigerian Jungle</p>
-<p><strong>2012:</strong> <em>Telequest</em>, Jerusalem: VP R&amp;D, Vehicle Navigation</p>
-<ul>
-<li>Developed traffic jam reduction algorithms for automotive navigation, an early (failed)
-competitor to <a href="https://www.waze.com/apps">Waze</a>.</li>
-</ul>
+<p><strong>2012:</strong> <em>Telequest</em>, Jerusalem: VP R&amp;D, Automated Vehicle
+Navigation To Find Optimal Routes in City Traffic</p>
 <p><strong>2011:</strong> <a href="https://www.syntezza.com/">Syntezza Bioscience</a>,
 Jerusalem: Bioinformatics consultant</p>
 <ul>
-<li>In just 3 months I <strong>invented</strong> an AI-driven <a
+<li>In just 3 months I <strong>invented</strong> an AI threshold algorithm for <a
 href="https://www.genome.gov/about-genomics/fact-sheets/Polymerase-Chain-Reaction-Fact-Sheet">PCR</a>
-threshold algorithm and noise-reduction techniques for a <a
+"Ct" detection, and a noise-reduction technique for a <a
 href="https://www.webmd.com/skin-problems-and-treatments/understanding-mrsa">MRSA</a> diagnostic
 kit. When I first began work, their kit was a complete failure. Even though I had zero
 background in microbiology, I discovered that the PCR control test tubes were configured
@@ -313,8 +318,9 @@ both of which resulted in non-sigmoidal shaped graphs of the underlying biologic
 was the fundamental assumption of industry standard PCR algorithms. I was mentored by the
 company's consultant, <a href="https://independent.academia.edu/TzachiBar">Tzachi Bar</a>, who
 invented the most commonly used (public domain) algorithm used in most PCR devices. <strong>My
-algorithm won a MRSA detector "shoot-out" against the big pharma labs at the world famous St.
-George's medical school in London.</strong></li>
+algorithm saved the company's business unit from bankruptcy, and my algorithm won a MRSA
+detector "shoot-out" against the big pharma labs at the world famous St. George's medical school
+in London.</strong></li>
 </ul>
 <p><strong>2005-10:</strong> <em>NDS</em> (now <a
 href="https://www.synamedia.com/">Synamedia</a>), Jerusalem: Cybersecurity Researcher for
@@ -350,10 +356,10 @@ via dynamic modifications to the <a
 href="https://www.techtarget.com/searchnetworking/definition/edge-router">edge router's</a> <a
 href="%5BARP%20table%5D(https://www.geeksforgeeks.org/ethical-hacking/how-address-resolution-protocol-arp-works/)">ARP
 table</a> where the <em>edge-router</em> was the interface to both the dial-up and cable modem
-ethernet networks.</p></li>
+Ethernet networks.</p></li>
 </ul>
 <p><strong>1998:</strong> <em>Fourfold</em>, Jerusalem (defunct): Software architect of a
-modified GCC massively parallel compiler toolchain for a <a
+modified GCC massively parallel compiler tool chain for a <a
 href="https://en.wikipedia.org/wiki/Forth_(programming_language)">Forth</a>-like CPU with
 unlimited registers.</p>
 <p><strong>1990-97:</strong> <em>Pitkha</em>, Jerusalem (defunct): CEO &amp; Domain Specific
@@ -364,9 +370,10 @@ holographic laser metrology</a> device for <a
 href="https://www.ophiropt.com/en/">Optimet-Ophir</a> (subsidiary of MKS-Newport, US),
 Jerusalem</p>
 <ul>
-<li><strong>Invented</strong> a DSL (implemented in the <em>Windows NT</em> implementation of <a
-href="https://en.wikipedia.org/wiki/Tcl">TCL</a>) used to scan objects mounted on a XY jig. Due
-to lighting conditions on the object, different regions required different scanning speeds.</li>
+<li><strong>Invented</strong> a <em>DSL</em> (implemented in the <em>Windows NT</em>
+implementation of <a href="https://en.wikipedia.org/wiki/Tcl">TCL</a>) used to scan objects
+mounted on a XY jig. Due to lighting conditions on the object, different regions required
+different scanning speeds.</li>
 <li>In theory, a scan returned a cloud of tens of millions of XYZ points. The most difficult
 problem was the creation of an easy to use language that generated life-like images from these
 points. Note that this project was implemented before the mature <a href="https://vtk.org/">VTK
@@ -377,41 +384,42 @@ href="https://www.opengl.org/">OpenGL</a>.</li>
 <li><p><strong>1996:</strong> mil-spec testing laboratory for <em>Elop</em> (subsidiary of <a
 href="https://www.elbitsystems.com/">Elbit</a>), Rehovot</p>
 <ul>
-<li><strong>Invented</strong> a DSL, a BASIC-like language (implemented in C using <a
-href="https://www2.cs.arizona.edu/~debray/Teaching/CSc453/DOCS/tutorial-large.pdf">lex and
-yacc</a> before <a href="https://en.wikipedia.org/wiki/Tcl">TCL</a> became available in
+<li><strong>Invented</strong> a <em>DSL</em>, a <em>BASIC</em>-like language (implemented in C
+using <a href="https://www2.cs.arizona.edu/~debray/Teaching/CSc453/DOCS/tutorial-large.pdf">lex
+and yacc</a> before <a href="https://en.wikipedia.org/wiki/Tcl">TCL</a> became available in
 <em>Windows NT</em>), that was used to reduce 2 meters of mil-spec testing documentation for the
 <em>Black Hawk</em> weapons targeting system into a <em>manageable and easily modifiable</em>
-set of requirements. The DSL had to support various H/W drivers for the test equipment used in
-the lab. The DSL language was simple enough to use that the system engineer, who had no
-programming background, could create <em>ad hoc</em> tests. Tests could run unattended for up to
-100 hours without any memory leaks.</li>
+set of requirements. The <em>DSL</em> had to support various H/W drivers for the test equipment
+used in the lab. The <em>DSL</em> language was simple enough to use that the system engineer,
+who had no programming background, could create <em>ad hoc</em> tests. Tests could run
+unattended for up to 100 hours without any memory leaks.</li>
 </ul></li>
-<li><p><strong>1992-95:</strong> <strong>Invented</strong> a DSL (implemented in C using <a
-href="https://www2.cs.arizona.edu/~debray/Teaching/CSc453/DOCS/tutorial-large.pdf">lex and
-yacc</a> ) that was the backbone for a software development toolchain for the <a
+<li><p><strong>1992-95:</strong> <strong>Invented</strong> a <em>DSL</em> (implemented in C
+using <a href="https://www2.cs.arizona.edu/~debray/Teaching/CSc453/DOCS/tutorial-large.pdf">lex
+and yacc</a> ) that was the backbone for a software development tool chain for the <a
 href="https://en.wikipedia.org/wiki/DSP_Group">DSPG</a> <a
 href="https://www.edn.com/dsp-group-pinedspcore/">PINE</a> CPU:</p>
 <ul>
-<li>The toolchain included a CPU simulator, debugger with a programmable I/O port simulator (BTW
-still, in 2025, not found on most debuggers or emulators), assembler, disassembler, and overlay
-linker. (Note that this project was implemented before the stable version GCC 2.95 became
-available). Initially the purpose of the DSL was to resolve the problem of register usage
-restrictions between adjacent assembly instructions that the VLSI architects changed regularly
-which made it extremely difficult to create a hand crafted assembler in a reasonable period of
-time. A register restriction violation required the manual insertion of a NOP into the
-instruction stream.</li>
-<li>The DSL implemented a language that completely described the CPU's instruction set. Changes
-to the register restrictions were trivial to implement, and the assembler could be recompiled
-within an hour. <strong>The assembler ran over 100x faster than the VLSI simulated assembler.
-The assembler ran for over 100 hours without any memory leaks. The assembler allowed the
-architects to regularly run instruction set sanity tests as soon as the architecture was
-updated. The complete toolchain was used by application programmers to build and test complete
+<li>The tool chain included a CPU simulator, debugger with a programmable I/O port simulator
+(BTW still, in 2025, not yet found on most debuggers or emulators), assembler, disassembler, and
+overlay linker. (Note that this project was implemented before the stable version GCC 2.95
+became available). Initially the purpose of the <em>DSL</em> was to resolve the problem of
+register usage restrictions between adjacent assembly instructions. The VLSI architects
+regularly changed the restrictions which made it extremely difficult to create a hand crafted
+assembler in a reasonable period of time. A register restriction violation required the manual
+insertion of a <em>NOP</em> into the instruction stream. (Today, i.e. 2025, modern CPU
+architectures can automatically "stall" the pipeline).</li>
+<li>The <em>DSL</em> implemented a language that completely described the CPU's instruction set.
+Changes to the register restrictions were trivial to implement, and the assembler could be
+recompiled within an hour. <strong>The assembler ran over 100x faster than the VLSI simulated
+assembler. The assembler ran for over 100 hours without any memory leaks. The assembler allowed
+the architects to regularly run instruction set sanity tests as soon as the architecture was
+updated. The complete tool chain was used by application programmers to build and test complete
 applications 6 months before the final production of the physical CPU.</strong></li>
 </ul></li>
 </ol>
-<p><strong>1990-91:</strong> <strong>Invented</strong> a Domain Specific Language (DSL) to
-completely automate a metal blade production factory at <a
+<p><strong>1990-91:</strong> <strong>Invented</strong> a <em>DSL</em> to completely automate a
+metal blade production factory at <a
 href="https://www.iscar.com/index.aspx/countryid/1/lang/en">Iscar</a>-Matkash, Tefen</p>
 <ul>
 <li><p>The plant included the following types of objects:</p>
@@ -430,24 +438,24 @@ sent for repair (e.g. sharpening)</li>
 </ul></li>
 <li><p>My job along with my co-architect, <a href="https://www.sifutaichi.com/">David
 Goldstein</a>, was to automatically orchestrate the plant via S/W. We had a (then) powerful
-VAX/VMS computer at our disposal with a relational database. The project manager insisted that
-the main programming language be Pascal.</p></li>
+<em>VAX/VMS</em> computer at our disposal with a relational database. The project manager
+insisted that the main programming language be <em>Pascal</em>.</p></li>
 <li><p>We came to the project with no knowledge of factory automation. So we started with a
 month long mentoring course from an industrial engineer.</p></li>
-<li><p>Our solution was to design a domain specific language (DSL) that described every single
-object (i.e. a few 100) in the factory's "object kingdom", and how they interacted with one
-another. The DSL had to configurable by the factory engineer who was not a software engineer,
-while the clerical staff required a GUI window into the DSL for making on-the-fly configurations
-and viewing the status of the factory.</p></li>
+<li><p>Our solution was to design a <em>DSL</em> that described every single object (i.e. a few
+100) in the factory's "object kingdom", and how they interacted with one another. The
+<em>DSL</em> had to configurable by the factory engineer who was not a software engineer, while
+the clerical staff required a GUI window into the DSL for making on-the-fly configurations and
+viewing the status of the factory.</p></li>
 <li><p>It became immediately obvious that the S/W required object oriented techniques to
-implement. At that time object oriented programming (OOP) was in its infancy, and barely used in
-industy. There was no Internet yet at that time, but literature was available in the Hebrew Univ
-computer science library. Recall that we had a hard requirement to use the procedural Pascal
-language.</p></li>
-<li><p>VAX/VMS had a command line utility for designing command "ensembles" which could be
-executed via callbacks to a compilable language, e.g. Pascal. We used these ensembles to define
-every type of object, along with their attributes, supported by the our DSL. Today (2025), 30
-years later, I would use XML instead (which had not yet been invented).</p></li>
+implement. At that time <em>object oriented programming (OOP)</em> was in its infancy, and
+barely used in industry. There was no Internet yet at that time, but literature was available in
+the Hebrew Univ computer science library. Recall that we had a hard requirement to use the
+procedural Pascal language.</p></li>
+<li><p><em>VAX/VMS</em> had a command line utility for designing command "ensembles" which could
+be executed via callbacks to a compilable language, e.g. Pascal. We used these ensembles to
+define every type of object, along with their attributes, supported by the our DSL. Today, i.e.
+2025, I would use <em>XML</em> instead (which had not yet been invented).</p></li>
 <li><p>There were tens of thousands object instances stored in a database on disk - including
 their configuration and current status. The database regularly stored status updates. The
 database was constantly scanned in order to implement the next task that our scheduler required.
@@ -462,13 +470,13 @@ href="https://www.company-histories.com/Scitex-Corporation-Ltd-Company-History.h
 <li><p>Early 3D printing (stereo-lithography) R&amp;D.</p></li>
 <li><p>PC accessibility <strong>invention</strong> for quadriplegics: Invention of virtual
 keyboard using a telescopically modified <a href="https://en.wikipedia.org/wiki/Light_pen">CRT
-light pen</a>, 800 mm. distance from display, combined with a <a
-href="https://orin.com/access/sip_puff/">sip and puff switch</a>. Enabled a quadriplegic polio
-victim, with the light pen connected to her head via a women's hairband, to type 30 characters
-per minute to become a book editor. The virtual keyboard could be configured so that only a
-single selected key was displayed on the screen, where the light pen hovered, which allowed over
-95% of the screen to remain unobstructed. Too bad I didn't patent this virtual keyboard
-invention.</p></li>
+light pen</a>, which could support a 800 mm. distance from display, combined with a <a
+href="https://orin.com/access/sip_puff/">sip and puff switch</a>. Our first subject was a
+quadriplegic polio victim, with the light pen connected to her head via a women's hairband, who
+could type 30 characters per minute, and who productively worked as a book editor. The virtual
+keyboard could be configured so that only a single selected key was displayed on the screen,
+where the light pen hovered, which allowed over 95% of the screen to remain unobstructed. Too
+bad I didn't patent this virtual keyboard invention.</p></li>
 </ul>
 <h2>5. Patents &amp; Inventions</h2>
 <p>Multiple patents pending and granted in fields including FLASH compression, software

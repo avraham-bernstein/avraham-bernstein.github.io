@@ -1,5 +1,5 @@
 $py(
-now = '2025-07-25'
+now = '2025-07-27'
 yy = 2025
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
@@ -28,7 +28,7 @@ __Author:__ Avraham "Abe" Bernstein
 
 Senior software architect and polymath with over 40 years of innovation in algorithm design, compiler construction, and obfuscation tools across industries including cybersecurity, automotive, accessibility, and bioinformatics. Adept at designing domain-specific languages, anti-reverse engineering, and building MVPs and prototypes for CTO teams. Holds multiple patents and thrives on technically challenging projects.
 
-__NOTE FOR HR! This CV is slightly unusual. It is 6 pages long instead of 3 even though it was reduced by ChatGPT. It represents my 40+ years experience as a polymath in a wide range of domains at an expert level, and includes many inventions. Normally the inventions require a few lines of explanation in order to show their signficance. Therefore this CV is quite different than someone's who has been working in the same field using the same tools for 10-15 years without producing any inventions, where a 2 page CV would suffice.__
+__NOTICE for pedantic HR types:__  This CV is slightly unusual. It is 6 pages long instead of 3, OMG! It represents my 40+ years experience as a polymath in a wide range of domains at an expert level, and includes many inventions, many of which are recent. Normally the inventions require a few lines of explanation in order to show their signficance. Therefore this CV is quite different than someone's who has been working in the same field using the same tools for 10-15 years without producing any inventions, where a 2 page CV would suffice. When am I able to present my CV directly to a potential employer with a technical background, I have never encountered one who was not extremely impressed by my background, nor who gave me negative comments on account of its length. And I am 69, which means it will be more likely for me to be hired as a contractor or a consultant, instead of as a regular employee.
 
 ## 2. Core Skills & Tools
 
@@ -52,11 +52,13 @@ __2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools
 
 __2022-25:__ [Aurora Labs](https://www.auroralabs.com/), Tel Aviv: Senior Software Architect in CTO office for Digital Automotive Industry
 
-* __Invented a patent-pending__ algorithm to reduce RAM usage and boost compression during FLASH updates. The key to the patent was the use of buffered-IO windows, similar to the Linux file system, which eliminated the need to allocate a pre-image in RAM the size of the FLASH sector especially when the size of the DMA write region is typically only 256 bytes. Thus we are able to transfer larger FLASH chunks which typically results in significantly better compression. For small FLASH devices, in the range of 64-128 KB, compression could often be improved by up to 25%. And the board's original FLASH driver could be utilized without any modification.
+* __Invented a patent-pending__ algorithm to reduce RAM usage and boost compression during FLASH updates. The key to the patent was the use of buffered I/O windows, similar to the _Linux_ file system, which eliminated the need to allocate a pre-image in RAM the size of the FLASH sector especially when the size of the _DMA_ write region is typically only 256 bytes. Thus we are able to transfer larger FLASH chunks which typically results in significantly better compression. For small FLASH devices, in the range of 64-128 KB, compression could often be improved by up to 25%. And the board's original FLASH driver could be utilized without any modification.
 
 * Optimized CPU and RAM usage, by a factor of __5x (!)__, of the company's core source code refactoring product for embedded automotive C code via the use of [srcML](https://www.srcml.org/) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/). The original version of the product was a hand coded compiler in _Python_. I had a great deal of co-operation from the company's chief scientist, [Carmit Sahar](https://www.linkedin.com/in/carmit-sahar/), who designed the original version.
 
-__2021:__ [Morphisec](https://www.morphisec.com/), Beer Sheva: Anti-Reverse Engineering Modifications to Linux Kernel
+__2021:__ [Morphisec](https://www.morphisec.com/), Beer Sheva: Anti-Reverse Engineering Modifications to _Linux_ Kernel
+
+* The challenges were (1) not to change the addresses of the the kernel function, and (2) to automatically modify the kernels of the many different Linux distributions.
 
 __2021:__ [Qedit](https://qed-it.com/), Tel Aviv: WASM Cybersecurity Consultant for Financial Industry
 
@@ -72,13 +74,11 @@ __2013-17:__ [Viaccess-Orca](https://www.viaccess-orca.com/) (subsidiary of Oran
 
 __2013 part-time:__ _NVT_, US (defunct): CTO of Agritech Startup for [Cassava]( https://en.wikipedia.org/wiki/Cassava ) Production in Nigerian Jungle
 
-__2012:__ _Telequest_, Jerusalem: VP R&D, Vehicle Navigation 
-
-* Developed traffic jam reduction algorithms for automotive navigation, an early (failed) competitor to [Waze](https://www.waze.com/apps).
+__2012:__ _Telequest_, Jerusalem: VP R&D, Automated Vehicle Navigation To Find Optimal Routes in City Traffic
 
 __2011:__ [Syntezza Bioscience](https://www.syntezza.com/), Jerusalem: Bioinformatics consultant
 
-* In just 3 months I __invented__ an AI-driven [PCR]( https://www.genome.gov/about-genomics/fact-sheets/Polymerase-Chain-Reaction-Fact-Sheet ) threshold algorithm and noise-reduction techniques for a [MRSA]( https://www.webmd.com/skin-problems-and-treatments/understanding-mrsa ) diagnostic kit. When I first began work, their kit was a complete failure. Even though I had zero background in microbiology, I discovered that the PCR control test tubes were configured improperly in all of their 800 hospital samples, for which I was able to correct after-the-fact even though the samples were long ago destroyed. And I discovered that their preliminary chemistry was not able to filter the [inhibitors](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) in their nasal samples. I invented a new extremely accurate algorithm for [Ct]( https://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/real-time-pcr-basics/real-time-pcr-understanding-ct.html ) detection in spite of 50+% of inhibited data points, and which worked for pure MRSA colonies, both of which resulted in non-sigmoidal shaped graphs of the underlying biological assays which was the fundamental assumption of industry standard PCR algorithms. I was mentored by the company's consultant, [Tzachi Bar](https://independent.academia.edu/TzachiBar), who invented the most commonly used (public domain) algorithm used in most PCR devices. __My algorithm won a MRSA detector "shoot-out" against the big pharma labs at the world famous St. George's medical school in London.__
+* In just 3 months I __invented__ an AI threshold algorithm for [PCR]( https://www.genome.gov/about-genomics/fact-sheets/Polymerase-Chain-Reaction-Fact-Sheet ) "Ct" detection, and a noise-reduction technique for a [MRSA]( https://www.webmd.com/skin-problems-and-treatments/understanding-mrsa ) diagnostic kit. When I first began work, their kit was a complete failure. Even though I had zero background in microbiology, I discovered that the PCR control test tubes were configured improperly in all of their 800 hospital samples, for which I was able to correct after-the-fact even though the samples were long ago destroyed. And I discovered that their preliminary chemistry was not able to filter the [inhibitors](https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors) in their nasal samples. I invented a new extremely accurate algorithm for [Ct]( https://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/real-time-pcr-basics/real-time-pcr-understanding-ct.html ) detection in spite of 50+% of inhibited data points, and which worked for pure MRSA colonies, both of which resulted in non-sigmoidal shaped graphs of the underlying biological assays which was the fundamental assumption of industry standard PCR algorithms. I was mentored by the company's consultant, [Tzachi Bar]( https://independent.academia.edu/TzachiBar ), who invented the most commonly used (public domain) algorithm used in most PCR devices. __My algorithm saved the company's business unit from bankruptcy, and my algorithm won a MRSA detector "shoot-out" against the big pharma labs at the world famous St. George's medical school in London.__
 
 __2005-10:__ _NDS_ (now [Synamedia](https://www.synamedia.com/)), Jerusalem: Cybersecurity Researcher for Internet TV industry
 
@@ -92,28 +92,28 @@ __1999-2004:__ _Vyyo_, Jerusalem (defunct): for RF wireless cable modem industry
 
 * Architect of super-efficient cable modem testing laboratory. Reduced H/W costs by a factor of __16x (!)__ via multiplexing with a [programmable layer-2 switch]( https://www.automationdirect.com/adc/overview/catalog/communications/industrial_ethernet_switches/layer_2_managed_switches ).
 
-* __Invented__ a hybrid Ethernet/Dial-up network protocol for cable modems, via dynamic modifications to the [edge router's]( https://www.techtarget.com/searchnetworking/definition/edge-router ) [ARP table]([ARP table](https://www.geeksforgeeks.org/ethical-hacking/how-address-resolution-protocol-arp-works/)) where the _edge-router_ was the interface to both the dial-up and cable modem ethernet networks.
+* __Invented__ a hybrid Ethernet/Dial-up network protocol for cable modems, via dynamic modifications to the [edge router's]( https://www.techtarget.com/searchnetworking/definition/edge-router ) [ARP table]([ARP table](https://www.geeksforgeeks.org/ethical-hacking/how-address-resolution-protocol-arp-works/)) where the _edge-router_ was the interface to both the dial-up and cable modem Ethernet networks.
 
-__1998:__ _Fourfold_, Jerusalem (defunct): Software architect of a modified GCC massively parallel compiler toolchain for a [Forth]( https://en.wikipedia.org/wiki/Forth_(programming_language) )-like CPU with unlimited registers.
+__1998:__ _Fourfold_, Jerusalem (defunct): Software architect of a modified GCC massively parallel compiler tool chain for a [Forth]( https://en.wikipedia.org/wiki/Forth_(programming_language) )-like CPU with unlimited registers.
 
 __1990-97:__ _Pitkha_, Jerusalem (defunct): CEO & Domain Specific Language (DSL) Architect
 
 1. __1996-97:__ 2D [conoscopic holographic laser metrology](https://www.mdpi.com/1424-8220/9/9/7021) device for [Optimet-Ophir]( https://www.ophiropt.com/en/ ) (subsidiary of MKS-Newport, US), Jerusalem
 
-	* __Invented__ a DSL (implemented in the _Windows NT_ implementation of [TCL]( https://en.wikipedia.org/wiki/Tcl )) used to scan objects mounted on a XY jig. Due to lighting conditions on the object, different regions required different scanning speeds.
+	* __Invented__ a _DSL_ (implemented in the _Windows NT_ implementation of [TCL]( https://en.wikipedia.org/wiki/Tcl )) used to scan objects mounted on a XY jig. Due to lighting conditions on the object, different regions required different scanning speeds.
 	* In theory, a scan returned a cloud of tens of millions of XYZ points. The most difficult problem was the creation of an easy to use language that generated life-like images from these points. Note that this project was implemented before the mature [VTK image visualization toolkit]( https://vtk.org/) became available. I __invented__ my own, but simpler, version of _VTK_ based upon a _TCL_ wrapper for [OpenGL]( https://www.opengl.org/ ).
 
 2. __1996:__ mil-spec testing laboratory for _Elop_ (subsidiary of [Elbit](https://www.elbitsystems.com/)), Rehovot
 
-	* __Invented__ a DSL, a BASIC-like language (implemented in C using [lex and yacc](https://www2.cs.arizona.edu/~debray/Teaching/CSc453/DOCS/tutorial-large.pdf) before [TCL](https://en.wikipedia.org/wiki/Tcl) became available in _Windows NT_), that was used to reduce 2 meters of mil-spec testing documentation for the _Black Hawk_ weapons targeting system into a _manageable and easily modifiable_ set of requirements. The DSL had to support various H/W drivers for the test equipment used in the lab. The DSL language was simple enough to use that the system engineer, who had no programming background, could create _ad hoc_ tests. Tests could run unattended for up to 100 hours without any memory leaks.
+	* __Invented__ a _DSL_, a _BASIC_-like language (implemented in C using [lex and yacc](https://www2.cs.arizona.edu/~debray/Teaching/CSc453/DOCS/tutorial-large.pdf) before [TCL](https://en.wikipedia.org/wiki/Tcl) became available in _Windows NT_), that was used to reduce 2 meters of mil-spec testing documentation for the _Black Hawk_ weapons targeting system into a _manageable and easily modifiable_ set of requirements. The _DSL_ had to support various H/W drivers for the test equipment used in the lab. The _DSL_ language was simple enough to use that the system engineer, who had no programming background, could create _ad hoc_ tests. Tests could run unattended for up to 100 hours without any memory leaks.
 
 
-3. __1992-95:__ __Invented__ a DSL (implemented in C using [lex and yacc]( https://www2.cs.arizona.edu/~debray/Teaching/CSc453/DOCS/tutorial-large.pdf) ) that was the backbone for a software development toolchain for the [DSPG](https://en.wikipedia.org/wiki/DSP_Group) [PINE](https://www.edn.com/dsp-group-pinedspcore/) CPU:
+3. __1992-95:__ __Invented__ a _DSL_ (implemented in C using [lex and yacc]( https://www2.cs.arizona.edu/~debray/Teaching/CSc453/DOCS/tutorial-large.pdf) ) that was the backbone for a software development tool chain for the [DSPG](https://en.wikipedia.org/wiki/DSP_Group) [PINE](https://www.edn.com/dsp-group-pinedspcore/) CPU:
 
-	* The toolchain included a CPU simulator, debugger with a programmable I/O port simulator (BTW still, in 2025, not found on most debuggers or emulators), assembler, disassembler, and overlay linker. (Note that this project was implemented before the stable version GCC 2.95 became available). Initially the purpose of the DSL was to resolve the problem of register usage restrictions between adjacent assembly instructions that the VLSI architects changed regularly which made it extremely difficult to create a hand crafted assembler in a reasonable period of time. A register restriction violation required the manual insertion of a NOP into the instruction stream. 
-	* The DSL implemented a language that completely described the CPU's instruction set. Changes to the register restrictions were trivial to implement, and the assembler could be recompiled within an hour. __The assembler ran over 100x faster than the VLSI simulated assembler. The assembler ran for over 100 hours without any memory leaks. The assembler allowed the architects to regularly run instruction set sanity tests as soon as the architecture was updated. The complete toolchain was used by application programmers to build and test complete applications 6 months before the final production of the physical CPU.__
+	* The tool chain included a CPU simulator, debugger with a programmable I/O port simulator (BTW still, in 2025, not yet found on most debuggers or emulators), assembler, disassembler, and overlay linker. (Note that this project was implemented before the stable version GCC 2.95 became available). Initially the purpose of the _DSL_ was to resolve the problem of register usage restrictions between adjacent assembly instructions. The VLSI architects regularly changed the restrictions which made it extremely difficult to create a hand crafted assembler in a reasonable period of time. A register restriction violation required the manual insertion of a _NOP_ into the instruction stream. (Today, i.e. $(yy), modern CPU architectures can automatically "stall" the pipeline).
+	* The _DSL_ implemented a language that completely described the CPU's instruction set. Changes to the register restrictions were trivial to implement, and the assembler could be recompiled within an hour. __The assembler ran over 100x faster than the VLSI simulated assembler. The assembler ran for over 100 hours without any memory leaks. The assembler allowed the architects to regularly run instruction set sanity tests as soon as the architecture was updated. The complete tool chain was used by application programmers to build and test complete applications 6 months before the final production of the physical CPU.__
 
-__1990-91:__ __Invented__ a Domain Specific Language (DSL) to completely automate a metal blade production factory at  [Iscar](https://www.iscar.com/index.aspx/countryid/1/lang/en)-Matkash, Tefen
+__1990-91:__ __Invented__ a _DSL_ to completely automate a metal blade production factory at  [Iscar]( https://www.iscar.com/index.aspx/countryid/1/lang/en )-Matkash, Tefen
 
 * The plant included the following types of objects:
 
@@ -125,15 +125,15 @@ __1990-91:__ __Invented__ a Domain Specific Language (DSL) to completely automat
 	* tools that required maintenance, e.g. cutting tools, recorded their consumption before being sent for repair (e.g. sharpening)
 	* etc.
 
-* My job along with my co-architect, [David Goldstein](https://www.sifutaichi.com/), was to automatically orchestrate the plant via S/W. We had a (then) powerful VAX/VMS computer at our disposal with a relational database. The project manager insisted that the main programming language be Pascal.
+* My job along with my co-architect, [David Goldstein]( https://www.sifutaichi.com/ ), was to automatically orchestrate the plant via S/W. We had a (then) powerful _VAX/VMS_ computer at our disposal with a relational database. The project manager insisted that the main programming language be _Pascal_.
 
 * We came to the project with no knowledge of factory automation. So we started with a month long mentoring course from an industrial engineer.
 
-* Our solution was to design a domain specific language (DSL) that described every single object (i.e. a few 100) in the factory's "object kingdom", and how they interacted with one another. The DSL had to configurable by the factory engineer who was not a software engineer, while the clerical staff required a GUI window into the DSL for making on-the-fly configurations and viewing the status of the factory.
+* Our solution was to design a _DSL_ that described every single object (i.e. a few 100) in the factory's "object kingdom", and how they interacted with one another. The _DSL_ had to configurable by the factory engineer who was not a software engineer, while the clerical staff required a GUI window into the DSL for making on-the-fly configurations and viewing the status of the factory.
 
-* It became immediately obvious that the S/W required object oriented techniques to implement. At that time object oriented programming (OOP) was in its infancy, and barely used in industy. There was no Internet yet at that time, but literature was available in the Hebrew Univ computer science library. Recall that we had a hard requirement to use the procedural Pascal language.
+* It became immediately obvious that the S/W required object oriented techniques to implement. At that time _object oriented programming (OOP)_ was in its infancy, and barely used in industry. There was no Internet yet at that time, but literature was available in the Hebrew Univ computer science library. Recall that we had a hard requirement to use the procedural Pascal language.
 
-* VAX/VMS had a command line utility for designing command "ensembles" which could be executed via callbacks to a compilable language, e.g. Pascal. We used these ensembles to define every type of object, along with their attributes, supported by the our DSL. Today (2025), 30 years later, I would use XML instead (which had not yet been invented).
+* _VAX/VMS_ had a command line utility for designing command "ensembles" which could be executed via callbacks to a compilable language, e.g. Pascal. We used these ensembles to define every type of object, along with their attributes, supported by the our DSL. Today, i.e. $(yy), I would use _XML_ instead (which had not yet been invented).
 
 * There were tens of thousands object instances stored in a database on disk - including their configuration and current status. The database regularly stored status updates. The database was constantly scanned in order to implement the next task that our scheduler required. In the event that the main computer shut down, either expectedly or unexpectedly, the database allowed for a smooth restart/recovery.
 
@@ -143,7 +143,7 @@ __1988-89:__ _Cubital_ (subsidiary of [Scitex]( https://www.company-histories.co
 
 * Early 3D printing (stereo-lithography) R&D.
 
-* PC accessibility __invention__ for quadriplegics: Invention of virtual keyboard using a telescopically modified [CRT light pen](https://en.wikipedia.org/wiki/Light_pen), 800 mm. distance from display, combined with a [sip and puff switch]( https://orin.com/access/sip_puff/ ). Enabled a quadriplegic polio victim, with the light pen connected to her head via a women's hairband, to type 30 characters per minute to become a book editor. The virtual keyboard could be configured so that only a single selected key was displayed on the screen, where the light pen hovered, which allowed over 95% of the screen to remain unobstructed. Too bad I didn't patent this virtual keyboard invention.
+* PC accessibility __invention__ for quadriplegics: Invention of virtual keyboard using a telescopically modified [CRT light pen](https://en.wikipedia.org/wiki/Light_pen), which could support a 800 mm. distance from display, combined with a [sip and puff switch]( https://orin.com/access/sip_puff/ ). Our first subject was a quadriplegic polio victim, with the light pen connected to her head via a women's hairband, who could type 30 characters per minute, and who productively worked as a book editor. The virtual keyboard could be configured so that only a single selected key was displayed on the screen, where the light pen hovered, which allowed over 95% of the screen to remain unobstructed. Too bad I didn't patent this virtual keyboard invention.
 
 ## 5. Patents & Inventions
 
