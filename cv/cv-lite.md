@@ -10,14 +10,14 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__CV__: [Full HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html),&nbsp;&nbsp;[Full PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf),&nbsp;&nbsp;[Lite HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.html),&nbsp;&nbsp;[Lite PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.pdf)
 <br/>__WWW:__ [https://www.avrahambernstein.com](https://www.avrahambernstein.com)
 <br/>__Linkedin:__ [https://www.linkedin.com/in/avrahambernstein/](https://www.linkedin.com/in/avrahambernstein/)
-<br/>__Last Update:__ 2025-07-27
+<br/>__Last Update:__ 2025-07-28
 </address>
 
 ## 1. Summary
 
 Senior software architect and polymath with over 40 years of innovation in algorithm design, compiler construction, and obfuscation tools across industries including cybersecurity, automotive, accessibility, and bioinformatics. Adept at designing domain-specific languages, anti-reverse engineering, and building MVPs and prototypes for CTO teams. Holds multiple patents and thrives on technically challenging projects.
 
-__NOTICE for pedantic HR types:__  This CV is slightly unusual. It is 6 pages long instead of 3, OMG! It represents my 40+ years experience as a polymath in a wide range of domains at an expert level, and includes many inventions, many of which are recent. Normally the inventions require a few lines of explanation in order to show their signficance. Therefore this CV is quite different than someone's who has been working in the same field using the same tools for 10-15 years without producing any inventions, where a 2 page CV would suffice. When am I able to present my CV directly to a potential employer with a strong technical background, I have never encountered one who was not extremely impressed by my professional accomplishments, nor who gave me any negative feedback on account of its length. And I am 69, which means it will be more likely for me to be hired as a contractor or a consultant, instead of as a regular employee.
+__NOTICE for pedantic HR types:__  This CV is slightly unusual. It is 6 pages long instead of 3, OMG! It represents my 40+ years experience as a polymath in a wide range of domains at an expert level, and includes many inventions, many of which are recent. Normally the inventions require a few lines of explanation in order to show their signficance. Therefore this CV is quite different than someone's who has been working in the same field using the same tools for 10-15 years without producing any inventions, where a 2 page CV would suffice. When am I able to present my CV directly to a potential employer with a strong technical background, I have never encountered even a single one who was not extremely impressed by my professional accomplishments, nor who gave me any negative feedback on account of its length. And I am 69, which means it will be more likely for me to be hired as a contractor or a consultant, instead of as a regular employee.
 
 ## 2. Core Skills & Tools
 
@@ -45,9 +45,9 @@ __2022-25:__ [Aurora Labs](https://www.auroralabs.com/), Tel Aviv: Senior Softwa
 
 * Optimized CPU and RAM usage, by a factor of __5x (!)__, of the company's core source code refactoring product for embedded automotive C code via the use of [srcML](https://www.srcml.org/) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/). The original version of the product was a hand coded compiler in _Python_. I had a great deal of co-operation from the company's chief scientist, [Carmit Sahar](https://www.linkedin.com/in/carmit-sahar/), who designed the original version.
 
-__2021:__ [Morphisec](https://www.morphisec.com/), Beer Sheva: Anti-Reverse Engineering Modifications to _Linux_ Kernel
+__2021:__ [Morphisec](https://www.morphisec.com/), Beer Sheva: Anti-Reverse Engineering Modifications to _Linux_ _x64_ Libc Kernel
 
-* The challenges were (1) not to change the addresses of any kernel function, and (2) to automatically modify the kernels of the many different Linux distributions.
+* The challenges were (1) not to change the addresses of any of the _libc_ functions, and (2) to automatically modify the kernels of the many different _Linux_ distributions. Implementation was in the _Python_ version of the [ZyDis]( https://github.com/zyantific/zydis ) _x64_ disassembler.
 
 __2021:__ [Qedit](https://qed-it.com/), Tel Aviv: WASM Cybersecurity Consultant for Financial Industry
 
@@ -99,7 +99,7 @@ __1990-97:__ _Pitkha_, Jerusalem (defunct): CEO & Domain Specific Language (DSL)
 
 3. __1992-95:__ __Invented__ a _DSL_ (implemented in C using [lex and yacc]( https://www2.cs.arizona.edu/~debray/Teaching/CSc453/DOCS/tutorial-large.pdf) ) that was the backbone for a software development tool chain for the [DSPG](https://en.wikipedia.org/wiki/DSP_Group) [PINE](https://www.edn.com/dsp-group-pinedspcore/) CPU:
 
-	* The tool chain included a CPU simulator, debugger with a programmable I/O port simulator (BTW still, in 2025, not yet found on most debuggers or emulators), assembler, disassembler, and overlay linker. (Note that this project was implemented before the stable version GCC 2.95 became available). Initially the purpose of the _DSL_ was to resolve the problem of register usage restrictions between adjacent assembly instructions. The VLSI architects regularly changed the restrictions which made it extremely difficult to create a hand crafted assembler in a reasonable period of time. A register restriction violation required the manual insertion of a _NOP_ into the instruction stream. (Today, i.e. 2025, modern CPU architectures can automatically "stall" the pipeline).
+	* The tool chain included a clock accurate CPU simulator, debugger with a programmable I/O port simulator (BTW still, in 2025, not yet found on most debuggers or emulators), assembler, disassembler, and overlay linker. (Note that this project was implemented before the stable version GCC 2.95 became available). Initially the purpose of the _DSL_ was to resolve the problem of register usage restrictions between adjacent assembly instructions. The VLSI architects regularly changed the restrictions which made it extremely difficult to create a hand crafted assembler in a reasonable period of time. A register restriction violation required the manual insertion of a _NOP_ into the instruction stream. (Today, i.e. 2025, modern CPU architectures can automatically "stall" the pipeline).
 	* The _DSL_ implemented a language that completely described the CPU's instruction set. Changes to the register restrictions were trivial to implement, and the assembler could be recompiled within an hour. __The assembler ran over 100x faster than the VLSI simulated assembler. The assembler ran for over 100 hours without any memory leaks. The assembler allowed the architects to regularly run instruction set sanity tests as soon as the architecture was updated. The complete tool chain was used by application programmers to build and test complete applications 6 months before the final production of the physical CPU.__
 
 __1990-91:__ __Invented__ a _DSL_ to completely automate a metal blade production factory at  [Iscar]( https://www.iscar.com/index.aspx/countryid/1/lang/en )-Matkash, Tefen

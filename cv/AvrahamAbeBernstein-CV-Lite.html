@@ -200,7 +200,7 @@ href="https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.pdf">Lite 
 href="https://www.avrahambernstein.com">https://www.avrahambernstein.com</a>
 <br/><strong>Linkedin:</strong> <a
 href="https://www.linkedin.com/in/avrahambernstein/">https://www.linkedin.com/in/avrahambernstein/</a>
-<br/><strong>Last Update:</strong> 2025-07-27
+<br/><strong>Last Update:</strong> 2025-07-28
 </address>
 <h2>1. Summary</h2>
 <p>Senior software architect and polymath with over 40 years of innovation in algorithm design,
@@ -215,10 +215,10 @@ inventions require a few lines of explanation in order to show their signficance
 CV is quite different than someone's who has been working in the same field using the same tools
 for 10-15 years without producing any inventions, where a 2 page CV would suffice. When am I
 able to present my CV directly to a potential employer with a strong technical background, I
-have never encountered one who was not extremely impressed by my professional accomplishments,
-nor who gave me any negative feedback on account of its length. And I am 69, which means it will
-be more likely for me to be hired as a contractor or a consultant, instead of as a regular
-employee.</p>
+have never encountered even a single one who was not extremely impressed by my professional
+accomplishments, nor who gave me any negative feedback on account of its length. And I am 69,
+which means it will be more likely for me to be hired as a contractor or a consultant, instead
+of as a regular employee.</p>
 <h2>2. Core Skills &amp; Tools</h2>
 <ul>
 <li><p><strong>Languages:</strong> C, Python, Bash, HTML, Markdown, XML, YAML</p></li>
@@ -270,10 +270,12 @@ href="https://www.linkedin.com/in/carmit-sahar/">Carmit Sahar</a>, who designed 
 version.</p></li>
 </ul>
 <p><strong>2021:</strong> <a href="https://www.morphisec.com/">Morphisec</a>, Beer Sheva:
-Anti-Reverse Engineering Modifications to <em>Linux</em> Kernel</p>
+Anti-Reverse Engineering Modifications to <em>Linux</em> <em>x64</em> Libc Kernel</p>
 <ul>
-<li>The challenges were (1) not to change the addresses of any kernel function, and (2) to
-automatically modify the kernels of the many different Linux distributions.</li>
+<li>The challenges were (1) not to change the addresses of any of the <em>libc</em> functions,
+and (2) to automatically modify the kernels of the many different <em>Linux</em> distributions.
+Implementation was in the <em>Python</em> version of the <a
+href="https://github.com/zyantific/zydis">ZyDis</a> <em>x64</em> disassembler.</li>
 </ul>
 <p><strong>2021:</strong> <a href="https://qed-it.com/">Qedit</a>, Tel Aviv: WASM Cybersecurity
 Consultant for Financial Industry</p>
@@ -401,14 +403,14 @@ and yacc</a> ) that was the backbone for a software development tool chain for t
 href="https://en.wikipedia.org/wiki/DSP_Group">DSPG</a> <a
 href="https://www.edn.com/dsp-group-pinedspcore/">PINE</a> CPU:</p>
 <ul>
-<li>The tool chain included a CPU simulator, debugger with a programmable I/O port simulator
-(BTW still, in 2025, not yet found on most debuggers or emulators), assembler, disassembler, and
-overlay linker. (Note that this project was implemented before the stable version GCC 2.95
-became available). Initially the purpose of the <em>DSL</em> was to resolve the problem of
-register usage restrictions between adjacent assembly instructions. The VLSI architects
-regularly changed the restrictions which made it extremely difficult to create a hand crafted
-assembler in a reasonable period of time. A register restriction violation required the manual
-insertion of a <em>NOP</em> into the instruction stream. (Today, i.e. 2025, modern CPU
+<li>The tool chain included a clock accurate CPU simulator, debugger with a programmable I/O
+port simulator (BTW still, in 2025, not yet found on most debuggers or emulators), assembler,
+disassembler, and overlay linker. (Note that this project was implemented before the stable
+version GCC 2.95 became available). Initially the purpose of the <em>DSL</em> was to resolve the
+problem of register usage restrictions between adjacent assembly instructions. The VLSI
+architects regularly changed the restrictions which made it extremely difficult to create a hand
+crafted assembler in a reasonable period of time. A register restriction violation required the
+manual insertion of a <em>NOP</em> into the instruction stream. (Today, i.e. 2025, modern CPU
 architectures can automatically "stall" the pipeline).</li>
 <li>The <em>DSL</em> implemented a language that completely described the CPU's instruction set.
 Changes to the register restrictions were trivial to implement, and the assembler could be
