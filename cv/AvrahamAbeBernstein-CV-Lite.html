@@ -260,21 +260,20 @@ typically only 256 bytes. Thus we are able to transfer larger FLASH chunks which
 results in significantly better compression. For small FLASH devices, in the range of 64-128 KB,
 compression could often be improved by up to 25%. And the board's original FLASH driver could be
 utilized without any modification.</p></li>
-<li><p>Optimized CPU and RAM usage, by a factor of <strong>5x (!)</strong>, of the company's
-core source code refactoring product for embedded automotive C code via the use of <a
+<li><p>Reduced CPU (6x) and RAM (2x) usage compared to the company's original core source code
+refactoring product for embedded automotive C code via the use of <a
 href="https://www.srcml.org/">srcML</a> and <a
 href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a>. The original
-version of the product was a hand coded compiler in <em>Python</em>. I had a great deal of
-co-operation from the company's chief scientist, <a
-href="https://www.linkedin.com/in/carmit-sahar/">Carmit Sahar</a>, who designed the original
-version.</p></li>
+version was a hand coded compiler in <em>Python</em>. I had a great deal of co-operation from
+the company's chief scientist, <a href="https://www.linkedin.com/in/carmit-sahar/">Carmit
+Sahar</a>, who designed the original version.</p></li>
 </ul>
 <p><strong>2021:</strong> <a href="https://www.morphisec.com/">Morphisec</a>, Beer Sheva:
 Anti-Reverse Engineering Modifications to <em>Linux</em> <em>x64</em> Libc Kernel</p>
 <ul>
 <li>The challenges were (1) not to change the addresses of any of the <em>libc</em> functions,
 and (2) to automatically modify the kernels of the many different <em>Linux</em> distributions.
-Implementation was in the <em>Python</em> version of the <a
+Implementation was via the <em>Python</em> version of the <a
 href="https://github.com/zyantific/zydis">ZyDis</a> <em>x64</em> disassembler.</li>
 </ul>
 <p><strong>2021:</strong> <a href="https://qed-it.com/">Qedit</a>, Tel Aviv: WASM Cybersecurity

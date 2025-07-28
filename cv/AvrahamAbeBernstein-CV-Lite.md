@@ -54,11 +54,11 @@ __2022-25:__ [Aurora Labs](https://www.auroralabs.com/), Tel Aviv: Senior Softwa
 
 * __Invented a patent-pending__ algorithm to reduce RAM usage and boost compression during FLASH updates. The key to the patent was the use of buffered I/O windows, similar to the _Linux_ file system, which eliminated the need to allocate a pre-image in RAM the size of the FLASH sector especially when the size of the _DMA_ write region is typically only 256 bytes. Thus we are able to transfer larger FLASH chunks which typically results in significantly better compression. For small FLASH devices, in the range of 64-128 KB, compression could often be improved by up to 25%. And the board's original FLASH driver could be utilized without any modification.
 
-* Optimized CPU and RAM usage, by a factor of __5x (!)__, of the company's core source code refactoring product for embedded automotive C code via the use of [srcML](https://www.srcml.org/) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/). The original version of the product was a hand coded compiler in _Python_. I had a great deal of co-operation from the company's chief scientist, [Carmit Sahar](https://www.linkedin.com/in/carmit-sahar/), who designed the original version.
+* Reduced CPU (6x) and RAM (2x) usage compared to the company's original core source code refactoring product for embedded automotive C code via the use of [srcML]( https://www.srcml.org/ ) and [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ). The original version was a hand coded compiler in _Python_. I had a great deal of co-operation from the company's chief scientist, [Carmit Sahar](https://www.linkedin.com/in/carmit-sahar/), who designed the original version.
 
 __2021:__ [Morphisec](https://www.morphisec.com/), Beer Sheva: Anti-Reverse Engineering Modifications to _Linux_ _x64_ Libc Kernel
 
-* The challenges were (1) not to change the addresses of any of the _libc_ functions, and (2) to automatically modify the kernels of the many different _Linux_ distributions. Implementation was in the _Python_ version of the [ZyDis]( https://github.com/zyantific/zydis ) _x64_ disassembler.
+* The challenges were (1) not to change the addresses of any of the _libc_ functions, and (2) to automatically modify the kernels of the many different _Linux_ distributions. Implementation was via the _Python_ version of the [ZyDis]( https://github.com/zyantific/zydis ) _x64_ disassembler.
 
 __2021:__ [Qedit](https://qed-it.com/), Tel Aviv: WASM Cybersecurity Consultant for Financial Industry
 
