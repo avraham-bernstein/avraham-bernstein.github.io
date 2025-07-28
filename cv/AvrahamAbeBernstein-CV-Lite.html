@@ -307,7 +307,9 @@ Jerusalem: Bioinformatics consultant</p>
 <ul>
 <li>In just 3 months I <strong>invented</strong> an AI threshold algorithm for <a
 href="https://www.genome.gov/about-genomics/fact-sheets/Polymerase-Chain-Reaction-Fact-Sheet">PCR</a>
-"Ct" detection, and a noise-reduction technique for a <a
+<a
+href="https://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/real-time-pcr-basics/real-time-pcr-understanding-ct.html">Ct</a>
+detection, and a noise-reduction technique for a <a
 href="https://www.webmd.com/skin-problems-and-treatments/understanding-mrsa">MRSA</a> diagnostic
 kit. When I first began work, their kit was a complete failure. Even though I had zero
 background in microbiology, I discovered that the PCR control test tubes were configured
@@ -316,16 +318,17 @@ even though the samples were long ago destroyed. And I discovered that their pre
 chemistry was not able to filter the <a
 href="https://en.wikipedia.org/wiki/Polymerase_chain_reaction_inhibitors">inhibitors</a> in
 their nasal samples.</li>
-<li>So I invented a new extremely accurate algorithm for <a
-href="https://www.thermofisher.com/il/en/home/life-science/pcr/real-time-pcr/real-time-pcr-learning-center/real-time-pcr-basics/real-time-pcr-understanding-ct.html">Ct</a>
-detection in spite of 50+% of inhibited data points, and which worked for pure MRSA colonies,
-both of which resulted in non-sigmoidal shaped graphs of the underlying biological assays which
-was the fundamental assumption of industry standard PCR algorithms. I was mentored by the
-company's consultant, <a href="https://independent.academia.edu/TzachiBar">Tzachi Bar</a>, who
-invented the most commonly used (public domain) algorithm used in most PCR devices. <strong>My
-algorithm saved the company's business unit from bankruptcy, and my algorithm won a MRSA
-detector "shoot-out" against the big pharma labs at the world famous St. George's medical school
-in London.</strong></li>
+<li>Even after correcting for the systematic noise, at least 50+% of the data points were
+inhibited, so the graph of the assays were definitely not <em>sigmoidal</em> (i.e. flat "S"
+shaped). Their graph looked more like rorchach ink blots. While the graph of the pure
+<em>MRSA</em> colonies were linear, also definitely not sigmoidal. The fundamental assumption of
+PCR mathematics is that the shape of the assay function must be sigmoidal, so it seemed that we
+faced a catastropic failure. But my threshold algorithm handled them just fine. I was mentored
+by the company's consultant, <a href="https://independent.academia.edu/TzachiBar">Tzachi
+Bar</a>, who invented the most commonly used (public domain) algorithm used in most PCR devices.
+<strong>My algorithm saved the company's business unit from bankruptcy, and my algorithm won a
+MRSA detector "shoot-out" against the big pharma labs at the world famous St. George's medical
+school in London.</strong></li>
 </ul>
 <p><strong>2005-10:</strong> <em>NDS</em> (now <a
 href="https://www.synamedia.com/">Synamedia</a>), Jerusalem: Internet TV Industry:</p>
