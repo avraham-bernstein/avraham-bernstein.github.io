@@ -1,5 +1,5 @@
 $py(
-now = '2025-07-27'
+now = '2025-07-28'
 DOT = '&#x2022;'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
@@ -106,7 +106,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 <p>
 <details markdown="1"><summary>3) The reason why [HaShem]( https://www.myjewishlearning.com/article/hashem/ ) chose the Jews, along with _His_ primary directive to the Jewish People [to keep the ways of _HaShem_, to execute righteousness and justice (Gen. 18:19)]( https://mechon-mamre.org/p/pt/pt0118.htm )</summary>
 * In our time (i.e. 2025) the world is witnessing (1) the fulfillment of this directive when the Jewish People who [dwells alone (Num. 23:9)]( https://mechon-mamre.org/p/pt/pt0423.htm ) in this world will [rise up like a lioness (Num. 23:24)]( https://mechon-mamre.org/p/pt/pt0423.htm ) to devour evil, and (2) the moral bankruptcy of the _Abrahamic_ "supercessionist" (aka replacement) theologies.
-* The supercessionists have a highly flawed understanding of "ethical monotheism". Islam, while being monotheistic, worships [A God Who Hates]( https://en.wikipedia.org/wiki/A_God_Who_Hates ). The _Quran_ openly states that their god sanctions murder, pillaging, piracy, and slavery. Christians (especially Catholics), with their highly suspect monotheistic credentials, i.e. their belief in the "trinity", [fundamentally cannot accept that ethical behavior requires adherence to God's laws in the _Torah_]( https://biblehub.com/topical/t/the_danger_of_legalism.htm ), and cannot accept that evil often requires force to be eradicated.
+* The supercessionists have a highly flawed understanding of "ethical monotheism". Islam, while being monotheistic, worships [A God Who Hates]( https://en.wikipedia.org/wiki/A_God_Who_Hates ). The _Quran_ openly states that their god sanctions murder, pillaging, piracy, and slavery. Also see their recent [theological support of Oct. 7](https://www.israelnationalnews.com/news/412351). While Christians (especially Catholics), with their highly suspect monotheistic credentials, i.e. their belief in the "trinity", [fundamentally cannot accept that ethical behavior requires adherence to God's laws in the _Torah_]( https://biblehub.com/topical/t/the_danger_of_legalism.htm ), and cannot accept that evil often requires force to be eradicated.
 </details>
 
 4) Summary of the 1961 debate between Israeli Ambassador Rav Yaakov Herzog and Oxford historian Arnold Toynbee whether or not the Jewish People are in a state of [Fossil or Ferment]( https://www.sefaria.org.il/Judaism%3B_Fossil_or_Ferment%2C_Preface.1?lang=en )
