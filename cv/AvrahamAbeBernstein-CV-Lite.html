@@ -343,15 +343,16 @@ could easily be knocked out.</li>
 </ul>
 <p>2) Satellite Content Servers Automated Testing:</p>
 <ul>
-<li>I invented a <a href="https://en.wikipedia.org/wiki/Domain-specific_language">Domain
-Specific Language (DSL)</a> (implemented in <a href="https://en.wikipedia.org/wiki/Tcl">TCL</a>
-on <em>Windows NT</em>) for simulation of the satellite.</li>
+<li>I <strong>invented</strong> a <a
+href="https://en.wikipedia.org/wiki/Domain-specific_language">Domain Specific Language (DSL)</a>
+(implemented in <a href="https://en.wikipedia.org/wiki/Tcl">TCL</a> on <em>Windows NT</em>) for
+simulation of the satellite.</li>
 <li>I used the <em>DSL</em> to generate flaws in the satellite's control program that disabled
 the satellite.</li>
 <li>I supplied the <em>DSL</em> to all developers to run sanity tests <em>before</em> checking
 in their code.</li>
 <li>I studied the company's bug database, and found that half of their development effort was
-spent fixing bugs. The company had over 1000 developers. So I created a simple development
+spent fixing bugs. The company had over 1000 developers! So I created a simple development
 protocol that knocked out over half of the bugs on the developer's desktop <em>before</em>
 submitting code to the QA group. The problem was that most check-ins were from make files with
 tens of thousands of warnings. The silver bullet was insisting upon check ins of make files

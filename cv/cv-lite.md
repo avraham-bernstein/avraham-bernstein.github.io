@@ -79,10 +79,10 @@ __2005-10:__ _NDS_ (now [Synamedia](https://www.synamedia.com/)), Jerusalem: Int
 
 2) Satellite Content Servers Automated Testing:
 
-* I invented a [Domain Specific Language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) (implemented in [TCL]( https://en.wikipedia.org/wiki/Tcl ) on _Windows NT_) for simulation of the satellite.
+* I __invented__ a [Domain Specific Language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) (implemented in [TCL]( https://en.wikipedia.org/wiki/Tcl ) on _Windows NT_) for simulation of the satellite.
 * I used the _DSL_ to generate flaws in the satellite's control program that disabled the satellite.
 * I supplied the _DSL_ to all developers to run sanity tests _before_ checking in their code.
-* I studied the company's bug database, and found that half of their development effort was spent fixing bugs. The company had over 1000 developers. So I created a simple development protocol that knocked out over half of the bugs on the developer's desktop _before_ submitting code to the QA group. The problem was that most check-ins were from make files with tens of thousands of warnings. The silver bullet was insisting upon check ins of make files without any warnings.
+* I studied the company's bug database, and found that half of their development effort was spent fixing bugs. The company had over 1000 developers! So I created a simple development protocol that knocked out over half of the bugs on the developer's desktop _before_ submitting code to the QA group. The problem was that most check-ins were from make files with tens of thousands of warnings. The silver bullet was insisting upon check ins of make files without any warnings.
 
 __2002-03:__ _Virtouch_, Jerusalem (defunct): VP R&D, Accessibility Technology
 
