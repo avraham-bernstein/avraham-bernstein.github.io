@@ -208,7 +208,7 @@ compiler construction, and obfuscation tools across industries including cyberse
 automotive, accessibility, and bioinformatics. Adept at designing domain-specific languages,
 anti-reverse engineering, and building MVPs and prototypes for CTO teams. Holds multiple patents
 and thrives on technically challenging projects.</p>
-<p><strong>NOTICE for pedantic HR types:</strong> This CV is slightly unusual. It is 6 pages
+<p><strong>NOTICE for pedantic HR types:</strong> This CV is slightly unusual. It is 7 pages
 long instead of 3, OMG! It represents my 40+ years experience as a polymath in a wide range of
 domains at an expert level, and includes many inventions, many of which are recent. Normally the
 inventions require a few lines of explanation in order to show their signficance. Therefore this
@@ -260,9 +260,9 @@ typically only 256 bytes. Thus we are able to transfer larger FLASH chunks which
 results in significantly better compression. For small FLASH devices, in the range of 64-128 KB,
 compression could often be improved by up to 25%. And the board's original FLASH driver could be
 utilized without any modification.</p></li>
-<li><p>Reduced CPU (6x) and RAM (2x) usage compared to the company's original core source code
-refactoring product for embedded automotive C code via the use of <a
-href="https://www.srcml.org/">srcML</a> and <a
+<li><p>Reduced CPU (<strong>6x</strong>) and RAM (<strong>2x</strong>) usage compared to the
+company's original core source code refactoring product for embedded automotive C code via the
+use of <a href="https://www.srcml.org/">srcML</a> and <a
 href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a>. The original
 version was a hand coded compiler in <em>Python</em>. Its purpose was to automatically reduce
 the time of an automobile software update (via naive <em>LZMA</em> compression) from a few hours
@@ -327,8 +327,36 @@ detector "shoot-out" against the big pharma labs at the world famous St. George'
 in London.</strong></li>
 </ul>
 <p><strong>2005-10:</strong> <em>NDS</em> (now <a
-href="https://www.synamedia.com/">Synamedia</a>), Jerusalem: Cybersecurity Researcher for
-Internet TV industry</p>
+href="https://www.synamedia.com/">Synamedia</a>), Jerusalem: Internet TV Industry:</p>
+<p>1) Cybersecurity Research:</p>
+<ul>
+<li>I showed how <a href="https://en.wikipedia.org/wiki/Digital_rights_management">Digital
+Rights Management (DRM)</a> protection schemes that relied upon date or playback count
+restrictions could easily be broken by garden variety <a
+href="https://en.wikipedia.org/wiki/Virtual_machine">virtual machines</a>.</li>
+<li>I showed how the <a href="https://en.wikipedia.org/wiki/QEMU">QEMU virtual machine</a>, that
+allowed for assembly instructions to be emulated, could be used to break the host machine's
+random number generator, which allowed multiple confederate hosts to generate the exact same
+card ID, which enabled massive leeching of content from the content servers.</li>
+<li>I penetrated a confederate network of card ID sharing, and showed how all the confederates
+could easily be knocked out.</li>
+</ul>
+<p>2) Satellite Content Servers Automated Testing:</p>
+<ul>
+<li>I invented a <a href="https://en.wikipedia.org/wiki/Domain-specific_language">Domain
+Specific Language (DSL)</a> (implemented in <a href="https://en.wikipedia.org/wiki/Tcl">TCL</a>
+on <em>Windows NT</em>) for simulation of the satellite.</li>
+<li>I used the <em>DSL</em> to generate flaws in the satellite's control program that disabled
+the satellite.</li>
+<li>I supplied the <em>DSL</em> to all developers to run sanity tests <em>before</em> checking
+in their code.</li>
+<li>I studied the company's bug database, and found that half of their development effort was
+spent fixing bugs. The company had over 1000 developers. So I created a simple development
+protocol that knocked out over half of the bugs on the developer's desktop <em>before</em>
+submitting code to the QA group. The problem was that most check-ins were from make files with
+tens of thousands of warnings. The silver bullet was insisting upon check ins of make files
+without any warnings.</li>
+</ul>
 <p><strong>2002-03:</strong> <em>Virtouch</em>, Jerusalem (defunct): VP R&amp;D, Accessibility
 Technology</p>
 <ul>
@@ -352,7 +380,7 @@ and much more efficient modem speed testing via a <a
 href="https://www.geeksforgeeks.org/dsa/fibonacci-search/">Fibonacci search</a> algorithm
 instead of the industry standard binary search algorithm.</p></li>
 <li><p>Architect of super-efficient cable modem testing laboratory. Reduced H/W costs by a
-factor of <strong>16x (!)</strong> via multiplexing with a <a
+factor of <strong>16x</strong> via multiplexing with a <a
 href="https://www.automationdirect.com/adc/overview/catalog/communications/industrial_ethernet_switches/layer_2_managed_switches">programmable
 layer-2 switch</a>.</p></li>
 <li><p><strong>Invented</strong> a hybrid Ethernet/Dial-up network protocol for cable modems,
