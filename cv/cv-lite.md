@@ -87,7 +87,7 @@ __2005-10:__ _NDS_ (now [Synamedia](https://www.synamedia.com/)), Jerusalem: Int
 
 __2002-03:__ _Virtouch_, Jerusalem (defunct): VP R&D, Accessibility Technology
 
-* __Invented__ an [SVG]( https://developer.mozilla.org/en-US/docs/Web/SVG ) web browser based solution enabling the blind to interpret images, maps, and mathematical functions via the PC's sound card and a consumer grade graphics tablet.
+* __Invented__ an [SVG]( https://developer.mozilla.org/en-US/docs/Web/SVG ) web browser based solution enabling the blind to interpret images, maps, and mathematical functions via the PC's (or smartphone's) built-in sound card and a consumer grade graphics tablet.
 
 __1999-2004:__ _Vyyo_, Jerusalem (defunct): for RF wireless cable modem industry
 
