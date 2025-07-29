@@ -75,7 +75,7 @@ __2005-10:__ _NDS_ (now [Synamedia](https://www.synamedia.com/)), Jerusalem: Int
 1) Cybersecurity Research:
 
 * I showed how [Digital Rights Management (DRM)]( https://en.wikipedia.org/wiki/Digital_rights_management ) protection schemes that relied upon date or playback count restrictions could easily be broken by garden variety [virtual machines](https://en.wikipedia.org/wiki/Virtual_machine).
-* I showed how the [QEMU virtual machine](https://en.wikipedia.org/wiki/QEMU), that allowed for assembly instructions to be emulated, could be used to break the host machine's random number generator, which allowed multiple confederate hosts to generate the exact same card ID, which enabled massive leeching of content from the content servers.
+* I showed how the [QEMU virtual machine](https://en.wikipedia.org/wiki/QEMU), that allowed for assembly instructions to be emulated, could be used to break the host machine's random number generator (_without changing the application's binary code!_), which allowed multiple confederate hosts to generate the exact same card ID, which enabled massive leeching of content from the content servers.
 * I penetrated a confederate network of card ID sharing, and showed how all the confederates could easily be knocked out.
 
 2) Satellite Content Servers Automated Testing:
