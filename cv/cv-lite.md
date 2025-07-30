@@ -61,7 +61,7 @@ __2017-20:__ _Argus Cyber Security_ (now [PlaxidityX](https://plaxidityx.com/)),
 
 __2013-17:__ [Viaccess-Orca](https://www.viaccess-orca.com/) (subsidiary of Orange FR), Ra'anana: Cybersecurity Obfuscation Manager for Internet TV industry
 
-* _Linux_ [dynamic share object (DSO)](https://en.wikipedia.org/wiki/Dynamic_linker) export masking of smartphone client S/W to make reverse engineering much more difficult.
+* __Invented__ _Linux_ [dynamic share object (DSO)](https://en.wikipedia.org/wiki/Dynamic_linker) export masking of smartphone client S/W to make reverse engineering much more difficult.
 * Anomaly detection on content servers.
 
 __2015 part-time:__ [Canary Mission]( https://canarymission.org/ ), Jerusalem: Internet Security "Hygiene" Consultant
