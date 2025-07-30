@@ -10,14 +10,14 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__CV__: [Full HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html),&nbsp;&nbsp;[Full PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf),&nbsp;&nbsp;[Lite HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.html),&nbsp;&nbsp;[Lite PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.pdf)
 <br/>__WWW:__ [https://www.avrahambernstein.com](https://www.avrahambernstein.com)
 <br/>__Linkedin:__ [https://www.linkedin.com/in/avrahambernstein/](https://www.linkedin.com/in/avrahambernstein/)
-<br/>__Last Update:__ 2025-07-29
+<br/>__Last Update:__ 2025-07-30
 </address>
 
 ## 1. Summary
 
 Senior software architect and polymath with over 40 years of innovation in algorithm design, compiler construction, and obfuscation tools across industries including cybersecurity, automotive, accessibility, and bioinformatics. Adept at designing domain-specific languages, anti-reverse engineering, and building MVPs and prototypes for CTO teams. Holds multiple patents and thrives on technically challenging projects.
 
-__NOTICE for pedantic HR types:__  This CV is unusual. And not primarily because it is 7 pages long instead of 3, OMG! It represents my 40+ years experience as a polymath in a wide range of domains at an expert level, and includes many inventions, many of which are recent. Normally the inventions require a few lines of explanation in order to show their signficance, _especially for someone who is not a domain expert_. Therefore this CV is quite different than someone's who has been working in the same field using the same tools for 10-15 years without producing any inventions, where a 2 page CV would suffice. When am I able to present my CV directly to a colleague or a potential employer with a strong technical background, I have never encountered even a single one who was not extremely impressed by my professional accomplishments, nor who gave me any negative feedback on account of its length. And I am 69, which means it will be more likely for me to be hired as a contractor or a consultant, instead of as a regular employee.
+__NOTICE for pedantic HR types:__  This CV is unusual. And not primarily because it is 7 pages long instead of 3, OMG! It represents my 40+ years experience as a polymath in a wide range of domains at an expert level, and includes many inventions, many of which are recent. First, in spite of my recent inventions, my long experience is a clear sign to HR that my "shelf life has expired". Second, normally my inventions in such a wide range of domains require a few lines of explanation in order to show their signficance, _especially for someone who is not a domain expert_. Therefore this CV is quite different than someone's who has been working in the same field using the same tools for 10-15 years without producing any inventions, where a 2 page CV would suffice. When am I able to present my CV directly to a colleague or a potential employer with a strong technical background, I have never encountered even a single one who was not extremely impressed by my professional accomplishments, nor who gave me any negative feedback on account of its length. And I am 69, which means it will be more likely for me to be hired as a contractor or a consultant, instead of as a regular employee.
 
 ## 2. Core Skills & Tools
 
@@ -60,6 +60,11 @@ __2017-20:__ _Argus Cyber Security_ (now [PlaxidityX](https://plaxidityx.com/)),
 ## 4. Earlier Roles (Selected)
 
 __2013-17:__ [Viaccess-Orca](https://www.viaccess-orca.com/) (subsidiary of Orange FR), Ra'anana: Cybersecurity Obfuscation Manager for Internet TV industry
+
+* _Linux_ [dynamic share object (DSO)](https://en.wikipedia.org/wiki/Dynamic_linker) export masking of smartphone client S/W to make reverse engineering much more difficult.
+* Anomaly detection on content servers.
+
+__2015 part-time:__ [Canary Mission]( https://canarymission.org/ ), Jerusalem: Internet Security "Hygiene" Consultant
 
 __2013 part-time:__ _NVT_, US (defunct): CTO of Agritech Startup for [Cassava]( https://en.wikipedia.org/wiki/Cassava ) Production in Nigerian Jungle
 
