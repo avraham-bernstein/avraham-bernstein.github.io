@@ -23,7 +23,7 @@ __NOTICE for pedantic HR types:__  This CV is unusual. And not primarily because
 
 * __Languages:__ C, Python, Bash, HTML, Markdown, XML, YAML
 
-* __Technologies:__ [srcML](https://www.srcml.org/) (commercial license), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), [WASM](https://webassembly.org/), Linux, ELF, GCC, Clang
+* __Technologies:__ [srcML](https://www.srcml.org/) (commercial license), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), [WASM](https://webassembly.org/), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), GCC, Clang
 
 * __Domains:__ Compiler Design, [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) = anti-reverse engineering design, Cybersecurity, Embedded Systems, Accessibility, Automotive Software, Bioinformatics
 
@@ -35,7 +35,7 @@ __2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools
 
 * Designing commercial-grade obfuscating compilers for C/C++ and [Web Assembly (WASM)](https://webassembly.org/).
 
-* Implementing tools for static and dynamic code obfuscation, encrypted string handling, name mangling, and ELF [DSO](https://en.wikipedia.org/wiki/Dynamic_linker) export masking.
+* Implementing tools for static and dynamic code obfuscation, encrypted string handling, name mangling, and _ELF_ [Dynamic Shared Object (DSO)](https://en.wikipedia.org/wiki/Dynamic_linker) export masking.
 
 * Leveraging [srcML](https://www.srcml.org/) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) for automated C [source code refactoring]( https://en.wikipedia.org/wiki/Code_refactoring )
 
@@ -61,7 +61,7 @@ __2017-20:__ _Argus Cyber Security_ (now [PlaxidityX](https://plaxidityx.com/)),
 
 __2013-17:__ [Viaccess-Orca](https://www.viaccess-orca.com/) (subsidiary of Orange FR), Ra'anana: Cybersecurity Obfuscation Manager for Internet TV industry
 
-* __Invented__ _Linux_ [dynamic share object (DSO)](https://en.wikipedia.org/wiki/Dynamic_linker) export masking of smartphone client S/W to make reverse engineering much more difficult.
+* __Invented__ _Linux_ [dynamic shared object (DSO)](https://en.wikipedia.org/wiki/Dynamic_linker) export masking of smartphone client S/W to make reverse engineering much more difficult.
 * Anomaly detection on content servers.
 
 __2015 part-time:__ [Canary Mission]( https://canarymission.org/ ), Jerusalem: Internet Security "Hygiene" Consultant
