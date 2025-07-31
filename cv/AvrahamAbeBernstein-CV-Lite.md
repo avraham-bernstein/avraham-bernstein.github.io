@@ -1,5 +1,5 @@
 $py(
-now = '2025-07-30'
+now = '2025-07-31'
 yy = 2025
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
@@ -28,7 +28,7 @@ __Author:__ Avraham "Abe" Bernstein
 
 Senior software architect and polymath with over 40 years of innovation in algorithm design, compiler construction, and obfuscation tools across industries including cybersecurity, automotive, accessibility, and bioinformatics. Adept at designing domain-specific languages, anti-reverse engineering, and building MVPs and prototypes for CTO teams. Holds multiple patents and thrives on technically challenging projects.
 
-__NOTICE for pedantic HR types:__  This CV is unusual. And not primarily because it is 7 pages long instead of 3, OMG! It represents my 40+ years experience as a polymath in a wide range of domains at an expert level, and includes many inventions, many of which are recent. First, in spite of my recent inventions, my long experience is a clear sign to HR that my "shelf life has expired". Second, normally my inventions in such a wide range of domains require a few lines of explanation in order to show their signficance, _especially for someone who is not a domain expert_. Therefore this CV is quite different than someone's who has been working in the same field using the same tools for 10-15 years without producing any inventions, where a 2 page CV would suffice. When am I able to present my CV directly to a colleague or a potential employer with a strong technical background, I have never encountered even a single one who was not extremely impressed by my professional accomplishments, nor who gave me any negative feedback on account of its length. And I am 69, which means it will be more likely for me to be hired as a contractor or a consultant, instead of as a regular employee.
+__NOTICE for pedantic HR types:__  This CV is unusual. And not primarily because it is 7 pages long instead of 3, OMG! It represents my 40+ years experience as a polymath in a wide range of domains at an expert level, and includes many inventions, many of which are recent. First, in spite of my recent inventions, my long experience is a clear sign to HR that my "shelf life has expired". Second, my inventions which are my "hallmark", both recent and former, must be prominently displayed. Since they represent such a wide range of domains, they require a few lines of explanation in order to show their signficance, _especially for someone who is not a domain expert_. Therefore this CV is quite different than someone's who has been working in the same field using the same tools for 10-15 years without producing any inventions, where a 2 page CV would suffice. When am I able to present my CV directly to a colleague or a potential employer with a strong technical background, I have never encountered even a single one who was not extremely impressed by my professional accomplishments, nor who gave me any negative feedback on account of its length. And I am 69, which means it will be more likely for me to be hired as a contractor or a consultant, instead of as a regular employee.
 
 ## 2. Core Skills & Tools
 
@@ -74,6 +74,10 @@ __2013-17:__ [Viaccess-Orca](https://www.viaccess-orca.com/) (subsidiary of Oran
 
 * __Invented__ _Linux_ [dynamic shared object (DSO)](https://en.wikipedia.org/wiki/Dynamic_linker) export masking of _Android_ smartphone client S/W to make reverse engineering much more difficult.
 * Anomaly detection on content servers.
+
+__2017 part-time:__ Independent: Accessibility
+
+* __Invented__ a generic S/W transformation for fonts that make them accessible to [dyslexics]( https://en.wikipedia.org/wiki/Dyslexia ). I widened the font, and added a single diacritical mark to the inner half of the widened left margin - see [here]( https://www.avrahambernstein.com/cv/dyslexic_a.png ). I mimicked the technique used by computer vision detection of [QR codes]( https://en.wikipedia.org/wiki/QR_code ) independent of their orientation.
 
 __2015 part-time:__ [Canary Mission]( https://canarymission.org/ ), Jerusalem: Internet Security "Hygiene" Consultant
 
