@@ -50,6 +50,8 @@ __2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools
 
 * Leveraging [srcML](https://www.srcml.org/) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) for automated C [source code refactoring]( https://en.wikipedia.org/wiki/Code_refactoring )
 
+* For more details about obfuscation, see [here]( https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html#obfuscation ).
+
 __2022-25:__ [Aurora Labs](https://www.auroralabs.com/), Tel Aviv: Senior Software Architect in CTO office for Digital Automotive Industry
 
 * __Invented a patent-pending__ algorithm to reduce RAM usage and boost compression during FLASH updates. The key to the patent was the use of buffered I/O windows, similar to the _Linux_ file system, which eliminated the need to allocate a pre-image in RAM the size of the FLASH sector especially when the size of the _DMA_ write region is typically only 256 bytes. Thus we are able to transfer larger FLASH chunks which typically results in significantly better compression. For small FLASH devices, in the range of 64-128 KB, compression could often be improved by up to 25%. And the board's original FLASH driver could be utilized without any modification.
