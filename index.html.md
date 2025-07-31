@@ -9,7 +9,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 <br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evenings (Jm. time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
-<br/>__Last Update:__ 2025-07-28
+<br/>__Last Update:__ 2025-07-31
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -41,7 +41,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Links
 
-* __CV:__ Computer Scientist: [Full HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html),&nbsp;&nbsp;[Full PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf),&nbsp;&nbsp;[Lite HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.html),&nbsp;&nbsp;[Lite PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.pdf)
+* __CV:__ Computer Scientist: [Full HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html),&nbsp;&nbsp;[Full PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf),&nbsp;&nbsp;[Lite PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.pdf)
 
 * __Linkedin:__ [https://www.linkedin.com/in/avrahambernstein/](https://www.linkedin.com/in/avrahambernstein/)
 
