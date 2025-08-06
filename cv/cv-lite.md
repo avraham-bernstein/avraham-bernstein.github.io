@@ -10,7 +10,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__CV__: [Full HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html),&nbsp;&nbsp;[Full PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf),&nbsp;&nbsp;[Lite PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.pdf)
 <br/>__WWW:__ [https://www.avrahambernstein.com](https://www.avrahambernstein.com)
 <br/>__Linkedin:__ [https://www.linkedin.com/in/avrahambernstein/](https://www.linkedin.com/in/avrahambernstein/)
-<br/>__Last Update:__ 2025-08-04
+<br/>__Last Update:__ 2025-08-06
 </address>
 
 ## 1. Summary
@@ -23,40 +23,33 @@ __My CV is unusual.__ And not primarily because it is 7 pages long instead of 3!
 
 * __Languages:__ C, Python, Bash, HTML, Markdown, XML, YAML
 
-* __Technologies:__ [srcML](https://www.srcml.org/) (commercial license), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), [WASM](https://webassembly.org/), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), GCC, Clang
+* __Technologies:__ [srcML](https://www.srcml.org/), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), [WASM](https://webassembly.org/), _Linux_, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), _GCC_, _Clang_
 
 * __Domains:__ Compiler Design, [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) = anti-reverse engineering design, Cybersecurity, Embedded Systems, Accessibility, Automotive Software, Bioinformatics
 
-* __Other:__ [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), [Code Refactoring](https://en.wikipedia.org/wiki/Code_refactoring), Reverse Engineering, Factory Automation
+* __Other:__ [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), [Source Code Refactoring](https://en.wikipedia.org/wiki/Code_refactoring), Reverse Engineering, Factory Automation
 
 ## 3. Recent Experience
 
 __2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools Development
 
-* Designing commercial-grade obfuscating compilers for C/C++ and [Web Assembly (WASM)](https://webassembly.org/).
-
-* Implementing tools for static and dynamic code obfuscation, encrypted string handling, name mangling, and _ELF_ [Dynamic Shared Object (DSO)](https://en.wikipedia.org/wiki/Dynamic_linker) export masking.
-
-* Leveraging [srcML](https://www.srcml.org/) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) for automated C [source code refactoring]( https://en.wikipedia.org/wiki/Code_refactoring )
-
-* For more details about obfuscation, see [here]( https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html#obfuscation ).
+* __Invention__ of commercial-grade [obfuscating](https://en.wikipedia.org/wiki/Obfuscation_(software)) [compilers]( https://en.wikipedia.org/wiki/Compiler ) for C/C++ apps running under _Linux_ or [Web Assembly (WASM)](https://webassembly.org/). We suppy a budget-priced tool chain which [refactors source code]( https://en.wikipedia.org/wiki/Code_refactoring ) that makes it difficult to [reverse engineer]( https://en.wikipedia.org/wiki/Reverse_engineering ) without significantly degrading its performance or increasing its memory footprint. Primary refactoring tools that we use are [srcML (commercial license)]( https://www.srcml.org/ ) and [Beautiful Soup (open source)]( https://beautiful-soup-4.readthedocs.io/en/latest/ ). Example use cases would be to protect an unexploded missile against reverse engineering or to prevent dissection of a [DRM](https://en.wikipedia.org/wiki/Digital_rights_management) client movie player.
 
 __2022-25:__ [Aurora Labs](https://www.auroralabs.com/), Tel Aviv: Senior Software Architect in CTO office for Digital Automotive Industry
 
-* __Invented a patent-pending__ algorithm to reduce RAM usage and boost compression during FLASH updates. The key to the patent was the use of buffered I/O windows, similar to the _Linux_ file system, which eliminated the need to allocate a pre-image in RAM the size of the FLASH sector especially when the size of the _DMA_ write region is typically only 256 bytes. Thus we are able to transfer larger FLASH chunks which typically results in significantly better compression. For small FLASH devices, in the range of 64-128 KB, compression could often be improved by up to 25%. And the board's original FLASH driver could be utilized without any modification.
-
-* Reduced CPU (__6x__) and RAM (__3x__) usage compared to the company's original core source code refactoring product for embedded automotive C code via the use of [srcML]( https://www.srcml.org/ ) and [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ). The original version was a hand coded compiler in _Python_. Its purpose was to automatically reduce the time of an automobile software update (via naive _LZMA_ compression) from a few hours to as low as 15 minutes. I had a great deal of co-operation from the company's chief scientist, [Carmit Sahar](https://www.linkedin.com/in/carmit-sahar/), who designed the original version.
+* Hands-on design of [algorithms]( https://en.wikipedia.org/wiki/Algorithm ), prototypes, and [Minimum Viable Products (MVPs)]( https://en.wikipedia.org/wiki/Minimum_viable_product ). (1) Applied for a __patent__ for boosting compression by up to 25% during embedded FLASH updates. (2) Reduced CPU (__6x__) and RAM (__3x__) usage in the company's original core source code refactoring product for embedded automotive C code by rewriting their original manually coded compiler with [srcML]( https://www.srcml.org/ ) and [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ). Substantially improved the product's marketability.
 
 __2021:__ [Morphisec](https://www.morphisec.com/), Beer Sheva: Anti-Reverse Engineering Modifications to _Linux_ _x64_ Libc Kernel
 
-* The challenges were (1) not to change the addresses of any of the _libc_ functions, and (2) to automatically modify the kernels of the many different _Linux_ distributions. Implementation was via the _Python_ version of the [ZyDis]( https://github.com/zyantific/zydis ) _x64_ disassembler.
+* The primary technical challenge was not to change the addresses of any of the _libc_ functions without having any access to the original source code. Implementation was via the _Python_ version of the [ZyDis]( https://github.com/zyantific/zydis ) _x64_ disassembler.
 
 __2021:__ [Qedit](https://qed-it.com/), Tel Aviv: WASM Cybersecurity Consultant for Financial Industry
 
+* Designed a proof-of-concept to shroud C cryptographic algorithms inside _Javascript_.
+
 __2017-20:__ _Argus Cyber Security_ (now [PlaxidityX](https://plaxidityx.com/)), Tel Aviv: Senior Researcher for Digital Automotive Industry
 
-* __Patented__ a modification to the [mini-bsdiff](https://github.com/thoughtpolice/minibsdiff) algorithm in order to minimize FLASH memory usage in automotive software updates for devices which ostensibly did not have sufficient FLASH to implement the algorithm. I was in contact with [Colin Percival](https://www.daemonology.net/bsdiff/), the original inventor of the _bsdiff_ algorithm.
-
+* __Patented__ a modification to the [mini-bsdiff](https://github.com/thoughtpolice/minibsdiff) [delta compression](https://en.wikipedia.org/wiki/Delta_encoding) algorithm in order to minimize FLASH memory usage in automotive software updates for devices which ostensibly did not have sufficient FLASH to implement the algorithm. I was in contact with [Colin Percival](https://www.daemonology.net/bsdiff/), the original inventor of the _bsdiff_ algorithm.
 * Architect of embedded software update driver using [mini-bsdiff](https://github.com/thoughtpolice/minibsdiff) and [xz](https://en.wikipedia.org/wiki/XZ_Utils) compression.
 
 ## 4. Earlier Roles (Selected)
