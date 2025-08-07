@@ -10,24 +10,22 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__CV__: [Full HTML](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.html),&nbsp;&nbsp;[Full PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV.pdf),&nbsp;&nbsp;[Lite PDF](https://www.avrahambernstein.com/cv/AvrahamAbeBernstein-CV-Lite.pdf)
 <br/>__WWW:__ [https://www.avrahambernstein.com](https://www.avrahambernstein.com)
 <br/>__Linkedin:__ [https://www.linkedin.com/in/avrahambernstein/](https://www.linkedin.com/in/avrahambernstein/)
-<br/>__Last Update:__ 2025-08-06
+<br/>__Last Update:__ 2025-08-07
 </address>
 
 ## 1. Summary
 
 Senior software architect and polymath with over 40 years of innovation in algorithm design, compiler construction, and obfuscation tools across industries including cybersecurity, automotive, accessibility, and bioinformatics. Adept at designing domain-specific languages, anti-reverse engineering, and building MVPs and prototypes for CTO teams. Holds multiple patents and thrives on technically challenging projects.
 
-__My CV is unusual.__ And not primarily because it is 7 pages long instead of 3! It represents my 40+ years experience as a polymath in a wide range of domains at an expert level, and includes many inventions, many of which are recent. First, in spite of my recent inventions, my long experience is a clear sign to HR that my "shelf life has expired". Second, my inventions which are my "hallmark", both recent and former, must be prominently displayed. Since they represent such a wide range of domains, they require a few lines of explanation in order to show their signficance, _especially for someone who is not a domain expert_. Therefore my CV is quite different from someone's who has been working in the same field using the same tools for 10-15 years without producing any inventions, where a 2 page CV would suffice. When am I able to present my CV directly to a colleague or a potential employer with a strong technical background, I have never encountered even a single one who was not extremely impressed by my professional accomplishments, nor who gave me any negative feedback on account of its length. And I am 69, which means it will be more likely for me to be hired as a contractor or a consultant, instead of as a regular employee.
-
 ## 2. Core Skills & Tools
 
 * __Languages:__ C, Python, Bash, HTML, Markdown, XML, YAML
 
-* __Technologies:__ [srcML](https://www.srcml.org/), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), [WASM](https://webassembly.org/), _Linux_, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), _GCC_, _Clang_
+* __Technologies:__ [srcML](https://www.srcml.org/), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), [WASM](https://webassembly.org/), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), GCC, Clang
 
-* __Domains:__ Compiler Design, [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) = anti-reverse engineering design, Cybersecurity, Embedded Systems, Accessibility, Automotive Software, Bioinformatics
+* __Domains:__ [Refactoring Source Code]( https://en.wikipedia.org/wiki/Code_refactoring ), [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) (= _anti_-reverse engineering), [Compiler]( https://en.wikipedia.org/wiki/Compiler ) Design, Cybersecurity, [Embedded Systems](https://en.wikipedia.org/wiki/Embedded_system), [Accessibility]( https://en.wikipedia.org/wiki/Accessibility ), Automotive Software, [Bioinformatics]( https://en.wikipedia.org/wiki/Bioinformatics )
 
-* __Other:__ [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), [Source Code Refactoring](https://en.wikipedia.org/wiki/Code_refactoring), Reverse Engineering, Factory Automation
+* __Other:__ [Algorithms]( https://en.wikipedia.org/wiki/Algorithm ), [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), [Reverse Engineering]( https://en.wikipedia.org/wiki/Reverse_engineering ), Factory Automation, [VLSI]( https://en.wikipedia.org/wiki/Very-large-scale_integration )
 
 ## 3. Recent Experience
 
@@ -37,11 +35,11 @@ __2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools
 
 __2022-25:__ [Aurora Labs](https://www.auroralabs.com/), Tel Aviv: Senior Software Architect in CTO office for Digital Automotive Industry
 
-* Hands-on design of [algorithms]( https://en.wikipedia.org/wiki/Algorithm ), prototypes, and [Minimum Viable Products (MVPs)]( https://en.wikipedia.org/wiki/Minimum_viable_product ). (1) Applied for a __patent__ for boosting compression by up to 25% during embedded FLASH updates. (2) Reduced CPU (__6x__) and RAM (__3x__) usage in the company's original core source code refactoring product for embedded automotive C code by rewriting their original manually coded compiler with [srcML]( https://www.srcml.org/ ) and [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ). Substantially improved the product's marketability.
+* Hands-on design of [algorithms]( https://en.wikipedia.org/wiki/Algorithm ), prototypes, and [Minimum Viable Products (MVPs)]( https://en.wikipedia.org/wiki/Minimum_viable_product ). (1) Applied for a __patent__ for boosting compression by up to 25% during embedded FLASH updates, where the RAM available for the update chunks is relatively small, e.g. 32-128 KB. (2) Reduced CPU (__6x__) and RAM (__3x__) usage in the company's original flagship source code refactoring product for embedded automotive C code by rewriting their original hand coded compiler via the use of new technology from [srcML]( https://www.srcml.org/ ) and [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ). Substantially improved the product's marketability. I collaborated with [Carmit Sachar](https://www.linkedin.com/in/carmit-sahar/), the company's Chief Scientist who was the author of the original version.
 
-__2021:__ [Morphisec](https://www.morphisec.com/), Beer Sheva: Anti-Reverse Engineering Modifications to _Linux_ _x64_ Libc Kernel
+__2021:__ [Morphisec](https://www.morphisec.com/), Beer Sheva: Anti-Reverse Engineering Modifications to _Linux_ _x64_ _Libc_ Kernel
 
-* The primary technical challenge was not to change the addresses of any of the _libc_ functions without having any access to the original source code. Implementation was via the _Python_ version of the [ZyDis]( https://github.com/zyantific/zydis ) _x64_ disassembler.
+* The primary technical challenge was not to change the addresses of any of the [libc](https://en.wikipedia.org/wiki/C_standard_library) functions without having any access to the original source code. Implementation was via the _Python_ version of the [ZyDis]( https://github.com/zyantific/zydis ) _x64_ [disassembler]( https://en.wikipedia.org/wiki/Disassembler ).
 
 __2021:__ [Qedit](https://qed-it.com/), Tel Aviv: WASM Cybersecurity Consultant for Financial Industry
 
