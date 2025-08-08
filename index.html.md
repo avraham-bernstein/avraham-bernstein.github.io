@@ -9,7 +9,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 <br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evenings (Jm. time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
-<br/>__Last Update:__ 2025-07-31
+<br/>__Last Update:__ 2025-08-08
 </address>
 
 ![Secure photo of the author](AvrahamAbeBernstein-20250202-Watermarked.20pc.png "Secure photo of the author from 2025")
@@ -217,13 +217,15 @@ The corporate opposition was led by huge electricity consumers who smelted metal
 
 2. My invention of a generic [dyslexic]( https://en.wikipedia.org/wiki/Dyslexia) friendly font, by mimicking the concept that computer vision algorithms use to correctly identify a [QR code]( https://en.wikipedia.org/wiki/QR_code), regardless of its physical orientation.
 
-3. How I taught kinesiological multiplication to my grandson using floor tiles and masking tape.
+3. How I taught kinesiological multiplication to my young grandson by using floor tiles and masking tape.
 
-4. How I taught a second grader advanced mathematics in 30 min., i.e. exponents and binary arithmetic.
+4. How I taught a first course in fractions, also kinesiologically, to my ADHD young granddaughter, sitting with her at a bakery for an unsweetened breakfast for a few hours, by using a roll of coins.
 
-5. Teaching [rational trigonometry]( https://en.wikipedia.org/wiki/Divine_Proportions:_Rational_Trigonometry_to_Universal_Geometry) based upon the system that the ancient [Akkadians]( https://en.wikipedia.org/wiki/Akkadian_Empire) invented about 4000 years ago.
+5. How I taught a second grader, who randomly sat beside me at a family function, advanced mathematics in 30 min., i.e. exponents and binary arithmetic.
 
-6. The history of the discovery of the number "zero" in the ancient world.
+6. Teaching [rational trigonometry]( https://en.wikipedia.org/wiki/Divine_Proportions:_Rational_Trigonometry_to_Universal_Geometry) based upon the system that the ancient [Akkadians]( https://en.wikipedia.org/wiki/Akkadian_Empire) invented about 4000 years ago.
+
+7. The history of the discovery of the number "zero" in the ancient world.
 
 ### 5. Music Composition Software
 
@@ -262,7 +264,7 @@ Another, but indirect meditation technique, is via your phone's pulse app, typic
 
 	* eat raw fruits and raw (or lightly steamed) vegetables, especially those with [anti-carcinogenic properties]( https://www.healwithfood.org/cancer/foods.php ); also see [Angiogenesis inhibitor]( https://en.wikipedia.org/wiki/Angiogenesis_inhibitor ) 
 	
-	* eliminate consumption of sugar and artificial sweeteners; most people find cinnamon to be a good sweetener substitute while at the same time it reduces your glycemic index
+	* eliminate consumption of sugar and artificial sweeteners; most people find cinnamon to be a good sweetener substitute while at the same time it reduces your glycemic index; stevia is also good
 	 
 	* limit alcohol and caffeine consumption
 	
