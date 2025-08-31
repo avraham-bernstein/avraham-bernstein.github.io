@@ -1,1 +1,247 @@
-hello world
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bernstein Discussion Of S/W Obfuscation (= Anti-Reverse Engineering) To Protect Unexploded Ordinance</title>
+  <style>
+    html {
+      font-size: 11pt;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 12mm;
+      padding-right: 12mm;
+      padding-top: 12mm;
+      padding-bottom: 12mm;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>.hide {display: none;}</style>
+  <style>.hilite {background-color:#FFFF00;}</style>
+  <style type="text/css">code {white-space: pre;}</style>
+  <style type="text/css">q {quotes: "“" "”" "‘" "’";}</style>
+  <p><link rel="icon" type="image/png"
+  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QAAAAAAAD5Q7t/        AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gUNDykqSsuRUgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAFESURBVEjH7ZW9SgNBFIW/tXDNjxA7iy1tgmJpa2FhaxEQBCuFRfAJfALfQGwEa7ETbaxESRHB3t7GoEYNgn8ci9wNS5zsToqASO4w7My5Zzgz98ywASCGGGMMOf6rwDjQBB6AMGO1evoLcANsAUF/mlhD3bbuyCc9q+12eY6FFynipYdAMi8jdgy77ydQNUIdcWXjWU8BECXDnjvz3x7E9j0A9nqwvCgD2zY+d3kwgXhEtBGTiBDRRDwhCp4evCH2ERXXCVaBKeAYeAXegUOgYjmfKABLwIrrBHXbxWIKm0F8Wy7PgxAxhzgxPE6bPJ9z7WScPJNBTBt+my6Rj5HxgM84SkpUQrQQX4jIsaPIci1EcYASXScl2jTgNONRnRlnw/MlfyCWE4GGgbUMgZpxGhkCn4g7xBFiocMJRj+ckcDfF/gBCTJDUqZhh4kAAAAASUVORK5CYII=" 
+  /></p>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Bernstein Discussion Of S/W <a
+href="https://en.wikipedia.org/wiki/Obfuscation_(software)">Obfuscation</a> (= Anti-Reverse
+Engineering) To Protect Unexploded Ordinance</h1>
+</header>
+<address>
+<br/><strong>Author:</strong> Avraham DOT Bernstein PLUS obfuscation AT gmail DOT com
+<br/><strong>WWW:</strong> https://www.avrahambernstein.com <br/><strong>Last Update:</strong>
+2025-08-21
+</address>
+<h2>O/S Assumption</h2>
+<p>For purposes of this article we assume that the S/W is built using an embedded Linux system
+that supports <a
+href="https://www3.risc.jku.at/education/courses/ws2003/intropar/origin-new/MproCplrDbx_TG/sgi_html/ch03.html">Dynamic
+Share Object (DSO)</a> modules. The alternative would be to use a static build of the O/S such
+as <a href="https://musl.libc.org/">Musl</a> which is outside the scope of this article (but we
+can handle static builds too).</p>
+<h2>Obfuscation Limitations</h2>
+<p>Obfuscation protection cannot "overly increase" the size of the application's RAM and FLASH
+footprint, nor can it "overly increase" the run-time speed of the application. For a rule of
+thumb, the footprint cannot be over 20% larger, nor can the speed reduction be over 20%. The
+software must have the ability to incorporate <a
+href="https://stackoverflow.com/questions/232785/use-of-pragma-in-c">pragmas</a> that will
+control, or possibly completely eliminate, obfuscations at selected points in the S/W.</p>
+<h2>Build System</h2>
+<p>We assume that the S/W is built using the "C" programming language that conforms to <a
+href="https://en.wikipedia.org/wiki/MISRA_C">MISRA C</a> restrictions.</p>
+<p>We will supply rules, described in detail below, for automatically <a
+href="https://en.wikipedia.org/wiki/Code_refactoring">refactoring</a> the "C" source code by
+utililizing a <em>licensed commercial version</em> of <a href="https://www.srcml.org/">SrcML</a>
+and Python <a href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a>,
+where:</p>
+<ol>
+<li><p><em>SrcML</em> converts the "C" source code to an XML-<a
+href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</a> format.</p></li>
+<li><p>Python and <em>Beautiful Soup</em> are used to refactor the XML-AST source code.</p></li>
+<li><p><em>SrcML</em> is used again to convert the refactored XML-AST back to "C" source
+code.</p></li>
+</ol>
+<h2>Primary Refactoring Techniques</h2>
+<ol>
+<li><p>We will refactor each <em>DSO</em> so that they will not formally export any user
+functions or data when the <em>DSO's</em> exports are loaded into the calling function's address
+space via the <code>dlopen</code> function! Normally the sole purpose of designing a library is
+to access these exports! But knowledge of these exports are critical for the adversarial hacker
+who is attempting to reverse engineer the library. Therefore we have developed a hidden channel
+mechanism to access a "shrouded" export table when the caller invokes the <code>dlopen</code>
+function by using an <code>attribute(constructor)</code> function defined in the
+<code>.init</code> section of the DSO.</p></li>
+<li><p>We will refactor the <em>DSO</em> so that all calls to <code>libc</code> functions are
+"shrouded". Run-time tracing of <code>libc</code> functions is an important reverse engineering
+technique that we must block.</p></li>
+<li><p>The shrouding mechanism, aka "key wrapping", will double the size of the addresses we
+wish to protect. The mechanism will be light weight (<code>inline</code>), and implemented via
+registers - in order that there is no single function which the adversary can attack.</p></li>
+<li><p>Shrouding can also be used to protect constants and strings.</p></li>
+<li><p>Parameters to protected functions will also be shrouded. This will make it difficult for
+our adversary to do run-time debugging of the call stack because every function invocation will
+be different even when the same parameters are used</p></li>
+<li><p>There will be a separate local variable and global variable shrouding mechanism - each
+relying upon its own separate light weight (<code>inline</code>) library specific
+<em>PRNG</em>.</p></li>
+<li><p>Loops that are <em>order independent</em> can be randomized.</p></li>
+<li><p>We will supply a <em>pragma</em> mechanism in order to allow the user to fine tune the
+usage of the above techniques.</p></li>
+</ol>
+</body>
+</html>
