@@ -10,13 +10,13 @@ MD=$ROOT.md
 HTML=$ROOT.html
 PDF=$ROOT.pdf
 
-LITE_MD=cv-lite.md
-LITE_YML=cv-lite.yml
+WIP_MD=cv-lite.md
+WIP_YML=cv-lite.yml
 
-expander.py -f $MD > $LITE_MD
+expander.py -f $MD > $WIP_MD
 
-pandoc --verbose -f markdown_phpextra+backtick_code_blocks+header_attributes -t html5  -s --columns=96 \
-	-o $HTML --metadata-file=$LITE_YML $LITE_MD
+pandoc --verbose -f markdown_phpextra+backtick_code_blocks+header_attributes -t html5  -s --columns=144 \
+	-o $HTML --metadata-file=$WIP_YML $WIP_MD
 	 
-pandoc -f markdown_phpextra+backtick_code_blocks --pdf-engine=wkhtmltopdf -s --columns=128 \
-	-o $PDF --metadata-file=$LITE_YML $LITE_MD
+pandoc -f markdown_phpextra+backtick_code_blocks --pdf-engine=wkhtmltopdf -s --columns=144 \
+	-o $PDF --metadata-file=$WIP_YML $WIP_MD
