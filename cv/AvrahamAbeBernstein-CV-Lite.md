@@ -1,5 +1,5 @@
 $py(
-now = '2025-09-04'
+now = '2025-09-07'
 yy = 2025
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
@@ -23,7 +23,7 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 
 ## 1. Summary
 
-Senior software architect with over 40+ years of innovation in algorithm design, compiler construction, source code refactoring, and obfuscation tools. Has worked at an expert level in many industries including cybersecurity anti-reverse engineering, automotive, internet TV, accessibility, and bioinformatics. [Expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who holds multiple patents and inventions, and thrives on technically challenging projects. Adept at design of domain-specific languages, and building MVPs and prototypes for CTO teams. Searching for position as a contractor or consultant. Prefers to work with small teams. Excellent mentor.
+Senior software architect with over 40+ years of innovation in algorithm design, compiler construction, source code refactoring, and obfuscation tools. Has worked at an expert level in many industries including cybersecurity anti-reverse engineering, automotive, internet TV, accessibility, and bioinformatics. [Expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who holds multiple patents and inventions, and thrives on technically challenging projects. Adept at design of domain-specific languages, and building MVPs and prototypes for CTO teams. Searching for position preferably as a contractor or consultant. Prefers to work and mentor small teams.
 
 ## 2. Inventions (Reverse Chronological Order)
 
@@ -61,7 +61,7 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 17. Invented an application for [quadriplegics](https://en.wikipedia.org/wiki/Tetraplegia) that enabled them to access a PC with a CRT screen via a telescopically extended [light pen](https://en.wikipedia.org/wiki/Light_pen) (800 mm vs 5 mm distance) and via a [sip-and-puff](https://en.wikipedia.org/wiki/Sip-and-puff) accessibility switch. The subject wears a head band to which the pen was attached. Designed a virtual screen interface which only popped up an individual virtual key when the pen hovered over it, leaving 95% of the screen still visible. The first subject was a quadriplegic polio victim who was able to type 30 characters per minute, and became a financially independent book editor.
 
-18. Invented many small CS algorithms: cryptographic improvements to [Adler-32](https://en.wikipedia.org/wiki/Adler-32) checksum; cryptographic quality light weight key wrapper implemented in registers; _invertible_ cross [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight) transformation; cryptographic quality _non-invertible_ [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) _uniform_ Hamming Weight-like transformation; binary expandable hash table (size `2^N`) that can grow without rehashing;
+18. Invented many small CS algorithms over many years: hardening, by collision reduction, of [Adler-32]( https://en.wikipedia.org/wiki/Adler-32 ) and new Adler-64 checksum; cryptographic quality light weight key wrapper implemented in registers; _invertible_ cross [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight) transformation; cryptographic quality _non-invertible_ [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) _uniform_ Hamming Weight-like transformation; binary expandable hash table (size `2^N`) that can grow without rehashing;
 
 ## 3. Core Skills & Tools
 
