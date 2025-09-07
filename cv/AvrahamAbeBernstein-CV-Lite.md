@@ -33,7 +33,7 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 3. Patented FLASH techniques for implementing S/W updates on small FLASH devices, and CPUs with small RAM.
 
-4. Invented a technique for dynamically loading a large static FLASH database into an embedded system that could be larger than RAM that doesn't violate Misra C restrictions with the help of preprocessing such as via Jinja2 or Pyexpander.
+4. Invented a technique for dynamically loading a large static FLASH database into an embedded system that could be larger than RAM that doesn't violate Misra C restrictions with the help of preprocessing such as Jinja2 or Pyexpander.
 
 5. Invented a simple technique to obfuscate photographs using [GIMP](https://en.wikipedia.org/wiki/GIMP) filters while remaining easily recognizable by a young child, but not recognizable by photographic database software.
 
