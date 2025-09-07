@@ -23,7 +23,7 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 
 ## 1. Summary
 
-Senior software architect with over 40+ years of innovation in algorithm design, compiler construction, source code refactoring, and obfuscation tools. Has worked at an expert level in many industries including cybersecurity anti-reverse engineering, automotive, internet TV, accessibility, and bioinformatics. [Expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who holds multiple patents and inventions, and thrives on technically challenging projects. Adept at design of domain-specific languages, and building MVPs and prototypes for CTO teams. Searching for position preferably as a contractor or consultant. Prefers to work and mentor small teams.
+Senior software architect with over 40+ years of innovation in algorithm design, compiler construction, source code refactoring, and obfuscation tools. Has worked at an expert level in many industries including cybersecurity anti-reverse engineering, automotive, internet TV, accessibility, and bioinformatics. [Expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who holds multiple patents and inventions, and thrives on technically challenging projects. Adept at design of domain-specific languages, and building MVPs and prototypes for CTO teams. Searching for position as a contractor or consultant. Prefers to work with and to mentor small teams.
 
 ## 2. Inventions (Reverse Chronological Order)
 
