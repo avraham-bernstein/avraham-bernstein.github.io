@@ -1,5 +1,5 @@
 $py(
-now = '2025-09-07'
+now = '2025-09-11'
 yy = 2025
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
@@ -65,9 +65,9 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 ## 3. Core Skills & Tools
 
-* __Languages:__ C, Python, Bash including [Posix CLI Commands](https://en.wikipedia.org/wiki/List_of_POSIX_commands), HTML, XML, Markdown, YAML, Excel
+* __Languages:__ C, Python, [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), Bash including [Posix CLI Commands](https://en.wikipedia.org/wiki/List_of_POSIX_commands), HTML, XML, Markdown, YAML, Excel, Javascript, [WASM](https://webassembly.org/)
 
-* __Technologies:__ [srcML](https://www.srcml.org/) (commercial license), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), [WASM](https://webassembly.org/), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C](https://en.wikipedia.org/wiki/MISRA_C), GCC, Clang
+* __Technologies:__ [srcML](https://www.srcml.org/) (commercial license), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C](https://en.wikipedia.org/wiki/MISRA_C), GCC, Clang, [pandoc](https://www.pandoc.org/)
 
 * __Domains:__ Compiler Design, [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), [Code Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) and [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) = anti-reverse engineering design, Cybersecurity, Reverse Engineering, Embedded Systems, Accessibility, Automotive Software, Factory Automation, Bioinformatics, Network Protocols
 
