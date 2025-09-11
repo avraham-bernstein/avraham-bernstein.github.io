@@ -10,13 +10,13 @@ MD=$ROOT.md
 HTML=$ROOT.html
 PDF=$ROOT.pdf
 
-WIP_MD=cv-lite.md
-WIP_YML=cv-lite.yml
+YML=cv-lite.yml
+TMP_MD=cv-lite.md
 
-expander.py -f $MD > $WIP_MD
+expander.py -f $MD > $TMP_MD
 
 pandoc --verbose -f markdown_phpextra+backtick_code_blocks+header_attributes -t html5  -s --columns=144 \
-	-o $HTML --metadata-file=$WIP_YML $WIP_MD
+	-o $HTML --metadata-file=$YML $TMP_MD
 	 
 pandoc -f markdown_phpextra+backtick_code_blocks --pdf-engine=wkhtmltopdf -s --columns=144 \
-	-o $PDF --metadata-file=$WIP_YML $WIP_MD
+	-o $PDF --metadata-file=$YML $TMP_MD
