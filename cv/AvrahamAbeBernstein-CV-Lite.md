@@ -1,6 +1,5 @@
 $py(
-now = '2025-09-11'
-yy = 2025
+now = '2025-09-15'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -33,7 +32,7 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 3. Patented FLASH techniques for implementing S/W updates on small FLASH devices, and CPUs with small RAM.
 
-4. Invented a technique for dynamically loading a large static FLASH database into an embedded system that could be larger than RAM that doesn't violate Misra C restrictions with the help of preprocessing such as Jinja2 or Pyexpander.
+4. Invented a technique for _dynamically_ loading a large static FLASH database into an embedded system that could be larger than RAM that does not violate any Misra C restrictions, with the help of preprocessing tools such as Jinja2 or Pyexpander.
 
 5. Invented a simple technique to obfuscate photographs using [GIMP](https://en.wikipedia.org/wiki/GIMP) filters while remaining easily recognizable by a young child, but not recognizable by photographic database software.
 
@@ -61,11 +60,11 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 17. Invented an application for [quadriplegics](https://en.wikipedia.org/wiki/Tetraplegia) that enabled them to access a PC with a CRT screen via a telescopically extended [light pen](https://en.wikipedia.org/wiki/Light_pen) (800 mm vs 5 mm distance) and via a [sip-and-puff](https://en.wikipedia.org/wiki/Sip-and-puff) accessibility switch. The subject wears a head band to which the pen was attached. Designed a virtual screen interface which only popped up an individual virtual key when the pen hovered over it, leaving 95% of the screen still visible. The first subject was a quadriplegic polio victim who was able to type 30 characters per minute, and became a financially independent book editor.
 
-18. Invented many small CS algorithms over many years: hardened (minimized collisions) [Adler-32]( https://en.wikipedia.org/wiki/Adler-32 ) and new Adler-64 checksum; cryptographic quality key wrapper implemented in registers; hardened _invertible cross_ [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight) transformation; cryptographic quality [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) _uniformly distributed_ Hamming Weight-like primitive; binary expandable hash table (size `2^N`) that can grow without rehashing
+18. Invented many small CS algorithms over the years: hardened (minimized collisions) [Adler-32]( https://en.wikipedia.org/wiki/Adler-32 ) and new Adler-64 checksum; cryptographic quality key wrapper implemented in registers; _invertible_ cross [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight) transformation; cryptographic quality [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) _uniformly distributed_ Hamming Weight-like primitive; binary expandable hash table (size `2^N`) that can grow without rehashing
 
 ## 3. Core Skills & Tools
 
-* __Languages:__ C, Python, [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), Bash including [Posix CLI Commands](https://en.wikipedia.org/wiki/List_of_POSIX_commands), HTML, XML, Markdown, YAML, Excel, Javascript, [WASM](https://webassembly.org/)
+* __Languages:__ C, Python, [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), Bash including [Posix CLI Commands]( https://en.wikipedia.org/wiki/List_of_POSIX_commands ), HTML, XML, Markdown, YAML, Excel, [WASM](https://webassembly.org/)
 
 * __Technologies:__ [srcML](https://www.srcml.org/) (commercial license), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C](https://en.wikipedia.org/wiki/MISRA_C), GCC, Clang, [pandoc](https://www.pandoc.org/)
 

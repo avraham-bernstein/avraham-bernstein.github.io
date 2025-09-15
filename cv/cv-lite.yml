@@ -14,7 +14,7 @@ header-includes: |
 
 # wkhtmltopdf  options
 font: Arial
-fontsize: 10pt
+fontsize: 11pt
 papersize: A4
 margin-top: 6mm
 margin-bottom: 6mm
