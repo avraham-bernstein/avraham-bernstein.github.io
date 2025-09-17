@@ -58,7 +58,7 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 16. Invented a DSL which described an automated [sintered](https://en.wikipedia.org/wiki/Sintering) metal blade production factory in complete detail. At that time commercial quality object oriented (OO) languages did not yet exist. But the factory contained about 50 object classes, e.g. workstations, stands, pallets, automatic guided vehicles, stacks, conveyors, cranes, etc. Interrupt routines were required for tool sharpening maintenance, oiling of parts that stayed too long in storage, etc. The DSL included a scheduling language. We designed an object oriented language (in Pascal) which completely described the factory. The factory was operational within a year. The factory engineer could make gross changes to the configuration file, while clerks had individual GUI screens to make spot changes. Originally I had zero knowledge of factory design, but after about 2 month of mentoring from an industrial engineer, we began to design the software.
 
-17. Invented an application for [quadriplegics](https://en.wikipedia.org/wiki/Tetraplegia) that enabled them to access a PC with a CRT screen via a telescopically extended [light pen](https://en.wikipedia.org/wiki/Light_pen) (800 mm vs 5 mm distance) and via a [sip-and-puff](https://en.wikipedia.org/wiki/Sip-and-puff) accessibility switch. The subject wears a head band to which the pen was attached. Designed a virtual screen interface which only popped up an individual virtual key when the pen hovered over it, leaving 95% of the screen still visible. The first users was a quadriplegic polio victim who was able to type 30 characters per minute, and became a financially independent book editor.
+17. Invented an application for [quadriplegics](https://en.wikipedia.org/wiki/Tetraplegia) that enabled them to access a PC with a CRT screen via a telescopically extended [light pen](https://en.wikipedia.org/wiki/Light_pen) (800 mm vs 5 mm distance) and via a [sip-and-puff](https://en.wikipedia.org/wiki/Sip-and-puff) accessibility switch. The subject wears a head band to which the pen was attached. Designed a virtual screen interface which only popped up an individual virtual key when the pen hovered over it, leaving 95% of the screen still visible. The first user was a quadriplegic polio victim who was able to type 30 characters per minute, and became a financially independent book editor.
 
 18. Invented many small CS algorithms over the years: hardened (minimized collisions) [Adler-32]( https://en.wikipedia.org/wiki/Adler-32 ) and new Adler-64 checksum; cryptographic quality key wrapper implemented in registers; _invertible_ cross [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight) transformation; cryptographic quality [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) _uniformly distributed_ Hamming Weight-like primitive; binary expandable hash table (size `2^N`) that can grow without rehashing
 
@@ -66,13 +66,13 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 * __Languages:__ C, Python, [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), Bash including [Posix CLI Commands]( https://en.wikipedia.org/wiki/List_of_POSIX_commands ), HTML, XML, Markdown, YAML, Excel, [WASM](https://webassembly.org/)
 
-* __Technologies:__ [srcML](https://www.srcml.org/) (commercial license), [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C](https://en.wikipedia.org/wiki/MISRA_C), GCC, Clang, [pandoc](https://www.pandoc.org/)
+* __Technologies:__ [srcML](https://www.srcml.org/) (acquired commercial license), [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C]( https://en.wikipedia.org/wiki/MISRA_C ), GCC, Clang, [pandoc]( https://www.pandoc.org/ )
 
 * __Domains:__ Compiler Design, [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), [Code Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) and [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) = anti-reverse engineering design, Cybersecurity, Reverse Engineering, Embedded Systems, Accessibility, Automotive Software, Factory Automation, Bioinformatics, Network Protocols
 
 ## 4. Work Experience
 
-__2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools Development; purchased a commercial [srcML](https://www.srcml.org/) license
+__2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools Development
 
 __2022-25:__ [Aurora Labs](https://www.auroralabs.com/), Tel Aviv: Senior Software Architect in CTO office for Digital Automotive Industry
 
