@@ -1,5 +1,5 @@
 $py(
-now = '2025-09-15'
+now = '2025-09-17'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -32,19 +32,19 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 3. Patented FLASH techniques for implementing S/W updates on small FLASH devices, and CPUs with small RAM.
 
-4. Invented a technique for _dynamically_ loading a large static FLASH database into an embedded system that could be larger than RAM that does not violate any Misra C restrictions, with the help of preprocessing tools such as Jinja2 or Pyexpander.
+4. Invented a technique for _dynamically_ loading a large static FLASH database into an embedded system that could be larger than RAM that does not violate any Misra C restrictions, with the help of preprocessing tools such as _Jinja2_ or _Pyexpander_.
 
 5. Invented a simple technique to obfuscate photographs using [GIMP](https://en.wikipedia.org/wiki/GIMP) filters while remaining easily recognizable by a young child, but not recognizable by photographic database software.
 
 6. Invented highly accurate [fuzzy logic](https://en.wikipedia.org/wiki/Fuzzy_logic) classifier used to discover [rooted]( https://en.wikipedia.org/wiki/Rooting_(Android) ) _Android_ devices.
 
-7. Showed how trivial [Virtual Machine (VM)](https://en.wikipedia.org/wiki/Virtual_machine) attacks could disrupt Digital Rights Management (DRM) protection, and how the [QEMU]( https://en.wikipedia.org/wiki/QEMU ) VM could disrupt the [cryptographic nonce]( https://en.wikipedia.org/wiki/Cryptographic_nonce ) mechanism which allowed subscriber IDs to be shared by a confederacy of pirates.
+7. Showed how trivial [Virtual Machine (VM)](https://en.wikipedia.org/wiki/Virtual_machine) attacks could disrupt _Digital Rights Management (DRM)_ protection, and how the [QEMU]( https://en.wikipedia.org/wiki/QEMU ) VM could disrupt the [cryptographic nonce]( https://en.wikipedia.org/wiki/Cryptographic_nonce ) mechanism which allowed subscriber IDs to be shared by a confederacy of pirates.
 
 8. Invented a generic font modification technique in order to make them understandable by dyslexics.
 
 9. Invented a technique that enabled the blind to "see" and navigate digital maps and to explore mathematical functions on standard PCs and smartphones with a sound card and the addition of a consumer grade graphics tablet via the use of custom S/W that runs on a standard web browser with [SVG](https://www.w3schools.com/graphics/svg_intro.asp) support.
 
-10. Invented bioinformatic [PCR](https://www.youtube.com/watch?v=db0HzFTJtCs) algorithms that (1) can accurately detect the "Ct" of an assay with high levels of "inhibition" via the use of an AI threshold algorithm instead of the classic functional analysis technique, and (2) can trivially clean an assay of systematic "noise" especially where the assay contains significant inhibition. Note that the project took only 2 months, even though I had zero formal background in microbiology and genetics. I received intensive mentoring from domain experts.
+10. Invented _bioinformatic_ [PCR](https://www.youtube.com/watch?v=db0HzFTJtCs) algorithms that (1) can accurately detect the "Ct" of an _assay_ with high levels of _inhibition_ via the use of an AI threshold algorithm instead of the classic functional analysis technique, and (2) can trivially clean an _assay_ of _systematic noise_ especially where the _assay_ contains significant _inhibition_. Note that the project took only 2 months, even though I had zero formal background in microbiology and genetics. I received intensive mentoring from domain experts. I saved the client's project from bankruptcy.
 
 11. Invented a network protocol for hybrid cable modems with a dialup upstream and RF downstream, where the "edge router" controlled access to both the dialup and RF networks, which enabled the edge router's ARP table to be dynamically modified when a modem logged on and off.
 
@@ -56,9 +56,9 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 15. Invented a DSL for a [VLSI](https://en.wikipedia.org/wiki/Very-large-scale_integration) toolchain that clock-accurately emulated the CPU in "C" including its instruction pipeline. The "C" emulator ran 100 times faster than the electrical (e.g. VERILOG) simulator. Therefore the DSL enabled instruction set sanity tests to be run immediately every time the architecture changed. The DSL solved one of the most painful problems in designing the assembler manually, namely detection of when the pipeline was broken which required programmer insertion of NOP instructions. For many months the VLSI architects changed the pipeline restrictions on a regular basis. Therefore DSL included a restriction language. It allowed the assembler to be built within 2 hours multiple times a week.  The DSL was expanded to include a disassembler. Eventually the toolchain formed the backbone of a GUI debugger. The debugger incorporated programmable simulation of I/O ports. The debugger enabled the building of accurate applications many months before the physical CPU was produced (i.e. "taped out"). 
 
-16. Invented a DSL which described an automated [sintered](https://en.wikipedia.org/wiki/Sintering) metal blade production factory in complete detail. At that time commercial quality object oriented (OO) languages did not yet exist. But the factory contained about 100 object classes, e.g. workstations, stands, pallets, automatic guided vehicles, stacks, conveyors, cranes, etc. Interrupt routines were required for tool sharpening maintenance, oiling of parts that stayed too long in storage, etc. The DSL included a scheduling language. We designed an object oriented language (in Pascal) which completely described the factory. The factory was operational within a year. The factory engineer could make gross changes to the configuration file, while clerks had individual GUI screens to make spot changes. Originally I had zero knowledge of factory design, but after about 2 month of mentoring from an industrial engineer, we began to design the software.
+16. Invented a DSL which described an automated [sintered](https://en.wikipedia.org/wiki/Sintering) metal blade production factory in complete detail. At that time commercial quality object oriented (OO) languages did not yet exist. But the factory contained about 50 object classes, e.g. workstations, stands, pallets, automatic guided vehicles, stacks, conveyors, cranes, etc. Interrupt routines were required for tool sharpening maintenance, oiling of parts that stayed too long in storage, etc. The DSL included a scheduling language. We designed an object oriented language (in Pascal) which completely described the factory. The factory was operational within a year. The factory engineer could make gross changes to the configuration file, while clerks had individual GUI screens to make spot changes. Originally I had zero knowledge of factory design, but after about 2 month of mentoring from an industrial engineer, we began to design the software.
 
-17. Invented an application for [quadriplegics](https://en.wikipedia.org/wiki/Tetraplegia) that enabled them to access a PC with a CRT screen via a telescopically extended [light pen](https://en.wikipedia.org/wiki/Light_pen) (800 mm vs 5 mm distance) and via a [sip-and-puff](https://en.wikipedia.org/wiki/Sip-and-puff) accessibility switch. The subject wears a head band to which the pen was attached. Designed a virtual screen interface which only popped up an individual virtual key when the pen hovered over it, leaving 95% of the screen still visible. The first subject was a quadriplegic polio victim who was able to type 30 characters per minute, and became a financially independent book editor.
+17. Invented an application for [quadriplegics](https://en.wikipedia.org/wiki/Tetraplegia) that enabled them to access a PC with a CRT screen via a telescopically extended [light pen](https://en.wikipedia.org/wiki/Light_pen) (800 mm vs 5 mm distance) and via a [sip-and-puff](https://en.wikipedia.org/wiki/Sip-and-puff) accessibility switch. The subject wears a head band to which the pen was attached. Designed a virtual screen interface which only popped up an individual virtual key when the pen hovered over it, leaving 95% of the screen still visible. The first users was a quadriplegic polio victim who was able to type 30 characters per minute, and became a financially independent book editor.
 
 18. Invented many small CS algorithms over the years: hardened (minimized collisions) [Adler-32]( https://en.wikipedia.org/wiki/Adler-32 ) and new Adler-64 checksum; cryptographic quality key wrapper implemented in registers; _invertible_ cross [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight) transformation; cryptographic quality [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) _uniformly distributed_ Hamming Weight-like primitive; binary expandable hash table (size `2^N`) that can grow without rehashing
 
@@ -72,7 +72,7 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 ## 4. Work Experience
 
-__2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools Development
+__2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools Development; purchased a commercial [srcML](https://www.srcml.org/) license
 
 __2022-25:__ [Aurora Labs](https://www.auroralabs.com/), Tel Aviv: Senior Software Architect in CTO office for Digital Automotive Industry
 
