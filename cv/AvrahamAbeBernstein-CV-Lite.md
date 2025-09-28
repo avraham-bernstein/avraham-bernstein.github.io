@@ -106,7 +106,7 @@ __1990-97:__ _Pitkha_, Jerusalem (defunct): CEO: Domain Specific Language (DSL) 
 
 __1990-91:__ [Iscar]( https://www.iscar.com/index.aspx/countryid/1/lang/en )-Matkash, Tefen: Software Architect: Factory Automation
 
-__1988-89:__ _Cubital_ (subsidiary of [Scitex]( https://www.company-histories.com/Scitex-Corporation-Ltd-Company-History.html ) ), Herzliya: (1) S/W R&D: Early 3D printing (_stereo-lithography_); (2) Inventor: Quadriplegic Accessiblity For PCs
+__1988-89:__ _Cubital_ (subsidiary of [Scitex]( https://www.company-histories.com/Scitex-Corporation-Ltd-Company-History.html ) ), Herzliya: (1) S/W R&D: Early 3D printing (_stereo-lithography_); (2) Inventor: Quadriplegic Accessiblity for PCs
 
 __...1983-84:__ [Elta IAI](https://www.iai.co.il/about/groups/elta-systems), Ashdod: junior embedded programmer: [Lavi fighter plane](https://en.wikipedia.org/wiki/IAI_Lavi)
 
