@@ -1,5 +1,5 @@
 $py(
-now = '2025-09-28'
+now = '2025-09-30'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -28,7 +28,7 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 1. <span class="hilite">Showed how [srcML](https://www.srcml.org/) combined with Python could refactor "C" source code for automotive software updates, and for cybersecurity obfuscation.</span>
 
-2. <span class="hilite">Invented Linux cybersecurity techniques, especially how usable `.so` ([DSO](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_real_time/7/html/reference_guide/chap-shared_libraries)) files could be generated which formally supplied no exports, and thus were extremely difficult to reverse engineer. See [short technical description]($(obfuscation_html)).</span>
+2. <span class="hilite">Invented Linux cybersecurity techniques, especially how usable `.so` ([DSO](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_real_time/7/html/reference_guide/chap-shared_libraries)) files could be generated which formally supply no exports, shroud system calls, and randomize the stack, and thus are extremely difficult to reverse engineer. See [short technical description]($(obfuscation_html)).</span>
 
 3. Patented FLASH techniques for implementing S/W updates on small FLASH devices, and small RAM.
 
