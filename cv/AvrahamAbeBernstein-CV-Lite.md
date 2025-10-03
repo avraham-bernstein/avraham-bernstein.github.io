@@ -1,5 +1,5 @@
 $py(
-now = '2025-09-30'
+now = '2025-10-03'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -102,7 +102,7 @@ __1999-2004:__ _Vyyo_, Jerusalem (defunct): S/W Group Leader: RF wireless cable 
 
 __1998:__ _Fourfold_, Jerusalem (defunct): Software architect: modified GCC compiler for massively parallel CPU for a [Forth]( https://en.wikipedia.org/wiki/Forth_(programming_language) )-like CPU with unlimited registers
 
-__1990-97:__ _Pitkha_, Jerusalem (defunct): CEO: Domain Specific Language (DSL) Architect
+__1991-97:__ _Pitkha_, Jerusalem (defunct): CEO: Domain Specific Language (DSL) Architect
 
 __1990-91:__ [Iscar]( https://www.iscar.com/index.aspx/countryid/1/lang/en )-Matkash, Tefen: Software Architect: Factory Automation
 
