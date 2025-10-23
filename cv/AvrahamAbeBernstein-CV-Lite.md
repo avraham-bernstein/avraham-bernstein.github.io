@@ -1,5 +1,5 @@
 $py(
-now = '2025-10-03'
+now = '2025-10-23'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -22,13 +22,42 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 
 ## 1. Summary
 
-Senior software architect with over 40+ years of innovation in algorithm design, compiler construction, source code refactoring, and obfuscation tools. Has worked at an expert level in many industries including cybersecurity anti-reverse engineering, automotive, internet TV, accessibility, and bioinformatics. [Expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who holds multiple patents and inventions, and thrives on technically challenging projects. Adept at design of domain-specific languages, and building MVPs and prototypes for CTO teams. Searching for position as a contractor or consultant. Prefers to work with and to mentor small teams.
+Senior software architect with over 40+ years of __innovation__ in: 
+
+* algorithm design
+* compiler construction
+* source code refactoring
+* obfuscation tools
+* multiple patents and inventions
+
+Worked at an __expert level__ in many industries including:
+
+* cybersecurity anti-reverse engineering
+* automotive
+* internet TV
+* accessibility
+* bioinformatics
+
+[Expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who thrives on technically challenging projects. Adept at design of:
+
+* domain-specific languages
+* building MVPs and prototypes for CTO teams
+
+Prefers to work with and to mentor small teams. Searching for position as a contractor or consultant. 
+
+### Core Skills & Tools
+
+* __Languages:__ C, Python, [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), Bash & [Posix CLI Commands]( https://en.wikipedia.org/wiki/List_of_POSIX_commands ), HTML, XML, Markdown, [WASM]( https://webassembly.org/ )
+
+* __Technologies:__ [srcML](https://www.srcml.org/) (acquired commercial license), [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C]( https://en.wikipedia.org/wiki/MISRA_C ), GCC, Clang, [Zydis](https://zydis.re/), [Pandoc]( https://www.pandoc.org/ ), [Obsidian]( https://obsidian-html.github.io/index.html ), YAML & [PKL]( https://pkl-lang.org/ )
+
+* __Domains:__ Compiler Design, [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), [Code Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) and [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) (= anti-reverse engineering), Cybersecurity, Reverse Engineering, Embedded Systems, Accessibility, Automotive Software, Factory Automation, Bioinformatics, Network Protocols
 
 ## 2. Inventions (Reverse Chronological Order)
 
 1. <span class="hilite">Showed how [srcML](https://www.srcml.org/) combined with Python could refactor "C" source code for automotive software updates, and for cybersecurity obfuscation.</span>
 
-2. <span class="hilite">Invented Linux cybersecurity techniques, especially how usable `.so` ([DSO](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_real_time/7/html/reference_guide/chap-shared_libraries)) files could be generated which formally supply no exports, shroud system calls, and randomize the stack, and thus are extremely difficult to reverse engineer. See [short technical description]($(obfuscation_html)).</span>
+2. <span class="hilite">Invented Linux cybersecurity techniques, especially to minimize the attack surface of `.so` ([DSO](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_real_time/7/html/reference_guide/chap-shared_libraries)) files that supply no formal exports, efficiently shroud system calls and strings and constants and randomize the stack, and thus are extremely difficult to reverse engineer. See [short technical description]($(obfuscation_html)).</span>
 
 3. Patented FLASH techniques for implementing S/W updates on small FLASH devices, and small RAM.
 
@@ -62,15 +91,7 @@ Senior software architect with over 40+ years of innovation in algorithm design,
 
 18. Invented many small CS algorithms over the years: hardened (minimized collisions) [Adler-32]( https://en.wikipedia.org/wiki/Adler-32 ) and new Adler-64 checksum; cryptographic quality key wrapper implemented in registers; _invertible_ cross [Hamming Weight](https://en.wikipedia.org/wiki/Hamming_weight) transformation; cryptographic quality [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) _uniformly distributed_ Hamming Weight-like primitive; binary expandable hash table (size `2^N`) that can grow without rehashing
 
-## 3. Core Skills & Tools
-
-* __Languages:__ C, Python, [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), Bash & [Posix CLI Commands]( https://en.wikipedia.org/wiki/List_of_POSIX_commands ), HTML, XML, Markdown, [WASM]( https://webassembly.org/ )
-
-* __Technologies:__ [srcML](https://www.srcml.org/) (acquired commercial license), [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C]( https://en.wikipedia.org/wiki/MISRA_C ), GCC, Clang, [Zydis](https://zydis.re/), [Pandoc]( https://www.pandoc.org/ ), [Obsidian]( https://obsidian-html.github.io/index.html ), YAML & [PKL]( https://pkl-lang.org/ )
-
-* __Domains:__ Compiler Design, [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), [Code Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) and [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) = anti-reverse engineering, Cybersecurity, Reverse Engineering, Embedded Systems, Accessibility, Automotive Software, Factory Automation, Bioinformatics, Network Protocols
-
-## 4. Work Experience
+## 3. Work Experience
 
 __2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools Development
 
@@ -106,7 +127,10 @@ __1991-97:__ _Pitkha_, Jerusalem (defunct): CEO: Domain Specific Language (DSL) 
 
 __1990-91:__ [Iscar]( https://www.iscar.com/index.aspx/countryid/1/lang/en )-Matkash, Tefen: Software Architect: Factory Automation
 
-__1988-89:__ _Cubital_ (subsidiary of [Scitex]( https://www.company-histories.com/Scitex-Corporation-Ltd-Company-History.html ) ), Herzliya: (1) S/W R&D: Early 3D printing (_stereo-lithography_); (2) Inventor: Quadriplegic Accessiblity for PCs
+__1988-89:__ _Cubital_ (subsidiary of [Scitex]( https://www.company-histories.com/Scitex-Corporation-Ltd-Company-History.html ) ), Herzliya:
+
+* S/W R&D: Early 3D printing (_stereo-lithography_)
+* Inventor: Quadriplegic Accessiblity for PCs
 
 __...1983-84:__ [Elta IAI](https://www.iai.co.il/about/groups/elta-systems), Ashdod: junior embedded programmer: [Lavi fighter plane](https://en.wikipedia.org/wiki/IAI_Lavi)
 
@@ -114,16 +138,14 @@ __...1977:__ [Ontario Energy Board (OEB)](https://en.wikipedia.org/wiki/Ontario_
 
 * While attending the MBA program at the Univ. of Toronto (see below), I was an [intervenor]( https://en.wikipedia.org/wiki/Intervention_(law) ) in the _ECAP77_ hearings on [marginal cost pricing](https://en.wikipedia.org/wiki/Marginal_cost) for electricity at [Ontario Hydro](https://www.hydroone.com/). I was the first public interest intervenor in the history of the OEB to be awared costs. I published an oped about the hearings in Canada's then paper of record [The Globe and Mail](https://www.theglobeandmail.com/).
 
-## 5. Education
+## 4. Education
 
 __1979:__ _York University_, Toronto Canada: __MA Economics__, minor in Applied Mathematics
-
-* Major Project: Simulated hydroelectric dam in FORTRAN
 
 __1973-78:__ _University of Toronto_, Canada: __BA__ Undergraduate School of Arts & Sciences
 
 * attended Rotman Graduate School of Management and Graduate School of Engineering where credits were applied to my _MA Economics_ above
 
-## 6. Teaching & Mentorship
+## 5. Teaching & Mentorship
 
 Part-time instructor and mentor in various technical domains. Strong advocate of pairing with domain experts to accelerate onboarding and innovation.
