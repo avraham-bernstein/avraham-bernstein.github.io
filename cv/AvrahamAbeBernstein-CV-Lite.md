@@ -1,5 +1,5 @@
 $py(
-now = '2025-10-23'
+now = '2025-10-29'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -55,7 +55,7 @@ Prefers to work with and to mentor small teams. Searching for position as a cont
 
 ## 2. Inventions (Reverse Chronological Order)
 
-1. <span class="hilite">Showed how [srcML](https://www.srcml.org/) combined with Python could refactor "C" source code for automotive software updates, and for cybersecurity obfuscation.</span>
+1. <span class="hilite">Showed how [srcML](https://www.srcml.org/) combined with [Python Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ) could refactor "C" source code for automotive software updates, and for cybersecurity obfuscation.</span>
 
 2. <span class="hilite">Invented Linux cybersecurity techniques, especially to minimize the attack surface of `.so` ([DSO](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_real_time/7/html/reference_guide/chap-shared_libraries)) files that supply no formal exports, efficiently shroud system calls and strings and constants and randomize the stack, and thus are extremely difficult to reverse engineer. See [short technical description]($(obfuscation_html)).</span>
 
