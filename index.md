@@ -1,5 +1,5 @@
 $py(
-now = '2025-08-08'
+now = '2025-10-29'
 DOT = '&#x2022;'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
@@ -53,7 +53,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Links
 
-* __CV:__ Computer Scientist: [Full HTML]($(cv_root).html),&nbsp;&nbsp;[Full PDF]($(cv_root).pdf),&nbsp;&nbsp;[Lite PDF]($(cv_lite_root).pdf)
+* __CV:__ Computer Scientist: [Lite PDF]($(cv_lite_root).pdf),&nbsp;&nbsp;[Full HTML]($(cv_root).html),&nbsp;&nbsp;[Full PDF]($(cv_root).pdf)
 
 * __Linkedin:__ [$(linkedin)]($(linkedin))
 
