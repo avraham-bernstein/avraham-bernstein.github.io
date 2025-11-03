@@ -1,5 +1,5 @@
 $py(
-now = '2025-10-29'
+now = '2025-11-03'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -22,7 +22,7 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 
 ## 1. Summary
 
-Senior software architect with over 40+ years of __innovation__ in: 
+Senior software architect with over 40+ years of <span class="hilite">__INNOVATION__</span> in: 
 
 * algorithm design
 * compiler construction
