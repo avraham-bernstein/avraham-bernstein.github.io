@@ -1,5 +1,5 @@
 $py(
-now = '2025-11-03'
+now = '2025-11-07'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -144,7 +144,7 @@ __1979:__ _York University_, Toronto Canada: __MA Economics__, minor in Applied 
 
 __1973-78:__ _University of Toronto_, Canada: __BA__ Undergraduate School of Arts & Sciences
 
-* attended Rotman Graduate School of Management and Graduate School of Engineering where credits were applied to my _MA Economics_ above
+* I did graduate studies at the [Rotman Graduate School of Management (MBA program)](https://www.rotman.utoronto.ca/) and Graduate School of Engineering where credits were applied to my _MA Economics_ above. After the Ontario Energy Board (OEB) hearings immediately above, I switched focus to engineering. I extraordinarily passed my economic compulsory examinations before I even started the York program, so the school allowed to me to take graduate level courses anywhere I chose.
 
 ## 5. Teaching & Mentorship
 
