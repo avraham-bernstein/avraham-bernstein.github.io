@@ -93,7 +93,7 @@ Prefers to work with and to mentor small teams. Searching for position as a cont
 
 ## 3. Work Experience
 
-__2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools Development. See [brochure]( https://www.avrahambernstein.com/cv/BernsteinCybersecObfuscationRefactoringBrochure.docx ). 
+__2025:__ Independent: Founder & Principal Engineer Compiler & Obfuscation Tools Development. See [brochure]( BernsteinCybersecObfuscationRefactoringBrochure.docx ). 
 
 __2022-25:__ [Aurora Labs](https://www.auroralabs.com/), Tel Aviv: Senior Software Architect in CTO office for Digital Automotive Industry
 
