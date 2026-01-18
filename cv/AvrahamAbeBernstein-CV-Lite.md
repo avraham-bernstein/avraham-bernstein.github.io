@@ -1,5 +1,5 @@
 $py(
-now = '2025-12-28'
+now = '2025-01-18'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -43,7 +43,7 @@ Worked at an __expert level__ in many industries including:
 * domain-specific languages
 * building MVPs and prototypes for CTO teams
 
-I have solved many problems that initially had ambiguous problem specifications. I was able to refine the problem to a commercially useful and testable solution. I prefer to work with and to mentor small teams. I am searching for position as a contractor or consultant.
+<span class="hilite">I have solved many problems that initially had __AMBIGUOUS__ problem specifications.</span> I was able to refine the problem to a commercially useful and testable solution. I prefer to work with and to mentor small teams. I am searching for position as a contractor or consultant.
 
 ### Core Skills & Tools
 
