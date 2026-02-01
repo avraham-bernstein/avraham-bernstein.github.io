@@ -1,5 +1,5 @@
 $py(
-now = '2025-01-18'
+now = '2025-02-01'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -14,7 +14,7 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 <br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
-<br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evenings (Jm. time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2025?i=on)
+<br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evening (Jm. time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2026?i=on)
 <br/>__WWW:__ [$(www)]($(www))
 <br/>__Linkedin:__ [$(linkedin)]($(linkedin))
 <br/>__Last Update:__ $(now)
@@ -22,15 +22,19 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 
 ## 1. Summary
 
-Senior software architect with over 40+ years of <span class="hilite">__INNOVATION__</span> in: 
+I am a senior software architect with over 40+ years of <span class="hilite">__INNOVATION__</span> in: 
 
 * algorithm design
-* compiler construction
-* source code refactoring
-* obfuscation tools
+* compiler construction, and domain specific language (DSL) design
+* design of command line interfaces (CLIs) and APIs
+	* which are extremely useful for communicating with AI agents, and for scripting and testing GUIs
+* automated source code refactoring (for C-17, C++-2014, C#-ECMA334, and Java-SE8 apps)
+	* via [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree)-XML [srcML](https://www.srcml.org) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) utilities
+* unique obfuscation tools which greatly reduce the reverse engineering attack surface of linux apps (both workstation and embedded)
+* design source code with the assistance of various macro preprocessors and template engines
 * multiple patents and inventions
 
-Worked at an __expert level__ in many industries including:
+i worked at an __expert level__ in many industries including:
 
 * cybersecurity anti-reverse engineering
 * automotive
@@ -38,16 +42,13 @@ Worked at an __expert level__ in many industries including:
 * accessibility
 * bioinformatics
 
-[Expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who thrives on technically challenging projects. Adept at design of:
+I am an [expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who thrives on technically challenging projects. I worked with CTO groups <span class="hilite">to solve problems that initially had __AMBIGUOUS__ problem specifications</span> in order to build prototypes and minimum viable products (MVPs). I was able to refine the problems in order to build commercially useful and _testable_ solutions. I prefer to work with and to mentor small teams.
 
-* domain-specific languages
-* building MVPs and prototypes for CTO teams
-
-<span class="hilite">I have solved many problems that initially had __AMBIGUOUS__ problem specifications.</span> I was able to refine the problem to a commercially useful and testable solution. I prefer to work with and to mentor small teams. I am searching for position as a contractor or consultant.
+I am searching for position as a consultant-contractor.
 
 ### Core Skills & Tools
 
-* __Languages:__ C, Python, [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), Bash & [Posix CLI Commands]( https://en.wikipedia.org/wiki/List_of_POSIX_commands ), HTML, XML, Markdown, [WASM]( https://webassembly.org/ )
+* __Languages:__ C, Python, Tcl, [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), Bash & [Posix CLI Commands]( https://en.wikipedia.org/wiki/List_of_POSIX_commands ), HTML, XML, Markdown, [WASM]( https://webassembly.org/ )
 
 * __Technologies:__ [srcML](https://www.srcml.org/) (acquired commercial license), [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C]( https://en.wikipedia.org/wiki/MISRA_C ), GCC, Clang, [Zydis](https://zydis.re/), [Pandoc]( https://www.pandoc.org/ ), [Obsidian]( https://obsidian-html.github.io/index.html ), YAML & [PKL]( https://pkl-lang.org/ )
 
@@ -55,11 +56,11 @@ Worked at an __expert level__ in many industries including:
 
 ## 2. Inventions (Reverse Chronological Order)
 
-1. <span class="hilite">Showed how [srcML](https://www.srcml.org/) combined with [Python Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ) could refactor "C" source code for automotive software updates, and for cybersecurity obfuscation.</span>
+1. <span class="hilite">Showed how [srcML](https://www.srcml.org/) combined with [Python Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ) could automatically refactor "C" source code for greatly improving the efficiency of automotive software updates, and for cybersecurity obfuscation.</span>
 
 2. <span class="hilite">Invented Linux cybersecurity techniques, especially to minimize the attack surface of `.so` ([DSO](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_real_time/7/html/reference_guide/chap-shared_libraries)) files that supply no formal exports, efficiently shroud system calls and strings and constants and randomize the stack, and thus are extremely difficult to reverse engineer. See [short technical description]($(obfuscation_html)).</span>
 
-3. Patented FLASH techniques for implementing S/W updates on small FLASH devices, and small RAM.
+3. Patented FLASH techniques for implementing S/W updates on small FLASH devices, and small RAM for the automobile industry which are plagued with minimal FLASH and RAM in order to reduce the materials cost of the millions of vehicles that they produce.
 
 4. Invented a technique for _dynamically_ loading a large static FLASH database into an embedded system that could be larger than RAM that does not violate any Misra C restrictions, with the help of preprocessing tools such as _Jinja2_ or _Pyexpander_.
 
@@ -115,7 +116,7 @@ __2012:__ _Telequest_, Jerusalem: VP R&D: Automated Vehicle Navigation To Find O
 
 __2011:__ [Syntezza Bioscience](https://www.syntezza.com/), Jerusalem: Consultant: Bioinformatic algorithms
 
-__2005-10:__ _NDS_ (now [Synamedia](https://www.synamedia.com/)), Jerusalem: Senior Researcher: Internet TV Industry
+__2005-10:__ _NDS_ (now [Synamedia](https://www.synamedia.com/)), Jerusalem: Senior Cybersecurity Researcher: Internet TV Industry
 
 __2002-03:__ _Virtouch_, Jerusalem (defunct): VP R&D: Blind Accessibility
 
@@ -148,4 +149,4 @@ __1973-78:__ _University of Toronto_, Canada: __BA__ Undergraduate School of Art
 
 ## 5. Teaching & Mentorship
 
-Part-time instructor and mentor in various technical domains. Strong advocate of pairing with domain experts to accelerate onboarding and innovation.
+Part-time college and highschool instructor and mentor in various technical domains. Strong advocate of pairing with domain experts to accelerate onboarding and innovation.
