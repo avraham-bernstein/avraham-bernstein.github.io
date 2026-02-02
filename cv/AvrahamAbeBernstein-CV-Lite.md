@@ -1,5 +1,5 @@
 $py(
-now = '2025-02-01'
+now = '2025-02-02'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -149,4 +149,4 @@ __1973-78:__ _University of Toronto_, Canada: __BA__ Undergraduate School of Art
 
 ## 5. Teaching & Mentorship
 
-Part-time college and highschool instructor and mentor in various technical domains. Strong advocate of pairing with domain experts to accelerate onboarding and innovation.
+Part-time college and highschool instructor and mentor for computer science and mathematics. Strong advocate of pairing with domain experts to accelerate onboarding and innovation.
