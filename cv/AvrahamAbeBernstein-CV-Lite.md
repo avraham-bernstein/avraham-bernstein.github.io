@@ -1,5 +1,5 @@
 $py(
-now = '2025-02-02'
+now = '2025-02-03'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -24,19 +24,19 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 
 I am a senior software architect with over 40+ years of <span class="hilite">__INNOVATION__</span> in: 
 
-* algorithm design
 * compiler construction, and domain specific language (DSL) design
 * design of command line interfaces (CLIs) and APIs
-	* which are extremely useful for communicating with AI agents, and for scripting and testing GUIs
-* automated source code refactoring (for C-17, C++-2014, C#-ECMA334, and Java-SE8 apps)
-	* via [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree)-XML [srcML](https://www.srcml.org) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/) utilities
-* unique obfuscation tools which greatly reduce the reverse engineering attack surface of linux apps (both workstation and embedded)
-* design source code with the assistance of various macro preprocessors and template engines
-* multiple patents and inventions
+	* for example that are extremely useful for scripting and testing GUIs, and for communicating with AI agents
+* automated source code refactoring of C-17, C++-2014, C#-ECMA334, and Java-SE8 S/W
+	* via the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree)-XML conversion utilities [srcML](https://www.srcml.org) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/)
+* unique source code obfuscation techniques that greatly reduce the reverse engineering "attack surface" of linux apps (both workstation and embedded)
+* simplify the design of source code with the assistance of various macro preprocessors and template engines
+* algorithm design
+* multiple patents and inventions in many different application domains
 
 i worked at an __expert level__ in many industries including:
 
-* cybersecurity anti-reverse engineering
+* cybersecurity
 * automotive
 * internet TV
 * accessibility
@@ -44,7 +44,7 @@ i worked at an __expert level__ in many industries including:
 
 I am an [expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who thrives on technically challenging projects. I worked with CTO groups <span class="hilite">to solve problems that initially had __AMBIGUOUS__ problem specifications</span> in order to build prototypes and minimum viable products (MVPs). I was able to refine the problems in order to build commercially useful and _testable_ solutions. I prefer to work with and to mentor small teams.
 
-I am searching for position as a consultant-contractor.
+On account of my age, I find that working as a consultant-contractor is the best fit for most employers.
 
 ### Core Skills & Tools
 
