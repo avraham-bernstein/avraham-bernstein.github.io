@@ -34,7 +34,7 @@ I am a senior software architect with over 40+ years of <span class="hilite">__I
 * algorithm design
 * multiple patents and inventions in many different application domains
 
-i worked at an __expert level__ in many industries including:
+I worked at an __expert level__ in many industries including:
 
 * cybersecurity
 * automotive
