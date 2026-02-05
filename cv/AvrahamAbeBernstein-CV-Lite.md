@@ -44,7 +44,7 @@ I worked at an __expert level__ in many industries including:
 
 I am an [expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who thrives on technically challenging projects. I worked with CTO groups <span class="hilite">to solve problems that initially had __AMBIGUOUS__ problem specifications</span> in order to build prototypes and minimum viable products (MVPs). I was able to refine the problems in order to build commercially useful and _testable_ solutions. I prefer to work with and to mentor small teams.
 
-On account of my age, I find that working as a consultant-contractor is the best fit for most employers. And for HR executives, here is synopis of a [financial study on the benefits of hiring older employees]( https://longevity.stanford.edu/why-more-companies-are-recognizing-the-benefits-of-keeping-older-employees/ ).
+On account of my age, I find that working as a consultant-contractor is the best fit for most employers. And for HR executives, here is synopsis of a <span class="hilite">[financial study from Stanford Univ. on the benefits of hiring older employees]( https://longevity.stanford.edu/why-more-companies-are-recognizing-the-benefits-of-keeping-older-employees/ )</span>.
 
 ### Core Skills & Tools
 
