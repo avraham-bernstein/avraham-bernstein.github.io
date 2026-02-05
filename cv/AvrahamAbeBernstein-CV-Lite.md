@@ -1,5 +1,5 @@
 $py(
-now = '2025-02-03'
+now = '2025-02-05'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -44,7 +44,7 @@ I worked at an __expert level__ in many industries including:
 
 I am an [expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who thrives on technically challenging projects. I worked with CTO groups <span class="hilite">to solve problems that initially had __AMBIGUOUS__ problem specifications</span> in order to build prototypes and minimum viable products (MVPs). I was able to refine the problems in order to build commercially useful and _testable_ solutions. I prefer to work with and to mentor small teams.
 
-On account of my age, I find that working as a consultant-contractor is the best fit for most employers.
+On account of my age, I find that working as a consultant-contractor is the best fit for most employers. And for HR executives, here is synopis of a [financial study on the benefits of hiring older employees]( https://longevity.stanford.edu/why-more-companies-are-recognizing-the-benefits-of-keeping-older-employees/ ).
 
 ### Core Skills & Tools
 
@@ -82,7 +82,7 @@ On account of my age, I find that working as a consultant-contractor is the best
 
 13. Designed a GCC port for [Forth](https://en.wikipedia.org/wiki/Forth_(programming_language))-like CPUs that effectively allowed an unlimited number of registers.
 
-14. Designed [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) for Quality Assurance (QA) projects that allowed them to be tested with scripts. Examples included satellite communications, client movie players, and milspec testing laboratories. The scripts exploited flaws in the satellite software design. The satellite scripts were used to implement sanity tests on the developer's desktop prior to code check-in which significantly reduced QA testing. The mil-spec scripts replaced 3+ meters of test documentation, and allowed the system engineer to write simple _ad hoc_ tests.
+14. Designed [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) for Quality Assurance (QA) projects that allowed them to be tested with scripts. Examples included satellite communications, client movie players, and milspec testing laboratories. The scripts exploited flaws in the satellite software design. The satellite scripts were used to implement sanity tests on the developer's desktop prior to code check-in which significantly reduced QA testing. The mil-spec scripts replaced 3+ meter high stack of test docs, and allowed the system engineer to write simple _ad hoc_ tests.
 
 15. Invented a DSL for a [VLSI](https://en.wikipedia.org/wiki/Very-large-scale_integration) toolchain that clock-accurately emulated the CPU in "C" including its instruction pipeline. The "C" emulator ran 100 times faster than the electrical (e.g. VERILOG) simulator. Therefore the DSL enabled instruction set sanity tests to be run immediately every time the architecture changed. The DSL solved one of the most painful problems in designing the assembler manually, namely detection of when the pipeline was broken which required programmer insertion of NOP instructions. For many months the VLSI architects changed the pipeline restrictions on a regular basis. Therefore DSL included a restriction language. It allowed the assembler to be built within 2 hours multiple times a week.  The DSL was expanded to include a disassembler. Eventually the toolchain formed the backbone of a GUI debugger. The debugger incorporated programmable simulation of I/O ports. The debugger enabled the building of accurate applications many months before the physical CPU was produced (i.e. "taped out"). 
 
