@@ -3,7 +3,7 @@ now = '2025-02-08'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
-obfuscation_html = '/cv/obfuscation/obfuscation.html'
+obfuscation_html = www + '/cv/obfuscation/obfuscation.html'
 
 def obfus(text):
 	return '<span class="hide">' + text + '</span>'
