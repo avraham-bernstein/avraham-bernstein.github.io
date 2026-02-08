@@ -64,7 +64,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 	* Professional:
 		* / CV
-		* / Computer Science
+		* / ComputerScience
 		* / Accessibility
 		* / Education
 		* / Health
@@ -72,7 +72,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 	* Yisrael+Torah:
 		* / Torah
 		* / Politics
-		* / Daily Life In Yerushalayim
+		* / DailyLifeInYerushalayim
 		
 * __Blog:__ TBD
 
