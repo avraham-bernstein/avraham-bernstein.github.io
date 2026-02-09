@@ -1,5 +1,5 @@
 $py(
-now = '2026-02-08'
+now = '2026-02-09'
 DOT = '&#x2022;'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
@@ -62,17 +62,17 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 * __Articles:__ TBD
 
-	* Professional:
+	* __Professional:__
 		* / CV
-		* / ComputerScience
+		* / Computer Science
 		* / Accessibility
 		* / Education
 		* / Health
 		
-	* Yisrael+Torah:
+	* __Yisrael & Torah:__
 		* / Torah
 		* / Politics
-		* / DailyLifeInYerushalayim
+		* / Daily Life In Yerushalayim
 		
 * __Blog:__ TBD
 
