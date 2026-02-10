@@ -72,6 +72,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 	* __Yisrael & Torah:__
 		* / Torah
 		* / Politics
+		* / Community Service
 		* / Daily Life In Yerushalayim
 		
 * __Blog:__ TBD
