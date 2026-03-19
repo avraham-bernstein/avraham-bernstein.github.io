@@ -1,5 +1,5 @@
 $py(
-now = '2025-02-11'
+now = '2025-03-19'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -14,7 +14,7 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 <br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
-<br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evening (Jm. time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2026?i=on)
+<br/>__[Shabbat Observant](https://www.chabad.org/library/article_cdo/aid/633659/jewish/What-Is-Shabbat.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evening ([Jerusalem time](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm)) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2026?i=on)
 <br/>__WWW:__ [$(www)]($(www))
 <br/>__Linkedin:__ [$(linkedin)]($(linkedin))
 <br/>__Last Update:__ $(now)
@@ -24,10 +24,10 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 
 I am a senior software architect with over 40+ years of <span class="hilite">__INNOVATION__</span> in: 
 
-* compiler construction, and domain specific language (DSL) design
-* design of command line interfaces (CLIs) and APIs
+* compiler construction, and design of domain specific languages (DSL)
+* design of command line interfaces (CLI) and application programming interfaces (API)
 	* for example that are extremely useful for scripting and testing GUIs, and for communicating with AI agents
-* automated source code refactoring of C-17, C++-2014, C#-ECMA334, and Java-SE8 S/W
+* automated source code refactoring of C (2018), C++ (2014), C# (ECMA334), and Java (SE8)
 	* via the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree)-XML conversion utilities [srcML](https://www.srcml.org) and [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/)
 * unique source code obfuscation techniques that greatly reduce the reverse engineering "attack surface" of linux apps (both workstation and embedded)
 * simplify the design of source code with the assistance of various macro preprocessors and template engines
