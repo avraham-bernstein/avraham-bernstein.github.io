@@ -1,5 +1,5 @@
 $py(
-now = '2026-02-11'
+now = '2026-03-19'
 DOT = '&#x2022;'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
@@ -19,7 +19,7 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>&nbsp;&nbsp;__$(DOT) secondary:__ [GOOGL meet](https://workspace.google.com/products/meet/), [MSFT teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
-<br/>__[Shabbat Observant](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evening (Jm. time) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2026?i=on)
+<br/>__[Shabbat Observant](https://www.chabad.org/library/article_cdo/aid/633659/jewish/What-Is-Shabbat.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evening ([Jerusalem time](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm)) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2026?i=on)
 <br/>__Last Update:__ $(now)
 </address>
 
@@ -40,7 +40,7 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Immediate Family
 
-1. Wife: <i>Judy DOT Bernstein1 AT gmail$(obfus('bozo@example.com')) DOT com</i>, +$(obfus('bozo@example.com'))972.50.751-5111: designer of natural cosmetics
+1. Wife: <i>Judy DOT Bernstein1 AT gmail$(obfus('bozo@example.com')) DOT com</i>, +$(obfus('bozo@example.com'))972.50.751-5111: designer of Judaica and natural cosmetics
 
 2. Son: _Yirmiyahu_ + 4: astrophysicist and optics
 
