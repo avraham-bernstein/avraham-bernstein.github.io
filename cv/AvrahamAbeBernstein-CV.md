@@ -1,5 +1,5 @@
 $py(
-now = '2025-03-19'
+now = '2025-04-09'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -149,4 +149,6 @@ __1973-78:__ _University of Toronto_, Canada: __BA__ Undergraduate School of Art
 
 ## 5. Teaching & Mentorship
 
-Part-time college and highschool instructor and mentor for computer science and mathematics. Strong advocate of pairing with domain experts to accelerate onboarding and innovation.
+Part-time college and highschool instructor and mentor for computer science and mathematics. I am a strong advocate of pairing with domain experts to accelerate onboarding and innovation.
+
+For younger children I tutor mathematics and music (via the free [MuseScore](https://musescore.com/) application). I taught a 2nd grader the basics of exponents and logarithms within 30 minutes using a mathematical calculator application found on most smart phones. I kinesiologically taught my mildly ADHD 5th grade granddaughter a half year of fractions in two morning sessions at a bakery (beginning with a non-sweetened breakfast) by using a roll of 50 coins. Similarly I kinesiologically taught my 3rd grade grandson the basics of multiplication using floor tiles and masking tape. I remotely (via the free [AnyDesk](https://anydesk.com/en) application) teach my 7th grade grandson computer and mathematical programming using [Python turtle graphics](https://docs.python.org/3/library/turtle.html). I am preparing my 11th grade granddaughter for her Israeli high-school matriculation examination in mathematics (4 units). (I expect/hope that she will get a grade of 90). I have a technique for teaching deep meditation within a few hours by using a free [metronome application](https://metronome.app). I teach the children co-ordination and concentration exercises by using "boxer" jump rope techniques.
