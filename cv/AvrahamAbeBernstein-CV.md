@@ -1,5 +1,5 @@
 $py(
-now = '2025-04-09'
+now = '2026-05-08'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -152,3 +152,9 @@ __1973-78:__ _University of Toronto_, Canada: __BA__ Undergraduate School of Art
 Part-time college and highschool instructor and mentor for computer science and mathematics. I am a strong advocate of pairing with domain experts to accelerate onboarding and innovation.
 
 For younger children I tutor mathematics and music (via the free [MuseScore](https://musescore.com/) application). I taught a 2nd grader the basics of exponents and logarithms within 30 minutes using a mathematical calculator application found on most smart phones. I kinesiologically taught my mildly ADHD 5th grade granddaughter a half year of fractions in two morning sessions at a bakery (beginning with a non-sweetened breakfast) by using a roll of 50 coins. Similarly I kinesiologically taught my 3rd grade grandson the basics of multiplication using floor tiles and masking tape. I remotely (via the free [AnyDesk](https://anydesk.com/en) application) teach my 7th grade grandson computer and mathematical programming using [Python turtle graphics](https://docs.python.org/3/library/turtle.html). I am preparing my 11th grade granddaughter for her Israeli high-school matriculation examination in mathematics (4 units). (I expect/hope that she will get a grade of 90). I have a technique for teaching deep meditation within a few hours by using a free [metronome application](https://metronome.app). I teach the children co-ordination and concentration exercises by using "boxer" jump rope techniques.
+
+## 6. AI Experience
+
+My last project at _Aurora Labs_ (above) in 2025 required that I use an _LLM_ to estimate the time required to run an assembly program on a (then) new automotive CPU by training with _JTAG_ trace output. However I found that by creating a _QEMU_-like description of the instruction set in custom Python code (which included timing information), I got much more accurate timing results. Unfortunately management was displeased with my approach because an _LLM_ was new and sexy compared to _QEMU_. In one of my first major projects for _DSPG_ (above) in 1992, I already had experience creating a clock accurate CPU emulator.
+
+In general I find that running a pre-processing parser that _understands the structure of the raw text_ used to train an _LLM_ provides much better results than simply feeding an _LLM_ raw text. For example a common problem is using an _LLM_ to process a _PDF_ file. The processing can be greatly improved when fed the _markdown_ text that was used to generate the _PDF_. When the original _markdown_ (or _docx_) is not available then a FOSS program such as _markdown-it_ which outputs standard _markdown_ enables the _LLM_ to generate much more accurate and much less expensive results because the _PDF_ file contains a huge amount of formatting "noise" which intentionally is not contained in the _markdown_ file. Similarly an _LLM_ can understand computer source code far better when provided with the _AST_ description (e.g. output by _SrcML_ or _Tree-Sitter_) as opposed to the raw source code.

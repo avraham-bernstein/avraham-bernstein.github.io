@@ -194,7 +194,7 @@ href="https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/location
 1 hour before sunset until Sat. night 1 hour after sunset, nor on <a href="https://www.hebcal.com/holidays/2026?i=on">Jewish holidays</a>
 <br/><strong>WWW:</strong> <a href="https://www.avrahambernstein.com">https://www.avrahambernstein.com</a> <br/><strong>Linkedin:</strong> <a
 href="https://www.linkedin.com/in/avrahambernstein/">https://www.linkedin.com/in/avrahambernstein/</a> <br/><strong>Last Update:</strong>
-2025-04-09
+2026-05-08
 </address>
 <h2>1. Summary</h2>
 <p>I am a senior software architect with over 40+ years of <span class="hilite"><strong>INNOVATION</strong></span> in:</p>
@@ -385,5 +385,19 @@ preparing my 11th grade granddaughter for her Israeli high-school matriculation 
 will get a grade of 90). I have a technique for teaching deep meditation within a few hours by using a free <a
 href="https://metronome.app">metronome application</a>. I teach the children co-ordination and concentration exercises by using "boxer" jump
 rope techniques.</p>
+<h2>6. AI Experience</h2>
+<p>My last project at <em>Aurora Labs</em> (above) in 2025 required that I use an <em>LLM</em> to estimate the time required to run an assembly
+program on a (then) new automotive CPU by training with <em>JTAG</em> trace output. However I found that by creating a <em>QEMU</em>-like
+description of the instruction set in custom Python code (which included timing information), I got much more accurate timing results.
+Unfortunately management was displeased with my approach because an <em>LLM</em> was new and sexy compared to <em>QEMU</em>. In one of my first
+major projects for <em>DSPG</em> (above) in 1992, I already had experience creating a clock accurate CPU emulator.</p>
+<p>In general I find that running a pre-processing parser that <em>understands the structure of the raw text</em> used to train an <em>LLM</em>
+provides much better results than simply feeding an <em>LLM</em> raw text. For example a common problem is using an <em>LLM</em> to process a
+<em>PDF</em> file. The processing can be greatly improved when fed the <em>markdown</em> text that was used to generate the <em>PDF</em>. When
+the original <em>markdown</em> (or <em>docx</em>) is not available then a FOSS program such as <em>markdown-it</em> which outputs standard
+<em>markdown</em> enables the <em>LLM</em> to generate much more accurate and much less expensive results because the <em>PDF</em> file contains
+a huge amount of formatting "noise" which intentionally is not contained in the <em>markdown</em> file. Similarly an <em>LLM</em> can understand
+computer source code far better when provided with the <em>AST</em> description (e.g. output by <em>SrcML</em> or <em>Tree-Sitter</em>) as
+opposed to the raw source code.</p>
 </body>
 </html>
