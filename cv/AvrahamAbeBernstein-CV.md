@@ -1,8 +1,9 @@
 $py(
-now = '2026-05-08'
+now = '2026-05-10'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
+cv_pdf = www + '/AvrahamAbeBernstein-CV.pdf'
 obfuscation_html = www + '/cv/obfuscation/obfuscation.html'
 
 def obfus(text):
@@ -15,8 +16,9 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 <br/>__[Shabbat Observant](https://www.chabad.org/library/article_cdo/aid/633659/jewish/What-Is-Shabbat.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evening ([Jerusalem time](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm)) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2026?i=on)
-<br/>__WWW:__ [$(www)]($(www))
 <br/>__Linkedin:__ [$(linkedin)]($(linkedin))
+<br/>__WWW Home Page:__ [$(www)]($(www))
+<br/>__Updated Version of CV:__ [$(cv_pdf)]($(cv_pdf))
 <br/>__Last Update:__ $(now)
 </address>
 
@@ -50,7 +52,7 @@ On account of my age, I find that working as a consultant-contractor is the best
 
 * __Languages:__ C, Python, Tcl, [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), Bash & [Posix CLI Commands]( https://en.wikipedia.org/wiki/List_of_POSIX_commands ), HTML, XML, Markdown, [WASM]( https://webassembly.org/ )
 
-* __Technologies:__ [srcML](https://www.srcml.org/) (acquired commercial license), [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C]( https://en.wikipedia.org/wiki/MISRA_C ), GCC, Clang, [Zydis](https://zydis.re/), [Pandoc]( https://www.pandoc.org/ ), [Obsidian]( https://obsidian-html.github.io/index.html ), [Mkdocs](https://www.mkdocs.org/), YAML & [PKL]( https://pkl-lang.org/ )
+* __Technologies:__ [srcML](https://www.srcml.org/) (acquired commercial license), [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C]( https://en.wikipedia.org/wiki/MISRA_C ), GCC, Clang, [Zydis](https://zydis.re/), [Pandoc]( https://www.pandoc.org/ ), [Obsidian]( https://obsidian-html.github.io/index.html ), [Mkdocs](https://www.mkdocs.org/)/[Zensical](https://zensical.org/), YAML & [PKL]( https://pkl-lang.org/ )
 
 * __Domains:__ Compiler Design, [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), [Code Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) and [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) (= anti-reverse engineering), Cybersecurity, Reverse Engineering, Embedded Systems, Accessibility, Automotive Software, Factory Automation, Bioinformatics, Network Protocols
 
@@ -155,6 +157,22 @@ For younger children I tutor mathematics and music (via the free [MuseScore](htt
 
 ## 6. AI Experience
 
-My last project at _Aurora Labs_ (above) in 2025 required that I use an _LLM_ to estimate the time required to run an assembly program on a (then) new automotive CPU by training with _JTAG_ trace output. However I found that by creating a _QEMU_-like description of the instruction set in custom Python code (which included timing information), I got much more accurate timing results. Unfortunately management was displeased with my approach because an _LLM_ was new and sexy compared to _QEMU_. In one of my first major projects for _DSPG_ (above) in 1992, I already had experience creating a clock accurate CPU emulator.
+### LLM
 
-In general I find that running a pre-processing parser that _understands the structure of the raw text_ used to train an _LLM_ provides much better results than simply feeding an _LLM_ raw text. For example a common problem is using an _LLM_ to process a _PDF_ file. The processing can be greatly improved when fed the _markdown_ text that was used to generate the _PDF_. When the original _markdown_ (or _docx_) is not available then a FOSS program such as _markdown-it_ which outputs standard _markdown_ enables the _LLM_ to generate much more accurate and much less expensive results because the _PDF_ file contains a huge amount of formatting "noise" which intentionally is not contained in the _markdown_ file. Similarly an _LLM_ can understand computer source code far better when provided with the _AST_ description (e.g. output by _SrcML_ or _Tree-Sitter_) as opposed to the raw source code.
+My last project at _Aurora Labs_ (above) in 2025 required that I use an _LLM_ to estimate the time required to run an assembly program on a (then) new automotive CPU by training with _JTAG_ output. However I found that by creating a _QEMU_-like description of the instruction set in custom Python code __which included timing information__, I got much more accurate timing results. Unfortunately management was displeased with my approach because an _LLM_ was new and sexy compared to _QEMU_. In one of my first major projects for _DSPG_ (above) in 1992, I already had experience creating a clock accurate CPU emulator.
+
+In general I find that running a pre-processing parser that _understands the structure of the raw text_ used to train an _LLM_ provides much better results than simply feeding an _LLM_ raw text. For example a common problem is using an _LLM_ to process a _PDF_ file. The processing can be greatly improved when fed the _markdown_ text that was used to generate the _PDF_. When the original _markdown_ (or _docx_) is not available then a FOSS program such as the _markdown-it_ parser which outputs _markdown_ enables the _LLM_ to generate much more accurate and much less expensive results because the raw v_PDF_ file contains a huge amount of formatting "noise" which intentionally is not contained in the _markdown_ file. Similarly an _LLM_ can understand computer source code far better when provided with the _AST_ description (e.g. output by _SrcML_ or _Tree-Sitter_) as opposed to the raw source code.
+
+### Threshold Classifier
+
+In 2011 I worked on a bioinformatics _PCR_ project for _Syntezza Bioscience_ (above). Their preliminary _MRSA_ detector chemistry did not correctly remove impurities from patient samples. Therefore instead of their results showing a classic sigmoidal curve of a bioassay, their results looked like a random cloud, so the industry standard PCR mathematical analysis of curve fitting and functional analysis would not work. Because their results were so disasterous, they were on track for bankruptcy, from which my threshold classifier algorithm saved them. After discussing the matter with the company's chief scientist who was a microbiologist, he agreed with my observation that "inhibition" resulting from the impurities only reduced some, but not all, of the bioassay data points. On each of the 3 PCR channels, I used only the single highest raw data point. (In hindsight, perhaps I should have used the average value less the standard deviation). I split the 800 samples in half, one half to be used for training and the other half to be used to test my predictions. All samples were initially tested by the gold standard analogue Petri dish analysis to determine whether or not they were MRSA positive. From the training samples I determined what was the lowest raw value of positive samples, and the highest raw value of negative samples (for each of the 3 PCR channels). Each test sample that exceeded the threshold value of the training data's MRSA positive minimal value was declared PCR positive, also as long as that sample did not fall below the threshold value of the training data's MRSA negative maximal value (for each of the 3 PCR channels). My predictions were 95% accurate. At a PCR MRSA "shoot out" at the prestigious St. Georges teaching hospital in London, my algorithm was a more accurate predictor than those of the big international pharmaceutical companies relying upon classical PCR mathematics. Note that the whole project took me just 3 months. Before that I had no university level background in biology or bioinformatics.
+
+## 7. To Learn
+
+1. _AI LLM_
+2. [Neovim](https://neovim.io/) programming editor: upgrade to [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor))
+3. [Tree-Sitter](https://tree-sitter.github.io/tree-sitter/) [Abstract Syntax Tree (AST)](https://en.wikipedia.org/wiki/Abstract_syntax_tree) dynamic parser
+4. [Zig](https://ziglang.org/) programming language: an improved C language that conforms to the industry standard C [Application Binary Interface (ABI)](https://en.wikipedia.org/wiki/Application_binary_interface)
+5. [Mimalloc](https://github.com/microsoft/mimalloc) dynamic memory allocator: drop-in replacement for [malloc](https://en.wikipedia.org/wiki/C_dynamic_memory_allocation)
+6. [Musl](https://musl.libc.org/): conformant static replacement for _libc_
+7. [NeuroSky](https://neurosky.com/): small inexpensive noninvasive brain computer interface that enables brain waves to control a USB [human interface device (HID)](https://en.wikipedia.org/wiki/USB_human_interface_device_class) 
