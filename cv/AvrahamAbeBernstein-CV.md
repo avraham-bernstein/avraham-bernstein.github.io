@@ -174,5 +174,5 @@ In 2011 I worked on a bioinformatics _PCR_ project for _Syntezza Bioscience_ (ab
 3. [Tree-Sitter](https://tree-sitter.github.io/tree-sitter/) [Abstract Syntax Tree (AST)](https://en.wikipedia.org/wiki/Abstract_syntax_tree): dynamic parser plugin for programming editors such as _neovim_ (above)
 4. [Zig](https://ziglang.org/): new C-like programming language that can cross compile to C that conforms to the industry standard C [Application Binary Interface (ABI)](https://en.wikipedia.org/wiki/Application_binary_interface)
 5. [Mimalloc](https://github.com/microsoft/mimalloc): better dynamic memory allocator that is a drop-in replacement for [malloc](https://en.wikipedia.org/wiki/C_dynamic_memory_allocation) that can be dynamically implemented system-wide via `LD_PRELOAD`
-6. [Musl](https://musl.libc.org/): static replacement for _libc_ with better security because no need for loading dynamic libraries
+6. [Musl](https://musl.libc.org/): static replacement for _libc_ with better security because no need for loading dynamic shared libraries
 7. [NeuroSky](https://neurosky.com/): small inexpensive noninvasive brain computer interface (BCI) that enables brain waves to control a USB keyboard and that does not require pasting electrodes on the scalp 
