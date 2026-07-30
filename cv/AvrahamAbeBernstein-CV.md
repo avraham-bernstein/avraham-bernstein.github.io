@@ -19,7 +19,7 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 <br/>__Linkedin:__ [$(linkedin)]($(linkedin))
 <br/>__WWW Home Page:__ [$(www)]($(www))
 <br/>__Most Recent Version of CV:__ [$(cv_pdf)]($(cv_pdf))
-<br/>__Creative Commons:__ Copyright &copy; Avraham Bernstein, Israel, 2016-2026 [CC BY](https://creativecommons.org/licenses/by/4.0/)
+<br/>__Creative Commons:__ Copyright &copy; Avraham Bernstein, Israel, 2026 [CC BY](https://creativecommons.org/licenses/by/4.0/)
 <br/>__Last Update:__ $(now)
 </address>
 
