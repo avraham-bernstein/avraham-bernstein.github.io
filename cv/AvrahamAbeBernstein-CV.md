@@ -1,5 +1,5 @@
 $py(
-now = '2026-07-30'
+now = '2026-08-02'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -53,7 +53,7 @@ On account of my age, I find that working as a consultant-contractor is the best
 
 * __Languages:__ C, Python, Tcl, [Jinja2](https://en.wikipedia.org/wiki/Jinja_(template_engine)), [Pyexpander](https://pyexpander.sourceforge.io/), Bash & [Posix CLI Commands]( https://en.wikipedia.org/wiki/List_of_POSIX_commands ), HTML, XML, Markdown, [WASM]( https://webassembly.org/ ).
 
-* __Technologies:__ [srcML](https://www.srcml.org/) (acquired commercial license), [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C]( https://en.wikipedia.org/wiki/MISRA_C ), GCC, Clang, [Zydis](https://zydis.re/), [Pandoc]( https://www.pandoc.org/ ), [Obsidian]( https://obsidian-html.github.io/index.html ), [Zensical](https://zensical.org/), YAML & [PKL]( https://pkl-lang.org/ ).
+* __Technologies:__ [srcML](https://www.srcml.org/) (acquired commercial license), [Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ), Linux, [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format), [Misra C]( https://en.wikipedia.org/wiki/MISRA_C ), GCC, Clang, [Zydis](https://zydis.re/), [Pandoc]( https://www.pandoc.org/ ), [Obsidian]( https://obsidian-html.github.io/index.html ), YAML & [PKL]( https://pkl-lang.org/ ).
 
 * __Domains:__ Compiler Design, [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), [Code Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) and [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) (= anti-reverse engineering), Cybersecurity, Reverse Engineering, Embedded Systems, Accessibility, Automotive Software, Factory Automation, Bioinformatics, Network Protocols.
 
@@ -172,8 +172,8 @@ In 2011 I worked on a bioinformatics [PCR](https://en.wikipedia.org/wiki/Polymer
 
 1. _FOSS_ AI [Ollama](https://ollama.com/): a local LLM model that supports 32-64 GB RAM using an _x64_ CPU.
 2. _FOSS_ [Neovim](https://neovim.io/): a programming editor upgrade to [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)).
-3. _FOSS_ [Tree-Sitter](https://tree-sitter.github.io/tree-sitter/) [Abstract Syntax Tree (AST)](https://en.wikipedia.org/wiki/Abstract_syntax_tree): a multi-language dynamic parser plugin for programming editors such as _neovim_ (above).
-4. _FOSS_ [Clang AST Library](https://clang.llvm.org/docs/IntroductionToTheClangAST.html): a very large library for executing `C/C++` source code analysis and refactoring.
+3. _FOSS_ [Tree-Sitter](https://tree-sitter.github.io/tree-sitter/) [Abstract Syntax Tree (AST)](https://en.wikipedia.org/wiki/Abstract_syntax_tree): a fast multi-language dynamic AST parser plugin for programming editors such as _neovim_ (above).
+4. _FOSS_ [Clang AST Library](https://clang.llvm.org/docs/IntroductionToTheClangAST.html): a very large and more complex library for implementing `C/C++` AST static source code analysis and refactoring.
 5. _FOSS_ [Zig](https://ziglang.org/): a new `C`-like programming language that can cross compile to `C` and that conforms to the industry standard `C` [Application Binary Interface (ABI)](https://en.wikipedia.org/wiki/Application_binary_interface). Has many new language features such as much better dynamic memory allocation mechanism, generic types, and especially compile time functions instead of preprocessing macros.
 6. _FOSS_ [Mimalloc](https://github.com/microsoft/mimalloc): a better dynamic memory allocator that is a drop-in replacement for the `C` [malloc](https://en.wikipedia.org/wiki/C_dynamic_memory_allocation) that can be dynamically implemented system-wide via `LD_PRELOAD`.
 7. _FOSS_ [Musl](https://musl.libc.org/): a static replacement for _Linux_ [libc](https://en.wikipedia.org/wiki/C_standard_library) with better security because no need for loading dynamic shared libraries (i.e. `.so` files).
