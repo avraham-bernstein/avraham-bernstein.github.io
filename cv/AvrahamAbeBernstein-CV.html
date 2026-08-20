@@ -197,7 +197,7 @@ href="https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/location
 Version of CV:</strong> <a
 href="https://www.avrahambernstein.com/AvrahamAbeBernstein-CV.pdf">https://www.avrahambernstein.com/AvrahamAbeBernstein-CV.pdf</a>
 <br/><strong>Creative Commons:</strong> Copyright © Avraham Bernstein, Israel, 2026 <a href="https://creativecommons.org/licenses/by/4.0/">CC
-BY</a> <br/><strong>Last Update:</strong> 2026-08-18
+BY</a> <br/><strong>Last Update:</strong> 2026-08-20
 </address>
 <h2>1. Summary</h2>
 <p>I am a senior software architect with over 40+ years of <span class="hilite"><strong>INNOVATION</strong></span> in:</p>
@@ -391,29 +391,36 @@ href="https://metronome.app">metronome application</a>. I teach the children co-
 rope techniques.</p>
 <h2>6. AI Experience</h2>
 <h3>LLM</h3>
-<p>My last project at <em>Aurora Labs</em> (above) in 2025 required that I use an <em>LLM</em> to estimate the execution time required to run an
-assembly program on a (then) new automotive <em>Infineon</em> CPU by training with <em>JTAG</em> output. However I found that by creating a <a
-href="https://en.wikipedia.org/wiki/QEMU">QEMU</a>-like description of the instruction set in custom Python code <strong>which included timing
-information</strong>, I got much more accurate timing results. Unfortunately management was displeased with my approach because an <em>LLM</em>
-was new and sexy compared to <em>QEMU</em>. In one of my first major projects for <em>DSPG</em> (above) in 1992, I already had experience
-creating a clock accurate CPU emulator. So when <em>Aurora</em> was financially forced to downsize their workforce in March 2025 by 75%, it was
-a good excuse for me to retire.</p>
-<p>In general I find that running a pre-processing parser that <em>understands the structure of the raw text</em> used to "prompt" an LLM
-provides much better results than simply feeding an LLM raw text. For example a common problem is using an LLM to process a PDF file. The
-processing can be greatly improved when fed the Markdown text that was used to generate the PDF. When the original Markdown is not available
-then a FOSS program such as the <a href="https://github.com/microsoft/markitdown">markitdown</a> or <a
-href="https://www.file2markdown.ai/blog/anydoc-vs-markitdown">anydoc</a> PDF parsers which output Markdown that enables the LLM to generate much
-more accurate and much less expensive results because the raw PDF file contains a huge amount of formatting "noise" which intentionally is not
-contained in the Markdown file. Similarly an LLM can understand computer source code far better when provided with its <em>AST</em> description
-(e.g. output by <em>SrcML</em> or <em>Tree-Sitter</em>) as opposed to the raw source code. And very recently (June 2026) Google published a v0.1
-public domain <a href="https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/">Open
-Knowledge Format (OKF)</a> language for describing an LLM Wiki comprised of human readable (industry standard) Markdown and YAML files that
-makes it more accurate and faster and more economical for the various LLM engines to contextualize knowledge. I am starting an <em>OKF</em>
-experiment using the <a href="https://github.com/kennyg/obsidian-okf">Obsidian</a> (2nd brain) wiki package combined with an <a
-href="https://ollama.com/">Ollama</a> local LLM. I use local LLM that supports 32-64 GB RAM using an <em>x64</em> CPU in order to eliminate the
-high cost of server based AI, and in order to protect my privacy. I am using local AI as an intelligent <strong>assistant</strong> where I note
-that AI is making intelligent comments about my code or documents, and <strong>not</strong> to automatically generate <a
-href="https://en.wikipedia.org/wiki/AI_slop">slop</a>.</p>
+<p>My last project at <em>Aurora Labs</em> (above) in 2025 required that I use an <a
+href="https://en.wikipedia.org/wiki/Large_language_model">AI Large Language Model (LLM)</a> to estimate the execution time required to run an
+assembly program on a (then) new automotive <em>Infineon</em> CPU by training with <a href="https://en.wikipedia.org/wiki/JTAG">JTAG</a> output.
+However I found that by creating a <a href="https://en.wikipedia.org/wiki/QEMU">QEMU</a> description of the CPU's instruction set in custom
+Python code <strong>which included timing information</strong>, I got much more accurate timing results. Unfortunately management was displeased
+with my approach because an <em>LLM</em> was newer and sexier compared to <em>QEMU</em>. In one of my first major projects for <em>DSPG</em>
+(above) in 1992, I already had experience creating a clock accurate CPU emulator. So when <em>Aurora</em> was financially forced to
+<em>slash</em> their workforce in March 2025 by 75% (!), it was a good excuse for me to retire.</p>
+<p>In general I find that running a pre-processing parser that <em>understands the structure of the text</em> used to <a
+href="https://en.wikipedia.org/wiki/Prompt_engineering">prompt</a> an <em>LLM</em> provides much better results than simply feeding it <em>raw
+text</em>. For example a common problem is using an <em>LLM</em> to process a PDF file. The processing can be greatly improved when fed the
+original <em>Markdown</em> text that was used to generate the PDF. When the original <em>Markdown</em> is not available then a <em>FOSS</em>
+program such as the <a href="https://github.com/microsoft/markitdown">markitdown</a> or <a
+href="https://www.file2markdown.ai/blog/anydoc-vs-markitdown">anydoc</a> PDF parsers which output <em>Markdown</em> that enables the
+<em>LLM</em> to generate much more accurate and much <em>less expensive</em> results because the raw PDF file contains a huge amount of
+formatting "noise" that is intentionally omitted from the <em>Markdown</em> file. Similarly an <em>LLM</em> can understand computer source code
+far better when provided with its <a href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</a> description (e.g. output by <a
+href="https://www.srcml.org/">SrcML</a> or <a href="https://tree-sitter.github.io/tree-sitter/">Tree-Sitter</a>) as opposed to the raw source
+code. And very recently (2026-06) Google first published a public domain <a
+href="https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/">Open Knowledge Format
+(OKF)</a> (and subsequently in 2026-08 <a href="https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md">v0.2</a>)
+language for describing an <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">LLM Wiki</a> comprised of human readable
+industry standard <em>Markdown</em> and <em>YAML</em> files that makes it more accurate and faster and more economical for the various <em>LLM
+engines</em> to contextualize knowledge. I am starting an <em>OKF</em> experiment using the <a
+href="https://github.com/kennyg/obsidian-okf">Obsidian</a> ("2nd brain") wiki package combined with a <a href="https://ollama.com/">local LLM
+Ollama</a> package. Currently (2026-08) the <em>local LLM</em> engine that I prefer using is <a
+href="https://www.aitooldiscovery.com/how-to/qwen3-8-ollama">qwen3.8:27b</a>) that supports 32-64 GB RAM using an <em>x64</em> CPU in order to
+eliminate the high cost of server based AI, and in order to protect my privacy. I am using <em>local AI</em> as an intelligent
+<strong>assistant</strong> where I note that the AI is making intelligent comments about my code or documents, and <strong>not</strong> to
+automatically generate <a href="https://en.wikipedia.org/wiki/AI_slop">slop</a>.</p>
 <h3>Threshold Classifier</h3>
 <p>In 2011 I worked on a bioinformatics <a href="https://en.wikipedia.org/wiki/Polymerase_chain_reaction">PCR</a> project for <em>Syntezza
 Bioscience</em> (above). Their preliminary <a href="https://en.wikipedia.org/wiki/Methicillin-resistant_Staphylococcus_aureus">MRSA</a> detector
