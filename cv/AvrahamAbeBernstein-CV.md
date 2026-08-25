@@ -1,5 +1,5 @@
 $py(
-now = '2026-08-20'
+now = '2026-08-25'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
@@ -19,7 +19,7 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 <br/>__Linkedin:__ [$(linkedin)]($(linkedin))
 <br/>__WWW Home Page:__ [$(www)]($(www))
 <br/>__Most Recent Version of CV:__ [$(cv_pdf)]($(cv_pdf))
-<br/>__Creative Commons:__ Copyright &copy; Avraham Bernstein, Israel, 2026 [CC BY]( https://creativecommons.org/licenses/by/4.0/ )
+<br/>__Creative Commons:__ Copyright &copy; Avraham Bernstein, Israel, 2026 [CC BY 4.0]( https://creativecommons.org/licenses/by/4.0/ )
 <br/>__Last Update:__ $(now)
 </address>
 
@@ -47,7 +47,7 @@ I worked at an __expert level__ in many industries including:
 
 I am an [expert generalist](https://simplicable.com/new/expert-generalist) and [autodidact](https://en.wikipedia.org/wiki/Autodidacticism) [polymath](https://en.wikipedia.org/wiki/Polymath) who thrives on technically challenging projects. I worked with CTO groups <span class="hilite">to solve problems that initially had __AMBIGUOUS__ problem specifications</span> in order to build prototypes and minimum viable products (MVPs). I was able to refine the problems in order to build commercially useful and _testable_ solutions. I prefer to work with and to mentor small teams.
 
-On account of my age, I find that working as a consultant-contractor is the best fit for most employers. And for HR executives, here is a synopsis of a <span class="hilite">[financial study from Stanford Univ. on the benefits of hiring older employees]( https://longevity.stanford.edu/why-more-companies-are-recognizing-the-benefits-of-keeping-older-employees/ )</span>.
+On account of my age, I find that working as a <span class="hilite">__consultant-contractor__</span> is the best fit for most employers. And for HR executives, here is a synopsis of a <span class="hilite">[financial study from Stanford Univ. on the benefits of hiring older employees]( https://longevity.stanford.edu/why-more-companies-are-recognizing-the-benefits-of-keeping-older-employees/ )</span>.
 
 ### Core Skills & Tools
 
