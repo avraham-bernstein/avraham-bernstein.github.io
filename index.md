@@ -1,5 +1,5 @@
 $py(
-now = '2026-03-19'
+now = '2026-08-25'
 DOT = '&#x2022;'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
