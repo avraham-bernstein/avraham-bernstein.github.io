@@ -1,11 +1,14 @@
 $py(
-now = '2026-08-25'
+now = '2026-08-30'
 DOT = '&#x2022;'
 
-linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
-photo = 'AvrahamAbeBernstein-20250202-watermarked-blurred-20pc.png'
-www = 'https://www.avrahambernstein.com/'
-cv_root = 'AvrahamAbeBernstein-CV'
+halftone_qrcode_photo = 'AvrahamAbeBernstein.2026-08-28.photo-email.halftone-qrcode.799x799.png'
+watermarked_blurred_photo = 'AvrahamAbeBernstein.2026-08-28.photo-email.watermarked-blurred.600x750.jpg'
+
+cv_pdf = 'AvrahamAbeBernstein-CV.pdf'
+
+linkedin_url = 'https://www.linkedin.com/in/avrahambernstein/'
+www_url = 'https://www.avrahambernstein.com/'
 
 def obfus(text):
 	return '<span class="hide">' + text + '</span>'
@@ -14,6 +17,7 @@ def obfus(text):
 __Author:__ Avraham "Abe" Bernstein
 <br/>__Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
 <br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
+<br/>__WWW:__ [$(www_url)]($(www_url))
 <br/>__Video Channels:__
 <br/>&nbsp;&nbsp;__$(DOT) primary:__ [whatsapp](https://www.whatsapp.com/), [zoom](https://zoom.us/join)
 <br/>&nbsp;&nbsp;__$(DOT) secondary:__ [GOOGL meet](https://workspace.google.com/products/meet/), [MSFT teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
@@ -23,9 +27,17 @@ __Author:__ Avraham "Abe" Bernstein
 <br/>__Last Update:__ $(now)
 </address>
 
-![Secure photo of the author]($(photo) "Secure photo of the author from 2025")
-
-__Secure[^secure-photo] photo of the author from 2025__
+<table markdown="1">
+<caption>Secure Photos And Email Address[^secure-photos]</caption>
+<tr>
+<th>Blurring Filter & Watermark
+<th>QR Code Mailto Halftone
+</tr>
+<tr>
+<td><img src="$(watermarked_blurred_photo)"></td>
+<td><img src="$(halftone_qrcode_photo)"></td>
+</tr>
+</table>
 
 ## Directions
 
@@ -52,11 +64,11 @@ __Secure[^secure-photo] photo of the author from 2025__
 
 ## Links
 
-* __CV:__ Computer Scientist: [$(cv_root).pdf]($(cv_root).pdf)
+* __CV:__ Computer Scientist: [$(cv_pdf)]($(cv_pdf))
 
-* __Linkedin:__ [$(linkedin)]($(linkedin))
+* __Linkedin:__ [$(linkedin_url)]($(linkedin_url))
 
-* __PGP:__ [https://www.avrahambernstein.com/AvrahamBernstein.asc](https://www.avrahambernstein.com/AvrahamBernstein.asc)
+* __PGP:__ [$(www_url)AvrahamBernstein.asc]($(www_url)AvrahamBernstein.asc)
 
 * __Github:__ TBD
 
@@ -87,3 +99,5 @@ __Secure[^secure-photo] photo of the author from 2025__
 ![View From My Jerusalem Porch](JmViewFromMyPorch-20250706T170242.jpg)
 
 ## Footnotes
+
+[^secure-photos]: __Secure Photos:__ The above techniques camouflage my image from comparison with CCTV surveillance photos yet cannot stop my young granchildren from easily identifying me. Similarly anyone can easily read my distorted email watermark while almost no automated tool can "harvest" it. Admittedly there are advanced viewers who could automatically extract my email address from the QR code, but they also could have more easily extracted it by simply parsing the second line in my home page which uses the trivial textual description of my email address using the "AT" notation hack. I simply camouflaged my photo using the _FOSS_ [GIMP](https://www.gimp.org/) blurring filters (i.e. "oilify" and "clothify") while overlaying the result with my "rippled" email address watermark. The camouflaged photo provides a "kind of" [two factor authentication (2FA)](https://en.wikipedia.org/wiki/Multi-factor_authentication) because if any rogue site were to post it then any skeptic could easily test it by sending me an email. BTW there are commercial [de-identification (D-ID)](https://en.wikipedia.org/wiki/De-identification) applications which obscure photos with nearly unobservable distortion but the obscured photo would intentionally fail to pass high quality photo ID techniques such as a passport scanner. An interesting _FOSS_ D-ID technique would be to add an [Eurion currency watermark]( https://en.wikipedia.org/wiki/EURion_constellation) to a photograph, because an Eurion currency watermark would render the photograph uncopyable by all commercial imaging software for fear that currency is being counterfeit. 

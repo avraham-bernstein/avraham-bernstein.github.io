@@ -13,4 +13,4 @@ YML=$ROOT.yml
 
 expander.py -f $MD > $TMP_MD
 pandoc --verbose -f markdown_phpextra+backtick_code_blocks+header_attributes -s --columns=96 \
-	 -t html5 -o $HTML --metadata-file=$YML $TMP_MD secure-photo.fn.md
+	 -t html5 -o $HTML --metadata-file=$YML $TMP_MD
