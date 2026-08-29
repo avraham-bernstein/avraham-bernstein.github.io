@@ -28,7 +28,7 @@ __Author:__ Avraham "Abe" Bernstein
 </address>
 
 <table markdown="1">
-<caption>Secure Author Photos And Email Address[^secure-photos]</caption>
+<caption>Author's Secure Photos And Email Address[^secure-photos]</caption>
 <tr>
 <th>Blurring Filter & Watermark
 <th>QR Code Mailto Halftone
