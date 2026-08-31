@@ -5,9 +5,9 @@ DOT = '&#x2022;'
 halftone_qrcode_photo = 'AvrahamAbeBernstein.2026-08-28.photo.halftone.mailto-qrcode.799x799.png'
 watermarked_blurred_photo ='AvrahamAbeBernstein.2026-08-28.photo.artistic-blurred.email-watermarked-rippled.600x750.jpg'
 
+cv_pdf = 'AvrahamAbeBernstein-CV.pdf'
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.AvrahamBernstein.com/'
-cv_pdf = 'AvrahamAbeBernstein-CV.pdf'
 
 def obfus(text):
 	return '<span class="hide">' + text + '</span>'
@@ -17,7 +17,7 @@ def obfus(text):
 __Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
 <br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
 <br/>__Video Channels:__
-<br/>&nbsp;&nbsp;__$(DOT) primary:__ [whatsapp](https://www.whatsapp.com/), [zoom](https://zoom.us/join)
+<br/>&nbsp;&nbsp;__$(DOT) primary:__ [Whatsapp](https://www.whatsapp.com/), [Zoom](https://zoom.us/join)
 <br/>&nbsp;&nbsp;__$(DOT) secondary:__ [GOOGL meet](https://workspace.google.com/products/meet/), [MSFT teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
