@@ -1,9 +1,10 @@
 $py(
-now = '2026-08-25'
+now = '2026-08-31'
 
 linkedin = 'https://www.linkedin.com/in/avrahambernstein/'
 www = 'https://www.avrahambernstein.com'
 cv_pdf = www + '/AvrahamAbeBernstein-CV.pdf'
+
 obfuscation_html = www + '/cv/obfuscation/obfuscation.html'
 
 def obfus(text):
@@ -18,8 +19,8 @@ __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DO
 <br/>__[Shabbat Observant](https://www.chabad.org/library/article_cdo/aid/633659/jewish/What-Is-Shabbat.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evening ([Jerusalem time](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm)) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2026?i=on)
 <br/>__Linkedin:__ [$(linkedin)]($(linkedin))
 <br/>__WWW Home Page:__ [$(www)]($(www))
-<br/>__Most Recent Version of CV:__ [$(cv_pdf)]($(cv_pdf))
 <br/>__Creative Commons:__ Copyright &copy; Avraham Bernstein, Israel, 2026 [CC BY 4.0]( https://creativecommons.org/licenses/by/4.0/ )
+<br/>__Most Recent Version:__ [$(cv_pdf)]($(cv_pdf))
 <br/>__Last Update:__ $(now)
 </address>
 
@@ -57,7 +58,7 @@ On account of my age, I find that working as a <span class="hilite">__consultant
 
 * __Domains:__ Compiler Design, [Domain Specific Languages (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language), [Code Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) and [Obfuscation](https://en.wikipedia.org/wiki/Obfuscation_(software)) (= anti-reverse engineering), Cybersecurity, Reverse Engineering, Embedded Systems, Accessibility, Automotive Software, Factory Automation, Bioinformatics, Network Protocols.
 
-## 2. Inventions (Reverse Chronological Order)
+## 2. Inventions
 
 1. <span class="hilite">Showed how [srcML](https://www.srcml.org/) combined with [Python Beautiful Soup]( https://beautiful-soup-4.readthedocs.io/en/latest/ ) could automatically refactor "C" source code for greatly improving the efficiency of automotive software updates, and for cybersecurity obfuscation.</span>
 
