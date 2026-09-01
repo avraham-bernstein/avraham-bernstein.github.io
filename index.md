@@ -52,15 +52,18 @@ __Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
 
 ## Immediate Family
 
-1. Wife: <i>Judy DOT Bernstein1 AT gmail$(obfus('bozo@example.com')) DOT com</i>, +$(obfus('bozo@example.com'))972.50.751-5111: designer of Judaica and natural cosmetics.
+1. Wife: <i>Judy DOT Bernstein1 AT gmail$(obfus('bozo@example.com')) DOT com</i>, +$(obfus('bozo@example.com'))972.50.751-5111: designer of Judaica and natural cosmetics
 
-2. Son: _Yirmiyahu_ + 4, Tekoa: PhD candidate astrophysics at [Hebrew University Jerusalem Israel (HUJI)](https://phys.huji.ac.il), MSc Applied Sciences - specialty electro-optics, and desert astronomy tours field guide.
+2. Son: _Yirmiyahu_ + 4, Tekoa:
+    * PhD candidate astrophysics at [Hebrew University Jerusalem Israel (HUJI)](https://phys.huji.ac.il)
+    * MSc Applied Sciences - specialty electro-optics
+    * desert astronomy tours field guide
 
-3. Daughter: _Naomi Sarah_ + 4, Jerusalem: maternity nurse at [Hadassah Hospital Ein Kerem](https://he.hadassah.org.il).
+3. Daughter: _Naomi Sarah_ + 4, Jerusalem: maternity nurse at [Hadassah Hospital Ein Kerem](https://he.hadassah.org.il)
 
-4. Daughter: _Carmiella_ + 1, Pardes Hanna: classical musician cellist and conservatory music teacher.
+4. Daughter: _Carmiella_ + 1, Pardes Hanna: classical musician cellist and conservatory music teacher
 
-5. Son: _Asher_ + 4, Mitzpeh Yericho region: environmental scientist at [Jerusalem Municipality]( https://www.jerusalem.muni.il).
+5. Son: _Asher_ + 4, Mitzpeh Yericho region: environmental scientist at [Jerusalem Municipality]( https://www.jerusalem.muni.il)
 
 ## Links
 
