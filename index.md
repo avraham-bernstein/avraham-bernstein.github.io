@@ -41,7 +41,7 @@ __Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
 
 ## Directions
 
-* __Geolocation:__ Ramot Bet, Jerusalem 9727433 ISRAEL, [31.808472N, 35.200944E](https://www.google.com/maps/place/31.808472,35.200944). <span class="hilite">__Call for exact address!__</span>
+* __Geolocation:__ Ramot Bet, Jerusalem 9727433 ISRAEL, [31.808472N, 35.200944E](https://www.google.com/maps/place/31.808472,35.200944). <span class="hilite">__Call for exact address&excl;__</span>
 
 * __[Public Transit](https://moovitapp.com/index/en/public_transit-Jerusalem-Israel-site_21889814-1):__ 
 	1. 3 min. walk via __bus lines 61, 62, or 72 at [stop #3483 Yigal Alon (westbound) - Derech HaHoresh](https://www.google.com/maps/place/Yigal+Allon%2FHaHoresh+Road/@31.8083434,35.2003684,17.13z/data=!4m14!1m7!3m6!1s0x1502d611ce627b0d:0x85b254a042ae21b9!2z15nXkteQ15wg15DXnNeV158v16knJ9eZ!8m2!3d31.808916!4d35.200722!16s%2Fg%2F12hrkrhm8!3m5!1s0x1502d60fc8b79bc7:0x3e3a8a7dc9ab930d!8m2!3d31.810358!4d35.201721!16s%2Fg%2F12hm16kmn?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDQwMS4wIKXMDSoASAFQAw%3D%3D)__, i.e. the 2nd stop on _Yigal Alon St_. At the crosswalk on _Yigal Alon_, cross into _Derech HaHoresh_. Continue walking for about 40 meters, and then turn right into the first side street, and finally continue walking for about 200 meters.
@@ -70,9 +70,9 @@ __Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
 
 * __PGP:__ [$(www)AvrahamBernstein.asc]($(www)AvrahamBernstein.asc)
 
-* __Github:__ __&excl;&excl;&excl; TBD &excl;&excl;&excl;__
+* __Github:__ <span class="hilite">__&excl;&excl;&excl; TBD &excl;&excl;&excl;__</span>
 
-* __Articles:__ __&excl;&excl;&excl; TBD &excl;&excl;&excl;__ Using the [Obsidian](https://obsidian.md/) digital notebook/wiki web publishing plug-in [Digital Forest](https://docs.forestry.md/):
+* __Articles:__ <span class="hilite">__&excl;&excl;&excl; TBD &excl;&excl;&excl;__</span> Using the [Obsidian](https://obsidian.md/) digital notebook/wiki web publishing plug-in [Digital Forest](https://docs.forestry.md/):
 
     * __Professional:__
 	* / CV
