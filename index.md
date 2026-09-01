@@ -70,29 +70,29 @@ __Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
 
 * __PGP:__ [$(www)AvrahamBernstein.asc]($(www)AvrahamBernstein.asc)
 
-* __Github:__ TBD
+* __Github:__ __&excl;&excl;&excl; TBD &excl;&excl;&excl;__
 
-* __Articles:__
+* __Articles &excl;&excl;&excl; TBD &excl;&excl;&excl;:__ Using the [Obsidian](https://obsidian.md/) digital notebook/wiki web publishing plug-in [Digital Forest](https://docs.forestry.md/):
 
-	* __Professional:__ TBD
-		* / CV
-		* / Computer Science
-		* / Accessibility
-		* / Education
-		* / Health
-		* / Music Composition
-		* / Blog
+    * __Professional:__
+	* / CV
+	* / Computer Science
+	* / Accessibility
+	* / Education
+	* / Health
+	* / Music Composition
+	* / Blog
 		
-	* __Yisrael & Torah:__ TBD
-		* / Torah
-		* / Politics
-		* / Community Service
-		* / Daily Life In Yerushalayim
-		* / Blog
+    * __Yisrael & Torah:__
+	* / Torah
+	* / Politics
+	* / Community Service
+	* / Daily Life In Yerushalayim
+	* / Blog
 		
-* __Bookmarks:__ TBD
+    * __Bookmarks:__
 
-* __Book Reviews:__ TBD
+    * __Book Reviews:__
 
 ## View From My North Jerusalem Porch With Southern Exposure Overlooking The "Navel Of The World" 
 
