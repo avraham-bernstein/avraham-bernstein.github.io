@@ -72,7 +72,7 @@ __Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
 
 * __Github:__ __&excl;&excl;&excl; TBD &excl;&excl;&excl;__
 
-* __Articles &excl;&excl;&excl; TBD &excl;&excl;&excl;:__ Using the [Obsidian](https://obsidian.md/) digital notebook/wiki web publishing plug-in [Digital Forest](https://docs.forestry.md/):
+* __Articles:__ __&excl;&excl;&excl; TBD &excl;&excl;&excl;__ Using the [Obsidian](https://obsidian.md/) digital notebook/wiki web publishing plug-in [Digital Forest](https://docs.forestry.md/):
 
     * __Professional:__
 	* / CV
