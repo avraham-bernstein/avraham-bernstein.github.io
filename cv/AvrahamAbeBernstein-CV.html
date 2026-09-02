@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.10" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Avraham “Abe” Bernstein | CV</title>
   <style>
@@ -157,8 +157,12 @@
       text-decoration: none;
     }
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -197,7 +201,7 @@ href="https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/location
 Commons:</strong> Copyright © Avraham Bernstein, Israel, 2026 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
 <br/><strong>Most Recent Version:</strong> <a
 href="https://www.avrahambernstein.com/AvrahamAbeBernstein-CV.pdf">https://www.avrahambernstein.com/AvrahamAbeBernstein-CV.pdf</a>
-<br/><strong>Last Update:</strong> 2026-08-31
+<br/><strong>Last Update:</strong> 2026-09-02
 </address>
 <h2>1. Summary</h2>
 <p>I am a senior software architect with over 40+ years of <span class="hilite"><strong>INNOVATION</strong></span> in:</p>
@@ -212,7 +216,7 @@ href="https://www.avrahambernstein.com/AvrahamAbeBernstein-CV.pdf">https://www.a
 <li>via the <a href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</a>-XML conversion utilities <a
 href="https://www.srcml.org">srcML</a> and <a href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a></li>
 </ul></li>
-<li>unique source code obfuscation techniques that greatly reduce the reverse engineering "attack surface" of linux apps (both workstation and
+<li>unique source code obfuscation techniques that greatly reduce the reverse engineering "attack surface" of Linux apps (both workstation and
 embedded)</li>
 <li>simplify the design of source code with the assistance of various macro preprocessors and template engines</li>
 <li>algorithm design</li>
@@ -281,25 +285,25 @@ the "Ct" of an <em>assay</em> with high levels of <em>inhibition</em> via the us
 analysis technique, and (2) can trivially clean the <em>systematic noise</em> from an <em>assay</em>, especially useful when the <em>assay</em>
 contains significant <em>inhibition</em>. Note that the project took only 2 months, even though I had zero formal background in microbiology and
 genetics. I received intensive mentoring from domain experts. I saved the client's project from bankruptcy.</p></li>
-<li><p>Invented a network protocol for hybrid cable modems with a dialup upstream and RF downstream, where the "edge router" controlled access
-to both the dialup and RF networks, which enabled the edge router's ARP table to be dynamically modified when a modem logged on and
+<li><p>Invented a network protocol for hybrid cable modems with a dial-up upstream and RF downstream, where the "edge router" controlled access
+to both the dial-up and RF networks, which enabled the edge router's ARP table to be dynamically modified when a modem logged on and
 off.</p></li>
 <li><p>Designed a super efficient cable modem network laboratory which multiplied by a factor of 24 how many modems could be attached to a
 single PC via multiplexing with a dynamically <a href="https://www.youtube.com/watch?v=O3TiE1bkGOw">programmable layer-2 switch</a>.</p></li>
 <li><p>Designed a GCC port for <a href="https://en.wikipedia.org/wiki/Forth_(programming_language)">Forth</a>-like CPUs that effectively allowed
 an unlimited number of registers.</p></li>
 <li><p>Designed <a href="https://en.wikipedia.org/wiki/Domain-specific_language">Domain Specific Languages (DSL)</a> for Quality Assurance (QA)
-projects that allowed them to be tested with scripts. Examples included satellite communications, client movie players, and milspec testing
+projects that allowed them to be tested with scripts. Examples included satellite communications, client movie players, and mil-spec testing
 laboratories. The scripts exploited flaws in the satellite software design. The satellite scripts were used to implement sanity tests on the
 developer's desktop prior to code check-in which significantly reduced QA testing. The mil-spec scripts replaced 3+ meter high stack of test
 docs, and allowed the system engineer to write simple <em>ad hoc</em> tests.</p></li>
-<li><p>Invented a DSL for a <a href="https://en.wikipedia.org/wiki/Very-large-scale_integration">VLSI</a> toolchain that clock-accurately
+<li><p>Invented a DSL for a <a href="https://en.wikipedia.org/wiki/Very-large-scale_integration">VLSI</a> tool-chain that clock-accurately
 emulated the CPU in "C" including its instruction pipeline. The "C" emulator ran 100 times faster than the electrical (e.g. VERILOG) simulator.
 Therefore the DSL enabled instruction set sanity tests to be run immediately every time the architecture changed. The DSL solved one of the most
 painful problems in designing the assembler manually, namely detection of when the pipeline was broken which required programmer insertion of
 NOP instructions. For many months the VLSI architects changed the pipeline restrictions on a regular basis. Therefore DSL included a restriction
 language. It allowed the assembler to be built within 2 hours multiple times a week. The DSL was expanded to include a disassembler. Eventually
-the toolchain formed the backbone of a GUI debugger. The debugger incorporated programmable simulation of I/O ports. The debugger enabled the
+the tool-chain formed the backbone of a GUI debugger. The debugger incorporated programmable simulation of I/O ports. The debugger enabled the
 building of accurate applications many months before the physical CPU was produced (i.e. "taped out").</p></li>
 <li><p>Invented a DSL which described an automated <a href="https://en.wikipedia.org/wiki/Sintering">sintered</a> metal blade production factory
 in complete detail. At that time commercial quality object oriented (OO) languages did not yet exist. But the factory contained about 50 object
@@ -353,7 +357,7 @@ Factory Automation</p>
 href="https://www.company-histories.com/Scitex-Corporation-Ltd-Company-History.html">Scitex</a> ), Herzliya:</p>
 <ul>
 <li>S/W R&amp;D: Early 3D printing (<em>stereo-lithography</em>)</li>
-<li>Inventor: Quadriplegic Accessiblity for PCs</li>
+<li>Inventor: Quadriplegic Accessibility for PCs</li>
 </ul>
 <p><strong>...1983-84:</strong> <a href="https://www.iai.co.il/about/groups/elta-systems">Elta IAI</a>, Ashdod: junior embedded programmer: <a
 href="https://en.wikipedia.org/wiki/IAI_Lavi">Lavi fighter plane</a></p>
@@ -362,7 +366,7 @@ href="https://en.wikipedia.org/wiki/IAI_Lavi">Lavi fighter plane</a></p>
 <li>While attending the MBA program at the Univ. of Toronto (see below), I was an <a
 href="https://en.wikipedia.org/wiki/Intervention_(law)">intervenor</a> in the <em>ECAP77</em> hearings on <a
 href="https://en.wikipedia.org/wiki/Marginal_cost">marginal cost pricing</a> for electricity at <a href="https://www.hydroone.com/">Ontario
-Hydro</a>. I was the first public interest intervenor in the history of the <em>OEB</em> to be awared costs. I published an oped about the
+Hydro</a>. I was the first public interest intervenor in the history of the <em>OEB</em> to be awarded costs. I published an oped about the
 hearings in Canada's then paper of record <a href="https://www.theglobeandmail.com/">The Globe and Mail</a>. With perfect hindsight the
 experience taught me a great deal, that I carried throughout my whole life, how a single individual could stand up and make a meaningful
 difference against government injustice.</li>
@@ -377,8 +381,8 @@ immediately above in 1977, I switched focus to engineering. I extraordinarily pa
 the <em>York Univ.</em> program, so the school allowed to me to take graduate level courses anywhere I chose.</li>
 </ul>
 <h2>5. Teaching &amp; Mentorship</h2>
-<p>Part-time college and highschool instructor and mentor for computer science and mathematics. I am a strong advocate of pairing with domain
-experts to accelerate onboarding and innovation.</p>
+<p>Part-time college and high-school instructor and mentor for computer science and mathematics. I am a strong advocate of pairing with domain
+experts to accelerate on-boarding and innovation.</p>
 <p>For younger children I tutor mathematics and music (via the free <a href="https://musescore.com/">MuseScore</a> application). I taught a 2nd
 grader the basics of exponents and logarithms within 30 minutes using a mathematical calculator application found on most smart phones. I
 kinesiologically taught my mildly ADHD 5th grade granddaughter a half year of fractions in two morning sessions at a bakery (beginning with a
@@ -463,7 +467,7 @@ href="https://en.wikipedia.org/wiki/C_standard_library">libc</a> with better sec
 <strong>non-invasive</strong> brain computer interface (BCI) devices that enable brain waves to control a virtual keyboard and mouse. Physically
 these devices are similar to a plastic woman's hair band worn across the forehead. Especially important is that these devices do not require
 pasting any electrodes on the scalp. The devices can be configured to allow a disabled user (i.e. who does not have the physical ability to
-control a physical keyboard but otherwise have full cognition) to control a "virtual" keyboard. They can be used for rehabilation projects.
+control a physical keyboard but otherwise have full cognition) to control a "virtual" keyboard. They can be used for rehabilitation projects.
 Unfortunately here in Israel there are hundreds of soldiers who have been disabled by the wars over the past few years, and they provide an
 excellent laboratory environment to create such software tools.</li>
 </ol>
