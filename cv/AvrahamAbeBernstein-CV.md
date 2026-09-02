@@ -15,8 +15,8 @@ def obfus(text):
 __Email:__ Avraham DOT Bernstein PLUS cv AT gmail$(obfus('bozo@example.com')) DOT com
 <br/>__Tel/Whatsapp:__ +$(obfus('bozo@example.com'))972.54.641-0955
 <br/>__City:__ Jerusalem 9727433 ISRAEL
-<br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
-<br/>__[Shabbat Observant](https://www.chabad.org/library/article_cdo/aid/633659/jewish/What-Is-Shabbat.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evening ([Jerusalem time](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm)) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2026?i=on)
+<br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)]( https://www.timeanddate.com/worldclock/israel/jerusalem)
+<br/>__[Shabbat Observant]( https://www.chabad.org/library/article_cdo/aid/633659/jewish/What-Is-Shabbat.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evening ([Jerusalem time](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm)) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2026?i=on)
 <br/>__Linkedin:__ [$(linkedin)]($(linkedin))
 <br/>__WWW Home Page:__ [$(www)]($(www))
 <br/>__Creative Commons:__ Copyright &copy; Avraham Bernstein, Israel, 2026 [CC BY 4.0]( https://creativecommons.org/licenses/by/4.0/ )
