@@ -78,20 +78,22 @@ __Email:__ Avraham DOT Bernstein AT gmail$(obfus('bozo@example.com')) DOT com
 * __Articles:__ __TBD:__ Using the [Obsidian](https://obsidian.md/) digital notebook/wiki web publishing plug-in [Digital Forest](https://docs.forestry.md/):
 
     * __Professional:__
-	* / CV
-	* / Computer Science
-	* / Accessibility
-	* / Education
-	* / Health
-	* / Music Composition
-	* / Blog
+    
+	    * / CV
+	    * / Computer Science
+	    * / Accessibility
+	    * / Education
+	    * / Health
+	    * / Music Composition
+	    * / Blog
 		
     * __Yisrael & Torah:__
-	* / Torah
-	* / Politics
-	* / Community Service
-	* / Daily Life In Yerushalayim
-	* / Blog
+
+	    * / Torah
+	    * / Politics
+	    * / Community Service
+	    * / Daily Life In Yerushalayim
+	    * / Blog
 		
     * __Bookmarks:__
 
