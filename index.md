@@ -53,7 +53,7 @@ __Email:__ Avraham DOT Bernstein AT gmail$(obfus('$(bogus_email_addr)')) DOT com
 
 ## Immediate Family
 
-1. Wife: <i>Judy DOT Bernstein1 AT gmail$(obfus('$(bogus_email_addr'))) DOT com</i>, +$(obfus('$(bogus_email_addr)'))972.50.751-5111: designer of Judaica and natural cosmetics
+1. Wife: <i>Judy DOT Bernstein1 AT gmail$(obfus('$(bogus_email_addr)')) DOT com</i>, +$(obfus('$(bogus_email_addr)'))972.50.751-5111: designer of Judaica and natural cosmetics
 
 2. Son: _Yirmiyahu_ + 4, [Tekoa]( https://en.wikipedia.org/wiki/Tekoa_(Israeli_settlement)) [^tekoa], [^un-partition-plan]:
     * PhD candidate astrophysics at [Hebrew University Jerusalem Israel (HUJI)](https://phys.huji.ac.il/) [^huji]
