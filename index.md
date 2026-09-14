@@ -110,7 +110,7 @@ Therefore I felt compelled to write a short paragraph about what I feel is very 
 
 2. The _best_ life decision that I made was coming on _Aliyah_ (English: immigrating to _Eretz Israel_, the Land of Israel) as a young man, with a young wife, and the older two of my then infant children. The decision was beneficial _both_ spiritually and professionally. I see that _Hashem_ (English: the ineffable name of God) watches over for the Land, where the eyes of _Hashem_ are always upon it, from the beginning of the year until the end of the year ([Deut. 11:12]( https://mechon-mamre.org/p/pt/pt0511.htm)).
 
-3. During the 15 years that I served in an IDF reserve combat unit in a command position, I grew _both_ spiritually and personally. And I must add, __quite to the contrary__ of the _Hareidi_ (i.e. the so-called "ultra orthodox") view, that joining the IDF increases one's spiritual growth.
+3. During the 15 years that I served in an IDF reserve combat unit in a command position, I grew _both_ spiritually and personally. And I must add, __quite to the contrary__ of the _Hareidi_ (i.e. the so-called "ultra orthodox") view, that joining the IDF enhances one's spiritual growth.
 
 4. In a number of instances I had the opportunity to follow the fundamental "marching orders" that _Hashem_ gave to our forefather Abraham (Hebrew: _Avraham Avinu_), namely to execute righteousness and justice ([Gen. 18:19]( https://mechon-mamre.org/p/pt/pt0118.htm)), and to teach my children accordingly.
 
