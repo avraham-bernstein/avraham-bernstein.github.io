@@ -1,5 +1,5 @@
 $py(
-now = '2026-09-19'
+now = '2026-10-07'
 DOT = '&#x2022;'
 
 bogus_email_addr = 'barry.soetoro@whitehouse.gov'
