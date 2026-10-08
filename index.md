@@ -57,7 +57,7 @@ __Email:__ Avraham DOT Bernstein AT gmail$(obfus('$(bogus_email_addr)')) DOT com
 
 2. Son: _Yirmiyahu_ + 4, [Tekoa]( https://en.wikipedia.org/wiki/Tekoa_(Israeli_settlement)) [^tekoa] [^un-partition-plan]:
     * PhD candidate astrophysics at [Hebrew University Jerusalem Israel (HUJI)](https://phys.huji.ac.il/) [^huji]
-    * MSc Applied Sciences (HUJI), specialty electro-optics
+    * MSc Applied Sciences (_HUJI_), specialty electro-optics
     * desert astronomy tours field guide
 
 3. Daughter: _Naomi Sarah_ + 4, Jerusalem: maternity nurse at [Hadassah Hospital Ein Kerem](https://he.hadassah.org.il/medical-center-ein-karem/) [^hadassah]
