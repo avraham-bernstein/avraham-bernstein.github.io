@@ -2,7 +2,7 @@
 # vim: fenc=utf-8 ff=unix ft=sh:
 
 # Requirements:
-#   apt: pandoc python3.12
+#   apt: pandoc3.0+ python3.12+
 #   pip: html5 Markdown markdown-extra pyexpander
 
 ROOT=index
