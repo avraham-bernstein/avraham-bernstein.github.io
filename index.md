@@ -19,11 +19,11 @@ __Email:__ Avraham DOT Bernstein AT gmail$(obfus('$(bogus_email_addr)')) DOT com
 <br/>__Tel/Whatsapp:__ +$(obfus('$(bogus_email_addr)'))972.54.641-0955
 <br/>__Video Channels:__
 <br/>&nbsp;&nbsp;__$(DOT) primary:__ [Whatsapp](https://www.whatsapp.com/), [Zoom](https://zoom.us/join)
-<br/>&nbsp;&nbsp;__$(DOT) secondary:__ [GOOGL meet](https://workspace.google.com/products/meet/), [MSFT teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
+<br/>&nbsp;&nbsp;__$(DOT) secondary:__ [GOOGL Meet](https://workspace.google.com/products/meet/), [MSFT Teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
 <br/>__City:__ Jerusalem 9727433 ISRAEL
 <br/>__Time Zone:__ [UTC +02:00/+03:00 (winter/summer)](https://www.timeanddate.com/worldclock/israel/jerusalem)
 <br/>__[Shabbat Observant](https://www.chabad.org/library/article_cdo/aid/633659/jewish/What-Is-Shabbat.htm):__ Not accessible electronically nor engaging in any business activities from Fri. evening ([Jerusalem time](https://www.chabad.org/calendar/candlelighting_cdo/locationId/247/locationType/1/jewish/Candle-Lighting.htm)) beginning 1 hour before sunset until Sat. night 1 hour after sunset, nor on [Jewish holidays](https://www.hebcal.com/holidays/2026?i=on)
-<br/>__Creative Commons:__ __Copyright__ &copy; Avraham Bernstein, Israel, 2026 [CC BY 4.0]( https://creativecommons.org/licenses/by/4.0/ )
+<br/>__[Creative Commons](https://creativecommons.org/):__ __Copyright__ &copy; Avraham Bernstein, Israel, 2026 [CC BY 4.0]( https://creativecommons.org/licenses/by/4.0/ )
 <br/>__Most Recent Version:__ [$(www)]($(www))
 <br/>__Last Update:__ $(now)
 </address>
