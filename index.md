@@ -112,7 +112,7 @@ Therefore I feel compelled to write a short paragraph about what is very importa
 
 3. During the 15 years that I served in an IDF reserve combat unit in a command position, I grew _both_ spiritually and personally. And I must add, _emphatically to the contrary of the Hareidi "grasshoppers" [^hareidi-grasshoppers] (i.e. the so-called "ultra orthodox") view_, that __joining the IDF enhances one's spiritual growth__.
 
-4. In a number of instances I had the opportunity to follow the fundamental "marching orders" that _Hashem_ gave to _Avraham Avinu_ (English: our forefather Abraham), namely "to keep the ways of _Hashem_, to execute righteousness and justice" ([Gen. 18:19]( https://mechon-mamre.org/p/pt/pt0118.htm)), and to teach my children accordingly.
+4. In a number of instances (to be described later) I had the opportunity to follow the fundamental "marching orders" that _Hashem_ gave to _Avraham Avinu_ (English: our forefather Abraham), namely "to keep the ways of _Hashem_, to execute righteousness and justice" ([Gen. 18:19]( https://mechon-mamre.org/p/pt/pt0118.htm)), and to teach my children accordingly.
 
 ## View From My North Jerusalem Porch With Southern Exposure Overlooking The "Navel Of The World" 
 
